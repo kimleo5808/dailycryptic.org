@@ -1,150 +1,128 @@
 {
   "LanguageDetection": {
-    "title": "语言建议",
-    "description": "检测到你的浏览器语言和当前语言不一样，你随时都可切换语言。",
-    "countdown": "将在 {countdown} 秒后关闭",
-    "switchTo": "切换到"
+    "title": "Language Suggestion",
+    "description": "We noticed your browser language differs from the current site language. You can switch languages anytime.",
+    "countdown": "Closing in {countdown} seconds",
+    "switchTo": "Switch to"
   },
   "Header": {
     "links": [
       {
-        "name": "博客",
-        "href": "/blog"
+        "name": "Live Codes",
+        "href": "/the-forge-codes"
       },
       {
-        "name": "关于",
-        "href": "/about"
+        "name": "Redeem Guide",
+        "href": "/how-to-redeem-the-forge-codes"
       },
       {
-        "name": "源码",
-        "href": "https://github.com/weijunext/nextjs-starter",
-        "target": "_blank",
-        "rel": "noopener noreferrer nofollow"
+        "name": "FAQ",
+        "href": "/the-forge-codes-faq"
       },
       {
-        "name": "高级版",
-        "href": "https://nexty.dev",
-        "target": "_blank",
-        "rel": "noopener noreferrer"
+        "name": "History",
+        "href": "/the-forge-codes-history"
+      },
+      {
+        "name": "Feb 2026",
+        "href": "/the-forge-codes/february-2026"
       }
     ]
   },
   "Footer": {
-    "Copyright": "版权所有 © {year} {name} 保留所有权利。",
-    "PrivacyPolicy": "隐私政策",
-    "TermsOfService": "服务条款",
+    "Copyright": "Copyright © {year} {name} All rights reserved.",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsOfService": "Terms of Service",
     "Links": {
       "groups": [
         {
-          "title": "语言",
+          "title": "Navigation",
           "links": [
             {
-              "href": "/en",
-              "name": "English",
-              "useA": true
+              "href": "/",
+              "name": "The Forge Codes"
             },
             {
-              "href": "/zh",
-              "name": "中文",
-              "useA": true
+              "href": "/the-forge-codes",
+              "name": "Live Codes"
             },
             {
-              "href": "/ja",
-              "name": "日本語",
-              "useA": true
+              "href": "/the-forge-codes/february-2026",
+              "name": "February 2026"
             }
           ]
         },
         {
-          "title": "开源项目",
+          "title": "Guides",
           "links": [
             {
-              "href": "https://github.com/weijunext/nextjs-starter",
-              "name": "Next.js Starter",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/how-to-redeem-the-forge-codes",
+              "name": "How to Redeem"
             },
             {
-              "href": "https://github.com/weijunext/landing-page-boilerplate",
-              "name": "Landing Page Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-faq",
+              "name": "FAQ"
             },
             {
-              "href": "https://github.com/weijunext/weekly-boilerplate",
-              "name": "Blog Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-history",
+              "name": "Code History"
             }
           ]
         },
         {
-          "title": "其他产品",
+          "title": "Brand",
           "links": [
             {
-              "href": "https://nexty.dev/",
-              "name": "Nexty - SaaS Template",
-              "rel": "noopener noreferrer",
-              "target": "_blank"
+              "href": "/about",
+              "name": "About theforgecodes"
             },
             {
-              "href": "https://myogimage.com/",
-              "name": "OG Image Generator",
+              "href": "https://theforgecodes.app",
+              "name": "theforgecodes.app",
               "rel": "noopener noreferrer",
               "target": "_blank"
             }
           ]
         }
       ]
-    },
-    "Newsletter": {
-      "title": "订阅我们的邮件",
-      "description": "获取最新的 Next.js 资讯和教程",
-      "defaultErrorMessage": "请输入有效的邮箱地址",
-      "successMessage": "订阅成功",
-      "errorMessage": "订阅失败",
-      "errorMessage2": "订阅失败，请稍后再试",
-      "subscribe": "订阅",
-      "subscribing": "订阅中",
-      "subscribed": "订阅成功！感谢您的关注。"
     }
   },
   "Home": {
-    "title": "Next.js Starter",
-    "tagLine": "Next.js 多语言启动模板",
-    "description": "内置多语言支持的 Next.js 16 启动模板，助您快速构建面向全球的出海网站。简洁高效，开箱即用，完全优化的SEO基础架构。"
+    "title": "The Forge Codes",
+    "tagLine": "Daily verified The Forge Roblox code tracker",
+    "description": "Find active and expired the forge codes with daily verification, timestamps, redeem steps, and troubleshooting."
   },
   "Blog": {
-    "title": "博客列表",
-    "description": "博客列表"
+    "title": "Updates",
+    "description": "Latest updates for The Forge code tracking"
   },
   "About": {
-    "title": "关于",
-    "description": "关于网站"
+    "title": "About theforgecodes",
+    "description": "How we verify the forge codes and maintain update transparency"
   },
   "TermsOfService": {
-    "title": "服务条款",
-    "description": "服务条款"
+    "title": "Terms of Service",
+    "description": "Terms of Service"
   },
   "PrivacyPolicy": {
-    "title": "隐私政策",
-    "description": "隐私政策"
+    "title": "Privacy Policy",
+    "description": "Privacy Policy"
   },
   "Showcase": {
-    "title": "使用案例展示",
-    "description": "探索使用本 Next.js 启动模板构建的优秀产品和网站。",
-    "visitSite": "访问网站"
+    "title": "Related Resources",
+    "description": "Useful references for The Forge players and code trackers.",
+    "visitSite": "Visit site"
   },
   "Submission": {
-    "badge": "获得展示",
-    "title": "提交您的产品",
-    "description": "用这套模板构建了出色的产品？与我们的社区分享您的作品，并在展示区获得曝光。",
-    "productNameLabel": "产品名称",
-    "productNamePlaceholder": "我的优秀项目",
-    "productUrlLabel": "产品链接",
-    "submit": "提交产品",
-    "submitting": "提交中...",
-    "successMessage": "感谢您的提交！我们会尽快审核。",
-    "errorMessage": "出了点问题，请重试。"
+    "badge": "Updates",
+    "title": "Submit a Source",
+    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
+    "productNameLabel": "Source Name",
+    "productNamePlaceholder": "Official Discord / Creator post",
+    "productUrlLabel": "Source URL",
+    "submit": "Submit Source",
+    "submitting": "Submitting...",
+    "successMessage": "Thanks! Your source was received.",
+    "errorMessage": "Something went wrong. Please try again."
   }
 }

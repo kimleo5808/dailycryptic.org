@@ -48,7 +48,8 @@ export async function constructMetadata({
     }]
 
   // Open Graph Site
-  const pageURL = `${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${path}` || siteConfig.url
+  const localizedPath = `${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${path || ''}`
+  const pageURL = `${siteConfig.url}${localizedPath}`
 
   // build alternate language links
   const alternateLanguages = Object.keys(LOCALE_NAMES).reduce((acc, lang) => {
@@ -76,7 +77,7 @@ export async function constructMetadata({
       title: finalTitle,
       description: pageDescription,
       url: pageURL,
-      siteName: t('title'),
+      siteName: siteConfig.name,
       locale: locale,
       images: imageUrls,
     },
@@ -84,16 +85,20 @@ export async function constructMetadata({
       card: 'summary_large_image',
       title: finalTitle,
       description: pageDescription,
-      site: `${siteConfig.url}${pageURL === '/' ? '' : pageURL}`,
+      site: siteConfig.url,
       images: imageUrls,
       creator: siteConfig.creator,
     },
     robots: {
       index: !noIndex,
       follow: !noIndex,
+      nocache: noIndex,
       googleBot: {
         index: !noIndex,
         follow: !noIndex,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1,
       },
     },
   }

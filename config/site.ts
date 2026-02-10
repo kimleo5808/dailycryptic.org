@@ -1,44 +1,36 @@
 import { SiteConfig } from "@/types/siteConfig";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://nextjsstarter.io";
+export const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://theforgecodes.app";
 
-export const SOURCE_CODE_URL = "https://github.com/weijunext/nextjs-starter";
-export const PRO_VERSION = "https://nexty.dev";
-
-const TWITTER_URL = 'https://x.com/weijunext'
-const BSKY_URL = 'https://bsky.app/profile/judewei.bsky.social'
-const EMAIL_URL = 'weijunext@gmail.com'
-const GITHUB_URL = 'https://github.com/weijunext'
-const DISCORD_URL = process.env.NEXT_PUBLIC_DISCORD_INVITE_URL
+const EMAIL_URL = "hello@theforgecodes.app";
+const GITHUB_URL = "https://github.com/weijunext/nextjs-starter";
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js Starter",
-  tagLine: 'Multilingual Next.js 16 Starter',
+  name: "theforgecodes",
+  tagLine: "Daily verified The Forge Roblox code tracker",
   description:
-    "A multilingual Next.js 16 starter with built-in i18n support. Launch your global-ready web application with a clean, efficient, and SEO-friendly foundation.",
+    "Find active and expired the forge codes with daily verification, timestamps, redeem instructions, and troubleshooting.",
   url: BASE_URL,
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-    }
+      name: "theforgecodes",
+      url: "https://theforgecodes.app",
+    },
   ],
-  creator: '@weijunext',
+  creator: "@theforgecodes",
   socialLinks: {
-    discord: DISCORD_URL,
-    twitter: TWITTER_URL,
     github: GITHUB_URL,
-    bluesky: BSKY_URL,
-    email: EMAIL_URL
+    email: EMAIL_URL,
   },
   themeColors: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "#fffaf4" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
   ],
-  defaultNextTheme: 'system', // next-theme option: system | dark | light
+  defaultNextTheme: "system", // next-theme option: system | dark | light
   icons: {
     icon: "/favicon.ico",
     shortcut: "/logo.png",
     apple: "/logo.png", // apple-touch-icon.png
   },
-}
+};

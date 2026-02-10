@@ -8,24 +8,24 @@
   "Header": {
     "links": [
       {
-        "name": "Blog",
-        "href": "/blog"
+        "name": "Live Codes",
+        "href": "/the-forge-codes"
       },
       {
-        "name": "About",
-        "href": "/about"
+        "name": "Redeem Guide",
+        "href": "/how-to-redeem-the-forge-codes"
       },
       {
-        "name": "Source Code",
-        "href": "https://github.com/weijunext/nextjs-starter",
-        "target": "_blank",
-        "rel": "noopener noreferrer nofollow"
+        "name": "FAQ",
+        "href": "/the-forge-codes-faq"
       },
       {
-        "name": "Pro Version",
-        "href": "https://nexty.dev",
-        "target": "_blank",
-        "rel": "noopener noreferrer"
+        "name": "History",
+        "href": "/the-forge-codes-history"
+      },
+      {
+        "name": "Feb 2026",
+        "href": "/the-forge-codes/february-2026"
       }
     ]
   },
@@ -36,91 +36,69 @@
     "Links": {
       "groups": [
         {
-          "title": "Languages",
+          "title": "Navigation",
           "links": [
             {
-              "href": "/en",
-              "name": "English",
-              "useA": true
+              "href": "/",
+              "name": "The Forge Codes"
             },
             {
-              "href": "/zh",
-              "name": "中文",
-              "useA": true
+              "href": "/the-forge-codes",
+              "name": "Live Codes"
             },
             {
-              "href": "/ja",
-              "name": "日本語",
-              "useA": true
+              "href": "/the-forge-codes/february-2026",
+              "name": "February 2026"
             }
           ]
         },
         {
-          "title": "Open Source",
+          "title": "Guides",
           "links": [
             {
-              "href": "https://github.com/weijunext/nextjs-starter",
-              "name": "Next.js Starter",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/how-to-redeem-the-forge-codes",
+              "name": "How to Redeem"
             },
             {
-              "href": "https://github.com/weijunext/landing-page-boilerplate",
-              "name": "Landing Page Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-faq",
+              "name": "FAQ"
             },
             {
-              "href": "https://github.com/weijunext/weekly-boilerplate",
-              "name": "Blog Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-history",
+              "name": "Code History"
             }
           ]
         },
         {
-          "title": "Other Products",
+          "title": "Brand",
           "links": [
             {
-              "href": "https://nexty.dev/",
-              "name": "Nexty - SaaS Template",
-              "rel": "noopener noreferrer",
-              "target": "_blank"
+              "href": "/about",
+              "name": "About theforgecodes"
             },
             {
-              "href": "https://myogimage.com/",
-              "name": "OG Image Generator",
+              "href": "https://theforgecodes.app",
+              "name": "theforgecodes.app",
               "rel": "noopener noreferrer",
               "target": "_blank"
             }
           ]
         }
       ]
-    },
-    "Newsletter": {
-      "title": "Subscribe to our newsletter",
-      "description": "Get the latest news and updates from Next.js Starter",
-      "defaultErrorMessage": "Please enter a valid email address",
-      "successMessage": "Subscription successful",
-      "errorMessage": "Subscription failed",
-      "errorMessage2": "Subscription failed. Please try again later.",
-      "subscribe": "Subscribe",
-      "subscribing": "Subscribing...",
-      "subscribed": "Subscription successful! Thank you for your attention."
     }
   },
   "Home": {
-    "title": "Next.js Starter",
-    "tagLine": "Multilingual Next.js 16 Starter",
-    "description": "A multilingual Next.js 16 starter with built-in i18n support. Launch your global-ready web application with a clean, efficient, and SEO-friendly foundation."
+    "title": "The Forge Codes",
+    "tagLine": "Daily verified The Forge Roblox code tracker",
+    "description": "Find active and expired the forge codes with daily verification, timestamps, redeem steps, and troubleshooting."
   },
   "Blog": {
-    "title": "Blog Posts",
-    "description": "A list of blog posts"
+    "title": "Updates",
+    "description": "Latest updates for The Forge code tracking"
   },
   "About": {
-    "title": "About",
-    "description": "About the site"
+    "title": "About theforgecodes",
+    "description": "How we verify the forge codes and maintain update transparency"
   },
   "TermsOfService": {
     "title": "Terms of Service",
@@ -131,20 +109,20 @@
     "description": "Privacy Policy"
   },
   "Showcase": {
-    "title": "Built with This Starter",
-    "description": "Discover amazing products and websites built using this Next.js starter template.",
+    "title": "Related Resources",
+    "description": "Useful references for The Forge players and code trackers.",
     "visitSite": "Visit site"
   },
   "Submission": {
-    "badge": "Get Featured",
-    "title": "Submit Your Product",
-    "description": "Built something awesome with this starter? Share your product with our community and get featured on our showcase.",
-    "productNameLabel": "Product Name",
-    "productNamePlaceholder": "My Awesome Project",
-    "productUrlLabel": "Product URL",
-    "submit": "Submit Product",
+    "badge": "Updates",
+    "title": "Submit a Source",
+    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
+    "productNameLabel": "Source Name",
+    "productNamePlaceholder": "Official Discord / Creator post",
+    "productUrlLabel": "Source URL",
+    "submit": "Submit Source",
     "submitting": "Submitting...",
-    "successMessage": "Thank you! Your submission has been received. We'll review it shortly.",
+    "successMessage": "Thanks! Your source was received.",
     "errorMessage": "Something went wrong. Please try again."
   }
 }

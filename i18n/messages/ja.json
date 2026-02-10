@@ -1,150 +1,128 @@
 {
   "LanguageDetection": {
-    "title": "言語の提案",
-    "description": "ブラウザの言語設定が現在のサイト言語と異なっています。いつでも言語を切り替えることができます。",
-    "countdown": "閉じるまで {countdown} 秒",
-    "switchTo": "に切り替える"
+    "title": "Language Suggestion",
+    "description": "We noticed your browser language differs from the current site language. You can switch languages anytime.",
+    "countdown": "Closing in {countdown} seconds",
+    "switchTo": "Switch to"
   },
   "Header": {
     "links": [
       {
-        "name": "ブログ",
-        "href": "/blog"
+        "name": "Live Codes",
+        "href": "/the-forge-codes"
       },
       {
-        "name": "サイトについて",
-        "href": "/about"
+        "name": "Redeem Guide",
+        "href": "/how-to-redeem-the-forge-codes"
       },
       {
-        "name": "Source Code",
-        "href": "https://github.com/weijunext/nextjs-starter",
-        "target": "_blank",
-        "rel": "noopener noreferrer nofollow"
+        "name": "FAQ",
+        "href": "/the-forge-codes-faq"
       },
       {
-        "name": "Pro Version",
-        "href": "https://nexty.dev",
-        "target": "_blank",
-        "rel": "noopener noreferrer"
+        "name": "History",
+        "href": "/the-forge-codes-history"
+      },
+      {
+        "name": "Feb 2026",
+        "href": "/the-forge-codes/february-2026"
       }
     ]
   },
   "Footer": {
     "Copyright": "Copyright © {year} {name} All rights reserved.",
-    "PrivacyPolicy": "プライバシーポリシー",
-    "TermsOfService": "利用規約",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsOfService": "Terms of Service",
     "Links": {
       "groups": [
         {
-          "title": "言語",
+          "title": "Navigation",
           "links": [
             {
-              "href": "/en",
-              "name": "English",
-              "useA": true
+              "href": "/",
+              "name": "The Forge Codes"
             },
             {
-              "href": "/zh",
-              "name": "中文",
-              "useA": true
+              "href": "/the-forge-codes",
+              "name": "Live Codes"
             },
             {
-              "href": "/ja",
-              "name": "日本語",
-              "useA": true
+              "href": "/the-forge-codes/february-2026",
+              "name": "February 2026"
             }
           ]
         },
         {
-          "title": "オープンソースプロジェクト",
+          "title": "Guides",
           "links": [
             {
-              "href": "https://github.com/weijunext/nextjs-starter",
-              "name": "Next.js Starter",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/how-to-redeem-the-forge-codes",
+              "name": "How to Redeem"
             },
             {
-              "href": "https://github.com/weijunext/landing-page-boilerplate",
-              "name": "Landing Page Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-faq",
+              "name": "FAQ"
             },
             {
-              "href": "https://github.com/weijunext/weekly-boilerplate",
-              "name": "Blog Boilerplate",
-              "rel": "noopener noreferrer nofollow",
-              "target": "_blank"
+              "href": "/the-forge-codes-history",
+              "name": "Code History"
             }
           ]
         },
         {
-          "title": "その他の製品",
+          "title": "Brand",
           "links": [
             {
-              "href": "https://nexty.dev/",
-              "name": "Nexty - SaaS Template",
-              "rel": "noopener noreferrer",
-              "target": "_blank"
+              "href": "/about",
+              "name": "About theforgecodes"
             },
             {
-              "href": "https://myogimage.com/",
-              "name": "OG Image Generator",
+              "href": "https://theforgecodes.app",
+              "name": "theforgecodes.app",
               "rel": "noopener noreferrer",
               "target": "_blank"
             }
           ]
         }
       ]
-    },
-    "Newsletter": {
-      "title": "Next.js Starterのニュースレターに登録する",
-      "description": "Next.js Starterの最新のニュースと更新情報を入手します。",
-      "defaultErrorMessage": "有効なメールアドレスを入力してください。",
-      "successMessage": "登録が完了しました。",
-      "errorMessage": "登録に失敗しました。",
-      "errorMessage2": "登録に失敗しました。少し待ってから再試行してください。",
-      "subscribe": "登録する",
-      "subscribing": "登録中...",
-      "subscribed": "登録が完了しました。ありがとうございます。"
     }
   },
   "Home": {
-    "title": "Next.js Starter",
-    "tagLine": "Next.js 多言語スターターテンプレート",
-    "description": "多言語対応機能を搭載したNext.js 15スターターテンプレート。SEO最適化済みで、グローバル展開可能なウェブアプリを効率的に構築できます。"
+    "title": "The Forge Codes",
+    "tagLine": "Daily verified The Forge Roblox code tracker",
+    "description": "Find active and expired the forge codes with daily verification, timestamps, redeem steps, and troubleshooting."
   },
   "Blog": {
-    "title": "ブログ一覧",
-    "description": "ブログ投稿の一覧"
+    "title": "Updates",
+    "description": "Latest updates for The Forge code tracking"
   },
   "About": {
-    "title": "サイトについて",
-    "description": "サイトについて"
+    "title": "About theforgecodes",
+    "description": "How we verify the forge codes and maintain update transparency"
   },
   "TermsOfService": {
-    "title": "サービス利用規約",
-    "description": "サービス利用規約"
+    "title": "Terms of Service",
+    "description": "Terms of Service"
   },
   "PrivacyPolicy": {
-    "title": "プライバシーポリシー",
-    "description": "プライバシーポリシー"
+    "title": "Privacy Policy",
+    "description": "Privacy Policy"
   },
   "Showcase": {
-    "title": "導入事例",
-    "description": "このNext.jsスターターテンプレートを使用して構築された素晴らしい製品とウェブサイトをご覧ください。",
-    "visitSite": "サイトを見る"
+    "title": "Related Resources",
+    "description": "Useful references for The Forge players and code trackers.",
+    "visitSite": "Visit site"
   },
   "Submission": {
-    "badge": "掲載されよう",
-    "title": "製品を提出する",
-    "description": "このスターターで素晴らしいものを作りましたか？コミュニティと共有して、ショーケースに掲載されましょう。",
-    "productNameLabel": "製品名",
-    "productNamePlaceholder": "私の素晴らしいプロジェクト",
-    "productUrlLabel": "製品URL",
-    "submit": "製品を提出",
-    "submitting": "送信中...",
-    "successMessage": "ありがとうございます！提出を受け付けました。まもなく確認いたします。",
-    "errorMessage": "エラーが発生しました。もう一度お試しください。"
+    "badge": "Updates",
+    "title": "Submit a Source",
+    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
+    "productNameLabel": "Source Name",
+    "productNamePlaceholder": "Official Discord / Creator post",
+    "productUrlLabel": "Source URL",
+    "submit": "Submit Source",
+    "submitting": "Submitting...",
+    "successMessage": "Thanks! Your source was received.",
+    "errorMessage": "Something went wrong. Please try again."
   }
 }

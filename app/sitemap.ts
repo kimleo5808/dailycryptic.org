@@ -1,6 +1,5 @@
 import { siteConfig } from '@/config/site'
 import { DEFAULT_LOCALE, LOCALES } from '@/i18n/routing'
-import { getPosts } from '@/lib/getBlogs'
 import { MetadataRoute } from 'next'
 
 const siteUrl = siteConfig.url
@@ -11,7 +10,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticPages = [
     '',
-    '/blog',
+    '/the-forge-codes',
+    '/the-forge-codes/february-2026',
+    '/how-to-redeem-the-forge-codes',
+    '/the-forge-codes-faq',
+    '/the-forge-codes-history',
     '/about',
     '/privacy-policy',
     '/terms-of-service',
@@ -27,20 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   })
 
-  const blogPosts = await Promise.all(
-    LOCALES.map(async (locale) => {
-      const { posts } = await getPosts(locale)
-      return posts.map(post => ({
-        url: `${siteUrl}${locale === DEFAULT_LOCALE ? '' : `/${locale}`}/blog${post.slug}`,
-        lastModified: post.metadata.updatedAt || post.date,
-        changeFrequency: 'daily' as const,
-        priority: 0.7,
-      }))
-    })
-  ).then(results => results.flat())
-
   return [
     ...pages,
-    ...blogPosts,
   ]
 }
