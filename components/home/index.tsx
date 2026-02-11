@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 
 const latestSnapshot = forgeRecentSnapshots[0];
 const latestActivePreview = (latestSnapshot?.activeCodes ?? []).slice(0, 8);
@@ -200,15 +201,25 @@ const faqItems = [
 
 type RecentListProps = {
   currentDate?: string;
+  labels: {
+    liveHub: string;
+    history: string;
+    recentCodes: string;
+    viewAllHistory: string;
+    active: string;
+    expired: string;
+  };
+  locale: string;
 };
 
-function formatRecentDate(dateText: string) {
+function formatRecentDate(dateText: string, locale: string) {
   const date = new Date(`${dateText}T00:00:00Z`);
   if (Number.isNaN(date.getTime())) {
     return dateText;
   }
 
-  return date.toLocaleDateString("en-US", {
+  const localeMap: Record<string, string> = { en: "en-US", zh: "zh-CN", ja: "ja-JP" };
+  return date.toLocaleDateString(localeMap[locale] || "en-US", {
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -216,7 +227,7 @@ function formatRecentDate(dateText: string) {
   });
 }
 
-function RecentCodesList({ currentDate }: RecentListProps) {
+function RecentCodesList({ currentDate, labels, locale }: RecentListProps) {
   return (
     <aside className="overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-lg dark:border-indigo-900/40 dark:bg-slate-950">
       <div className="grid grid-cols-2 gap-2 p-4">
@@ -224,19 +235,19 @@ function RecentCodesList({ currentDate }: RecentListProps) {
           href="/the-forge-codes"
           className="rounded-lg bg-indigo-600 px-3 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-indigo-700"
         >
-          Live Hub
+          {labels.liveHub}
         </Link>
         <Link
           href="/the-forge-codes-history"
           className="rounded-lg bg-violet-600 px-3 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white transition-colors hover:bg-violet-700"
         >
-          History
+          {labels.history}
         </Link>
       </div>
 
       <div className="px-4 pb-2">
         <h2 className="font-heading text-2xl text-slate-900 dark:text-slate-100">
-          Recent Codes
+          {labels.recentCodes}
         </h2>
       </div>
 
@@ -251,10 +262,10 @@ function RecentCodesList({ currentDate }: RecentListProps) {
                 : "text-slate-700 hover:bg-indigo-50/60 dark:text-slate-300 dark:hover:bg-indigo-900/10"
             }`}
           >
-            <p>The Forge Codes ({formatRecentDate(item.date)})</p>
+            <p>The Forge Codes ({formatRecentDate(item.date, locale)})</p>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              <span className="font-semibold text-emerald-600 dark:text-emerald-400">{item.activeCodes.length}</span> active |{" "}
-              <span className="font-semibold text-red-500">{item.expiredCodes.length}</span> expired
+              <span className="font-semibold text-emerald-600 dark:text-emerald-400">{item.activeCodes.length}</span> {labels.active} |{" "}
+              <span className="font-semibold text-red-500">{item.expiredCodes.length}</span> {labels.expired}
             </p>
           </Link>
         ))}
@@ -265,7 +276,7 @@ function RecentCodesList({ currentDate }: RecentListProps) {
           href="/the-forge-codes-history"
           className="flex items-center justify-center gap-1 text-sm font-semibold text-indigo-600 transition-colors hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
         >
-          View All History →
+          {labels.viewAllHistory}
         </Link>
       </div>
     </aside>
@@ -288,7 +299,9 @@ function FaqAccordionItem({ question, answer }: { question: string; answer: stri
   );
 }
 
-export default function HomeComponent() {
+export default async function HomeComponent() {
+  const t = await getTranslations("HomePage");
+  const locale = await getLocale();
   return (
     <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
@@ -339,7 +352,7 @@ export default function HomeComponent() {
                   className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-orange-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-orange-600 hover:shadow-orange-500/30"
                 >
                   <span className="relative z-10 flex items-center gap-2">
-                    Open Live The Forge Codes Hub
+                    {t("hero.openLiveHub")}
                     <ArrowRight className="h-4 w-4" />
                   </span>
                   <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
@@ -348,7 +361,7 @@ export default function HomeComponent() {
                   href="/the-forge-codes-history"
                   className="inline-flex items-center gap-2 rounded-xl border-2 border-indigo-200 bg-white px-5 py-3 text-sm font-semibold text-indigo-700 transition-all hover:border-indigo-300 hover:bg-indigo-50 dark:border-indigo-800 dark:bg-slate-900 dark:text-indigo-300 dark:hover:bg-indigo-950/50"
                 >
-                  Browse Code History
+                  {t("hero.browseHistory")}
                   <ListChecks className="h-4 w-4" />
                 </Link>
               </div>
@@ -379,11 +392,10 @@ export default function HomeComponent() {
           <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
             <h2 className="flex items-center gap-2 font-heading text-2xl text-slate-900 dark:text-slate-100">
               <Gift className="h-5 w-5 text-indigo-500" />
-              Quick Active Preview
+              {t("quickPreview.title")}
             </h2>
-            <p className="mt-2 text-slate-500 dark:text-slate-400">
-              Preview only. For full status, sources, and detailed updates,
-              continue to the live <strong className="text-slate-700 dark:text-slate-200">the forge codes</strong> hub.
+            <p className="mt-2 text-slate-500 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: t("quickPreview.description") }}>
+
             </p>
 
             <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -410,7 +422,7 @@ export default function HomeComponent() {
                 href="/the-forge-codes"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition-colors hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
               >
-                See full active and expired the forge codes tables
+                {t("quickPreview.seeFullTables")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -420,12 +432,12 @@ export default function HomeComponent() {
           <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
             <h2 className="flex items-center gap-2 font-heading text-2xl text-slate-900 dark:text-slate-100">
               <CalendarClock className="h-5 w-5 text-indigo-500" />
-              Operational Snapshot
+              {t("snapshot.title")}
             </h2>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <article className="rounded-xl border border-slate-100 p-4 dark:border-slate-800">
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  Active Codes
+                  {t("snapshot.activeCodes")}
                 </p>
                 <p className="mt-1 font-heading text-3xl text-emerald-600 dark:text-emerald-400">
                   {forgeSiteFacts.activeCount}
@@ -433,7 +445,7 @@ export default function HomeComponent() {
               </article>
               <article className="rounded-xl border border-slate-100 p-4 dark:border-slate-800">
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  Expired Tracked
+                  {t("snapshot.expiredTracked")}
                 </p>
                 <p className="mt-1 font-heading text-3xl text-red-500">
                   {forgeSiteFacts.expiredCount}
@@ -441,7 +453,7 @@ export default function HomeComponent() {
               </article>
               <article className="rounded-xl border border-slate-100 p-4 dark:border-slate-800">
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  Latest Snapshot
+                  {t("snapshot.latestSnapshot")}
                 </p>
                 <p className="mt-1 font-heading text-3xl text-indigo-600 dark:text-indigo-400">
                   {forgeSiteFacts.latestSnapshotDate}
@@ -449,7 +461,7 @@ export default function HomeComponent() {
               </article>
               <article className="rounded-xl border border-slate-100 p-4 dark:border-slate-800">
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  Avg Search
+                  {t("snapshot.avgSearch")}
                 </p>
                 <p className="mt-1 font-heading text-3xl text-violet-600 dark:text-violet-400">
                   {forgeSiteFacts.monthlySearchEstimate}
@@ -498,10 +510,10 @@ export default function HomeComponent() {
           <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
             <h2 className="flex items-center gap-2 font-heading text-2xl text-slate-900 dark:text-slate-100">
               <Zap className="h-5 w-5 text-indigo-500" />
-              What You Can Get With The Forge Codes
+              {t("crafting.title")}
             </h2>
             <p className="mt-2 text-slate-500 dark:text-slate-400">
-              The Forge codes unlock rerolls, luck totems, boosts, gems, and crafting advantages. Below is the in-game crafting interface where you can use your rewards.
+              {t("crafting.description")}
             </p>
             <div className="mt-5 overflow-hidden rounded-xl border border-indigo-100 dark:border-indigo-900/40">
               <Image
@@ -518,11 +530,10 @@ export default function HomeComponent() {
           <section className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-950">
             <h2 className="flex items-center gap-2 font-heading text-2xl text-slate-900 dark:text-slate-100">
               <SearchCheck className="h-5 w-5 text-indigo-500" />
-              Homepage FAQ For The Forge Codes
+              {t("faq.title")}
             </h2>
-            <p className="mt-2 text-slate-500 dark:text-slate-400">
-              These quick answers summarize the most frequent decisions users
-              make before redeeming <strong className="text-slate-700 dark:text-slate-200">the forge codes</strong>.
+            <p className="mt-2 text-slate-500 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: t("faq.description") }}>
+
             </p>
             <div className="mt-5 flex flex-col gap-3">
               {faqItems.map((item) => (
@@ -538,7 +549,17 @@ export default function HomeComponent() {
 
         {/* Sidebar */}
         <div className="lg:sticky lg:top-20">
-          <RecentCodesList />
+          <RecentCodesList
+            locale={locale}
+            labels={{
+              liveHub: t("sidebar.liveHub"),
+              history: t("sidebar.history"),
+              recentCodes: t("sidebar.recentCodes"),
+              viewAllHistory: t("sidebar.viewAllHistory"),
+              active: t("sidebar.active"),
+              expired: t("sidebar.expired"),
+            }}
+          />
         </div>
       </div>
     </div>

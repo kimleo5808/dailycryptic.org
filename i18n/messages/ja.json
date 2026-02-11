@@ -1,80 +1,80 @@
 {
   "LanguageDetection": {
-    "title": "Language Suggestion",
-    "description": "We noticed your browser language differs from the current site language. You can switch languages anytime.",
-    "countdown": "Closing in {countdown} seconds",
-    "switchTo": "Switch to"
+    "title": "言語の提案",
+    "description": "ブラウザの言語が現在のサイト言語と異なることを検出しました。いつでも言語を切り替えることができます。",
+    "countdown": "{countdown} 秒後に閉じます",
+    "switchTo": "切り替える"
   },
   "Header": {
     "links": [
       {
-        "name": "Live Codes",
+        "name": "最新コード",
         "href": "/the-forge-codes"
       },
       {
-        "name": "Redeem Guide",
+        "name": "引き換えガイド",
         "href": "/how-to-redeem-the-forge-codes"
       },
       {
-        "name": "FAQ",
+        "name": "よくある質問",
         "href": "/the-forge-codes-faq"
       },
       {
-        "name": "History",
+        "name": "履歴",
         "href": "/the-forge-codes-history"
       }
     ]
   },
   "Footer": {
-    "Copyright": "Copyright © {year} {name} All rights reserved.",
-    "PrivacyPolicy": "Privacy Policy",
-    "TermsOfService": "Terms of Service",
+    "Copyright": "著作権 © {year} {name} 全著作権所有。",
+    "PrivacyPolicy": "プライバシーポリシー",
+    "TermsOfService": "利用規約",
     "Links": {
       "groups": [
         {
-          "title": "Navigation",
+          "title": "ナビゲーション",
           "links": [
             {
               "href": "/",
-              "name": "The Forge Codes"
+              "name": "The Forge コード"
             },
             {
               "href": "/the-forge-codes",
-              "name": "Live Codes"
+              "name": "最新コード"
             },
             {
               "href": "/the-forge-codes-history",
-              "name": "History"
+              "name": "履歴"
             }
           ]
         },
         {
-          "title": "Guides",
+          "title": "ガイド",
           "links": [
             {
               "href": "/how-to-redeem-the-forge-codes",
-              "name": "How to Redeem"
+              "name": "引き換え方法"
             },
             {
               "href": "/the-forge-codes-faq",
-              "name": "FAQ"
+              "name": "よくある質問"
             }
           ]
         },
         {
-          "title": "Legal & Info",
+          "title": "法的情報",
           "links": [
             {
               "href": "/about",
-              "name": "About theforgecodes"
+              "name": "theforgecodes について"
             },
             {
               "href": "/privacy-policy",
-              "name": "Privacy Policy"
+              "name": "プライバシーポリシー"
             },
             {
               "href": "/terms-of-service",
-              "name": "Terms of Service"
+              "name": "利用規約"
             }
           ]
         }
@@ -82,41 +82,273 @@
     }
   },
   "Home": {
-    "title": "The Forge Codes",
-    "tagLine": "Daily auto-collected The Forge Roblox code tracker",
-    "description": "Find active and expired the forge codes with daily auto-collected updates, timestamps, redeem steps, and troubleshooting."
+    "title": "The Forge コード",
+    "tagLine": "毎日自動収集される The Forge Roblox コードトラッカー",
+    "description": "有効・期限切れの The Forge コードを検索。毎日の自動収集更新、タイムスタンプ、引き換え手順、トラブルシューティング付き。"
   },
   "Blog": {
-    "title": "Updates",
-    "description": "Latest updates for The Forge code tracking"
+    "title": "更新情報",
+    "description": "The Forge コード追跡の最新アップデート"
   },
   "About": {
-    "title": "About theforgecodes",
-    "description": "How we verify the forge codes and maintain update transparency"
+    "title": "theforgecodes について",
+    "description": "The Forge コードの検証方法と更新の透明性について"
   },
   "TermsOfService": {
-    "title": "Terms of Service",
-    "description": "Terms of service for theforgecodes.app — usage rules, disclaimers, and acceptable use for our Roblox code tracking service."
+    "title": "利用規約",
+    "description": "theforgecodes.app の利用規約 — 利用ルール、免責事項、Roblox コード追跡サービスの利用規範。"
   },
   "PrivacyPolicy": {
-    "title": "Privacy Policy",
-    "description": "Privacy policy for theforgecodes.app — what data we collect, how we use analytics, and your privacy rights."
+    "title": "プライバシーポリシー",
+    "description": "theforgecodes.app のプライバシーポリシー — 収集データ、分析ツールの使用方法、お客様のプライバシー権利。"
   },
   "Showcase": {
-    "title": "Related Resources",
-    "description": "Useful references for The Forge players and code trackers.",
-    "visitSite": "Visit site"
+    "title": "関連リソース",
+    "description": "The Forge プレイヤーとコードトラッカー向けの便利な参考資料。",
+    "visitSite": "サイトを見る"
+  },
+  "ForgeSections": {
+    "tableHeaders": {
+      "code": "コード",
+      "reward": "報酬",
+      "status": "ステータス",
+      "lastTested": "最終テスト",
+      "source": "ソース"
+    },
+    "statusLabels": {
+      "active": "有効",
+      "expired": "期限切れ",
+      "added": "追加",
+      "retested": "再テスト"
+    },
+    "sidebar": {
+      "latest": "最新",
+      "history": "履歴",
+      "recentCodes": "最近のコード",
+      "viewAllHistory": "全履歴を見る →",
+      "active": "有効",
+      "expired": "期限切れ"
+    },
+    "hero": {
+      "lastVerified": "最終検証：{time}",
+      "heading": "The Forge コード：有効・期限切れ・毎日の自動収集更新",
+      "description": "これは <b>The Forge コード</b> のライブ回答ページです。毎日公開ソースから <b>The Forge コード</b> を自動収集し、有効と期限切れのステータスを分け、透明なログを公開しています。",
+      "activeCodes": "有効コード",
+      "expiredTracked": "追跡済み期限切れ",
+      "relatedKeywords": "関連キーワード",
+      "avgMonthlyVolume": "月間平均検索量",
+      "viewActiveBtn": "有効コードを見る",
+      "redeemGuideBtn": "The Forge コードの引き換え方法",
+      "disclaimer": "コードは公開ソースから自動集約されており、すぐに期限切れになる場合があります。報酬に頼る前に必ずゲーム内で確認してください。"
+    },
+    "activeTable": {
+      "title": "有効な The Forge コード",
+      "description": "現在有効な The Forge コードです。各行に報酬、ステータス、最終テスト日時を表示。"
+    },
+    "expiredTable": {
+      "title": "期限切れの The Forge コード",
+      "description": "期限切れコードを保持し、無駄な再試行を防ぎます。"
+    },
+    "redeem": {
+      "title": "The Forge でコードを引き換える方法",
+      "description": "コード入力場所を探している方は、以下の手順をお使いください。PCとモバイルの両方で動作します。",
+      "pcCaption": "PC：設定を開き、コード入力フィールドを見つける",
+      "mobileCaption": "モバイル：設定をタップしてコードを入力"
+    },
+    "troubleshoot": {
+      "title": "The Forge コードが機能しない理由",
+      "description": "コードの失敗問題の多くは、このチェックリストで1分以内に解決できます。"
+    },
+    "updateLog": {
+      "title": "The Forge コード更新ログ",
+      "description": "以下のイベントは、自動ソース更新に基づくコードの有効・期限切れ間の移動を記録しています。"
+    },
+    "faq": {
+      "title": "The Forge コード FAQ",
+      "description": "このFAQは、The Forge コードの引き換えフローと有効期限の動作に関するよくある質問をカバーしています。"
+    },
+    "redeemSteps": [
+      {
+        "title": "Roblox で The Forge を開く",
+        "detail": "PC またはモバイルでゲームを起動し、キャラクターが完全に読み込まれるまで待ちます。"
+      },
+      {
+        "title": "コードパネルを開く",
+        "detail": "UI で報酬またはギフトアイコンを見つけます。ここがコード入力場所です。"
+      },
+      {
+        "title": "コードを正確に貼り付ける",
+        "detail": "大文字小文字と記号をそのまま入力し、引き換えをタップします。"
+      },
+      {
+        "title": "報酬メッセージを確認",
+        "detail": "コードが有効な場合、報酬はすぐにインベントリまたはスピン残高に表示されます。"
+      }
+    ],
+    "troubleshootItems": [
+      {
+        "question": "なぜ The Forge コードが機能しないのですか？",
+        "answer": "ほとんどの失敗は、期限切れ、大文字小文字の間違い、貼り付け時の余分なスペースが原因です。"
+      },
+      {
+        "question": "同じコードを2回引き換えられますか？",
+        "answer": "いいえ。ほとんどの The Forge コードはアカウントごとに1回限りで、引き換え後は失敗します。"
+      },
+      {
+        "question": "The Forge の新しいコードはどのくらいの頻度で登場しますか？",
+        "answer": "本サイトは毎日複数回、複数の公開ソースから自動的に更新を収集しています。"
+      },
+      {
+        "question": "The Forge Roblox コードはすべてのデバイスで使えますか？",
+        "answer": "はい。ゲームビルドが最新であれば、同じコードは通常 PC とモバイルの両方で使用できます。"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "現在の最新 The Forge コードは何ですか？",
+        "answer": "ページ上部の有効コード表をご覧ください。コードは公開ソースから自動収集され、毎日更新されます。"
+      },
+      {
+        "question": "有効と期限切れの The Forge コードの違いは？",
+        "answer": "有効コードはソースの合意により動作中と判定されたコードです。期限切れコードは繰り返し利用不可と報告されたコードです。"
+      },
+      {
+        "question": "The Forge コードを素早く引き換えるには？",
+        "answer": "コードメニューを開き、正確にコードを貼り付けて引き換えます。引き換えガイドセクションに各ステップが表示されています。"
+      },
+      {
+        "question": "The Forge のコード入力場所はどこですか？",
+        "answer": "ゲーム内のコード入力ボックスに入力してください。Roblox カタログページではありません。"
+      },
+      {
+        "question": "なぜ期限切れの The Forge コードを残すのですか？",
+        "answer": "期限切れエントリを保持することで、繰り返しの失敗を防ぎ、履歴の透明性を維持します。"
+      },
+      {
+        "question": "このページは他の The Forge コードページとどう違いますか？",
+        "answer": "このページは日ごとのスナップショットアーカイブを保持し、複数のソースからの更新を1つのフィードにまとめています。"
+      }
+    ]
+  },
+  "TheForgeCodes": {
+    "title": "The Forge コード：最新の有効・期限切れ自動収集リスト",
+    "description": "最新の The Forge コードを取得。自動収集された有効・期限切れステータス、タイムスタンプ、引き換え手順、デイリーアーカイブリンク付き。"
+  },
+  "FAQ": {
+    "title": "The Forge コード FAQ：コードが失敗する理由と対処法",
+    "description": "The Forge Roblox コードに関するよくある質問。引き換え失敗、有効期限の仕組み、トラブルシューティングなど。"
+  },
+  "History": {
+    "title": "The Forge コード履歴：デイリースナップショットアーカイブとコードタイムライン",
+    "description": "月別に整理された The Forge コードのデイリースナップショットを閲覧。コードの追加・期限切れを追跡し、日ごとの変化を比較。"
+  },
+  "RedeemGuide": {
+    "title": "The Forge コードの引き換え方法（2026年ガイド）",
+    "description": "The Forge でのコード引き換え方法と、各 Roblox デバイスでのコード入力場所のステップバイステップガイド。"
+  },
+  "Month": {
+    "title": "The Forge コード 2026年2月：月間トレンド、アクティブフロー、アーカイブ",
+    "description": "2026年2月の The Forge コード月次レポート。トレンド分析、有効・期限切れパターン、引き換え利用ガイダンス、デイリーアーカイブリンク付き。"
+  },
+  "Daily": {
+    "title": "The Forge コード（{date}）：デイリー自動収集スナップショット",
+    "description": "The Forge コードのデイリースナップショットページ。自動収集された有効・期限切れリスト、引き換えガイダンス、ソースカバレッジ付き。"
   },
   "Submission": {
-    "badge": "Updates",
-    "title": "Submit a Source",
-    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
-    "productNameLabel": "Source Name",
-    "productNamePlaceholder": "Official Discord / Creator post",
-    "productUrlLabel": "Source URL",
-    "submit": "Submit Source",
-    "submitting": "Submitting...",
-    "successMessage": "Thanks! Your source was received.",
-    "errorMessage": "Something went wrong. Please try again."
+    "badge": "更新",
+    "title": "ソースを提出",
+    "description": "信頼できる The Forge コードのソースを共有してください。検証キューに追加される可能性があります。",
+    "productNameLabel": "ソース名",
+    "productNamePlaceholder": "公式 Discord / クリエイター投稿",
+    "productUrlLabel": "ソース URL",
+    "submit": "ソースを提出",
+    "submitting": "送信中...",
+    "successMessage": "ありがとうございます！ソースを受け取りました。",
+    "errorMessage": "問題が発生しました。もう一度お試しください。"
+  },
+  "HomePage": {
+    "sidebar": {
+      "liveHub": "ライブハブ",
+      "history": "履歴",
+      "recentCodes": "最近のコード",
+      "viewAllHistory": "全履歴を見る →",
+      "active": "有効",
+      "expired": "期限切れ"
+    },
+    "hero": {
+      "openLiveHub": "ライブ The Forge コードハブを開く",
+      "browseHistory": "コード履歴を閲覧"
+    },
+    "quickPreview": {
+      "title": "有効コード速覧",
+      "description": "プレビューのみ。完全なステータス、ソース、詳細な更新については、ライブ <strong>The Forge コード</strong>ハブをご覧ください。",
+      "seeFullTables": "有効・期限切れの The Forge コード全表を見る"
+    },
+    "snapshot": {
+      "title": "運用スナップショット",
+      "activeCodes": "有効コード",
+      "expiredTracked": "追跡済み期限切れ",
+      "latestSnapshot": "最新スナップショット",
+      "avgSearch": "平均検索量"
+    },
+    "crafting": {
+      "title": "The Forge コードで得られるもの",
+      "description": "The Forge コードはリロール、ラックトーテム、ブースト、ジェム、鍛造アドバンテージを解放します。以下はゲーム内鍛造インターフェースで、報酬を使用できます。"
+    },
+    "faq": {
+      "title": "The Forge コード ホームページ FAQ",
+      "description": "<strong>The Forge コード</strong>を引き換える前に、ユーザーが最もよく行う判断をまとめた回答です。"
+    }
+  },
+  "HistoryPage": {
+    "heading": "The Forge コード履歴",
+    "totalSnapshots": "総スナップショット数",
+    "uniqueCodesTracked": "追跡ユニークコード数",
+    "latestSnapshot": "最新スナップショット",
+    "viewLiveCodes": "ライブコードを見る",
+    "february2026Summary": "2026年2月サマリー",
+    "snapshotCount": "{count} スナップショット",
+    "snapshotsCount": "{count} スナップショット",
+    "latest": "最新",
+    "active": "有効",
+    "expired": "期限切れ",
+    "viewDetails": "詳細を見る →",
+    "showMore": "もっと見る",
+    "showLess": "閉じる"
+  },
+  "FaqPage": {
+    "heading": "The Forge コード FAQ",
+    "coreFaq": "基本FAQ",
+    "failureChecklist": "クイック障害チェックリスト"
+  },
+  "DailyPage": {
+    "dailySnapshot": "デイリースナップショット",
+    "activeCodes": "有効コード",
+    "expiredCodes": "期限切れコード",
+    "updateLog": "更新ログ",
+    "added": "追加",
+    "expired": "期限切れ",
+    "retested": "再テスト",
+    "ok": "正常",
+    "fetchError": "取得エラー"
+  },
+  "MonthPage": {
+    "monthlyArchive": "月間アーカイブ",
+    "monthlyOverview": "月間概要",
+    "snapshotDays": "スナップショット日数",
+    "uniqueActive": "ユニーク有効",
+    "uniqueExpired": "ユニーク期限切れ",
+    "peakUpdateDay": "更新ピーク日",
+    "weeklyTrend": "週間トレンド分析",
+    "monthlyPlaybook": "月間プレイブック",
+    "changeLog": "2月変更ログ",
+    "added": "追加",
+    "expired": "期限切れ",
+    "retested": "再テスト",
+    "snapshots": "スナップショット",
+    "active": "有効",
+    "expiredLabel": "期限切れ",
+    "addedLabel": "追加",
+    "expiredEvents": "期限切れイベント"
   }
 }

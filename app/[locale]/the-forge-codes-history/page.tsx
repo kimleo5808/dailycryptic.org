@@ -8,6 +8,7 @@ import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { CalendarClock, Database, Flame } from "lucide-react";
 import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 type Params = Promise<{ locale: string }>;
@@ -18,12 +19,12 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "History" });
 
   return constructMetadata({
     page: "History",
-    title: "The Forge Codes History: Daily Snapshot Archive and Code Timeline",
-    description:
-      "Browse every daily snapshot of the forge codes organized by month. Track when codes were added, expired, and compare changes across days.",
+    title: t("title"),
+    description: t("description"),
     keywords: [
       "the forge codes history", "the forge codes archive", "the forge codes daily snapshot",
       "the forge roblox codes history", "the forge past codes", "the forge expired codes list",
@@ -34,13 +35,16 @@ export async function generateMetadata({
   });
 }
 
-function formatMonthLabel(monthKey: string) {
+function formatMonthLabel(monthKey: string, locale: string) {
   const [year, month] = monthKey.split("-");
   const d = new Date(Number(year), Number(month) - 1, 1);
-  return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  const localeMap: Record<string, string> = { en: "en-US", zh: "zh-CN", ja: "ja-JP" };
+  return d.toLocaleDateString(localeMap[locale] || "en-US", { month: "long", year: "numeric" });
 }
 
-export default function ForgeHistoryPage() {
+export default async function ForgeHistoryPage() {
+  const t = await getTranslations("HistoryPage");
+  const locale = await getLocale();
   // Build snapshots sorted newest first
   const allSnapshots = [...forgeDailySnapshots].reverse();
   const latestDate = allSnapshots[0]?.date ?? "";
@@ -83,7 +87,7 @@ export default function ForgeHistoryPage() {
         <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
-          The Forge Codes History
+          {t("heading")}
         </h1>
         <p className="relative mt-4 max-w-3xl text-slate-700 dark:text-slate-300">
           Every daily snapshot of the forge codes, organized by month. Browse
@@ -97,7 +101,7 @@ export default function ForgeHistoryPage() {
             <CalendarClock className="h-5 w-5 shrink-0 text-indigo-500" />
             <div>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                Total snapshots
+                {t("totalSnapshots")}
               </p>
               <p className="font-heading text-2xl font-bold text-indigo-600 dark:text-indigo-400">
                 {totalSnapshots}
@@ -108,7 +112,7 @@ export default function ForgeHistoryPage() {
             <Database className="h-5 w-5 shrink-0 text-violet-500" />
             <div>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                Unique codes tracked
+                {t("uniqueCodesTracked")}
               </p>
               <p className="font-heading text-2xl font-bold text-violet-600 dark:text-violet-400">
                 {totalCodesTracked}
@@ -119,7 +123,7 @@ export default function ForgeHistoryPage() {
             <Flame className="h-5 w-5 shrink-0 text-orange-500" />
             <div>
               <p className="text-sm text-slate-500 dark:text-slate-400">
-                Latest snapshot
+                {t("latestSnapshot")}
               </p>
               <p className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
                 {latestDate}
@@ -133,14 +137,14 @@ export default function ForgeHistoryPage() {
             href="/the-forge-codes"
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-orange-500 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-orange-600"
           >
-            <span className="relative z-10">View Live Codes</span>
+            <span className="relative z-10">{t("viewLiveCodes")}</span>
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
           </Link>
           <Link
             href="/the-forge-codes/february-2026"
             className="inline-flex items-center gap-2 rounded-xl border-2 border-indigo-200 bg-white px-5 py-3 text-sm font-semibold text-indigo-700 transition-all hover:border-indigo-300 hover:bg-indigo-50 dark:border-indigo-800 dark:bg-slate-900 dark:text-indigo-300"
           >
-            February 2026 Summary
+            {t("february2026Summary")}
           </Link>
         </div>
       </header>
@@ -149,10 +153,21 @@ export default function ForgeHistoryPage() {
       {monthEntries.map(([monthKey, snapshots], index) => (
         <HistoryMonthGroup
           key={monthKey}
-          monthLabel={formatMonthLabel(monthKey)}
+          monthLabel={formatMonthLabel(monthKey, locale)}
           snapshots={snapshots}
           latestDate={latestDate}
           defaultOpen={index === 0}
+          locale={locale}
+          labels={{
+            snapshotCount: t("snapshotCount"),
+            snapshotsCount: t("snapshotsCount"),
+            latest: t("latest"),
+            active: t("active"),
+            expired: t("expired"),
+            viewDetails: t("viewDetails"),
+            showMore: t("showMore"),
+            showLess: t("showLess"),
+          }}
         />
       ))}
 

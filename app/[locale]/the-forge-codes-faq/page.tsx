@@ -5,6 +5,9 @@ import { constructMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/config/site";
 import { ChevronDown } from "lucide-react";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
+type FAQTranslatedItem = { question: string; answer: string };
 
 type Params = Promise<{ locale: string }>;
 
@@ -14,12 +17,12 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "FAQ" });
 
   return constructMetadata({
     page: "FAQ",
-    title: "The Forge Codes FAQ: Why Codes Fail and How to Fix",
-    description:
-      "Common questions about the forge codes roblox, including failed redemptions, expiration behavior, and redeem troubleshooting.",
+    title: t("title"),
+    description: t("description"),
     keywords: [
       "the forge codes faq", "the forge codes not working", "why are the forge codes not working",
       "the forge roblox codes help", "the forge codes expired", "the forge codes troubleshooting",
@@ -30,7 +33,19 @@ export async function generateMetadata({
   });
 }
 
-export default function ForgeFaqPage() {
+export default async function ForgeFaqPage() {
+  const t = await getTranslations("FaqPage");
+  const ft = await getTranslations("ForgeSections");
+
+  const translatedFaqItems: FAQTranslatedItem[] = [0, 1, 2, 3, 4, 5].map((i) => ({
+    question: ft(`faqItems.${i}.question`),
+    answer: ft(`faqItems.${i}.answer`),
+  }));
+  const translatedTroubleshootItems: FAQTranslatedItem[] = [0, 1, 2, 3].map((i) => ({
+    question: ft(`troubleshootItems.${i}.question`),
+    answer: ft(`troubleshootItems.${i}.answer`),
+  }));
+  // Keep original English data for JSON-LD structured data (SEO)
   const allFaqItems = [...forgeFaq, ...forgeTroubleshooting];
 
   return (
@@ -47,7 +62,7 @@ export default function ForgeFaqPage() {
         <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
-          The Forge Codes FAQ
+          {t("heading")}
         </h1>
         <p className="relative mt-4 text-slate-700 dark:text-slate-300">
           This FAQ is built for the forge codes search intent. It answers why
@@ -58,10 +73,10 @@ export default function ForgeFaqPage() {
       {/* Core FAQ accordion */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Core FAQ
+          {t("coreFaq")}
         </h2>
         <div className="mt-6 space-y-3">
-          {forgeFaq.map((item) => (
+          {translatedFaqItems.map((item) => (
             <details
               key={item.question}
               className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
@@ -81,10 +96,10 @@ export default function ForgeFaqPage() {
       {/* Fast failure checklist accordion */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Fast failure checklist
+          {t("failureChecklist")}
         </h2>
         <div className="mt-6 space-y-3">
-          {forgeTroubleshooting.map((item) => (
+          {translatedTroubleshootItems.map((item) => (
             <details
               key={item.question}
               className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"

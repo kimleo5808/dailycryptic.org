@@ -2,14 +2,11 @@ import {
   activeForgeCodes,
   expiredForgeCodes,
   forgeEditorialGuide,
-  forgeFaq,
   forgeKeywordNarrative,
   ForgeNarrativeSection,
   forgeOperationsManual,
   forgeRecentSnapshots,
-  forgeRedeemSteps,
   forgeSiteFacts,
-  forgeTroubleshooting,
   forgeUpdateLog,
   ForgeCode,
   UpdateLogItem,
@@ -28,6 +25,7 @@ import {
   SearchCheck,
 } from "lucide-react";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 /* ------------------------------------------------------------------ */
@@ -38,9 +36,11 @@ type CodeTableProps = {
   title: string;
   description: string;
   codes: ForgeCode[];
+  headers: { code: string; reward: string; status: string; lastTested: string; source: string };
+  statusLabels: { active: string; expired: string };
 };
 
-function CodeTable({ title, description, codes }: CodeTableProps) {
+function CodeTable({ title, description, codes, headers, statusLabels }: CodeTableProps) {
   return (
     <section className="w-full rounded-2xl border border-indigo-100 bg-white p-6 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
@@ -51,11 +51,11 @@ function CodeTable({ title, description, codes }: CodeTableProps) {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-indigo-100 bg-indigo-50/50 dark:border-indigo-900/40 dark:bg-indigo-950/30">
-              <th className="px-3 py-3 font-semibold">Code</th>
-              <th className="px-3 py-3 font-semibold">Reward</th>
-              <th className="px-3 py-3 font-semibold">Status</th>
-              <th className="px-3 py-3 font-semibold">Last tested</th>
-              <th className="px-3 py-3 font-semibold">Source</th>
+              <th className="px-3 py-3 font-semibold">{headers.code}</th>
+              <th className="px-3 py-3 font-semibold">{headers.reward}</th>
+              <th className="px-3 py-3 font-semibold">{headers.status}</th>
+              <th className="px-3 py-3 font-semibold">{headers.lastTested}</th>
+              <th className="px-3 py-3 font-semibold">{headers.source}</th>
             </tr>
           </thead>
           <tbody>
@@ -92,7 +92,7 @@ function CodeTable({ title, description, codes }: CodeTableProps) {
                     ) : (
                       <CircleX className="h-3.5 w-3.5" />
                     )}
-                    {item.status}
+                    {item.status === "active" ? statusLabels.active : statusLabels.expired}
                   </span>
                 </td>
                 <td className="px-3 py-3 text-slate-700 dark:text-slate-300">
@@ -124,10 +124,10 @@ function eventBadge(event: UpdateLogItem["event"]) {
   return "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300";
 }
 
-function eventLabel(event: UpdateLogItem["event"]) {
-  if (event === "added") return "Added";
-  if (event === "expired") return "Expired";
-  return "Retested";
+function getEventLabel(event: UpdateLogItem["event"], labels: { added: string; expired: string; retested: string }) {
+  if (event === "added") return labels.added;
+  if (event === "expired") return labels.expired;
+  return labels.retested;
 }
 
 /* ------------------------------------------------------------------ */
@@ -178,7 +178,9 @@ function NarrativeSection({ data }: { data: ForgeNarrativeSection }) {
 /*  Hero                                                               */
 /* ------------------------------------------------------------------ */
 
-export function ForgeHero() {
+export async function ForgeHero() {
+  const t = await getTranslations("ForgeSections");
+
   return (
     <section className="w-full">
       <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl border border-indigo-200/60 bg-gradient-to-br from-indigo-50 via-white to-violet-50 px-6 py-12 shadow-sm dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
@@ -193,40 +195,38 @@ export function ForgeHero() {
           </span>
           <span className="inline-flex items-center gap-2 rounded-full border border-indigo-300/60 bg-white/80 px-3 py-1 dark:border-indigo-800 dark:bg-slate-900/80">
             <CalendarClock className="h-3.5 w-3.5" />
-            Last verified: {forgeSiteFacts.lastVerified}
+            {t("hero.lastVerified", { time: forgeSiteFacts.lastVerified })}
           </span>
         </div>
 
         <h1 className="relative mt-6 max-w-4xl font-heading text-4xl font-black tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
-          The Forge Codes: Active, Expired, and Daily Auto-Collected Updates
+          {t("hero.heading")}
         </h1>
-        <p className="relative mt-4 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300">
-          This is a live answer page for <strong>the forge codes</strong>. We
-          auto-collect <strong>the forge codes</strong> from public sources
-          every day, split active and expired status, and publish transparent
-          logs so you can redeem faster with fewer failed attempts.
-        </p>
+        <p
+          className="relative mt-4 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300"
+          dangerouslySetInnerHTML={{ __html: t("hero.description") }}
+        />
 
         {/* Stats cards */}
         <div className="relative mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
-              label: "Active codes",
+              label: t("hero.activeCodes"),
               value: forgeSiteFacts.activeCount,
               color: "text-emerald-600 dark:text-emerald-400",
             },
             {
-              label: "Expired tracked",
+              label: t("hero.expiredTracked"),
               value: forgeSiteFacts.expiredCount,
               color: "text-red-500 dark:text-red-400",
             },
             {
-              label: "Related keywords",
+              label: t("hero.relatedKeywords"),
               value: forgeSiteFacts.trackedKeywords,
               color: "text-indigo-600 dark:text-indigo-400",
             },
             {
-              label: "Avg monthly volume",
+              label: t("hero.avgMonthlyVolume"),
               value: forgeSiteFacts.monthlySearchEstimate,
               color: "text-violet-600 dark:text-violet-400",
             },
@@ -252,7 +252,7 @@ export function ForgeHero() {
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
           >
             <span className="relative z-10 flex items-center gap-2">
-              View active the forge codes
+              {t("hero.viewActiveBtn")}
               <ArrowUpRight className="h-4 w-4" />
             </span>
             <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
@@ -261,13 +261,12 @@ export function ForgeHero() {
             href="/how-to-redeem-the-forge-codes"
             className="inline-flex items-center gap-2 rounded-xl border-2 border-indigo-200 bg-white px-5 py-3 text-sm font-semibold text-indigo-700 transition-colors hover:border-indigo-300 hover:bg-indigo-50 dark:border-indigo-800 dark:bg-slate-900 dark:text-indigo-300 dark:hover:bg-slate-800"
           >
-            How to redeem codes in the forge
+            {t("hero.redeemGuideBtn")}
             <Hammer className="h-4 w-4" />
           </Link>
         </div>
         <p className="relative mt-4 text-sm text-slate-600 dark:text-slate-300">
-          Codes are automatically aggregated from public sources and may expire
-          quickly. Always verify in-game before relying on rewards.
+          {t("hero.disclaimer")}
         </p>
       </div>
     </section>
@@ -278,21 +277,38 @@ export function ForgeHero() {
 /*  Overview: Active + Expired Code Tables                             */
 /* ------------------------------------------------------------------ */
 
-export function ForgeOverviewSections() {
+export async function ForgeOverviewSections() {
+  const t = await getTranslations("ForgeSections");
+  const headers = {
+    code: t("tableHeaders.code"),
+    reward: t("tableHeaders.reward"),
+    status: t("tableHeaders.status"),
+    lastTested: t("tableHeaders.lastTested"),
+    source: t("tableHeaders.source"),
+  };
+  const statusLabels = {
+    active: t("statusLabels.active"),
+    expired: t("statusLabels.expired"),
+  };
+
   return (
     <div className="w-full space-y-8">
       <div id="active-forge-codes">
         <CodeTable
-          title="Active The Forge Codes"
-          description="These are the current the forge working codes. Each row shows reward, status, and last tested timestamp."
+          title={t("activeTable.title")}
+          description={t("activeTable.description")}
           codes={activeForgeCodes}
+          headers={headers}
+          statusLabels={statusLabels}
         />
       </div>
 
       <CodeTable
-        title="Expired The Forge Codes"
-        description="We keep expired the forge codes visible so users do not waste time retrying old codes for the forge."
+        title={t("expiredTable.title")}
+        description={t("expiredTable.description")}
         codes={expiredForgeCodes}
+        headers={headers}
+        statusLabels={statusLabels}
       />
     </div>
   );
@@ -302,31 +318,32 @@ export function ForgeOverviewSections() {
 /*  Redeem Steps (full-width, 4-col grid)                              */
 /* ------------------------------------------------------------------ */
 
-export function ForgeRedeemSection() {
+export async function ForgeRedeemSection() {
+  const t = await getTranslations("ForgeSections");
+
   return (
     <section className="w-full rounded-2xl border border-indigo-100 bg-white p-6 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <h2 className="flex items-center gap-2 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         <Gift className="h-5 w-5 text-indigo-500" />
-        How to Redeem Codes in The Forge
+        {t("redeem.title")}
       </h2>
       <p className="mt-3 text-slate-700 dark:text-slate-300">
-        If you search where to put codes in the forge, use this exact flow. It
-        works for the forge roblox codes on both desktop and mobile.
+        {t("redeem.description")}
       </p>
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {forgeRedeemSteps.map((step, index) => (
+        {[0, 1, 2, 3].map((index) => (
           <div
-            key={step.title}
+            key={index}
             className="rounded-xl border border-indigo-100 bg-indigo-50/40 p-5 dark:border-indigo-900/50 dark:bg-slate-900"
           >
             <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700 dark:bg-indigo-900/60 dark:text-indigo-300">
               {index + 1}
             </div>
             <p className="font-semibold text-slate-900 dark:text-slate-100">
-              {step.title}
+              {t(`redeemSteps.${index}.title`)}
             </p>
             <p className="mt-1.5 text-sm text-slate-600 dark:text-slate-400">
-              {step.detail}
+              {t(`redeemSteps.${index}.detail`)}
             </p>
           </div>
         ))}
@@ -342,7 +359,7 @@ export function ForgeRedeemSection() {
             className="w-full object-cover"
           />
           <p className="bg-indigo-50/60 px-4 py-2 text-xs text-slate-600 dark:bg-indigo-950/30 dark:text-slate-400">
-            PC: Open Settings and find the Codes input field
+            {t("redeem.pcCaption")}
           </p>
         </div>
         <div className="overflow-hidden rounded-xl border border-indigo-100 dark:border-indigo-900/40">
@@ -354,7 +371,7 @@ export function ForgeRedeemSection() {
             className="w-full object-cover"
           />
           <p className="bg-indigo-50/60 px-4 py-2 text-xs text-slate-600 dark:bg-indigo-950/30 dark:text-slate-400">
-            Mobile: Tap Settings and enter your code
+            {t("redeem.mobileCaption")}
           </p>
         </div>
       </div>
@@ -366,29 +383,30 @@ export function ForgeRedeemSection() {
 /*  Troubleshooting (full-width, accordion)                            */
 /* ------------------------------------------------------------------ */
 
-export function ForgeTroubleshootSection() {
+export async function ForgeTroubleshootSection() {
+  const t = await getTranslations("ForgeSections");
+
   return (
     <section className="w-full rounded-2xl border border-indigo-100 bg-white p-6 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <h2 className="flex items-center gap-2 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         <AlertTriangle className="h-5 w-5 text-rose-500" />
-        Why The Forge Codes Are Not Working
+        {t("troubleshoot.title")}
       </h2>
       <p className="mt-3 text-slate-700 dark:text-slate-300">
-        Most users searching the forge codes not working can fix the issue in
-        under a minute with this checklist.
+        {t("troubleshoot.description")}
       </p>
       <div className="mt-5 space-y-3">
-        {forgeTroubleshooting.map((item) => (
+        {[0, 1, 2, 3].map((index) => (
           <details
-            key={item.question}
+            key={index}
             className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
           >
             <summary className="flex cursor-pointer items-center justify-between px-5 py-4 font-semibold text-slate-900 dark:text-slate-100 [&::-webkit-details-marker]:hidden">
-              {item.question}
+              {t(`troubleshootItems.${index}.question`)}
               <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180" />
             </summary>
             <div className="px-5 pb-4 text-sm text-slate-700 dark:text-slate-300">
-              {item.answer}
+              {t(`troubleshootItems.${index}.answer`)}
             </div>
           </details>
         ))}
@@ -401,16 +419,22 @@ export function ForgeTroubleshootSection() {
 /*  Update Log (full-width, timeline style)                            */
 /* ------------------------------------------------------------------ */
 
-export function ForgeUpdateLogSection() {
+export async function ForgeUpdateLogSection() {
+  const t = await getTranslations("ForgeSections");
+  const eventLabels = {
+    added: t("statusLabels.added"),
+    expired: t("statusLabels.expired"),
+    retested: t("statusLabels.retested"),
+  };
+
   return (
     <section className="w-full rounded-2xl border border-indigo-100 bg-white p-6 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <h2 className="flex items-center gap-2 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         <History className="h-5 w-5 text-indigo-500" />
-        The Forge Codes Update Log
+        {t("updateLog.title")}
       </h2>
       <p className="mt-3 text-slate-700 dark:text-slate-300">
-        Each event below documents how codes moved between active and expired
-        based on automated source refreshes.
+        {t("updateLog.description")}
       </p>
       <div className="relative mt-5 ml-4 border-l-2 border-indigo-200 pl-6 dark:border-indigo-800">
         {forgeUpdateLog.map((item) => (
@@ -429,7 +453,7 @@ export function ForgeUpdateLogSection() {
                   item.event
                 )}`}
               >
-                {eventLabel(item.event)}
+                {getEventLabel(item.event, eventLabels)}
               </span>
               <span className="font-mono text-xs text-indigo-700 dark:text-indigo-300">
                 {item.code}
@@ -449,29 +473,30 @@ export function ForgeUpdateLogSection() {
 /*  FAQ (full-width, accordion)                                        */
 /* ------------------------------------------------------------------ */
 
-export function ForgeFaqSection() {
+export async function ForgeFaqSection() {
+  const t = await getTranslations("ForgeSections");
+
   return (
     <section className="w-full rounded-2xl border border-indigo-100 bg-white p-6 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <h2 className="flex items-center gap-2 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
         <SearchCheck className="h-5 w-5 text-indigo-500" />
-        The Forge Codes FAQ
+        {t("faq.title")}
       </h2>
       <p className="mt-3 text-slate-700 dark:text-slate-300">
-        This FAQ covers the most searched questions around the forge codes
-        roblox, redeem flow, and expiration behavior.
+        {t("faq.description")}
       </p>
       <div className="mt-5 space-y-3">
-        {forgeFaq.map((item) => (
+        {[0, 1, 2, 3, 4, 5].map((index) => (
           <details
-            key={item.question}
+            key={index}
             className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
           >
             <summary className="flex cursor-pointer items-center justify-between px-5 py-4 font-semibold text-slate-900 dark:text-slate-100 [&::-webkit-details-marker]:hidden">
-              {item.question}
+              {t(`faqItems.${index}.question`)}
               <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180" />
             </summary>
             <div className="px-5 pb-4 text-sm text-slate-700 dark:text-slate-300">
-              {item.answer}
+              {t(`faqItems.${index}.answer`)}
             </div>
           </details>
         ))}
@@ -518,9 +543,11 @@ function formatRecentDate(dateText: string) {
   });
 }
 
-export function ForgeDailySnapshotArchive({
+export async function ForgeDailySnapshotArchive({
   currentDate,
 }: ForgeDailySnapshotArchiveProps) {
+  const t = await getTranslations("ForgeSections");
+
   return (
     <aside className="rounded-xl border border-indigo-200/70 bg-white p-4 shadow-sm dark:border-indigo-900/40 dark:bg-slate-950">
       <div className="grid grid-cols-2 gap-2">
@@ -528,18 +555,18 @@ export function ForgeDailySnapshotArchive({
           href="/the-forge-codes"
           className="rounded-md bg-indigo-600 px-3 py-2 text-center text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-indigo-700"
         >
-          Latest
+          {t("sidebar.latest")}
         </Link>
         <Link
           href="/the-forge-codes-history"
           className="rounded-md bg-violet-600 px-3 py-2 text-center text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:bg-violet-700"
         >
-          History
+          {t("sidebar.history")}
         </Link>
       </div>
 
       <h2 className="mt-4 font-heading text-3xl font-black text-slate-900 dark:text-slate-100">
-        Recent Codes
+        {t("sidebar.recentCodes")}
       </h2>
 
       <div className="mt-3 overflow-hidden rounded-lg border border-indigo-100 dark:border-indigo-900/50">
@@ -558,11 +585,11 @@ export function ForgeDailySnapshotArchive({
             </p>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
               <span className="text-emerald-600 dark:text-emerald-400">
-                {item.activeCodes.length} active
+                {item.activeCodes.length} {t("sidebar.active")}
               </span>{" "}
               ·{" "}
               <span className="text-red-500 dark:text-red-400">
-                {item.expiredCodes.length} expired
+                {item.expiredCodes.length} {t("sidebar.expired")}
               </span>
             </p>
           </Link>
@@ -574,7 +601,7 @@ export function ForgeDailySnapshotArchive({
           href="/the-forge-codes-history"
           className="flex items-center justify-center gap-1 text-sm font-semibold text-indigo-600 transition-colors hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
         >
-          View All History →
+          {t("sidebar.viewAllHistory")}
         </Link>
       </div>
     </aside>

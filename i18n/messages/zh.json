@@ -1,80 +1,80 @@
 {
   "LanguageDetection": {
-    "title": "Language Suggestion",
-    "description": "We noticed your browser language differs from the current site language. You can switch languages anytime.",
-    "countdown": "Closing in {countdown} seconds",
-    "switchTo": "Switch to"
+    "title": "语言建议",
+    "description": "我们注意到您的浏览器语言与当前网站语言不同。您可以随时切换语言。",
+    "countdown": "{countdown} 秒后关闭",
+    "switchTo": "切换到"
   },
   "Header": {
     "links": [
       {
-        "name": "Live Codes",
+        "name": "最新代码",
         "href": "/the-forge-codes"
       },
       {
-        "name": "Redeem Guide",
+        "name": "兑换指南",
         "href": "/how-to-redeem-the-forge-codes"
       },
       {
-        "name": "FAQ",
+        "name": "常见问题",
         "href": "/the-forge-codes-faq"
       },
       {
-        "name": "History",
+        "name": "历史记录",
         "href": "/the-forge-codes-history"
       }
     ]
   },
   "Footer": {
-    "Copyright": "Copyright © {year} {name} All rights reserved.",
-    "PrivacyPolicy": "Privacy Policy",
-    "TermsOfService": "Terms of Service",
+    "Copyright": "版权所有 © {year} {name} 保留所有权利。",
+    "PrivacyPolicy": "隐私政策",
+    "TermsOfService": "服务条款",
     "Links": {
       "groups": [
         {
-          "title": "Navigation",
+          "title": "导航",
           "links": [
             {
               "href": "/",
-              "name": "The Forge Codes"
+              "name": "The Forge 代码"
             },
             {
               "href": "/the-forge-codes",
-              "name": "Live Codes"
+              "name": "最新代码"
             },
             {
               "href": "/the-forge-codes-history",
-              "name": "History"
+              "name": "历史记录"
             }
           ]
         },
         {
-          "title": "Guides",
+          "title": "指南",
           "links": [
             {
               "href": "/how-to-redeem-the-forge-codes",
-              "name": "How to Redeem"
+              "name": "如何兑换"
             },
             {
               "href": "/the-forge-codes-faq",
-              "name": "FAQ"
+              "name": "常见问题"
             }
           ]
         },
         {
-          "title": "Legal & Info",
+          "title": "法律与信息",
           "links": [
             {
               "href": "/about",
-              "name": "About theforgecodes"
+              "name": "关于 theforgecodes"
             },
             {
               "href": "/privacy-policy",
-              "name": "Privacy Policy"
+              "name": "隐私政策"
             },
             {
               "href": "/terms-of-service",
-              "name": "Terms of Service"
+              "name": "服务条款"
             }
           ]
         }
@@ -82,41 +82,273 @@
     }
   },
   "Home": {
-    "title": "The Forge Codes",
-    "tagLine": "Daily auto-collected The Forge Roblox code tracker",
-    "description": "Find active and expired the forge codes with daily auto-collected updates, timestamps, redeem steps, and troubleshooting."
+    "title": "The Forge 代码",
+    "tagLine": "每日自动收集的 The Forge Roblox 代码追踪器",
+    "description": "查找有效和过期的 The Forge 代码，包含每日自动收集的更新、时间戳、兑换步骤和故障排除。"
   },
   "Blog": {
-    "title": "Updates",
-    "description": "Latest updates for The Forge code tracking"
+    "title": "更新动态",
+    "description": "The Forge 代码追踪的最新更新"
   },
   "About": {
-    "title": "About theforgecodes",
-    "description": "How we verify the forge codes and maintain update transparency"
+    "title": "关于 theforgecodes",
+    "description": "我们如何验证 The Forge 代码并保持更新透明度"
   },
   "TermsOfService": {
-    "title": "Terms of Service",
-    "description": "Terms of service for theforgecodes.app — usage rules, disclaimers, and acceptable use for our Roblox code tracking service."
+    "title": "服务条款",
+    "description": "theforgecodes.app 的服务条款 — 使用规则、免责声明以及我们 Roblox 代码追踪服务的使用规范。"
   },
   "PrivacyPolicy": {
-    "title": "Privacy Policy",
-    "description": "Privacy policy for theforgecodes.app — what data we collect, how we use analytics, and your privacy rights."
+    "title": "隐私政策",
+    "description": "theforgecodes.app 的隐私政策 — 我们收集哪些数据、如何使用分析工具以及您的隐私权利。"
   },
   "Showcase": {
-    "title": "Related Resources",
-    "description": "Useful references for The Forge players and code trackers.",
-    "visitSite": "Visit site"
+    "title": "相关资源",
+    "description": "为 The Forge 玩家和代码追踪者提供的实用参考。",
+    "visitSite": "访问网站"
+  },
+  "ForgeSections": {
+    "tableHeaders": {
+      "code": "代码",
+      "reward": "奖励",
+      "status": "状态",
+      "lastTested": "最后测试",
+      "source": "来源"
+    },
+    "statusLabels": {
+      "active": "有效",
+      "expired": "过期",
+      "added": "新增",
+      "retested": "重新测试"
+    },
+    "sidebar": {
+      "latest": "最新",
+      "history": "历史",
+      "recentCodes": "近期代码",
+      "viewAllHistory": "查看全部历史 →",
+      "active": "有效",
+      "expired": "过期"
+    },
+    "hero": {
+      "lastVerified": "最后验证：{time}",
+      "heading": "The Forge 代码：有效、过期和每日自动收集更新",
+      "description": "这是 <b>The Forge 代码</b> 的实时查询页面。我们每天从公共来源自动收集 <b>The Forge 代码</b>，区分有效和过期状态，并发布透明日志，帮助您更快兑换、减少失败尝试。",
+      "activeCodes": "有效代码",
+      "expiredTracked": "已追踪过期",
+      "relatedKeywords": "相关关键词",
+      "avgMonthlyVolume": "月均搜索量",
+      "viewActiveBtn": "查看有效代码",
+      "redeemGuideBtn": "如何兑换 The Forge 代码",
+      "disclaimer": "代码从公共来源自动聚合，可能很快过期。兑换前请务必在游戏内验证。"
+    },
+    "activeTable": {
+      "title": "有效的 The Forge 代码",
+      "description": "这些是当前有效的 The Forge 代码。每行显示奖励、状态和最后测试时间。"
+    },
+    "expiredTable": {
+      "title": "过期的 The Forge 代码",
+      "description": "我们保留过期代码以便用户不会浪费时间重试已失效的代码。"
+    },
+    "redeem": {
+      "title": "如何在 The Forge 中兑换代码",
+      "description": "如果您在搜索代码输入位置，请使用以下步骤。适用于 PC 和移动端。",
+      "pcCaption": "PC端：打开设置，找到代码输入框",
+      "mobileCaption": "移动端：点击设置，输入您的代码"
+    },
+    "troubleshoot": {
+      "title": "为什么 The Forge 代码不起作用",
+      "description": "大多数代码失败问题都可以在一分钟内通过此清单解决。"
+    },
+    "updateLog": {
+      "title": "The Forge 代码更新日志",
+      "description": "以下事件记录了代码在有效和过期之间的状态变化。"
+    },
+    "faq": {
+      "title": "The Forge 代码常见问题",
+      "description": "本 FAQ 涵盖了关于 The Forge 代码兑换流程和过期机制的常见问题。"
+    },
+    "redeemSteps": [
+      {
+        "title": "在 Roblox 中打开 The Forge",
+        "detail": "在 PC 或移动端启动游戏，等待角色完全加载。"
+      },
+      {
+        "title": "打开代码面板",
+        "detail": "在界面中找到奖励或礼物图标，这就是输入代码的位置。"
+      },
+      {
+        "title": "精确粘贴代码",
+        "detail": "输入代码时保持大小写和符号一致，然后点击兑换。"
+      },
+      {
+        "title": "确认奖励信息",
+        "detail": "如果代码有效，奖励会立即出现在您的背包或转盘余额中。"
+      }
+    ],
+    "troubleshootItems": [
+      {
+        "question": "为什么 The Forge 代码对我不起作用？",
+        "answer": "大多数失败是因为代码过期、大小写错误或粘贴时有多余空格。"
+      },
+      {
+        "question": "同一个代码可以兑换两次吗？",
+        "answer": "不可以。大多数 The Forge 代码每个账号只能使用一次，兑换后再次输入会失败。"
+      },
+      {
+        "question": "The Forge 新代码多久出现一次？",
+        "answer": "本站每天多次从多个公共来源自动收集更新。"
+      },
+      {
+        "question": "The Forge Roblox 代码在所有设备上都能用吗？",
+        "answer": "是的。只要游戏版本是最新的，同一代码通常在 PC 和移动端都能使用。"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "现在最新的 The Forge 代码是什么？",
+        "answer": "请查看页面顶部的有效代码表。代码从公共来源自动收集，每日更新。"
+      },
+      {
+        "question": "有效和过期的 The Forge 代码有什么区别？",
+        "answer": "有效代码是来源共识标记为可用的代码。过期代码是被多次标记为不可用的代码。"
+      },
+      {
+        "question": "如何快速兑换 The Forge 代码？",
+        "answer": "打开代码菜单，精确粘贴代码，然后兑换。兑换指南部分展示了每个步骤。"
+      },
+      {
+        "question": "在哪里输入 The Forge 代码？",
+        "answer": "在游戏内的代码输入框中输入，而不是在 Roblox 目录页面。"
+      },
+      {
+        "question": "为什么要保留过期的 The Forge 代码？",
+        "answer": "保留过期条目可以防止重复失败尝试，并保持历史透明度。"
+      },
+      {
+        "question": "这个页面与其他 The Forge 代码页面有什么不同？",
+        "answer": "本页面保留逐日快照存档，并将多个来源的更新汇总到一个信息流中。"
+      }
+    ]
+  },
+  "TheForgeCodes": {
+    "title": "The Forge 代码：最新有效与过期自动收集列表",
+    "description": "获取最新的 The Forge 代码，包含自动收集的有效和过期状态、时间戳、兑换步骤和每日存档链接。"
+  },
+  "FAQ": {
+    "title": "The Forge 代码常见问题：为什么代码失效及如何解决",
+    "description": "关于 The Forge Roblox 代码的常见问题，包括兑换失败、过期机制和故障排除。"
+  },
+  "History": {
+    "title": "The Forge 代码历史：每日快照存档与代码时间线",
+    "description": "按月浏览 The Forge 代码的每日快照。追踪代码的添加、过期时间，比较不同日期的变化。"
+  },
+  "RedeemGuide": {
+    "title": "如何兑换 The Forge 代码（2026 指南）",
+    "description": "分步指南：如何在 The Forge 中兑换代码以及在各 Roblox 设备上输入代码的位置。"
+  },
+  "Month": {
+    "title": "The Forge 代码 2026 年 2 月：月度趋势、活跃动态与存档",
+    "description": "2026 年 2 月 The Forge 代码月度报告，包含趋势分析、有效和过期模式、兑换使用指导和每日存档链接。"
+  },
+  "Daily": {
+    "title": "The Forge 代码（{date}）：每日自动收集快照",
+    "description": "The Forge 代码每日快照页面，包含自动收集的有效和过期列表、兑换指导和来源覆盖。"
   },
   "Submission": {
-    "badge": "Updates",
-    "title": "Submit a Source",
-    "description": "Share a reliable source for the forge codes and we may add it to our verification queue.",
-    "productNameLabel": "Source Name",
-    "productNamePlaceholder": "Official Discord / Creator post",
-    "productUrlLabel": "Source URL",
-    "submit": "Submit Source",
-    "submitting": "Submitting...",
-    "successMessage": "Thanks! Your source was received.",
-    "errorMessage": "Something went wrong. Please try again."
+    "badge": "更新",
+    "title": "提交来源",
+    "description": "分享一个可靠的 The Forge 代码来源，我们可能会将其加入验证队列。",
+    "productNameLabel": "来源名称",
+    "productNamePlaceholder": "官方 Discord / 创作者帖子",
+    "productUrlLabel": "来源网址",
+    "submit": "提交来源",
+    "submitting": "提交中...",
+    "successMessage": "感谢！您的来源已收到。",
+    "errorMessage": "出了点问题，请重试。"
+  },
+  "HomePage": {
+    "sidebar": {
+      "liveHub": "实时中心",
+      "history": "历史记录",
+      "recentCodes": "近期代码",
+      "viewAllHistory": "查看全部历史 →",
+      "active": "有效",
+      "expired": "过期"
+    },
+    "hero": {
+      "openLiveHub": "打开实时 The Forge 代码中心",
+      "browseHistory": "浏览代码历史"
+    },
+    "quickPreview": {
+      "title": "有效代码速览",
+      "description": "仅为预览。如需完整状态、来源和详细更新，请前往实时 <strong>The Forge 代码</strong>中心。",
+      "seeFullTables": "查看完整的有效和过期 The Forge 代码表"
+    },
+    "snapshot": {
+      "title": "运营快照",
+      "activeCodes": "有效代码",
+      "expiredTracked": "已追踪过期",
+      "latestSnapshot": "最新快照",
+      "avgSearch": "平均搜索量"
+    },
+    "crafting": {
+      "title": "The Forge 代码能获得什么",
+      "description": "The Forge 代码可解锁重掷、幸运图腾、加成、宝石和锻造优势。以下是游戏内锻造界面，您可以在此使用奖励。"
+    },
+    "faq": {
+      "title": "The Forge 代码首页常见问题",
+      "description": "以下快速回答总结了用户在兑换 <strong>The Forge 代码</strong>之前最常见的决策问题。"
+    }
+  },
+  "HistoryPage": {
+    "heading": "The Forge 代码历史",
+    "totalSnapshots": "总快照数",
+    "uniqueCodesTracked": "追踪的唯一代码",
+    "latestSnapshot": "最新快照",
+    "viewLiveCodes": "查看实时代码",
+    "february2026Summary": "2026年2月摘要",
+    "snapshotCount": "{count} 个快照",
+    "snapshotsCount": "{count} 个快照",
+    "latest": "最新",
+    "active": "有效",
+    "expired": "过期",
+    "viewDetails": "查看详情 →",
+    "showMore": "展开更多",
+    "showLess": "收起"
+  },
+  "FaqPage": {
+    "heading": "The Forge 代码常见问题",
+    "coreFaq": "核心常见问题",
+    "failureChecklist": "快速故障排查清单"
+  },
+  "DailyPage": {
+    "dailySnapshot": "每日快照",
+    "activeCodes": "有效代码",
+    "expiredCodes": "过期代码",
+    "updateLog": "更新日志",
+    "added": "新增",
+    "expired": "过期",
+    "retested": "重新测试",
+    "ok": "正常",
+    "fetchError": "获取失败"
+  },
+  "MonthPage": {
+    "monthlyArchive": "月度存档",
+    "monthlyOverview": "月度概览",
+    "snapshotDays": "快照天数",
+    "uniqueActive": "唯一有效",
+    "uniqueExpired": "唯一过期",
+    "peakUpdateDay": "更新高峰日",
+    "weeklyTrend": "每周趋势分析",
+    "monthlyPlaybook": "月度操作手册",
+    "changeLog": "2月变更日志",
+    "added": "新增",
+    "expired": "过期",
+    "retested": "重新测试",
+    "snapshots": "个快照",
+    "active": "有效",
+    "expiredLabel": "过期",
+    "addedLabel": "新增",
+    "expiredEvents": "过期事件"
   }
 }

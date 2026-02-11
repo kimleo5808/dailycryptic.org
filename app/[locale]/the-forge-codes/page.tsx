@@ -2,6 +2,7 @@ import ForgeHubPage from "@/components/forge/ForgeHubPage";
 import { Locale } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 type Params = Promise<{ locale: string }>;
 
@@ -11,12 +12,12 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "TheForgeCodes" });
 
   return constructMetadata({
     page: "TheForgeCodes",
-    title: "The Forge Codes: Latest Active & Expired Auto-Collected List",
-    description:
-      "Get the latest the forge codes with auto-collected active and expired status, timestamps, redeem steps, and daily archive links.",
+    title: t("title"),
+    description: t("description"),
     keywords: [
       "the forge codes", "the forge codes today", "the forge roblox codes",
       "codes for the forge roblox", "the forge codes list", "the forge active codes",

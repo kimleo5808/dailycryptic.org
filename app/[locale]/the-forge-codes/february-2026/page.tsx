@@ -9,6 +9,8 @@ import { Locale } from "@/i18n/routing";
 import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 
 type Params = Promise<{ locale: string }>;
 
@@ -63,10 +65,10 @@ function eventBadge(event: string) {
   return "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300";
 }
 
-function eventLabel(event: string) {
-  if (event === "added") return "Added";
-  if (event === "expired") return "Expired";
-  return "Retested";
+function getEventLabel(event: string, labels: { added: string; expired: string; retested: string }) {
+  if (event === "added") return labels.added;
+  if (event === "expired") return labels.expired;
+  return labels.retested;
 }
 
 export async function generateMetadata({
@@ -75,12 +77,12 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Month" });
 
   return constructMetadata({
     page: "Month",
-    title: "The Forge Codes February 2026: Monthly Trend, Active Flow, and Archive",
-    description:
-      "Monthly report for The Forge codes in February 2026 with trend analysis, active and expired patterns, redeem usage guidance, and daily archive links.",
+    title: t("title"),
+    description: t("description"),
     keywords: [
       "the forge codes february 2026", "the forge codes feb 2026", "the forge roblox codes february",
       "the forge codes monthly report", "the forge codes 2026 archive",
@@ -91,7 +93,10 @@ export async function generateMetadata({
   });
 }
 
-export default function February2026Page() {
+export default async function February2026Page() {
+  const mt = await getTranslations("MonthPage");
+  const locale = await getLocale();
+  const eventLabels = { added: mt("added"), expired: mt("expired"), retested: mt("retested") };
   const monthSnapshots = getForgeMonthSnapshots("2026-02");
   const monthBase = monthSnapshots.length > 0 ? monthSnapshots : [forgeLatestSnapshot];
   const sorted = byDateDesc(monthBase);
@@ -190,7 +195,7 @@ export default function February2026Page() {
         <div className="pointer-events-none absolute -left-20 -top-20 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl dark:bg-indigo-800/20" />
         <div className="pointer-events-none absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-violet-200/30 blur-3xl dark:bg-violet-800/20" />
         <p className="relative text-xs uppercase tracking-[0.16em] text-indigo-700 dark:text-indigo-300">
-          Monthly archive
+          {mt("monthlyArchive")}
         </p>
         <h1 className="relative mt-2 font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
           The Forge Codes February 2026: Monthly Trend, Active Flow, and Archive
@@ -205,14 +210,14 @@ export default function February2026Page() {
       {/* Monthly overview stats */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Monthly Overview
+          {mt("monthlyOverview")}
         </h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: "Snapshot days", value: monthBase.length, color: "text-indigo-600 dark:text-indigo-400" },
-            { label: "Unique active", value: uniqueActive.length, color: "text-emerald-600 dark:text-emerald-400" },
-            { label: "Unique expired", value: uniqueExpired.length, color: "text-red-500 dark:text-red-400" },
-            { label: "Peak update day", value: longDate(peakDay.date), color: "text-violet-600 dark:text-violet-400", small: true },
+            { label: mt("snapshotDays"), value: monthBase.length, color: "text-indigo-600 dark:text-indigo-400" },
+            { label: mt("uniqueActive"), value: uniqueActive.length, color: "text-emerald-600 dark:text-emerald-400" },
+            { label: mt("uniqueExpired"), value: uniqueExpired.length, color: "text-red-500 dark:text-red-400" },
+            { label: mt("peakUpdateDay"), value: longDate(peakDay.date), color: "text-violet-600 dark:text-violet-400", small: true },
           ].map((stat) => (
             <div
               key={stat.label}
@@ -253,7 +258,7 @@ export default function February2026Page() {
       {/* Weekly trend */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Weekly Trend Breakdown
+          {mt("weeklyTrend")}
         </h2>
         <div className="mt-4 grid gap-4">
           {weekly.map((item) => (
@@ -265,12 +270,12 @@ export default function February2026Page() {
                 Week {item.week} ({weekRange(item.week)})
               </p>
               <div className="mt-2 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-slate-300">
-                <span>{item.items.length} snapshot(s)</span>
-                <span className="text-emerald-600 dark:text-emerald-400">{item.active} active</span>
-                <span className="text-red-500 dark:text-red-400">{item.expired} expired</span>
-                <span>{item.added} added</span>
-                <span>{item.expiredEvents} expired events</span>
-                <span>{item.retested} retested</span>
+                <span>{item.items.length} {mt("snapshots")}</span>
+                <span className="text-emerald-600 dark:text-emerald-400">{item.active} {mt("active")}</span>
+                <span className="text-red-500 dark:text-red-400">{item.expired} {mt("expiredLabel")}</span>
+                <span>{item.added} {mt("addedLabel")}</span>
+                <span>{item.expiredEvents} {mt("expiredEvents")}</span>
+                <span>{item.retested} {mt("retested")}</span>
               </div>
             </article>
           ))}
@@ -324,7 +329,7 @@ export default function February2026Page() {
       {/* Monthly playbook with H3 */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          Monthly Playbook
+          {mt("monthlyPlaybook")}
         </h2>
         <div className="mt-6 space-y-6">
           {monthPlaybook.map((item, index) => (
@@ -350,7 +355,7 @@ export default function February2026Page() {
       {/* February change log - timeline */}
       <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
         <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-          February Change Log
+          {mt("changeLog")}
         </h2>
         <div className="relative mt-5 ml-4 border-l-2 border-indigo-200 pl-6 dark:border-indigo-800">
           {sorted.flatMap((snapshot) =>
@@ -367,7 +372,7 @@ export default function February2026Page() {
                   <span
                     className={`rounded-full px-2.5 py-1 text-xs font-medium ${eventBadge(item.event)}`}
                   >
-                    {eventLabel(item.event)}
+                    {getEventLabel(item.event, eventLabels)}
                   </span>
                   <span className="font-mono text-xs text-indigo-700 dark:text-indigo-300">
                     {item.code}

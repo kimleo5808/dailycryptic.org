@@ -11,6 +11,7 @@ import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { CheckCircle2, ChevronDown, CircleX } from "lucide-react";
 import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 type Params = Promise<{
@@ -52,14 +53,15 @@ function isIsoDate(input: string): boolean {
   return /^\d{4}-\d{2}-\d{2}$/.test(input);
 }
 
-function toLongDate(input: string): string {
+function toLongDate(input: string, locale = "en"): string {
   const [year, month, day] = input.split("-").map((value) => Number(value));
   if (!year || !month || !day) {
     return input;
   }
 
+  const localeMap: Record<string, string> = { en: "en-US", zh: "zh-CN", ja: "ja-JP" };
   const date = new Date(Date.UTC(year, month - 1, day));
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString(localeMap[locale] || "en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -147,10 +149,10 @@ function eventBadge(event: string) {
   return "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300";
 }
 
-function eventLabel(event: string) {
-  if (event === "added") return "Added";
-  if (event === "expired") return "Expired";
-  return "Retested";
+function eventLabel(event: string, labels: { added: string; expired: string; retested: string }) {
+  if (event === "added") return labels.added;
+  if (event === "expired") return labels.expired;
+  return labels.retested;
 }
 
 export async function generateMetadata({
@@ -160,12 +162,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, date } = await params;
   const formattedDate = toLongDate(date);
+  const t = await getTranslations({ locale, namespace: "Daily" });
 
   return constructMetadata({
     page: "Daily",
-    title: `The Forge Codes (${formattedDate}): Daily Auto-Collected Snapshot`,
-    description:
-      "Daily snapshot page for the forge codes with auto-collected active and expired lists, redeem guidance, and source coverage.",
+    title: t("title", { date: formattedDate }),
+    description: t("description"),
     keywords: [
       `the forge codes ${formattedDate}`, "the forge codes today", "the forge roblox codes daily",
       "the forge codes active", "the forge codes expired", "the forge daily snapshot",
@@ -182,6 +184,8 @@ export default async function DailyForgeCodesPage({
   params: Params;
 }) {
   const { date } = await params;
+  const dt = await getTranslations("DailyPage");
+  const locale = await getLocale();
 
   if (!isIsoDate(date)) {
     notFound();
@@ -193,7 +197,8 @@ export default async function DailyForgeCodesPage({
   }
 
   const previousSnapshot = getPreviousSnapshot(snapshot.date);
-  const formattedDate = toLongDate(snapshot.date);
+  const formattedDate = toLongDate(snapshot.date, locale);
+  const eventLabels = { added: dt("added"), expired: dt("expired"), retested: dt("retested") };
 
   const activeCount = snapshot.activeCodes.length;
   const expiredCount = snapshot.expiredCodes.length;
@@ -228,7 +233,7 @@ export default async function DailyForgeCodesPage({
             <div className="pointer-events-none absolute -left-20 -top-20 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl dark:bg-indigo-800/20" />
             <div className="pointer-events-none absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-violet-200/30 blur-3xl dark:bg-violet-800/20" />
             <p className="relative text-xs uppercase tracking-[0.16em] text-indigo-700 dark:text-indigo-300">
-              Daily snapshot
+              {dt("dailySnapshot")}
             </p>
             <h1 className="relative mt-2 font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
               The Forge Codes ({formattedDate})
@@ -262,8 +267,8 @@ export default async function DailyForgeCodesPage({
             </p>
           </section>
 
-          <CodeList title="Active codes" codes={snapshot.activeCodes} />
-          <CodeList title="Expired codes" codes={snapshot.expiredCodes} />
+          <CodeList title={dt("activeCodes")} codes={snapshot.activeCodes} />
+          <CodeList title={dt("expiredCodes")} codes={snapshot.expiredCodes} />
 
           {/* How to redeem */}
           <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
@@ -357,7 +362,7 @@ export default async function DailyForgeCodesPage({
                 >
                   <span className="font-medium">{source.name}</span>: {source.foundCodes} codes ·{" "}
                   <span className={source.ok ? "text-emerald-600 dark:text-emerald-400" : "text-rose-500 dark:text-rose-400"}>
-                    {source.ok ? "ok" : "fetch-error"}
+                    {source.ok ? dt("ok") : dt("fetchError")}
                   </span>
                 </li>
               ))}
@@ -367,7 +372,7 @@ export default async function DailyForgeCodesPage({
           {/* Update log - timeline style */}
           <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
             <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
-              Update Log
+              {dt("updateLog")}
             </h2>
             <div className="relative mt-5 ml-4 border-l-2 border-indigo-200 pl-6 dark:border-indigo-800">
               {snapshot.updateLog.map((item) => (
@@ -383,7 +388,7 @@ export default async function DailyForgeCodesPage({
                     <span
                       className={`rounded-full px-2.5 py-1 text-xs font-medium ${eventBadge(item.event)}`}
                     >
-                      {eventLabel(item.event)}
+                      {eventLabel(item.event, eventLabels)}
                     </span>
                     <span className="font-mono text-xs text-indigo-700 dark:text-indigo-300">
                       {item.code}

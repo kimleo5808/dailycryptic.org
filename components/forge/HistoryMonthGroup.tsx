@@ -10,18 +10,32 @@ export type SnapshotCard = {
   expiredCount: number;
 };
 
+type HistoryLabels = {
+  snapshotCount: string;
+  snapshotsCount: string;
+  latest: string;
+  active: string;
+  expired: string;
+  viewDetails: string;
+  showMore: string;
+  showLess: string;
+};
+
 type Props = {
   monthLabel: string;
   snapshots: SnapshotCard[];
   latestDate: string;
   defaultOpen?: boolean;
+  labels?: HistoryLabels;
+  locale?: string;
 };
 
 const VISIBLE_COUNT = 6;
 
-function formatCardDate(dateStr: string) {
+function formatCardDate(dateStr: string, locale?: string) {
   const d = new Date(`${dateStr}T00:00:00Z`);
-  return d.toLocaleDateString("en-US", {
+  const localeMap: Record<string, string> = { en: "en-US", zh: "zh-CN", ja: "ja-JP" };
+  return d.toLocaleDateString(localeMap[locale ?? "en"] || "en-US", {
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -29,11 +43,24 @@ function formatCardDate(dateStr: string) {
   });
 }
 
+const defaultLabels: HistoryLabels = {
+  snapshotCount: "{count} snapshot",
+  snapshotsCount: "{count} snapshots",
+  latest: "Latest",
+  active: "active",
+  expired: "expired",
+  viewDetails: "View Details →",
+  showMore: "Show More",
+  showLess: "Show Less",
+};
+
 export default function HistoryMonthGroup({
   monthLabel,
   snapshots,
   latestDate,
   defaultOpen = false,
+  labels = defaultLabels,
+  locale,
 }: Props) {
   const [sectionOpen, setSectionOpen] = useState(defaultOpen);
   const [expanded, setExpanded] = useState(false);
@@ -54,7 +81,7 @@ export default function HistoryMonthGroup({
             {monthLabel}
           </h2>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-            {snapshots.length} snapshot{snapshots.length !== 1 ? "s" : ""}
+            {(snapshots.length !== 1 ? labels.snapshotsCount : labels.snapshotCount).replace("{count}", String(snapshots.length))}
           </p>
         </div>
         <ChevronDown
@@ -79,11 +106,11 @@ export default function HistoryMonthGroup({
                     <div>
                       <div className="flex items-start justify-between gap-2">
                         <p className="font-heading text-base font-bold text-slate-900 dark:text-slate-100">
-                          {formatCardDate(snap.date)}
+                          {formatCardDate(snap.date, locale)}
                         </p>
                         {isLatest && (
                           <span className="shrink-0 rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300">
-                            Latest
+                            {labels.latest}
                           </span>
                         )}
                       </div>
@@ -96,7 +123,7 @@ export default function HistoryMonthGroup({
                             {snap.activeCount}
                           </span>
                           <span className="text-slate-500 dark:text-slate-400">
-                            active
+                            {labels.active}
                           </span>
                         </span>
                         <span className="flex items-center gap-1.5 text-sm">
@@ -105,7 +132,7 @@ export default function HistoryMonthGroup({
                             {snap.expiredCount}
                           </span>
                           <span className="text-slate-500 dark:text-slate-400">
-                            expired
+                            {labels.expired}
                           </span>
                         </span>
                       </div>
@@ -117,7 +144,7 @@ export default function HistoryMonthGroup({
                         {snap.date}
                       </span>
                       <span className="text-sm font-semibold text-indigo-600 transition-colors group-hover:text-indigo-800 dark:text-indigo-400 dark:group-hover:text-indigo-300">
-                        View Details →
+                        {labels.viewDetails}
                       </span>
                     </div>
                   </Link>
@@ -141,11 +168,11 @@ export default function HistoryMonthGroup({
               >
                 {expanded ? (
                   <>
-                    Show Less <ChevronUp className="h-4 w-4" />
+                    {labels.showLess} <ChevronUp className="h-4 w-4" />
                   </>
                 ) : (
                   <>
-                    Show More <ChevronDown className="h-4 w-4" />
+                    {labels.showMore} <ChevronDown className="h-4 w-4" />
                   </>
                 )}
               </button>

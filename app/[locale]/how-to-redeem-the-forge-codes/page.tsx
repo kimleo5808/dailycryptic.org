@@ -5,6 +5,7 @@ import { breadcrumbSchema, howToSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import fs from "fs/promises";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { MDXRemote } from "next-mdx-remote-client/rsc";
 import path from "path";
 import remarkGfm from "remark-gfm";
@@ -41,12 +42,12 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "RedeemGuide" });
 
   return constructMetadata({
     page: "RedeemGuide",
-    title: "How to Redeem Codes in The Forge (2026 Guide)",
-    description:
-      "Step-by-step guide for how to redeem codes in the forge and where to put codes in the forge across Roblox devices.",
+    title: t("title"),
+    description: t("description"),
     keywords: [
       "how to redeem codes in the forge", "where to put codes in the forge",
       "how to enter codes in the forge", "the forge codes redeem",

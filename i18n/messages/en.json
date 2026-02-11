@@ -107,6 +107,153 @@
     "description": "Useful references for The Forge players and code trackers.",
     "visitSite": "Visit site"
   },
+  "ForgeSections": {
+    "tableHeaders": {
+      "code": "Code",
+      "reward": "Reward",
+      "status": "Status",
+      "lastTested": "Last tested",
+      "source": "Source"
+    },
+    "statusLabels": {
+      "active": "active",
+      "expired": "expired",
+      "added": "Added",
+      "retested": "Retested"
+    },
+    "sidebar": {
+      "latest": "Latest",
+      "history": "History",
+      "recentCodes": "Recent Codes",
+      "viewAllHistory": "View All History →",
+      "active": "active",
+      "expired": "expired"
+    },
+    "hero": {
+      "lastVerified": "Last verified: {time}",
+      "heading": "The Forge Codes: Active, Expired, and Daily Auto-Collected Updates",
+      "description": "This is a live answer page for <b>the forge codes</b>. We auto-collect <b>the forge codes</b> from public sources every day, split active and expired status, and publish transparent logs so you can redeem faster with fewer failed attempts.",
+      "activeCodes": "Active codes",
+      "expiredTracked": "Expired tracked",
+      "relatedKeywords": "Related keywords",
+      "avgMonthlyVolume": "Avg monthly volume",
+      "viewActiveBtn": "View active the forge codes",
+      "redeemGuideBtn": "How to redeem codes in the forge",
+      "disclaimer": "Codes are automatically aggregated from public sources and may expire quickly. Always verify in-game before relying on rewards."
+    },
+    "activeTable": {
+      "title": "Active The Forge Codes",
+      "description": "These are the current the forge working codes. Each row shows reward, status, and last tested timestamp."
+    },
+    "expiredTable": {
+      "title": "Expired The Forge Codes",
+      "description": "We keep expired the forge codes visible so users do not waste time retrying old codes for the forge."
+    },
+    "redeem": {
+      "title": "How to Redeem Codes in The Forge",
+      "description": "If you search where to put codes in the forge, use this exact flow. It works for the forge roblox codes on both desktop and mobile.",
+      "pcCaption": "PC: Open Settings and find the Codes input field",
+      "mobileCaption": "Mobile: Tap Settings and enter your code"
+    },
+    "troubleshoot": {
+      "title": "Why The Forge Codes Are Not Working",
+      "description": "Most users searching the forge codes not working can fix the issue in under a minute with this checklist."
+    },
+    "updateLog": {
+      "title": "The Forge Codes Update Log",
+      "description": "Each event below documents how codes moved between active and expired based on automated source refreshes."
+    },
+    "faq": {
+      "title": "The Forge Codes FAQ",
+      "description": "This FAQ covers the most searched questions around the forge codes roblox, redeem flow, and expiration behavior."
+    },
+    "redeemSteps": [
+      {
+        "title": "Open The Forge in Roblox",
+        "detail": "Launch the game on PC or mobile and wait until your character fully loads."
+      },
+      {
+        "title": "Open the Codes panel",
+        "detail": "Find the reward or gift icon in the UI. This is where to put codes in the forge."
+      },
+      {
+        "title": "Paste the code exactly",
+        "detail": "Enter the code with the same capitalization and symbols, then tap redeem."
+      },
+      {
+        "title": "Confirm reward message",
+        "detail": "If the code is active, the reward appears instantly in your inventory or spin balance."
+      }
+    ],
+    "troubleshootItems": [
+      {
+        "question": "Why are the forge codes not working for me?",
+        "answer": "Most failures come from expiration, wrong capitalization, or extra spaces when pasting."
+      },
+      {
+        "question": "Can I redeem the same code twice?",
+        "answer": "No. Most the forge codes are one-time use per account and will fail after redemption."
+      },
+      {
+        "question": "How often do new codes for the forge appear?",
+        "answer": "This site auto-collects updates from multiple public sources several times per day."
+      },
+      {
+        "question": "Do the forge roblox codes work on all devices?",
+        "answer": "Yes. The same code usually works on PC and mobile as long as your game build is current."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "What are the latest the forge codes right now?",
+        "answer": "Use the active table at the top of the page. Codes are auto-collected from public sources and updated daily."
+      },
+      {
+        "question": "What is the difference between active and expired the forge codes?",
+        "answer": "Active codes are currently marked as working by source consensus. Expired the forge codes are repeatedly flagged as unavailable."
+      },
+      {
+        "question": "How to redeem codes in the forge quickly?",
+        "answer": "Open the code menu, paste the exact code, and redeem. The redeem guide section shows each step."
+      },
+      {
+        "question": "Where to put codes in the forge?",
+        "answer": "Enter them in the in-game codes box, not on Roblox catalog pages."
+      },
+      {
+        "question": "Why keep expired codes for the forge?",
+        "answer": "Keeping expired entries prevents repeated failed attempts and keeps historical transparency."
+      },
+      {
+        "question": "How is this page different from other the forge codes roblox pages?",
+        "answer": "This page keeps a date-by-date snapshot archive and rolls updates from multiple sources into one feed."
+      }
+    ]
+  },
+  "TheForgeCodes": {
+    "title": "The Forge Codes: Latest Active & Expired Auto-Collected List",
+    "description": "Get the latest the forge codes with auto-collected active and expired status, timestamps, redeem steps, and daily archive links."
+  },
+  "FAQ": {
+    "title": "The Forge Codes FAQ: Why Codes Fail and How to Fix",
+    "description": "Common questions about the forge codes roblox, including failed redemptions, expiration behavior, and redeem troubleshooting."
+  },
+  "History": {
+    "title": "The Forge Codes History: Daily Snapshot Archive and Code Timeline",
+    "description": "Browse every daily snapshot of the forge codes organized by month. Track when codes were added, expired, and compare changes across days."
+  },
+  "RedeemGuide": {
+    "title": "How to Redeem Codes in The Forge (2026 Guide)",
+    "description": "Step-by-step guide for how to redeem codes in the forge and where to put codes in the forge across Roblox devices."
+  },
+  "Month": {
+    "title": "The Forge Codes February 2026: Monthly Trend, Active Flow, and Archive",
+    "description": "Monthly report for The Forge codes in February 2026 with trend analysis, active and expired patterns, redeem usage guidance, and daily archive links."
+  },
+  "Daily": {
+    "title": "The Forge Codes ({date}): Daily Auto-Collected Snapshot",
+    "description": "Daily snapshot page for the forge codes with auto-collected active and expired lists, redeem guidance, and source coverage."
+  },
   "Submission": {
     "badge": "Updates",
     "title": "Submit a Source",
@@ -118,5 +265,90 @@
     "submitting": "Submitting...",
     "successMessage": "Thanks! Your source was received.",
     "errorMessage": "Something went wrong. Please try again."
+  },
+  "HomePage": {
+    "sidebar": {
+      "liveHub": "Live Hub",
+      "history": "History",
+      "recentCodes": "Recent Codes",
+      "viewAllHistory": "View All History →",
+      "active": "active",
+      "expired": "expired"
+    },
+    "hero": {
+      "openLiveHub": "Open Live The Forge Codes Hub",
+      "browseHistory": "Browse Code History"
+    },
+    "quickPreview": {
+      "title": "Quick Active Preview",
+      "description": "Preview only. For full status, sources, and detailed updates, continue to the live <strong>the forge codes</strong> hub.",
+      "seeFullTables": "See full active and expired the forge codes tables"
+    },
+    "snapshot": {
+      "title": "Operational Snapshot",
+      "activeCodes": "Active Codes",
+      "expiredTracked": "Expired Tracked",
+      "latestSnapshot": "Latest Snapshot",
+      "avgSearch": "Avg Search"
+    },
+    "crafting": {
+      "title": "What You Can Get With The Forge Codes",
+      "description": "The Forge codes unlock rerolls, luck totems, boosts, gems, and crafting advantages. Below is the in-game crafting interface where you can use your rewards."
+    },
+    "faq": {
+      "title": "Homepage FAQ For The Forge Codes",
+      "description": "These quick answers summarize the most frequent decisions users make before redeeming <strong>the forge codes</strong>."
+    }
+  },
+  "HistoryPage": {
+    "heading": "The Forge Codes History",
+    "totalSnapshots": "Total snapshots",
+    "uniqueCodesTracked": "Unique codes tracked",
+    "latestSnapshot": "Latest snapshot",
+    "viewLiveCodes": "View Live Codes",
+    "february2026Summary": "February 2026 Summary",
+    "snapshotCount": "{count} snapshot",
+    "snapshotsCount": "{count} snapshots",
+    "latest": "Latest",
+    "active": "active",
+    "expired": "expired",
+    "viewDetails": "View Details →",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "FaqPage": {
+    "heading": "The Forge Codes FAQ",
+    "coreFaq": "Core FAQ",
+    "failureChecklist": "Fast failure checklist"
+  },
+  "DailyPage": {
+    "dailySnapshot": "Daily snapshot",
+    "activeCodes": "Active codes",
+    "expiredCodes": "Expired codes",
+    "updateLog": "Update Log",
+    "added": "Added",
+    "expired": "Expired",
+    "retested": "Retested",
+    "ok": "ok",
+    "fetchError": "fetch-error"
+  },
+  "MonthPage": {
+    "monthlyArchive": "Monthly archive",
+    "monthlyOverview": "Monthly Overview",
+    "snapshotDays": "Snapshot days",
+    "uniqueActive": "Unique active",
+    "uniqueExpired": "Unique expired",
+    "peakUpdateDay": "Peak update day",
+    "weeklyTrend": "Weekly Trend Breakdown",
+    "monthlyPlaybook": "Monthly Playbook",
+    "changeLog": "February Change Log",
+    "added": "Added",
+    "expired": "Expired",
+    "retested": "Retested",
+    "snapshots": "snapshot(s)",
+    "active": "active",
+    "expiredLabel": "expired",
+    "addedLabel": "added",
+    "expiredEvents": "expired events"
   }
 }
