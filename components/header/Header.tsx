@@ -11,7 +11,7 @@ const Header = () => {
   const t = useTranslations("Home");
 
   return (
-    <header className="py-2 px-6 backdrop-blur-md sticky top-0 z-50">
+    <header className="py-2 px-6 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-indigo-100 dark:border-indigo-900/40 sticky top-0 z-50">
       <nav className="flex justify-between items-center w-full mx-auto">
         <div className="flex items-center space-x-6 md:space-x-12">
           <I18nLink
@@ -26,7 +26,7 @@ const Header = () => {
               width={32}
               height={32}
             />
-            <span className="text-gray-800 dark:text-gray-200">
+            <span className="font-heading text-slate-900 dark:text-slate-100">
               {t("title")}
             </span>
           </I18nLink>

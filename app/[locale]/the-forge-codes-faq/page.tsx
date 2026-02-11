@@ -1,6 +1,7 @@
 import { forgeFaq, forgeTroubleshooting } from "@/lib/forge-data";
 import { Locale } from "@/i18n/routing";
 import { constructMetadata } from "@/lib/metadata";
+import { ChevronDown } from "lucide-react";
 import { Metadata } from "next";
 
 type Params = Promise<{ locale: string }>;
@@ -26,58 +27,64 @@ export async function generateMetadata({
 export default function ForgeFaqPage() {
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 px-4 py-10 sm:px-6 lg:px-8">
-      <header className="rounded-2xl border border-orange-200/70 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 p-6 dark:border-orange-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
-        <h1 className="text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
+      {/* Hero */}
+      <header className="relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-6 dark:border-indigo-900/40 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-indigo-200/30 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-violet-200/30 blur-3xl" />
+        <h1 className="relative font-heading text-3xl font-black text-slate-900 dark:text-slate-100 sm:text-4xl">
           The Forge Codes FAQ
         </h1>
-        <p className="mt-4 text-slate-700 dark:text-slate-300">
+        <p className="relative mt-4 text-slate-700 dark:text-slate-300">
           This FAQ is built for the forge codes search intent. It answers why
           codes fail, how expiration works, and what to do before retrying.
         </p>
       </header>
 
-      <section className="rounded-2xl border border-orange-100 bg-white p-6 dark:border-orange-900/40 dark:bg-slate-950">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+      {/* Core FAQ accordion */}
+      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+        <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           Core FAQ
         </h2>
-        <div className="mt-4 grid gap-3">
+        <div className="mt-6 space-y-3">
           {forgeFaq.map((item) => (
-            <article
+            <details
               key={item.question}
-              className="rounded-xl border border-orange-100 p-4 dark:border-orange-900/50"
+              className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
             >
-              <h3 className="font-semibold text-slate-900 dark:text-slate-100">
+              <summary className="flex cursor-pointer items-center justify-between gap-2 px-4 py-3 font-semibold text-slate-900 dark:text-slate-100 [&::-webkit-details-marker]:hidden">
                 {item.question}
-              </h3>
-              <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
+                <ChevronDown className="size-4 shrink-0 text-indigo-400 transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="border-t border-indigo-50 px-4 py-3 text-sm text-slate-600 dark:border-indigo-900/30 dark:text-slate-300">
                 {item.answer}
-              </p>
-            </article>
+              </div>
+            </details>
           ))}
         </div>
       </section>
 
-      <section className="rounded-2xl border border-orange-100 bg-white p-6 dark:border-orange-900/40 dark:bg-slate-950">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+      {/* Fast failure checklist accordion */}
+      <section className="rounded-2xl border border-indigo-100 bg-white p-6 dark:border-indigo-900/40 dark:bg-slate-950">
+        <h2 className="border-l-4 border-indigo-500 pl-4 font-heading text-2xl font-bold text-slate-900 dark:text-slate-100">
           Fast failure checklist
         </h2>
-        <ul className="mt-4 grid gap-3">
+        <div className="mt-6 space-y-3">
           {forgeTroubleshooting.map((item) => (
-            <li
+            <details
               key={item.question}
-              className="rounded-xl border border-orange-100 p-4 dark:border-orange-900/50"
+              className="group rounded-xl border border-indigo-100 dark:border-indigo-900/50"
             >
-              <p className="font-semibold text-slate-900 dark:text-slate-100">
+              <summary className="flex cursor-pointer items-center justify-between gap-2 px-4 py-3 font-semibold text-slate-900 dark:text-slate-100 [&::-webkit-details-marker]:hidden">
                 {item.question}
-              </p>
-              <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
+                <ChevronDown className="size-4 shrink-0 text-indigo-400 transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="border-t border-indigo-50 px-4 py-3 text-sm text-slate-600 dark:border-indigo-900/30 dark:text-slate-300">
                 {item.answer}
-              </p>
-            </li>
+              </div>
+            </details>
           ))}
-        </ul>
+        </div>
       </section>
     </div>
   );
 }
-
