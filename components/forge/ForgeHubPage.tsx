@@ -3,6 +3,7 @@ import {
   ForgeEditorialGuideSection,
   ForgeHero,
   ForgeKeywordNarrativeSection,
+  ForgeOperationsManualSection,
   ForgeOverviewSections,
   ForgeRedeemAndTroubleshoot,
   ForgeUpdateLogAndFaq,
@@ -19,6 +20,7 @@ export default function ForgeHubPage() {
           <ForgeUpdateLogAndFaq />
           <ForgeKeywordNarrativeSection />
           <ForgeEditorialGuideSection />
+          <ForgeOperationsManualSection />
         </div>
 
         <div className="lg:sticky lg:top-20">

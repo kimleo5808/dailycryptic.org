@@ -5,6 +5,7 @@ import {
   FAQItem,
   forgeFaq,
   forgeKeywordNarrative,
+  forgeOperationsManual,
   forgeRecentSnapshots,
   forgeRedeemSteps,
   forgeSiteFacts,
@@ -388,6 +389,26 @@ export function ForgeEditorialGuideSection() {
       </p>
       <div className="prose prose-slate mt-6 max-w-none dark:prose-invert">
         {forgeEditorialGuide.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function ForgeOperationsManualSection() {
+  return (
+    <section className="w-full rounded-2xl border border-orange-100 bg-white p-6 dark:border-orange-900/40 dark:bg-slate-950">
+      <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+        The Forge Codes Content Operations Manual
+      </h2>
+      <p className="mt-2 text-slate-600 dark:text-slate-300">
+        This section documents the operating model behind the page so returning
+        users can understand how the list evolves across days and why some
+        entries move quickly between states.
+      </p>
+      <div className="prose prose-slate mt-6 max-w-none dark:prose-invert">
+        {forgeOperationsManual.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
