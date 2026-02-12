@@ -87,7 +87,7 @@ export default async function BlogPage({ params }: { params: Params }) {
       />
       <h1 className="break-words text-4xl font-bold mt-6 mb-4">{post.title}</h1>
       {post.image && (
-        <img src={post.image} alt={post.title} className="rounded-sm" />
+        <img src={post.image} alt={`Cover image for ${post.title}`} className="rounded-sm w-full" />
       )}
       {post.tags && post.tags.split(",").length ? (
         <div className="flex flex-wrap gap-2">

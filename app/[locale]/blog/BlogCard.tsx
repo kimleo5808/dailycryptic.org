@@ -13,7 +13,7 @@ export function BlogCard({ post, locale }: { post: BlogPost; locale: string }) {
       <div className="relative rounded shadow-md  pt-[56.25%]">
         <Image
           src={post.image || "/placeholder.svg"}
-          alt={post.title}
+          alt={`Cover image for ${post.title}`}
           fill
           className="object-cover shadow-sm w-full rounded hover:shadow-lg transition-shadow duration-200 h-[200p]"
         />
