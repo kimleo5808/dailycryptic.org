@@ -1,17 +1,13 @@
 import SocialShare from "@/components/footer/SocialShare";
 import { siteConfig } from "@/config/site";
 import { Link as I18nLink } from "@/i18n/routing";
-import { getRecentPuzzles } from "@/lib/connections-data";
 import { FooterLink } from "@/types/common";
-import dayjs from "dayjs";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export default async function Footer() {
   const t = await getTranslations("Home");
   const tFooter = await getTranslations("Footer");
-  const recentPuzzles = await getRecentPuzzles(5);
-
   const footerLinks: FooterLink[] = tFooter.raw("Links.groups");
 
   return (
@@ -65,26 +61,6 @@ export default async function Footer() {
             </ul>
           </div>
         ))}
-      </div>
-
-      {/* Recent puzzles bar */}
-      <div className="border-t border-slate-800">
-        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
-          <h4 className="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-3">
-            Recent Puzzles
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {recentPuzzles.map((p) => (
-              <Link
-                key={p.date}
-                href={`/connections-hint/${p.date}`}
-                className="rounded-md bg-slate-800 px-3 py-1.5 text-xs text-slate-300 transition-colors hover:bg-blue-600 hover:text-white"
-              >
-                #{p.id} — {dayjs(p.date).format("MMM D")}
-              </Link>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Bottom bar */}
