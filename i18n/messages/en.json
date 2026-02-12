@@ -20,6 +20,10 @@
       {
         "name": "Archive",
         "href": "/connections-hint-archive"
+      },
+      {
+        "name": "Guides",
+        "href": "/guides"
       }
     ]
   },
@@ -60,6 +64,27 @@
             {
               "href": "/blog",
               "name": "Tips & Guides"
+            },
+            {
+              "href": "/guides",
+              "name": "Strategy Guides"
+            }
+          ]
+        },
+        {
+          "title": "Word Games",
+          "links": [
+            {
+              "href": "/5-letters",
+              "name": "5 Letter Wordle"
+            },
+            {
+              "href": "/6-letters",
+              "name": "6 Letter Wordle"
+            },
+            {
+              "href": "/7-letters",
+              "name": "7 Letter Wordle"
             }
           ]
         },
@@ -77,6 +102,14 @@
             {
               "href": "/terms-of-service",
               "name": "Terms of Service"
+            },
+            {
+              "href": "/contact",
+              "name": "Contact Us"
+            },
+            {
+              "href": "/share",
+              "name": "Share"
             }
           ]
         }

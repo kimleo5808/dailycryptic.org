@@ -28,6 +28,30 @@ const nextConfig = {
           }
         : false,
   },
+  async redirects() {
+    return [
+      {
+        source: "/nyt-connections-hint",
+        destination: "/connections-hint",
+        permanent: true,
+      },
+      {
+        source: "/about-us",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/how-to-play",
+        destination: "/how-to-play-connections",
+        permanent: true,
+      },
+      {
+        source: "/nyt-connections-hints-answers-august-20-2025",
+        destination: "/connections-hint/2025-08-20",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
