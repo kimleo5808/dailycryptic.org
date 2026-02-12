@@ -12,7 +12,7 @@ export default async function Footer() {
 
   return (
     <footer className="mt-12 w-full border-t border-slate-800 bg-slate-900 text-slate-300">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-x-6 gap-y-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:px-8 xl:gap-x-10">
         {/* About column */}
         <div>
           <h2 className="font-heading text-xl font-bold text-white">
@@ -65,7 +65,7 @@ export default async function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-slate-800">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-4 py-6 text-sm text-slate-500 sm:px-6 md:flex-row lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-6 text-sm text-slate-500 sm:px-6 md:flex-row lg:px-8">
           <p>
             {tFooter("Copyright", {
               year: new Date().getFullYear(),
