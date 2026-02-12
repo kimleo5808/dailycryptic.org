@@ -3,6 +3,7 @@ import MobileMenu from "@/components/header/MobileMenu";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { siteConfig } from "@/config/site";
 import { Link as I18nLink } from "@/i18n/routing";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const Header = () => {
@@ -17,6 +18,13 @@ const Header = () => {
             prefetch={false}
             className="flex items-center space-x-2 font-bold"
           >
+            <Image
+              src="/logo.svg"
+              alt={siteConfig.name}
+              width={28}
+              height={28}
+              className="rounded-md"
+            />
             <span className="text-lg font-heading font-bold text-white">
               {siteConfig.name}
             </span>
