@@ -129,9 +129,9 @@
     }
   },
   "Home": {
-    "title": "Strands Hint",
-    "tagLine": "Daily hints and answers for NYT Strands puzzle",
-    "description": "Get today's NYT Strands hints with progressive clues for the theme words and Spangram. Daily puzzle tracking, answers archive, and strategy tips."
+    "title": "Strands Hint Today",
+    "tagLine": "Free NYT Strands Hints, Answers & Spangram",
+    "description": "Get today's NYT Strands hints and answers with progressive clues — from vague nudges to full solutions. Find the Spangram, solve all theme words, and browse our complete puzzle archive. Updated daily, 100% free."
   },
   "Blog": {
     "title": "Tips & Guides",
@@ -210,7 +210,7 @@
         "answer": "NYT Strands is a daily word puzzle by The New York Times. You are given a 6×8 grid of letters and must find theme words by connecting adjacent letters. Each puzzle has a theme clue, several theme words (highlighted in blue), and a special Spangram word (highlighted in gold) that spans the entire board and ties the theme together."
       },
       {
-        "question": "How do the progressive hints work?",
+        "question": "How do hints work in Strands?",
         "answer": "Each puzzle has up to five hint levels. Level 1 gives a vague thematic clue. Level 2 narrows it down. Level 3 reveals partial information about word lengths. Level 4 gives starting letters. Level 5 reveals the full answers. You choose how much help you want."
       },
       {
@@ -228,6 +228,14 @@
       {
         "question": "What is the best strategy for solving Strands?",
         "answer": "Start by reading the theme clue carefully — it hints at what the words have in common. Look for the Spangram first, as it spans the entire board and reveals the overarching theme. Then search for theme words by connecting adjacent letters horizontally, vertically, or diagonally."
+      },
+      {
+        "question": "What is the Spangram in NYT Strands?",
+        "answer": "The Spangram (sometimes spelled 'spanogram') is a special word in each Strands puzzle that spans the entire board from one edge to the opposite edge. It connects to the daily theme and is highlighted in gold when found. Finding the Spangram often reveals the overarching theme and makes the remaining words easier to identify."
+      },
+      {
+        "question": "How many hints do you get in Strands?",
+        "answer": "In the official NYT Strands game, you earn hint tokens by finding non-theme words on the grid. Every three non-theme words you find gives you one hint, which highlights a single letter on the board. On our site, we provide up to five progressive hint levels for each puzzle — from vague clues to full answers — so you can choose exactly how much help you need."
       }
     ],
     "recentPuzzles": {

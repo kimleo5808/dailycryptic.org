@@ -61,9 +61,10 @@ export async function constructMetadata({
     title: finalTitle,
     description: pageDescription,
     keywords: keywords.length > 0 ? keywords : [
-      'strands hint', 'strands hint today', 'nyt strands hint',
-      'strands answers today', 'nyt strands answers',
-      'strands puzzle', 'strands game help',
+      'strands hint', 'strands hints', 'strands hint today',
+      'nyt strands hints', 'nyt strands hint today',
+      'strands hints today', 'strands answers today',
+      'nyt strands answers', 'spangram', 'strands puzzle',
     ],
     authors: siteConfig.authors,
     creator: siteConfig.creator,

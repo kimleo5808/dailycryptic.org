@@ -230,7 +230,7 @@ export default async function HomeComponent() {
       <section className="py-12 bg-background">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Why Use StrandsHint?
+            How Our NYT Strands Hints Work
           </h2>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[0, 1, 2, 3, 4, 5].map((index) => {
@@ -266,7 +266,7 @@ export default async function HomeComponent() {
             {t("faq.description")}
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {[0, 1, 2, 3, 4, 5].map((index) => (
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((index) => (
               <FaqAccordionItem
                 key={index}
                 question={t(`faqItems.${index}.question`)}
@@ -286,7 +286,7 @@ export default async function HomeComponent() {
               Word Games
             </div>
             <h2 className="mt-4 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-              Play Wordle — Choose Your Word Length
+              Free Word Games — Practice Your Skills
             </h2>
             <p className="mt-2 text-muted-foreground">
               Challenge yourself with word puzzles from 4 to 11 letters
@@ -382,7 +382,7 @@ export default async function HomeComponent() {
       <section className="py-12 bg-background">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Your Ultimate Guide to Strands Hints and Puzzle Solutions
+            NYT Strands Hints: Complete Guide &amp; Today&apos;s Answers
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Welcome to the premier destination for <strong className="text-foreground">Strands hint</strong> enthusiasts and word puzzle players! Whether you&apos;re seeking today&apos;s puzzle solutions or looking to sharpen your word-finding skills, you&apos;ve found the perfect resource.
@@ -452,42 +452,33 @@ export default async function HomeComponent() {
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Building Your Puzzle-Solving Toolkit
+            What Is the Spangram (Spanogram) in Strands?
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Successful puzzle solvers combine multiple skills and resources. A comprehensive <strong className="text-foreground">Strands hint</strong> strategy involves:
-          </p>
-          <ol className="mt-3 list-decimal space-y-2 pl-5">
-            {[
-              ["Vocabulary expansion:", "Regularly learn new words and their thematic connections"],
-              ["Pattern recognition:", "Study common letter arrangements and word paths on grids"],
-              ["Theme awareness:", "Stay informed about common themes — pop culture, science, food, etc."],
-              ["Practice consistency:", "Daily engagement improves intuitive grid-scanning skills"],
-            ].map(([title, desc]) => (
-              <li key={title} className="text-sm leading-relaxed text-muted-foreground">
-                <strong className="text-foreground">{title}</strong> {desc}
-              </li>
-            ))}
-          </ol>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            The Psychology Behind Puzzle Hints
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Understanding why certain <strong className="text-foreground">Strands hint</strong> strategies work reveals the cognitive processes underlying puzzle-solving success. The brain naturally seeks patterns and spatial relationships, making connections between letters and words on a grid.
+            The <strong className="text-foreground">Spangram</strong> (sometimes misspelled as &ldquo;spanogram&rdquo;) is the most important word in every Strands puzzle. Unlike regular theme words, the Spangram spans the entire board from one edge to the opposite edge — left to right, top to bottom, or diagonally across the grid.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Effective hint systems leverage this natural tendency by providing just enough information to guide thinking without revealing solutions outright. The best <strong className="text-foreground">NYT Strands hints</strong> activate existing knowledge while encouraging creative spatial thinking.
+            The Spangram always relates to the overarching theme and is highlighted in gold when found. Finding it early is a powerful strategy because it reveals the theme connection, making the remaining words much easier to identify. Look for long words (typically 7-10 letters) that could physically stretch across the 6-column or 8-row grid.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Community and Competition
+            Strands Answers: How to Find Past Puzzle Solutions
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            The puzzle-solving community thrives on shared strategies and collective problem-solving. Social media platforms buzz daily with discussions about the latest <strong className="text-foreground">Strands hint today</strong>, creating a global network of enthusiasts who support each other&apos;s puzzle journey.
+            Looking for <strong className="text-foreground">Strands answers</strong> from previous days? Our archive contains every past NYT Strands puzzle with complete solutions — including all theme words, the Spangram, and the theme clue. Each puzzle page shows the full 6x8 grid with highlighted word positions so you can see exactly how the answers fit together.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Strands has quickly become one of the most popular NYT puzzle games alongside Wordle and Connections, with players sharing their solving strategies and celebrating when they find the Spangram without any hints.
+            Reviewing past <strong className="text-foreground">Strands answers</strong> is one of the best ways to improve. You&apos;ll start noticing patterns in how themes are structured, where Spangrams typically run across the board, and which types of words the puzzle creators favor. Browse the archive by date to study past puzzles at your own pace.
+          </p>
+
+          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
+            How Many Hints Do You Get in Strands?
+          </h3>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            In the official NYT Strands game, hints are earned — not given freely. Every time you find a valid English word on the grid that isn&apos;t a theme word, you earn progress toward a hint. After finding three non-theme words, you receive one hint that highlights a single cell on the board, showing you one letter of a theme word.
+          </p>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            There&apos;s no limit to how many hints you can earn in a single puzzle, but each one requires finding three more non-theme words. On StrandsHint, we take a different approach: we provide up to five progressive <strong className="text-foreground">hint levels</strong> for each puzzle, ranging from vague thematic nudges to specific letter reveals to full answers — so you control exactly how much help you get.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
