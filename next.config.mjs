@@ -52,6 +52,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // --- Existing redirects ---
       {
         source: "/nyt-strands-hint",
         destination: "/strands-hint",
@@ -70,6 +71,42 @@ const nextConfig = {
       {
         source: "/strands-hint-archive",
         destination: "/strands-hint",
+        permanent: true,
+      },
+
+      // --- Old URL structure → New URL structure (GSC indexed pages) ---
+
+      // Core pages
+      { source: "/today", destination: "/strands-hint-today", permanent: true },
+      { source: "/archive", destination: "/strands-hint", permanent: true },
+      { source: "/hints", destination: "/strands-hint", permanent: true },
+      { source: "/faq", destination: "/strands-hint-faq", permanent: true },
+      { source: "/privacy", destination: "/privacy-policy", permanent: true },
+      { source: "/terms", destination: "/terms-of-service", permanent: true },
+
+      // Content pages → closest equivalent
+      { source: "/strategy", destination: "/how-to-play-strands", permanent: true },
+      { source: "/tips", destination: "/how-to-play-strands", permanent: true },
+      { source: "/answers", destination: "/strands-hint", permanent: true },
+
+      // Date-based archive pages: /archive/YYYY-MM-DD → /strands-hint/YYYY-MM-DD
+      {
+        source: "/archive/:date",
+        destination: "/strands-hint/:date",
+        permanent: true,
+      },
+
+      // Locale-prefixed variants (English)
+      { source: "/en/today", destination: "/en/strands-hint-today", permanent: true },
+      { source: "/en/archive", destination: "/en/strands-hint", permanent: true },
+      { source: "/en/hints", destination: "/en/strands-hint", permanent: true },
+      { source: "/en/faq", destination: "/en/strands-hint-faq", permanent: true },
+      { source: "/en/answers", destination: "/en/strands-hint", permanent: true },
+      { source: "/en/strategy", destination: "/en/how-to-play-strands", permanent: true },
+      { source: "/en/tips", destination: "/en/how-to-play-strands", permanent: true },
+      {
+        source: "/en/archive/:date",
+        destination: "/en/strands-hint/:date",
         permanent: true,
       },
     ];
