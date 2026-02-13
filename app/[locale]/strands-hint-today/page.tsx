@@ -184,7 +184,7 @@ export default async function StrandsHintTodayPage({
         <p className="text-center text-xs text-muted-foreground mb-5">
           Find {puzzle.themeWords.length} theme words + 1 Spangram
         </p>
-        <StrandsGrid puzzle={puzzle} />
+        <StrandsGrid puzzle={puzzle} interactive />
       </section>
 
       <div className="flex flex-col gap-8 lg:flex-row">

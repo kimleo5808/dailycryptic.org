@@ -263,10 +263,7 @@ export default async function DailyPuzzlePage({
         <h2 className="text-center font-heading text-lg font-bold text-white mb-4">
           Today&apos;s Letter Grid
         </h2>
-        <StrandsGrid puzzle={puzzle} />
-        <p className="mt-4 text-center text-xs text-slate-400">
-          Find words by connecting adjacent letters (horizontally, vertically, or diagonally)
-        </p>
+        <StrandsGrid puzzle={puzzle} interactive />
       </section>
 
       {/* ── Main content + Sidebar ───────────────────────── */}
