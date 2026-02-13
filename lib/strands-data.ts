@@ -2,7 +2,7 @@ import type { StrandsDataFile, StrandsPuzzle } from "@/types/strands";
 import puzzlesData from "@/data/strands/puzzles.json";
 import { cache } from "react";
 
-const data = puzzlesData as StrandsDataFile;
+const data = puzzlesData as unknown as StrandsDataFile;
 
 /** Get a puzzle by its date string (YYYY-MM-DD) */
 export const getPuzzleByDate = cache(

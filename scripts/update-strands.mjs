@@ -26,7 +26,7 @@ const DATA_FILE = path.join(DATA_DIR, "puzzles.json");
 const NYT_STRANDS_API = "https://www.nytimes.com/svc/strands/v2";
 
 // Historical data starts from this date (user chose to exclude 2024)
-const HISTORY_START = "2025-01-01";
+const HISTORY_START = "2025-11-12";
 
 // Rate limit: wait between API requests to be polite
 const REQUEST_DELAY_MS = 300;
