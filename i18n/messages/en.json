@@ -2,20 +2,20 @@
   "Header": {
     "links": [
       {
-        "name": "Connections Hint",
-        "href": "/connections-hint"
+        "name": "Strands Hint",
+        "href": "/strands-hint"
       },
       {
         "name": "Today's Hints",
-        "href": "/connections-hint-today"
+        "href": "/strands-hint-today"
       },
       {
         "name": "How to Play",
-        "href": "/how-to-play-connections"
+        "href": "/how-to-play-strands"
       },
       {
         "name": "FAQ",
-        "href": "/connections-hint-faq"
+        "href": "/strands-hint-faq"
       },
 {
         "name": "Guides",
@@ -34,10 +34,10 @@
           "links": [
             {
               "href": "/",
-              "name": "Connections Hint"
+              "name": "Strands Hint"
             },
             {
-              "href": "/connections-hint-today",
+              "href": "/strands-hint-today",
               "name": "Today's Hints"
             }
           ]
@@ -46,11 +46,11 @@
           "title": "Resources",
           "links": [
             {
-              "href": "/how-to-play-connections",
+              "href": "/how-to-play-strands",
               "name": "How to Play"
             },
             {
-              "href": "/connections-hint-faq",
+              "href": "/strands-hint-faq",
               "name": "FAQ"
             },
             {
@@ -105,7 +105,7 @@
           "links": [
             {
               "href": "/about",
-              "name": "About ConnectionsHint"
+              "name": "About StrandsHint"
             },
             {
               "href": "/privacy-policy",
@@ -129,47 +129,47 @@
     }
   },
   "Home": {
-    "title": "Connections Hint",
-    "tagLine": "Daily hints and answers for NYT Connections puzzle",
-    "description": "Get today's NYT Connections hints with progressive clues for all four groups. Daily puzzle tracking, answers archive, and strategy tips."
+    "title": "Strands Hint",
+    "tagLine": "Daily hints and answers for NYT Strands puzzle",
+    "description": "Get today's NYT Strands hints with progressive clues for the theme words and Spangram. Daily puzzle tracking, answers archive, and strategy tips."
   },
   "Blog": {
     "title": "Tips & Guides",
-    "description": "Strategies, tips, and insights for solving NYT Connections puzzles"
+    "description": "Strategies, tips, and insights for solving NYT Strands puzzles"
   },
   "About": {
-    "title": "About ConnectionsHint",
-    "description": "How we provide daily Connections hints and maintain our puzzle archive"
+    "title": "About StrandsHint",
+    "description": "How we provide daily Strands hints and maintain our puzzle archive"
   },
   "TermsOfService": {
     "title": "Terms of Service",
-    "description": "Terms of service for connectionshint.app — usage rules, disclaimers, and acceptable use."
+    "description": "Terms of service for strandshint.app — usage rules, disclaimers, and acceptable use."
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",
-    "description": "Privacy policy for connectionshint.app — what data we collect, how we use analytics, and your privacy rights."
+    "description": "Privacy policy for strandshint.app — what data we collect, how we use analytics, and your privacy rights."
   },
-  "ConnectionsHintToday": {
-    "title": "Connections Hint Today — NYT Puzzle Hints & Answers",
-    "description": "Get progressive hints and answers for today's NYT Connections puzzle. Clues for all four color groups without spoiling the fun."
+  "StrandsHintToday": {
+    "title": "Strands Hint Today — NYT Puzzle Hints & Answers",
+    "description": "Get progressive hints and answers for today's NYT Strands puzzle. Clues for the Spangram and all theme words without spoiling the fun."
   },
   "FAQ": {
-    "title": "Connections Hint FAQ — Common Questions Answered",
-    "description": "Frequently asked questions about NYT Connections, puzzle strategies, and how our hint system works."
+    "title": "Strands Hint FAQ — Common Questions Answered",
+    "description": "Frequently asked questions about NYT Strands, puzzle strategies, and how our hint system works."
   },
   "HowToPlay": {
-    "title": "How to Play NYT Connections — Complete Guide",
-    "description": "Learn how to play the NYT Connections word puzzle. Rules, strategies, tips for finding groups, and common mistakes to avoid."
+    "title": "How to Play NYT Strands — Complete Guide",
+    "description": "Learn how to play the NYT Strands word puzzle. Rules, strategies, tips for finding theme words and the Spangram, and common mistakes to avoid."
   },
   "Daily": {
-    "title": "Connections Hint ({date}) — Puzzle #{id} Hints & Answer",
-    "description": "Hints and answers for NYT Connections Puzzle #{id} on {date}. Progressive clues for all four groups."
+    "title": "Strands Hint ({date}) — Puzzle #{id} Hints & Answer",
+    "description": "Hints and answers for NYT Strands Puzzle #{id} on {date}. Progressive clues for the Spangram and all theme words."
   },
   "HomePage": {
     "hero": {
       "badge": "Puzzle #{id}",
-      "title": "Connections Hint Today",
-      "subtitle": "Get progressive hints for today's NYT Connections puzzle without spoiling the answer.",
+      "title": "Strands Hint Today",
+      "subtitle": "Get progressive hints for today's NYT Strands puzzle without spoiling the answer.",
       "ctaHints": "Get Today's Hints",
       "ctaArchive": "Browse Archive",
       "countdown": "Next puzzle in"
@@ -180,8 +180,8 @@
         "description": "Start with vague clues and reveal more specific hints only when you need them. Stay challenged."
       },
       {
-        "title": "All Four Groups",
-        "description": "Separate hints for yellow, green, blue, and purple categories so you can target where you're stuck."
+        "title": "Spangram & Theme Words",
+        "description": "Separate hints for the Spangram and each theme word so you can target exactly where you're stuck."
       },
       {
         "title": "Daily Updates",
@@ -197,37 +197,37 @@
       },
       {
         "title": "Strategy Tips",
-        "description": "Learn solving techniques, common patterns, and how to spot tricky connections."
+        "description": "Learn solving techniques, common patterns, and how to spot the Spangram on the grid."
       }
     ],
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers about NYT Connections and how our hints work."
+      "description": "Quick answers about NYT Strands and how our hints work."
     },
     "faqItems": [
       {
-        "question": "What is NYT Connections?",
-        "answer": "NYT Connections is a daily word puzzle by The New York Times. You are given 16 words and must sort them into four groups of four, each sharing a hidden connection. The groups are color-coded by difficulty: yellow (easiest), green, blue, and purple (hardest)."
+        "question": "What is NYT Strands?",
+        "answer": "NYT Strands is a daily word puzzle by The New York Times. You are given a 6×8 grid of letters and must find theme words by connecting adjacent letters. Each puzzle has a theme clue, several theme words (highlighted in blue), and a special Spangram word (highlighted in gold) that spans the entire board and ties the theme together."
       },
       {
         "question": "How do the progressive hints work?",
-        "answer": "Each group has three hint levels. Level 1 gives a vague thematic clue. Level 2 narrows it down with a more specific hint. Level 3 reveals the category name. You choose how much help you want."
+        "answer": "Each puzzle has up to five hint levels. Level 1 gives a vague thematic clue. Level 2 narrows it down. Level 3 reveals partial information about word lengths. Level 4 gives starting letters. Level 5 reveals the full answers. You choose how much help you want."
       },
       {
-        "question": "When does the daily Connections puzzle reset?",
-        "answer": "A new NYT Connections puzzle is released every day at midnight Eastern Time (ET). Our hints are published shortly after."
+        "question": "When does the daily Strands puzzle reset?",
+        "answer": "A new NYT Strands puzzle is released every day at midnight Eastern Time (ET). Our hints are published shortly after."
       },
       {
         "question": "Is this site affiliated with The New York Times?",
-        "answer": "No. ConnectionsHint is an independent fan site. We provide hints and discussion to help players enjoy the puzzle. NYT Connections is a trademark of The New York Times Company."
+        "answer": "No. StrandsHint is an independent fan site. We provide hints and discussion to help players enjoy the puzzle. NYT Strands is a trademark of The New York Times Company."
       },
       {
         "question": "Can I browse past puzzle answers?",
-        "answer": "Yes. Our archive page has every past puzzle organized by date, with full answers, group themes, and difficulty ratings."
+        "answer": "Yes. Our archive page has every past puzzle organized by date, with full answers, theme words, and the Spangram."
       },
       {
-        "question": "What is the best strategy for solving Connections?",
-        "answer": "Start by looking for the easiest group (yellow). Scan all 16 words for obvious themes first. Beware of words that could fit multiple groups — the purple group often uses tricky wordplay or less obvious connections."
+        "question": "What is the best strategy for solving Strands?",
+        "answer": "Start by reading the theme clue carefully — it hints at what the words have in common. Look for the Spangram first, as it spans the entire board and reveals the overarching theme. Then search for theme words by connecting adjacent letters horizontally, vertically, or diagonally."
       }
     ],
     "recentPuzzles": {

@@ -18,16 +18,16 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "Guides",
-    title: "Connections Guides - Master NYT Connections Puzzles",
+    title: "Strands Guides - Master NYT Strands Puzzles",
     description:
-      "Comprehensive guides for NYT Connections puzzle. From beginner basics to advanced expert techniques, learn strategies, avoid common mistakes, and master every category type.",
+      "Comprehensive guides for NYT Strands puzzle. From beginner basics to advanced expert techniques, learn strategies, find Spangrams, and master every theme.",
     keywords: [
-      "connections guides",
-      "connections strategy guide",
-      "how to play connections",
-      "connections tips",
-      "connections tutorial",
-      "connections help",
+      "strands guides",
+      "strands strategy guide",
+      "how to play strands",
+      "strands tips",
+      "strands tutorial",
+      "strands help",
     ],
     locale: locale as Locale,
     path: `/guides`,
@@ -39,7 +39,7 @@ const LEVEL_COLORS: Record<string, string> = {
   beginner:
     "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
   intermediate:
-    "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+    "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary",
   advanced:
     "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
 };
@@ -57,22 +57,22 @@ export default async function GuidesPage({ params }: { params: Params }) {
       />
 
       {/* Header */}
-      <header className="relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 sm:p-8 dark:border-blue-900/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-blue-950/30">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-200/30 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-blue-200/20 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 via-white to-primary/5 p-6 sm:p-8 dark:border-primary/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-primary/10">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-primary/10 blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-blue-500" />
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
+            <BookOpen className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium text-primary">
               Guides
             </span>
           </div>
           <h1 className="mt-2 font-heading text-3xl font-bold text-foreground sm:text-4xl">
-            Connections Puzzle Guides
+            Strands Puzzle Guides
           </h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">
             From beginner basics to advanced expert techniques. Master NYT
-            Connections with our comprehensive guide collection.
+            Strands with our comprehensive guide collection.
           </p>
         </div>
       </header>
@@ -84,10 +84,10 @@ export default async function GuidesPage({ params }: { params: Params }) {
             key={guide.slug}
             href={`/guides/${guide.slug}`}
             prefetch={false}
-            className="group rounded-xl border border-blue-100 bg-card p-5 transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg dark:border-blue-900/40 dark:hover:border-blue-700/60"
+            className="group rounded-xl border border-primary/20 bg-card p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg dark:border-primary/40 dark:hover:border-primary/60"
           >
             <div className="text-3xl">{guide.icon}</div>
-            <h2 className="mt-3 font-heading text-lg font-bold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400">
+            <h2 className="mt-3 font-heading text-lg font-bold text-foreground group-hover:text-primary dark:group-hover:text-primary">
               {guide.title}
             </h2>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground line-clamp-2">
@@ -110,23 +110,23 @@ export default async function GuidesPage({ params }: { params: Params }) {
       </div>
 
       {/* CTA */}
-      <div className="mt-10 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 p-6 text-center text-white">
+      <div className="mt-10 rounded-2xl bg-gradient-to-br from-primary to-primary/90 p-6 text-center text-primary-foreground">
         <h2 className="font-heading text-xl font-bold">
           Ready to test your skills?
         </h2>
-        <p className="mt-1 text-sm text-blue-100">
+        <p className="mt-1 text-sm opacity-90">
           Put these strategies into practice with today&apos;s puzzle.
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <I18nLink
-            href="/connections-hint-today"
+            href="/strands-hint-today"
             prefetch={false}
-            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-blue-700 transition-all hover:bg-blue-50"
+            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
             Today&apos;s Hints
           </I18nLink>
           <I18nLink
-            href="/connections-hint"
+            href="/strands-hint"
             prefetch={false}
             className="rounded-xl border-2 border-white/30 px-5 py-2 text-sm font-bold text-white transition-all hover:bg-white/10"
           >

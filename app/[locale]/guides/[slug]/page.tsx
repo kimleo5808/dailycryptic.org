@@ -55,12 +55,12 @@ export default async function GuidePage({ params }: { params: Params }) {
           image: `${BASE_URL}/og.png`,
           author: {
             "@type": "Organization",
-            name: "Connections Hint",
+            name: "Strands Hint",
             url: BASE_URL,
           },
           publisher: {
             "@type": "Organization",
-            name: "Connections Hint",
+            name: "Strands Hint",
             logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png` },
           },
           datePublished: "2025-01-10",
@@ -85,7 +85,7 @@ export default async function GuidePage({ params }: { params: Params }) {
         <I18nLink
           href="/guides"
           prefetch={false}
-          className="flex items-center gap-1 transition-colors hover:text-blue-500"
+          className="flex items-center gap-1 transition-colors hover:text-primary"
         >
           <ArrowLeft className="h-3.5 w-3.5" />
           All Guides
@@ -95,12 +95,12 @@ export default async function GuidePage({ params }: { params: Params }) {
       </nav>
 
       {/* Header */}
-      <header className="relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 sm:p-8 dark:border-blue-900/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-blue-950/30">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 via-white to-primary/5 p-6 sm:p-8 dark:border-primary/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-primary/10">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-blue-500" />
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
+            <BookOpen className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium text-primary">
               Guide
             </span>
           </div>
@@ -111,7 +111,7 @@ export default async function GuidePage({ params }: { params: Params }) {
             {guide.description}
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20 dark:text-primary">
               <GraduationCap className="h-3.5 w-3.5" />
               {guide.levelLabel}
             </span>
@@ -124,7 +124,7 @@ export default async function GuidePage({ params }: { params: Params }) {
       </header>
 
       {/* Table of Contents */}
-      <nav className="mt-6 rounded-xl border border-blue-100 bg-card p-5 dark:border-blue-900/40">
+      <nav className="mt-6 rounded-xl border border-primary/20 bg-card p-5 dark:border-primary/40">
         <h2 className="font-heading text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           In This Guide
         </h2>
@@ -133,7 +133,7 @@ export default async function GuidePage({ params }: { params: Params }) {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-900/20 dark:hover:text-blue-400"
+                className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-primary/5 hover:text-primary dark:hover:bg-primary/10 dark:hover:text-primary"
               >
                 <span>{section.icon}</span>
                 <span>{section.title}</span>
@@ -160,7 +160,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                 {section.subsections.map((sub, idx) => (
                   <div
                     key={idx}
-                    className="rounded-xl border border-blue-100/80 bg-card p-5 dark:border-blue-900/30"
+                    className="rounded-xl border border-primary/20 bg-card p-5 dark:border-primary/30"
                   >
                     <h3 className="font-heading text-lg font-semibold text-foreground">
                       {sub.title}
@@ -175,7 +175,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                             key={i}
                             className="flex items-start gap-2 text-sm text-muted-foreground"
                           >
-                            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                             <span>{item}</span>
                           </li>
                         ))}
@@ -190,7 +190,7 @@ export default async function GuidePage({ params }: { params: Params }) {
       </div>
 
       {/* Related Guides */}
-      <div className="mt-12 border-t border-blue-100 pt-8 dark:border-blue-900/40">
+      <div className="mt-12 border-t border-primary/20 pt-8 dark:border-primary/40">
         <h2 className="font-heading text-xl font-bold text-foreground">
           Related Guides
         </h2>
@@ -200,10 +200,10 @@ export default async function GuidePage({ params }: { params: Params }) {
               key={g.slug}
               href={`/guides/${g.slug}`}
               prefetch={false}
-              className="group rounded-xl border border-blue-100 bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-blue-900/40 dark:hover:border-blue-700/60"
+              className="group rounded-xl border border-primary/20 bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md dark:border-primary/40 dark:hover:border-primary/60"
             >
               <div className="text-2xl">{g.icon}</div>
-              <h3 className="mt-2 font-heading text-sm font-bold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400">
+              <h3 className="mt-2 font-heading text-sm font-bold text-foreground group-hover:text-primary dark:group-hover:text-primary">
                 {g.title}
               </h3>
               <p className="mt-1 text-xs text-muted-foreground line-clamp-2">
@@ -215,18 +215,18 @@ export default async function GuidePage({ params }: { params: Params }) {
       </div>
 
       {/* CTA */}
-      <div className="mt-8 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 p-6 text-center text-white">
+      <div className="mt-8 rounded-2xl bg-gradient-to-br from-primary to-primary/90 p-6 text-center text-primary-foreground">
         <h2 className="font-heading text-xl font-bold">
           Ready to practice?
         </h2>
-        <p className="mt-1 text-sm text-blue-100">
+        <p className="mt-1 text-sm opacity-90">
           Apply these strategies to today&apos;s puzzle!
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <I18nLink
-            href="/connections-hint-today"
+            href="/strands-hint-today"
             prefetch={false}
-            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-blue-700 transition-all hover:bg-blue-50"
+            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
             Today&apos;s Hints
           </I18nLink>

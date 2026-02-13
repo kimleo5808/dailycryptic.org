@@ -4,7 +4,7 @@ import { BASE_URL } from "@/config/site";
 
 const SHARE_URL = BASE_URL;
 const SHARE_TEXT =
-  "Connections Hint — Daily hints and answers for NYT Connections puzzle. Progressive clues for all four groups.";
+  "Strands Hint — Daily hints and answers for NYT Strands puzzle. Progressive clues, Spangram reveals, and theme words.";
 
 const socialPlatforms = [
   {
@@ -47,7 +47,7 @@ export default function SocialShare() {
           rel="noreferrer noopener"
           aria-label={`Share on ${platform.name}`}
           title={`Share on ${platform.name}`}
-          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-zinc-700 text-zinc-400 transition-colors hover:border-blue-500 hover:bg-blue-500/10 hover:text-white"
+          className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-zinc-700 text-zinc-400 transition-colors hover:border-primary hover:bg-primary/10 hover:text-white"
         >
           {platform.icon}
         </a>

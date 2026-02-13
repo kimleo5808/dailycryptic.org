@@ -53,8 +53,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/nyt-connections-hint",
-        destination: "/connections-hint",
+        source: "/nyt-strands-hint",
+        destination: "/strands-hint",
         permanent: true,
       },
       {
@@ -64,17 +64,12 @@ const nextConfig = {
       },
       {
         source: "/how-to-play",
-        destination: "/how-to-play-connections",
+        destination: "/how-to-play-strands",
         permanent: true,
       },
       {
-        source: "/nyt-connections-hints-answers-august-20-2025",
-        destination: "/connections-hint/2025-08-20",
-        permanent: true,
-      },
-      {
-        source: "/connections-hint-archive",
-        destination: "/connections-hint",
+        source: "/strands-hint-archive",
+        destination: "/strands-hint",
         permanent: true,
       },
     ];

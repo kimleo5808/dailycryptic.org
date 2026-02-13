@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
-	"name": "connectionshint-app",
+	"name": "strandshint-app",
 	"compatibility_date": "2026-02-10",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
 	"assets": {
@@ -13,7 +13,7 @@
 			// Self-reference service binding, the service name must match the worker name
 			// see https://opennext.js.org/cloudflare/caching
 			"binding": "WORKER_SELF_REFERENCE",
-			"service": "connectionshint-app"
+			"service": "strandshint-app"
 		}
 	],
 	"r2_buckets": [
@@ -24,7 +24,7 @@
 			// Create the bucket before deploying
 			// You can change the bucket name if you want
 			// See https://developers.cloudflare.com/workers/wrangler/commands/#r2-bucket-create
-			"bucket_name": "connectionshint"
+			"bucket_name": "strandshint"
 		}
 	],
 	"vars": {

@@ -1,11 +1,11 @@
-import { AnswerReveal } from "@/components/connections/AnswerReveal";
-import ConnectionsGame from "@/components/connections/ConnectionsGame";
-import { HintCardList } from "@/components/connections/HintCard";
+import { StrandsAnswerReveal } from "@/components/strands/StrandsAnswerReveal";
+import { StrandsGrid } from "@/components/strands/StrandsGrid";
+import { StrandsHintCard, WordHintList } from "@/components/strands/StrandsHintCard";
 import { BASE_URL } from "@/config/site";
 import { GUIDES } from "@/data/guides";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { Link as I18nLink } from "@/i18n/routing";
-import { getLatestPuzzle, getRecentPuzzles } from "@/lib/connections-data";
+import { getLatestPuzzle, getRecentPuzzles } from "@/lib/strands-data";
 import {
   breadcrumbSchema,
   faqPageSchema,
@@ -17,7 +17,7 @@ import {
   ArrowRight,
   BookOpen,
   Calendar,
-  ChevronRight,
+  Grid3X3,
   Lightbulb,
   Target,
   Zap,
@@ -30,56 +30,56 @@ type Params = Promise<{ locale: string }>;
 
 const STRATEGY_TIPS = [
   {
-    title: "Start with Obvious Groups",
+    title: "Read the Theme Clue",
     description:
-      "Begin by identifying the most apparent connections — usually the Yellow category contains the most straightforward relationships.",
+      "The theme clue is your biggest advantage. Think about what words could relate to it before scanning the grid.",
     icon: Target,
   },
   {
-    title: "Look for Wordplay",
+    title: "Find the Spangram First",
     description:
-      "Purple categories often involve clever wordplay, compound words, or words that can be prefixed/suffixed with the same term.",
+      "The Spangram spans the entire board and relates directly to the theme. Finding it first helps you understand what other words to look for.",
     icon: Zap,
   },
   {
-    title: "Process of Elimination",
+    title: "Look for Short Words",
     description:
-      "Once you've identified 2–3 groups, the remaining words often become clearer by elimination.",
-    icon: ChevronRight,
+      "Shorter theme words (3-5 letters) are often easier to spot. Start with these to build momentum and narrow down remaining letters.",
+    icon: Grid3X3,
   },
   {
-    title: "Consider Multiple Meanings",
+    title: "Use Hint Letters Wisely",
     description:
-      "Many words have double meanings. A \"bark\" could be a dog's sound or tree covering — context matters!",
+      "After 3 incorrect guesses you earn a hint that highlights a letter. Use these strategically to confirm words you're unsure about.",
     icon: BookOpen,
   },
 ];
 
 const FAQ_ITEMS = [
   {
-    question: "When does the new Connections puzzle come out?",
+    question: "When does the new Strands puzzle come out?",
     answer:
-      "The new NYT Connections puzzle is released every day at 12:00 AM ET (midnight Eastern Time). We update our hints page within minutes of the new puzzle going live, ensuring you have access to fresh hints and strategies as soon as possible!",
+      "The new NYT Strands puzzle is released every day at midnight Eastern Time. We update our hints page shortly after, ensuring you have access to fresh hints as soon as the new puzzle goes live.",
   },
   {
-    question: "Should I use hints or try without help?",
+    question: "What is the Spangram in Strands?",
     answer:
-      "This is completely personal preference! Our progressive hint system is designed to give you just enough help without spoiling the entire puzzle. We recommend trying to solve on your own first, then using gentle hints if you get stuck, and only viewing full answers if you're completely stumped or have used all four mistakes. The goal is to maintain the fun and satisfaction of solving!",
+      "The Spangram is a special word that spans the entire board from one side to the other (left-to-right or top-to-bottom). It directly relates to the puzzle's theme and is highlighted in yellow/gold when found. Every Strands puzzle has exactly one Spangram.",
   },
   {
-    question: "What's the best strategy for solving quickly?",
+    question: "How many theme words are in each Strands puzzle?",
     answer:
-      "Start with the yellow category — it's designed to be most obvious. Look for clear groupings of four words that share an unmistakable connection. Avoid guessing on purple early; instead, solve the other three categories first and let the final four words reveal themselves through elimination. Always consider multiple meanings of words, and don't rush your guesses. Remember: you only get four mistakes!",
+      "Each Strands puzzle contains a varying number of theme words (typically 6-8) plus one Spangram. All theme words relate to the clue given at the top of the puzzle. Every letter on the board is used by either a theme word or the Spangram.",
   },
   {
-    question: "Why do I keep getting \"one away\" messages?",
+    question: "What happens when I make wrong guesses in Strands?",
     answer:
-      "The \"one away\" message means three of your words are correct, but one belongs to a different category. This often happens with red herring words that could plausibly fit multiple groups. When you see this message, carefully reconsider each word — think about alternate meanings and whether any word might better fit elsewhere. Don't just swap one word and resubmit; take time to reassess the entire group.",
+      "In Strands, after every 3 incorrect word guesses, you earn a hint that highlights one letter of a theme word on the board. This helps you narrow down where the remaining words are hidden.",
   },
   {
-    question: "How are the difficulty colors determined?",
+    question: "How do I play NYT Strands?",
     answer:
-      "The four colors indicate increasing difficulty: Yellow is the easiest with obvious, straightforward connections. Green is medium difficulty with moderately clear relationships. Blue is hard with less apparent connections or subtle wordplay. Purple is the trickiest with abstract, creative connections that often involve clever wordplay or unexpected relationships. The puzzle creators intentionally design purple categories to make you say \"I never would have thought of that!\"",
+      "NYT Strands presents a 6×8 letter grid with a theme clue. Your goal is to find all the theme words hidden in the grid by connecting adjacent letters (horizontally, vertically, or diagonally). You also need to find the Spangram — a special word that spans the entire board. Every letter on the board is part of either a theme word or the Spangram.",
   },
 ];
 
@@ -91,32 +91,32 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({
     locale,
-    namespace: "ConnectionsHintToday",
+    namespace: "StrandsHintToday",
   });
   const puzzle = await getLatestPuzzle();
   const dateStr = puzzle
-    ? dayjs(puzzle.date).format("MMMM D, YYYY")
+    ? dayjs(puzzle.printDate).format("MMMM D, YYYY")
     : "Today";
 
   return constructMetadata({
-    page: "ConnectionsHintToday",
+    page: "StrandsHintToday",
     title: `${t("title")} — ${dateStr}`,
     description: t("description"),
     keywords: [
-      "connections hint today",
-      "nyt connections hint",
-      "connections answers today",
-      "connections puzzle today",
-      "nyt connections answers",
-      "connections help today",
+      "strands hint today",
+      "nyt strands hint",
+      "strands answers today",
+      "strands puzzle today",
+      "nyt strands answers",
+      "strands help today",
     ],
     locale: locale as Locale,
-    path: `/connections-hint-today`,
-    canonicalUrl: `/connections-hint-today`,
+    path: `/strands-hint-today`,
+    canonicalUrl: `/strands-hint-today`,
   });
 }
 
-export default async function ConnectionsHintTodayPage({
+export default async function StrandsHintTodayPage({
   params,
 }: {
   params: Params;
@@ -136,8 +136,8 @@ export default async function ConnectionsHintTodayPage({
     );
   }
 
-  const formattedDate = dayjs(puzzle.date).format("MMMM D, YYYY");
-  const dayOfWeek = dayjs(puzzle.date).format("dddd");
+  const formattedDate = dayjs(puzzle.printDate).format("MMMM D, YYYY");
+  const dayOfWeek = dayjs(puzzle.printDate).format("dddd");
 
   const guides = GUIDES.slice(0, 6);
 
@@ -148,7 +148,7 @@ export default async function ConnectionsHintTodayPage({
           { name: "Home", url: BASE_URL },
           {
             name: "Today's Hints",
-            url: `${BASE_URL}/connections-hint-today`,
+            url: `${BASE_URL}/strands-hint-today`,
           },
         ])}
       />
@@ -165,46 +165,54 @@ export default async function ConnectionsHintTodayPage({
           <span>Puzzle #{puzzle.id}</span>
         </div>
         <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
-          Connections Hint Today
+          Strands Hint Today
         </h1>
         <p className="mt-2 text-muted-foreground">
-          Progressive hints for today&apos;s NYT Connections puzzle. Reveal one
+          Progressive hints for today&apos;s NYT Strands puzzle. Reveal one
           hint at a time to keep the challenge!
         </p>
       </header>
 
-      {/* Playable Connections Game */}
+      {/* Today's Grid Preview */}
       <section className="rounded-2xl border border-border bg-card p-5 sm:p-8 mb-8 shadow-sm">
         <h2 className="text-center font-heading text-lg font-bold text-foreground mb-1">
-          Play Today&apos;s Puzzle
+          Today&apos;s Letter Grid
         </h2>
-        <p className="text-center text-xs text-muted-foreground mb-5">
-          Group the 16 words into 4 categories of 4
+        <p className="text-center text-xs text-muted-foreground mb-2">
+          Theme: &ldquo;{puzzle.clue}&rdquo;
         </p>
-        <ConnectionsGame groups={puzzle.answers} />
+        <p className="text-center text-xs text-muted-foreground mb-5">
+          Find {puzzle.themeWords.length} theme words + 1 Spangram
+        </p>
+        <StrandsGrid puzzle={puzzle} />
       </section>
 
       <div className="flex flex-col gap-8 lg:flex-row">
         {/* Main content */}
         <div className="flex-1 space-y-6">
-          {/* Hints section */}
+          {/* Progressive hints */}
+          <section className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
+            <StrandsHintCard puzzle={puzzle} />
+          </section>
+
+          {/* Individual word hints */}
           <section className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-5">
               <Lightbulb className="h-5 w-5 text-amber-500" />
               <h2 className="font-heading text-xl font-bold text-foreground">
-                Progressive Hints
+                Word-by-Word Hints
               </h2>
             </div>
             <p className="mb-5 text-sm text-muted-foreground">
-              Click each group to reveal hints one at a time. Try to solve with
-              as few hints as possible!
+              Reveal hints for individual words. Each shows the word length and
+              first letter before revealing the full answer.
             </p>
-            <HintCardList groups={puzzle.answers} />
+            <WordHintList puzzle={puzzle} />
           </section>
 
           {/* Full answers */}
           <section className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
-            <AnswerReveal puzzle={puzzle} />
+            <StrandsAnswerReveal puzzle={puzzle} />
           </section>
         </div>
 
@@ -212,20 +220,20 @@ export default async function ConnectionsHintTodayPage({
         <aside className="w-full lg:w-72 shrink-0">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm sticky top-24">
             <h3 className="font-heading text-sm font-bold text-foreground mb-3">
-              More Connections Hints
+              More Strands Hints
             </h3>
             <div className="space-y-1">
               {recentPuzzles
-                .filter((p) => p.date !== puzzle.date)
+                .filter((p) => p.printDate !== puzzle.printDate)
                 .slice(0, 8)
                 .map((p) => (
                   <Link
-                    key={p.date}
-                    href={`/connections-hint/${p.date}`}
-                    className="flex items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors hover:bg-blue-50 dark:hover:bg-blue-950/20"
+                    key={p.printDate}
+                    href={`/strands-hint/${p.printDate}`}
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors hover:bg-primary/5"
                   >
                     <span className="font-medium text-foreground">
-                      Connections Hints #{p.id}
+                      Strands Hints #{p.id}
                     </span>
                     <ArrowRight className="h-3 w-3 text-muted-foreground" />
                   </Link>
@@ -233,8 +241,8 @@ export default async function ConnectionsHintTodayPage({
             </div>
             <div className="mt-3 pt-3 border-t border-border">
               <Link
-                href="/connections-hint"
-                className="block text-center text-xs font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 transition-colors"
+                href="/strands-hint"
+                className="block text-center text-xs font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 View All Hints →
               </Link>
@@ -251,16 +259,16 @@ export default async function ConnectionsHintTodayPage({
           Today&apos;s Strategy Tips
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Master today&apos;s Connections puzzle with these expert strategies:
+          Master today&apos;s Strands puzzle with these expert strategies:
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {STRATEGY_TIPS.map((tip) => (
             <div
               key={tip.title}
-              className="rounded-xl border border-blue-100 bg-card p-5 dark:border-blue-900/40"
+              className="rounded-xl border border-primary/20 bg-card p-5"
             >
               <div className="flex items-center gap-2 mb-2">
-                <tip.icon className="h-4 w-4 text-blue-500" />
+                <tip.icon className="h-4 w-4 text-primary" />
                 <h3 className="font-heading text-sm font-bold text-foreground">
                   {tip.title}
                 </h3>
@@ -273,24 +281,26 @@ export default async function ConnectionsHintTodayPage({
         </div>
       </section>
 
-      {/* How Connections Works */}
+      {/* How Strands Works */}
       <section className="mt-10">
         <h2 className="font-heading text-2xl font-bold text-foreground">
-          How Connections Works
+          How Strands Works
         </h2>
         <div className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
           <p>
-            NYT Connections presents you with 16 words that must be sorted into
-            four groups of four. Each group shares a common theme, connection, or
-            relationship. The difficulty increases from Yellow (easiest) to
-            Purple (trickiest).
+            NYT Strands presents you with a 6×8 letter grid and a theme clue.
+            Your goal is to find all the hidden theme words by connecting
+            adjacent letters (horizontally, vertically, or diagonally). You
+            also need to find the Spangram — a special word that spans the
+            entire board and directly relates to the theme.
           </p>
           <p>
             <strong className="font-semibold text-foreground">
-              Scoring System:
+              Hint System:
             </strong>{" "}
-            You have four mistakes allowed before the game ends. Perfect games
-            are rare and worthy of celebration!
+            After every 3 incorrect word guesses, you earn a hint that
+            highlights one letter of a theme word. Every letter on the board is
+            used — there are no wasted letters!
           </p>
         </div>
       </section>
@@ -301,41 +311,39 @@ export default async function ConnectionsHintTodayPage({
           Today&apos;s Puzzle Difficulty Analysis
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Understanding why today&apos;s puzzle was challenging helps you improve
-          for tomorrow. Here&apos;s our expert analysis:
+          Understanding what makes today&apos;s puzzle challenging helps you
+          improve for tomorrow:
         </p>
         <div className="mt-6 space-y-4">
-          <div className="rounded-xl border-l-4 border-l-blue-500 border border-border bg-card p-5">
-            <h3 className="font-heading text-sm font-bold text-foreground mb-2">
-              Overall Difficulty Rating
-            </h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              This puzzle is rated as medium difficulty based on the complexity
-              of category relationships and the presence of red herrings. The
-              purple category was particularly tricky today!
-            </p>
-          </div>
           <div className="rounded-xl border-l-4 border-l-amber-500 border border-border bg-card p-5">
             <h3 className="font-heading text-sm font-bold text-foreground mb-2">
-              What Made It Challenging?
+              The Spangram
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Key challenge factors include: multiple words with double meanings,
-              a clever fill-in-the-blank category that requires lateral thinking,
-              and strategic red herrings designed to mislead solvers. The purple
-              category involves wordplay that only becomes obvious in retrospect.
+              The Spangram is often the key to unlocking the puzzle. Once you
+              identify it, the theme becomes clearer and the remaining words are
+              easier to spot on the grid.
+            </p>
+          </div>
+          <div className="rounded-xl border-l-4 border-l-strands-theme border border-border bg-card p-5">
+            <h3 className="font-heading text-sm font-bold text-foreground mb-2">
+              Theme Word Difficulty
+            </h3>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Some theme words may use less common vocabulary or have unexpected
+              letter paths on the grid. Look for words that connect diagonally
+              — these are often the trickiest to spot.
             </p>
           </div>
           <div className="rounded-xl border-l-4 border-l-emerald-500 border border-border bg-card p-5">
             <h3 className="font-heading text-sm font-bold text-foreground mb-2">
-              Recommended Solving Approach
+              Recommended Approach
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Start by identifying the yellow category, which should be the most
-              straightforward. Avoid rushing into purple — instead, solve green
-              and blue first to narrow down your options through elimination.
-              Watch out for words that could fit multiple categories, and always
-              consider alternate meanings before committing to a guess.
+              Start by reading the theme clue carefully. Scan the grid for
+              obvious words that match the theme. Once you find a few, the
+              remaining words become easier to locate through the process of
+              elimination — remember, every letter must be used!
             </p>
           </div>
         </div>
@@ -355,11 +363,11 @@ export default async function ConnectionsHintTodayPage({
               key={guide.slug}
               href={`/guides/${guide.slug}`}
               prefetch={false}
-              className="group flex items-center gap-3 rounded-xl border border-blue-100 bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-blue-900/40 dark:hover:border-blue-700/60"
+              className="group flex items-center gap-3 rounded-xl border border-primary/20 bg-card p-4 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
             >
               <span className="text-xl">{guide.icon}</span>
               <div className="min-w-0">
-                <span className="block text-sm font-semibold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate">
+                <span className="block text-sm font-semibold text-foreground group-hover:text-primary truncate">
                   {guide.title}
                 </span>
                 <span className="text-xs text-muted-foreground">
@@ -371,11 +379,11 @@ export default async function ConnectionsHintTodayPage({
         </div>
 
         {/* Guides callout */}
-        <div className="mt-6 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-6 text-center text-white sm:p-8">
+        <div className="mt-6 rounded-2xl bg-primary p-6 text-center text-primary-foreground sm:p-8">
           <h3 className="font-heading text-lg font-bold">
             Struggling with Today&apos;s Puzzle?
           </h3>
-          <p className="mt-2 text-sm text-blue-100">
+          <p className="mt-2 text-sm text-primary-foreground/80">
             Don&apos;t worry! Even experts get stuck. Check out our proven
             strategies or learn about common mistakes that might be holding you
             back.
@@ -384,14 +392,14 @@ export default async function ConnectionsHintTodayPage({
             <I18nLink
               href="/guides/beginner-guide"
               prefetch={false}
-              className="rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-blue-700 transition-colors hover:bg-blue-50"
+              className="rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-white/90"
             >
               Start Learning
             </I18nLink>
             <I18nLink
               href="/guides/advanced-techniques"
               prefetch={false}
-              className="rounded-lg border-2 border-white px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-blue-700"
+              className="rounded-lg border-2 border-white px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-primary"
             >
               Expert Techniques
             </I18nLink>
@@ -410,7 +418,7 @@ export default async function ConnectionsHintTodayPage({
               key={item.question}
               className="rounded-xl border border-border bg-card p-5 shadow-sm"
             >
-              <h3 className="font-heading text-sm font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <h3 className="font-heading text-sm font-bold text-primary mb-2">
                 {item.question}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
@@ -424,24 +432,21 @@ export default async function ConnectionsHintTodayPage({
       {/* About Today's Puzzle */}
       <section className="mt-10 rounded-2xl border border-border bg-card p-6 sm:p-8">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-          About Today&apos;s Connections Puzzle
+          About Today&apos;s Strands Puzzle
         </h2>
         <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
           <p>
-            Today&apos;s NYT Connections puzzle continues the tradition of
-            challenging word association gameplay that has made this one of the
-            most popular daily puzzles. Each puzzle is carefully crafted by Wyna
-            Liu, the associate puzzle editor at The New York Times, to provide a
-            perfect balance of solvable challenge and satisfying &ldquo;aha!&rdquo;
-            moments.
+            Today&apos;s NYT Strands puzzle challenges you to find hidden words
+            in a 6×8 letter grid. Every puzzle features a unique theme clue that
+            ties all the words together, plus a special Spangram that stretches
+            across the entire board.
           </p>
           <p>
-            The beauty of Connections lies in its accessibility — anyone can
-            start playing immediately — combined with surprising depth that keeps
-            expert solvers engaged. Whether you&apos;re solving during your
-            morning coffee or taking an evening puzzle break, today&apos;s puzzle
-            offers four distinct categories that will test your vocabulary,
-            lateral thinking, and pattern recognition skills.
+            Strands combines the satisfaction of word search puzzles with the
+            thematic depth of crosswords. The beauty of the game is that every
+            single letter on the board is used — there&apos;s no wasted space.
+            This means you can use process of elimination: once you find most
+            words, the remaining letters must form the final words.
           </p>
           <p>
             Remember: every puzzle is solvable with careful thought and strategy.

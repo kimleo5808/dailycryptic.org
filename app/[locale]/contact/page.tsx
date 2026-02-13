@@ -19,12 +19,12 @@ export async function generateMetadata({
     page: "Contact",
     title: "Contact Us",
     description:
-      "Contact Connections Hint - Get in touch with us for support, feedback, or questions about our word puzzle games.",
+      "Contact Strands Hint - Get in touch with us for support, feedback, or questions about our word puzzle games.",
     keywords: [
       "contact",
       "support",
       "feedback",
-      "connections hint",
+      "strands hint",
       "customer service",
     ],
     locale: locale as Locale,
@@ -38,19 +38,19 @@ const CONTACT_METHODS = [
     icon: Mail,
     title: "Email Support",
     description: "For general inquiries, technical support, or feedback:",
-    email: "support@connectionshint.com",
+    email: "support@strandshint.app",
   },
   {
     icon: Lightbulb,
     title: "Feature Requests",
     description: "Have an idea for a new game mode or feature?",
-    email: "feedback@connectionshint.com",
+    email: "feedback@strandshint.app",
   },
   {
     icon: Bug,
     title: "Bug Reports",
     description: "Found a bug or technical issue?",
-    email: "bugs@connectionshint.com",
+    email: "bugs@strandshint.app",
   },
 ];
 
@@ -67,12 +67,12 @@ export default async function ContactPage({ params }: { params: Params }) {
       />
 
       {/* Header */}
-      <header className="relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 sm:p-8 dark:border-blue-900/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-blue-950/30">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 via-white to-primary/5 p-6 sm:p-8 dark:border-primary/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-primary/10">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2">
-            <MessageSquare className="h-5 w-5 text-blue-500" />
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
+            <MessageSquare className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium text-primary">
               Contact
             </span>
           </div>
@@ -91,9 +91,9 @@ export default async function ContactPage({ params }: { params: Params }) {
         {CONTACT_METHODS.map((method) => (
           <div
             key={method.title}
-            className="rounded-xl border border-blue-100 bg-card p-5 dark:border-blue-900/40"
+            className="rounded-xl border border-primary/20 bg-card p-5 dark:border-primary/40"
           >
-            <method.icon className="h-8 w-8 text-blue-500" />
+            <method.icon className="h-8 w-8 text-primary" />
             <h2 className="mt-3 font-heading text-lg font-bold text-foreground">
               {method.title}
             </h2>
@@ -102,7 +102,7 @@ export default async function ContactPage({ params }: { params: Params }) {
             </p>
             <a
               href={`mailto:${method.email}`}
-              className="mt-3 inline-block text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+              className="mt-3 inline-block text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
               {method.email}
             </a>
@@ -111,7 +111,7 @@ export default async function ContactPage({ params }: { params: Params }) {
       </div>
 
       {/* Contact Form */}
-      <div className="mt-8 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6 dark:border-primary/40">
         <h2 className="font-heading text-xl font-bold text-foreground">
           Send Us a Message
         </h2>
@@ -132,7 +132,7 @@ export default async function ContactPage({ params }: { params: Params }) {
                 id="name"
                 name="name"
                 required
-                className="w-full rounded-lg border border-blue-200 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500 dark:border-blue-900/60"
+                className="w-full rounded-lg border border-primary/40 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-primary/40"
               />
             </div>
             <div>
@@ -147,7 +147,7 @@ export default async function ContactPage({ params }: { params: Params }) {
                 id="email"
                 name="email"
                 required
-                className="w-full rounded-lg border border-blue-200 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500 dark:border-blue-900/60"
+                className="w-full rounded-lg border border-primary/40 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-primary/40"
               />
             </div>
           </div>
@@ -162,7 +162,7 @@ export default async function ContactPage({ params }: { params: Params }) {
               id="subject"
               name="subject"
               required
-              className="w-full rounded-lg border border-blue-200 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500 dark:border-blue-900/60"
+              className="w-full rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
             >
               <option value="">Select a topic</option>
               <option value="general">General Inquiry</option>
@@ -186,12 +186,12 @@ export default async function ContactPage({ params }: { params: Params }) {
               rows={6}
               required
               placeholder="Please describe your inquiry in detail..."
-              className="w-full rounded-lg border border-blue-200 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500 dark:border-blue-900/60"
+              className="w-full rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
             />
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+            className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Send Message
           </button>
@@ -199,7 +199,7 @@ export default async function ContactPage({ params }: { params: Params }) {
       </div>
 
       {/* Quick Help */}
-      <div className="mt-8 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6 dark:border-primary/40">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Quick Help
         </h2>
@@ -208,9 +208,9 @@ export default async function ContactPage({ params }: { params: Params }) {
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <I18nLink
-            href="/how-to-play-connections"
+            href="/how-to-play-strands"
             prefetch={false}
-            className="rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-colors hover:bg-blue-50 dark:border-blue-900/30 dark:bg-blue-900/10 dark:hover:bg-blue-900/20"
+            className="rounded-xl border border-primary/20 bg-primary/5 p-4 transition-colors hover:bg-primary/5 dark:border-primary/30 dark:bg-primary/10 dark:hover:bg-primary/20"
           >
             <h3 className="font-heading text-sm font-bold text-foreground">
               How to Play
@@ -220,9 +220,9 @@ export default async function ContactPage({ params }: { params: Params }) {
             </p>
           </I18nLink>
           <I18nLink
-            href="/connections-hint-faq"
+            href="/strands-hint-faq"
             prefetch={false}
-            className="rounded-xl border border-blue-100 bg-blue-50/50 p-4 transition-colors hover:bg-blue-50 dark:border-blue-900/30 dark:bg-blue-900/10 dark:hover:bg-blue-900/20"
+            className="rounded-xl border border-primary/20 bg-primary/5 p-4 transition-colors hover:bg-primary/5 dark:border-primary/30 dark:bg-primary/10 dark:hover:bg-primary/20"
           >
             <h3 className="font-heading text-sm font-bold text-foreground">
               FAQ
@@ -235,7 +235,7 @@ export default async function ContactPage({ params }: { params: Params }) {
       </div>
 
       {/* Response Time */}
-      <div className="mt-8 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6 dark:border-primary/40">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Response Time
         </h2>
@@ -258,7 +258,7 @@ export default async function ContactPage({ params }: { params: Params }) {
               key={item}
               className="flex items-start gap-2 text-sm text-muted-foreground"
             >
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
               {item}
             </li>
           ))}

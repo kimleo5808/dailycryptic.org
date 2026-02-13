@@ -1,8 +1,8 @@
-import { ClickToReveal } from "@/components/connections/ClickToReveal";
-import { CountdownTimer } from "@/components/connections/CountdownTimer";
+import { StrandsClickToReveal } from "@/components/strands/StrandsClickToReveal";
+import { CountdownTimer } from "@/components/strands/CountdownTimer";
 import { GUIDES } from "@/data/guides";
 import { LETTER_GAMES } from "@/data/letter-games";
-import { getLatestPuzzle, getRecentPuzzles } from "@/lib/connections-data";
+import { getLatestPuzzle, getRecentPuzzles } from "@/lib/strands-data";
 import dayjs from "dayjs";
 import {
   ArrowRight,
@@ -25,10 +25,10 @@ const FEATURE_ICONS = [Lightbulb, Grid3X3, Clock, Puzzle, Shield, Sparkles];
 
 function FaqAccordionItem({ question, answer }: { question: string; answer: string }) {
   return (
-    <details className="group rounded-xl border border-border bg-card transition-colors open:bg-blue-50/30 dark:open:bg-blue-950/10">
-      <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-foreground transition-colors hover:text-blue-600 dark:hover:text-blue-400 [&::-webkit-details-marker]:hidden">
+    <details className="group rounded-xl border border-border bg-card transition-colors open:bg-primary/5">
+      <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-foreground transition-colors hover:text-primary [&::-webkit-details-marker]:hidden">
         <h3 className="text-[0.95rem] leading-snug">{question}</h3>
-        <ChevronDown className="h-4 w-4 shrink-0 text-blue-400 transition-transform group-open:rotate-180" />
+        <ChevronDown className="h-4 w-4 shrink-0 text-primary/60 transition-transform group-open:rotate-180" />
       </summary>
       <div className="px-5 pb-4">
         <p className="text-sm leading-relaxed text-muted-foreground">
@@ -45,13 +45,8 @@ export default async function HomeComponent() {
   const recentPuzzles = await getRecentPuzzles(9);
 
   const todayDate = latestPuzzle
-    ? dayjs(latestPuzzle.date).format("MMMM D, YYYY")
+    ? dayjs(latestPuzzle.printDate).format("MMMM D, YYYY")
     : "";
-
-  // Scramble words for display
-  const allWords = latestPuzzle
-    ? [...latestPuzzle.answers.flatMap((g) => g.members)].sort(() => 0.5 - Math.random())
-    : [];
 
   return (
     <div className="w-full grid-bg">
@@ -66,14 +61,14 @@ export default async function HomeComponent() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
-              href="/connections-hint-today"
-              className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-700 hover:shadow-blue-600/30"
+              href="/strands-hint-today"
+              className="group inline-flex items-center gap-2 rounded-xl bg-cta px-7 py-3.5 text-sm font-bold text-cta-foreground shadow-lg shadow-cta/25 transition-all hover:bg-cta/90 hover:shadow-cta/30"
             >
               {t("hero.ctaHints")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
-              href="/connections-hint"
+              href="/strands-hint"
               className="inline-flex items-center gap-2 rounded-xl border-2 border-slate-600 px-6 py-3.5 text-sm font-semibold text-slate-200 transition-all hover:border-slate-500 hover:bg-slate-800"
             >
               {t("hero.ctaArchive")}
@@ -83,41 +78,39 @@ export default async function HomeComponent() {
         </div>
       </section>
 
-      {/* Today's Clues Section */}
+      {/* Today's Puzzle Preview */}
       {latestPuzzle && (
         <section className="bg-slate-800 py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <div className="text-center">
               <h2 className="font-heading text-2xl font-bold text-white">
-                Today&apos;s Connections Words
+                Today&apos;s Strands Puzzle
               </h2>
               <p className="mt-2 text-sm text-slate-400">
                 Puzzle #{latestPuzzle.id} — {todayDate}
               </p>
             </div>
 
-            {/* Word chips */}
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              {allWords.map((word) => (
-                <span
-                  key={word}
-                  className="rounded-lg bg-blue-600/20 border border-blue-500/30 px-4 py-2 text-sm font-mono font-bold text-blue-200 uppercase tracking-wide"
-                >
-                  {word}
-                </span>
-              ))}
+            {/* Theme clue */}
+            <div className="mt-6 text-center">
+              <p className="text-lg font-bold text-primary">
+                &ldquo;{latestPuzzle.clue}&rdquo;
+              </p>
+              <p className="mt-2 text-sm text-slate-400">
+                {latestPuzzle.themeWords.length} theme words + 1 Spangram
+              </p>
             </div>
 
             {/* Click to reveal */}
             <div className="mt-8 flex justify-center">
-              <ClickToReveal puzzle={latestPuzzle} />
+              <StrandsClickToReveal puzzle={latestPuzzle} />
             </div>
 
             {/* Link to full hints */}
             <div className="mt-4 text-center">
               <Link
-                href="/connections-hint-today"
-                className="text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                href="/strands-hint-today"
+                className="text-sm text-primary hover:text-primary/80 transition-colors"
               >
                 Need progressive hints? Click here for step-by-step clues →
               </Link>
@@ -143,85 +136,85 @@ export default async function HomeComponent() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-heading text-2xl font-bold text-foreground">
-              Recent Connections Answers
+              Recent Strands Answers
             </h2>
             <Link
-              href="/connections-hint"
-              className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors dark:text-blue-400"
+              href="/strands-hint"
+              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
             >
               {t("recentPuzzles.viewAll")}
             </Link>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {recentPuzzles.map((puzzle) => {
-              const sorted = [...puzzle.answers].sort((a, b) => a.level - b.level);
-              return (
-                <Link
-                  key={puzzle.date}
-                  href={`/connections-hint/${puzzle.date}`}
-                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg dark:hover:border-blue-700"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="inline-block rounded-md bg-blue-600 px-3 py-1 text-xs font-bold text-white">
-                      Puzzle #{puzzle.id}
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {dayjs(puzzle.date).format("MMM D, YYYY")}
-                    </span>
-                  </div>
-                  <h3 className="mt-3 text-sm font-bold text-foreground">
-                    Connections #{puzzle.id} Answer & Hints
-                  </h3>
-                  <div className="mt-2 space-y-1">
-                    {sorted.slice(0, 2).map((g) => (
-                      <p key={g.level} className="truncate text-xs text-muted-foreground">
-                        {g.members.join(", ")}
-                      </p>
-                    ))}
-                  </div>
-                  <div className="mt-3 flex items-center gap-1 text-xs font-medium text-blue-600 group-hover:text-blue-700 dark:text-blue-400">
-                    Read Analysis
-                    <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-                  </div>
-                </Link>
-              );
-            })}
+            {recentPuzzles.map((puzzle) => (
+              <Link
+                key={puzzle.printDate}
+                href={`/strands-hint/${puzzle.printDate}`}
+                className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="inline-block rounded-md bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
+                    Puzzle #{puzzle.id}
+                  </span>
+                  <span className="text-xs text-muted-foreground">
+                    {dayjs(puzzle.printDate).format("MMM D, YYYY")}
+                  </span>
+                </div>
+                <h3 className="mt-3 text-sm font-bold text-foreground line-clamp-1">
+                  &ldquo;{puzzle.clue}&rdquo;
+                </h3>
+                <div className="mt-2 space-y-1">
+                  <p className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <span className="h-2 w-2 rounded-full bg-strands-spangram" />
+                    <span className="truncate">Spangram: {puzzle.spangram.length} letters</span>
+                  </p>
+                  <p className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <span className="h-2 w-2 rounded-full bg-strands-theme" />
+                    <span>{puzzle.themeWords.length} theme words</span>
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center gap-1 text-xs font-medium text-primary">
+                  View Hints
+                  <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* What is NYT Connections? */}
+      {/* What is NYT Strands? */}
       <section className="py-12 bg-muted/30">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            What is NYT Connections?
+            What is NYT Strands?
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            NYT Connections is a daily word puzzle by The New York Times where you sort 16 words into four groups of four, each sharing a hidden connection. Groups are color-coded by difficulty: yellow (easiest), green, blue, and purple (hardest).
+            NYT Strands is a daily word puzzle by The New York Times where you find theme words hidden in a 6x8 letter grid. Words are formed by connecting adjacent letters (including diagonals). Each puzzle has a theme clue, several theme words, and one special Spangram that spans the entire board.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <Grid3X3 className="h-7 w-7" />
               </div>
-              <h3 className="mt-3 text-sm font-bold text-foreground">16 Words</h3>
+              <h3 className="mt-3 text-sm font-bold text-foreground">6x8 Letter Grid</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Sort them into four groups of four connected words.
+                Find words by connecting adjacent letters on the board.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <Puzzle className="h-7 w-7" />
               </div>
-              <h3 className="mt-3 text-sm font-bold text-foreground">4 Groups</h3>
+              <h3 className="mt-3 text-sm font-bold text-foreground">Theme Words</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Each group shares a hidden connection or theme.
+                All words connect to a daily theme revealed by the clue.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <BookOpen className="h-7 w-7" />
               </div>
               <h3 className="mt-3 text-sm font-bold text-foreground">Daily Puzzle</h3>
@@ -237,7 +230,7 @@ export default async function HomeComponent() {
       <section className="py-12 bg-background">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Why Use ConnectionsHint?
+            Why Use StrandsHint?
           </h2>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[0, 1, 2, 3, 4, 5].map((index) => {
@@ -245,9 +238,9 @@ export default async function HomeComponent() {
               return (
                 <div
                   key={index}
-                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:hover:border-blue-700"
+                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-blue-600 transition-transform group-hover:scale-110 dark:bg-blue-900/30 dark:text-blue-400">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-transform group-hover:scale-110">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mt-3 text-sm font-bold text-foreground">
@@ -288,7 +281,7 @@ export default async function HomeComponent() {
       <section className="py-12 bg-background">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
               <Gamepad2 className="h-4 w-4" />
               Word Games
             </div>
@@ -304,9 +297,9 @@ export default async function HomeComponent() {
               <Link
                 key={g.slug}
                 href={`/${g.slug}`}
-                className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 text-center transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg dark:hover:border-blue-700"
+                className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 text-center transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
               >
-                <div className="font-heading text-3xl font-bold text-blue-600 transition-transform group-hover:scale-110 dark:text-blue-400">
+                <div className="font-heading text-3xl font-bold text-primary transition-transform group-hover:scale-110">
                   {g.wordLength}
                 </div>
                 <h3 className="mt-1 text-sm font-bold text-foreground">
@@ -323,7 +316,7 @@ export default async function HomeComponent() {
                         ? "Expert level"
                         : "Ultimate difficulty"}
                 </p>
-                <div className="mt-2 text-xs font-medium text-blue-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-blue-400">
+                <div className="mt-2 text-xs font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
                   Play Now →
                 </div>
               </Link>
@@ -336,12 +329,12 @@ export default async function HomeComponent() {
       <section className="py-12 bg-muted/30">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
               <Map className="h-4 w-4" />
               Strategy Guides
             </div>
             <h2 className="mt-4 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-              Master Connections with Expert Guides
+              Master Strands with Expert Guides
             </h2>
             <p className="mt-2 text-muted-foreground">
               Take your puzzle-solving skills to the next level with our comprehensive strategy guides
@@ -352,9 +345,9 @@ export default async function HomeComponent() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:hover:border-blue-700"
+                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-lg transition-transform group-hover:scale-110 dark:bg-blue-900/30">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-lg transition-transform group-hover:scale-110">
                     {guide.icon}
                   </div>
                   <h3 className="mt-3 text-sm font-bold text-foreground">
@@ -363,21 +356,21 @@ export default async function HomeComponent() {
                   <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                     {guide.description}
                   </p>
-                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-blue-600 group-hover:text-blue-700 dark:text-blue-400">
+                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-primary">
                     Read Guide
                     <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </Link>
             ))}
           </div>
-          <div className="mt-6 rounded-xl border border-blue-200/60 bg-blue-50/50 p-4 text-center text-sm text-muted-foreground dark:border-blue-900/30 dark:bg-blue-950/10">
+          <div className="mt-6 rounded-xl border border-primary/20 bg-primary/5 p-4 text-center text-sm text-muted-foreground">
             <strong className="text-foreground">Pro Tip:</strong>{" "}
             Start with the{" "}
-            <Link href="/guides/beginner-guide" className="font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400">
+            <Link href="/guides/beginner-guide" className="font-medium text-primary hover:text-primary/80">
               Beginner&apos;s Guide
             </Link>{" "}
             if you&apos;re new, or jump to{" "}
-            <Link href="/guides/strategy-tips" className="font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400">
+            <Link href="/guides/strategy-tips" className="font-medium text-primary hover:text-primary/80">
               Strategy Tips
             </Link>{" "}
             to improve your current approach!
@@ -389,87 +382,87 @@ export default async function HomeComponent() {
       <section className="py-12 bg-background">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Your Ultimate Guide to Connections Hint and Wordle Solutions
+            Your Ultimate Guide to Strands Hints and Puzzle Solutions
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Welcome to the premier destination for <strong className="text-foreground">connections hint</strong> enthusiasts and Wordle players! Whether you&apos;re seeking today&apos;s puzzle solutions or looking to sharpen your word-guessing skills, you&apos;ve found the perfect resource.
+            Welcome to the premier destination for <strong className="text-foreground">Strands hint</strong> enthusiasts and word puzzle players! Whether you&apos;re seeking today&apos;s puzzle solutions or looking to sharpen your word-finding skills, you&apos;ve found the perfect resource.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            What is Connections Hint?
+            What is a Strands Hint?
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            A <strong className="text-foreground">connections hint today</strong> refers to the subtle clues and strategies that help players identify patterns and relationships between words in puzzle games. The New York Times Connections game has revolutionized how we think about word associations, making <strong className="text-foreground">NYT connections hints</strong> an essential tool for puzzle enthusiasts worldwide.
+            A <strong className="text-foreground">Strands hint today</strong> refers to the subtle clues and strategies that help players find hidden theme words on the 6x8 letter grid. The New York Times Strands game challenges players to connect adjacent letters to form words that all relate to a daily theme, making <strong className="text-foreground">NYT Strands hints</strong> an essential tool for puzzle enthusiasts worldwide.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Our platform combines the classic Wordle experience with comprehensive guidance for various word puzzles. By understanding the connections between letters, words, and meanings, players can significantly improve their puzzle-solving abilities.
+            Our platform provides progressive hints that guide you from the theme clue to the Spangram and individual theme words. By understanding letter connections and thematic relationships, players can significantly improve their puzzle-solving abilities.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Mastering Wordle with Strategic Hints
+            How to Solve NYT Strands Puzzles
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Every <strong className="text-foreground">wordle hint</strong> serves a specific purpose in guiding players toward the solution. The five-letter word format of Wordle creates unique opportunities for strategic thinking. Here&apos;s how to leverage hints effectively:
+            Every <strong className="text-foreground">Strands hint</strong> serves a specific purpose in guiding players toward the solution. The 6x8 grid format creates a unique word search experience. Here&apos;s how to approach the puzzle:
           </p>
           <ul className="mt-3 space-y-2">
             {[
-              ["Letter frequency analysis:", "Focus on common letters like E, A, R, I, O, T, N, and S in your initial guesses"],
-              ["Vowel placement:", "Identify vowel positions early to narrow down possibilities"],
-              ["Consonant patterns:", "Recognize common consonant combinations and endings"],
-              ["Word structure:", "Consider prefixes, suffixes, and root words"],
+              ["Read the theme clue:", "The clue at the top reveals the common thread connecting all hidden words"],
+              ["Find the Spangram first:", "The Spangram spans the entire board and is often the key to understanding the theme"],
+              ["Look for shorter words:", "Start with 4-5 letter words before tackling longer ones"],
+              ["Use hint letters:", "Finding non-theme words earns hint letters that highlight cells on the grid"],
             ].map(([title, desc]) => (
               <li key={title} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                 <span><strong className="text-foreground">{title}</strong> {desc}</span>
               </li>
             ))}
           </ul>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            NYT Connections Hints: Advanced Strategies
+            NYT Strands Hints: Advanced Strategies
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            The <strong className="text-foreground">NYT connections hints</strong> system relies on understanding thematic relationships between seemingly unrelated words. Successful players develop pattern recognition skills that extend far beyond simple word knowledge.
+            The <strong className="text-foreground">NYT Strands hints</strong> system relies on understanding how letters connect on the grid. Successful players develop spatial awareness that extends beyond simple word knowledge.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Categories in Connections often include:
+            Key strategies for Strands include:
           </p>
           <ul className="mt-3 space-y-2">
             {[
-              ["Synonyms and related concepts:", "Words sharing similar meanings or contexts"],
-              ["Compound word components:", "Words that can combine with a common term"],
-              ["Pop culture references:", "Entertainment, sports, or historical connections"],
-              ["Wordplay categories:", "Puns, rhymes, or linguistic tricks"],
+              ["Adjacent letter scanning:", "Words form by connecting horizontally, vertically, and diagonally adjacent cells"],
+              ["Theme interpretation:", "The clue often has a double meaning — think broadly about what words could fit"],
+              ["Board coverage:", "Every letter on the board belongs to exactly one word — use this to eliminate possibilities"],
+              ["Spangram awareness:", "The Spangram always spans from one side of the board to the other"],
             ].map(([title, desc]) => (
               <li key={title} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                 <span><strong className="text-foreground">{title}</strong> {desc}</span>
               </li>
             ))}
           </ul>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Daily Puzzle Strategy and Connections Hint Today
+            Daily Puzzle Strategy and Strands Hint Today
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Finding the right <strong className="text-foreground">connections hint today</strong> requires a systematic approach. Start by scanning for obvious connections — often the easiest category reveals itself first. Look for proper nouns, specific terminology, or words that immediately suggest a theme.
+            Finding the right <strong className="text-foreground">Strands hint today</strong> requires a systematic approach. Start by reading the theme clue carefully — it often contains wordplay or a double meaning that reveals the connection between all theme words.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Advanced players recommend the &quot;process of elimination&quot; strategy: identify the most challenging category first, then work backwards. This approach prevents accidental groupings that might use up your limited mistakes.
+            Advanced players recommend finding the Spangram first, as it reveals the overarching theme and makes the remaining words easier to identify. The Spangram always connects two opposite edges of the board, so look for long words that traverse the grid.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
             Building Your Puzzle-Solving Toolkit
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Successful puzzle solvers combine multiple skills and resources. A comprehensive <strong className="text-foreground">wordle hint</strong> strategy involves:
+            Successful puzzle solvers combine multiple skills and resources. A comprehensive <strong className="text-foreground">Strands hint</strong> strategy involves:
           </p>
           <ol className="mt-3 list-decimal space-y-2 pl-5">
             {[
-              ["Vocabulary expansion:", "Regularly learn new words and their meanings"],
-              ["Pattern recognition:", "Study common letter combinations and word structures"],
-              ["Cultural awareness:", "Stay informed about current events and popular culture"],
-              ["Practice consistency:", "Daily engagement improves intuitive pattern recognition"],
+              ["Vocabulary expansion:", "Regularly learn new words and their thematic connections"],
+              ["Pattern recognition:", "Study common letter arrangements and word paths on grids"],
+              ["Theme awareness:", "Stay informed about common themes — pop culture, science, food, etc."],
+              ["Practice consistency:", "Daily engagement improves intuitive grid-scanning skills"],
             ].map(([title, desc]) => (
               <li key={title} className="text-sm leading-relaxed text-muted-foreground">
                 <strong className="text-foreground">{title}</strong> {desc}
@@ -481,86 +474,56 @@ export default async function HomeComponent() {
             The Psychology Behind Puzzle Hints
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Understanding why certain <strong className="text-foreground">connections hint</strong> strategies work reveals the cognitive processes underlying puzzle-solving success. The brain naturally seeks patterns and relationships, making connections between disparate pieces of information.
+            Understanding why certain <strong className="text-foreground">Strands hint</strong> strategies work reveals the cognitive processes underlying puzzle-solving success. The brain naturally seeks patterns and spatial relationships, making connections between letters and words on a grid.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Effective hint systems leverage this natural tendency by providing just enough information to guide thinking without revealing solutions outright. The best <strong className="text-foreground">NYT connections hints</strong> activate existing knowledge while encouraging creative thinking.
+            Effective hint systems leverage this natural tendency by providing just enough information to guide thinking without revealing solutions outright. The best <strong className="text-foreground">NYT Strands hints</strong> activate existing knowledge while encouraging creative spatial thinking.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
             Community and Competition
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            The puzzle-solving community thrives on shared strategies and collective problem-solving. Social media platforms buzz daily with discussions about the latest <strong className="text-foreground">connections hint today</strong>, creating a global network of enthusiasts who support each other&apos;s puzzle journey.
+            The puzzle-solving community thrives on shared strategies and collective problem-solving. Social media platforms buzz daily with discussions about the latest <strong className="text-foreground">Strands hint today</strong>, creating a global network of enthusiasts who support each other&apos;s puzzle journey.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            This collaborative approach extends to Wordle, where sharing results has become a cultural phenomenon. The color-coded grid system allows players to communicate their solving experience without spoiling the answer for others.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Technology and Puzzle Evolution
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Modern puzzle platforms have transformed how we interact with word games. Digital formats allow for immediate feedback, statistical tracking, and adaptive difficulty levels. Today&apos;s <strong className="text-foreground">wordle hint</strong> systems can analyze player performance and provide personalized guidance.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The integration of AI and machine learning in puzzle design creates more sophisticated hint systems. These technologies can generate <strong className="text-foreground">connections hint</strong> suggestions that adapt to individual playing styles and skill levels.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Educational Benefits of Puzzle Solving
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Regular engagement with word puzzles provides significant cognitive benefits. Studies suggest that consistent puzzle-solving activity can improve vocabulary, enhance pattern recognition, and strengthen analytical thinking skills.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The strategic thinking required for effective use of <strong className="text-foreground">NYT connections hints</strong> translates to improved problem-solving abilities in other contexts. Players develop patience, methodical thinking, and the ability to consider multiple perspectives simultaneously.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Future of Word Puzzles
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            As word puzzles continue to evolve, the role of hints and guidance will become increasingly sophisticated. Future platforms may incorporate personalized learning algorithms, adaptive difficulty systems, and collaborative solving features.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The enduring popularity of games requiring <strong className="text-foreground">connections hint today</strong> strategies demonstrates the fundamental human love for intellectual challenges. These puzzles satisfy our desire for accomplishment while providing daily mental exercise in an increasingly digital world.
+            Strands has quickly become one of the most popular NYT puzzle games alongside Wordle and Connections, with players sharing their solving strategies and celebrating when they find the Spangram without any hints.
           </p>
 
           <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
             Getting Started: Your First Steps
           </h3>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Begin your puzzle-solving journey with our integrated Wordle game above. Practice identifying letter patterns and word structures while building your confidence. Remember, every expert puzzle solver started with simple <strong className="text-foreground">wordle hint</strong> strategies before developing advanced techniques.
+            Begin your puzzle-solving journey with today&apos;s Strands puzzle. Start by reading the theme clue, scanning the grid for obvious words, and working toward the Spangram. Remember, every expert puzzle solver started with simple <strong className="text-foreground">Strands hint</strong> strategies before developing advanced techniques.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Join our community of puzzle enthusiasts and share your progress. Whether you&apos;re seeking today&apos;s <strong className="text-foreground">connections hint</strong> or celebrating a perfect Wordle solve, you&apos;ll find support and encouragement here.
+            Join our community of puzzle enthusiasts and share your progress. Whether you&apos;re seeking today&apos;s <strong className="text-foreground">Strands hint</strong> or celebrating finding the Spangram on your first try, you&apos;ll find support and encouragement here.
           </p>
           <p className="mt-3 leading-relaxed text-muted-foreground">
-            Ready to challenge yourself? Start with today&apos;s puzzle and discover how strategic thinking and the right hints can transform your solving experience. Welcome to the world of connections, patterns, and the satisfaction of puzzle mastery!
+            Ready to challenge yourself? Start with today&apos;s puzzle and discover how strategic thinking and the right hints can transform your solving experience. Welcome to the world of Strands, letter grids, and the satisfaction of puzzle mastery!
           </p>
         </div>
       </section>
 
       {/* CTA Banner */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700">
+      <section className="py-16 bg-primary">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
+          <h2 className="font-heading text-2xl font-bold text-primary-foreground sm:text-3xl">
             Ready to Solve Today&apos;s Puzzle?
           </h2>
-          <p className="mt-3 text-blue-100">
+          <p className="mt-3 text-primary-foreground/80">
             Get progressive hints without spoiling the fun. Start with a gentle nudge and reveal more only when you need it.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
-              href="/connections-hint-today"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 text-sm font-bold text-blue-700 shadow-lg transition-all hover:bg-blue-50"
+              href="/strands-hint-today"
+              className="inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 text-sm font-bold text-primary shadow-lg transition-all hover:bg-white/90"
             >
               Get Today&apos;s Hints
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              href="/how-to-play-connections"
+              href="/how-to-play-strands"
               className="inline-flex items-center gap-2 rounded-xl border-2 border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
             >
               How to Play

@@ -18,16 +18,19 @@ html {
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 221 83% 53%;
+    /* --- Brand colors --- */
+    --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 47% 20%;
+
+    /* --- Page base --- */
+    --background: 210 40% 98%;
+    --foreground: 215 25% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 17%;
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
     --accent: 210 40% 96%;
@@ -36,27 +39,42 @@ html {
     --destructive-foreground: 0 0% 100%;
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 221 83% 53%;
-    --chart-1: 47 96% 53%;
-    --chart-2: 115 29% 53%;
-    --chart-3: 213 74% 76%;
+    --ring: 239 84% 67%;
+
+    /* --- CTA action color (Amber / Spangram gold) --- */
+    --cta: 38 92% 50%;
+    --cta-foreground: 0 0% 100%;
+
+    /* --- Game-specific colors --- */
+    --strands-theme: 217 91% 60%;
+    --strands-spangram: 38 92% 50%;
+    --strands-hint: 160 84% 39%;
+    --strands-grid: 210 40% 96%;
+    --strands-selected: 226 100% 94%;
+
+    /* --- Charts --- */
+    --chart-1: 239 84% 67%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 38 92% 50%;
     --chart-4: 271 47% 71%;
     --chart-5: 0 84% 60%;
-    --sidebar: 210 20% 98%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-primary: 221 83% 53%;
+
+    /* --- Sidebar --- */
+    --sidebar: 210 40% 98%;
+    --sidebar-foreground: 215 25% 17%;
+    --sidebar-primary: 239 84% 67%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 40% 96%;
     --sidebar-accent-foreground: 222 47% 20%;
     --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 221 83% 53%;
-    --connections-yellow: 47 96% 53%;
-    --connections-green: 115 29% 53%;
-    --connections-blue: 213 74% 76%;
-    --connections-purple: 271 47% 71%;
+    --sidebar-ring: 239 84% 67%;
+
+    /* --- Typography --- */
     --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: var(--font-mono-code), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* --- Layout --- */
     --radius: 0.625rem;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
@@ -71,45 +89,63 @@ html {
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
+    /* --- Brand colors --- */
+    --primary: 232 92% 81%;
     --primary-foreground: 0 0% 100%;
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
+
+    /* --- Page base --- */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --card: 215 25% 14%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 25% 14%;
+    --popover-foreground: 210 40% 98%;
     --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 25% 67%;
     --accent: 217 33% 17%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 217 91% 60%;
-    --chart-1: 47 96% 53%;
-    --chart-2: 115 29% 53%;
-    --chart-3: 213 74% 76%;
+    --ring: 232 92% 81%;
+
+    /* --- CTA action color (Amber / Spangram gold) --- */
+    --cta: 43 96% 56%;
+    --cta-foreground: 0 0% 0%;
+
+    /* --- Game-specific colors --- */
+    --strands-theme: 213 94% 68%;
+    --strands-spangram: 43 96% 56%;
+    --strands-hint: 160 67% 52%;
+    --strands-grid: 215 25% 14%;
+    --strands-selected: 244 47% 20%;
+
+    /* --- Charts --- */
+    --chart-1: 232 92% 81%;
+    --chart-2: 160 67% 52%;
+    --chart-3: 43 96% 56%;
     --chart-4: 271 47% 71%;
     --chart-5: 0 84% 60%;
+
+    /* --- Sidebar --- */
     --sidebar: 222 47% 6%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 232 92% 81%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 217 33% 17%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 217 33% 17%;
-    --sidebar-ring: 217 91% 60%;
-    --connections-yellow: 47 96% 53%;
-    --connections-green: 115 29% 53%;
-    --connections-blue: 213 74% 76%;
-    --connections-purple: 271 47% 71%;
+    --sidebar-ring: 232 92% 81%;
+
+    /* --- Typography --- */
     --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: var(--font-mono-code), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* --- Layout --- */
     --radius: 0.625rem;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
@@ -122,17 +158,17 @@ html {
   }
 }
 
-/* Grid background pattern */
+/* Grid background pattern - Indigo tint */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 70, 229, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
 .dark .grid-bg {
   background-image:
-    linear-gradient(rgba(59, 130, 246, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(79, 70, 229, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 70, 229, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
 }

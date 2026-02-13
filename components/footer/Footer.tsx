@@ -38,7 +38,7 @@ export default async function Footer() {
                       href={link.href}
                       title={link.name}
                       prefetch={false}
-                      className="text-slate-400 transition-colors hover:text-blue-400"
+                      className="text-slate-400 transition-colors hover:text-primary"
                       target={link.target || undefined}
                       rel={link.rel || undefined}
                     >
@@ -49,7 +49,7 @@ export default async function Footer() {
                       href={link.href}
                       title={link.name}
                       prefetch={false}
-                      className="text-slate-400 transition-colors hover:text-blue-400"
+                      className="text-slate-400 transition-colors hover:text-primary"
                       target={link.target || undefined}
                       rel={link.rel || undefined}
                     >
@@ -73,7 +73,7 @@ export default async function Footer() {
             })}
           </p>
           <p className="text-xs text-slate-600">
-            Not affiliated with The New York Times. NYT Connections is a trademark of The New York Times Company.
+            Not affiliated with The New York Times. NYT Strands is a trademark of The New York Times Company.
           </p>
         </div>
       </div>

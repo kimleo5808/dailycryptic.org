@@ -1,5 +1,5 @@
 import { siteConfig } from '@/config/site'
-import { getAllPuzzles } from '@/lib/connections-data'
+import { getAllPuzzles } from '@/lib/strands-data'
 import { getPosts } from '@/lib/getBlogs'
 import { MetadataRoute } from 'next'
 
@@ -10,10 +10,10 @@ type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'y
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     '',
-    '/connections-hint-today',
-    '/how-to-play-connections',
-    '/connections-hint-faq',
-    '/connections-hint',
+    '/strands-hint-today',
+    '/how-to-play-strands',
+    '/strands-hint-faq',
+    '/strands-hint',
     '/about',
     '/privacy-policy',
     '/terms-of-service',
@@ -22,15 +22,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/connections-hint-today' ? 'daily' : 'weekly') as ChangeFrequency,
-    priority: page === '' ? 1.0 : page === '/connections-hint-today' ? 0.95 : 0.8,
+    changeFrequency: (page === '' || page === '/strands-hint-today' ? 'daily' : 'weekly') as ChangeFrequency,
+    priority: page === '' ? 1.0 : page === '/strands-hint-today' ? 0.95 : 0.8,
   }))
 
   // Puzzle pages
   const allPuzzles = await getAllPuzzles()
   const puzzlePages = allPuzzles.map(puzzle => ({
-    url: `${siteUrl}/connections-hint/${puzzle.date}`,
-    lastModified: new Date(puzzle.date),
+    url: `${siteUrl}/strands-hint/${puzzle.printDate}`,
+    lastModified: new Date(puzzle.printDate),
     changeFrequency: 'monthly' as ChangeFrequency,
     priority: 0.6,
   }))

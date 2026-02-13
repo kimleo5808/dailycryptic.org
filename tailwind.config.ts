@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        heading: ['var(--font-mono-code)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        heading: ['var(--font-heading)', 'var(--font-body)', 'sans-serif'],
         body: ['var(--font-body)', 'sans-serif'],
         mono: ['var(--font-mono-code)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
@@ -64,11 +64,16 @@ const config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
         },
-        connections: {
-          yellow: 'hsl(var(--connections-yellow))',
-          green: 'hsl(var(--connections-green))',
-          blue: 'hsl(var(--connections-blue))',
-          purple: 'hsl(var(--connections-purple))',
+        cta: {
+          DEFAULT: 'hsl(var(--cta))',
+          foreground: 'hsl(var(--cta-foreground))',
+        },
+        strands: {
+          theme: 'hsl(var(--strands-theme))',
+          spangram: 'hsl(var(--strands-spangram))',
+          hint: 'hsl(var(--strands-hint))',
+          grid: 'hsl(var(--strands-grid))',
+          selected: 'hsl(var(--strands-selected))',
         }
       },
       borderRadius: {

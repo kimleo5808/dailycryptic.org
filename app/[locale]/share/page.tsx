@@ -26,14 +26,14 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "Share",
-    title: "Share Connections Hint",
+    title: "Share Strands Hint",
     description:
-      "Share Connections Hint with friends and family. Spread the love of word puzzles and brain challenges!",
+      "Share Strands Hint with friends and family. Spread the love of word puzzles and brain challenges!",
     keywords: [
       "share",
       "social media",
       "word puzzles",
-      "connections hint",
+      "strands hint",
       "invite friends",
     ],
     locale: locale as Locale,
@@ -46,7 +46,7 @@ const SOCIAL_LINKS = [
   {
     name: "Twitter",
     icon: "𝕏",
-    href: `https://twitter.com/intent/tweet?text=Check%20out%20Connections%20Hint%20-%20Amazing%20word%20puzzles%20with%20daily%20hints!&url=${encodeURIComponent(BASE_URL)}`,
+    href: `https://twitter.com/intent/tweet?text=Check%20out%20Strands%20Hint%20-%20Amazing%20word%20puzzles%20with%20daily%20hints!&url=${encodeURIComponent(BASE_URL)}`,
     className:
       "bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200",
   },
@@ -65,7 +65,7 @@ const SOCIAL_LINKS = [
   {
     name: "Reddit",
     icon: "r/",
-    href: `https://www.reddit.com/submit?url=${encodeURIComponent(BASE_URL)}&title=Amazing%20Word%20Puzzle%20Games%20-%20Connections%20Hint`,
+    href: `https://www.reddit.com/submit?url=${encodeURIComponent(BASE_URL)}&title=Amazing%20Word%20Puzzle%20Games%20-%20Strands%20Hint`,
     className: "bg-orange-600 text-white hover:bg-orange-700",
   },
   {
@@ -115,12 +115,12 @@ export default async function SharePage({ params }: { params: Params }) {
       />
 
       {/* Header */}
-      <header className="relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 sm:p-8 dark:border-blue-900/40 dark:from-zinc-900 dark:via-zinc-900 dark:to-blue-950/30">
-        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-200/30 blur-3xl" />
+      <header className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 via-white to-primary/5 p-6 sm:p-8 dark:border-primary/20 dark:from-zinc-900 dark:via-zinc-900 dark:to-primary/5">
+        <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2">
-            <Share2 className="h-5 w-5 text-blue-500" />
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
+            <Share2 className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium text-primary">
               Share
             </span>
           </div>
@@ -129,14 +129,14 @@ export default async function SharePage({ params }: { params: Params }) {
           </h1>
           <p className="mt-2 text-muted-foreground">
             Love our word puzzles? Help us grow the community by sharing
-            Connections Hint with your friends, family, and fellow puzzle
+            Strands Hint with your friends, family, and fellow puzzle
             enthusiasts!
           </p>
         </div>
       </header>
 
       {/* Social Share Buttons */}
-      <div className="mt-8 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-xl font-bold text-foreground">
           Share on Social Media
         </h2>
@@ -158,7 +158,7 @@ export default async function SharePage({ params }: { params: Params }) {
       </div>
 
       {/* Copy Link */}
-      <div className="mt-6 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-6 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Copy & Share Link
         </h2>
@@ -167,11 +167,11 @@ export default async function SharePage({ params }: { params: Params }) {
             type="text"
             readOnly
             value={siteConfig.url}
-            className="flex-1 rounded-lg border border-blue-200 bg-background px-4 py-2.5 text-sm text-foreground dark:border-blue-900/60"
+            className="flex-1 rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground dark:border-primary/20"
           />
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             onClick={undefined}
           >
             <Copy className="h-4 w-4" />
@@ -181,7 +181,7 @@ export default async function SharePage({ params }: { params: Params }) {
       </div>
 
       {/* Email Share */}
-      <div className="mt-6 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-6 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Share via Email
         </h2>
@@ -189,8 +189,8 @@ export default async function SharePage({ params }: { params: Params }) {
           Send a personalized message to friends and family:
         </p>
         <a
-          href={`mailto:?subject=Check%20out%20Connections%20Hint!&body=Hi!%20I%20found%20this%20amazing%20word%20puzzle%20website%20and%20thought%20you'd%20love%20it.%20They%20have%20daily%20Connections%20hints%20and%20word%20games%20with%204-11%20letter%20challenges!%0A%0ACheck%20it%20out:%20${encodeURIComponent(siteConfig.url)}%0A%0AHappy%20puzzling!`}
-          className="mt-3 inline-flex items-center gap-2 rounded-lg border border-blue-500/30 px-5 py-2.5 text-sm font-semibold text-blue-600 transition-colors hover:bg-blue-50 dark:text-blue-400 dark:hover:bg-blue-900/20"
+          href={`mailto:?subject=Check%20out%20Strands%20Hint!&body=Hi!%20I%20found%20this%20amazing%20word%20puzzle%20website%20and%20thought%20you'd%20love%20it.%20They%20have%20daily%20Strands%20hints%20and%20word%20games%20with%204-11%20letter%20challenges!%0A%0ACheck%20it%20out:%20${encodeURIComponent(siteConfig.url)}%0A%0AHappy%20puzzling!`}
+          className="mt-3 inline-flex items-center gap-2 rounded-lg border border-primary/30 px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
         >
           <Mail className="h-4 w-4" />
           Send Email
@@ -200,15 +200,15 @@ export default async function SharePage({ params }: { params: Params }) {
       {/* Why Share */}
       <div className="mt-8">
         <h2 className="font-heading text-xl font-bold text-foreground">
-          Why Share Connections Hint?
+          Why Share Strands Hint?
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {REASONS.map((reason) => (
             <div
               key={reason.title}
-              className="rounded-xl border border-blue-100 bg-card p-5 dark:border-blue-900/40"
+              className="rounded-xl border border-primary/20 bg-card p-5"
             >
-              <reason.icon className="h-8 w-8 text-blue-500" />
+              <reason.icon className="h-8 w-8 text-primary" />
               <h3 className="mt-3 font-heading text-base font-bold text-foreground">
                 {reason.title}
               </h3>
@@ -221,12 +221,12 @@ export default async function SharePage({ params }: { params: Params }) {
       </div>
 
       {/* Benefits */}
-      <div className="mt-8 rounded-xl border border-blue-100 bg-card p-6 dark:border-blue-900/40">
+      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Spread the Puzzle Love
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          When you share Connections Hint, you&apos;re helping:
+          When you share Strands Hint, you&apos;re helping:
         </p>
         <ul className="mt-3 space-y-2">
           {[
@@ -247,11 +247,11 @@ export default async function SharePage({ params }: { params: Params }) {
       </div>
 
       {/* CTA */}
-      <div className="mt-8 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 p-6 text-center text-white">
+      <div className="mt-8 rounded-2xl bg-primary p-6 text-center text-primary-foreground">
         <h2 className="font-heading text-xl font-bold">
           Thank You for Sharing!
         </h2>
-        <p className="mt-1 text-sm text-blue-100">
+        <p className="mt-1 text-sm text-primary-foreground/80">
           Every share helps us reach more puzzle enthusiasts. We appreciate your
           support!
         </p>
@@ -259,7 +259,7 @@ export default async function SharePage({ params }: { params: Params }) {
           <I18nLink
             href="/"
             prefetch={false}
-            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-blue-700 transition-all hover:bg-blue-50"
+            className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
             Start Playing
           </I18nLink>

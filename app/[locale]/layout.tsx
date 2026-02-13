@@ -11,7 +11,7 @@ import { JsonLd, websiteSchema } from "@/lib/jsonld";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import "@/styles/loading.css";
-import { Outfit, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 
 const outfit = Outfit({
   weight: ["400", "500", "600", "700", "800"],
@@ -20,7 +20,7 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const plusJakarta = Plus_Jakarta_Sans({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-body",
@@ -95,7 +95,7 @@ export default async function LocaleLayout({
         className={cn(
           "min-h-screen bg-background flex flex-col antialiased",
           outfit.variable,
-          dmSans.variable,
+          plusJakarta.variable,
           jetbrainsMono.variable,
           "font-body"
         )}
