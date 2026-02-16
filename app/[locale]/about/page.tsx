@@ -53,7 +53,9 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "about strandshint", "strands hint website", "nyt strands help site",
+      "about dailycryptic",
+      "minute cryptic website",
+      "daily cryptic clue platform",
     ],
     locale: locale as Locale,
     path: `/about`,
@@ -77,10 +79,10 @@ export default async function AboutPage({ params }: { params: Params }) {
         <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-primary/10 blur-3xl" />
         <h1 className="relative font-heading text-3xl font-bold text-foreground sm:text-4xl">
-          About StrandsHint
+          About dailycryptic
         </h1>
         <p className="relative mt-4 text-muted-foreground">
-          How we provide daily NYT Strands hints and maintain our puzzle archive.
+          How we publish daily minute cryptic clues and maintain our archive.
         </p>
       </header>
 

@@ -21,10 +21,10 @@ export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "StrandsHint",
+    name: "dailycryptic",
     url: BASE_URL,
     description:
-      "Daily hints and answers for NYT Strands puzzle with progressive clues, full archive, and strategy tips.",
+      "Daily minute cryptic hints and answers with progressive clues, full archive, and strategy tips.",
     inLanguage: "en",
   };
 }
@@ -122,12 +122,12 @@ export function articleSchema({
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
-      name: "StrandsHint",
+      name: "dailycryptic",
       url: BASE_URL,
     },
     publisher: {
       "@type": "Organization",
-      name: "StrandsHint",
+      name: "dailycryptic",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",

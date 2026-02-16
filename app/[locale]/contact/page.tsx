@@ -19,13 +19,14 @@ export async function generateMetadata({
     page: "Contact",
     title: "Contact Us",
     description:
-      "Contact Strands Hint - Get in touch with us for support, feedback, or questions about our word puzzle games.",
+      "Contact dailycryptic for minute cryptic support, clue corrections, and technical help.",
     keywords: [
       "contact",
-      "support",
-      "feedback",
-      "strands hint",
-      "customer service",
+      "minute cryptic support",
+      "clue correction",
+      "bug report",
+      "minute cryptic",
+      "dailycryptic contact",
     ],
     locale: locale as Locale,
     path: `/contact`,
@@ -36,21 +37,21 @@ export async function generateMetadata({
 const CONTACT_METHODS = [
   {
     icon: Mail,
-    title: "Email Support",
-    description: "For general inquiries, technical support, or feedback:",
-    email: "support@strandshint.app",
+    title: "General Support",
+    description: "Questions about daily clues, archive pages, or site usage.",
+    email: "hello@dailycryptic.org",
   },
   {
     icon: Lightbulb,
-    title: "Feature Requests",
-    description: "Have an idea for a new game mode or feature?",
-    email: "feedback@strandshint.app",
+    title: "Puzzle Corrections",
+    description: "Report clue, hint, or explanation issues with puzzle date.",
+    email: "hello@dailycryptic.org",
   },
   {
     icon: Bug,
-    title: "Bug Reports",
-    description: "Found a bug or technical issue?",
-    email: "bugs@strandshint.app",
+    title: "Technical Issues",
+    description: "Report loading, display, or answer-check problems.",
+    email: "hello@dailycryptic.org",
   },
 ];
 
@@ -80,13 +81,21 @@ export default async function ContactPage({ params }: { params: Params }) {
             Contact Us
           </h1>
           <p className="mt-2 text-muted-foreground">
-            We&apos;d love to hear from you! Have a question, suggestion, or
-            feedback about our word puzzle games? We&apos;re here to help.
+            Contact us about minute cryptic clues, corrections, or technical
+            issues. Email is the fastest way to reach us.
           </p>
         </div>
       </header>
 
       {/* Contact Methods */}
+      <section className="mt-8">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          Contact Channels
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Use the same email address and include a clear subject line.
+        </p>
+      </section>
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {CONTACT_METHODS.map((method) => (
           <div
@@ -94,9 +103,9 @@ export default async function ContactPage({ params }: { params: Params }) {
             className="rounded-xl border border-primary/20 bg-card p-5 dark:border-primary/40"
           >
             <method.icon className="h-8 w-8 text-primary" />
-            <h2 className="mt-3 font-heading text-lg font-bold text-foreground">
+            <h3 className="mt-3 font-heading text-lg font-bold text-foreground">
               {method.title}
-            </h2>
+            </h3>
             <p className="mt-1.5 text-sm text-muted-foreground">
               {method.description}
             </p>
@@ -110,92 +119,40 @@ export default async function ContactPage({ params }: { params: Params }) {
         ))}
       </div>
 
-      {/* Contact Form */}
+      {/* Email Guidance */}
       <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6 dark:border-primary/40">
         <h2 className="font-heading text-xl font-bold text-foreground">
-          Send Us a Message
+          Email Guidance
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          You can also reach out to us directly using the form below:
-        </p>
-        <form className="mt-5 space-y-4" action="#" method="POST">
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label
-                htmlFor="name"
-                className="mb-1.5 block text-sm font-medium text-foreground"
-              >
-                Name *
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full rounded-lg border border-primary/40 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-primary/40"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-1.5 block text-sm font-medium text-foreground"
-              >
-                Email *
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full rounded-lg border border-primary/40 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary dark:border-primary/40"
-              />
-            </div>
-          </div>
-          <div>
-            <label
-              htmlFor="subject"
-              className="mb-1.5 block text-sm font-medium text-foreground"
-            >
-              Subject *
-            </label>
-            <select
-              id="subject"
-              name="subject"
-              required
-              className="w-full rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
-            >
-              <option value="">Select a topic</option>
-              <option value="general">General Inquiry</option>
-              <option value="technical">Technical Support</option>
-              <option value="feature">Feature Request</option>
-              <option value="bug">Bug Report</option>
-              <option value="feedback">Feedback</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="mb-1.5 block text-sm font-medium text-foreground"
-            >
-              Message *
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={6}
-              required
-              placeholder="Please describe your inquiry in detail..."
-              className="w-full rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary focus:ring-1 focus:ring-primary"
-            />
-          </div>
-          <button
-            type="submit"
-            className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          For fastest handling, send your message to{" "}
+          <a
+            href="mailto:hello@dailycryptic.org"
+            className="font-medium text-primary hover:text-primary/80"
           >
-            Send Message
-          </button>
-        </form>
+            hello@dailycryptic.org
+          </a>
+          .
+        </p>
+        <h3 className="mt-5 font-heading text-base font-bold text-foreground">
+          Include These Details
+        </h3>
+        <ul className="mt-2 space-y-1.5">
+          {[
+            "Puzzle date (if relevant)",
+            "Short summary of the issue",
+            "Expected result vs actual result",
+            "Screenshot or error message (for technical bugs)",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-2 text-sm text-muted-foreground"
+            >
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Quick Help */}
@@ -208,7 +165,7 @@ export default async function ContactPage({ params }: { params: Params }) {
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <I18nLink
-            href="/how-to-play-strands"
+            href="/how-to-play-minute-cryptic"
             prefetch={false}
             className="rounded-xl border border-primary/20 bg-primary/5 p-4 transition-colors hover:bg-primary/5 dark:border-primary/30 dark:bg-primary/10 dark:hover:bg-primary/20"
           >
@@ -220,7 +177,7 @@ export default async function ContactPage({ params }: { params: Params }) {
             </p>
           </I18nLink>
           <I18nLink
-            href="/strands-hint-faq"
+            href="/minute-cryptic-faq"
             prefetch={false}
             className="rounded-xl border border-primary/20 bg-primary/5 p-4 transition-colors hover:bg-primary/5 dark:border-primary/30 dark:bg-primary/10 dark:hover:bg-primary/20"
           >
@@ -240,28 +197,23 @@ export default async function ContactPage({ params }: { params: Params }) {
           Response Time
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          We strive to respond to all inquiries within 24-48 hours during
-          business days. For urgent technical issues affecting gameplay, we aim
-          to respond even faster.
+          We usually respond within 1-2 business days.
         </p>
-        <p className="mt-3 text-sm text-muted-foreground">
-          When contacting us about technical issues, please include:
-        </p>
+        <h3 className="mt-4 font-heading text-base font-bold text-foreground">
+          Subject Line Suggestions
+        </h3>
         <ul className="mt-2 space-y-1.5">
-          {[
-            "Your device type and operating system",
-            "Browser name and version",
-            "Steps to reproduce the issue",
-            "Any error messages you encountered",
-          ].map((item) => (
-            <li
-              key={item}
-              className="flex items-start gap-2 text-sm text-muted-foreground"
-            >
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-              {item}
-            </li>
-          ))}
+          {["General Inquiry", "Correction - YYYY-MM-DD", "Bug Report"].map(
+            (item) => (
+              <li
+                key={item}
+                className="flex items-start gap-2 text-sm text-muted-foreground"
+              >
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                {item}
+              </li>
+            )
+          )}
         </ul>
       </div>
     </div>

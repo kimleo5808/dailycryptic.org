@@ -73,7 +73,7 @@ export default async function Footer() {
             })}
           </p>
           <p className="text-xs text-slate-600">
-            Not affiliated with The New York Times. NYT Strands is a trademark of The New York Times Company.
+            Independent puzzle site. dailycryptic publishes original minute cryptic clues.
           </p>
         </div>
       </div>

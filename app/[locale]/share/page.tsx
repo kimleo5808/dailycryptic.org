@@ -5,7 +5,6 @@ import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import {
   Brain,
-  Copy,
   ExternalLink,
   Heart,
   Mail,
@@ -26,15 +25,15 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "Share",
-    title: "Share Strands Hint",
+    title: "Share dailycryptic",
     description:
-      "Share Strands Hint with friends and family. Spread the love of word puzzles and brain challenges!",
+      "Share dailycryptic with friends and family. Spread the word about daily minute cryptic clues.",
     keywords: [
-      "share",
-      "social media",
-      "word puzzles",
-      "strands hint",
+      "share dailycryptic",
+      "minute cryptic",
+      "daily cryptic clue",
       "invite friends",
+      "word puzzle",
     ],
     locale: locale as Locale,
     path: `/share`,
@@ -44,9 +43,9 @@ export async function generateMetadata({
 
 const SOCIAL_LINKS = [
   {
-    name: "Twitter",
-    icon: "𝕏",
-    href: `https://twitter.com/intent/tweet?text=Check%20out%20Strands%20Hint%20-%20Amazing%20word%20puzzles%20with%20daily%20hints!&url=${encodeURIComponent(BASE_URL)}`,
+    name: "X",
+    icon: "X",
+    href: `https://x.com/intent/tweet?text=Check%20out%20dailycryptic%20for%20a%20new%20minute%20cryptic%20every%20day.&url=${encodeURIComponent(BASE_URL)}`,
     className:
       "bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200",
   },
@@ -65,13 +64,13 @@ const SOCIAL_LINKS = [
   {
     name: "Reddit",
     icon: "r/",
-    href: `https://www.reddit.com/submit?url=${encodeURIComponent(BASE_URL)}&title=Amazing%20Word%20Puzzle%20Games%20-%20Strands%20Hint`,
+    href: `https://www.reddit.com/submit?url=${encodeURIComponent(BASE_URL)}&title=Daily%20Minute%20Cryptic%20-%20dailycryptic`,
     className: "bg-orange-600 text-white hover:bg-orange-700",
   },
   {
     name: "WhatsApp",
     icon: "wa",
-    href: `https://wa.me/?text=Check%20out%20this%20awesome%20word%20puzzle%20site:%20${encodeURIComponent(BASE_URL)}`,
+    href: `https://wa.me/?text=Check%20out%20dailycryptic:%20${encodeURIComponent(BASE_URL)}`,
     className: "bg-green-500 text-white hover:bg-green-600",
   },
 ];
@@ -81,24 +80,24 @@ const REASONS = [
     icon: Brain,
     title: "Brain Training",
     description:
-      "Help friends improve their vocabulary and cognitive skills through fun puzzles",
+      "Help friends build vocabulary and clue-solving skills through quick daily practice.",
   },
   {
     icon: Trophy,
     title: "Friendly Competition",
     description:
-      "Challenge each other and compare solving strategies and techniques",
+      "Compare solving approaches and challenge each other with the same daily clue.",
   },
   {
     icon: Heart,
     title: "Completely Free",
-    description: "Share unlimited entertainment with no cost or hidden fees",
+    description: "Share unlimited puzzle practice with no subscription paywall.",
   },
   {
     icon: Smartphone,
     title: "Play Anywhere",
     description:
-      "Works perfectly on all devices — phones, tablets, and computers",
+      "Works on phones, tablets, and desktop with a clean one-clue interface.",
   },
 ];
 
@@ -114,28 +113,23 @@ export default async function SharePage({ params }: { params: Params }) {
         ])}
       />
 
-      {/* Header */}
       <header className="relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 via-white to-primary/5 p-6 sm:p-8 dark:border-primary/20 dark:from-zinc-900 dark:via-zinc-900 dark:to-primary/5">
         <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2">
             <Share2 className="h-5 w-5 text-primary" />
-            <span className="text-sm font-medium text-primary">
-              Share
-            </span>
+            <span className="text-sm font-medium text-primary">Share</span>
           </div>
           <h1 className="mt-2 font-heading text-3xl font-bold text-foreground sm:text-4xl">
-            Share the Fun
+            Share dailycryptic
           </h1>
           <p className="mt-2 text-muted-foreground">
-            Love our word puzzles? Help us grow the community by sharing
-            Strands Hint with your friends, family, and fellow puzzle
-            enthusiasts!
+            If you enjoy the daily minute cryptic, share it with puzzle-loving
+            friends and communities.
           </p>
         </div>
       </header>
 
-      {/* Social Share Buttons */}
       <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-xl font-bold text-foreground">
           Share on Social Media
@@ -157,39 +151,15 @@ export default async function SharePage({ params }: { params: Params }) {
         </div>
       </div>
 
-      {/* Copy Link */}
-      <div className="mt-6 rounded-xl border border-primary/20 bg-card p-6">
-        <h2 className="font-heading text-lg font-bold text-foreground">
-          Copy & Share Link
-        </h2>
-        <div className="mt-3 flex items-center gap-2">
-          <input
-            type="text"
-            readOnly
-            value={siteConfig.url}
-            className="flex-1 rounded-lg border border-primary/20 bg-background px-4 py-2.5 text-sm text-foreground dark:border-primary/20"
-          />
-          <button
-            type="button"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-            onClick={undefined}
-          >
-            <Copy className="h-4 w-4" />
-            Copy
-          </button>
-        </div>
-      </div>
-
-      {/* Email Share */}
       <div className="mt-6 rounded-xl border border-primary/20 bg-card p-6">
         <h2 className="font-heading text-lg font-bold text-foreground">
           Share via Email
         </h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Send a personalized message to friends and family:
+          Send a quick recommendation to friends:
         </p>
         <a
-          href={`mailto:?subject=Check%20out%20Strands%20Hint!&body=Hi!%20I%20found%20this%20amazing%20word%20puzzle%20website%20and%20thought%20you'd%20love%20it.%20They%20have%20daily%20Strands%20hints%20and%20word%20games%20with%204-11%20letter%20challenges!%0A%0ACheck%20it%20out:%20${encodeURIComponent(siteConfig.url)}%0A%0AHappy%20puzzling!`}
+          href={`mailto:?subject=Try%20dailycryptic&body=Hi,%20I%20found%20a%20great%20daily%20minute%20cryptic%20site:%20${encodeURIComponent(siteConfig.url)}`}
           className="mt-3 inline-flex items-center gap-2 rounded-lg border border-primary/30 px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
         >
           <Mail className="h-4 w-4" />
@@ -197,10 +167,9 @@ export default async function SharePage({ params }: { params: Params }) {
         </a>
       </div>
 
-      {/* Why Share */}
       <div className="mt-8">
         <h2 className="font-heading text-xl font-bold text-foreground">
-          Why Share Strands Hint?
+          Why share dailycryptic?
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {REASONS.map((reason) => (
@@ -220,40 +189,12 @@ export default async function SharePage({ params }: { params: Params }) {
         </div>
       </div>
 
-      {/* Benefits */}
-      <div className="mt-8 rounded-xl border border-primary/20 bg-card p-6">
-        <h2 className="font-heading text-lg font-bold text-foreground">
-          Spread the Puzzle Love
-        </h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          When you share Strands Hint, you&apos;re helping:
-        </p>
-        <ul className="mt-3 space-y-2">
-          {[
-            "Friends discover new challenges — Introduce them to engaging brain teasers",
-            "Build a community — Create a network of puzzle enthusiasts",
-            "Support our mission — Help us reach more puzzle lovers worldwide",
-            "Improve the games — More players means more feedback and better features",
-          ].map((item) => (
-            <li
-              key={item}
-              className="flex items-start gap-2 text-sm text-muted-foreground"
-            >
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* CTA */}
       <div className="mt-8 rounded-2xl bg-primary p-6 text-center text-primary-foreground">
         <h2 className="font-heading text-xl font-bold">
-          Thank You for Sharing!
+          Thanks for sharing
         </h2>
         <p className="mt-1 text-sm text-primary-foreground/80">
-          Every share helps us reach more puzzle enthusiasts. We appreciate your
-          support!
+          Every share helps us reach more cryptic puzzle fans.
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <I18nLink
@@ -261,14 +202,14 @@ export default async function SharePage({ params }: { params: Params }) {
             prefetch={false}
             className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
-            Start Playing
+            Solve Today&apos;s Clue
           </I18nLink>
           <I18nLink
             href="/about"
             prefetch={false}
             className="rounded-xl border-2 border-white/30 px-5 py-2 text-sm font-bold text-white transition-all hover:bg-white/10"
           >
-            Learn More About Us
+            About dailycryptic
           </I18nLink>
         </div>
       </div>

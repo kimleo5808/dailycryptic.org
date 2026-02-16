@@ -1,525 +1,578 @@
-import { StrandsClickToReveal } from "@/components/strands/StrandsClickToReveal";
-import { CountdownTimer } from "@/components/strands/CountdownTimer";
-import { GUIDES } from "@/data/guides";
-import { LETTER_GAMES } from "@/data/letter-games";
-import { getLatestPuzzle, getRecentPuzzles } from "@/lib/strands-data";
-import dayjs from "dayjs";
+import MinuteCrypticGame from "@/components/home/MinuteCrypticGame";
 import {
-  ArrowRight,
-  BookOpen,
-  ChevronDown,
-  Clock,
-  Gamepad2,
-  Grid3X3,
-  Lightbulb,
-  Map,
-  Puzzle,
-  Search,
-  Shield,
-  Sparkles,
-} from "lucide-react";
+  getLatestMinuteCryptic,
+  getRecentMinuteCryptics,
+} from "@/lib/minute-cryptic-data";
+import dayjs from "dayjs";
 import Link from "next/link";
-import { getTranslations } from "next-intl/server";
 
-const FEATURE_ICONS = [Lightbulb, Grid3X3, Clock, Puzzle, Shield, Sparkles];
-
-function FaqAccordionItem({ question, answer }: { question: string; answer: string }) {
-  return (
-    <details className="group rounded-xl border border-border bg-card transition-colors open:bg-primary/5">
-      <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-foreground transition-colors hover:text-primary [&::-webkit-details-marker]:hidden">
-        <h3 className="text-[0.95rem] leading-snug">{question}</h3>
-        <ChevronDown className="h-4 w-4 shrink-0 text-primary/60 transition-transform group-open:rotate-180" />
-      </summary>
-      <div className="px-5 pb-4">
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          {answer}
-        </p>
-      </div>
-    </details>
-  );
-}
+const QUICK_LINKS = [
+  {
+    title: "Recent clues",
+    description: "Practice with the last 7 daily clues.",
+    href: "/minute-cryptic",
+    cta: "Open archive",
+  },
+  {
+    title: "How cryptics work",
+    description: "Learn indicators, fodder, definition, and containers.",
+    href: "/how-to-play-minute-cryptic",
+    cta: "Read guide",
+  },
+  {
+    title: "FAQ",
+    description: "Quick answers about hints, checking, and puzzle rules.",
+    href: "/minute-cryptic-faq",
+    cta: "View FAQ",
+  },
+];
 
 export default async function HomeComponent() {
-  const t = await getTranslations("HomePage");
-  const latestPuzzle = await getLatestPuzzle();
-  const recentPuzzles = await getRecentPuzzles(9);
+  const latestPuzzle = await getLatestMinuteCryptic();
+  const recentClues = await getRecentMinuteCryptics(7);
 
-  const todayDate = latestPuzzle
-    ? dayjs(latestPuzzle.printDate).format("MMMM D, YYYY")
-    : "";
+  if (!latestPuzzle) {
+    return (
+      <div className="mx-auto w-full max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
+        <h1 className="font-heading text-4xl font-bold text-foreground">
+          Minute Cryptic Today
+        </h1>
+        <p className="mt-4 text-muted-foreground">
+          Today&apos;s clue is not available yet. Please check back soon.
+        </p>
+      </div>
+    );
+  }
+
+  const dateLabel = dayjs(latestPuzzle.printDate).format("dddd, MMMM D, YYYY");
 
   return (
-    <div className="w-full grid-bg">
-      {/* Hero Section - Dark blue */}
-      <section className="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
-            {t("hero.title")}
+    <div className="w-full">
+      <section className="w-full bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 py-14 sm:py-16">
+        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+          <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
+            Minute Cryptic Today
           </h1>
-          <p className="mt-4 text-lg text-slate-300 sm:text-xl">
-            {t("hero.subtitle")}
+          <p className="mt-3 max-w-2xl text-base text-slate-300 sm:text-lg">
+            Solve one quick cryptic clue a day. Use hints only when you need
+            them.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/strands-hint-today"
-              className="group inline-flex items-center gap-2 rounded-xl bg-cta px-7 py-3.5 text-sm font-bold text-cta-foreground shadow-lg shadow-cta/25 transition-all hover:bg-cta/90 hover:shadow-cta/30"
-            >
-              {t("hero.ctaHints")}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </Link>
-            <Link
-              href="/strands-hint"
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-slate-600 px-6 py-3.5 text-sm font-semibold text-slate-200 transition-all hover:border-slate-500 hover:bg-slate-800"
-            >
-              {t("hero.ctaArchive")}
-              <Search className="h-4 w-4" />
-            </Link>
+
+          <div className="mt-8">
+            <MinuteCrypticGame
+              clue={latestPuzzle.clue}
+              answer={latestPuzzle.answer}
+              dateLabel={dateLabel}
+              hints={latestPuzzle.hintLevels}
+            />
           </div>
         </div>
       </section>
 
-      {/* Today's Puzzle Preview */}
-      {latestPuzzle && (
-        <section className="bg-slate-800 py-12">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6">
-            <div className="text-center">
-              <h2 className="font-heading text-2xl font-bold text-white">
-                Today&apos;s Strands Puzzle
+      <section className="py-12">
+        <div className="mx-auto grid w-full max-w-5xl gap-4 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
+          {QUICK_LINKS.map((link) => (
+            <Link
+              key={link.title}
+              href={link.href}
+              className="rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+            >
+              <h2 className="font-heading text-lg font-bold text-foreground">
+                {link.title}
               </h2>
-              <p className="mt-2 text-sm text-slate-400">
-                Puzzle #{latestPuzzle.id} — {todayDate}
+              <p className="mt-2 text-sm text-muted-foreground">
+                {link.description}
               </p>
-            </div>
-
-            {/* Theme clue */}
-            <div className="mt-6 text-center">
-              <p className="text-lg font-bold text-primary">
-                &ldquo;{latestPuzzle.clue}&rdquo;
-              </p>
-              <p className="mt-2 text-sm text-slate-400">
-                {latestPuzzle.themeWords.length} theme words + 1 Spangram
-              </p>
-            </div>
-
-            {/* Click to reveal */}
-            <div className="mt-8 flex justify-center">
-              <StrandsClickToReveal puzzle={latestPuzzle} />
-            </div>
-
-            {/* Link to full hints */}
-            <div className="mt-4 text-center">
-              <Link
-                href="/strands-hint-today"
-                className="text-sm text-primary hover:text-primary/80 transition-colors"
-              >
-                Need progressive hints? Click here for step-by-step clues →
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Countdown Timer */}
-      <section className="py-12 bg-background">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="font-heading text-lg font-bold text-foreground">
-            {t("hero.countdown")}
-          </h2>
-          <div className="mt-5">
-            <CountdownTimer />
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Puzzles Grid */}
-      <section className="py-12 bg-background">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="font-heading text-2xl font-bold text-foreground">
-              Recent Strands Answers
-            </h2>
-            <Link
-              href="/strands-hint"
-              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-            >
-              {t("recentPuzzles.viewAll")}
+              <span className="mt-4 inline-block text-sm font-semibold text-primary">
+                {link.cta}
+              </span>
             </Link>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {recentPuzzles.map((puzzle) => (
-              <Link
-                key={puzzle.printDate}
-                href={`/strands-hint/${puzzle.printDate}`}
-                className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="inline-block rounded-md bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
-                    Puzzle #{puzzle.id}
-                  </span>
-                  <span className="text-xs text-muted-foreground">
-                    {dayjs(puzzle.printDate).format("MMM D, YYYY")}
-                  </span>
-                </div>
-                <h3 className="mt-3 text-sm font-bold text-foreground line-clamp-1">
-                  &ldquo;{puzzle.clue}&rdquo;
-                </h3>
-                <div className="mt-2 space-y-1">
-                  <p className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="h-2 w-2 rounded-full bg-strands-spangram" />
-                    <span className="truncate">Spangram: {puzzle.spangram.length} letters</span>
-                  </p>
-                  <p className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="h-2 w-2 rounded-full bg-strands-theme" />
-                    <span>{puzzle.themeWords.length} theme words</span>
-                  </p>
-                </div>
-                <div className="mt-3 flex items-center gap-1 text-xs font-medium text-primary">
-                  View Hints
-                  <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-                </div>
-              </Link>
-            ))}
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* What is NYT Strands? */}
-      <section className="py-12 bg-muted/30">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            What is NYT Strands?
-          </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            NYT Strands is a daily word puzzle by The New York Times where you find theme words hidden in a 6x8 letter grid. Words are formed by connecting adjacent letters (including diagonals). Each puzzle has a theme clue, several theme words, and one special Spangram that spans the entire board.
-          </p>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <Grid3X3 className="h-7 w-7" />
-              </div>
-              <h3 className="mt-3 text-sm font-bold text-foreground">6x8 Letter Grid</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Find words by connecting adjacent letters on the board.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <Puzzle className="h-7 w-7" />
-              </div>
-              <h3 className="mt-3 text-sm font-bold text-foreground">Theme Words</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                All words connect to a daily theme revealed by the clue.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <BookOpen className="h-7 w-7" />
-              </div>
-              <h3 className="mt-3 text-sm font-bold text-foreground">Daily Puzzle</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                A new puzzle is released every day at midnight ET.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Grid */}
-      <section className="py-12 bg-background">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            How Our NYT Strands Hints Work
-          </h2>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {[0, 1, 2, 3, 4, 5].map((index) => {
-              const Icon = FEATURE_ICONS[index];
-              return (
+      <section className="pb-4">
+        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-xl border border-border bg-card p-5">
+            <h2 className="font-heading text-xl font-bold text-foreground">
+              Last 7 minute cryptics
+            </h2>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {recentClues.map((puzzle) => (
                 <div
-                  key={index}
-                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
+                  key={puzzle.id}
+                  className="rounded-lg border border-border/80 bg-background px-3 py-2"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-3 text-sm font-bold text-foreground">
-                    {t(`features.${index}.title`)}
-                  </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                    {t(`features.${index}.description`)}
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    {dayjs(puzzle.printDate).format("MMM D, YYYY")}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-foreground">
+                    #{puzzle.id} - {puzzle.clueType}
                   </p>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ - 2 column */}
-      <section className="py-12 bg-muted/30">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-2xl font-bold text-foreground text-center">
-            {t("faq.title")}
-          </h2>
-          <p className="mt-2 text-center text-muted-foreground">
-            {t("faq.description")}
-          </p>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {[0, 1, 2, 3, 4, 5, 6, 7].map((index) => (
-              <FaqAccordionItem
-                key={index}
-                question={t(`faqItems.${index}.question`)}
-                answer={t(`faqItems.${index}.answer`)}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Word Games Grid */}
-      <section className="py-12 bg-background">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              <Gamepad2 className="h-4 w-4" />
-              Word Games
+              ))}
             </div>
-            <h2 className="mt-4 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-              Free Word Games — Practice Your Skills
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              Challenge yourself with word puzzles from 4 to 11 letters
-            </p>
-          </div>
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {LETTER_GAMES.map((g) => (
-              <Link
-                key={g.slug}
-                href={`/${g.slug}`}
-                className="group relative overflow-hidden rounded-xl border border-border bg-card p-5 text-center transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
-              >
-                <div className="font-heading text-3xl font-bold text-primary transition-transform group-hover:scale-110">
-                  {g.wordLength}
-                </div>
-                <h3 className="mt-1 text-sm font-bold text-foreground">
-                  {g.wordLength} Letter Words
-                </h3>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  {g.wordLength <= 5
-                    ? g.wordLength === 4
-                      ? "Quick and easy"
-                      : "Classic Wordle"
-                    : g.wordLength <= 7
-                      ? "Advanced challenge"
-                      : g.wordLength <= 9
-                        ? "Expert level"
-                        : "Ultimate difficulty"}
-                </p>
-                <div className="mt-2 text-xs font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                  Play Now →
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* Guides Promotion */}
-      <section className="py-12 bg-muted/30">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-              <Map className="h-4 w-4" />
-              Strategy Guides
-            </div>
-            <h2 className="mt-4 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-              Master Strands with Expert Guides
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              Take your puzzle-solving skills to the next level with our comprehensive strategy guides
-            </p>
-          </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {GUIDES.map((guide) => (
-                <Link
-                  key={guide.slug}
-                  href={`/guides/${guide.slug}`}
-                  className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-lg transition-transform group-hover:scale-110">
-                    {guide.icon}
-                  </div>
-                  <h3 className="mt-3 text-sm font-bold text-foreground">
-                    {guide.title}
-                  </h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                    {guide.description}
-                  </p>
-                  <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-primary">
-                    Read Guide
-                    <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
-                  </span>
-                </Link>
-            ))}
-          </div>
-          <div className="mt-6 rounded-xl border border-primary/20 bg-primary/5 p-4 text-center text-sm text-muted-foreground">
-            <strong className="text-foreground">Pro Tip:</strong>{" "}
-            Start with the{" "}
-            <Link href="/guides/beginner-guide" className="font-medium text-primary hover:text-primary/80">
-              Beginner&apos;s Guide
-            </Link>{" "}
-            if you&apos;re new, or jump to{" "}
-            <Link href="/guides/strategy-tips" className="font-medium text-primary hover:text-primary/80">
-              Strategy Tips
-            </Link>{" "}
-            to improve your current approach!
-          </div>
-        </div>
-      </section>
-
-      {/* Long-form SEO Article */}
-      <section className="py-12 bg-background">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <section className="border-y border-border bg-muted/30 py-12">
+        <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            NYT Strands Hints: Complete Guide &amp; Today&apos;s Answers
+            What Is Minute Cryptic?
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Welcome to the premier destination for <strong className="text-foreground">Strands hint</strong> enthusiasts and word puzzle players! Whether you&apos;re seeking today&apos;s puzzle solutions or looking to sharpen your word-finding skills, you&apos;ve found the perfect resource.
+            A minute cryptic is a short cryptic challenge designed for daily
+            consistency. You solve one clue at a time, check your answer, and
+            learn from a clear explanation. This format keeps cryptic solving
+            approachable while preserving real clue mechanics.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If you searched for minute cryptic, minute cryptic hints, or minute
+            cryptic answer today, this homepage is built to cover all three
+            needs: play now, learn the method, and verify with confidence.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            You do not need a full crossword grid to build cryptic skill. A
+            single minute cryptic clue still trains definition reading, wordplay
+            recognition, indicator spotting, and final validation. The smaller
+            format removes friction while keeping the thinking process intact.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Dailycryptic focuses on a practical habit: solve one minute cryptic
+            clue each day, use hints only when needed, and review explanation
+            quality after each attempt. This creates steady progress for
+            beginners and gives experienced solvers a compact daily workout.
           </p>
 
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            What is a Strands Hint?
+          <h3 className="mt-10 font-heading text-xl font-semibold text-foreground">
+            Play Today&apos;s Minute Cryptic
           </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            A <strong className="text-foreground">Strands hint today</strong> refers to the subtle clues and strategies that help players find hidden theme words on the 6x8 letter grid. The New York Times Strands game challenges players to connect adjacent letters to form words that all relate to a daily theme, making <strong className="text-foreground">NYT Strands hints</strong> an essential tool for puzzle enthusiasts worldwide.
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Start with the clue in the hero section above. Read it once for
+            natural meaning, then read it again for structure. In most minute
+            cryptic clues, one side acts as definition and the other side
+            provides wordplay instructions.
           </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Our platform provides progressive hints that guide you from the theme clue to the Spangram and individual theme words. By understanding letter connections and thematic relationships, players can significantly improve their puzzle-solving abilities.
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            When your first attempt feels uncertain, do not jump straight to the
+            final answer. Use the minute cryptic hints panel one level at a
+            time. Progressive hints preserve challenge and make each clue more
+            educational.
           </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            How to Solve NYT Strands Puzzles
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Every <strong className="text-foreground">Strands hint</strong> serves a specific purpose in guiding players toward the solution. The 6x8 grid format creates a unique word search experience. Here&apos;s how to approach the puzzle:
-          </p>
-          <ul className="mt-3 space-y-2">
-            {[
-              ["Read the theme clue:", "The clue at the top reveals the common thread connecting all hidden words"],
-              ["Find the Spangram first:", "The Spangram spans the entire board and is often the key to understanding the theme"],
-              ["Look for shorter words:", "Start with 4-5 letter words before tackling longer ones"],
-              ["Use hint letters:", "Finding non-theme words earns hint letters that highlight cells on the grid"],
-            ].map(([title, desc]) => (
-              <li key={title} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                <span><strong className="text-foreground">{title}</strong> {desc}</span>
-              </li>
-            ))}
-          </ul>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            NYT Strands Hints: Advanced Strategies
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The <strong className="text-foreground">NYT Strands hints</strong> system relies on understanding how letters connect on the grid. Successful players develop spatial awareness that extends beyond simple word knowledge.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Key strategies for Strands include:
-          </p>
-          <ul className="mt-3 space-y-2">
-            {[
-              ["Adjacent letter scanning:", "Words form by connecting horizontally, vertically, and diagonally adjacent cells"],
-              ["Theme interpretation:", "The clue often has a double meaning — think broadly about what words could fit"],
-              ["Board coverage:", "Every letter on the board belongs to exactly one word — use this to eliminate possibilities"],
-              ["Spangram awareness:", "The Spangram always spans from one side of the board to the other"],
-            ].map(([title, desc]) => (
-              <li key={title} className="flex items-start gap-2 text-sm text-muted-foreground">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                <span><strong className="text-foreground">{title}</strong> {desc}</span>
-              </li>
-            ))}
-          </ul>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Daily Puzzle Strategy and Strands Hint Today
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Finding the right <strong className="text-foreground">Strands hint today</strong> requires a systematic approach. Start by reading the theme clue carefully — it often contains wordplay or a double meaning that reveals the connection between all theme words.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Advanced players recommend finding the Spangram first, as it reveals the overarching theme and makes the remaining words easier to identify. The Spangram always connects two opposite edges of the board, so look for long words that traverse the grid.
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If you came from searches such as minute cryptic today or minute
+            cryptic clues today, this page gives you a clean solve-first flow:
+            attempt, hint, check, then explanation.
           </p>
 
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            What Is the Spangram (Spanogram) in Strands?
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The <strong className="text-foreground">Spangram</strong> (sometimes misspelled as &ldquo;spanogram&rdquo;) is the most important word in every Strands puzzle. Unlike regular theme words, the Spangram spans the entire board from one edge to the opposite edge — left to right, top to bottom, or diagonally across the grid.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            The Spangram always relates to the overarching theme and is highlighted in gold when found. Finding it early is a powerful strategy because it reveals the theme connection, making the remaining words much easier to identify. Look for long words (typically 7-10 letters) that could physically stretch across the 6-column or 8-row grid.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Strands Answers: How to Find Past Puzzle Solutions
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Looking for <strong className="text-foreground">Strands answers</strong> from previous days? Our archive contains every past NYT Strands puzzle with complete solutions — including all theme words, the Spangram, and the theme clue. Each puzzle page shows the full 6x8 grid with highlighted word positions so you can see exactly how the answers fit together.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Reviewing past <strong className="text-foreground">Strands answers</strong> is one of the best ways to improve. You&apos;ll start noticing patterns in how themes are structured, where Spangrams typically run across the board, and which types of words the puzzle creators favor. Browse the archive by date to study past puzzles at your own pace.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            How Many Hints Do You Get in Strands?
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            In the official NYT Strands game, hints are earned — not given freely. Every time you find a valid English word on the grid that isn&apos;t a theme word, you earn progress toward a hint. After finding three non-theme words, you receive one hint that highlights a single cell on the board, showing you one letter of a theme word.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            There&apos;s no limit to how many hints you can earn in a single puzzle, but each one requires finding three more non-theme words. On StrandsHint, we take a different approach: we provide up to five progressive <strong className="text-foreground">hint levels</strong> for each puzzle, ranging from vague thematic nudges to specific letter reveals to full answers — so you control exactly how much help you get.
-          </p>
-
-          <h3 className="mt-8 font-heading text-lg font-semibold text-foreground">
-            Getting Started: Your First Steps
-          </h3>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Begin your puzzle-solving journey with today&apos;s Strands puzzle. Start by reading the theme clue, scanning the grid for obvious words, and working toward the Spangram. Remember, every expert puzzle solver started with simple <strong className="text-foreground">Strands hint</strong> strategies before developing advanced techniques.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Join our community of puzzle enthusiasts and share your progress. Whether you&apos;re seeking today&apos;s <strong className="text-foreground">Strands hint</strong> or celebrating finding the Spangram on your first try, you&apos;ll find support and encouragement here.
-          </p>
-          <p className="mt-3 leading-relaxed text-muted-foreground">
-            Ready to challenge yourself? Start with today&apos;s puzzle and discover how strategic thinking and the right hints can transform your solving experience. Welcome to the world of Strands, letter grids, and the satisfaction of puzzle mastery!
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="py-16 bg-primary">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-primary-foreground sm:text-3xl">
-            Ready to Solve Today&apos;s Puzzle?
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            How To Play Minute Cryptic
           </h2>
-          <p className="mt-3 text-primary-foreground/80">
-            Get progressive hints without spoiling the fun. Start with a gentle nudge and reveal more only when you need it.
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            1. Find the Definition
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            The fastest way to improve at minute cryptic solving is to identify
+            likely definition candidates first. In many clues, the definition is
+            near the beginning or the end. Once you suspect a definition, test
+            whether a candidate answer fits both meaning and letter length.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            A correct minute cryptic solve should never depend on vague guesswork
+            alone. The definition must be fair when revealed, and the wordplay
+            must independently justify the same answer.
+          </p>
+
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            2. Parse Wordplay Like Instructions
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Treat each minute cryptic clue as a set of operations. Indicators
+            signal what to do, and fodder provides letters or parts to transform.
+            You might need to rearrange letters, insert one part inside another,
+            combine segments, or use a second definition.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            This approach is the foundation of how to play minute cryptic at a
+            higher level. Instead of reading clues as decorative language, you
+            read them as executable structure.
+          </p>
+
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            3. Confirm Both Sides Before Checking
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Before clicking check, confirm two things: the answer matches the
+            definition, and the parse matches the wordplay. If only one side
+            works, keep testing alternatives. This habit prevents most near
+            misses in minute cryptic puzzles.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Strong minute cryptic practice is not just speed. It is proof. The
+            more often you prove both sides, the faster and more accurate your
+            solving becomes.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Minute Cryptic Hints and Common Clue Types
+          </h2>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Anagram Clues
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Anagrams are common in minute cryptic sets because they train
+            indicator awareness quickly. Look for words suggesting change,
+            disorder, or movement. Then verify that fodder letters match answer
+            letters exactly.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Container Clues
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Container clues place one element inside another. In minute cryptic
+            solving, these clues reward careful structure reading. Position and
+            order matter, so always check the final letter sequence.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Charade Clues
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Charade clues build answers by joining smaller units. They are a core
+            minute cryptic pattern because they reinforce segmentation and
+            abbreviation awareness.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Double Definition Clues
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Double definitions use two meanings for one answer. In a minute
+            cryptic context, these clues are compact but often subtle. If one
+            reading feels obvious, verify the second reading before final check.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            The minute cryptic hints flow is designed to support all these clue
+            types. Use hints as learning prompts, not as instant reveal buttons.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Minute Cryptic Answer Today and No-Spoiler Solving
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Search demand for minute cryptic answer today is real. Some users
+            need quick verification, while others want full solve-first
+            experience. Our structure supports both paths.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            We recommend a no-spoiler sequence: attempt first, open one hint,
+            attempt again, then check answer. This keeps minute cryptic solving
+            rewarding while still making help available.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            For direct daily play, visit{" "}
             <Link
-              href="/strands-hint-today"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 text-sm font-bold text-primary shadow-lg transition-all hover:bg-white/90"
+              href="/minute-cryptic-today"
+              className="font-semibold text-primary hover:text-primary/80"
             >
-              Get Today&apos;s Hints
-              <ArrowRight className="h-4 w-4" />
+              Minute Cryptic Today
             </Link>
+            . If you specifically need archive pages with answers and dates, use{" "}
             <Link
-              href="/how-to-play-strands"
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10"
+              href="/minute-cryptic"
+              className="font-semibold text-primary hover:text-primary/80"
             >
-              How to Play
+              Minute Cryptic Archive
             </Link>
+            .
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Minute Cryptic Archive for Skill Building
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            The minute cryptic archive is where daily progress compounds. One
+            clue a day is effective, but short archive sets create faster pattern
+            recognition. You can catch up on missed dates and practice specific
+            clue types in sequence.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If your goal is long-term improvement, run archive sessions in small
+            blocks: solve three to five minute cryptic clues, review
+            explanations, and note one recurring mistake.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Users searching minute cryptic archive, past minute cryptics, or
+            minute cryptic crossword often want continuity. Date-based archive
+            access provides exactly that.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Frequently Asked Questions About Minute Cryptic
+          </h2>
+          <div className="mt-6 space-y-3">
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                Is minute cryptic free to play?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Yes. You can play the daily minute cryptic clue and browse
+                archive entries without creating an account.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                Do I need an account for minute cryptic today?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                No. Daily play is open. You can attempt, reveal hints, and check
+                answers without sign-up.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                How do minute cryptic hints work?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Hints are progressive. Reveal one level at a time so you keep
+                the challenge and still get targeted guidance.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                What does &quot;par&quot; mean in minute cryptic discussions?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                It usually refers to an expected benchmark for solve speed or
+                challenge level in a specific format, not a universal rule.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                Where can I find minute cryptic answer today?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Use the daily puzzle flow first, then reveal answer if needed.
+                You can also browse date pages in the archive for past answers.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                Where can I find past minute cryptics?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Open the{" "}
+                <Link
+                  href="/minute-cryptic"
+                  className="font-semibold text-primary hover:text-primary/80"
+                >
+                  archive page
+                </Link>{" "}
+                to access past minute cryptic clues by date.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                Is minute cryptic the same as a full cryptic crossword?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Not exactly. A minute cryptic usually focuses on one clue,
+                whereas a full cryptic crossword includes a full grid and many
+                interacting answers. The clue logic is still transferable.
+              </p>
+            </details>
+            <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
+              <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
+                How often are new minute cryptic clues published?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                One new minute cryptic clue is published every day.
+              </p>
+            </details>
           </div>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Why Dailycryptic for Minute Cryptic Players
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Dailycryptic is built around one clear purpose: publish a reliable
+            minute cryptic experience every day with fair clue construction,
+            progressive help, and transparent explanations.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If you searched minute cryptic, minutecryptic, cryptic minute, or
+            minute cryptic crossword, you are likely looking for a place that
+            helps you both solve and improve. That is the model of this site.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Start with today&apos;s clue, use hints only when needed, and review
+            the explanation before moving on. Then revisit the archive to build
+            consistency. Short sessions add up quickly.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            For deeper learning, read the{" "}
+            <Link
+              href="/how-to-play-minute-cryptic"
+              className="font-semibold text-primary hover:text-primary/80"
+            >
+              full solving guide
+            </Link>{" "}
+            and the{" "}
+            <Link
+              href="/minute-cryptic-faq"
+              className="font-semibold text-primary hover:text-primary/80"
+            >
+              minute cryptic FAQ
+            </Link>
+            .
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Editorial Method and Trust Signals
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Consistent quality depends on repeatable editorial process. Each
+            published clue follows a simple checklist: natural surface reading,
+            defensible parse, clear definition boundary, and explanation that a
+            new solver can follow without hidden assumptions. We avoid style
+            choices that look clever but create unclear solving paths. The goal
+            is not to produce obscure trick clues. The goal is to produce clues
+            that teach reliable solving behavior while still delivering a fair
+            challenge.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Explanations are written as learning assets, not decorative notes. A
+            good explanation should show why the answer works, where the
+            definition sits, which operation is being used, and what decision
+            rule would help the player solve similar clues in the future. This
+            practical framing is important because many users arrive with mixed
+            intent: they want a quick win today, but they also want to improve.
+            Editorial clarity bridges those two needs.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Trust also depends on correction responsiveness. If a user reports an
+            issue, we review clue wording and explanation logic together before
+            deciding whether to patch. Corrections are treated as quality work,
+            not as support noise. Over time, this process creates cleaner
+            archives and reduces repeated ambiguity patterns in future clues. For
+            puzzle projects, this type of disciplined maintenance matters as much
+            as publishing velocity.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            14-Day Skill Plan for New Solvers
+          </h2>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Week 1: Accuracy Before Speed
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            During the first week, focus on process quality rather than solving
+            time. For each clue, write down one likely definition phrase and one
+            likely operation phrase before typing an answer. This forces you to
+            separate meaning from mechanics. Many beginners improve quickly once
+            they stop treating clues as plain sentences and start treating them
+            as structured prompts.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Keep a small notebook of operation patterns you encounter: reorder,
+            insert, combine, remove, and dual meaning. You do not need long
+            theory documents. A short personal log is enough. The purpose is to
+            build recall cues for your next solve. Repeated exposure to the same
+            operation vocabulary creates fast recognition, which lowers cognitive
+            load and increases confidence.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Week 2: Controlled Help and Archive Blocks
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            In week two, start using help strategically. Attempt first without
+            hints. If stuck, reveal one hint level and retry immediately. Avoid
+            opening multiple levels at once. This keeps your reasoning engaged
+            while reducing frustration. The pattern is simple: attempt, minimal
+            hint, retry, verify.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Add short archive blocks of three to five clues. After each block,
+            review which mistakes repeat most often. Usually, one issue causes
+            most misses: weak definition targeting, skipped letter check, or
+            early reveal. Fix that one issue first. Targeted correction is far
+            more effective than random extra volume. By day fourteen, most users
+            see cleaner parsing and stronger confidence, even if solve time is
+            still improving.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Practical Solving Heuristics
+          </h2>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Heuristic A: Always Verify Letter Economy
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If a candidate answer requires extra letters not accounted for by the
+            clue, it is usually wrong. Even elegant guesses should fail fast when
+            letter economy does not hold. This one heuristic prevents many near
+            misses and keeps your parsing disciplined.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Heuristic B: Treat Surface as Misdirection, Not Instruction
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Surface text can be smooth and story-like, but solving depends on
+            structural signals. If a clue reads naturally yet the parse is weak,
+            trust structure over narrative. High-quality clue writing often hides
+            mechanism behind fluent language, so this mindset is essential.
+          </p>
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Heuristic C: Stop After Two Failed Guesses
+          </h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Random third and fourth guesses usually waste time. After two failed
+            attempts, switch mode: identify definition candidate again, mark
+            operation words, then decide whether one hint level is justified.
+            Structured reset is more productive than speculative input.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Content Architecture and User Intent Coverage
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            A strong puzzle homepage should satisfy multiple search intents in
+            one session. Navigation intent wants immediate play. Informational
+            intent wants method guidance. Verification intent wants reliable
+            answer flow. Archive intent wants historical continuity. This page is
+            structured around that model so users do not need to bounce between
+            unrelated pages to complete a single task.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Internal links are placed to support clear next actions: play now,
+            learn method, review FAQ, and browse past dates. This improves both
+            user clarity and crawl clarity. Search systems reward pages that
+            resolve intent directly, not pages that only announce branding.
+            Actionable structure is therefore part of SEO quality, not separate
+            from it.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            If you are evaluating performance, focus on behavior metrics that map
+            to genuine utility: depth of scroll through the guide section, click
+            rate into daily puzzle routes, archive entry views, and return rate
+            over seven days. Those signals are more meaningful than raw traffic
+            alone because they track whether users actually solve and learn.
+          </p>
+
+          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Next Action
+          </h2>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Play one clue now, use one hint only if needed, and complete a full
+            check before reveal. Then open two archive clues and repeat the same
+            process. That small routine gives a strong daily skill return without
+            requiring long sessions.
+          </p>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Over a month, this routine creates visible gains: faster pattern
+            recognition, cleaner answer validation, and better retention of clue
+            mechanics. Treat each solve as structured practice, not just as a
+            quick result, and your consistency will compound.
+          </p>
         </div>
       </section>
     </div>

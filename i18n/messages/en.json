@@ -2,29 +2,29 @@
   "Header": {
     "links": [
       {
-        "name": "Strands Hint",
-        "href": "/strands-hint"
+        "name": "Archive",
+        "href": "/minute-cryptic"
       },
       {
-        "name": "Today's Hints",
-        "href": "/strands-hint-today"
+        "name": "Today's Clue",
+        "href": "/minute-cryptic-today"
       },
       {
-        "name": "How to Play",
-        "href": "/how-to-play-strands"
+        "name": "How to Solve",
+        "href": "/how-to-play-minute-cryptic"
       },
       {
         "name": "FAQ",
-        "href": "/strands-hint-faq"
+        "href": "/minute-cryptic-faq"
       },
-{
+      {
         "name": "Guides",
         "href": "/guides"
       }
     ]
   },
   "Footer": {
-    "Copyright": "Copyright © {year} {name}. All rights reserved.",
+    "Copyright": "Copyright (c) {year} {name}. All rights reserved.",
     "PrivacyPolicy": "Privacy Policy",
     "TermsOfService": "Terms of Service",
     "Links": {
@@ -34,11 +34,15 @@
           "links": [
             {
               "href": "/",
-              "name": "Strands Hint"
+              "name": "Home"
             },
             {
-              "href": "/strands-hint-today",
-              "name": "Today's Hints"
+              "href": "/minute-cryptic-today",
+              "name": "Today's Clue"
+            },
+            {
+              "href": "/minute-cryptic",
+              "name": "Archive"
             }
           ]
         },
@@ -46,16 +50,16 @@
           "title": "Resources",
           "links": [
             {
-              "href": "/how-to-play-strands",
-              "name": "How to Play"
+              "href": "/how-to-play-minute-cryptic",
+              "name": "How to Solve"
             },
             {
-              "href": "/strands-hint-faq",
+              "href": "/minute-cryptic-faq",
               "name": "FAQ"
             },
             {
               "href": "/blog",
-              "name": "Tips & Guides"
+              "name": "Tips and Guides"
             },
             {
               "href": "/guides",
@@ -64,48 +68,11 @@
           ]
         },
         {
-          "title": "Word Games",
-          "links": [
-            {
-              "href": "/4-letters",
-              "name": "4 Letter Wordle"
-            },
-            {
-              "href": "/5-letters",
-              "name": "5 Letter Wordle"
-            },
-            {
-              "href": "/6-letters",
-              "name": "6 Letter Wordle"
-            },
-            {
-              "href": "/7-letters",
-              "name": "7 Letter Wordle"
-            },
-            {
-              "href": "/8-letters",
-              "name": "8 Letter Wordle"
-            },
-            {
-              "href": "/9-letters",
-              "name": "9 Letter Wordle"
-            },
-            {
-              "href": "/10-letters",
-              "name": "10 Letter Wordle"
-            },
-            {
-              "href": "/11-letters",
-              "name": "11 Letter Wordle"
-            }
-          ]
-        },
-        {
-          "title": "Legal & Info",
+          "title": "Legal and Info",
           "links": [
             {
               "href": "/about",
-              "name": "About StrandsHint"
+              "name": "About dailycryptic"
             },
             {
               "href": "/privacy-policy",
@@ -129,118 +96,110 @@
     }
   },
   "Home": {
-    "title": "Strands Hint Today",
-    "tagLine": "Free NYT Strands Hints, Answers & Spangram",
-    "description": "Get today's NYT Strands hints and answers with progressive clues — from vague nudges to full solutions. Find the Spangram, solve all theme words, and browse our complete puzzle archive. Updated daily, 100% free."
+    "title": "Minute Cryptic Today",
+    "tagLine": "Daily minute cryptic clues and hints",
+    "description": "Solve today's minute cryptic clue with progressive hints and clear answer checks. One quick daily puzzle, plus archive, guide, and FAQ."
   },
   "Blog": {
-    "title": "Tips & Guides",
-    "description": "Strategies, tips, and insights for solving NYT Strands puzzles"
+    "title": "Tips and Guides",
+    "description": "Strategies, tips, and insights for solving minute cryptic clues."
   },
   "About": {
-    "title": "About StrandsHint",
-    "description": "How we provide daily Strands hints and maintain our puzzle archive"
+    "title": "About dailycryptic",
+    "description": "How we publish daily minute cryptic clues and maintain our puzzle archive."
   },
   "TermsOfService": {
     "title": "Terms of Service",
-    "description": "Terms of service for strandshint.app — usage rules, disclaimers, and acceptable use."
+    "description": "Terms of service for dailycryptic.org including usage rules, disclaimers, and acceptable use."
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",
-    "description": "Privacy policy for strandshint.app — what data we collect, how we use analytics, and your privacy rights."
+    "description": "Privacy policy for dailycryptic.org including what data we collect, how we use analytics, and your privacy rights."
   },
-  "StrandsHintToday": {
-    "title": "Strands Hint Today — NYT Puzzle Hints & Answers",
-    "description": "Get progressive hints and answers for today's NYT Strands puzzle. Clues for the Spangram and all theme words without spoiling the fun."
+  "MinuteCrypticToday": {
+    "title": "Minute Cryptic Today - Daily Clue and Hints",
+    "description": "Solve today's minute cryptic clue with progressive hints and an instant answer check."
   },
   "FAQ": {
-    "title": "Strands Hint FAQ — Common Questions Answered",
-    "description": "Frequently asked questions about NYT Strands, puzzle strategies, and how our hint system works."
+    "title": "Minute Cryptic FAQ - Common Questions Answered",
+    "description": "Frequently asked questions about minute cryptic rules, solving strategy, and how our hint system works."
   },
   "HowToPlay": {
-    "title": "How to Play NYT Strands — Complete Guide",
-    "description": "Learn how to play the NYT Strands word puzzle. Rules, strategies, tips for finding theme words and the Spangram, and common mistakes to avoid."
+    "title": "How to Solve Minute Cryptic - Complete Guide",
+    "description": "Learn how to solve a minute cryptic clue using definition and wordplay, plus practical strategy for daily puzzles."
   },
   "Daily": {
-    "title": "Strands Hint ({date}) — Puzzle #{id} Hints & Answer",
-    "description": "Hints and answers for NYT Strands Puzzle #{id} on {date}. Progressive clues for the Spangram and all theme words."
+    "title": "Minute Cryptic ({date}) - Clue #{id}",
+    "description": "Hints and answers for minute cryptic clue #{id} on {date}, including progressive hints and explanation."
   },
   "HomePage": {
     "hero": {
-      "badge": "Puzzle #{id}",
-      "title": "Strands Hint Today",
-      "subtitle": "Get progressive hints for today's NYT Strands puzzle without spoiling the answer.",
-      "ctaHints": "Get Today's Hints",
+      "badge": "Clue #{id}",
+      "title": "Minute Cryptic Today",
+      "subtitle": "Solve one daily cryptic clue with optional progressive hints.",
+      "ctaHints": "Open Today's Clue",
       "ctaArchive": "Browse Archive",
-      "countdown": "Next puzzle in"
+      "countdown": "Next clue in"
     },
     "features": [
       {
         "title": "Progressive Hints",
-        "description": "Start with vague clues and reveal more specific hints only when you need them. Stay challenged."
+        "description": "Start broad and reveal more only when needed."
       },
       {
-        "title": "Spangram & Theme Words",
-        "description": "Separate hints for the Spangram and each theme word so you can target exactly where you're stuck."
+        "title": "Daily Clue",
+        "description": "One focused clue every day for fast, repeatable practice."
       },
       {
-        "title": "Daily Updates",
-        "description": "New hints published every day as soon as the puzzle goes live. Never miss a day."
+        "title": "Clear Explanations",
+        "description": "Each clue includes answer breakdown so you can learn patterns."
       },
       {
-        "title": "Full Archive",
-        "description": "Browse past puzzles, answers, and themes. Track your progress across hundreds of puzzles."
+        "title": "Archive Access",
+        "description": "Practice old clues by date and track your improvement."
       },
       {
-        "title": "Spoiler-Free",
-        "description": "Hints are hidden behind reveal buttons so you never accidentally see the answer."
+        "title": "Spoiler Control",
+        "description": "Hints and answers are hidden until you reveal them."
       },
       {
-        "title": "Strategy Tips",
-        "description": "Learn solving techniques, common patterns, and how to spot the Spangram on the grid."
+        "title": "No Account Needed",
+        "description": "Solve instantly without sign-up."
       }
     ],
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers about NYT Strands and how our hints work."
+      "description": "Quick answers about minute cryptic and how our hints work."
     },
     "faqItems": [
       {
-        "question": "What is NYT Strands?",
-        "answer": "NYT Strands is a daily word puzzle by The New York Times. You are given a 6×8 grid of letters and must find theme words by connecting adjacent letters. Each puzzle has a theme clue, several theme words (highlighted in blue), and a special Spangram word (highlighted in gold) that spans the entire board and ties the theme together."
+        "question": "What is minute cryptic?",
+        "answer": "Minute cryptic is a short daily cryptic clue format designed for quick solving practice."
       },
       {
-        "question": "How do hints work in Strands?",
-        "answer": "Each puzzle has up to five hint levels. Level 1 gives a vague thematic clue. Level 2 narrows it down. Level 3 reveals partial information about word lengths. Level 4 gives starting letters. Level 5 reveals the full answers. You choose how much help you want."
+        "question": "How do hints work?",
+        "answer": "Hints are progressive. You reveal one level at a time from broad direction to direct letter help."
       },
       {
-        "question": "When does the daily Strands puzzle reset?",
-        "answer": "A new NYT Strands puzzle is released every day at midnight Eastern Time (ET). Our hints are published shortly after."
+        "question": "When is the daily clue published?",
+        "answer": "A new clue is published every day."
       },
       {
-        "question": "Is this site affiliated with The New York Times?",
-        "answer": "No. StrandsHint is an independent fan site. We provide hints and discussion to help players enjoy the puzzle. NYT Strands is a trademark of The New York Times Company."
+        "question": "Is dailycryptic free?",
+        "answer": "Yes. Core gameplay and archive access are free."
       },
       {
-        "question": "Can I browse past puzzle answers?",
-        "answer": "Yes. Our archive page has every past puzzle organized by date, with full answers, theme words, and the Spangram."
+        "question": "Can I browse old clues?",
+        "answer": "Yes. The archive lists past clues with hints, answers, and explanations."
       },
       {
-        "question": "What is the best strategy for solving Strands?",
-        "answer": "Start by reading the theme clue carefully — it hints at what the words have in common. Look for the Spangram first, as it spans the entire board and reveals the overarching theme. Then search for theme words by connecting adjacent letters horizontally, vertically, or diagonally."
-      },
-      {
-        "question": "What is the Spangram in NYT Strands?",
-        "answer": "The Spangram (sometimes spelled 'spanogram') is a special word in each Strands puzzle that spans the entire board from one edge to the opposite edge. It connects to the daily theme and is highlighted in gold when found. Finding the Spangram often reveals the overarching theme and makes the remaining words easier to identify."
-      },
-      {
-        "question": "How many hints do you get in Strands?",
-        "answer": "In the official NYT Strands game, you earn hint tokens by finding non-theme words on the grid. Every three non-theme words you find gives you one hint, which highlights a single letter on the board. On our site, we provide up to five progressive hint levels for each puzzle — from vague clues to full answers — so you can choose exactly how much help you need."
+        "question": "What clue types can appear?",
+        "answer": "Common types include anagram, charade, container, reversal, hidden word, and double definition."
       }
     ],
     "recentPuzzles": {
-      "title": "Recent Puzzles",
-      "viewAll": "View All Puzzles →"
+      "title": "Recent Clues",
+      "viewAll": "View All Clues"
     }
   }
 }

@@ -1,0 +1,1705 @@
+{
+  "lastUpdated": "2026-02-16T00:00:00.000Z",
+  "puzzles": [
+    {
+      "id": 1,
+      "printDate": "2026-01-18",
+      "publishDate": "2026-01-18",
+      "status": "published",
+      "clue": "Warning from LATER oddly mixed (5)",
+      "answer": "ALERT",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a common warning word.",
+        "This clue uses an anagram.",
+        "Rearrange the letters in LATER.",
+        "Starts with A."
+      ],
+      "explanation": "LATER mixed gives ALERT."
+    },
+    {
+      "id": 2,
+      "printDate": "2026-01-19",
+      "publishDate": "2026-01-19",
+      "status": "published",
+      "clue": "Quiet when LISTEN is mixed (6)",
+      "answer": "SILENT",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a word meaning quiet.",
+        "This clue uses an anagram.",
+        "Rearrange LISTEN.",
+        "Starts with S."
+      ],
+      "explanation": "LISTEN mixed gives SILENT."
+    },
+    {
+      "id": 3,
+      "printDate": "2026-01-20",
+      "publishDate": "2026-01-20",
+      "status": "published",
+      "clue": "Plot from DANGER turned around (6)",
+      "answer": "GARDEN",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a place where flowers grow.",
+        "This clue uses an anagram.",
+        "Rearrange DANGER.",
+        "Starts with G."
+      ],
+      "explanation": "DANGER turned around gives GARDEN."
+    },
+    {
+      "id": 4,
+      "printDate": "2026-01-21",
+      "publishDate": "2026-01-21",
+      "status": "published",
+      "clue": "Paid back after DIAPER is altered (6)",
+      "answer": "REPAID",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Paid back\".",
+        "This clue uses an anagram.",
+        "Alter DIAPER.",
+        "Starts with R."
+      ],
+      "explanation": "DIAPER altered gives REPAID."
+    },
+    {
+      "id": 5,
+      "printDate": "2026-01-22",
+      "publishDate": "2026-01-22",
+      "status": "published",
+      "clue": "Step to READ with T in front (5)",
+      "answer": "TREAD",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Step\".",
+        "Build it from two parts.",
+        "Put T before READ.",
+        "Starts with T."
+      ],
+      "explanation": "T + READ gives TREAD."
+    },
+    {
+      "id": 6,
+      "printDate": "2026-01-23",
+      "publishDate": "2026-01-23",
+      "status": "published",
+      "clue": "Sketch from OUT + LINE (7)",
+      "answer": "OUTLINE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Sketch\".",
+        "This is a charade clue.",
+        "Join OUT and LINE.",
+        "Starts with O."
+      ],
+      "explanation": "OUT + LINE gives OUTLINE."
+    },
+    {
+      "id": 7,
+      "printDate": "2026-01-24",
+      "publishDate": "2026-01-24",
+      "status": "published",
+      "clue": "Core from EARTH scrambled (5)",
+      "answer": "HEART",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Core\".",
+        "This clue uses an anagram.",
+        "Scramble EARTH.",
+        "Starts with H."
+      ],
+      "explanation": "EARTH scrambled gives HEART."
+    },
+    {
+      "id": 8,
+      "printDate": "2026-01-25",
+      "publishDate": "2026-01-25",
+      "status": "published",
+      "clue": "Respond as CRATE gets mixed (5)",
+      "answer": "REACT",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Respond\".",
+        "This clue uses an anagram.",
+        "Mix CRATE.",
+        "Starts with R."
+      ],
+      "explanation": "CRATE mixed gives REACT."
+    },
+    {
+      "id": 9,
+      "printDate": "2026-01-26",
+      "publishDate": "2026-01-26",
+      "status": "published",
+      "clue": "Dark period: THING twisted (5)",
+      "answer": "NIGHT",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Dark period\".",
+        "This clue uses an anagram.",
+        "Twist THING.",
+        "Starts with N."
+      ],
+      "explanation": "THING twisted gives NIGHT."
+    },
+    {
+      "id": 10,
+      "printDate": "2026-01-27",
+      "publishDate": "2026-01-27",
+      "status": "published",
+      "clue": "Extra item from SPEAR mixed (5)",
+      "answer": "SPARE",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Extra item\".",
+        "This clue uses an anagram.",
+        "Rearrange SPEAR.",
+        "Starts with S."
+      ],
+      "explanation": "SPEAR mixed gives SPARE."
+    },
+    {
+      "id": 11,
+      "printDate": "2026-01-28",
+      "publishDate": "2026-01-28",
+      "status": "published",
+      "clue": "Post sent by AIR + MAIL (7)",
+      "answer": "AIRMAIL",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Post sent\".",
+        "This is a charade clue.",
+        "Join AIR and MAIL.",
+        "Starts with A."
+      ],
+      "explanation": "AIR + MAIL gives AIRMAIL."
+    },
+    {
+      "id": 12,
+      "printDate": "2026-01-29",
+      "publishDate": "2026-01-29",
+      "status": "published",
+      "clue": "Evening close from SUN + SET (6)",
+      "answer": "SUNSET",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Evening close\".",
+        "This is a charade clue.",
+        "Join SUN and SET.",
+        "Starts with S."
+      ],
+      "explanation": "SUN + SET gives SUNSET."
+    },
+    {
+      "id": 13,
+      "printDate": "2026-01-30",
+      "publishDate": "2026-01-30",
+      "status": "published",
+      "clue": "Night-bright from MOON + LIT (7)",
+      "answer": "MOONLIT",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Night-bright\".",
+        "This is a charade clue.",
+        "Join MOON and LIT.",
+        "Starts with M."
+      ],
+      "explanation": "MOON + LIT gives MOONLIT."
+    },
+    {
+      "id": 14,
+      "printDate": "2026-01-31",
+      "publishDate": "2026-01-31",
+      "status": "published",
+      "clue": "Free leaflet from HAND + OUT (7)",
+      "answer": "HANDOUT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Free leaflet\".",
+        "This is a charade clue.",
+        "Join HAND and OUT.",
+        "Starts with H."
+      ],
+      "explanation": "HAND + OUT gives HANDOUT."
+    },
+    {
+      "id": 15,
+      "printDate": "2026-02-01",
+      "publishDate": "2026-02-01",
+      "status": "published",
+      "clue": "Outer garment from OVER + COAT (8)",
+      "answer": "OVERCOAT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Outer garment\".",
+        "This is a charade clue.",
+        "Join OVER and COAT.",
+        "Starts with O."
+      ],
+      "explanation": "OVER + COAT gives OVERCOAT."
+    },
+    {
+      "id": 16,
+      "printDate": "2026-02-02",
+      "publishDate": "2026-02-02",
+      "status": "published",
+      "clue": "Border: FAME holding R (5)",
+      "answer": "FRAME",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Border\".",
+        "This is a container clue.",
+        "Put R inside FAME.",
+        "Starts with F."
+      ],
+      "explanation": "FAME holding R gives FRAME."
+    },
+    {
+      "id": 17,
+      "printDate": "2026-02-03",
+      "publishDate": "2026-02-03",
+      "status": "published",
+      "clue": "Small wood from ROVE holding G (5)",
+      "answer": "GROVE",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Small wood\".",
+        "This is a container clue.",
+        "Put G inside ROVE.",
+        "Starts with G."
+      ],
+      "explanation": "ROVE holding G gives GROVE."
+    },
+    {
+      "id": 18,
+      "printDate": "2026-02-04",
+      "publishDate": "2026-02-04",
+      "status": "published",
+      "clue": "Leap and season (6)",
+      "answer": "SPRING",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means a jump.",
+        "The other is a time of year.",
+        "Starts with S."
+      ],
+      "explanation": "SPRING means both a leap and a season."
+    },
+    {
+      "id": 19,
+      "printDate": "2026-02-05",
+      "publishDate": "2026-02-05",
+      "status": "published",
+      "clue": "Throw or musical tone (5)",
+      "answer": "PITCH",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means to throw.",
+        "The other is a musical quality.",
+        "Starts with P."
+      ],
+      "explanation": "PITCH means both throw and musical tone."
+    },
+    {
+      "id": 20,
+      "printDate": "2026-02-06",
+      "publishDate": "2026-02-06",
+      "status": "published",
+      "clue": "Intelligent and piercing (5)",
+      "answer": "SHARP",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means mentally quick.",
+        "The other means pointed or piercing.",
+        "Starts with S."
+      ],
+      "explanation": "SHARP can mean intelligent and piercing."
+    },
+    {
+      "id": 21,
+      "printDate": "2026-02-07",
+      "publishDate": "2026-02-07",
+      "status": "published",
+      "clue": "Ban with R inserted gives farm building (4)",
+      "answer": "BARN",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"farm building\".",
+        "This is a container clue.",
+        "Put R inside BAN.",
+        "Starts with B."
+      ],
+      "explanation": "BAN containing R gives BARN."
+    },
+    {
+      "id": 22,
+      "printDate": "2026-02-08",
+      "publishDate": "2026-02-08",
+      "status": "published",
+      "clue": "Aircraft from PANE containing L (5)",
+      "answer": "PLANE",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Aircraft\".",
+        "This is a container clue.",
+        "Insert L into PANE.",
+        "Starts with P."
+      ],
+      "explanation": "PANE containing L gives PLANE."
+    },
+    {
+      "id": 23,
+      "printDate": "2026-02-09",
+      "publishDate": "2026-02-09",
+      "status": "published",
+      "clue": "Snare from TAP around R (4)",
+      "answer": "TRAP",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Snare\".",
+        "This is a container clue.",
+        "Put R inside TAP.",
+        "Starts with T."
+      ],
+      "explanation": "TAP around R gives TRAP."
+    },
+    {
+      "id": 24,
+      "printDate": "2026-02-10",
+      "publishDate": "2026-02-10",
+      "status": "published",
+      "clue": "Defeat from BAT holding E (4)",
+      "answer": "BEAT",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Defeat\".",
+        "This is a container clue.",
+        "Put E inside BAT.",
+        "Starts with B."
+      ],
+      "explanation": "BAT holding E gives BEAT."
+    },
+    {
+      "id": 25,
+      "printDate": "2026-02-11",
+      "publishDate": "2026-02-11",
+      "status": "published",
+      "clue": "Coast from SHOE holding R (5)",
+      "answer": "SHORE",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Coast\".",
+        "This is a container clue.",
+        "Put R inside SHOE.",
+        "Starts with S."
+      ],
+      "explanation": "SHOE holding R gives SHORE."
+    },
+    {
+      "id": 26,
+      "printDate": "2026-02-12",
+      "publishDate": "2026-02-12",
+      "status": "published",
+      "clue": "Dog's cry or tree covering (4)",
+      "answer": "BARK",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a sound made by a dog.",
+        "The other is the outer layer of a tree.",
+        "Starts with B."
+      ],
+      "explanation": "BARK means both a dog sound and tree covering."
+    },
+    {
+      "id": 27,
+      "printDate": "2026-02-13",
+      "publishDate": "2026-02-13",
+      "status": "published",
+      "clue": "Close tightly or sea mammal (4)",
+      "answer": "SEAL",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means to close securely.",
+        "The other is a marine animal.",
+        "Starts with S."
+      ],
+      "explanation": "SEAL means both close tightly and sea mammal."
+    },
+    {
+      "id": 28,
+      "printDate": "2026-02-14",
+      "publishDate": "2026-02-14",
+      "status": "published",
+      "clue": "Contest or pair up (5)",
+      "answer": "MATCH",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a sports contest.",
+        "The other means to pair things.",
+        "Starts with M."
+      ],
+      "explanation": "MATCH can mean contest or pair up."
+    },
+    {
+      "id": 29,
+      "printDate": "2026-02-15",
+      "publishDate": "2026-02-15",
+      "status": "published",
+      "clue": "Alphabet character or posted message (6)",
+      "answer": "LETTER",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One belongs to the alphabet.",
+        "The other is mail you can post.",
+        "Starts with L."
+      ],
+      "explanation": "LETTER is both an alphabet character and a posted message."
+    },
+    {
+      "id": 30,
+      "printDate": "2026-02-16",
+      "publishDate": "2026-02-16",
+      "status": "published",
+      "clue": "Association or heavy stick (4)",
+      "answer": "CLUB",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means an organized group.",
+        "The other is a heavy striking stick.",
+        "Starts with C."
+      ],
+      "explanation": "CLUB means both an association and a heavy stick."
+    },
+    {
+      "id": 31,
+      "printDate": "2026-02-17",
+      "publishDate": "2026-02-17",
+      "status": "scheduled",
+      "clue": "Heavenly being, or startup investor (5)",
+      "answer": "ANGEL",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a celestial being.",
+        "The other is a type of early business backer.",
+        "Starts with A."
+      ],
+      "explanation": "ANGEL means both a heavenly being and a startup investor."
+    },
+    {
+      "id": 32,
+      "printDate": "2026-02-18",
+      "publishDate": "2026-02-18",
+      "status": "scheduled",
+      "clue": "Praise, or trust for later payment (6)",
+      "answer": "CREDIT",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means praise or acknowledgment.",
+        "The other means buying now and paying later.",
+        "Starts with C."
+      ],
+      "explanation": "CREDIT means both praise and trust for deferred payment."
+    },
+    {
+      "id": 33,
+      "printDate": "2026-02-19",
+      "publishDate": "2026-02-19",
+      "status": "scheduled",
+      "clue": "Supporter or close companion (6)",
+      "answer": "FRIEND",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is someone on your side.",
+        "The other is someone close to you.",
+        "Starts with F."
+      ],
+      "explanation": "FRIEND can mean supporter or close companion."
+    },
+    {
+      "id": 34,
+      "printDate": "2026-02-20",
+      "publishDate": "2026-02-20",
+      "status": "scheduled",
+      "clue": "Hear as SILENT is rearranged (6)",
+      "answer": "LISTEN",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Hear\".",
+        "This clue uses an anagram.",
+        "Rearrange SILENT.",
+        "Starts with L."
+      ],
+      "explanation": "SILENT rearranged gives LISTEN."
+    },
+    {
+      "id": 35,
+      "printDate": "2026-02-21",
+      "publishDate": "2026-02-21",
+      "status": "scheduled",
+      "clue": "Shape from INTEGRAL mixed (8)",
+      "answer": "TRIANGLE",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Shape\".",
+        "This clue uses an anagram.",
+        "Mix INTEGRAL.",
+        "Starts with T."
+      ],
+      "explanation": "INTEGRAL mixed gives TRIANGLE."
+    },
+    {
+      "id": 36,
+      "printDate": "2026-02-22",
+      "publishDate": "2026-02-22",
+      "status": "scheduled",
+      "clue": "Maker from REACTOR reorganized (7)",
+      "answer": "CREATOR",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Maker\".",
+        "This clue uses an anagram.",
+        "Reorganize REACTOR.",
+        "Starts with C."
+      ],
+      "explanation": "REACTOR reorganized gives CREATOR."
+    },
+    {
+      "id": 37,
+      "printDate": "2026-02-23",
+      "publishDate": "2026-02-23",
+      "status": "scheduled",
+      "clue": "Flight hub from AIR + PORT (7)",
+      "answer": "AIRPORT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Flight hub\".",
+        "This is a charade clue.",
+        "Join AIR and PORT.",
+        "Starts with A."
+      ],
+      "explanation": "AIR + PORT gives AIRPORT."
+    },
+    {
+      "id": 38,
+      "printDate": "2026-02-24",
+      "publishDate": "2026-02-24",
+      "status": "scheduled",
+      "clue": "Arc of colours from RAIN + BOW (7)",
+      "answer": "RAINBOW",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Arc of colours\".",
+        "This is a charade clue.",
+        "Join RAIN and BOW.",
+        "Starts with R."
+      ],
+      "explanation": "RAIN + BOW gives RAINBOW."
+    },
+    {
+      "id": 39,
+      "printDate": "2026-02-25",
+      "publishDate": "2026-02-25",
+      "status": "scheduled",
+      "clue": "Morning meal from BREAK + FAST (9)",
+      "answer": "BREAKFAST",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Morning meal\".",
+        "This is a charade clue.",
+        "Join BREAK and FAST.",
+        "Starts with B."
+      ],
+      "explanation": "BREAK + FAST gives BREAKFAST."
+    },
+    {
+      "id": 40,
+      "printDate": "2026-02-26",
+      "publishDate": "2026-02-26",
+      "status": "scheduled",
+      "clue": "Dawn from DAY + BREAK (8)",
+      "answer": "DAYBREAK",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Dawn\".",
+        "This is a charade clue.",
+        "Join DAY and BREAK.",
+        "Starts with D."
+      ],
+      "explanation": "DAY + BREAK gives DAYBREAK."
+    },
+    {
+      "id": 41,
+      "printDate": "2026-02-27",
+      "publishDate": "2026-02-27",
+      "status": "scheduled",
+      "clue": "Editorial office from NEWS + ROOM (8)",
+      "answer": "NEWSROOM",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Editorial office\".",
+        "This is a charade clue.",
+        "Join NEWS and ROOM.",
+        "Starts with N."
+      ],
+      "explanation": "NEWS + ROOM gives NEWSROOM."
+    },
+    {
+      "id": 42,
+      "printDate": "2026-02-28",
+      "publishDate": "2026-02-28",
+      "status": "scheduled",
+      "clue": "Support from BET holding RACK (7)",
+      "answer": "BRACKET",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Support\".",
+        "This is a container clue.",
+        "Put RACK inside BET.",
+        "Starts with B."
+      ],
+      "explanation": "BET holding RACK gives BRACKET."
+    },
+    {
+      "id": 43,
+      "printDate": "2026-03-01",
+      "publishDate": "2026-03-01",
+      "status": "scheduled",
+      "clue": "Neckwear from SCAR + F (5)",
+      "answer": "SCARF",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Neckwear\".",
+        "This is a charade clue.",
+        "Add F to SCAR.",
+        "Starts with S."
+      ],
+      "explanation": "SCAR + F gives SCARF."
+    },
+    {
+      "id": 44,
+      "printDate": "2026-03-02",
+      "publishDate": "2026-03-02",
+      "status": "scheduled",
+      "clue": "World from PLANE + T (6)",
+      "answer": "PLANET",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"World\".",
+        "This is a charade clue.",
+        "Add T to PLANE.",
+        "Starts with P."
+      ],
+      "explanation": "PLANE + T gives PLANET."
+    },
+    {
+      "id": 45,
+      "printDate": "2026-03-03",
+      "publishDate": "2026-03-03",
+      "status": "scheduled",
+      "clue": "Vapour from MEATS cooked (5)",
+      "answer": "STEAM",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Vapour\".",
+        "This clue uses an anagram.",
+        "Cook (mix) MEATS.",
+        "Starts with S."
+      ],
+      "explanation": "MEATS cooked gives STEAM."
+    },
+    {
+      "id": 46,
+      "printDate": "2026-03-04",
+      "publishDate": "2026-03-04",
+      "status": "scheduled",
+      "clue": "Flash from PARK with S in front (5)",
+      "answer": "SPARK",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Flash\".",
+        "This is a charade clue.",
+        "Put S before PARK.",
+        "Starts with S."
+      ],
+      "explanation": "S + PARK gives SPARK."
+    },
+    {
+      "id": 47,
+      "printDate": "2026-03-05",
+      "publishDate": "2026-03-05",
+      "status": "scheduled",
+      "clue": "Spy, or burrowing animal (4)",
+      "answer": "MOLE",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a hidden agent.",
+        "The other is a small burrowing mammal.",
+        "Starts with M."
+      ],
+      "explanation": "MOLE means both spy and burrowing animal."
+    },
+    {
+      "id": 48,
+      "printDate": "2026-03-06",
+      "publishDate": "2026-03-06",
+      "status": "scheduled",
+      "clue": "Machine for lifting, or tall bird (5)",
+      "answer": "CRANE",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is construction equipment.",
+        "The other is a long-legged bird.",
+        "Starts with C."
+      ],
+      "explanation": "CRANE means both lifting machine and bird."
+    },
+    {
+      "id": 49,
+      "printDate": "2026-03-07",
+      "publishDate": "2026-03-07",
+      "status": "scheduled",
+      "clue": "Observe, or timepiece (5)",
+      "answer": "WATCH",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means to observe.",
+        "The other is worn on the wrist.",
+        "Starts with W."
+      ],
+      "explanation": "WATCH means both observe and timepiece."
+    },
+    {
+      "id": 50,
+      "printDate": "2026-03-08",
+      "publishDate": "2026-03-08",
+      "status": "scheduled",
+      "clue": "Fruit, or appointment day (4)",
+      "answer": "DATE",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is an edible fruit.",
+        "The other is a day marked on the calendar.",
+        "Starts with D."
+      ],
+      "explanation": "DATE means both fruit and appointment day."
+    },
+    {
+      "id": 51,
+      "printDate": "2026-03-09",
+      "publishDate": "2026-03-09",
+      "status": "scheduled",
+      "clue": "Wordy as OBSERVE is scrambled (7)",
+      "answer": "VERBOSE",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Wordy\".",
+        "This clue uses an anagram.",
+        "Scramble OBSERVE.",
+        "Starts with V."
+      ],
+      "explanation": "OBSERVE scrambled gives VERBOSE."
+    },
+    {
+      "id": 52,
+      "printDate": "2026-03-10",
+      "publishDate": "2026-03-10",
+      "status": "scheduled",
+      "clue": "Changed when RELATED is upset (7)",
+      "answer": "ALTERED",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Changed\".",
+        "This clue uses an anagram.",
+        "Upset RELATED.",
+        "Starts with A."
+      ],
+      "explanation": "RELATED upset gives ALTERED."
+    },
+    {
+      "id": 53,
+      "printDate": "2026-03-11",
+      "publishDate": "2026-03-11",
+      "status": "scheduled",
+      "clue": "Fraud from TEACHER in confusion (7)",
+      "answer": "CHEATER",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Fraud\".",
+        "This clue uses an anagram.",
+        "Mix TEACHER.",
+        "Starts with C."
+      ],
+      "explanation": "TEACHER in confusion gives CHEATER."
+    },
+    {
+      "id": 54,
+      "printDate": "2026-03-12",
+      "publishDate": "2026-03-12",
+      "status": "scheduled",
+      "clue": "Accounts as RIOTERS turns wild (7)",
+      "answer": "STORIES",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Accounts\".",
+        "This clue uses an anagram.",
+        "Rearrange RIOTERS.",
+        "Starts with S."
+      ],
+      "explanation": "RIOTERS turns wild to give STORIES."
+    },
+    {
+      "id": 55,
+      "printDate": "2026-03-13",
+      "publishDate": "2026-03-13",
+      "status": "scheduled",
+      "clue": "Recover from RE + GAIN (6)",
+      "answer": "REGAIN",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Recover\".",
+        "This is a charade clue.",
+        "Join RE and GAIN.",
+        "Starts with R."
+      ],
+      "explanation": "RE + GAIN gives REGAIN."
+    },
+    {
+      "id": 56,
+      "printDate": "2026-03-14",
+      "publishDate": "2026-03-14",
+      "status": "scheduled",
+      "clue": "Writing pad from NOTE + PAD (7)",
+      "answer": "NOTEPAD",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Writing pad\".",
+        "This is a charade clue.",
+        "Join NOTE and PAD.",
+        "Starts with N."
+      ],
+      "explanation": "NOTE + PAD gives NOTEPAD."
+    },
+    {
+      "id": 57,
+      "printDate": "2026-03-15",
+      "publishDate": "2026-03-15",
+      "status": "scheduled",
+      "clue": "Carrier from AIR + LINE (7)",
+      "answer": "AIRLINE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Carrier\".",
+        "This is a charade clue.",
+        "Join AIR and LINE.",
+        "Starts with A."
+      ],
+      "explanation": "AIR + LINE gives AIRLINE."
+    },
+    {
+      "id": 58,
+      "printDate": "2026-03-16",
+      "publishDate": "2026-03-16",
+      "status": "scheduled",
+      "clue": "Plant from SUN + FLOWER (9)",
+      "answer": "SUNFLOWER",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Plant\".",
+        "This is a charade clue.",
+        "Join SUN and FLOWER.",
+        "Starts with S."
+      ],
+      "explanation": "SUN + FLOWER gives SUNFLOWER."
+    },
+    {
+      "id": 59,
+      "printDate": "2026-03-17",
+      "publishDate": "2026-03-17",
+      "status": "scheduled",
+      "clue": "Sea creature from STAR + FISH (8)",
+      "answer": "STARFISH",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Sea creature\".",
+        "This is a charade clue.",
+        "Join STAR and FISH.",
+        "Starts with S."
+      ],
+      "explanation": "STAR + FISH gives STARFISH."
+    },
+    {
+      "id": 60,
+      "printDate": "2026-03-18",
+      "publishDate": "2026-03-18",
+      "status": "scheduled",
+      "clue": "Shore border from COAST + LINE (9)",
+      "answer": "COASTLINE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Shore border\".",
+        "This is a charade clue.",
+        "Join COAST and LINE.",
+        "Starts with C."
+      ],
+      "explanation": "COAST + LINE gives COASTLINE."
+    },
+    {
+      "id": 61,
+      "printDate": "2026-03-19",
+      "publishDate": "2026-03-19",
+      "status": "scheduled",
+      "clue": "Reference mark from FOOT + NOTE (8)",
+      "answer": "FOOTNOTE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Reference mark\".",
+        "This is a charade clue.",
+        "Join FOOT and NOTE.",
+        "Starts with F."
+      ],
+      "explanation": "FOOT + NOTE gives FOOTNOTE."
+    },
+    {
+      "id": 62,
+      "printDate": "2026-03-20",
+      "publishDate": "2026-03-20",
+      "status": "scheduled",
+      "clue": "Night glow from MOON + LIGHT (9)",
+      "answer": "MOONLIGHT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Night glow\".",
+        "This is a charade clue.",
+        "Join MOON and LIGHT.",
+        "Starts with M."
+      ],
+      "explanation": "MOON + LIGHT gives MOONLIGHT."
+    },
+    {
+      "id": 63,
+      "printDate": "2026-03-21",
+      "publishDate": "2026-03-21",
+      "status": "scheduled",
+      "clue": "Begin when TART follows S (5)",
+      "answer": "START",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Begin\".",
+        "This is a charade clue.",
+        "Put S before TART.",
+        "Starts with S."
+      ],
+      "explanation": "S + TART gives START."
+    },
+    {
+      "id": 64,
+      "printDate": "2026-03-22",
+      "publishDate": "2026-03-22",
+      "status": "scheduled",
+      "clue": "Gaze as TEARS are mixed (5)",
+      "answer": "STARE",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Gaze\".",
+        "This clue uses an anagram.",
+        "Mix TEARS.",
+        "Starts with S."
+      ],
+      "explanation": "TEARS mixed gives STARE."
+    },
+    {
+      "id": 65,
+      "printDate": "2026-03-23",
+      "publishDate": "2026-03-23",
+      "status": "scheduled",
+      "clue": "Frighten from S + CARE (5)",
+      "answer": "SCARE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Frighten\".",
+        "This is a charade clue.",
+        "Join S and CARE.",
+        "Starts with S."
+      ],
+      "explanation": "S + CARE gives SCARE."
+    },
+    {
+      "id": 66,
+      "printDate": "2026-03-24",
+      "publishDate": "2026-03-24",
+      "status": "scheduled",
+      "clue": "Bleak from STAR + K (5)",
+      "answer": "STARK",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Bleak\".",
+        "This is a charade clue.",
+        "Join STAR and K (abbrev. for king).",
+        "Starts with S."
+      ],
+      "explanation": "STAR + K (king) gives STARK."
+    },
+    {
+      "id": 67,
+      "printDate": "2026-03-25",
+      "publishDate": "2026-03-25",
+      "status": "scheduled",
+      "clue": "Student, or center of an eye (5)",
+      "answer": "PUPIL",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means a student.",
+        "The other is the dark center of the eye.",
+        "Starts with P."
+      ],
+      "explanation": "PUPIL means both student and center of the eye."
+    },
+    {
+      "id": 68,
+      "printDate": "2026-03-26",
+      "publishDate": "2026-03-26",
+      "status": "scheduled",
+      "clue": "Flying mammal, or strike (3)",
+      "answer": "BAT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a nocturnal flying mammal.",
+        "The other is to strike at something.",
+        "Starts with B."
+      ],
+      "explanation": "BAT means both a flying mammal and to strike."
+    },
+    {
+      "id": 69,
+      "printDate": "2026-03-27",
+      "publishDate": "2026-03-27",
+      "status": "scheduled",
+      "clue": "Tie, or sketch (4)",
+      "answer": "DRAW",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One result is a tie in a game.",
+        "The other is to sketch with a pencil.",
+        "Starts with D."
+      ],
+      "explanation": "DRAW means both tie and sketch."
+    },
+    {
+      "id": 70,
+      "printDate": "2026-03-28",
+      "publishDate": "2026-03-28",
+      "status": "scheduled",
+      "clue": "Correct, or entitlement (5)",
+      "answer": "RIGHT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means correct.",
+        "The other means an entitlement.",
+        "Starts with R."
+      ],
+      "explanation": "RIGHT means both correct and entitlement."
+    },
+    {
+      "id": 71,
+      "printDate": "2026-03-29",
+      "publishDate": "2026-03-29",
+      "status": "scheduled",
+      "clue": "Box from REACT mixed (5)",
+      "answer": "CRATE",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Box\".",
+        "This clue uses an anagram.",
+        "Mix REACT.",
+        "Starts with C."
+      ],
+      "explanation": "REACT mixed gives CRATE."
+    },
+    {
+      "id": 72,
+      "printDate": "2026-03-30",
+      "publishDate": "2026-03-30",
+      "status": "scheduled",
+      "clue": "Resin from RINSE mixed (5)",
+      "answer": "RESIN",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Resin\".",
+        "This clue uses an anagram.",
+        "Mix RINSE.",
+        "Starts with R."
+      ],
+      "explanation": "RINSE mixed gives RESIN."
+    },
+    {
+      "id": 73,
+      "printDate": "2026-03-31",
+      "publishDate": "2026-03-31",
+      "status": "scheduled",
+      "clue": "Provide food as CRATE is mixed (5)",
+      "answer": "CATER",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Provide food\".",
+        "This clue uses an anagram.",
+        "Mix CRATE.",
+        "Starts with C."
+      ],
+      "explanation": "CRATE mixed gives CATER."
+    },
+    {
+      "id": 74,
+      "printDate": "2026-04-01",
+      "publishDate": "2026-04-01",
+      "status": "scheduled",
+      "clue": "Service member from AIR + MAN (6)",
+      "answer": "AIRMAN",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Service member\".",
+        "This is a charade clue.",
+        "Join AIR and MAN.",
+        "Starts with A."
+      ],
+      "explanation": "AIR + MAN gives AIRMAN."
+    },
+    {
+      "id": 75,
+      "printDate": "2026-04-02",
+      "publishDate": "2026-04-02",
+      "status": "scheduled",
+      "clue": "Store for readers from BOOK + SHOP (8)",
+      "answer": "BOOKSHOP",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Store for readers\".",
+        "This is a charade clue.",
+        "Join BOOK and SHOP.",
+        "Starts with B."
+      ],
+      "explanation": "BOOK + SHOP gives BOOKSHOP."
+    },
+    {
+      "id": 76,
+      "printDate": "2026-04-03",
+      "publishDate": "2026-04-03",
+      "status": "scheduled",
+      "clue": "Title line from HEAD + LINE (8)",
+      "answer": "HEADLINE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Title line\".",
+        "This is a charade clue.",
+        "Join HEAD and LINE.",
+        "Starts with H."
+      ],
+      "explanation": "HEAD + LINE gives HEADLINE."
+    },
+    {
+      "id": 77,
+      "printDate": "2026-04-04",
+      "publishDate": "2026-04-04",
+      "status": "scheduled",
+      "clue": "Coastal area from SEA + SIDE (7)",
+      "answer": "SEASIDE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Coastal area\".",
+        "This is a charade clue.",
+        "Join SEA and SIDE.",
+        "Starts with S."
+      ],
+      "explanation": "SEA + SIDE gives SEASIDE."
+    },
+    {
+      "id": 78,
+      "printDate": "2026-04-05",
+      "publishDate": "2026-04-05",
+      "status": "scheduled",
+      "clue": "Night ray from MOON + BEAM (8)",
+      "answer": "MOONBEAM",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Night ray\".",
+        "This is a charade clue.",
+        "Join MOON and BEAM.",
+        "Starts with M."
+      ],
+      "explanation": "MOON + BEAM gives MOONBEAM."
+    },
+    {
+      "id": 79,
+      "printDate": "2026-04-06",
+      "publishDate": "2026-04-06",
+      "status": "scheduled",
+      "clue": "Greeting from HAND + SHAKE (9)",
+      "answer": "HANDSHAKE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Greeting\".",
+        "This is a charade clue.",
+        "Join HAND and SHAKE.",
+        "Starts with H."
+      ],
+      "explanation": "HAND + SHAKE gives HANDSHAKE."
+    },
+    {
+      "id": 80,
+      "printDate": "2026-04-07",
+      "publishDate": "2026-04-07",
+      "status": "scheduled",
+      "clue": "Emergency support from LIFE + LINE (8)",
+      "answer": "LIFELINE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Emergency support\".",
+        "This is a charade clue.",
+        "Join LIFE and LINE.",
+        "Starts with L."
+      ],
+      "explanation": "LIFE + LINE gives LIFELINE."
+    },
+    {
+      "id": 81,
+      "printDate": "2026-04-08",
+      "publishDate": "2026-04-08",
+      "status": "scheduled",
+      "clue": "Night glow from STAR + LIGHT (9)",
+      "answer": "STARLIGHT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Night glow\".",
+        "This is a charade clue.",
+        "Join STAR and LIGHT.",
+        "Starts with S."
+      ],
+      "explanation": "STAR + LIGHT gives STARLIGHT."
+    },
+    {
+      "id": 82,
+      "printDate": "2026-04-09",
+      "publishDate": "2026-04-09",
+      "status": "scheduled",
+      "clue": "Entrance mat from DOOR + MAT (7)",
+      "answer": "DOORMAT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Entrance mat\".",
+        "This is a charade clue.",
+        "Join DOOR and MAT.",
+        "Starts with D."
+      ],
+      "explanation": "DOOR + MAT gives DOORMAT."
+    },
+    {
+      "id": 83,
+      "printDate": "2026-04-10",
+      "publishDate": "2026-04-10",
+      "status": "scheduled",
+      "clue": "Drinking vessel from TEA + CUP (6)",
+      "answer": "TEACUP",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Drinking vessel\".",
+        "This is a charade clue.",
+        "Join TEA and CUP.",
+        "Starts with T."
+      ],
+      "explanation": "TEA + CUP gives TEACUP."
+    },
+    {
+      "id": 84,
+      "printDate": "2026-04-11",
+      "publishDate": "2026-04-11",
+      "status": "scheduled",
+      "clue": "Play area from SAND + PIT (7)",
+      "answer": "SANDPIT",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Play area\".",
+        "This is a charade clue.",
+        "Join SAND and PIT.",
+        "Starts with S."
+      ],
+      "explanation": "SAND + PIT gives SANDPIT."
+    },
+    {
+      "id": 85,
+      "printDate": "2026-04-12",
+      "publishDate": "2026-04-12",
+      "status": "scheduled",
+      "clue": "Concern from RACE mixed (4)",
+      "answer": "CARE",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Concern\".",
+        "This clue uses an anagram.",
+        "Mix RACE.",
+        "Starts with C."
+      ],
+      "explanation": "RACE mixed gives CARE."
+    },
+    {
+      "id": 86,
+      "printDate": "2026-04-13",
+      "publishDate": "2026-04-13",
+      "status": "scheduled",
+      "clue": "Gem from PEAL holding R (5)",
+      "answer": "PEARL",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Gem\".",
+        "This is a container clue.",
+        "Put R inside PEAL.",
+        "Starts with P."
+      ],
+      "explanation": "PEAL holding R gives PEARL."
+    },
+    {
+      "id": 87,
+      "printDate": "2026-04-14",
+      "publishDate": "2026-04-14",
+      "status": "scheduled",
+      "clue": "Craft from OATS with B in front (5)",
+      "answer": "BOATS",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Craft\" (plural).",
+        "This is a charade clue.",
+        "Put B before OATS.",
+        "Starts with B."
+      ],
+      "explanation": "B + OATS gives BOATS."
+    },
+    {
+      "id": 88,
+      "printDate": "2026-04-15",
+      "publishDate": "2026-04-15",
+      "status": "scheduled",
+      "clue": "Illumination, or not heavy (5)",
+      "answer": "LIGHT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means illumination.",
+        "The other means not heavy.",
+        "Starts with L."
+      ],
+      "explanation": "LIGHT means both illumination and not heavy."
+    },
+    {
+      "id": 89,
+      "printDate": "2026-04-16",
+      "publishDate": "2026-04-16",
+      "status": "scheduled",
+      "clue": "Fastener, or run suddenly (4)",
+      "answer": "BOLT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a metal fastener.",
+        "The other means to run suddenly.",
+        "Starts with B."
+      ],
+      "explanation": "BOLT means both fastener and run suddenly."
+    },
+    {
+      "id": 90,
+      "printDate": "2026-04-17",
+      "publishDate": "2026-04-17",
+      "status": "scheduled",
+      "clue": "Dossier, or rasping tool (4)",
+      "answer": "FILE",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One is a collection of documents.",
+        "The other is a tool for smoothing.",
+        "Starts with F."
+      ],
+      "explanation": "FILE means both dossier and rasping tool."
+    },
+    {
+      "id": 91,
+      "printDate": "2026-04-18",
+      "publishDate": "2026-04-18",
+      "status": "scheduled",
+      "clue": "Bright weather, or cheerful mood (8)",
+      "answer": "SUNSHINE",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One refers to bright weather.",
+        "The other means a cheerful mood or temperament.",
+        "Starts with S."
+      ],
+      "explanation": "SUNSHINE can mean bright weather or cheerful mood."
+    },
+    {
+      "id": 92,
+      "printDate": "2026-04-19",
+      "publishDate": "2026-04-19",
+      "status": "scheduled",
+      "clue": "Briny liquid from AWE + TEARS mixed (8)",
+      "answer": "SEAWATER",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Briny liquid\".",
+        "This clue uses an anagram.",
+        "Mix AWE and TEARS together.",
+        "Starts with S."
+      ],
+      "explanation": "AWE + TEARS mixed gives SEAWATER."
+    },
+    {
+      "id": 93,
+      "printDate": "2026-04-20",
+      "publishDate": "2026-04-20",
+      "status": "scheduled",
+      "clue": "Night ascent from MOON + RISE (8)",
+      "answer": "MOONRISE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Night ascent\".",
+        "This is a charade clue.",
+        "Join MOON and RISE.",
+        "Starts with M."
+      ],
+      "explanation": "MOON + RISE gives MOONRISE."
+    },
+    {
+      "id": 94,
+      "printDate": "2026-04-21",
+      "publishDate": "2026-04-21",
+      "status": "scheduled",
+      "clue": "Famous feature from LAND + MARK (8)",
+      "answer": "LANDMARK",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Famous feature\".",
+        "This is a charade clue.",
+        "Join LAND and MARK.",
+        "Starts with L."
+      ],
+      "explanation": "LAND + MARK gives LANDMARK."
+    },
+    {
+      "id": 95,
+      "printDate": "2026-04-22",
+      "publishDate": "2026-04-22",
+      "status": "scheduled",
+      "clue": "Cafe from TEA + HOUSE (8)",
+      "answer": "TEAHOUSE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Cafe\".",
+        "This is a charade clue.",
+        "Join TEA and HOUSE.",
+        "Starts with T."
+      ],
+      "explanation": "TEA + HOUSE gives TEAHOUSE."
+    },
+    {
+      "id": 96,
+      "printDate": "2026-04-23",
+      "publishDate": "2026-04-23",
+      "status": "scheduled",
+      "clue": "Skill from LATENT mixed (6)",
+      "answer": "TALENT",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Skill\".",
+        "This clue uses an anagram.",
+        "Mix LATENT.",
+        "Starts with T."
+      ],
+      "explanation": "LATENT mixed gives TALENT."
+    },
+    {
+      "id": 97,
+      "printDate": "2026-04-24",
+      "publishDate": "2026-04-24",
+      "status": "scheduled",
+      "clue": "Meal from PASTER mixed (6)",
+      "answer": "REPAST",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Meal\".",
+        "This clue uses an anagram.",
+        "Mix PASTER.",
+        "Starts with R."
+      ],
+      "explanation": "PASTER mixed gives REPAST."
+    },
+    {
+      "id": 98,
+      "printDate": "2026-04-25",
+      "publishDate": "2026-04-25",
+      "status": "scheduled",
+      "clue": "Ship side from STAR + BOARD (9)",
+      "answer": "STARBOARD",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Ship side\".",
+        "This is a charade clue.",
+        "Join STAR and BOARD.",
+        "Starts with S."
+      ],
+      "explanation": "STAR + BOARD gives STARBOARD."
+    },
+    {
+      "id": 99,
+      "printDate": "2026-04-26",
+      "publishDate": "2026-04-26",
+      "status": "scheduled",
+      "clue": "Dish from LATE holding P (5)",
+      "answer": "PLATE",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Dish\".",
+        "This is a container clue.",
+        "Put P inside LATE.",
+        "Starts with P."
+      ],
+      "explanation": "LATE holding P gives PLATE."
+    },
+    {
+      "id": 100,
+      "printDate": "2026-04-27",
+      "publishDate": "2026-04-27",
+      "status": "scheduled",
+      "clue": "Leader, or measuring tool (5)",
+      "answer": "RULER",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means a leader.",
+        "The other is used to measure length.",
+        "Starts with R."
+      ],
+      "explanation": "RULER means both leader and measuring tool."
+    }
+  ]
+}

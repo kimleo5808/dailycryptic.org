@@ -55,12 +55,12 @@ export default async function GuidePage({ params }: { params: Params }) {
           image: `${BASE_URL}/og.png`,
           author: {
             "@type": "Organization",
-            name: "Strands Hint",
+            name: "dailycryptic",
             url: BASE_URL,
           },
           publisher: {
             "@type": "Organization",
-            name: "Strands Hint",
+            name: "dailycryptic",
             logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png` },
           },
           datePublished: "2025-01-10",
@@ -224,11 +224,11 @@ export default async function GuidePage({ params }: { params: Params }) {
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <I18nLink
-            href="/strands-hint-today"
+            href="/minute-cryptic-today"
             prefetch={false}
             className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
-            Today&apos;s Hints
+            Today&apos;s Clue
           </I18nLink>
           <I18nLink
             href="/guides"

@@ -18,16 +18,16 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "Guides",
-    title: "Strands Guides - Master NYT Strands Puzzles",
+    title: "Minute Cryptic Guides - Solving Techniques and Patterns",
     description:
-      "Comprehensive guides for NYT Strands puzzle. From beginner basics to advanced expert techniques, learn strategies, find Spangrams, and master every theme.",
+      "Comprehensive guides for minute cryptic clues. From beginner basics to advanced techniques, learn practical solving patterns and clue mechanics.",
     keywords: [
-      "strands guides",
-      "strands strategy guide",
-      "how to play strands",
-      "strands tips",
-      "strands tutorial",
-      "strands help",
+      "minute cryptic guides",
+      "cryptic clue strategy guide",
+      "how to solve minute cryptic",
+      "cryptic clue tips",
+      "minute cryptic tutorial",
+      "dailycryptic guides",
     ],
     locale: locale as Locale,
     path: `/guides`,
@@ -68,11 +68,11 @@ export default async function GuidesPage({ params }: { params: Params }) {
             </span>
           </div>
           <h1 className="mt-2 font-heading text-3xl font-bold text-foreground sm:text-4xl">
-            Strands Puzzle Guides
+            Minute Cryptic Guides
           </h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">
-            From beginner basics to advanced expert techniques. Master NYT
-            Strands with our comprehensive guide collection.
+            From beginner basics to advanced expert techniques. Master minute
+            cryptic solving with our guide collection.
           </p>
         </div>
       </header>
@@ -119,18 +119,18 @@ export default async function GuidesPage({ params }: { params: Params }) {
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <I18nLink
-            href="/strands-hint-today"
+            href="/minute-cryptic-today"
             prefetch={false}
             className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
-            Today&apos;s Hints
+            Today&apos;s Clue
           </I18nLink>
           <I18nLink
-            href="/strands-hint"
+            href="/minute-cryptic"
             prefetch={false}
             className="rounded-xl border-2 border-white/30 px-5 py-2 text-sm font-bold text-white transition-all hover:bg-white/10"
           >
-            Browse All Puzzles
+            Browse Archive
           </I18nLink>
         </div>
       </div>

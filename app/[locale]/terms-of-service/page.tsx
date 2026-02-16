@@ -51,7 +51,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords: [
-      "strandshint terms of service", "strands hint terms",
+      "dailycryptic terms of service", "minute cryptic terms",
     ],
     locale: locale as Locale,
     path: `/terms-of-service`,
@@ -76,7 +76,7 @@ export default async function TermsOfServicePage({
           Terms of Service
         </h1>
         <p className="relative mt-4 text-muted-foreground">
-          Usage rules, disclaimers, and acceptable use for strandshint.app.
+          Usage rules, disclaimers, and acceptable use for dailycryptic.org.
         </p>
       </header>
 

@@ -52,75 +52,169 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // --- Existing redirects ---
-      {
-        source: "/nyt-strands-hint",
-        destination: "/strands-hint",
-        permanent: true,
-      },
-      {
-        source: "/about-us",
-        destination: "/about",
-        permanent: true,
-      },
-      {
-        source: "/how-to-play",
-        destination: "/how-to-play-strands",
-        permanent: true,
-      },
-      {
-        source: "/strands-hint-archive",
-        destination: "/strands-hint",
-        permanent: true,
-      },
-
-      // --- Old URL structure → New URL structure (GSC indexed pages) ---
-
-      // Core pages
-      { source: "/today", destination: "/strands-hint-today", permanent: true },
-      { source: "/archive", destination: "/strands-hint", permanent: true },
-      { source: "/hints", destination: "/strands-hint", permanent: true },
-      { source: "/faq", destination: "/strands-hint-faq", permanent: true },
+      // Legacy generic paths
+      { source: "/about-us", destination: "/about", permanent: true },
       { source: "/privacy", destination: "/privacy-policy", permanent: true },
       { source: "/terms", destination: "/terms-of-service", permanent: true },
 
-      // Content pages → closest equivalent
-      { source: "/strategy", destination: "/how-to-play-strands", permanent: true },
-      { source: "/tips", destination: "/how-to-play-strands", permanent: true },
-      { source: "/answers", destination: "/strands-hint", permanent: true },
-
-      // Date-based archive pages: /archive/YYYY-MM-DD → /strands-hint/YYYY-MM-DD
+      // Legacy short aliases
+      { source: "/today", destination: "/minute-cryptic-today", permanent: true },
+      { source: "/archive", destination: "/minute-cryptic", permanent: true },
+      { source: "/hints", destination: "/minute-cryptic", permanent: true },
+      { source: "/answers", destination: "/minute-cryptic", permanent: true },
+      { source: "/faq", destination: "/minute-cryptic-faq", permanent: true },
       {
-        source: "/archive/:date",
-        destination: "/strands-hint/:date",
+        source: "/how-to-play",
+        destination: "/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/strategy",
+        destination: "/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/tips",
+        destination: "/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      { source: "/archive/:date", destination: "/minute-cryptic/:date", permanent: true },
+
+      // Legacy Strands namespace
+      { source: "/nyt-strands-hint", destination: "/minute-cryptic", permanent: true },
+      { source: "/strands-hint-archive", destination: "/minute-cryptic", permanent: true },
+      { source: "/strands-hint", destination: "/minute-cryptic", permanent: true },
+      {
+        source: "/strands-hint-today",
+        destination: "/minute-cryptic-today",
+        permanent: true,
+      },
+      {
+        source: "/strands-hint-faq",
+        destination: "/minute-cryptic-faq",
+        permanent: true,
+      },
+      {
+        source: "/strands-hint/:date",
+        destination: "/minute-cryptic/:date",
+        permanent: true,
+      },
+      {
+        source: "/how-to-play-strands",
+        destination: "/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/:locale/strands-hint",
+        destination: "/:locale/minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/:locale/strands-hint-today",
+        destination: "/:locale/minute-cryptic-today",
+        permanent: true,
+      },
+      {
+        source: "/:locale/strands-hint-faq",
+        destination: "/:locale/minute-cryptic-faq",
+        permanent: true,
+      },
+      {
+        source: "/:locale/strands-hint/:date",
+        destination: "/:locale/minute-cryptic/:date",
+        permanent: true,
+      },
+      {
+        source: "/:locale/how-to-play-strands",
+        destination: "/:locale/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/blog/strands-strategies-guide",
+        destination: "/blog/minute-cryptic-strategy-guide",
+        permanent: true,
+      },
+      {
+        source: "/blog/common-strands-patterns",
+        destination: "/blog/common-minute-cryptic-patterns",
+        permanent: true,
+      },
+      {
+        source: "/blog/beginners-guide-strands",
+        destination: "/blog/minute-cryptic-beginner-guide",
         permanent: true,
       },
 
-      // Locale-prefixed variants (English)
-      { source: "/en/today", destination: "/en/strands-hint-today", permanent: true },
-      { source: "/en/archive", destination: "/en/strands-hint", permanent: true },
-      { source: "/en/hints", destination: "/en/strands-hint", permanent: true },
-      { source: "/en/faq", destination: "/en/strands-hint-faq", permanent: true },
-      { source: "/en/answers", destination: "/en/strands-hint", permanent: true },
-      { source: "/en/strategy", destination: "/en/how-to-play-strands", permanent: true },
-      { source: "/en/tips", destination: "/en/how-to-play-strands", permanent: true },
+      // Locale aliases: English
+      { source: "/en/today", destination: "/en/minute-cryptic-today", permanent: true },
+      { source: "/en/archive", destination: "/en/minute-cryptic", permanent: true },
+      { source: "/en/hints", destination: "/en/minute-cryptic", permanent: true },
+      { source: "/en/answers", destination: "/en/minute-cryptic", permanent: true },
+      { source: "/en/faq", destination: "/en/minute-cryptic-faq", permanent: true },
+      {
+        source: "/en/how-to-play",
+        destination: "/en/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/en/strategy",
+        destination: "/en/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/en/tips",
+        destination: "/en/how-to-play-minute-cryptic",
+        permanent: true,
+      },
       {
         source: "/en/archive/:date",
-        destination: "/en/strands-hint/:date",
+        destination: "/en/minute-cryptic/:date",
+        permanent: true,
+      },
+      { source: "/en/strands-hint", destination: "/en/minute-cryptic", permanent: true },
+      {
+        source: "/en/strands-hint-today",
+        destination: "/en/minute-cryptic-today",
+        permanent: true,
+      },
+      {
+        source: "/en/strands-hint-faq",
+        destination: "/en/minute-cryptic-faq",
+        permanent: true,
+      },
+      {
+        source: "/en/strands-hint/:date",
+        destination: "/en/minute-cryptic/:date",
+        permanent: true,
+      },
+      {
+        source: "/en/how-to-play-strands",
+        destination: "/en/how-to-play-minute-cryptic",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/strands-strategies-guide",
+        destination: "/en/blog/minute-cryptic-strategy-guide",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/common-strands-patterns",
+        destination: "/en/blog/common-minute-cryptic-patterns",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/beginners-guide-strands",
+        destination: "/en/blog/minute-cryptic-beginner-guide",
         permanent: true,
       },
 
-      // --- Spanish locale → English (language dropped) ---
+      // Locale aliases: Spanish routes to default English content
       { source: "/es", destination: "/", permanent: true },
-      { source: "/es/hints", destination: "/strands-hint", permanent: true },
-      { source: "/es/answers", destination: "/strands-hint", permanent: true },
-      { source: "/es/archive", destination: "/strands-hint", permanent: true },
-      {
-        source: "/es/archive/:date",
-        destination: "/strands-hint/:date",
-        permanent: true,
-      },
-      { source: "/es/faq", destination: "/strands-hint-faq", permanent: true },
+      { source: "/es/hints", destination: "/minute-cryptic", permanent: true },
+      { source: "/es/answers", destination: "/minute-cryptic", permanent: true },
+      { source: "/es/archive", destination: "/minute-cryptic", permanent: true },
+      { source: "/es/archive/:date", destination: "/minute-cryptic/:date", permanent: true },
+      { source: "/es/faq", destination: "/minute-cryptic-faq", permanent: true },
       { source: "/es/about", destination: "/about", permanent: true },
       { source: "/es/contact", destination: "/contact", permanent: true },
       { source: "/es/privacy", destination: "/privacy-policy", permanent: true },

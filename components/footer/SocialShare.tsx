@@ -4,7 +4,7 @@ import { BASE_URL } from "@/config/site";
 
 const SHARE_URL = BASE_URL;
 const SHARE_TEXT =
-  "Strands Hint — Daily hints and answers for NYT Strands puzzle. Progressive clues, Spangram reveals, and theme words.";
+  "dailycryptic - Solve one minute cryptic clue every day with progressive hints and clear explanations.";
 
 const socialPlatforms = [
   {
