@@ -16,10 +16,6 @@
       {
         "name": "FAQ",
         "href": "/minute-cryptic-faq"
-      },
-      {
-        "name": "Guides",
-        "href": "/guides"
       }
     ]
   },
@@ -56,14 +52,6 @@
             {
               "href": "/minute-cryptic-faq",
               "name": "FAQ"
-            },
-            {
-              "href": "/blog",
-              "name": "Tips and Guides"
-            },
-            {
-              "href": "/guides",
-              "name": "Strategy Guides"
             }
           ]
         },

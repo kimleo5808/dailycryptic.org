@@ -19,7 +19,7 @@ const TAG_LINKS = [
   { label: "Today's daily cryptic", href: "/minute-cryptic-today" },
   { label: "How to play", href: "/how-to-play-minute-cryptic" },
   { label: "FAQ", href: "/minute-cryptic-faq" },
-  { label: "More guides", href: "/guides" },
+  { label: "About", href: "/about" },
 ];
 
 export async function generateMetadata({
