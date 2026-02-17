@@ -9,13 +9,13 @@ import Link from "next/link";
 const QUICK_LINKS = [
   {
     title: "Recent clues",
-    description: "Practice with the last 7 daily clues.",
+    description: "Practice with the latest daily cryptic clues in the archive.",
     href: "/minute-cryptic",
     cta: "Open archive",
   },
   {
     title: "How cryptics work",
-    description: "Learn indicators, fodder, definition, and containers.",
+    description: "Learn indicators, fodder, definition, and containers for daily cryptic solving.",
     href: "/how-to-play-minute-cryptic",
     cta: "Read guide",
   },
@@ -54,8 +54,8 @@ export default async function HomeComponent() {
             Minute Cryptic Today
           </h1>
           <p className="mt-3 max-w-2xl text-base text-slate-300 sm:text-lg">
-            Solve one quick cryptic clue a day. Use hints only when you need
-            them.
+            Solve one quick minute cryptic in a daily cryptic format. Use hints
+            only when you need them.
           </p>
 
           <div className="mt-8">
@@ -95,7 +95,7 @@ export default async function HomeComponent() {
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-xl border border-border bg-card p-5">
             <h2 className="font-heading text-xl font-bold text-foreground">
-              Last 7 minute cryptics
+              Last 7 minute cryptics from our daily cryptic archive
             </h2>
             <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {recentClues.map((puzzle) => (
@@ -119,18 +119,19 @@ export default async function HomeComponent() {
       <section className="border-y border-border bg-muted/30 py-12">
         <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            What Is Minute Cryptic?
+            What Is Minute Cryptic in a Daily Cryptic Format?
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            A minute cryptic is a short cryptic challenge designed for daily
-            consistency. You solve one clue at a time, check your answer, and
-            learn from a clear explanation. This format keeps cryptic solving
-            approachable while preserving real clue mechanics.
+            A minute cryptic is a short daily cryptic challenge designed for
+            consistent practice. You solve one clue at a time, check your
+            answer, and learn from a clear explanation. This format keeps
+            cryptic solving approachable while preserving real clue mechanics.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             If you searched for minute cryptic, minute cryptic hints, or minute
-            cryptic answer today, this homepage is built to cover all three
-            needs: play now, learn the method, and verify with confidence.
+            cryptic answer today, or daily cryptic clue today, this homepage is
+            built to cover all three needs: play now, learn the method, and
+            verify with confidence.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             You do not need a full crossword grid to build cryptic skill. A
@@ -139,10 +140,11 @@ export default async function HomeComponent() {
             format removes friction while keeping the thinking process intact.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Dailycryptic focuses on a practical habit: solve one minute cryptic
-            clue each day, use hints only when needed, and review explanation
-            quality after each attempt. This creates steady progress for
-            beginners and gives experienced solvers a compact daily workout.
+            Dailycryptic focuses on a practical daily cryptic habit: solve one
+            minute cryptic clue each day, use hints only when needed, and
+            review explanation quality after each attempt. This creates steady
+            progress for beginners and gives experienced solvers a compact daily
+            workout.
           </p>
 
           <h3 className="mt-10 font-heading text-xl font-semibold text-foreground">
@@ -162,8 +164,9 @@ export default async function HomeComponent() {
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             If you came from searches such as minute cryptic today or minute
-            cryptic clues today, this page gives you a clean solve-first flow:
-            attempt, hint, check, then explanation.
+            cryptic clues today, or daily cryptic puzzle today, this page gives
+            you a clean solve-first flow: attempt, hint, check, then
+            explanation.
           </p>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
@@ -315,8 +318,9 @@ export default async function HomeComponent() {
                 Is minute cryptic free to play?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Yes. You can play the daily minute cryptic clue and browse
-                archive entries without creating an account.
+                Yes. You can play the daily minute cryptic clue in our daily
+                cryptic format and browse archive entries without creating an
+                account.
               </p>
             </details>
             <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
@@ -324,8 +328,8 @@ export default async function HomeComponent() {
                 Do I need an account for minute cryptic today?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                No. Daily play is open. You can attempt, reveal hints, and check
-                answers without sign-up.
+                No. Daily cryptic play is open. You can attempt, reveal hints,
+                and check answers without sign-up.
               </p>
             </details>
             <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
@@ -367,7 +371,8 @@ export default async function HomeComponent() {
                 >
                   archive page
                 </Link>{" "}
-                to access past minute cryptic clues by date.
+                to access past minute cryptic clues in the daily cryptic
+                archive by date.
               </p>
             </details>
             <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
@@ -377,7 +382,8 @@ export default async function HomeComponent() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Not exactly. A minute cryptic usually focuses on one clue,
                 whereas a full cryptic crossword includes a full grid and many
-                interacting answers. The clue logic is still transferable.
+                interacting answers. The daily cryptic clue logic is still
+                transferable.
               </p>
             </details>
             <details className="rounded-xl border border-border bg-card p-4 transition open:bg-primary/5">
@@ -385,23 +391,26 @@ export default async function HomeComponent() {
                 How often are new minute cryptic clues published?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                One new minute cryptic clue is published every day.
+                One new minute cryptic clue is published every day as our daily
+                cryptic.
               </p>
             </details>
           </div>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Why Dailycryptic for Minute Cryptic Players
+            Why Dailycryptic for Minute Cryptic and Daily Cryptic Players
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Dailycryptic is built around one clear purpose: publish a reliable
-            minute cryptic experience every day with fair clue construction,
-            progressive help, and transparent explanations.
+            minute cryptic and daily cryptic practice experience every day with
+            fair clue construction, progressive help, and transparent
+            explanations.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you searched minute cryptic, minutecryptic, cryptic minute, or
-            minute cryptic crossword, you are likely looking for a place that
-            helps you both solve and improve. That is the model of this site.
+            If you searched minute cryptic, daily cryptic, minutecryptic,
+            cryptic minute, or minute cryptic crossword, you are likely looking
+            for a place that helps you both solve and improve. That is the
+            model of this site.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Start with today&apos;s clue, use hints only when needed, and review
@@ -538,9 +547,9 @@ export default async function HomeComponent() {
             A strong puzzle homepage should satisfy multiple search intents in
             one session. Navigation intent wants immediate play. Informational
             intent wants method guidance. Verification intent wants reliable
-            answer flow. Archive intent wants historical continuity. This page is
-            structured around that model so users do not need to bounce between
-            unrelated pages to complete a single task.
+            answer flow. Archive intent wants historical continuity. This daily
+            cryptic page is structured around that model so users do not need
+            to bounce between unrelated pages to complete a single task.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Internal links are placed to support clear next actions: play now,

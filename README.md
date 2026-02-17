@@ -72,23 +72,26 @@ pnpm build
 pnpm run deploy
 ```
 
-## Prelaunch Visibility Gate
+## Optional Archive Display Gate
 
-Before full launch, you can limit public puzzle count:
+You can optionally limit archive list display count:
 
-- Env var: `MINUTE_CRYPTIC_VISIBLE_COUNT`
+- Env var: `MINUTE_CRYPTIC_ARCHIVE_VISIBLE_COUNT`
 
 Examples:
 
-- `MINUTE_CRYPTIC_VISIBLE_COUNT=2` -> only first 2 visible puzzles
-- unset / invalid -> fallback behavior from data layer
+- `MINUTE_CRYPTIC_ARCHIVE_VISIBLE_COUNT=2` -> archive page shows 2 puzzles
+- unset / invalid -> archive page shows all published puzzles
 
-This gate affects:
+This gate affects only:
 
-- homepage recent clues
-- `/minute-cryptic-today`
 - `/minute-cryptic` archive
-- `/minute-cryptic/[date]` static routes
+
+It does not affect:
+
+- homepage clue module and recent list
+- `/minute-cryptic-today`
+- `/minute-cryptic/[date]` detail availability
 - sitemap puzzle URLs
 
 ## Validation Rules

@@ -27,11 +27,13 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "MinuteCrypticToday",
-    title: `Minute Cryptic Today - ${dateStr}`,
+    title: `Minute Cryptic Today - Daily Cryptic Clue for ${dateStr}`,
     description:
-      "Solve today's minute cryptic clue with progressive hints and instant answer checks.",
+      "Solve today's minute cryptic in a daily cryptic format with progressive hints and instant answer checks.",
     keywords: [
       "minute cryptic today",
+      "daily cryptic",
+      "daily cryptic today",
       "daily cryptic clue",
       "cryptic clue hints",
       "dailycryptic",
@@ -56,7 +58,7 @@ export default async function MinuteCrypticTodayPage({
       <div className="mx-auto max-w-4xl px-4 py-16 text-center">
         <h1 className="font-heading text-3xl font-bold">No Clue Available</h1>
         <p className="mt-4 text-muted-foreground">
-          Today&apos;s minute cryptic has not been published yet.
+          Today&apos;s minute cryptic clue has not been published yet.
         </p>
       </div>
     );
@@ -81,8 +83,8 @@ export default async function MinuteCrypticTodayPage({
           Minute Cryptic Today
         </h1>
         <p className="mt-2 text-muted-foreground">
-          Solve today&apos;s clue, reveal hints only when needed, and check your
-          answer instantly.
+          Solve today&apos;s daily cryptic clue, reveal hints only when needed,
+          and check your answer instantly.
         </p>
       </header>
 

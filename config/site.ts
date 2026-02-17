@@ -5,9 +5,9 @@ export const BASE_URL =
 
 export const siteConfig: SiteConfig = {
   name: "dailycryptic",
-  tagLine: "Daily minute cryptic hints and answers",
+  tagLine: "Daily cryptic and minute cryptic hints and answers",
   description:
-    "Get today's minute cryptic hints, answers, and archive. Progressive clues, solving help, and daily puzzle tracking.",
+    "Get today's minute cryptic and daily cryptic clues, hints, answers, and archive. Progressive clues, solving help, and daily puzzle tracking.",
   url: BASE_URL,
   authors: [
     {

@@ -29,11 +29,13 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "Daily",
-    title: `Minute Cryptic for ${formattedDate} (Clue #${puzzle.id})`,
-    description: `Solve minute cryptic clue #${puzzle.id} for ${formattedDate} with progressive hints, answer check, and full explanation.`,
+    title: `Minute Cryptic for ${formattedDate} (Daily Cryptic Clue #${puzzle.id})`,
+    description: `Solve minute cryptic clue #${puzzle.id} for ${formattedDate} in our daily cryptic archive, with progressive hints, answer check, and full explanation.`,
     keywords: [
       `minute cryptic ${date}`,
       `minute cryptic #${puzzle.id}`,
+      `daily cryptic ${date}`,
+      "daily cryptic",
       "minute cryptic answer",
       "daily cryptic clue",
       "cryptic clue explanation",
@@ -77,7 +79,7 @@ export default async function DailyPuzzlePage({
       />
       <JsonLd
         data={articleSchema({
-          title: `Minute Cryptic ${dayjs(puzzle.printDate).format("MMMM D, YYYY")} - Clue #${puzzle.id}`,
+          title: `Minute Cryptic ${dayjs(puzzle.printDate).format("MMMM D, YYYY")} - Daily Cryptic Clue #${puzzle.id}`,
           description: puzzle.clue,
           url: `${BASE_URL}/minute-cryptic/${date}`,
           datePublished: puzzle.printDate,
@@ -118,8 +120,8 @@ export default async function DailyPuzzlePage({
           Clue #{puzzle.id} | {formattedDate}
         </p>
         <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          Try to solve before revealing help. The answer and explanation are
-          available below after your attempt.
+          Try to solve this daily cryptic clue before revealing help. The answer
+          and explanation are available below after your attempt.
         </p>
       </header>
 
@@ -166,8 +168,8 @@ export default async function DailyPuzzlePage({
           Related practice clues
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Continue with nearby archive entries to reinforce the same solving
-          workflow across different clue types.
+          Continue with nearby daily cryptic archive entries to reinforce the
+          same solving workflow across different clue types.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {recentPuzzles

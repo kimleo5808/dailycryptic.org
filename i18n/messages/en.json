@@ -96,9 +96,9 @@
     }
   },
   "Home": {
-    "title": "Minute Cryptic Today",
-    "tagLine": "Daily minute cryptic clues and hints",
-    "description": "Solve today's minute cryptic clue with progressive hints and clear answer checks. One quick daily puzzle, plus archive, guide, and FAQ."
+    "title": "Minute Cryptic Today | Daily Cryptic Clues",
+    "tagLine": "Daily cryptic and minute cryptic clues with hints",
+    "description": "Solve today's minute cryptic clue in a daily cryptic format with progressive hints and clear answer checks. One quick daily puzzle, plus archive, guide, and FAQ."
   },
   "Blog": {
     "title": "Tips and Guides",
@@ -118,11 +118,11 @@
   },
   "MinuteCrypticToday": {
     "title": "Minute Cryptic Today - Daily Clue and Hints",
-    "description": "Solve today's minute cryptic clue with progressive hints and an instant answer check."
+    "description": "Solve today's minute cryptic clue in a daily cryptic format with progressive hints and an instant answer check."
   },
   "FAQ": {
     "title": "Minute Cryptic FAQ - Common Questions Answered",
-    "description": "Frequently asked questions about minute cryptic rules, solving strategy, and how our hint system works."
+    "description": "Frequently asked questions about minute cryptic and daily cryptic rules, solving strategy, and how our hint system works."
   },
   "HowToPlay": {
     "title": "How to Solve Minute Cryptic - Complete Guide",

@@ -23,6 +23,8 @@ export async function generateMetadata({
     description: t("description"),
     keywords: [
       "minute cryptic faq",
+      "daily cryptic faq",
+      "daily cryptic",
       "daily cryptic questions",
       "cryptic clue help",
       "how minute cryptic works",
@@ -38,10 +40,10 @@ const FAQ_ITEMS = [
   {
     question: "What is minute cryptic?",
     answer:
-      "Minute cryptic is a daily one-clue cryptic puzzle format. You get one clue, an answer length, and optional progressive hints.",
+      "Minute cryptic is a daily cryptic one-clue puzzle format. You get one clue, an answer length, and optional progressive hints.",
   },
   {
-    question: "How often is a new clue published?",
+    question: "How often is a new daily cryptic clue published?",
     answer:
       "A new clue is published every day on dailycryptic. The archive keeps previous clues for practice.",
   },
@@ -109,7 +111,7 @@ export default async function FAQPage({ params }: { params: Params }) {
             Minute Cryptic FAQ
           </h1>
           <p className="mt-2 text-muted-foreground">
-            Quick answers about solving, hints, and dailycryptic puzzle rules.
+            Quick answers about solving, hints, and daily cryptic puzzle rules.
           </p>
         </div>
       </header>

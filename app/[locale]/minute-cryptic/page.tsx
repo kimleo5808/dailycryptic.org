@@ -1,7 +1,8 @@
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
-  getAllMinuteCryptics,
+  getArchiveMinuteCrypticCount,
+  getArchiveMinuteCryptics,
   getLatestMinuteCryptic,
   getMinuteCrypticCount,
 } from "@/lib/minute-cryptic-data";
@@ -15,7 +16,7 @@ import Link from "next/link";
 type Params = Promise<{ locale: string }>;
 
 const TAG_LINKS = [
-  { label: "Today's minute cryptic", href: "/minute-cryptic-today" },
+  { label: "Today's daily cryptic", href: "/minute-cryptic-today" },
   { label: "How to play", href: "/how-to-play-minute-cryptic" },
   { label: "FAQ", href: "/minute-cryptic-faq" },
   { label: "More guides", href: "/guides" },
@@ -27,14 +28,16 @@ export async function generateMetadata({
   params: Params;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const count = await getMinuteCrypticCount();
+  const count = await getArchiveMinuteCrypticCount();
 
   return constructMetadata({
     page: "Archive",
-    title: "Minute Cryptic Archive: Past Daily Clues and Explanations",
-    description: `Browse ${count} past minute cryptic clues with hint levels, answer checks, and full explanations.`,
+    title: "Minute Cryptic Archive: Daily Cryptic History, Answers, and Explanations",
+    description: `Browse ${count} past minute cryptic clues in our daily cryptic archive, with hint levels, answer checks, and full explanations.`,
     keywords: [
       "minute cryptic archive",
+      "daily cryptic archive",
+      "daily cryptic history",
       "past minute cryptics",
       "daily minute cryptic",
       "minute cryptic answers",
@@ -52,17 +55,11 @@ export default async function MinuteCrypticArchivePage({
   params: Params;
 }) {
   await params;
-  const allPuzzles = await getAllMinuteCryptics();
+  const allPuzzles = await getArchiveMinuteCryptics();
+  const displayedCount = await getArchiveMinuteCrypticCount();
   const totalCount = await getMinuteCrypticCount();
   const latestPuzzle = await getLatestMinuteCryptic();
-  const visibleCountGate = Number.parseInt(
-    process.env.MINUTE_CRYPTIC_VISIBLE_COUNT ?? "",
-    10
-  );
-  const isPrelaunchLimited =
-    Number.isFinite(visibleCountGate) &&
-    visibleCountGate > 0 &&
-    totalCount <= visibleCountGate;
+  const isPrelaunchLimited = displayedCount < totalCount;
 
   const groupedByMonth = allPuzzles.reduce<Record<string, typeof allPuzzles>>(
     (acc, puzzle) => {
@@ -91,8 +88,9 @@ export default async function MinuteCrypticArchivePage({
             Minute Cryptic Archive
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Explore {totalCount} past minute cryptic clues with progressive hints,
-            answer checks, and full explanations.
+            Explore {displayedCount} past minute cryptic clues in this daily
+            cryptic archive with progressive hints, answer checks, and full
+            explanations.
           </p>
           {isPrelaunchLimited && (
             <p className="mx-auto mt-3 max-w-2xl rounded-lg border border-amber-300/50 bg-amber-100/60 px-4 py-2 text-xs font-medium text-amber-900 dark:border-amber-500/40 dark:bg-amber-950/40 dark:text-amber-200">
@@ -124,7 +122,7 @@ export default async function MinuteCrypticArchivePage({
             Use this archive for structured practice. Pick a date, attempt the
             clue without hints first, then reveal one hint level only if needed.
             After checking your answer, review the explanation to understand the
-            definition and wordplay logic.
+            definition and wordplay logic behind each daily cryptic clue.
           </p>
           <h3 className="mt-5 font-heading text-base font-bold text-foreground">
             What you can find here
@@ -188,7 +186,8 @@ export default async function MinuteCrypticArchivePage({
                 Where can I play today&apos;s clue?
               </summary>
               <p className="mt-2 text-sm text-muted-foreground">
-                Open the minute cryptic today page for the latest published clue.
+                Open the minute cryptic today page for the latest published
+                daily cryptic clue.
               </p>
             </details>
             <details className="rounded-lg border border-border/80 bg-background p-3">
