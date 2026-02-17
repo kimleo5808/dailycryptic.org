@@ -1,8 +1,7 @@
 "use client";
 
 import dayjs from "dayjs";
-import { ArrowLeft, Check, Delete, HelpCircle, Info } from "lucide-react";
-import Link from "next/link";
+import { Check, Delete, HelpCircle } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type MinuteCrypticHeroGameProps = {
@@ -163,41 +162,10 @@ export default function MinuteCrypticHeroGame({
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,0.46),transparent_52%)]" />
 
       <div className="relative mx-auto flex min-h-[760px] w-full max-w-2xl flex-col text-slate-800">
-        <header className="flex items-start justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/minute-cryptic"
-              aria-label="Open archive"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-900/20 bg-white/35 transition hover:bg-white/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/35"
-            >
-              <ArrowLeft className="h-5 w-5" />
-            </Link>
-            <div>
-              <p className="font-heading text-lg font-bold leading-tight text-slate-900">
-                {displayDate}
-              </p>
-              <p className="text-xs font-medium text-slate-700/75">
-                By dailycryptic
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <Link
-              href="/minute-cryptic-faq"
-              aria-label="Open FAQ"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-900/20 bg-white/35 transition hover:bg-white/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/35"
-            >
-              <Info className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/minute-cryptic-today"
-              aria-label="Open today's clue"
-              className="inline-flex h-8 min-w-8 items-center justify-center rounded-md bg-black px-2.5 text-base font-extrabold text-white"
-            >
-              M
-            </Link>
-          </div>
+        <header className="flex items-center justify-center">
+          <p className="font-heading text-lg font-bold leading-tight text-slate-900">
+            {displayDate}
+          </p>
         </header>
 
         <article className="relative mt-7 rounded-2xl border border-slate-900/12 bg-white/92 p-6 shadow-[0_6px_0_0_rgba(100,116,139,0.2)] sm:p-8">
