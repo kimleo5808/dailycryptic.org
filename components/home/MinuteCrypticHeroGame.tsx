@@ -158,24 +158,24 @@ export default function MinuteCrypticHeroGame({
         : "h-10 w-8 text-xl";
 
   return (
-    <section className="relative overflow-hidden rounded-[24px] border border-sky-200/70 bg-[#b8d8fa] px-4 py-4 shadow-[0_14px_40px_rgba(15,23,42,0.16)] sm:px-6 sm:py-5">
+    <section className="relative overflow-hidden rounded-[24px] border border-sky-200/70 bg-[#b8d8fa] px-4 py-3 shadow-[0_14px_40px_rgba(15,23,42,0.16)] sm:px-6 sm:py-4">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,0.46),transparent_52%)]" />
 
-      <div className="relative mx-auto flex min-h-[760px] w-full max-w-2xl flex-col text-slate-800">
+      <div className="relative mx-auto flex min-h-[620px] w-full max-w-2xl flex-col text-slate-800 sm:min-h-[640px]">
         <header className="flex items-center justify-center">
           <p className="font-heading text-lg font-bold leading-tight text-slate-900">
             {displayDate}
           </p>
         </header>
 
-        <article className="relative mt-7 rounded-2xl border border-slate-900/12 bg-white/92 p-6 shadow-[0_6px_0_0_rgba(100,116,139,0.2)] sm:p-8">
+        <article className="relative mt-5 rounded-2xl border border-slate-900/12 bg-white/92 p-6 shadow-[0_6px_0_0_rgba(100,116,139,0.2)] sm:p-8">
           <div className="absolute left-0 top-0 h-1 w-full rounded-t-2xl bg-gradient-to-r from-sky-500 via-indigo-400 to-violet-500" />
           <h2 className="font-serif text-3xl font-semibold leading-tight text-slate-800">
             {clue}
           </h2>
         </article>
 
-        <div className="mt-8 flex flex-col items-center">
+        <div className="mt-6 flex flex-col items-center">
           <div
             className={`flex max-w-full flex-wrap justify-center gap-2 ${feedback === "incorrect" ? "mc-wiggle" : ""}`}
           >
@@ -204,7 +204,7 @@ export default function MinuteCrypticHeroGame({
             })}
           </div>
 
-          <div className="mt-8 flex items-center gap-2">
+          <div className="mt-6 flex items-center gap-2">
             {Array.from({ length: stepCount }).map((_, index) => (
               <span
                 key={index}
@@ -223,7 +223,7 @@ export default function MinuteCrypticHeroGame({
             par {currentStep} of {stepCount}
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
             <button
               type="button"
               onClick={handleRevealHint}
@@ -246,24 +246,28 @@ export default function MinuteCrypticHeroGame({
 
           {message ? (
             <p
-              className={`mt-4 text-sm font-medium ${feedback === "correct" ? "text-emerald-700" : "text-slate-700"}`}
+              className={`mt-2 text-sm font-medium ${feedback === "correct" ? "text-emerald-700" : "text-slate-700"}`}
             >
               {message}
             </p>
           ) : null}
 
-          {currentHint ? (
-            <div className="mt-4 w-full max-w-xl rounded-xl border border-slate-200 bg-white/90 p-4 text-sm leading-relaxed text-slate-700">
-              <p className="font-semibold text-slate-900">
-                Hint {revealedHintLevel}
-              </p>
-              <p className="mt-1">{currentHint}</p>
-            </div>
-          ) : null}
+          <div className="mt-3 min-h-[84px] w-full max-w-xl rounded-xl border border-slate-200 bg-white/90 p-4 text-sm leading-relaxed text-slate-700">
+            {currentHint ? (
+              <>
+                <p className="font-semibold text-slate-900">
+                  Hint {revealedHintLevel}
+                </p>
+                <p className="mt-1">{currentHint}</p>
+              </>
+            ) : (
+              <p className="text-slate-500">Hint will appear here.</p>
+            )}
+          </div>
         </div>
 
-        <div className="mt-auto pt-10">
-          <div className="mx-auto w-full max-w-[520px] select-none rounded-2xl bg-white/15 p-3">
+        <div className="mt-5 pb-1">
+          <div className="mx-auto w-full max-w-[520px] select-none rounded-2xl bg-white/15 p-2.5">
             <div className="space-y-2">
               {KEY_ROWS.map((row, rowIndex) => (
                 <div key={rowIndex} className="flex justify-center gap-1.5">

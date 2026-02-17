@@ -59,7 +59,7 @@ export default async function HomeComponent() {
             </p>
           </div>
 
-          <div className="mt-6">
+          <div className="mt-4">
           <MinuteCrypticHeroGame
             clue={latestPuzzle.clue}
             answer={latestPuzzle.answer}
