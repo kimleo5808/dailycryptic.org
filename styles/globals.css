@@ -172,3 +172,35 @@ html {
     linear-gradient(90deg, rgba(79, 70, 229, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
 }
+
+@keyframes mc-wiggle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes mc-pop {
+  0% {
+    transform: scale(0.82);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mc-wiggle {
+  animation: mc-wiggle 0.45s ease-in-out;
+}
+
+.mc-pop {
+  animation: mc-pop 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}

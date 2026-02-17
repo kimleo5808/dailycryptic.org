@@ -1,4 +1,4 @@
-import MinuteCrypticGame from "@/components/home/MinuteCrypticGame";
+import MinuteCrypticHeroGame from "@/components/home/MinuteCrypticHeroGame";
 import {
   getLatestMinuteCryptic,
   getRecentMinuteCryptics,
@@ -48,24 +48,16 @@ export default async function HomeComponent() {
 
   return (
     <div className="w-full">
-      <section className="w-full bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800 py-14 sm:py-16">
+      <section className="w-full bg-[#b8d8fa] py-6 sm:py-8">
         <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl">
-            Minute Cryptic Today
-          </h1>
-          <p className="mt-3 max-w-2xl text-base text-slate-300 sm:text-lg">
-            Solve one quick minute cryptic in a daily cryptic format. Use hints
-            only when you need them.
-          </p>
-
-          <div className="mt-8">
-            <MinuteCrypticGame
-              clue={latestPuzzle.clue}
-              answer={latestPuzzle.answer}
-              dateLabel={dateLabel}
-              hints={latestPuzzle.hintLevels}
-            />
-          </div>
+          <h1 className="sr-only">Minute Cryptic Today</h1>
+          <MinuteCrypticHeroGame
+            clue={latestPuzzle.clue}
+            answer={latestPuzzle.answer}
+            dateLabel={dateLabel}
+            printDate={latestPuzzle.printDate}
+            hints={latestPuzzle.hintLevels}
+          />
         </div>
       </section>
 
