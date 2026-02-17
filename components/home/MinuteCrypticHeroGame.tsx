@@ -158,7 +158,7 @@ export default function MinuteCrypticHeroGame({
         : "h-10 w-8 text-xl";
 
   return (
-    <section className="relative overflow-hidden rounded-[24px] border border-sky-200/70 bg-[#b8d8fa] px-4 py-3 shadow-[0_14px_40px_rgba(15,23,42,0.16)] sm:px-6 sm:py-4">
+    <section className="relative h-full overflow-hidden rounded-[24px] border border-sky-200/70 bg-[#b8d8fa] px-4 py-3 shadow-[0_14px_40px_rgba(15,23,42,0.16)] sm:px-6 sm:py-4">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,0.46),transparent_52%)]" />
 
       <div className="relative mx-auto flex min-h-[620px] w-full max-w-2xl flex-col text-slate-800 sm:min-h-[640px]">

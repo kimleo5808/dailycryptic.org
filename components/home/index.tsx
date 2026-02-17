@@ -48,8 +48,8 @@ export default async function HomeComponent() {
 
   return (
     <div className="w-full">
-      <section className="w-full bg-[#b8d8fa] py-6 sm:py-8">
-        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+      <section className="w-full bg-[#b8d8fa] py-6 sm:py-8 lg:min-h-[calc(100svh-64px)] lg:py-4">
+        <div className="mx-auto flex h-full w-full max-w-5xl flex-col px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-heading text-4xl font-bold text-slate-900 sm:text-5xl">
               Minute Cryptic Today
@@ -59,7 +59,7 @@ export default async function HomeComponent() {
             </p>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 flex-1">
           <MinuteCrypticHeroGame
             clue={latestPuzzle.clue}
             answer={latestPuzzle.answer}
