@@ -30,10 +30,17 @@ export async function constructMetadata({
 
   const pageTitle = title || t(`title`)
   const pageDescription = description || t(`description`)
+  const homeTagLine = t('tagLine')
+  const normalizedTitle = pageTitle.toLowerCase()
+  const normalizedSiteName = siteConfig.name.toLowerCase()
 
   const finalTitle = page === 'Home'
-    ? `${pageTitle} - ${t('tagLine')}`
-    : `${pageTitle} | ${t('title')}`
+    ? (pageTitle.includes('|') || normalizedTitle.includes(homeTagLine.toLowerCase())
+      ? pageTitle
+      : `${pageTitle} - ${homeTagLine}`)
+    : (normalizedTitle.includes(normalizedSiteName)
+      ? pageTitle
+      : `${pageTitle} | ${siteConfig.name}`)
 
   const imageUrls = images.length > 0
     ? images.map(img => ({
@@ -45,17 +52,18 @@ export async function constructMetadata({
       alt: pageTitle,
     }]
 
+  const pathForAlternates = canonicalUrl ?? path ?? '/'
+  const normalizedCanonicalPath = pathForAlternates === '/' ? '' : pathForAlternates
   const localizedPath = `${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${path || ''}`
   const pageURL = `${siteConfig.url}${localizedPath}`
 
   const alternateLanguages = Object.keys(LOCALE_NAMES).reduce((acc, lang) => {
-    const path = canonicalUrl
-      ? `${lang === DEFAULT_LOCALE ? '' : `/${lang}`}${canonicalUrl === '/' ? '' : canonicalUrl}`
-      : `${lang === DEFAULT_LOCALE ? '' : `/${lang}`}`
-    acc[lang] = `${siteConfig.url}${path}`
+    const altPath = `${lang === DEFAULT_LOCALE ? '' : `/${lang}`}${normalizedCanonicalPath}`
+    acc[lang] = `${siteConfig.url}${altPath}`
 
     return acc
   }, {} as Record<string, string>)
+  alternateLanguages['x-default'] = `${siteConfig.url}${normalizedCanonicalPath}`
 
   return {
     title: finalTitle,
@@ -71,7 +79,7 @@ export async function constructMetadata({
     creator: siteConfig.creator,
     metadataBase: new URL(siteConfig.url),
     alternates: {
-      canonical: canonicalUrl ? `${siteConfig.url}${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${canonicalUrl === '/' ? '' : canonicalUrl}` : undefined,
+      canonical: `${siteConfig.url}${locale === DEFAULT_LOCALE ? '' : `/${locale}`}${normalizedCanonicalPath}`,
       languages: alternateLanguages,
     },
     openGraph: {
@@ -87,7 +95,7 @@ export async function constructMetadata({
       card: 'summary_large_image',
       title: finalTitle,
       description: pageDescription,
-      site: siteConfig.url,
+      site: siteConfig.creator,
       images: imageUrls,
       creator: siteConfig.creator,
     },

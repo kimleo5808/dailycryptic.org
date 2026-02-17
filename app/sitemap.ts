@@ -1,5 +1,7 @@
 import { siteConfig } from '@/config/site'
 import { getAllMinuteCryptics } from '@/lib/minute-cryptic-data'
+import { getPosts } from '@/lib/getBlogs'
+import { DEFAULT_LOCALE } from '@/i18n/routing'
 import { MetadataRoute } from 'next'
 
 const siteUrl = siteConfig.url
@@ -13,6 +15,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/how-to-play-minute-cryptic',
     '/minute-cryptic-faq',
     '/minute-cryptic',
+    '/blog',
+    '/share',
     '/about',
     '/contact',
     '/privacy-policy',
@@ -22,8 +26,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' ? 'daily' : 'weekly') as ChangeFrequency,
-    priority: page === '' ? 1.0 : page === '/minute-cryptic-today' ? 0.95 : 0.8,
+    changeFrequency: (page === '' || page === '/minute-cryptic-today'
+      ? 'daily'
+      : page === '/blog'
+        ? 'weekly'
+        : 'weekly') as ChangeFrequency,
+    priority: page === ''
+      ? 1.0
+      : page === '/minute-cryptic-today'
+        ? 0.95
+        : page === '/blog'
+          ? 0.85
+          : 0.8,
   }))
 
   // Puzzle pages
@@ -35,8 +49,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
+  // Blog post pages
+  const { posts } = await getPosts(DEFAULT_LOCALE)
+  const postPages = posts
+    .filter(post => Boolean(post.slug))
+    .map(post => {
+      const normalizedSlug = post.slug.startsWith('/') ? post.slug : `/${post.slug}`
+      const postPath = normalizedSlug.startsWith('/blog/')
+        ? normalizedSlug
+        : `/blog${normalizedSlug}`
+
+      return {
+        url: `${siteUrl}${postPath}`,
+        lastModified: post.date ? new Date(post.date) : new Date(),
+        changeFrequency: 'monthly' as ChangeFrequency,
+        priority: 0.7,
+      }
+    })
+
   return [
     ...pages,
     ...puzzlePages,
+    ...postPages,
   ]
 }

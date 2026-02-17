@@ -5,7 +5,7 @@ import {
   getLatestMinuteCryptic,
   getRecentMinuteCryptics,
 } from "@/lib/minute-cryptic-data";
-import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
+import { breadcrumbSchema, faqPageSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import dayjs from "dayjs";
 import { ArrowRight } from "lucide-react";
@@ -20,6 +20,29 @@ type ClueTypeGuide = {
   commonMiss: string;
   practiceFocus: string;
 };
+
+const TODAY_FAQ_ITEMS = [
+  {
+    question: "Where can I find minute cryptic answer today?",
+    answer:
+      "Solve in the game panel first, then use hints and check. If you need review later, this date's archive detail page stores the full explanation.",
+  },
+  {
+    question: "What does today's difficulty label actually mean?",
+    answer:
+      "It is a pacing label based on clue construction profile, not a promise of universal solve time. Use it as guidance, not as a strict benchmark.",
+  },
+  {
+    question: "Should I reveal all hints when I am stuck?",
+    answer:
+      "Usually no. Reveal one level, retry, and only continue if parse is still blocked. This keeps challenge intact while still giving targeted support.",
+  },
+  {
+    question: "What should I do after solving today's clue?",
+    answer:
+      "Practice two archive entries of mixed type and compare your parse quality. Short post-solve repetition is the fastest path to reliable daily cryptic improvement.",
+  },
+];
 
 function getClueTypeGuide(clueType: string): ClueTypeGuide {
   const normalized = clueType.trim().toLowerCase();
@@ -148,6 +171,7 @@ export default async function MinuteCrypticTodayPage({
           },
         ])}
       />
+      <JsonLd data={faqPageSchema(TODAY_FAQ_ITEMS)} />
 
       <header className="mb-8 text-center">
         <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
