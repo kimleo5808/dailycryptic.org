@@ -33,9 +33,12 @@ export async function generateMetadata({
   return constructMetadata({
     page: "Archive",
     title: "Minute Cryptic Archive: Daily Cryptic History, Answers, and Explanations",
-    description: `Browse ${count} past minute cryptic clues in our daily cryptic archive, with hint levels, answer checks, and full explanations.`,
+    description: `Free minute cryptic archive with ${count} daily cryptic clues. Browse the full minute cryptic archive online — progressive hints, instant answer checks, and detailed explanations for every clue.`,
     keywords: [
       "minute cryptic archive",
+      "minute cryptic archive free",
+      "minute cryptic archive free online",
+      "minute cryptic archives",
       "daily cryptic archive",
       "daily cryptic history",
       "past minute cryptics",
@@ -79,7 +82,7 @@ export default async function MinuteCrypticArchivePage({
         <JsonLd
           data={breadcrumbSchema([
             { name: "Home", url: BASE_URL },
-            { name: "Archive", url: `${BASE_URL}/minute-cryptic` },
+            { name: "Minute Cryptic Archive", url: `${BASE_URL}/minute-cryptic` },
           ])}
         />
 
@@ -88,9 +91,10 @@ export default async function MinuteCrypticArchivePage({
             Minute Cryptic Archive
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Explore {displayedCount} past minute cryptic clues in this daily
-            cryptic archive with progressive hints, answer checks, and full
-            explanations.
+            Browse the complete minute cryptic archive — {displayedCount} daily
+            cryptic clues available free online. Each clue includes progressive
+            hints, an instant answer check, and a full explanation of the
+            definition and wordplay.
           </p>
           {isPrelaunchLimited && (
             <p className="mx-auto mt-3 max-w-2xl rounded-lg border border-amber-300/50 bg-amber-100/60 px-4 py-2 text-xs font-medium text-amber-900 dark:border-amber-500/40 dark:bg-amber-950/40 dark:text-amber-200">
@@ -175,6 +179,41 @@ export default async function MinuteCrypticArchivePage({
             </section>
           ))}
         </div>
+
+        <section className="mt-10 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            About the Minute Cryptic Archive
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            The minute cryptic archive is a free, ever-growing collection of
+            daily cryptic clues published on Daily Cryptic. Every past clue is
+            stored here and can be solved online at any time — no downloads, no
+            accounts, no paywalls. The archive updates automatically each day
+            when a new minute cryptic is released.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            You can browse the minute cryptic archives by month, pick any date
+            that interests you, and work through the clue at your own pace. Each
+            entry includes four progressive hint levels so you can get just
+            enough help without spoiling the solve, plus an instant answer check
+            and a detailed explanation of the definition and wordplay.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Whether you are a beginner learning how cryptic clues work or an
+            experienced solver looking for daily practice, this archive has
+            something for you. Start with easier clues to build confidence, then
+            challenge yourself to solve harder puzzles without any hints. Many
+            solvers use the minute cryptic archive as a free online training
+            ground to sharpen their cryptic crossword skills.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Unlike a static PDF archive, every clue here is fully interactive.
+            You get letter-grid input, a virtual keyboard, animated feedback,
+            and step-by-step hints — all in your browser. No need to print or
+            download anything. The minute cryptic archive free online experience
+            is designed to be fast, focused, and fun on both desktop and mobile.
+          </p>
+        </section>
 
         <section className="mt-10 rounded-xl border border-border bg-card p-5">
           <h2 className="font-heading text-xl font-bold text-foreground">
