@@ -1870,6 +1870,176 @@
         "Starts with S."
       ],
       "explanation": "SHOWER means both rain and one who shows."
+    },
+    {
+      "id": 111,
+      "printDate": "2026-06-05",
+      "publishDate": "2026-06-05",
+      "status": "scheduled",
+      "clue": "Comfort when FIREEL broke out - bananas, in fact (6)",
+      "answer": "RELIEF",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Comfort\".",
+        "This clue uses an anagram.",
+        "Rearrange FIREEL.",
+        "Starts with R."
+      ],
+      "explanation": "FIREEL broken out gives RELIEF."
+    },
+    {
+      "id": 112,
+      "printDate": "2026-06-06",
+      "publishDate": "2026-06-06",
+      "status": "scheduled",
+      "clue": "Mythical yarn from TALL + TALE (8)",
+      "answer": "TALLTALE",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Mythical yarn\".",
+        "This is a charade clue.",
+        "Join TALL and TALE.",
+        "Starts with T."
+      ],
+      "explanation": "TALL + TALE gives TALLTALE."
+    },
+    {
+      "id": 113,
+      "printDate": "2026-06-07",
+      "publishDate": "2026-06-07",
+      "status": "scheduled",
+      "clue": "Pouch from POET holding CK (6)",
+      "answer": "POCKET",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Pouch\".",
+        "This is a container clue.",
+        "Put CK inside POET.",
+        "Starts with P."
+      ],
+      "explanation": "POET holding CK gives POCKET."
+    },
+    {
+      "id": 114,
+      "printDate": "2026-06-08",
+      "publishDate": "2026-06-08",
+      "status": "scheduled",
+      "clue": "Beer on tap, or preliminary version (5)",
+      "answer": "DRAFT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means beer on tap.",
+        "The other means a preliminary version.",
+        "Starts with D."
+      ],
+      "explanation": "DRAFT means both beer on tap and a preliminary version."
+    },
+    {
+      "id": 115,
+      "printDate": "2026-06-09",
+      "publishDate": "2026-06-09",
+      "status": "scheduled",
+      "clue": "Metal from LIVERS wildly mixed (6)",
+      "answer": "SILVER",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"Metal\".",
+        "This clue uses an anagram.",
+        "Mix LIVERS.",
+        "Starts with S."
+      ],
+      "explanation": "LIVERS wildly mixed gives SILVER."
+    },
+    {
+      "id": 116,
+      "printDate": "2026-06-10",
+      "publishDate": "2026-06-10",
+      "status": "scheduled",
+      "clue": "Cotton from TREAD holding H (6)",
+      "answer": "THREAD",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Cotton\".",
+        "This is a container clue.",
+        "Put H inside TREAD.",
+        "Starts with T."
+      ],
+      "explanation": "TREAD holding H gives THREAD."
+    },
+    {
+      "id": 117,
+      "printDate": "2026-06-11",
+      "publishDate": "2026-06-11",
+      "status": "scheduled",
+      "clue": "Hearing part from EAR + DRUM (7)",
+      "answer": "EARDRUM",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Hearing part\".",
+        "This is a charade clue.",
+        "Join EAR and DRUM.",
+        "Starts with E."
+      ],
+      "explanation": "EAR + DRUM gives EARDRUM."
+    },
+    {
+      "id": 118,
+      "printDate": "2026-06-12",
+      "publishDate": "2026-06-12",
+      "status": "scheduled",
+      "clue": "Hit hard, or British money (5)",
+      "answer": "POUND",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means to hit hard.",
+        "The other is British money.",
+        "Starts with P."
+      ],
+      "explanation": "POUND means both to hit hard and a unit of British currency."
+    },
+    {
+      "id": 119,
+      "printDate": "2026-06-13",
+      "publishDate": "2026-06-13",
+      "status": "scheduled",
+      "clue": "Route from SOURCE stirred up (6)",
+      "answer": "COURSE",
+      "clueType": "anagram",
+      "difficulty": "hard",
+      "hintLevels": [
+        "Definition is \"Route\".",
+        "This clue uses an anagram.",
+        "Stir up SOURCE.",
+        "Starts with C."
+      ],
+      "explanation": "SOURCE stirred up gives COURSE."
+    },
+    {
+      "id": 120,
+      "printDate": "2026-06-14",
+      "publishDate": "2026-06-14",
+      "status": "scheduled",
+      "clue": "Crossing from BRIDE holding G (6)",
+      "answer": "BRIDGE",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"Crossing\".",
+        "This is a container clue.",
+        "Put G inside BRIDE.",
+        "Starts with B."
+      ],
+      "explanation": "BRIDE holding G gives BRIDGE."
     }
   ]
 }
