@@ -2268,16 +2268,16 @@
       "publishDate": "2026-06-28",
       "status": "scheduled",
       "clue": "Siren! Hose! Drill! Drill! (5)",
-      "answer": "TRAIN",
+      "answer": "COACH",
       "clueType": "double-definition",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "hintLevels": [
         "\"Drill\" isn't only a fire drill.",
-        "Think about what athletes do every day.",
-        "To drill = to practice = to ___?",
-        "Starts with T, 5 letters."
+        "Think about who runs drills for a team.",
+        "Athletes follow a ___'s instructions.",
+        "Starts with C, 5 letters."
       ],
-      "explanation": "The surface suggests a fire station. \"Drill\" also means to practice — the answer is TRAIN."
+      "explanation": "The surface suggests a fire station. \"Drill\" also means to train a team — that's what a COACH does."
     },
     {
       "id": 135,
@@ -2370,16 +2370,16 @@
       "publishDate": "2026-07-04",
       "status": "scheduled",
       "clue": "Orbit! Dock! Launch! Launch! (5)",
-      "answer": "START",
+      "answer": "BEGIN",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
         "\"Launch\" isn't only about rockets.",
         "Think about launching a new product or project.",
         "To launch = to ___?",
-        "Starts with S, 5 letters."
+        "Starts with B, 5 letters."
       ],
-      "explanation": "The surface suggests space travel. \"Launch\" also means to begin — START."
+      "explanation": "The surface suggests space travel. \"Launch\" also means to kick off — BEGIN."
     }
   ]
 }
