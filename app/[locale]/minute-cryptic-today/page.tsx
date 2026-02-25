@@ -400,7 +400,7 @@ export default async function MinuteCrypticTodayPage({
             href="/how-to-play-minute-cryptic"
             className="font-semibold text-primary hover:text-primary/80"
           >
-            How to Play guide
+            how to solve cryptic clues guide
           </Link>{" "}
           and the{" "}
           <Link
@@ -414,7 +414,7 @@ export default async function MinuteCrypticTodayPage({
             href="/minute-cryptic"
             className="font-semibold text-primary hover:text-primary/80"
           >
-            archive
+            minute cryptic archive
           </Link>{" "}
           to practice by date.
         </p>

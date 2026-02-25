@@ -476,13 +476,13 @@ export default async function HowToPlayPage({ params }: { params: Params }) {
               href="/minute-cryptic-today"
               className="rounded-xl bg-white px-6 py-2.5 text-sm font-bold text-primary transition-all hover:bg-white/90"
             >
-              Today&apos;s Clue
+              Minute Cryptic Today
             </Link>
             <Link
               href="/minute-cryptic"
               className="rounded-xl border-2 border-white/30 px-6 py-2.5 text-sm font-bold text-white transition-all hover:bg-white/10"
             >
-              Browse Archive
+              Browse the Minute Cryptic Archive
             </Link>
             <Link
               href="/minute-cryptic-faq"

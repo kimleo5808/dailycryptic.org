@@ -8,16 +8,22 @@ import Link from "next/link";
 
 const QUICK_LINKS = [
   {
-    title: "Recent clues",
-    description: "Practice with the latest daily cryptic clues in the archive.",
-    href: "/minute-cryptic",
-    cta: "Open archive",
+    title: "Today's clue",
+    description: "Solve the latest minute cryptic clue with hints and instant answer check.",
+    href: "/minute-cryptic-today",
+    cta: "Play minute cryptic today",
   },
   {
-    title: "How cryptics work",
+    title: "Minute cryptic archive",
+    description: "Practice with past daily cryptic clues — free, online, with full explanations.",
+    href: "/minute-cryptic",
+    cta: "Browse the minute cryptic archive",
+  },
+  {
+    title: "How to solve cryptic clues",
     description: "Learn indicators, fodder, definition, and containers for daily cryptic solving.",
     href: "/how-to-play-minute-cryptic",
-    cta: "Read guide",
+    cta: "Read the solving guide",
   },
   {
     title: "FAQ",

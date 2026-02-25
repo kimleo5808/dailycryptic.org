@@ -145,13 +145,13 @@ export default async function FAQPage({ params }: { params: Params }) {
             href="/how-to-play-minute-cryptic"
             className="rounded-xl bg-white px-5 py-2 text-sm font-bold text-primary transition-all hover:bg-white/90"
           >
-            Solving Guide
+            How to Solve Cryptic Clues
           </Link>
           <Link
             href="/minute-cryptic-today"
             className="rounded-xl border-2 border-white/30 px-5 py-2 text-sm font-bold text-white transition-all hover:bg-white/10"
           >
-            Today&apos;s Clue
+            Minute Cryptic Answer Today
           </Link>
         </div>
       </div>

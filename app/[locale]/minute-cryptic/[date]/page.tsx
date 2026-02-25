@@ -202,6 +202,37 @@ export default async function DailyPuzzlePage({
 
       <section className="mx-auto mt-8 max-w-4xl rounded-xl border border-border bg-card p-5">
         <h2 className="font-heading text-lg font-bold text-foreground">
+          Keep solving
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Browse the full{" "}
+          <Link
+            href="/minute-cryptic"
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            minute cryptic archive
+          </Link>{" "}
+          for more daily cryptic clues with hints and explanations. Want
+          today&apos;s puzzle? Head to{" "}
+          <Link
+            href="/minute-cryptic-today"
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            minute cryptic today
+          </Link>{" "}
+          for the latest clue. New to cryptics? Our{" "}
+          <Link
+            href="/how-to-play-minute-cryptic"
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            guide on how to solve cryptic clues
+          </Link>{" "}
+          covers everything you need to get started.
+        </p>
+      </section>
+
+      <section className="mx-auto mt-8 max-w-4xl rounded-xl border border-border bg-card p-5">
+        <h2 className="font-heading text-lg font-bold text-foreground">
           Found an issue in this clue?
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

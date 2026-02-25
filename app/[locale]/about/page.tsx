@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MDXComponents from "@/components/mdx/MDXComponents";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -93,6 +94,32 @@ export default async function AboutPage({ params }: { params: Params }) {
           options={options}
         />
       </article>
+
+      <nav className="rounded-2xl border border-primary/20 bg-card p-6 dark:border-primary/40 sm:p-8">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          Start solving
+        </h2>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/minute-cryptic-today"
+            className="rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90"
+          >
+            Minute Cryptic Today
+          </Link>
+          <Link
+            href="/minute-cryptic"
+            className="rounded-xl border border-border px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:border-primary/40 hover:bg-primary/5"
+          >
+            Browse the Minute Cryptic Archive
+          </Link>
+          <Link
+            href="/how-to-play-minute-cryptic"
+            className="rounded-xl border border-border px-5 py-2.5 text-sm font-bold text-foreground transition-all hover:border-primary/40 hover:bg-primary/5"
+          >
+            How to Solve Cryptic Clues
+          </Link>
+        </div>
+      </nav>
     </div>
   );
 }
