@@ -120,7 +120,7 @@ export default async function MinuteCrypticArchivePage({
 
         <section className="mt-4 rounded-xl border border-border bg-card p-5">
           <h2 className="font-heading text-xl font-bold text-foreground">
-            How to use this archive
+            How to Use the Minute Cryptic Archive
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             Use this archive for structured practice. Pick a date, attempt the
@@ -217,7 +217,7 @@ export default async function MinuteCrypticArchivePage({
 
         <section className="mt-10 rounded-xl border border-border bg-card p-5">
           <h2 className="font-heading text-xl font-bold text-foreground">
-            Archive FAQ
+            Minute Cryptic Archive FAQ
           </h2>
           <div className="mt-4 space-y-3">
             <details className="rounded-lg border border-border/80 bg-background p-3">
