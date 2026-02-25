@@ -217,19 +217,25 @@ export default function MinuteCrypticGame({
   const title = isToday ? "Today\u2019s clue" : `Clue #${puzzleId}`;
 
   return (
-    <section className="rounded-2xl border border-slate-700 bg-slate-900/90 p-6 shadow-xl sm:p-8">
+    <section className="relative overflow-hidden rounded-[24px] border border-sky-200/70 bg-[#b8d8fa] p-6 shadow-[0_14px_40px_rgba(15,23,42,0.16)] sm:p-8">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,255,255,0.46),transparent_52%)]" />
+
+      <div className="relative">
       {/* Header */}
       <div className="flex items-center justify-between gap-3">
-        <h2 className="font-heading text-xl font-bold text-white">{title}</h2>
-        <span className="text-xs font-medium uppercase tracking-wide text-slate-300">
+        <h2 className="font-heading text-xl font-bold text-slate-900">{title}</h2>
+        <span className="text-xs font-medium uppercase tracking-wide text-slate-600">
           {dateLabel}
         </span>
       </div>
 
       {/* Clue */}
-      <p className="mt-4 text-lg font-semibold leading-relaxed text-slate-100 sm:text-xl">
-        {clue}
-      </p>
+      <article className="relative mt-4 rounded-2xl border border-slate-900/12 bg-white/92 p-6 shadow-[0_6px_0_0_rgba(100,116,139,0.2)]">
+        <div className="absolute left-0 top-0 h-1 w-full rounded-t-2xl bg-gradient-to-r from-sky-500 via-indigo-400 to-violet-500" />
+        <p className="font-serif text-lg font-semibold leading-relaxed text-slate-800 sm:text-xl">
+          {clue}
+        </p>
+      </article>
 
       {/* Letter grid */}
       <div className="mt-6 flex flex-col items-center">
@@ -245,16 +251,14 @@ export default function MinuteCrypticGame({
               <div
                 key={index}
                 className={[
-                  "rounded-md border-2 font-bold uppercase shadow-sm transition-all duration-150",
+                  "rounded-md border-2 font-bold uppercase shadow-[2px_2px_0_0_rgba(15,23,42,0.35)] transition-all duration-150",
                   "flex items-center justify-center",
                   cellSizeClass,
                   feedback === "correct"
-                    ? "mc-pop border-emerald-500 bg-emerald-900/60 text-emerald-300"
+                    ? "mc-pop border-emerald-500 bg-emerald-100 text-emerald-800"
                     : isIncorrectFull && isFilled
-                      ? "border-rose-500 bg-rose-900/40 text-rose-300"
-                      : isFilled
-                        ? "border-slate-500 bg-slate-800 text-white"
-                        : "border-slate-600 bg-slate-800/50 text-slate-400",
+                      ? "border-rose-500 bg-rose-50 text-rose-700"
+                      : "border-slate-900 bg-white text-slate-900",
                 ].join(" ")}
                 style={{ transitionDelay: `${index * 30}ms` }}
               >
@@ -272,15 +276,15 @@ export default function MinuteCrypticGame({
               className={[
                 "h-2.5 w-2.5 rounded-full transition-all",
                 index === currentStep - 1
-                  ? "scale-110 bg-white"
+                  ? "scale-110 bg-black"
                   : index < currentStep - 1
-                    ? "bg-slate-400/55"
-                    : "bg-slate-600/70",
+                    ? "bg-slate-700/55"
+                    : "bg-white/70",
               ].join(" ")}
             />
           ))}
         </div>
-        <p className="mt-2 text-xs font-semibold italic text-slate-400">
+        <p className="mt-2 text-xs font-semibold italic text-slate-700/65">
           par {currentStep} of {stepCount}
         </p>
 
@@ -290,7 +294,7 @@ export default function MinuteCrypticGame({
             type="button"
             onClick={handleRevealHint}
             disabled={solved || revealedHintLevel >= maxHintLevel}
-            className="inline-flex h-11 min-w-[120px] items-center justify-center gap-2 rounded-lg border border-slate-500 px-5 text-sm font-semibold text-slate-100 transition hover:border-slate-300 hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-12 min-w-[128px] items-center justify-center gap-2 rounded-full border-2 border-slate-900 bg-amber-400 px-6 text-base font-bold text-slate-900 shadow-[3px_3px_0_0_rgba(15,23,42,0.35)] transition-all hover:translate-y-[1px] hover:shadow-[2px_2px_0_0_rgba(15,23,42,0.35)] disabled:cursor-not-allowed disabled:opacity-55"
           >
             <HelpCircle className="h-4 w-4" />
             Hints
@@ -299,7 +303,7 @@ export default function MinuteCrypticGame({
             type="button"
             onClick={handleCheck}
             disabled={solved}
-            className="inline-flex h-11 min-w-[120px] items-center justify-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-12 min-w-[128px] items-center justify-center gap-2 rounded-full border-2 border-slate-900 bg-sky-500 px-6 text-base font-bold text-white shadow-[3px_3px_0_0_rgba(15,23,42,0.35)] transition-all hover:translate-y-[1px] hover:shadow-[2px_2px_0_0_rgba(15,23,42,0.35)] disabled:cursor-not-allowed disabled:opacity-55"
           >
             <Check className="h-4 w-4" />
             Check
@@ -309,17 +313,17 @@ export default function MinuteCrypticGame({
         {/* Feedback message */}
         {message ? (
           <p
-            className={`mt-3 text-sm font-medium ${feedback === "correct" ? "text-emerald-400" : "text-slate-300"}`}
+            className={`mt-3 text-sm font-medium ${feedback === "correct" ? "text-emerald-700" : "text-slate-700"}`}
           >
             {message}
           </p>
         ) : null}
 
         {/* Inline hint display */}
-        <div className="mt-4 min-h-[72px] w-full max-w-xl rounded-xl border border-slate-700 bg-slate-800/60 p-4 text-sm leading-relaxed text-slate-300">
+        <div className="mt-3 min-h-[84px] w-full max-w-xl rounded-xl border border-slate-200 bg-white/90 p-4 text-sm leading-relaxed text-slate-700">
           {currentHint ? (
             <>
-              <p className="font-semibold text-slate-100">
+              <p className="font-semibold text-slate-900">
                 Hint {revealedHintLevel}
               </p>
               <p className="mt-1">{currentHint}</p>
@@ -332,7 +336,7 @@ export default function MinuteCrypticGame({
 
       {/* Virtual keyboard */}
       <div className="mt-5 pb-1">
-        <div className="mx-auto w-full max-w-[520px] select-none rounded-2xl bg-white/10 p-2.5">
+        <div className="mx-auto w-full max-w-[520px] select-none rounded-2xl bg-white/15 p-2.5">
           <div className="space-y-2">
             {KEY_ROWS.map((row, rowIndex) => (
               <div key={rowIndex} className="flex justify-center gap-1.5">
@@ -342,7 +346,7 @@ export default function MinuteCrypticGame({
                     type="button"
                     onClick={() => handleInput(key)}
                     disabled={solved}
-                    className="h-11 w-8 rounded-md border border-slate-600 bg-slate-700 text-base font-semibold text-white transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-10 md:w-11"
+                    className="h-11 w-8 rounded-md border border-slate-300 bg-white text-base font-semibold text-slate-700 transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-10 md:w-11"
                   >
                     {key}
                   </button>
@@ -353,7 +357,7 @@ export default function MinuteCrypticGame({
                     onClick={handleDelete}
                     disabled={solved}
                     aria-label="Delete one letter"
-                    className="inline-flex h-11 w-10 items-center justify-center rounded-md border border-slate-600 bg-slate-600 text-white transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-12 md:w-14"
+                    className="inline-flex h-11 w-10 items-center justify-center rounded-md border border-slate-300 bg-slate-100 text-slate-700 transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-12 md:w-14"
                   >
                     <Delete className="h-5 w-5" />
                   </button>
@@ -362,6 +366,7 @@ export default function MinuteCrypticGame({
             ))}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
