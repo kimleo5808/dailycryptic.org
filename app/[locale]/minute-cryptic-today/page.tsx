@@ -25,7 +25,7 @@ const TODAY_FAQ_ITEMS = [
   {
     question: "Where can I find minute cryptic answer today?",
     answer:
-      "Solve in the game panel first, then use hints and check. If you need review later, this date's archive detail page stores the full explanation.",
+      "The minute cryptic answer today is revealed after you solve the clue or use the Check button. You can also use progressive hints to work toward the answer step by step. Once solved, the full explanation appears in the Clue Breakdown section below.",
   },
   {
     question: "What does today's difficulty label actually mean?",
@@ -119,11 +119,15 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "MinuteCrypticToday",
-    title: `Minute Cryptic Today - Daily Cryptic Clue for ${dateStr}`,
+    title: `Minute Cryptic Today — Answer, Hints & Daily Cryptic Clue for ${dateStr}`,
     description:
-      "Solve today's minute cryptic in a daily cryptic format with progressive hints and instant answer checks.",
+      "Find the minute cryptic answer today with progressive hints and an instant answer check. Solve the daily cryptic clue for free — no account needed.",
     keywords: [
       "minute cryptic today",
+      "minute cryptic answer today",
+      "minute cryptic answer",
+      "minute cryptic today answer",
+      "today's minute cryptic answer",
       "daily cryptic",
       "daily cryptic today",
       "daily cryptic clue",
@@ -175,11 +179,12 @@ export default async function MinuteCrypticTodayPage({
 
       <header className="mb-8 text-center">
         <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
-          Minute Cryptic Today
+          Minute Cryptic Today — Answer &amp; Hints
         </h1>
         <p className="mt-2 text-muted-foreground">
-          Solve today&apos;s daily cryptic clue, reveal hints only when needed,
-          and check your answer instantly.
+          Need the minute cryptic answer today? Solve the clue below using
+          progressive hints, then check your answer instantly. The full
+          explanation is available after your attempt.
         </p>
       </header>
 
@@ -195,7 +200,7 @@ export default async function MinuteCrypticTodayPage({
 
       <section className="mt-8 rounded-2xl border border-border bg-card p-6">
         <h2 className="font-heading text-xl font-bold text-foreground">
-          Clue Breakdown
+          Today&apos;s Minute Cryptic Answer &amp; Explanation
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Type: {puzzle.clueType} | Difficulty: {puzzle.difficulty}
@@ -414,6 +419,39 @@ export default async function MinuteCrypticTodayPage({
           to practice by date.
         </p>
 
+        <section className="mt-8 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            How to Find the Minute Cryptic Answer Today
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            This page updates every day with a fresh minute cryptic clue. The
+            minute cryptic answer today can be found by solving the clue in the
+            interactive game panel above. Type your guess into the letter grid,
+            press Check, and get instant feedback — no waiting, no sign-up
+            required.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            If you are stuck, use the progressive hint system to work toward
+            today&apos;s minute cryptic answer one step at a time. Each hint
+            reveals a little more about the clue&apos;s structure without giving
+            the answer away completely. Try to solve with as few hints as
+            possible for the best practice.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            After finding today&apos;s minute cryptic answer, read the
+            explanation below to understand the definition and wordplay logic.
+            Then head to the{" "}
+            <Link
+              href="/minute-cryptic"
+              className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              minute cryptic archive
+            </Link>{" "}
+            to practice more clues from past days and sharpen your cryptic
+            crossword skills.
+          </p>
+        </section>
+
         <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
           FAQ for Today&apos;s Puzzle
         </h3>
@@ -423,9 +461,10 @@ export default async function MinuteCrypticTodayPage({
               Where can I find minute cryptic answer today?
             </summary>
             <p className="mt-2 text-sm text-muted-foreground">
-              Solve in the game panel first, then use hints and check. If you
-              need review later, this date&apos;s archive detail page stores the
-              full explanation.
+              The minute cryptic answer today is revealed after you solve the
+              clue or use the Check button. You can also use progressive hints
+              to work toward the answer step by step. Once solved, the full
+              explanation appears in the answer section below.
             </p>
           </details>
           <details className="rounded-lg border border-border/80 bg-background p-3">
