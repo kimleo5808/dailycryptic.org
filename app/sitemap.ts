@@ -11,10 +11,12 @@ type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'y
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     '',
+    '/daily-cryptic',
     '/minute-cryptic-today',
     '/how-to-play-minute-cryptic',
     '/minute-cryptic-faq',
     '/minute-cryptic',
+    '/minute-cryptic-unlimited',
     '/blog',
     '/share',
     '/about',
@@ -26,18 +28,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today'
+    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
         : 'weekly') as ChangeFrequency,
     priority: page === ''
       ? 1.0
-      : page === '/minute-cryptic-today'
+      : page === '/daily-cryptic'
         ? 0.95
-        : page === '/blog'
-          ? 0.85
-          : 0.8,
+        : page === '/minute-cryptic-today'
+          ? 0.95
+          : page === '/blog'
+            ? 0.85
+            : 0.8,
   }))
 
   // Puzzle pages

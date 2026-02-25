@@ -2,6 +2,10 @@
   "Header": {
     "links": [
       {
+        "name": "Daily Cryptic",
+        "href": "/daily-cryptic"
+      },
+      {
         "name": "Archive",
         "href": "/minute-cryptic"
       },
@@ -35,6 +39,10 @@
             {
               "href": "/",
               "name": "Home"
+            },
+            {
+              "href": "/daily-cryptic",
+              "name": "Daily Cryptic"
             },
             {
               "href": "/minute-cryptic-today",
