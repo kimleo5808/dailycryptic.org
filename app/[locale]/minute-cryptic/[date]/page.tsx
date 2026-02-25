@@ -130,6 +130,8 @@ export default async function DailyPuzzlePage({
           clue={puzzle.clue}
           answer={puzzle.answer}
           dateLabel={formattedDate}
+          printDate={puzzle.printDate}
+          puzzleId={puzzle.id}
           hints={puzzle.hintLevels}
         />
       </div>

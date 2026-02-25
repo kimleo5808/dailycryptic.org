@@ -1,184 +1,368 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import dayjs from "dayjs";
+import { Check, Delete, HelpCircle } from "lucide-react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type MinuteCrypticGameProps = {
   clue: string;
   answer: string;
   dateLabel: string;
+  printDate: string;
+  puzzleId: number;
   hints: [string, string, string, string];
 };
 
+type FeedbackState = "idle" | "correct" | "incorrect";
+
+type PersistedState = {
+  guess: string;
+  revealedHintLevel: number;
+  solved: boolean;
+  attempts: number;
+};
+
+const KEY_ROWS = [
+  ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+  ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+  ["Z", "X", "C", "V", "B", "N", "M"],
+];
+
 function normalizeAnswer(value: string) {
   return value.toUpperCase().replace(/[^A-Z]/g, "");
+}
+
+function getStorageKey(printDate: string) {
+  return `mc-${printDate}`;
+}
+
+function loadState(printDate: string): PersistedState | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = localStorage.getItem(getStorageKey(printDate));
+    if (!raw) return null;
+    return JSON.parse(raw) as PersistedState;
+  } catch {
+    return null;
+  }
+}
+
+function saveState(printDate: string, state: PersistedState) {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(getStorageKey(printDate), JSON.stringify(state));
+  } catch {
+    // quota exceeded — silently ignore
+  }
 }
 
 export default function MinuteCrypticGame({
   clue,
   answer,
   dateLabel,
+  printDate,
+  puzzleId,
   hints,
 }: MinuteCrypticGameProps) {
   const expected = useMemo(() => normalizeAnswer(answer), [answer]);
-  const [input, setInput] = useState("");
-  const [feedback, setFeedback] = useState("");
-  const [solved, setSolved] = useState(false);
-  const [hintsOpen, setHintsOpen] = useState(false);
-  const [revealedHintLevel, setRevealedHintLevel] = useState(0);
-
   const expectedLength = expected.length;
+  const maxHintLevel = hints.filter(Boolean).length;
 
-  const hintTexts = hints;
+  const isToday = useMemo(() => {
+    return dayjs(printDate).isSame(dayjs(), "day");
+  }, [printDate]);
 
-  const handleCheck = () => {
-    const normalizedInput = normalizeAnswer(input);
+  // Hydration-safe state initialisation
+  const [guess, setGuess] = useState("");
+  const [feedback, setFeedback] = useState<FeedbackState>("idle");
+  const [message, setMessage] = useState("");
+  const [solved, setSolved] = useState(false);
+  const [revealedHintLevel, setRevealedHintLevel] = useState(0);
+  const [attempts, setAttempts] = useState(0);
+  const [hydrated, setHydrated] = useState(false);
 
-    if (normalizedInput.length !== expectedLength) {
-      setSolved(false);
-      setFeedback(`Answer should be ${expectedLength} letters.`);
+  // Restore from localStorage after mount
+  useEffect(() => {
+    const saved = loadState(printDate);
+    if (saved) {
+      setGuess(saved.guess);
+      setRevealedHintLevel(saved.revealedHintLevel);
+      setSolved(saved.solved);
+      setAttempts(saved.attempts);
+      if (saved.solved) {
+        setFeedback("correct");
+        setMessage(`Solved in ${saved.attempts} attempt${saved.attempts !== 1 ? "s" : ""}.`);
+      }
+    }
+    setHydrated(true);
+  }, [printDate]);
+
+  // Persist on state changes (after hydration)
+  useEffect(() => {
+    if (!hydrated) return;
+    saveState(printDate, { guess, revealedHintLevel, solved, attempts });
+  }, [hydrated, printDate, guess, revealedHintLevel, solved, attempts]);
+
+  const resetFeedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearFeedbackTimer = useCallback(() => {
+    if (resetFeedbackTimerRef.current) {
+      clearTimeout(resetFeedbackTimerRef.current);
+      resetFeedbackTimerRef.current = null;
+    }
+  }, []);
+
+  useEffect(() => {
+    return () => clearFeedbackTimer();
+  }, [clearFeedbackTimer]);
+
+  const triggerIncorrectFeedback = useCallback(
+    (nextMessage: string) => {
+      setFeedback("incorrect");
+      setMessage(nextMessage);
+      clearFeedbackTimer();
+      resetFeedbackTimerRef.current = setTimeout(() => {
+        setFeedback("idle");
+      }, 500);
+    },
+    [clearFeedbackTimer]
+  );
+
+  const handleInput = useCallback(
+    (char: string) => {
+      if (solved) return;
+      if (!/^[A-Z]$/.test(char)) return;
+      if (guess.length >= expectedLength) return;
+      setGuess((prev) => prev + char);
+      setFeedback("idle");
+      setMessage("");
+    },
+    [guess.length, expectedLength, solved]
+  );
+
+  const handleDelete = useCallback(() => {
+    if (solved) return;
+    setGuess((prev) => prev.slice(0, -1));
+    setFeedback("idle");
+    setMessage("");
+  }, [solved]);
+
+  const handleCheck = useCallback(() => {
+    if (solved) return;
+
+    if (guess.length !== expectedLength) {
+      triggerIncorrectFeedback(`Answer should be ${expectedLength} letters.`);
       return;
     }
 
-    if (normalizedInput === expected) {
+    const nextAttempts = attempts + 1;
+    setAttempts(nextAttempts);
+
+    if (guess === expected) {
+      clearFeedbackTimer();
+      setFeedback("correct");
       setSolved(true);
-      setFeedback("Correct.");
+      setMessage(`Solved in ${nextAttempts} attempt${nextAttempts !== 1 ? "s" : ""}.`);
       return;
     }
 
-    setSolved(false);
-    setFeedback("Not quite. Check the definition side first.");
-  };
+    triggerIncorrectFeedback("Not quite. Check definition and wordplay.");
+  }, [
+    attempts,
+    clearFeedbackTimer,
+    expected,
+    expectedLength,
+    guess,
+    solved,
+    triggerIncorrectFeedback,
+  ]);
 
-  const handleClear = () => {
-    setInput("");
-    setFeedback("");
-    setSolved(false);
-  };
+  const handleRevealHint = useCallback(() => {
+    if (solved) return;
+    if (!maxHintLevel) return;
+    setRevealedHintLevel((prev) => Math.min(prev + 1, maxHintLevel));
+    setMessage("");
+  }, [maxHintLevel, solved]);
 
-  const openHints = () => {
-    setRevealedHintLevel(0);
-    setHintsOpen(true);
-  };
+  // Physical keyboard
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Backspace") {
+        handleDelete();
+        return;
+      }
+      if (event.key === "Enter") {
+        handleCheck();
+        return;
+      }
+      if (/^[a-zA-Z]$/.test(event.key)) {
+        handleInput(event.key.toUpperCase());
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [handleCheck, handleDelete, handleInput]);
+
+  const currentHint = revealedHintLevel > 0 ? hints[revealedHintLevel - 1] : "";
+  const stepCount = maxHintLevel + 1;
+  const currentStep = revealedHintLevel + 1;
+
+  const cellSizeClass =
+    expectedLength <= 8
+      ? "h-14 w-12 text-3xl"
+      : expectedLength <= 12
+        ? "h-12 w-10 text-2xl"
+        : "h-10 w-8 text-xl";
+
+  const title = isToday ? "Today\u2019s clue" : `Clue #${puzzleId}`;
 
   return (
-    <>
-      <section className="rounded-2xl border border-slate-700 bg-slate-900/90 p-6 shadow-xl sm:p-8">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="font-heading text-xl font-bold text-white">
-            Today&apos;s clue
-          </h2>
-          <span className="text-xs font-medium uppercase tracking-wide text-slate-300">
-            {dateLabel}
-          </span>
+    <section className="rounded-2xl border border-slate-700 bg-slate-900/90 p-6 shadow-xl sm:p-8">
+      {/* Header */}
+      <div className="flex items-center justify-between gap-3">
+        <h2 className="font-heading text-xl font-bold text-white">{title}</h2>
+        <span className="text-xs font-medium uppercase tracking-wide text-slate-300">
+          {dateLabel}
+        </span>
+      </div>
+
+      {/* Clue */}
+      <p className="mt-4 text-lg font-semibold leading-relaxed text-slate-100 sm:text-xl">
+        {clue}
+      </p>
+
+      {/* Letter grid */}
+      <div className="mt-6 flex flex-col items-center">
+        <div
+          className={`flex max-w-full flex-wrap justify-center gap-2 ${feedback === "incorrect" ? "mc-wiggle" : ""}`}
+        >
+          {Array.from({ length: expectedLength }).map((_, index) => {
+            const char = guess[index] || "";
+            const isFilled = Boolean(char);
+            const isIncorrectFull =
+              feedback === "incorrect" && guess.length === expectedLength;
+            return (
+              <div
+                key={index}
+                className={[
+                  "rounded-md border-2 font-bold uppercase shadow-sm transition-all duration-150",
+                  "flex items-center justify-center",
+                  cellSizeClass,
+                  feedback === "correct"
+                    ? "mc-pop border-emerald-500 bg-emerald-900/60 text-emerald-300"
+                    : isIncorrectFull && isFilled
+                      ? "border-rose-500 bg-rose-900/40 text-rose-300"
+                      : isFilled
+                        ? "border-slate-500 bg-slate-800 text-white"
+                        : "border-slate-600 bg-slate-800/50 text-slate-400",
+                ].join(" ")}
+                style={{ transitionDelay: `${index * 30}ms` }}
+              >
+                {char}
+              </div>
+            );
+          })}
         </div>
 
-        <p className="mt-4 text-lg font-semibold leading-relaxed text-slate-100 sm:text-xl">
-          {clue}
+        {/* Progress dots */}
+        <div className="mt-5 flex items-center gap-2">
+          {Array.from({ length: stepCount }).map((_, index) => (
+            <span
+              key={index}
+              className={[
+                "h-2.5 w-2.5 rounded-full transition-all",
+                index === currentStep - 1
+                  ? "scale-110 bg-white"
+                  : index < currentStep - 1
+                    ? "bg-slate-400/55"
+                    : "bg-slate-600/70",
+              ].join(" ")}
+            />
+          ))}
+        </div>
+        <p className="mt-2 text-xs font-semibold italic text-slate-400">
+          par {currentStep} of {stepCount}
         </p>
 
-        <label
-          htmlFor="minute-cryptic-answer"
-          className="mt-6 block text-sm font-medium text-slate-300"
-        >
-          Your answer
-        </label>
-        <input
-          id="minute-cryptic-answer"
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Type your answer"
-          autoComplete="off"
-          className="mt-2 h-12 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 text-base text-white outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/40"
-        />
-
-        <div className="mt-4 flex flex-wrap gap-3">
+        {/* Action buttons */}
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
           <button
             type="button"
-            onClick={handleCheck}
-            className="inline-flex h-11 min-w-28 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+            onClick={handleRevealHint}
+            disabled={solved || revealedHintLevel >= maxHintLevel}
+            className="inline-flex h-11 min-w-[120px] items-center justify-center gap-2 rounded-lg border border-slate-500 px-5 text-sm font-semibold text-slate-100 transition hover:border-slate-300 hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Check
-          </button>
-          <button
-            type="button"
-            onClick={openHints}
-            className="inline-flex h-11 min-w-28 items-center justify-center rounded-lg border border-slate-500 px-5 text-sm font-semibold text-slate-100 transition hover:border-slate-300 hover:bg-slate-800"
-          >
+            <HelpCircle className="h-4 w-4" />
             Hints
           </button>
           <button
             type="button"
-            onClick={handleClear}
-            className="inline-flex h-11 min-w-28 items-center justify-center rounded-lg border border-slate-700 px-5 text-sm font-semibold text-slate-300 transition hover:border-slate-500 hover:bg-slate-800/70"
+            onClick={handleCheck}
+            disabled={solved}
+            className="inline-flex h-11 min-w-[120px] items-center justify-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Clear
+            <Check className="h-4 w-4" />
+            Check
           </button>
         </div>
 
-        <p className="mt-4 text-sm text-slate-300">
-          {solved ? "Solved. Nice work." : "Not solved yet"}
-        </p>
-        {feedback && (
-          <p className="mt-1 text-sm text-amber-300">{feedback}</p>
-        )}
-      </section>
+        {/* Feedback message */}
+        {message ? (
+          <p
+            className={`mt-3 text-sm font-medium ${feedback === "correct" ? "text-emerald-400" : "text-slate-300"}`}
+          >
+            {message}
+          </p>
+        ) : null}
 
-      {hintsOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-          <div className="w-full max-w-xl rounded-xl border border-border bg-card p-6 shadow-2xl">
-            <div className="flex items-center justify-between gap-3">
-              <h3 className="font-heading text-xl font-bold text-foreground">
-                Hints
-              </h3>
-              <button
-                type="button"
-                onClick={() => setHintsOpen(false)}
-                className="inline-flex h-10 min-w-20 items-center justify-center rounded-lg border border-border px-3 text-sm font-medium text-muted-foreground transition hover:bg-muted"
-              >
-                Close
-              </button>
-            </div>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Reveal one level at a time.
-            </p>
+        {/* Inline hint display */}
+        <div className="mt-4 min-h-[72px] w-full max-w-xl rounded-xl border border-slate-700 bg-slate-800/60 p-4 text-sm leading-relaxed text-slate-300">
+          {currentHint ? (
+            <>
+              <p className="font-semibold text-slate-100">
+                Hint {revealedHintLevel}
+              </p>
+              <p className="mt-1">{currentHint}</p>
+            </>
+          ) : (
+            <p className="text-slate-500">Hint will appear here.</p>
+          )}
+        </div>
+      </div>
 
-            <div className="mt-5 space-y-3">
-              {hintTexts.map((hint, index) => {
-                const level = index + 1;
-                const canReveal = level <= revealedHintLevel + 1;
-                const isRevealed = level <= revealedHintLevel;
-
-                return (
-                  <div
-                    key={level}
-                    className="rounded-lg border border-border bg-background p-3"
+      {/* Virtual keyboard */}
+      <div className="mt-5 pb-1">
+        <div className="mx-auto w-full max-w-[520px] select-none rounded-2xl bg-white/10 p-2.5">
+          <div className="space-y-2">
+            {KEY_ROWS.map((row, rowIndex) => (
+              <div key={rowIndex} className="flex justify-center gap-1.5">
+                {row.map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => handleInput(key)}
+                    disabled={solved}
+                    className="h-11 w-8 rounded-md border border-slate-600 bg-slate-700 text-base font-semibold text-white transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-10 md:w-11"
                   >
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <p className="text-sm font-semibold text-foreground">
-                        Hint {level}
-                      </p>
-                      <button
-                        type="button"
-                        disabled={!canReveal}
-                        onClick={() => setRevealedHintLevel(level)}
-                        className="inline-flex h-9 min-w-24 items-center justify-center rounded-md border border-border px-3 text-xs font-semibold text-foreground transition enabled:hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50"
-                      >
-                        {isRevealed ? "Revealed" : "Reveal"}
-                      </button>
-                    </div>
-                    {isRevealed && (
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        {hint}
-                      </p>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+                    {key}
+                  </button>
+                ))}
+                {rowIndex === 2 ? (
+                  <button
+                    type="button"
+                    onClick={handleDelete}
+                    disabled={solved}
+                    aria-label="Delete one letter"
+                    className="inline-flex h-11 w-10 items-center justify-center rounded-md border border-slate-600 bg-slate-600 text-white transition active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-50 sm:w-12 md:w-14"
+                  >
+                    <Delete className="h-5 w-5" />
+                  </button>
+                ) : null}
+              </div>
+            ))}
           </div>
         </div>
-      )}
-    </>
+      </div>
+    </section>
   );
 }
