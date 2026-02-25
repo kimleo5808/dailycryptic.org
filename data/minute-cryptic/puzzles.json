@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-25T00:00:00.000Z",
+  "lastUpdated": "2026-02-25T12:00:00.000Z",
   "puzzles": [
     {
       "id": 1,
@@ -2040,6 +2040,346 @@
         "Starts with B."
       ],
       "explanation": "BRIDE holding G gives BRIDGE."
+    },
+    {
+      "id": 121,
+      "printDate": "2026-06-15",
+      "publishDate": "2026-06-15",
+      "status": "scheduled",
+      "clue": "Right click! Left click! Copy! Paste! Paste! (4)",
+      "answer": "TAPE",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Paste\" has more than just a computer meaning.",
+        "Think about what \"copy and paste\" looks like in real life — sticking things together.",
+        "What do you use to stick paper to a wall?",
+        "Starts with T, ends with E."
+      ],
+      "explanation": "The surface reads like computer actions. \"Paste\" also means to stick — TAPE is what you use to paste things in the physical world."
+    },
+    {
+      "id": 122,
+      "printDate": "2026-06-16",
+      "publishDate": "2026-06-16",
+      "status": "scheduled",
+      "clue": "High note! Low note! Scale! Scale! (5)",
+      "answer": "WEIGH",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Scale\" isn't only musical.",
+        "Leave the music room, head to the kitchen.",
+        "What do you do on a bathroom scale?",
+        "Starts with W, 5 letters."
+      ],
+      "explanation": "The surface suggests music. \"Scale\" also means a weighing device — you WEIGH things on a scale."
+    },
+    {
+      "id": 123,
+      "printDate": "2026-06-17",
+      "publishDate": "2026-06-17",
+      "status": "scheduled",
+      "clue": "Fast lane! Slow lane! Merge! Merge! (4)",
+      "answer": "POOL",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Lane\" doesn't have to be on a highway.",
+        "Think about where else you'd find lanes — somewhere with water.",
+        "A swimming ___?",
+        "Starts with P, 4 letters."
+      ],
+      "explanation": "The surface reads like highway driving. \"Lane\" and \"merge\" also apply to a swimming POOL, where lanes merge at the wall."
+    },
+    {
+      "id": 124,
+      "printDate": "2026-06-18",
+      "publishDate": "2026-06-18",
+      "status": "scheduled",
+      "clue": "Cut! Cut! Stitch! Stitch! (4)",
+      "answer": "EDIT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Cut\" is a common word in filmmaking.",
+        "\"Stitch\" can mean joining clips together.",
+        "What does a film editor do?",
+        "Starts with E, 4 letters."
+      ],
+      "explanation": "The surface sounds like sewing. \"Cut\" and \"stitch\" are also film editing terms — the answer is EDIT."
+    },
+    {
+      "id": 125,
+      "printDate": "2026-06-19",
+      "publishDate": "2026-06-19",
+      "status": "scheduled",
+      "clue": "Serve! Serve! Return! Return! (4)",
+      "answer": "SHOP",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "The surface looks like tennis, but step off the court.",
+        "\"Return\" also means bringing something back to a store.",
+        "Where do you return items?",
+        "Starts with S, 4 letters."
+      ],
+      "explanation": "The surface mimics tennis. \"Serve\" customers and \"return\" goods both happen at a SHOP."
+    },
+    {
+      "id": 126,
+      "printDate": "2026-06-20",
+      "publishDate": "2026-06-20",
+      "status": "scheduled",
+      "clue": "Red card! Yellow card! Foul! Foul! (4)",
+      "answer": "BANK",
+      "clueType": "double-definition",
+      "difficulty": "hard",
+      "hintLevels": [
+        "\"Card\" exists far beyond the football pitch.",
+        "Think about where you swipe or tap a card every day.",
+        "A debit card belongs to a ___?",
+        "Starts with B, 4 letters."
+      ],
+      "explanation": "The surface reads like a football match. \"Card\" also means bank card — the answer is BANK."
+    },
+    {
+      "id": 127,
+      "printDate": "2026-06-21",
+      "publishDate": "2026-06-21",
+      "status": "scheduled",
+      "clue": "Takeoff! Landing! Gate! Gate! (4)",
+      "answer": "DOOR",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Gate\" isn't only at an airport.",
+        "Think about the most basic meaning of \"gate.\"",
+        "A gate and a ___ both let you enter a space.",
+        "Starts with D, 4 letters."
+      ],
+      "explanation": "The surface suggests air travel. \"Gate\" in its simplest form is an entrance — a DOOR."
+    },
+    {
+      "id": 128,
+      "printDate": "2026-06-22",
+      "publishDate": "2026-06-22",
+      "status": "scheduled",
+      "clue": "Blackout! Brownout! Switch! Switch! (6)",
+      "answer": "REMOTE",
+      "clueType": "double-definition",
+      "difficulty": "hard",
+      "hintLevels": [
+        "\"Switch\" doesn't just mean a light switch.",
+        "Think about switching channels.",
+        "What device do you use to switch channels from the couch?",
+        "Starts with R, 6 letters."
+      ],
+      "explanation": "The surface reads like a power outage. \"Switch\" also means changing channels — you do that with a REMOTE."
+    },
+    {
+      "id": 129,
+      "printDate": "2026-06-23",
+      "publishDate": "2026-06-23",
+      "status": "scheduled",
+      "clue": "Headshot! Body shot! Reload! Reload! (3)",
+      "answer": "WEB",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Reload\" isn't only about guns.",
+        "Think about what you reload every day on your computer.",
+        "You reload a ___ page.",
+        "Starts with W, 3 letters."
+      ],
+      "explanation": "The surface sounds like a shooter game. \"Reload\" also means refreshing a page — on the WEB."
+    },
+    {
+      "id": 130,
+      "printDate": "2026-06-24",
+      "publishDate": "2026-06-24",
+      "status": "scheduled",
+      "clue": "Pitch up! Pitch down! Key! Key! (4)",
+      "answer": "LOCK",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Key\" has a life outside of music.",
+        "Think about the metal object in your pocket.",
+        "A key goes into a ___?",
+        "Starts with L, 4 letters."
+      ],
+      "explanation": "The surface suggests music. \"Key\" is also what opens a LOCK."
+    },
+    {
+      "id": 131,
+      "printDate": "2026-06-25",
+      "publishDate": "2026-06-25",
+      "status": "scheduled",
+      "clue": "Pawn up! Queen down! Check! Check! (4)",
+      "answer": "BILL",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Check\" isn't just a chess move.",
+        "Think about what arrives at the end of a restaurant meal.",
+        "\"Check, please!\" — another word for that?",
+        "Starts with B, 4 letters."
+      ],
+      "explanation": "The surface reads like chess. \"Check\" also means a restaurant bill — the answer is BILL."
+    },
+    {
+      "id": 132,
+      "printDate": "2026-06-26",
+      "publishDate": "2026-06-26",
+      "status": "scheduled",
+      "clue": "Shuffle! Deal! Fold! Fold! (6)",
+      "answer": "CREASE",
+      "clueType": "double-definition",
+      "difficulty": "hard",
+      "hintLevels": [
+        "\"Fold\" isn't only a poker move.",
+        "Think about what happens to paper when you fold it.",
+        "A fold leaves a ___?",
+        "Starts with C, 6 letters."
+      ],
+      "explanation": "The surface sounds like a card game. \"Fold\" physically creates a CREASE."
+    },
+    {
+      "id": 133,
+      "printDate": "2026-06-27",
+      "publishDate": "2026-06-27",
+      "status": "scheduled",
+      "clue": "Anchor! Sail! Port! Port! (4)",
+      "answer": "WINE",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Port\" has a famous second meaning.",
+        "Think about what you'd drink, not where you'd dock.",
+        "Port is a type of ___?",
+        "Starts with W, 4 letters."
+      ],
+      "explanation": "The surface reads like sailing. \"Port\" is also a type of WINE."
+    },
+    {
+      "id": 134,
+      "printDate": "2026-06-28",
+      "publishDate": "2026-06-28",
+      "status": "scheduled",
+      "clue": "Siren! Hose! Drill! Drill! (5)",
+      "answer": "TRAIN",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Drill\" isn't only a fire drill.",
+        "Think about what athletes do every day.",
+        "To drill = to practice = to ___?",
+        "Starts with T, 5 letters."
+      ],
+      "explanation": "The surface suggests a fire station. \"Drill\" also means to practice — the answer is TRAIN."
+    },
+    {
+      "id": 135,
+      "printDate": "2026-06-29",
+      "publishDate": "2026-06-29",
+      "status": "scheduled",
+      "clue": "Bloom! Wilt! Stem! Stem! (4)",
+      "answer": "STOP",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Stem\" isn't just part of a flower.",
+        "Think about \"stem the tide\" or \"stem the bleeding.\"",
+        "To stem something means to ___ it.",
+        "Starts with S, 4 letters."
+      ],
+      "explanation": "The surface reads like a garden. \"Stem\" also means to halt — STOP."
+    },
+    {
+      "id": 136,
+      "printDate": "2026-06-30",
+      "publishDate": "2026-06-30",
+      "status": "scheduled",
+      "clue": "Upload! Download! Stream! Stream! (5)",
+      "answer": "RIVER",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Stream\" isn't only about Netflix.",
+        "Step outside and think about nature.",
+        "A stream flows into a ___?",
+        "Starts with R, 5 letters."
+      ],
+      "explanation": "The surface suggests internet activity. \"Stream\" is also a body of water — a small one leads to a RIVER."
+    },
+    {
+      "id": 137,
+      "printDate": "2026-07-01",
+      "publishDate": "2026-07-01",
+      "status": "scheduled",
+      "clue": "Debit! Credit! Balance! Balance! (5)",
+      "answer": "SCALE",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Balance\" isn't only about money.",
+        "Think about an old-fashioned tool for weighing.",
+        "A balance is another word for a ___?",
+        "Starts with S, 5 letters."
+      ],
+      "explanation": "The surface reads like banking. \"Balance\" also refers to a weighing SCALE."
+    },
+    {
+      "id": 138,
+      "printDate": "2026-07-02",
+      "publishDate": "2026-07-02",
+      "status": "scheduled",
+      "clue": "Frost! Thaw! Draft! Draft! (4)",
+      "answer": "BEER",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Draft\" isn't just a cold breeze.",
+        "Think about what's on tap at a pub.",
+        "A draft ___ comes from a keg.",
+        "Starts with B, 4 letters."
+      ],
+      "explanation": "The surface suggests winter weather. \"Draft\" also means beer on tap — BEER."
+    },
+    {
+      "id": 139,
+      "printDate": "2026-07-03",
+      "publishDate": "2026-07-03",
+      "status": "scheduled",
+      "clue": "Dribble! Shoot! Court! Court! (5)",
+      "answer": "JUDGE",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "\"Court\" isn't only a basketball court.",
+        "Think about a courtroom.",
+        "Who presides over a court?",
+        "Starts with J, 5 letters."
+      ],
+      "explanation": "The surface reads like basketball. \"Court\" also means a court of law — led by a JUDGE."
+    },
+    {
+      "id": 140,
+      "printDate": "2026-07-04",
+      "publishDate": "2026-07-04",
+      "status": "scheduled",
+      "clue": "Orbit! Dock! Launch! Launch! (5)",
+      "answer": "START",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "\"Launch\" isn't only about rockets.",
+        "Think about launching a new product or project.",
+        "To launch = to ___?",
+        "Starts with S, 5 letters."
+      ],
+      "explanation": "The surface suggests space travel. \"Launch\" also means to begin — START."
     }
   ]
 }

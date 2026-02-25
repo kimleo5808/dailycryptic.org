@@ -67,7 +67,7 @@ export default async function HomeComponent() {
               Minute Cryptic Today
             </h1>
             <p className="mt-3 text-base text-slate-700 sm:text-lg sm:whitespace-nowrap">
-              Solve one quick minute cryptic in a daily cryptic format. Use hints only when you need them.
+              One minute cryptic a day — your daily cryptic crossword, with optional hints.
             </p>
           </div>
 
