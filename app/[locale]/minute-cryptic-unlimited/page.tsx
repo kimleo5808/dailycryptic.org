@@ -4,7 +4,18 @@ import { Locale, LOCALES } from "@/i18n/routing";
 import { getAllPuzzlesForUnlimited } from "@/lib/minute-cryptic-data";
 import { breadcrumbSchema, faqPageSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUp,
+  BarChart3,
+  BookOpen,
+  Infinity,
+  Library,
+  Lightbulb,
+  RefreshCw,
+  Shuffle,
+  Zap,
+} from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -99,7 +110,7 @@ export default async function MinuteCrypticUnlimitedPage() {
         </div>
       </section>
 
-      {/* SEO content sections */}
+      {/* Section 1: What Is — white bg */}
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
@@ -108,12 +119,16 @@ export default async function MinuteCrypticUnlimitedPage() {
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Minute cryptic unlimited is a free, browser-based mode that lets you
             solve cryptic clues without any daily restriction. The standard
-            minute cryptic format delivers one puzzle per day, which is ideal for
-            building a consistent habit. But when you want more practice or
+            minute cryptic format delivers one puzzle per day, which is ideal
+            for building a consistent habit. But when you want more practice or
             simply enjoy the challenge, minute cryptic unlimited opens the full
             puzzle library so you can play at your own pace.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
+
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            No Daily Limit
+          </h3>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
             Every puzzle in minute cryptic unlimited uses the same format you
             already know: a single cryptic clue, a letter grid, progressive
             hints, and a full explanation after you solve. The difference is
@@ -121,7 +136,11 @@ export default async function MinuteCrypticUnlimitedPage() {
             minute cryptic unlimited clue appears immediately. There is no
             waiting, no countdown, and no cap on how many you can complete.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
+
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Full Puzzle Library
+          </h3>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
             This mode draws from the complete archive of published minute
             cryptic clues. That means you get a mix of anagrams, charades,
             containers, and double definitions across easy, medium, and hard
@@ -129,161 +148,268 @@ export default async function MinuteCrypticUnlimitedPage() {
             who wants to sharpen their solving skills faster than the one-a-day
             schedule allows.
           </p>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+      {/* Section 2: How It Works — grey bg, 3-col cards */}
+      <section className="border-y border-border bg-muted/30 py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
             How Minute Cryptic Unlimited Works
           </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Playing minute cryptic unlimited follows a straightforward loop.
-            When you load the page, a random unsolved puzzle is selected from
-            the library. You read the clue, type your answer using the on-screen
-            keyboard or your physical keyboard, and press Check. If your answer
-            is correct, the explanation appears and you can move on. If not, you
-            can try again or use the progressive hint system.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            The hint system in minute cryptic unlimited works exactly like the
-            daily version. Each puzzle has four hint levels that gradually narrow
-            the solving path without giving away the answer outright. Level one
-            offers a general direction. Level two identifies the clue type.
-            Level three provides a more specific nudge. Level four gives a
-            strong pointer. You control how much help you receive, which keeps
-            the challenge intact even in unlimited mode.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            After solving or revealing the answer, minute cryptic unlimited
-            shows the full clue breakdown: the definition component, the
-            wordplay mechanism, and how the letters map to the final answer.
-            This feedback loop is what makes minute cryptic unlimited effective
-            for learning, not just entertainment. Every solve teaches you
-            something about how cryptic clues are constructed.
-          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-xl border border-border bg-card p-6">
+              <Shuffle className="h-8 w-8 text-primary" />
+              <h3 className="mt-4 font-heading text-lg font-semibold text-foreground">
+                Solve and Move On
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                When you load minute cryptic unlimited, a random unsolved puzzle
+                is selected from the library. Read the clue, type your answer,
+                and press Check. If correct, the explanation appears and you move
+                to the next one. If not, try again or use hints.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <Lightbulb className="h-8 w-8 text-primary" />
+              <h3 className="mt-4 font-heading text-lg font-semibold text-foreground">
+                Progressive Hints in Unlimited Mode
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Each minute cryptic unlimited puzzle has four hint levels that
+                gradually narrow the solving path. Level one offers a general
+                direction. Level four gives a strong pointer. You control how
+                much help you receive, keeping the challenge intact.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <BookOpen className="h-8 w-8 text-primary" />
+              <h3 className="mt-4 font-heading text-lg font-semibold text-foreground">
+                Learn from Every Clue
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                After solving or revealing the answer, minute cryptic unlimited
+                shows the full clue breakdown: the definition, the wordplay
+                mechanism, and how the letters map to the answer. This feedback
+                loop makes minute cryptic unlimited effective for learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+      {/* Section 3: Why Play — white bg, 2-col */}
+      <section className="py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
             Why Play Minute Cryptic Unlimited
           </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            The daily minute cryptic is a great anchor habit, but one puzzle per
-            day limits how fast you can improve. Minute cryptic unlimited
-            removes that ceiling. If you are preparing for a cryptic crossword
-            competition, warming up before a full grid, or simply in the mood to
-            solve, minute cryptic unlimited gives you the volume you need.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Repetition across varied clue types is the fastest way to build
-            pattern recognition. In minute cryptic unlimited, you encounter
-            anagram indicators, charade joins, container signals, and double
-            definitions in rapid succession. This variety trains your brain to
-            identify clue structures quickly, which directly translates to
-            faster solving in any cryptic crossword context.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Minute cryptic unlimited is also useful for beginners who want to
-            build confidence before committing to a full daily routine. Solving
-            five or ten clues in a single session gives you a concentrated
-            learning experience that would otherwise take a week or more in
-            daily mode. The explanations after each solve reinforce the
-            mechanics so you retain what you learn.
-          </p>
+          <div className="mt-8 grid gap-8 lg:grid-cols-2">
+            <div>
+              <h3 className="font-heading text-xl font-semibold text-foreground">
+                Build Pattern Recognition Faster
+              </h3>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                The daily minute cryptic is a great anchor habit, but one puzzle
+                per day limits how fast you can improve. Minute cryptic unlimited
+                removes that ceiling. Repetition across varied clue types is the
+                fastest way to build pattern recognition. In minute cryptic
+                unlimited, you encounter anagrams, charades, containers, and
+                double definitions in random order, forcing genuine flexibility.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-heading text-xl font-semibold text-foreground">
+                Warm Up Before Full Grids
+              </h3>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                If you are preparing for a cryptic crossword competition or
+                warming up before tackling a full grid, minute cryptic unlimited
+                gives you the volume you need. Solve five or ten quick clues to
+                get your brain into cryptic mode, then move to your main puzzle
+                with sharper instincts. Minute cryptic unlimited is also useful
+                for beginners who want to build confidence before attempting
+                longer formats.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+      {/* Section 4: vs Daily — grey bg, comparison cards */}
+      <section className="border-y border-border bg-muted/30 py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
             Minute Cryptic Unlimited vs Daily Mode
           </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Both modes serve different purposes and complement each other well.
-            The daily minute cryptic gives you a single fresh clue each day,
-            which builds consistency and makes solving a low-effort daily habit.
-            Minute cryptic unlimited, on the other hand, is session-based — you
-            decide how many puzzles to tackle and when to stop.
+          <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-muted-foreground">
+            Both modes share the same puzzle quality, hint system, and
+            explanation format. Think of the daily mode as your anchor and
+            minute cryptic unlimited as your training ground.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            In daily mode, your progress is tied to the calendar. In minute
-            cryptic unlimited, progress is measured by total solves and streaks.
-            Your streak in minute cryptic unlimited counts consecutive correct
-            answers without using the reveal button. This adds a light
-            competitive element that motivates careful solving rather than
-            rushing through clues.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            A practical approach is to use both: start with the daily minute
-            cryptic to maintain your streak, then switch to minute cryptic
-            unlimited when you want extra practice. The puzzle libraries overlap,
-            but minute cryptic unlimited randomizes the order so you get a
-            different experience each session.
-          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="rounded-xl border border-primary/30 bg-card p-6">
+              <div className="flex items-center gap-3">
+                <Infinity className="h-7 w-7 text-primary" />
+                <h3 className="font-heading text-lg font-semibold text-foreground">
+                  Minute Cryptic Unlimited
+                </h3>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-primary">✓</span>
+                  Solve as many puzzles as you want per session
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-primary">✓</span>
+                  Random puzzle selection from full library
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-primary">✓</span>
+                  Tracks total solves, current streak, and best streak
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-primary">✓</span>
+                  Ideal for focused practice and skill building
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-primary">✓</span>
+                  Free, no account required
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3">
+                <Zap className="h-7 w-7 text-muted-foreground" />
+                <h3 className="font-heading text-lg font-semibold text-foreground">
+                  Daily Minute Cryptic
+                </h3>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1">✓</span>
+                  One new clue published each day
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1">✓</span>
+                  Builds a consistent daily solving habit
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1">✓</span>
+                  Same progressive hint system
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1">✓</span>
+                  Ideal for maintaining a lightweight routine
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1">✓</span>
+                  Free, no account required
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Tips for Solving Minute Cryptic Unlimited Puzzles
+      {/* Section 5: Tips — white bg, 4-col cards */}
+      <section className="py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Tips for Minute Cryptic Unlimited Puzzles
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Start every minute cryptic unlimited clue by identifying the
-            definition. In most cryptic clues, the definition sits at the
-            beginning or end of the clue text. Once you have a candidate
-            definition, the remaining words form the wordplay component. This
-            split is the foundation of every solve in minute cryptic unlimited.
+            Each clue type in minute cryptic unlimited has its own logic. Here
+            are quick pointers for the four main types you will encounter.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            For anagram clues in minute cryptic unlimited, look for indicator
-            words that suggest rearrangement: mixed, broken, wild, dancing,
-            reformed. The fodder — the letters to rearrange — is usually
-            adjacent to the indicator. Count the letters carefully and confirm
-            they match the answer length shown in the grid.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Charade clues in minute cryptic unlimited build the answer by
-            joining smaller pieces in sequence. Each piece maps to a short
-            synonym, abbreviation, or letter fragment. Read the clue left to
-            right and try to map each segment to a component. Container clues
-            work similarly but involve one piece sitting inside another — watch
-            for words like holding, around, within, or embracing.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Double definitions are often the quickest to solve in minute cryptic
-            unlimited. The clue gives two separate definitions for the same
-            word, usually with a linking word between them. If a clue feels
-            unusually short and direct, consider whether it might be a double
-            definition before looking for complex wordplay.
-          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-xl border border-border bg-card p-5">
+              <h3 className="font-heading text-base font-semibold text-foreground">
+                Anagrams
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Look for indicator words like &quot;mixed&quot;,
+                &quot;broken&quot;, or &quot;arranged&quot;. Count the fodder
+                letters carefully — every letter must be used exactly once in
+                your minute cryptic unlimited answer.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <h3 className="font-heading text-base font-semibold text-foreground">
+                Charades
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Split the clue into short chunks. Map each chunk to an
+                abbreviation, synonym, or letter segment, then concatenate in
+                reading order to form the minute cryptic unlimited answer.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <h3 className="font-heading text-base font-semibold text-foreground">
+                Containers
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Find the outer and inner parts, then apply insertion order
+                exactly as the clue signals. Position matters more than first
+                impressions in minute cryptic unlimited container clues.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <h3 className="font-heading text-base font-semibold text-foreground">
+                Double Definitions
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                The clue contains two separate definitions for the same word.
+                Identify where the clue splits and find a word that satisfies
+                both meanings in your minute cryptic unlimited solve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+      {/* Section 6: Progress — grey bg */}
+      <section className="border-y border-border bg-muted/30 py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
             Track Your Minute Cryptic Unlimited Progress
           </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Minute cryptic unlimited tracks three key metrics in your browser:
-            total puzzles solved, current streak, and best streak. Your current
-            streak increments each time you solve a puzzle without using the
-            reveal button. Using reveal resets the current streak to zero but
-            does not affect your best streak record.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            These stats are stored locally, so they persist between sessions on
-            the same device. If you want a fresh start, the reset button clears
-            your solved history and stats. This can be useful if you want to
-            replay the full minute cryptic unlimited library from scratch or
-            challenge yourself to beat a previous best streak.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Tracking progress in minute cryptic unlimited helps you see
-            improvement over time. A rising best streak indicates that your
-            pattern recognition and clue parsing are getting stronger. If your
-            streak plateaus, consider spending time with the{" "}
-            <Link
-              href="/how-to-play-minute-cryptic"
-              className="text-primary underline underline-offset-2"
-            >
-              solving guide
-            </Link>{" "}
-            to refresh your understanding of specific clue types before
-            returning to minute cryptic unlimited.
+
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Solve Count and Streaks
+          </h3>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Minute cryptic unlimited tracks three metrics locally in your
+            browser: total puzzles solved, your current consecutive correct
+            streak, and your all-time best streak. These numbers appear in the
+            stats bar above the puzzle area. Watching your streak grow is a
+            simple motivator that keeps minute cryptic unlimited sessions
+            focused and rewarding.
           </p>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Frequently Asked Questions
+          <h3 className="mt-8 font-heading text-xl font-semibold text-foreground">
+            Reset and Replay
+          </h3>
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            If you want a fresh start, the reset button clears your solved
+            history and stats. This lets you replay the entire minute cryptic
+            unlimited library from scratch. Revisiting clues you solved weeks
+            ago is a strong way to test whether your pattern recognition has
+            genuinely improved or whether you simply remembered the answer.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 7: FAQ — white bg */}
+      <section className="py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
+            Minute Cryptic Unlimited FAQ
           </h2>
           <div className="mt-6 space-y-3">
-            {UNLIMITED_FAQ_ITEMS.map((item, i) => (
+            {UNLIMITED_FAQ_ITEMS.map((item) => (
               <details
-                key={i}
+                key={item.question}
                 className="rounded-lg border border-border/80 bg-background p-3"
               >
                 <summary className="cursor-pointer list-none text-sm font-semibold text-foreground">
@@ -295,42 +421,51 @@ export default async function MinuteCrypticUnlimitedPage() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Next Action
+      {/* Section 8: CTA — blue bg */}
+      <section className="bg-[#b8d8fa] py-12">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold text-slate-900 sm:text-3xl">
+            Start Playing Minute Cryptic Unlimited
           </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Scroll up and solve your first minute cryptic unlimited puzzle now.
+          <p className="mt-4 text-slate-700">
             Use one hint if needed, check your answer, read the explanation, and
             then hit Next Puzzle. After five solves, you will already notice
             patterns repeating across clue types. That recognition is the core
             skill that minute cryptic unlimited builds.
           </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you prefer a structured daily routine, try the{" "}
+          <a
+            href="#top"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+          >
+            <ArrowUp className="h-4 w-4" />
+            Play Minute Cryptic Unlimited Now
+          </a>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm">
             <Link
               href="/minute-cryptic-today"
-              className="text-primary underline underline-offset-2"
+              className="inline-flex items-center gap-1 font-medium text-slate-800 underline underline-offset-2 hover:text-slate-900"
             >
-              daily minute cryptic
-            </Link>{" "}
-            for one fresh clue each day. Browse the{" "}
+              Daily minute cryptic
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
             <Link
               href="/minute-cryptic"
-              className="text-primary underline underline-offset-2"
+              className="inline-flex items-center gap-1 font-medium text-slate-800 underline underline-offset-2 hover:text-slate-900"
             >
-              minute cryptic archive
-            </Link>{" "}
-            to revisit specific dates. Or read the{" "}
+              Minute cryptic archive
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
             <Link
               href="/how-to-play-minute-cryptic"
-              className="text-primary underline underline-offset-2"
+              className="inline-flex items-center gap-1 font-medium text-slate-800 underline underline-offset-2 hover:text-slate-900"
             >
-              how to solve cryptic clues guide
-            </Link>{" "}
-            to strengthen your technique before your next minute cryptic
-            unlimited session.
-          </p>
+              How to solve cryptic clues
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
         </div>
       </section>
     </div>
