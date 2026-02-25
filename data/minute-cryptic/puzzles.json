@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T00:00:00.000Z",
+  "lastUpdated": "2026-02-25T00:00:00.000Z",
   "puzzles": [
     {
       "id": 1,
@@ -1700,6 +1700,176 @@
         "Starts with R."
       ],
       "explanation": "RULER means both leader and measuring tool."
+    },
+    {
+      "id": 101,
+      "printDate": "2026-05-26",
+      "publishDate": "2026-05-26",
+      "status": "scheduled",
+      "clue": "Turbulent STREAM reveals an expert (6)",
+      "answer": "MASTER",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a word meaning expert.",
+        "This clue uses an anagram.",
+        "Rearrange STREAM.",
+        "Starts with M."
+      ],
+      "explanation": "STREAM rearranged gives MASTER."
+    },
+    {
+      "id": 102,
+      "printDate": "2026-05-27",
+      "publishDate": "2026-05-27",
+      "status": "scheduled",
+      "clue": "Fairy emerges from torn STRIPE (6)",
+      "answer": "SPRITE",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a word meaning fairy.",
+        "This clue uses an anagram.",
+        "Rearrange STRIPE.",
+        "Starts with S."
+      ],
+      "explanation": "STRIPE rearranged gives SPRITE."
+    },
+    {
+      "id": 103,
+      "printDate": "2026-05-28",
+      "publishDate": "2026-05-28",
+      "status": "scheduled",
+      "clue": "TAILED erratically, note the particular (6)",
+      "answer": "DETAIL",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a word meaning particular.",
+        "This clue uses an anagram.",
+        "Rearrange TAILED.",
+        "Starts with D."
+      ],
+      "explanation": "TAILED rearranged gives DETAIL."
+    },
+    {
+      "id": 104,
+      "printDate": "2026-05-29",
+      "publishDate": "2026-05-29",
+      "status": "scheduled",
+      "clue": "Vehicle carrying animal makes floor covering (6)",
+      "answer": "CARPET",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"floor covering\".",
+        "This is a charade clue.",
+        "A vehicle plus an animal.",
+        "Starts with C."
+      ],
+      "explanation": "CAR (vehicle) + PET (animal) gives CARPET."
+    },
+    {
+      "id": 105,
+      "printDate": "2026-05-30",
+      "publishDate": "2026-05-30",
+      "status": "scheduled",
+      "clue": "Give a few - that's attractive (8)",
+      "answer": "HANDSOME",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"attractive\".",
+        "This is a charade clue.",
+        "Think of words for give and a few.",
+        "Starts with H."
+      ],
+      "explanation": "HAND (give) + SOME (a few) gives HANDSOME."
+    },
+    {
+      "id": 106,
+      "printDate": "2026-05-31",
+      "publishDate": "2026-05-31",
+      "status": "scheduled",
+      "clue": "Listen to the call for jewellery (7)",
+      "answer": "EARRING",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a piece of jewellery.",
+        "This is a charade clue.",
+        "Listen plus call.",
+        "Starts with E."
+      ],
+      "explanation": "EAR (listen) + RING (call) gives EARRING."
+    },
+    {
+      "id": 107,
+      "printDate": "2026-06-01",
+      "publishDate": "2026-06-01",
+      "status": "scheduled",
+      "clue": "Metal container holds sun god - it's a coach (5)",
+      "answer": "TRAIN",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Definition is \"coach\".",
+        "This is a container clue.",
+        "A metal container holds a sun god inside.",
+        "Starts with T."
+      ],
+      "explanation": "TIN (metal container) holding RA (sun god) gives T-RA-IN = TRAIN."
+    },
+    {
+      "id": 108,
+      "printDate": "2026-06-02",
+      "publishDate": "2026-06-02",
+      "status": "scheduled",
+      "clue": "Apartment embracing nothing - just drift (5)",
+      "answer": "FLOAT",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Definition is \"drift\".",
+        "This is a container clue.",
+        "An apartment holds nothing inside.",
+        "Starts with F."
+      ],
+      "explanation": "FLAT (apartment) embracing O (nothing) gives FL-O-AT = FLOAT."
+    },
+    {
+      "id": 109,
+      "printDate": "2026-06-03",
+      "publishDate": "2026-06-03",
+      "status": "scheduled",
+      "clue": "Clever, or full of light (6)",
+      "answer": "BRIGHT",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means clever.",
+        "The other means full of light.",
+        "Starts with B."
+      ],
+      "explanation": "BRIGHT means both clever and full of light."
+    },
+    {
+      "id": 110,
+      "printDate": "2026-06-04",
+      "publishDate": "2026-06-04",
+      "status": "scheduled",
+      "clue": "Rain, or one who displays (6)",
+      "answer": "SHOWER",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "There are two definitions.",
+        "One means a type of rain.",
+        "The other means one who shows.",
+        "Starts with S."
+      ],
+      "explanation": "SHOWER means both rain and one who shows."
     }
   ]
 }
