@@ -20,6 +20,12 @@ const QUICK_LINKS = [
     cta: "Browse the minute cryptic archive",
   },
   {
+    title: "Minute cryptic unlimited",
+    description: "Play unlimited cryptic puzzles with no daily cap — solve one after another at your own pace.",
+    href: "/minute-cryptic-unlimited",
+    cta: "Play minute cryptic unlimited",
+  },
+  {
     title: "How to solve cryptic clues",
     description: "Learn indicators, fodder, definition, and containers for daily cryptic solving.",
     href: "/how-to-play-minute-cryptic",

@@ -10,6 +10,10 @@
         "href": "/minute-cryptic-today"
       },
       {
+        "name": "Unlimited",
+        "href": "/minute-cryptic-unlimited"
+      },
+      {
         "name": "How to Solve",
         "href": "/how-to-play-minute-cryptic"
       },
@@ -39,6 +43,10 @@
             {
               "href": "/minute-cryptic",
               "name": "Archive"
+            },
+            {
+              "href": "/minute-cryptic-unlimited",
+              "name": "Unlimited"
             }
           ]
         },

@@ -91,3 +91,22 @@ export const getArchiveMinuteCryptics = cache(
 export const getArchiveMinuteCrypticCount = cache(async (): Promise<number> => {
   return archiveVisiblePuzzlesDesc.length;
 });
+
+export type UnlimitedPuzzle = Pick<
+  MinuteCrypticPuzzle,
+  "id" | "clue" | "answer" | "hintLevels" | "clueType" | "difficulty" | "explanation"
+>;
+
+export const getAllPuzzlesForUnlimited = cache(
+  async (): Promise<UnlimitedPuzzle[]> => {
+    return allPublicPuzzlesDesc.map((p) => ({
+      id: p.id,
+      clue: p.clue,
+      answer: p.answer,
+      hintLevels: p.hintLevels,
+      clueType: p.clueType,
+      difficulty: p.difficulty,
+      explanation: p.explanation,
+    }));
+  }
+);
