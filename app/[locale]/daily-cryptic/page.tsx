@@ -232,6 +232,53 @@ export default async function DailyCrypticPage() {
         </div>
       </section>
 
+      <section className="pb-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h2 className="font-heading text-2xl font-bold text-foreground">
+              Build skill before volume
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              If you want this site to work as a daily training ground, pair the
+              daily clue with a short learning route. Start with the beginner
+              guide, compare clue families in the clue type hub, and then use
+              easy practice sets before moving into mixed archive sessions.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <Link
+                href="/cryptic-crossword-for-beginners"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  Cryptic crossword for beginners
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Learn the basic solve order and the easiest clue families first.
+                </p>
+              </Link>
+              <Link
+                href="/cryptic-clue-types"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">Cryptic clue types</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Compare anagram, charade, container, and double definition clues.
+                </p>
+              </Link>
+              <Link
+                href="/minute-cryptic/easy"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">Easy cryptic clues</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Practice beginner-friendly archive sets before climbing into harder ranges.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ============ Section 3: What Is a Daily Cryptic? ============ */}
       <section className="border-y border-border bg-muted/30 py-12">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

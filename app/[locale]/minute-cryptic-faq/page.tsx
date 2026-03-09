@@ -140,6 +140,35 @@ export default async function FAQPage({ params }: { params: Params }) {
         <p className="mt-1 text-sm opacity-90">
           Read the solving guide or go straight to today&apos;s clue.
         </p>
+        <div className="mt-5 grid gap-3 text-left sm:grid-cols-3">
+          <Link
+            href="/cryptic-crossword-for-beginners"
+            className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+          >
+            <h3 className="text-sm font-bold">Cryptic crossword for beginners</h3>
+            <p className="mt-2 text-sm text-white/85">
+              Use the start-here guide if you want a simpler learning route.
+            </p>
+          </Link>
+          <Link
+            href="/cryptic-clue-types"
+            className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+          >
+            <h3 className="text-sm font-bold">Cryptic clue types</h3>
+            <p className="mt-2 text-sm text-white/85">
+              Learn how anagram, charade, container, and double definition clues differ.
+            </p>
+          </Link>
+          <Link
+            href="/minute-cryptic/easy"
+            className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+          >
+            <h3 className="text-sm font-bold">Easy cryptic clues</h3>
+            <p className="mt-2 text-sm text-white/85">
+              Move from answers and questions into beginner-friendly practice.
+            </p>
+          </Link>
+        </div>
         <div className="mt-4 flex flex-wrap justify-center gap-3">
           <Link
             href="/how-to-play-minute-cryptic"

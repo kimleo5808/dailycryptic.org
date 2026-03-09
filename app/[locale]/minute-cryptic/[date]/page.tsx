@@ -4,8 +4,14 @@ import { Locale, LOCALES } from "@/i18n/routing";
 import {
   getAllMinuteCryptics,
   getMinuteCrypticByDate,
-  getRecentMinuteCryptics,
+  getMinuteCrypticsByClueType,
+  getMinuteCrypticsByDifficulty,
+  getRelatedMinuteCryptics,
 } from "@/lib/minute-cryptic-data";
+import {
+  getClueTypeTopic,
+  getDifficultyTopic,
+} from "@/lib/minute-cryptic-topics";
 import { articleSchema, breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import dayjs from "dayjs";
@@ -61,7 +67,20 @@ export default async function DailyPuzzlePage({
   const prevPuzzle =
     currentIndex < allPuzzles.length - 1 ? allPuzzles[currentIndex + 1] : null;
   const nextPuzzle = currentIndex > 0 ? allPuzzles[currentIndex - 1] : null;
-  const recentPuzzles = await getRecentMinuteCryptics(8);
+  const sameClueTypePuzzles = (await getMinuteCrypticsByClueType(puzzle.clueType))
+    .filter((p) => p.printDate !== puzzle.printDate)
+    .slice(0, 3);
+  const sameDifficultyPuzzles = (
+    await getMinuteCrypticsByDifficulty(puzzle.difficulty)
+  )
+    .filter(
+      (p) =>
+        p.printDate !== puzzle.printDate && p.clueType !== puzzle.clueType
+    )
+    .slice(0, 3);
+  const relatedPuzzles = await getRelatedMinuteCryptics(puzzle, 6);
+  const clueTypeTopic = getClueTypeTopic(puzzle.clueType);
+  const difficultyTopic = getDifficultyTopic(puzzle.difficulty);
 
   const formattedDate = dayjs(puzzle.printDate).format("dddd, MMMM D, YYYY");
 
@@ -165,19 +184,178 @@ export default async function DailyPuzzlePage({
         </p>
       </section>
 
-      <section className="mx-auto mt-8 max-w-4xl">
+      <section className="mx-auto mt-8 max-w-4xl rounded-2xl border border-border bg-card p-6">
         <h2 className="font-heading text-xl font-bold text-foreground">
-          Related practice clues
+          Learn from this clue type
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          This puzzle is tagged as {puzzle.clueType} and {puzzle.difficulty}.
+          If you want more than one-off solving, study the clue family and then
+          repeat the same difficulty range while the pattern is still fresh.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <Link
+            href={clueTypeTopic.href}
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              {clueTypeTopic.label}
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {clueTypeTopic.description}
+            </p>
+          </Link>
+          <Link
+            href={difficultyTopic.href}
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              {difficultyTopic.label}
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {difficultyTopic.description}
+            </p>
+          </Link>
+          <Link
+            href="/cryptic-clue-types"
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              Cryptic clue types
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Compare clue families and choose a more focused practice route.
+            </p>
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-8 max-w-4xl rounded-2xl border border-border bg-card p-6">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          What this {clueTypeTopic.shortLabel.toLowerCase()} clue is teaching
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {clueTypeTopic.detailBody}
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {clueTypeTopic.detailFocus}
+        </p>
+        <h3 className="mt-5 text-sm font-bold text-foreground">
+          Why the {difficultyTopic.shortLabel.toLowerCase()} difficulty matters
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {difficultyTopic.detailBody}
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {difficultyTopic.detailFocus}
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you want to turn this one solve into a repeatable lesson, move next
+          to the{" "}
+          <Link
+            href={clueTypeTopic.href}
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            {clueTypeTopic.label.toLowerCase()}
+          </Link>{" "}
+          page for mechanism-specific guidance, or stay inside the{" "}
+          <Link
+            href={difficultyTopic.href}
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            {difficultyTopic.label.toLowerCase()}
+          </Link>{" "}
+          archive for more clues at the same pressure level.
+        </p>
+      </section>
+
+      <section className="mx-auto mt-8 max-w-4xl rounded-2xl border border-border bg-card p-6">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          Practice the same pattern next
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Continue with nearby daily cryptic archive entries to reinforce the
-          same solving workflow across different clue types.
+          The best follow-up clue is usually not just the most recent one. It is
+          a clue that keeps either the same mechanism or the same resistance
+          level active while the lesson from this solve is still fresh.
+        </p>
+        <div className="mt-5 grid gap-6 lg:grid-cols-2">
+          <div>
+            <h3 className="text-sm font-bold text-foreground">
+              More {clueTypeTopic.label.toLowerCase()}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Stay with the same clue family to reinforce recognition,
+              structure, and proof on a familiar mechanism.
+            </p>
+            <div className="mt-4 grid gap-3">
+              {sameClueTypePuzzles.map((p) => (
+                <Link
+                  key={`type-${p.id}`}
+                  href={`/minute-cryptic/${p.printDate}`}
+                  className="group rounded-lg border border-border bg-background p-4 transition-colors hover:border-primary/40 hover:bg-primary/5"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    {dayjs(p.printDate).format("MMM D, YYYY")}
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-foreground">
+                    #{p.id} | {p.clueType} | {p.difficulty}
+                  </p>
+                  <p className="mt-2 line-clamp-2 text-xs text-muted-foreground">
+                    {p.clue}
+                  </p>
+                  <span className="mt-3 inline-flex text-xs font-semibold text-primary">
+                    Solve a similar clue
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-bold text-foreground">
+              More {difficultyTopic.label.toLowerCase()}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Keep the difficulty steady if you want more repetition at the same
+              pressure level without repeating the exact same mechanism.
+            </p>
+            <div className="mt-4 grid gap-3">
+              {sameDifficultyPuzzles.map((p) => (
+                <Link
+                  key={`difficulty-${p.id}`}
+                  href={`/minute-cryptic/${p.printDate}`}
+                  className="group rounded-lg border border-border bg-background p-4 transition-colors hover:border-primary/40 hover:bg-primary/5"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    {dayjs(p.printDate).format("MMM D, YYYY")}
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-foreground">
+                    #{p.id} | {p.clueType} | {p.difficulty}
+                  </p>
+                  <p className="mt-2 line-clamp-2 text-xs text-muted-foreground">
+                    {p.clue}
+                  </p>
+                  <span className="mt-3 inline-flex text-xs font-semibold text-primary">
+                    Solve at the same level
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-8 max-w-4xl">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          More related archive clues
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          If you want a broader run of connected practice, these picks mix the
+          same clue type, the same difficulty, and the nearest useful archive
+          fallbacks.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {recentPuzzles
-            .filter((p) => p.printDate !== puzzle.printDate)
-            .slice(0, 6)
-            .map((p) => (
+          {relatedPuzzles.map((p) => (
               <Link
                 key={p.id}
                 href={`/minute-cryptic/${p.printDate}`}
@@ -187,13 +365,13 @@ export default async function DailyPuzzlePage({
                   {dayjs(p.printDate).format("MMM D, YYYY")}
                 </p>
                 <p className="mt-1 text-sm font-semibold text-foreground">
-                  #{p.id} | {p.clueType}
+                  #{p.id} | {p.clueType} | {p.difficulty}
                 </p>
                 <p className="mt-2 line-clamp-2 text-xs text-muted-foreground">
                   {p.clue}
                 </p>
                 <span className="mt-3 inline-flex text-xs font-semibold text-primary">
-                  Solve this clue
+                  Open related clue
                 </span>
               </Link>
             ))}
@@ -222,12 +400,19 @@ export default async function DailyPuzzlePage({
           </Link>{" "}
           for the latest clue. New to cryptics? Our{" "}
           <Link
-            href="/how-to-play-minute-cryptic"
+            href={clueTypeTopic.href}
             className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
           >
-            guide on how to solve cryptic clues
+            {clueTypeTopic.label.toLowerCase()}
           </Link>{" "}
-          covers everything you need to get started.
+          or revisit the{" "}
+          <Link
+            href={difficultyTopic.href}
+            className="font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            {difficultyTopic.label.toLowerCase()}
+          </Link>{" "}
+          page for more controlled practice.
         </p>
       </section>
 

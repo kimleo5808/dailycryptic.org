@@ -32,6 +32,18 @@ const QUICK_LINKS = [
     cta: "Read the solving guide",
   },
   {
+    title: "Beginner guide",
+    description: "Start here if you are new to cryptic clues and want a simple learning path.",
+    href: "/cryptic-crossword-for-beginners",
+    cta: "Read the beginner guide",
+  },
+  {
+    title: "Clue types",
+    description: "Compare anagram, charade, container, and double definition clues in one place.",
+    href: "/cryptic-clue-types",
+    cta: "Explore clue types",
+  },
+  {
     title: "FAQ",
     description: "Quick answers about hints, checking, and puzzle rules.",
     href: "/minute-cryptic-faq",
@@ -84,7 +96,7 @@ export default async function HomeComponent() {
       </section>
 
       <section className="py-12">
-        <div className="mx-auto grid w-full max-w-5xl gap-4 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
+        <div className="mx-auto grid w-full max-w-5xl gap-4 px-4 md:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
           {QUICK_LINKS.map((link) => (
             <Link
               key={link.title}
@@ -102,6 +114,60 @@ export default async function HomeComponent() {
               </span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="pb-12">
+        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h2 className="font-heading text-2xl font-bold text-foreground">
+              Learn cryptic clue structure before you grind more puzzles
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Daily play builds habit, but clear pattern recognition builds
+              speed. If you are still learning how definition, wordplay, and
+              clue type fit together, start with the beginner guide and clue
+              type library before moving into larger archive sessions.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <Link
+                href="/cryptic-crossword-for-beginners"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  Cryptic crossword for beginners
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Learn the basic solving workflow and the best clue types to
+                  start with.
+                </p>
+              </Link>
+              <Link
+                href="/cryptic-clue-types"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  Cryptic clue types
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Compare anagram, charade, container, and double definition
+                  clues.
+                </p>
+              </Link>
+              <Link
+                href="/minute-cryptic/easy"
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  Easy cryptic clues
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Use beginner-friendly practice sets once the solving method is
+                  clear.
+                </p>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

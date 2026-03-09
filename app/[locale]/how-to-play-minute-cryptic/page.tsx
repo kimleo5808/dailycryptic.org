@@ -471,6 +471,35 @@ export default async function HowToPlayPage({ params }: { params: Params }) {
             Apply this workflow on today&apos;s clue, then reinforce with short
             archive blocks.
           </p>
+          <div className="mt-5 grid gap-3 text-left sm:grid-cols-3">
+            <Link
+              href="/cryptic-crossword-for-beginners"
+              className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+            >
+              <h3 className="text-sm font-bold">Cryptic crossword for beginners</h3>
+              <p className="mt-2 text-sm text-white/85">
+                Start with the simplest explanation of clue structure and solving order.
+              </p>
+            </Link>
+            <Link
+              href="/cryptic-clue-types"
+              className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+            >
+              <h3 className="text-sm font-bold">Cryptic clue types</h3>
+              <p className="mt-2 text-sm text-white/85">
+                Compare the main clue families and learn how each one behaves.
+              </p>
+            </Link>
+            <Link
+              href="/cryptic-indicators"
+              className="rounded-xl border border-white/20 bg-white/10 p-4 transition hover:bg-white/15"
+            >
+              <h3 className="text-sm font-bold">Cryptic indicators</h3>
+              <p className="mt-2 text-sm text-white/85">
+                Review common signal words before you return to the archive.
+              </p>
+            </Link>
+          </div>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             <Link
               href="/minute-cryptic-today"

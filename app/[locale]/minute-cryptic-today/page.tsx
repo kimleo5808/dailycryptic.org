@@ -5,6 +5,10 @@ import {
   getLatestMinuteCryptic,
   getRecentMinuteCryptics,
 } from "@/lib/minute-cryptic-data";
+import {
+  getClueTypeTopic,
+  getDifficultyTopic,
+} from "@/lib/minute-cryptic-topics";
 import { breadcrumbSchema, faqPageSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import dayjs from "dayjs";
@@ -162,6 +166,8 @@ export default async function MinuteCrypticTodayPage({
 
   const dateLabel = dayjs(puzzle.printDate).format("dddd, MMMM D, YYYY");
   const clueTypeGuide = getClueTypeGuide(puzzle.clueType);
+  const clueTypeTopic = getClueTypeTopic(puzzle.clueType);
+  const difficultyTopic = getDifficultyTopic(puzzle.difficulty);
   const answerLength = puzzle.answer.replace(/[^A-Za-z]/g, "").length;
 
   return (
@@ -239,6 +245,53 @@ export default async function MinuteCrypticTodayPage({
                 </span>
               </Link>
             ))}
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl border border-border bg-card p-6">
+        <h2 className="font-heading text-xl font-bold text-foreground">
+          Learn the pattern behind today&apos;s clue
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Today&apos;s puzzle is tagged as {puzzle.clueType} and {puzzle.difficulty}.
+          If you want to improve faster, study the clue family and then run a
+          few clues at the same difficulty so the pattern repeats while the
+          mechanism is still fresh.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <Link
+            href={clueTypeTopic.href}
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              {clueTypeTopic.label}
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {clueTypeTopic.description}
+            </p>
+          </Link>
+          <Link
+            href={difficultyTopic.href}
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              {difficultyTopic.label}
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {difficultyTopic.description}
+            </p>
+          </Link>
+          <Link
+            href="/cryptic-crossword-for-beginners"
+            className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+          >
+            <h3 className="text-sm font-bold text-foreground">
+              Cryptic crossword for beginners
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Review the full start-here route if you still want a simpler solving framework.
+            </p>
+          </Link>
         </div>
       </section>
 

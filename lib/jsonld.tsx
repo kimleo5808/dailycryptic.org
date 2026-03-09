@@ -136,3 +136,51 @@ export function articleSchema({
     },
   };
 }
+
+/* ------------------------------------------------------------------ */
+/*  CollectionPage schema                                              */
+/* ------------------------------------------------------------------ */
+
+export function collectionPageSchema({
+  name,
+  description,
+  url,
+}: {
+  name: string;
+  description: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "dailycryptic",
+      url: BASE_URL,
+    },
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/*  ItemList schema                                                    */
+/* ------------------------------------------------------------------ */
+
+export function itemListSchema(
+  items: { name: string; url: string; description?: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+      ...(item.description ? { description: item.description } : {}),
+    })),
+  };
+}

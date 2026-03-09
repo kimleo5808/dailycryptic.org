@@ -6,8 +6,18 @@ import {
   getLatestMinuteCryptic,
   getMinuteCrypticCount,
 } from "@/lib/minute-cryptic-data";
-import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
+import {
+  breadcrumbSchema,
+  collectionPageSchema,
+  faqPageSchema,
+  itemListSchema,
+  JsonLd,
+} from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
+import {
+  CLUE_TYPE_TOPICS,
+  DIFFICULTY_TOPICS,
+} from "@/lib/minute-cryptic-topics";
 import dayjs from "dayjs";
 import { ArrowRight } from "lucide-react";
 import { Metadata } from "next";
@@ -18,9 +28,36 @@ type Params = Promise<{ locale: string }>;
 const TAG_LINKS = [
   { label: "Today's daily cryptic", href: "/minute-cryptic-today" },
   { label: "How to play", href: "/how-to-play-minute-cryptic" },
+  { label: "Beginner guide", href: "/cryptic-crossword-for-beginners" },
+  { label: "Clue types", href: "/cryptic-clue-types" },
+  { label: "Easy clues", href: "/minute-cryptic/easy" },
+  { label: "Medium clues", href: "/minute-cryptic/medium" },
+  { label: "Hard clues", href: "/minute-cryptic/hard" },
   { label: "FAQ", href: "/minute-cryptic-faq" },
   { label: "About", href: "/about" },
 ];
+
+const FAQ_ITEMS = [
+  {
+    question: "Where can I play today's clue?",
+    answer:
+      "Open the minute cryptic today page for the latest published daily cryptic clue.",
+  },
+  {
+    question: "Are past minute cryptics free?",
+    answer:
+      "Yes. Archive clues, hints, and explanations are available without an account.",
+  },
+  {
+    question: "How should beginners use this page?",
+    answer:
+      "Start with the beginner guide or easy archive, solve one clue at a time, then review the explanation before moving on.",
+  },
+];
+
+function monthAnchor(month: string) {
+  return `month-${month}`;
+}
 
 export async function generateMetadata({
   params,
@@ -33,7 +70,7 @@ export async function generateMetadata({
   return constructMetadata({
     page: "Archive",
     title: "Minute Cryptic Archive: Daily Cryptic History, Answers, and Explanations",
-    description: `Free minute cryptic archive with ${count} daily cryptic clues. Browse the full minute cryptic archive online — progressive hints, instant answer checks, and detailed explanations for every clue.`,
+    description: `Free minute cryptic archive with ${count} daily cryptic clues. Browse the full minute cryptic archive online with progressive hints, instant answer checks, and detailed explanations for every clue.`,
     keywords: [
       "minute cryptic archive",
       "minute cryptic archive free",
@@ -75,6 +112,18 @@ export default async function MinuteCrypticArchivePage({
   );
 
   const months = Object.keys(groupedByMonth).sort((a, b) => b.localeCompare(a));
+  const clueTypeCounts = Object.entries(CLUE_TYPE_TOPICS).map(([key, topic]) => ({
+    key,
+    topic,
+    count: allPuzzles.filter((puzzle) => puzzle.clueType === key).length,
+  }));
+  const difficultyCounts = Object.entries(DIFFICULTY_TOPICS).map(
+    ([key, topic]) => ({
+      key,
+      topic,
+      count: allPuzzles.filter((puzzle) => puzzle.difficulty === key).length,
+    })
+  );
 
   return (
     <div className="w-full">
@@ -85,13 +134,31 @@ export default async function MinuteCrypticArchivePage({
             { name: "Minute Cryptic Archive", url: `${BASE_URL}/minute-cryptic` },
           ])}
         />
+        <JsonLd
+          data={collectionPageSchema({
+            name: "Minute Cryptic Archive",
+            description:
+              "A free archive of daily minute cryptic clues with hints, answer checks, and full explanations.",
+            url: `${BASE_URL}/minute-cryptic`,
+          })}
+        />
+        <JsonLd data={faqPageSchema(FAQ_ITEMS)} />
+        <JsonLd
+          data={itemListSchema(
+            allPuzzles.slice(0, 12).map((puzzle) => ({
+              name: `Minute Cryptic #${puzzle.id}`,
+              url: `${BASE_URL}/minute-cryptic/${puzzle.printDate}`,
+              description: puzzle.clue,
+            }))
+          )}
+        />
 
         <header className="py-6 text-center">
           <h1 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
             Minute Cryptic Archive
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Browse the complete minute cryptic archive — {displayedCount} daily
+            Browse the complete minute cryptic archive with {displayedCount} daily
             cryptic clues available free online. Each clue includes progressive
             hints, an instant answer check, and a full explanation of the
             definition and wordplay.
@@ -139,9 +206,133 @@ export default async function MinuteCrypticArchivePage({
           </ul>
         </section>
 
+        <section className="mt-6 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Practice by learning stage
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            If you are new to cryptics, start with the beginner guide and easy
+            clue archive. If you already recognize clue families, use the clue
+            type guides and difficulty routes to build more intentional practice
+            blocks.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            <Link
+              href="/cryptic-crossword-for-beginners"
+              className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+            >
+              <h3 className="text-sm font-bold text-foreground">
+                Cryptic crossword for beginners
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Learn the most reliable start-here solving workflow.
+              </p>
+            </Link>
+            <Link
+              href="/cryptic-clue-types"
+              className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+            >
+              <h3 className="text-sm font-bold text-foreground">Cryptic clue types</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Compare clue families and choose a focused study path.
+              </p>
+            </Link>
+            <Link
+              href="/minute-cryptic/easy"
+              className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+            >
+              <h3 className="text-sm font-bold text-foreground">Easy cryptic clues</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Move into practice sets that keep structure readable.
+              </p>
+            </Link>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Browse by clue type
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Practice several clues from the same mechanism in a row when you
+            want stronger pattern recognition. This is usually the fastest way
+            to make clue structure feel familiar instead of random.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {clueTypeCounts.map(({ key, topic, count }) => (
+              <Link
+                key={key}
+                href={topic.href}
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  {topic.label}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {topic.description}
+                </p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">
+                  {count} archive clues
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Browse by difficulty
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Use difficulty pages when you want to control resistance more than
+            clue mechanism. This is useful for building confidence, finding the
+            right challenge level, or keeping a session consistent.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            {difficultyCounts.map(({ key, topic, count }) => (
+              <Link
+                key={key}
+                href={topic.href}
+                className="rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:bg-primary/5"
+              >
+                <h3 className="text-sm font-bold text-foreground">
+                  {topic.label}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {topic.description}
+                </p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">
+                  {count} archive clues
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-xl border border-border bg-card p-5">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Jump to archive month
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            If you prefer browsing by date, jump directly to a month below and
+            pick a run of clues from the same publishing window.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {months.map((month) => (
+              <Link
+                key={month}
+                href={`#${monthAnchor(month)}`}
+                className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted-foreground transition-colors hover:border-primary/60 hover:text-primary"
+              >
+                {dayjs(`${month}-01`).format("MMM YYYY")}
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <div className="mt-8 space-y-10">
           {months.map((month) => (
-            <section key={month}>
+            <section key={month} id={monthAnchor(month)} className="scroll-mt-24">
               <h2 className="mb-4 font-heading text-xl font-bold text-foreground">
                 {dayjs(`${month}-01`).format("MMMM YYYY")}
               </h2>
@@ -187,7 +378,7 @@ export default async function MinuteCrypticArchivePage({
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             The minute cryptic archive is a free, ever-growing collection of
             daily cryptic clues published on Daily Cryptic. Every past clue is
-            stored here and can be solved online at any time — no downloads, no
+            stored here and can be solved online at any time with no downloads, no
             accounts, no paywalls. The archive updates automatically each day
             when a new minute cryptic is released.
           </p>
@@ -209,7 +400,7 @@ export default async function MinuteCrypticArchivePage({
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             Unlike a static PDF archive, every clue here is fully interactive.
             You get letter-grid input, a virtual keyboard, animated feedback,
-            and step-by-step hints — all in your browser. No need to print or
+            and step-by-step hints all in your browser. No need to print or
             download anything. The minute cryptic archive free online experience
             is designed to be fast, focused, and fun on both desktop and mobile.
           </p>
@@ -243,8 +434,9 @@ export default async function MinuteCrypticArchivePage({
                 How should beginners use this page?
               </summary>
               <p className="mt-2 text-sm text-muted-foreground">
-                Start from the newest clue, solve first, use one hint level at a
-                time, then read the explanation before moving to the next clue.
+                Start with the beginner guide or easy archive, solve one clue at
+                a time, then read the explanation before moving to the next
+                clue.
               </p>
             </details>
           </div>

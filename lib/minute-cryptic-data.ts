@@ -92,6 +92,83 @@ export const getArchiveMinuteCrypticCount = cache(async (): Promise<number> => {
   return archiveVisiblePuzzlesDesc.length;
 });
 
+export const getMinuteCrypticsByClueType = cache(
+  async (clueType: MinuteCrypticPuzzle["clueType"]): Promise<MinuteCrypticPuzzle[]> => {
+    return allPublicPuzzlesDesc.filter((puzzle) => puzzle.clueType === clueType);
+  }
+);
+
+export const getMinuteCrypticsByDifficulty = cache(
+  async (
+    difficulty: MinuteCrypticPuzzle["difficulty"]
+  ): Promise<MinuteCrypticPuzzle[]> => {
+    return allPublicPuzzlesDesc.filter(
+      (puzzle) => puzzle.difficulty === difficulty
+    );
+  }
+);
+
+export const getExampleMinuteCrypticsByClueType = cache(
+  async (
+    clueType: MinuteCrypticPuzzle["clueType"],
+    count: number = 3
+  ): Promise<MinuteCrypticPuzzle[]> => {
+    return allPublicPuzzlesDesc
+      .filter((puzzle) => puzzle.clueType === clueType)
+      .slice(0, count);
+  }
+);
+
+export const getRelatedMinuteCryptics = cache(
+  async (
+    currentPuzzle: MinuteCrypticPuzzle,
+    count: number = 6
+  ): Promise<MinuteCrypticPuzzle[]> => {
+    const sameTypeAndDifficulty = allPublicPuzzlesDesc.filter(
+      (puzzle) =>
+        puzzle.printDate !== currentPuzzle.printDate &&
+        puzzle.clueType === currentPuzzle.clueType &&
+        puzzle.difficulty === currentPuzzle.difficulty
+    );
+    const sameType = allPublicPuzzlesDesc.filter(
+      (puzzle) =>
+        puzzle.printDate !== currentPuzzle.printDate &&
+        puzzle.clueType === currentPuzzle.clueType &&
+        puzzle.difficulty !== currentPuzzle.difficulty
+    );
+    const sameDifficulty = allPublicPuzzlesDesc.filter(
+      (puzzle) =>
+        puzzle.printDate !== currentPuzzle.printDate &&
+        puzzle.difficulty === currentPuzzle.difficulty &&
+        puzzle.clueType !== currentPuzzle.clueType
+    );
+    const fallbackRecent = allPublicPuzzlesDesc.filter(
+      (puzzle) => puzzle.printDate !== currentPuzzle.printDate
+    );
+
+    const seen = new Set<string>();
+    const result: MinuteCrypticPuzzle[] = [];
+
+    for (const bucket of [
+      sameTypeAndDifficulty,
+      sameType,
+      sameDifficulty,
+      fallbackRecent,
+    ]) {
+      for (const puzzle of bucket) {
+        if (seen.has(puzzle.printDate)) continue;
+        seen.add(puzzle.printDate);
+        result.push(puzzle);
+        if (result.length >= count) {
+          return result;
+        }
+      }
+    }
+
+    return result;
+  }
+);
+
 export type UnlimitedPuzzle = Pick<
   MinuteCrypticPuzzle,
   "id" | "clue" | "answer" | "hintLevels" | "clueType" | "difficulty" | "explanation"
