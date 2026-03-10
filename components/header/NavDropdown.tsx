@@ -44,10 +44,10 @@ export function NavDropdown({ config }: { config: NavDropdownConfig }) {
 
       {/* Dropdown panel */}
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-1 rounded-xl border border-slate-700 bg-slate-900 p-3 shadow-2xl">
-          <div className="grid grid-cols-2 gap-x-4 gap-y-0">
+        <div className="absolute left-0 top-full z-50 mt-1 w-[480px] rounded-xl border border-slate-700 bg-slate-900 p-4 shadow-2xl">
+          <div className="grid grid-cols-2 gap-x-6">
             {config.sections.map((section) => (
-              <div key={section.title} className="min-w-[200px]">
+              <div key={section.title}>
                 <p className="mb-1.5 px-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">
                   {section.title}
                 </p>
