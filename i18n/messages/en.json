@@ -1,40 +1,5 @@
 {
-  "Header": {
-    "links": [
-      {
-        "name": "Daily Cryptic",
-        "href": "/daily-cryptic"
-      },
-      {
-        "name": "Today's Clue",
-        "href": "/minute-cryptic-today"
-      },
-      {
-        "name": "Archive",
-        "href": "/minute-cryptic"
-      },
-      {
-        "name": "Beginner Guide",
-        "href": "/cryptic-crossword-for-beginners"
-      },
-      {
-        "name": "Clue Types",
-        "href": "/cryptic-clue-types"
-      },
-      {
-        "name": "Unlimited",
-        "href": "/minute-cryptic-unlimited"
-      },
-      {
-        "name": "How to Solve",
-        "href": "/how-to-play-minute-cryptic"
-      },
-      {
-        "name": "FAQ",
-        "href": "/minute-cryptic-faq"
-      }
-    ]
-  },
+  "Header": {},
   "Footer": {
     "Copyright": "Copyright (c) {year} {name}. All rights reserved.",
     "PrivacyPolicy": "Privacy Policy",
