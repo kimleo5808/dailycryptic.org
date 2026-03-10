@@ -57,6 +57,50 @@ export const CLUE_TYPE_TOPICS: Record<MinuteCrypticClueType, TopicConfig> = {
     detailFocus:
       "When you review a double definition clue, focus on whether both meanings feel natural, independent, and equally fair for the answer you chose.",
   },
+  "hidden-word": {
+    label: "Hidden Word Clues",
+    shortLabel: "Hidden Word",
+    href: "/cryptic-clue-types/hidden-word",
+    description:
+      "Learn how hidden word clues conceal the answer inside the clue text itself.",
+    detailBody:
+      "Hidden word clues are often the easiest cryptic clue type because the answer is spelled out in plain sight, buried across adjacent words in the clue. They reward careful letter-by-letter scanning and teach visual precision.",
+    detailFocus:
+      "When you review a hidden word clue, focus on the indicator, the exact letter run, and whether the definition confirms the answer independently.",
+  },
+  reversal: {
+    label: "Reversal Clues",
+    shortLabel: "Reversal",
+    href: "/cryptic-clue-types/reversal",
+    description:
+      "Learn how reversal clues ask you to read a word or phrase backwards.",
+    detailBody:
+      "Reversal clues turn a word or phrase backwards to produce the answer. They teach directional thinking and are especially interesting because the indicator language changes depending on whether the clue is across or down in a grid.",
+    detailFocus:
+      "When you review a reversal clue, focus on the direction indicator, identify the source word, and verify the reversed string matches the answer.",
+  },
+  homophone: {
+    label: "Homophone Clues",
+    shortLabel: "Homophone",
+    href: "/cryptic-clue-types/homophone",
+    description:
+      "Learn how homophone clues use sound-alike words to reach the answer.",
+    detailBody:
+      "Homophone clues rely on pronunciation rather than spelling. The answer sounds like another word or phrase indicated in the clue. They teach you to think about words as sounds, not just as letter sequences.",
+    detailFocus:
+      "When you review a homophone clue, focus on the hearing indicator, identify the sound-alike pair, and confirm the definition supports the answer.",
+  },
+  deletion: {
+    label: "Deletion Clues",
+    shortLabel: "Deletion",
+    href: "/cryptic-clue-types/deletion",
+    description:
+      "Learn how deletion clues remove letters from a word to form the answer.",
+    detailBody:
+      "Deletion clues remove one or more letters from a source word to produce the answer. They come in several forms — beheadment, curtailment, and internal deletion — each with its own indicator language.",
+    detailFocus:
+      "When you review a deletion clue, focus on the deletion type, identify the source word, determine which letter is removed, and verify the result.",
+  },
 };
 
 export const DIFFICULTY_TOPICS: Record<

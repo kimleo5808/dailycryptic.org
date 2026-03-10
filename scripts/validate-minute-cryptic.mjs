@@ -9,6 +9,10 @@ const VALID_TYPES = new Set([
   "charade",
   "container",
   "double-definition",
+  "hidden-word",
+  "reversal",
+  "homophone",
+  "deletion",
 ]);
 const VALID_DIFFICULTY = new Set(["easy", "medium", "hard"]);
 

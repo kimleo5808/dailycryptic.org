@@ -26,6 +26,10 @@
               "name": "Unlimited"
             },
             {
+              "href": "/daily-solution",
+              "name": "Daily Solutions"
+            },
+            {
               "href": "/minute-cryptic/easy",
               "name": "Easy Clues"
             },
@@ -61,6 +65,73 @@
             {
               "href": "/minute-cryptic-faq",
               "name": "FAQ"
+            }
+          ]
+        },
+        {
+          "title": "Clue Types",
+          "links": [
+            {
+              "href": "/cryptic-clue-types/anagram",
+              "name": "Anagram"
+            },
+            {
+              "href": "/cryptic-clue-types/charade",
+              "name": "Charade"
+            },
+            {
+              "href": "/cryptic-clue-types/container",
+              "name": "Container"
+            },
+            {
+              "href": "/cryptic-clue-types/double-definition",
+              "name": "Double Definition"
+            },
+            {
+              "href": "/cryptic-clue-types/hidden-word",
+              "name": "Hidden Word"
+            },
+            {
+              "href": "/cryptic-clue-types/reversal",
+              "name": "Reversal"
+            },
+            {
+              "href": "/cryptic-clue-types/homophone",
+              "name": "Homophone"
+            },
+            {
+              "href": "/cryptic-clue-types/deletion",
+              "name": "Deletion"
+            }
+          ]
+        },
+        {
+          "title": "Tools",
+          "links": [
+            {
+              "href": "/cryptic-crossword-solver",
+              "name": "Clue Solver"
+            },
+            {
+              "href": "/crossword-word-finder",
+              "name": "Word Finder"
+            }
+          ]
+        },
+        {
+          "title": "Reference",
+          "links": [
+            {
+              "href": "/cryptic-abbreviations",
+              "name": "Abbreviations"
+            },
+            {
+              "href": "/common-crossword-answers",
+              "name": "Common Answers"
+            },
+            {
+              "href": "/cryptic-glossary",
+              "name": "Glossary"
             }
           ]
         },

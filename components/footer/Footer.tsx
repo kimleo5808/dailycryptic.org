@@ -12,7 +12,7 @@ export default async function Footer() {
 
   return (
     <footer className="mt-12 w-full border-t border-slate-800 bg-slate-900 text-slate-300">
-      <div className="mx-auto grid max-w-7xl gap-x-6 gap-y-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:px-8 xl:gap-x-10">
+      <div className="mx-auto grid max-w-7xl gap-x-5 gap-y-8 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-3 lg:grid-cols-[1.6fr_repeat(7,1fr)] lg:px-8 xl:gap-x-6">
         {/* About column */}
         <div>
           <h2 className="font-heading text-xl font-bold text-white">

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-25T12:00:00.000Z",
+  "lastUpdated": "2026-03-10T12:00:00.000Z",
   "puzzles": [
     {
       "id": 1,
@@ -2380,6 +2380,414 @@
         "Starts with B, 5 letters."
       ],
       "explanation": "The surface suggests space travel. \"Launch\" also means to kick off — BEGIN."
+    },
+    {
+      "id": 141,
+      "printDate": "2026-07-05",
+      "publishDate": "2026-07-05",
+      "status": "scheduled",
+      "clue": "Menace found in three athletes (6)",
+      "answer": "THREAT",
+      "clueType": "hidden-word",
+      "difficulty": "easy",
+      "hintLevels": [
+        "The answer is hiding inside the clue text.",
+        "Look across the word boundaries.",
+        "Found in \"tHREe AThletes\" — span those letters.",
+        "Starts with T, 6 letters."
+      ],
+      "explanation": "Hidden word: the letters T-H-R-E-A-T are concealed across \"tHREe AThletes.\" The definition is \"menace.\""
+    },
+    {
+      "id": 142,
+      "printDate": "2026-07-06",
+      "publishDate": "2026-07-06",
+      "status": "scheduled",
+      "clue": "Nobleman found in pearly gates (4)",
+      "answer": "EARL",
+      "clueType": "hidden-word",
+      "difficulty": "easy",
+      "hintLevels": [
+        "The answer is hidden inside the clue.",
+        "Look within one of the words.",
+        "Focus on 'pearly' — the answer is inside it.",
+        "Hidden in p-EARL-y. An earl is a nobleman."
+      ],
+      "explanation": "Hidden word: EARL is concealed inside 'pEARLy'. 'Found in' signals a hidden word. 'Nobleman' is the definition — an earl is a British title of nobility."
+    },
+    {
+      "id": 143,
+      "printDate": "2026-07-07",
+      "publishDate": "2026-07-07",
+      "status": "scheduled",
+      "clue": "Rogue found in ultra scale model (6)",
+      "answer": "RASCAL",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "The answer is hidden in the clue text.",
+        "\"Found in\" is your indicator.",
+        "Look across two adjacent words.",
+        "Hidden across 'ultRASCALe' — RASCAL spans 'ultra scale'."
+      ],
+      "explanation": "Hidden word: RASCAL is concealed across 'ultRASCALe'. 'Found in' signals a hidden word. 'Rogue' is the definition."
+    },
+    {
+      "id": 144,
+      "printDate": "2026-07-08",
+      "publishDate": "2026-07-08",
+      "status": "scheduled",
+      "clue": "Weapon concealed in capital stolen (6)",
+      "answer": "PISTOL",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "The answer is hiding in the clue text.",
+        "\"Concealed in\" is your indicator.",
+        "Look across 'capital stolen' carefully.",
+        "Hidden across 'caPISTOLen' — PISTOL spans the two words."
+      ],
+      "explanation": "Hidden word: PISTOL is concealed across 'caPISTOLen'. 'Concealed in' signals a hidden word. 'Weapon' is the definition."
+    },
+    {
+      "id": 145,
+      "printDate": "2026-07-09",
+      "publishDate": "2026-07-09",
+      "status": "scheduled",
+      "clue": "Fruit some of the grapes are (4)",
+      "answer": "PEAR",
+      "clueType": "hidden-word",
+      "difficulty": "easy",
+      "hintLevels": [
+        "The answer is hiding in the clue.",
+        "\"Some of\" signals a hidden word.",
+        "Look across \"graPEs ARe.\"",
+        "Starts with P, 4 letters."
+      ],
+      "explanation": "Hidden word: P-E-A-R is concealed in \"graPEs ARe.\" \"Some of\" is the hidden word indicator. \"Fruit\" is the definition."
+    },
+    {
+      "id": 146,
+      "printDate": "2026-07-10",
+      "publishDate": "2026-07-10",
+      "status": "scheduled",
+      "clue": "Vegetable within the spinach arrived (4)",
+      "answer": "CHAR",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "The answer is hiding inside the clue text.",
+        "\"Within\" signals a hidden word.",
+        "Look across \"spinaCH ARrived.\"",
+        "Starts with C, 4 letters."
+      ],
+      "explanation": "Hidden word: C-H-A-R is concealed in \"spinaCH ARrived.\" \"Within\" is the indicator. \"Vegetable\" is the definition — chard is a leafy green, and CHAR can refer to a type of fish or to partially burn."
+    },
+    {
+      "id": 147,
+      "printDate": "2026-07-11",
+      "publishDate": "2026-07-11",
+      "status": "scheduled",
+      "clue": "Rodents going back in STAR formation (4)",
+      "answer": "RATS",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of small animals.",
+        "\"Going back\" signals a reversal.",
+        "Reverse the letters in STAR.",
+        "STAR backwards = ?"
+      ],
+      "explanation": "STAR reversed gives RATS. \"Going back\" is the reversal indicator. \"Rodents\" is the definition."
+    },
+    {
+      "id": 148,
+      "printDate": "2026-07-12",
+      "publishDate": "2026-07-12",
+      "status": "scheduled",
+      "clue": "Container returned as cooking vessel (3)",
+      "answer": "POT",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of something you cook in.",
+        "\"Returned\" signals a reversal.",
+        "What word for container reverses to a cooking vessel?",
+        "TOP reversed = ?"
+      ],
+      "explanation": "TOP (container/lid) reversed gives POT. \"Returned\" is the reversal indicator. \"Cooking vessel\" is the definition."
+    },
+    {
+      "id": 149,
+      "printDate": "2026-07-13",
+      "publishDate": "2026-07-13",
+      "status": "scheduled",
+      "clue": "Dog brought back as a deity (3)",
+      "answer": "GOD",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a supreme being.",
+        "\"Brought back\" signals a reversal.",
+        "What word for dog reversed gives a deity?",
+        "DOG reversed = ?"
+      ],
+      "explanation": "DOG reversed gives GOD. \"Brought back\" is the reversal indicator. \"Deity\" is the definition."
+    },
+    {
+      "id": 150,
+      "printDate": "2026-07-14",
+      "publishDate": "2026-07-14",
+      "status": "scheduled",
+      "clue": "Exist when evil is reflected (4)",
+      "answer": "LIVE",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a word meaning exist or be alive.",
+        "\"Reflected\" signals a reversal.",
+        "Reverse the letters of EVIL.",
+        "EVIL backwards = ?"
+      ],
+      "explanation": "EVIL reversed gives LIVE. \"Reflected\" is the reversal indicator. \"Exist\" is the definition."
+    },
+    {
+      "id": 151,
+      "printDate": "2026-07-15",
+      "publishDate": "2026-07-15",
+      "status": "scheduled",
+      "clue": "Compensation coming back from the drawer (6)",
+      "answer": "REWARD",
+      "clueType": "reversal",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of money you receive for helping.",
+        "\"Coming back\" signals a reversal.",
+        "Drawer is not furniture here — it's someone who draws.",
+        "DRAWER reversed = ?"
+      ],
+      "explanation": "DRAWER reversed gives REWARD. \"Coming back\" is the reversal indicator. \"Compensation\" is the definition. The misdirection is that \"drawer\" reads like furniture but is actually a word to be reversed."
+    },
+    {
+      "id": 152,
+      "printDate": "2026-07-16",
+      "publishDate": "2026-07-16",
+      "status": "scheduled",
+      "clue": "Portions returned as a strap (5)",
+      "answer": "PARTS",
+      "clueType": "reversal",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of sections or pieces.",
+        "\"Returned\" signals a reversal.",
+        "What word for strap reverses to give portions?",
+        "STRAP reversed = ?"
+      ],
+      "explanation": "STRAP reversed gives PARTS. \"Returned\" is the reversal indicator. \"Portions\" is the definition."
+    },
+    {
+      "id": 153,
+      "printDate": "2026-07-17",
+      "publishDate": "2026-07-17",
+      "status": "scheduled",
+      "clue": "Meat we hear is a stake (5)",
+      "answer": "STEAK",
+      "clueType": "homophone",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a cut of beef.",
+        "\"We hear\" signals a homophone.",
+        "What sounds like STAKE but is food?",
+        "STAKE sounds like STEAK."
+      ],
+      "explanation": "STEAK sounds like STAKE. \"We hear\" is the homophone indicator. \"Meat\" is the definition."
+    },
+    {
+      "id": 154,
+      "printDate": "2026-07-18",
+      "publishDate": "2026-07-18",
+      "status": "scheduled",
+      "clue": "Correct, reportedly, to compose (5)",
+      "answer": "WRITE",
+      "clueType": "homophone",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of putting words on paper.",
+        "\"Reportedly\" signals a homophone.",
+        "What sounds like RIGHT but means compose?",
+        "RIGHT sounds like WRITE."
+      ],
+      "explanation": "WRITE sounds like RIGHT (correct). \"Reportedly\" is the homophone indicator. \"To compose\" is the definition."
+    },
+    {
+      "id": 155,
+      "printDate": "2026-07-19",
+      "publishDate": "2026-07-19",
+      "status": "scheduled",
+      "clue": "Flower that sounds like quarrels (4)",
+      "answer": "ROSE",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a common garden flower.",
+        "\"Sounds like\" signals a homophone.",
+        "What flower sounds like a word meaning arguments?",
+        "ROSE sounds like ROWS (quarrels)."
+      ],
+      "explanation": "Homophone: ROSE sounds like ROWS (quarrels/arguments). 'Sounds like' signals a homophone. 'Flower' is the definition."
+    },
+    {
+      "id": 156,
+      "printDate": "2026-07-20",
+      "publishDate": "2026-07-20",
+      "status": "scheduled",
+      "clue": "Bare reportedly is an animal (4)",
+      "answer": "BEAR",
+      "clueType": "homophone",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a large furry animal.",
+        "\"Reportedly\" signals a homophone.",
+        "What sounds like BARE but is an animal?",
+        "BARE sounds like BEAR."
+      ],
+      "explanation": "BEAR sounds like BARE. \"Reportedly\" is the homophone indicator. \"Animal\" is the definition."
+    },
+    {
+      "id": 157,
+      "printDate": "2026-07-21",
+      "publishDate": "2026-07-21",
+      "status": "scheduled",
+      "clue": "Cash heard as something owed (5)",
+      "answer": "DOUGH",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of slang for money.",
+        "\"Heard\" signals a homophone.",
+        "What slang word for money sounds like DOE?",
+        "DOE (female deer) sounds like DOUGH."
+      ],
+      "explanation": "DOUGH sounds like DOE. \"Heard\" is the homophone indicator. \"Cash\" is the definition — dough is slang for money."
+    },
+    {
+      "id": 158,
+      "printDate": "2026-07-22",
+      "publishDate": "2026-07-22",
+      "status": "scheduled",
+      "clue": "Bored by the sound of a plank (5)",
+      "answer": "BOARD",
+      "clueType": "homophone",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a flat piece of wood.",
+        "\"By the sound of\" signals a homophone.",
+        "What sounds like BORED but is a piece of wood?",
+        "BORED sounds like BOARD."
+      ],
+      "explanation": "BOARD sounds like BORED. \"By the sound of\" is the homophone indicator. \"Plank\" is the definition."
+    },
+    {
+      "id": 159,
+      "printDate": "2026-07-23",
+      "publishDate": "2026-07-23",
+      "status": "scheduled",
+      "clue": "Warmth from wheat losing its head (4)",
+      "answer": "HEAT",
+      "clueType": "deletion",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of something warm.",
+        "\"Losing its head\" signals a beheadment — remove the first letter.",
+        "Take the first letter off WHEAT.",
+        "W-HEAT: remove W to get HEAT."
+      ],
+      "explanation": "WHEAT without its first letter W gives HEAT. \"Losing its head\" signals beheadment. \"Warmth\" is the definition."
+    },
+    {
+      "id": 160,
+      "printDate": "2026-07-24",
+      "publishDate": "2026-07-24",
+      "status": "scheduled",
+      "clue": "Weapon is sword cut short (5)",
+      "answer": "SWORD",
+      "clueType": "deletion",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a bladed weapon.",
+        "\"Cut short\" signals curtailment — remove the last letter.",
+        "What word becomes a weapon when curtailed?",
+        "SWORDS without S = SWORD."
+      ],
+      "explanation": "SWORDS without its last letter S gives SWORD. \"Cut short\" signals curtailment. \"Weapon\" is the definition."
+    },
+    {
+      "id": 161,
+      "printDate": "2026-07-25",
+      "publishDate": "2026-07-25",
+      "status": "scheduled",
+      "clue": "Territory from bland without the leader (4)",
+      "answer": "LAND",
+      "clueType": "deletion",
+      "difficulty": "easy",
+      "hintLevels": [
+        "Think of a word meaning territory or ground.",
+        "\"Without the leader\" signals beheadment.",
+        "Remove the first letter of BLAND.",
+        "B-LAND: remove B to get LAND."
+      ],
+      "explanation": "BLAND without its first letter B gives LAND. \"Without the leader\" signals beheadment. \"Territory\" is the definition."
+    },
+    {
+      "id": 162,
+      "printDate": "2026-07-26",
+      "publishDate": "2026-07-26",
+      "status": "scheduled",
+      "clue": "Cereal nearly becomes grain (4)",
+      "answer": "BRAN",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a word for grain husks.",
+        "\"Nearly\" signals curtailment — remove the last letter.",
+        "What word becomes BRAN when curtailed?",
+        "BRAND without D = BRAN."
+      ],
+      "explanation": "BRAND without its last letter D gives BRAN. \"Nearly\" signals curtailment. \"Grain\" is the definition."
+    },
+    {
+      "id": 163,
+      "printDate": "2026-07-27",
+      "publishDate": "2026-07-27",
+      "status": "scheduled",
+      "clue": "Cereal brand is almost the entire world (5)",
+      "answer": "GLOBE",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "Think of a word meaning the world or a sphere.",
+        "\"Almost\" signals curtailment — remove the last letter.",
+        "What word curtailed gives GLOBE?",
+        "GLOBES without S = GLOBE."
+      ],
+      "explanation": "GLOBES without its last letter S gives GLOBE. \"Almost\" signals curtailment. \"World\" is the definition."
+    },
+    {
+      "id": 164,
+      "printDate": "2026-07-28",
+      "publishDate": "2026-07-28",
+      "status": "scheduled",
+      "clue": "Heartless flair makes something just (4)",
+      "answer": "FAIR",
+      "clueType": "deletion",
+      "difficulty": "hard",
+      "hintLevels": [
+        "Think of a word meaning just or equitable.",
+        "\"Heartless\" signals internal deletion — remove the middle letter.",
+        "Remove the middle letter from FLAIR.",
+        "F-L-A-I-R: remove L (the heart) = FAIR."
+      ],
+      "explanation": "FLAIR without its middle letter L gives FAIR. \"Heartless\" signals internal deletion. \"Just\" is the definition."
     }
   ]
 }

@@ -29,7 +29,7 @@ const FAQ_ITEMS = [
   {
     question: "How many cryptic clue types are there?",
     answer:
-      "There are many named clue mechanisms across the wider cryptic tradition, but most beginners should focus on a smaller core set first: anagram, charade, container, and double definition.",
+      "There are eight main clue families covered here: anagram, charade, container, double definition, hidden word, reversal, homophone, and deletion. Most beginners should start with anagrams and hidden words before moving to the others.",
   },
   {
     question: "Which clue type is easiest for beginners?",
@@ -57,9 +57,9 @@ export async function generateMetadata({
 
   return constructMetadata({
     page: "ClueTypes",
-    title: "Cryptic Clue Types Explained: Anagram, Charade, Container and More",
+    title: "Cryptic Clue Types Explained: All 8 Families with Examples",
     description:
-      "Learn the main types of cryptic clues, how to recognize them, and where to practice each one on DailyCryptic.",
+      "Learn the main types of cryptic clues — anagram, charade, container, double definition, hidden word, reversal, homophone, and deletion — and where to practice each one.",
     keywords: [
       "cryptic clue types",
       "types of cryptic clues",
@@ -91,7 +91,7 @@ export default async function CrypticClueTypesPage({
         data={collectionPageSchema({
           name: "Cryptic Clue Types",
           description:
-            "A guide to the main cryptic clue families on DailyCryptic, including anagram, charade, container, and double definition clues.",
+            "A guide to all eight cryptic clue families on DailyCryptic, including anagram, charade, container, double definition, hidden word, reversal, homophone, and deletion clues.",
           url: `${BASE_URL}/cryptic-clue-types`,
         })}
       />
@@ -109,7 +109,7 @@ export default async function CrypticClueTypesPage({
       <ContentHero
         eyebrow="Clue Type Guide"
         title="Cryptic Clue Types"
-        description="Cryptic clue types are categories based on how the wordplay works. If you can identify the clue family early, you stop guessing randomly and start applying the right solving method."
+        description="Cryptic clue types are categories based on how the wordplay works. There are eight main families — from anagrams to homophones. If you can identify the clue family early, you stop guessing randomly and start applying the right solving method."
       />
 
       <div className="mt-8 space-y-8">
@@ -136,11 +136,10 @@ export default async function CrypticClueTypesPage({
           </BodyText>
           <SubHeading>A Focused Set for Practical Learning</SubHeading>
           <BodyText>
-            This page focuses on the four most useful types for the current
-            DailyCryptic puzzle set. That keeps the learning route focused and
-            immediately practical — recognition help matters more than a full
-            taxonomy at this stage. Once you can identify the core families, you
-            can apply the right solving workflow on real puzzles right away.
+            This page covers all eight main clue families used in cryptic
+            crosswords. Beginners should start with anagrams and hidden words,
+            which offer the most transparent mechanisms, then work through the
+            others in the suggested order below.
           </BodyText>
         </ContentSection>
 
@@ -189,10 +188,11 @@ export default async function CrypticClueTypesPage({
             ))}
           </div>
           <BodyText>
-            Anagrams are often the best place to begin because they make letter
-            accounting visible. Charades build confidence with segmentation and
-            order. Container clues teach structure. Double definition clues
-            train fairness in meaning rather than assembly.
+            Anagrams and hidden words are the best places to begin because
+            they make the mechanism most visible. Charades build segmentation
+            skills. Containers teach positional structure. Double definitions
+            train semantic fairness. Reversals, homophones, and deletions
+            round out the full toolkit.
           </BodyText>
         </ContentSection>
 
@@ -215,11 +215,11 @@ export default async function CrypticClueTypesPage({
 
         <ContentSection title="Which Types Are Best for Beginners?" id="best-types-for-beginners">
           <BodyText>
-            The clearest order for most users is: anagram first, charade second,
-            container third, double definition fourth. That order moves from
-            visible letter operations toward more semantic subtlety. It gives
-            beginners enough repetition to understand each family before
-            introducing looser or more deceptive clue behaviour.
+            The clearest order for most users is: hidden words and anagrams
+            first (they make the mechanism visible), then charades and
+            containers (they teach structural parsing), then double
+            definitions and homophones (they require semantic thinking), and
+            finally reversals and deletions (they refine letter precision).
           </BodyText>
           <CalloutBox type="highlight" title="It Is a Training Sequence, Not a Law">
             If one clue type clicks early for you, lean into it — but keep the
@@ -256,12 +256,17 @@ export default async function CrypticClueTypesPage({
           <StepList
             items={[
               {
-                title: "Anagram — Start Here",
+                title: "Hidden Word — The Easiest Start",
+                description:
+                  "The answer is already written in the clue text. Perfect for learning to spot indicators and definitions for the first time.",
+              },
+              {
+                title: "Anagram — Build Letter Discipline",
                 description:
                   "Provides the clearest mechanical proof. Indicator, fodder, count, and definition can all be checked independently.",
               },
               {
-                title: "Charade — Build Segmentation Skills",
+                title: "Charade — Learn Segmentation",
                 description:
                   "Move here once you are comfortable splitting clues into parts. Teaches you to read clue structure rather than just surface meaning.",
               },
@@ -273,7 +278,22 @@ export default async function CrypticClueTypesPage({
               {
                 title: "Double Definition — Test Semantic Fairness",
                 description:
-                  "Save these for when you are ready to judge meaning more carefully instead of relying on visible letter work.",
+                  "Learn to judge meaning carefully instead of relying on visible letter work. Two meanings, one answer.",
+              },
+              {
+                title: "Reversal — Train Directional Awareness",
+                description:
+                  "A simple operation with subtle misdirection. Read a word backwards and confirm the definition matches.",
+              },
+              {
+                title: "Homophone — Think in Sound",
+                description:
+                  "The only clue type based on pronunciation. Learn to spot hearing indicators and find sound-alike pairs.",
+              },
+              {
+                title: "Deletion — Precision Letter Removal",
+                description:
+                  "Remove specific letters from a word. Covers beheadment, curtailment, and internal deletion with distinct indicators.",
               },
             ]}
           />
@@ -292,16 +312,16 @@ export default async function CrypticClueTypesPage({
         <RelatedLinks
           links={[
             {
+              href: "/cryptic-clue-types/hidden-word",
+              title: "Hidden word clues",
+              description:
+                "Start with the easiest clue type — the answer is hidden in the clue text.",
+            },
+            {
               href: "/cryptic-clue-types/anagram",
               title: "Anagram clues",
               description:
-                "Start with the most beginner-friendly clue family in the archive.",
-            },
-            {
-              href: "/cryptic-clue-types/charade",
-              title: "Charade clues",
-              description:
-                "Learn how cryptic clues build answers from smaller parts.",
+                "Build letter discipline with the most popular beginner-friendly clue family.",
             },
             {
               href: "/cryptic-crossword-for-beginners",

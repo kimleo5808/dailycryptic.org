@@ -46,6 +46,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/minute-cryptic-unlimited",
             description: "Practice with unlimited clues",
           },
+          {
+            name: "Daily Solutions",
+            href: "/daily-solution",
+            description: "Answer breakdowns for every clue",
+          },
         ],
       },
       {
@@ -59,7 +64,12 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           {
             name: "Clue Types",
             href: "/cryptic-clue-types",
-            description: "Anagram, charade, container, and more",
+            description: "All 8 clue families explained",
+          },
+          {
+            name: "Indicators",
+            href: "/cryptic-indicators",
+            description: "Signal words for each clue type",
           },
           {
             name: "How to Solve",
@@ -70,6 +80,41 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "FAQ",
             href: "/minute-cryptic-faq",
             description: "Common questions answered",
+          },
+        ],
+      },
+      {
+        title: "Tools",
+        links: [
+          {
+            name: "Clue Solver",
+            href: "/cryptic-crossword-solver",
+            description: "Search clues by text or pattern",
+          },
+          {
+            name: "Word Finder",
+            href: "/crossword-word-finder",
+            description: "Find words by letter pattern",
+          },
+        ],
+      },
+      {
+        title: "Reference",
+        links: [
+          {
+            name: "Abbreviations",
+            href: "/cryptic-abbreviations",
+            description: "Letter codes used in wordplay",
+          },
+          {
+            name: "Common Answers",
+            href: "/common-crossword-answers",
+            description: "Most frequent crossword words",
+          },
+          {
+            name: "Glossary",
+            href: "/cryptic-glossary",
+            description: "Every cryptic term explained",
           },
         ],
       },

@@ -3,7 +3,11 @@ export type MinuteCrypticClueType =
   | "anagram"
   | "charade"
   | "container"
-  | "double-definition";
+  | "double-definition"
+  | "hidden-word"
+  | "reversal"
+  | "homophone"
+  | "deletion";
 
 export type MinuteCrypticStatus = "published" | "scheduled" | "draft";
 

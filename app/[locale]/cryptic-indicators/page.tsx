@@ -404,22 +404,22 @@ export default async function CrypticIndicatorsPage({
         <RelatedLinks
           links={[
             {
-              href: "/cryptic-clue-types/anagram",
-              title: "Anagram clues",
+              href: "/cryptic-clue-types",
+              title: "All clue types",
               description:
-                "See how indicator language works inside a specific clue family.",
+                "See how indicators work inside each of the eight clue families.",
             },
             {
-              href: "/cryptic-clue-types/container",
-              title: "Container clues",
+              href: "/cryptic-clue-types/hidden-word",
+              title: "Hidden word clues",
               description:
-                "Practice insertion logic and indicator direction in detail.",
+                "The easiest clue type — learn how containment indicators signal a hidden answer.",
             },
             {
-              href: "/how-to-play-minute-cryptic",
-              title: "How to solve minute cryptic",
+              href: "/cryptic-clue-types/deletion",
+              title: "Deletion clues",
               description:
-                "Apply indicator reading inside the full daily solving workflow.",
+                "Explore beheadment, curtailment, and internal deletion indicators.",
             },
           ]}
         />

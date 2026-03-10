@@ -38,7 +38,7 @@ const FAQ_ITEMS = [
   {
     question: "What is the easiest cryptic clue type to learn first?",
     answer:
-      "Anagram clues are often the best starting point because they make the indicator, letter pool, and answer length easier to verify than more structural clue types.",
+      "Hidden word clues are the easiest because the answer is literally written in the clue text. Anagram clues are the next best starting point because the indicator, letter pool, and answer length are all easy to verify.",
   },
   {
     question: "Should beginners use hints?",
@@ -104,6 +104,13 @@ const SEVEN_DAY_ROUTINE = [
 
 const CLUE_TYPE_CARDS = [
   {
+    href: "/cryptic-clue-types/hidden-word",
+    title: "Hidden word clues",
+    badge: "easiest" as const,
+    description:
+      "The answer is spelled out inside the clue text. The most transparent mechanism — perfect for your very first cryptic clue.",
+  },
+  {
     href: "/cryptic-clue-types/anagram",
     title: "Anagram clues",
     badge: "easiest" as const,
@@ -130,6 +137,27 @@ const CLUE_TYPE_CARDS = [
     badge: "beginner" as const,
     description:
       "Two meanings point to the same answer. Sharpens your ability to demand fair definitions instead of settling for something that merely sounds close.",
+  },
+  {
+    href: "/cryptic-clue-types/reversal",
+    title: "Reversal clues",
+    badge: "beginner" as const,
+    description:
+      "Read a word backwards to find the answer. A simple operation that trains directional awareness.",
+  },
+  {
+    href: "/cryptic-clue-types/homophone",
+    title: "Homophone clues",
+    badge: "intermediate" as const,
+    description:
+      "The answer sounds like another word. The only clue type based on pronunciation rather than spelling.",
+  },
+  {
+    href: "/cryptic-clue-types/deletion",
+    title: "Deletion clues",
+    badge: "intermediate" as const,
+    description:
+      "Remove specific letters from a word to form the answer. Covers beheadment, curtailment, and internal deletion.",
   },
 ];
 
@@ -285,7 +313,7 @@ export default async function CrypticCrosswordForBeginnersPage({
         </ContentSection>
 
         <ContentSection
-          title="The 4 Best Clue Types for Beginners"
+          title="The 8 Cryptic Clue Types"
           id="best-clue-types-for-beginners"
         >
           <div className="grid gap-4 sm:grid-cols-2">
@@ -309,9 +337,9 @@ export default async function CrypticCrosswordForBeginnersPage({
             ))}
           </div>
           <CalloutBox type="highlight" title="Recommended Learning Order">
-            Anagram → Charade → Container → Double Definition. This order moves
-            from visible letter operations toward more semantic subtlety, giving
-            you a solid base before introducing looser clue behaviour.
+            Hidden Word → Anagram → Charade → Container → Double Definition →
+            Reversal → Homophone → Deletion. Start with the most transparent
+            mechanisms and work toward more subtle ones.
           </CalloutBox>
         </ContentSection>
 
@@ -450,7 +478,7 @@ export default async function CrypticCrosswordForBeginnersPage({
               href: "/cryptic-clue-types",
               title: "Cryptic clue types",
               description:
-                "Learn the four clue families that matter most for new solvers.",
+                "Explore all eight clue families with examples and solving methods.",
             },
             {
               href: "/minute-cryptic/easy",
