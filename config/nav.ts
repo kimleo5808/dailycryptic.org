@@ -16,7 +16,7 @@ export type NavDropdownConfig = {
 };
 
 export const NAV_STANDALONE_LINKS: NavLink[] = [
-  { name: "Daily Cryptic", href: "/daily-cryptic" },
+  { name: "Home", href: "/" },
 ];
 
 export const NAV_DROPDOWNS: NavDropdownConfig[] = [
@@ -26,6 +26,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
       {
         title: "Minute Cryptic",
         links: [
+          {
+            name: "Daily Cryptic",
+            href: "/daily-cryptic",
+            description: "About the daily cryptic format",
+          },
           {
             name: "Today's Clue",
             href: "/minute-cryptic-today",

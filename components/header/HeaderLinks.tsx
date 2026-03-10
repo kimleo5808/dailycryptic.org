@@ -16,8 +16,8 @@ const HeaderLinks = () => {
           href={link.href}
           prefetch={true}
           className={cn(
-            "rounded-lg px-3 py-2 text-slate-300 transition-colors hover:bg-slate-800 hover:text-white",
-            pathname === link.href && "bg-slate-800 font-semibold text-white"
+            "rounded-lg px-3 py-2 text-slate-400 transition-colors hover:text-white",
+            pathname === link.href && "font-semibold text-white"
           )}
         >
           {link.name}

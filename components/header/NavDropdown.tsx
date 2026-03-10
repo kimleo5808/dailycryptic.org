@@ -27,8 +27,8 @@ export function NavDropdown({ config }: { config: NavDropdownConfig }) {
       {/* Trigger */}
       <button
         className={cn(
-          "flex cursor-pointer items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-800 hover:text-white",
-          isActive && "bg-slate-800 text-white"
+          "flex cursor-pointer items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-slate-400 transition-colors hover:text-white",
+          isActive && "font-semibold text-white"
         )}
         aria-expanded={open}
         aria-haspopup="true"
