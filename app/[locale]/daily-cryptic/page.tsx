@@ -29,6 +29,7 @@ import {
   Zap,
 } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 type Params = Promise<{ locale: string }>;
@@ -165,6 +166,20 @@ export default async function DailyCrypticPage() {
               </Link>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* ============ Hero Illustration ============ */}
+      <section className="pb-4 pt-8">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <Image
+            src="/minute-cryptic-hero.webp"
+            alt="A calendar with a cryptic clue pinned to it, surrounded by floating letter tiles, hint cards, and a streak counter — illustrating the daily cryptic routine"
+            width={1680}
+            height={720}
+            className="w-full rounded-2xl"
+            priority
+          />
         </div>
       </section>
 
