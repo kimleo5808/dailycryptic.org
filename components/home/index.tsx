@@ -4,6 +4,7 @@ import {
   getRecentMinuteCryptics,
 } from "@/lib/minute-cryptic-data";
 import dayjs from "dayjs";
+import Image from "next/image";
 import Link from "next/link";
 
 const QUICK_LINKS = [
@@ -193,6 +194,19 @@ export default async function HomeComponent() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="pb-4">
+        <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
+          <Image
+            src="/daily-cryptic-hero.webp"
+            alt="A cryptic crossword clue card on a desk with scattered letter tiles and a lightbulb, illustrating the daily cryptic solving experience"
+            width={1680}
+            height={720}
+            className="w-full rounded-2xl"
+            priority={false}
+          />
         </div>
       </section>
 
