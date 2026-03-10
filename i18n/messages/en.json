@@ -6,12 +6,20 @@
         "href": "/daily-cryptic"
       },
       {
+        "name": "Today's Clue",
+        "href": "/minute-cryptic-today"
+      },
+      {
         "name": "Archive",
         "href": "/minute-cryptic"
       },
       {
-        "name": "Today's Clue",
-        "href": "/minute-cryptic-today"
+        "name": "Beginner Guide",
+        "href": "/cryptic-crossword-for-beginners"
+      },
+      {
+        "name": "Clue Types",
+        "href": "/cryptic-clue-types"
       },
       {
         "name": "Unlimited",
@@ -55,12 +63,36 @@
             {
               "href": "/minute-cryptic-unlimited",
               "name": "Unlimited"
+            },
+            {
+              "href": "/minute-cryptic/easy",
+              "name": "Easy Clues"
+            },
+            {
+              "href": "/minute-cryptic/medium",
+              "name": "Medium Clues"
+            },
+            {
+              "href": "/minute-cryptic/hard",
+              "name": "Hard Clues"
             }
           ]
         },
         {
           "title": "Resources",
           "links": [
+            {
+              "href": "/cryptic-crossword-for-beginners",
+              "name": "Beginner Guide"
+            },
+            {
+              "href": "/cryptic-clue-types",
+              "name": "Clue Types"
+            },
+            {
+              "href": "/cryptic-indicators",
+              "name": "Cryptic Indicators"
+            },
             {
               "href": "/how-to-play-minute-cryptic",
               "name": "How to Solve"
