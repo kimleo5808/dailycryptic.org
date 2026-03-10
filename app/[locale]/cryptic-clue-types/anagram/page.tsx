@@ -1,10 +1,14 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
   ExamplePuzzleGrid,
+  IndicatorTagList,
   RelatedLinks,
   SimpleFaq,
+  StepList,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -120,38 +124,43 @@ export default async function AnagramCluesPage({
             called fodder. The clue also contains an indicator that tells you
             those letters are unstable or should be changed in some way.
           </BodyText>
+          <SubHeading>Why the Structure Is Visible</SubHeading>
           <BodyText>
             What makes anagram clues useful for beginners is that the structure
             is visible once you know what to look for. You can identify the
             indicator, isolate the fodder, count the letters, and then test the
-            result against the definition.
+            result against the definition — four independent checks in sequence.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Why Anagram Clues Are Good for Beginners" id="why-anagrams-are-good-for-beginners">
+          <SubHeading>Built-In Letter Discipline</SubHeading>
           <BodyText>
             Anagram clues teach letter discipline quickly. If the fodder has
             five letters, your answer must also have five letters. That creates
-            a reliable checking habit and reduces vague guessing. They also make
-            clue structure easier to see because the indicator often announces
-            itself more clearly than in other clue families.
+            a reliable checking habit and reduces vague guessing.
           </BodyText>
+          <SubHeading>Multiple Ways to Verify</SubHeading>
           <BodyText>
             Beginners often improve fast on anagrams because the clue offers
-            multiple ways to verify a candidate answer. That kind of redundancy
-            is valuable when you are still learning what cryptic proof feels
-            like.
+            multiple ways to verify a candidate answer — indicator, fodder count,
+            definition match. That kind of redundancy is valuable when you are
+            still learning what cryptic proof actually feels like.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Spot Anagram Indicators" id="spot-anagram-indicators">
           <BodyText>
             Anagram indicators are words that suggest change, movement,
-            disorder, or mixing. Common examples include mixed, wild, altered,
-            broken, scrambled, and arranged. These are not magical words on
-            their own, but they are strong signals that the adjacent letters may
-            need to be rebuilt.
+            disorder, or mixing. These are not magical words on their own, but
+            they are strong signals that the adjacent letters may need to be
+            rebuilt.
           </BodyText>
+          <IndicatorTagList
+            tags={["mixed", "wild", "altered", "broken", "scrambled", "arranged", "confused", "upset", "chaotic", "disturbed", "disordered", "anew"]}
+            color="blue"
+          />
+          <SubHeading>Context Is Everything</SubHeading>
           <BodyText>
             The important habit is context. Not every energetic word is really
             serving as an indicator in a given clue. Ask whether the clue reads
@@ -169,41 +178,58 @@ export default async function AnagramCluesPage({
           <BodyText>
             Fodder means the letters that will be rearranged. Once you suspect
             an anagram clue, your next task is to isolate the exact letter pool.
-            This is where many beginners make mistakes. They include a nearby
-            word that does not belong or drop a letter because the answer they
-            want almost works.
           </BodyText>
+          <SubHeading>The Most Common Beginner Error</SubHeading>
           <BodyText>
-            The fix is strict counting. Take the candidate fodder, normalize the
-            letters, and compare its length to the answer length. If the numbers
-            do not match, the parse is wrong.
+            Many beginners make mistakes here. They include a nearby word that
+            does not belong, or drop a letter because the answer they want
+            almost works. The fix is strict counting: take the candidate fodder,
+            normalize the letters, and compare its length to the answer length.
+            If the numbers do not match, the parse is wrong.
           </BodyText>
-          <BodyText>
-            Beginners improve quickly once they stop being flexible with fodder.
+          <CalloutBox type="warning" title="No Borrowing Allowed">
             If the clue only gives you a certain letter set, you are not allowed
             to silently borrow from nearby words or ignore inconvenient letters.
             Precision here prevents almost every avoidable near miss.
-          </BodyText>
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="A Step-by-Step Method for Solving Anagram Clues" id="solve-anagrams-step-by-step">
+          <StepList
+            items={[
+              {
+                title: "Find the Indicator",
+                description:
+                  "Look for a word suggesting change, disorder, or movement. Confirm it is grammatically acting on the adjacent letter group.",
+              },
+              {
+                title: "Collect the Fodder Letters",
+                description:
+                  "Isolate the exact letter pool the indicator is pointing at. Do not add or remove any letters.",
+              },
+              {
+                title: "Apply the Answer Length as a Hard Constraint",
+                description:
+                  "Count the fodder letters and confirm they match the enumeration. If not, your fodder boundary is wrong.",
+              },
+              {
+                title: "Build Possible Outputs",
+                description:
+                  "Rearrange the letters to find valid English words that fit the count.",
+              },
+              {
+                title: "Match the Definition",
+                description:
+                  "Choose the candidate that matches the direct definition side of the clue. Letter logic alone is not a complete solve.",
+              },
+            ]}
+          />
+          <SubHeading>The Final Definition Check</SubHeading>
           <BodyText>
-            First, find the indicator. Second, collect the fodder letters.
-            Third, apply the answer length as a hard constraint. Fourth, build
-            possible outputs from the letters. Fifth, choose the candidate that
-            matches the definition.
-          </BodyText>
-          <BodyText>
-            If you work in this order, you reduce wasted effort. You also avoid
-            the classic beginner trap of finding a neat word from the letters
-            and assuming the clue must be correct simply because the anagram is
-            technically possible.
-          </BodyText>
-          <BodyText>
-            The final definition check is what turns an anagram attempt into a
-            complete solve. Many words can be built from a given letter pool.
-            The clue is only solved when one of those words also fits the direct
-            meaning side cleanly.
+            Many words can be built from a given letter pool. The clue is only
+            solved when one of those words also fits the direct meaning side
+            cleanly. This final check is what turns an anagram attempt into a
+            complete solve.
           </BodyText>
         </ContentSection>
 
@@ -212,15 +238,14 @@ export default async function AnagramCluesPage({
             Because anagram clues often feel mechanically generous, beginners
             sometimes forget that they are still cryptic clues, not letter
             games. The clue writer is not asking you to produce any valid word
-            from the letters. The writer is asking for the one word that also
+            from the letters — the writer is asking for the one word that also
             satisfies the definition.
           </BodyText>
-          <BodyText>
-            That distinction is what makes anagram practice useful beyond the
-            clue itself. It trains you to treat definition as proof, not as a
+          <CalloutBox type="highlight" title="The Deeper Lesson">
+            Anagram practice trains you to treat definition as proof, not as a
             loose suggestion. Once that habit sets in, your solving quality
-            improves across all clue types, not just anagrams.
-          </BodyText>
+            improves across all clue types — not just anagrams.
+          </CalloutBox>
         </ContentSection>
 
         <ExamplePuzzleGrid
@@ -231,27 +256,31 @@ export default async function AnagramCluesPage({
         />
 
         <ContentSection title="Common Anagram Mistakes" id="common-anagram-mistakes">
-          <BodyText>
-            The most common mistake is ignoring the definition once the letters
-            seem to fit. Another is stretching the fodder by adding or dropping
-            letters that are not really justified by the clue. A third is
-            stopping at a plausible answer instead of a proven one.
-          </BodyText>
+          <CalloutBox type="warning" title="Mistakes to Avoid">
+            <ul className="mt-1 list-inside list-disc space-y-1">
+              <li>Ignoring the definition once the letters seem to fit</li>
+              <li>Stretching the fodder by adding or dropping unjustified letters</li>
+              <li>Stopping at a plausible answer instead of a proven one</li>
+            </ul>
+          </CalloutBox>
+          <SubHeading>The Full Parse Out Loud</SubHeading>
           <BodyText>
             A useful correction is to force yourself to say the full parse out
-            loud: indicator, fodder, answer, definition. If any one of those
+            loud: indicator → fodder → answer → definition. If any one of those
             elements feels vague while you say it, the clue probably needs more
             work before you submit.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Practice Anagram Clues Efficiently" id="practice-anagram-clues">
+          <SubHeading>Small Batches, Clear Review</SubHeading>
           <BodyText>
-            The best way to practice anagrams is in small batches. Solve two or
-            three in a row, compare the indicator language, and note whether you
-            missed the clue because of the fodder, the definition, or the final
-            count. This makes the review transferable.
+            Solve two or three anagrams in a row, compare the indicator
+            language, and note whether you missed the clue because of the fodder,
+            the definition, or the final count. This makes the review
+            transferable to the next session.
           </BodyText>
+          <SubHeading>When to Move On</SubHeading>
           <BodyText>
             If you can already solve most easy anagrams, move into mixed clue
             sets where anagrams appear alongside charades and containers. That

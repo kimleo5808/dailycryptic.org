@@ -1,9 +1,12 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
   RelatedLinks,
   SimpleFaq,
+  StepList,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -131,39 +134,37 @@ export default async function CrypticClueTypesPage({
             signals its structure. Learning clue types matters because the right
             category usually suggests the right solving workflow.
           </BodyText>
+          <SubHeading>A Focused Set for Practical Learning</SubHeading>
           <BodyText>
             This page focuses on the four most useful types for the current
             DailyCryptic puzzle set. That keeps the learning route focused and
-            immediately practical instead of turning into a long taxonomy that
-            beginners cannot yet apply.
-          </BodyText>
-          <BodyText>
-            That focus matters for SEO and for users. Searchers looking for
-            "cryptic clue types" usually want recognition help, not a full
-            encyclopedia of every possible mechanism ever used in cryptic
-            history. A compact system that maps directly to playable examples is
-            more useful than a larger but less actionable one.
+            immediately practical — recognition help matters more than a full
+            taxonomy at this stage. Once you can identify the core families, you
+            can apply the right solving workflow on real puzzles right away.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Why Learning Clue Types Helps" id="why-learning-clue-types-helps">
+          <SubHeading>Choosing Better Actions, Earlier</SubHeading>
           <BodyText>
             Strong solvers do not merely know more definitions. They recognize
             clue patterns earlier and therefore choose better solving actions.
             Once you suspect a clue is an anagram, charade, container, or double
             definition, you already know what kind of evidence to look for.
           </BodyText>
+          <SubHeading>Reducing Wasted Effort</SubHeading>
           <BodyText>
             Pattern recognition reduces wasted effort. Instead of trying five
             unrelated ideas, you focus on one mechanism and ask whether the
             clue's language supports it. That shift alone often cuts down the
             number of false starts dramatically.
           </BodyText>
+          <SubHeading>Building Confidence</SubHeading>
           <BodyText>
-            It also helps with confidence. When a clue looks difficult, many
-            beginners assume they need inspiration. More often they need a
-            clearer category. Once the clue type becomes visible, the solving
-            path becomes narrower and therefore more manageable.
+            When a clue looks difficult, many beginners assume they need
+            inspiration. More often they need a clearer category. Once the clue
+            type becomes visible, the solving path becomes narrower and therefore
+            more manageable.
           </BodyText>
         </ContentSection>
 
@@ -181,6 +182,9 @@ export default async function CrypticClueTypesPage({
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {topic.description}
                 </p>
+                <p className="mt-3 text-xs font-semibold text-primary">
+                  See examples →
+                </p>
               </Link>
             ))}
           </div>
@@ -190,14 +194,10 @@ export default async function CrypticClueTypesPage({
             order. Container clues teach structure. Double definition clues
             train fairness in meaning rather than assembly.
           </BodyText>
-          <BodyText>
-            These four families also map well to a practical learning path. They
-            cover movement, assembly, structure, and semantics, which together
-            form a strong base for almost all early cryptic solving.
-          </BodyText>
         </ContentSection>
 
         <ContentSection title="How Clue Type Differs from Difficulty" id="clue-type-vs-difficulty">
+          <SubHeading>Mechanism vs. Resistance</SubHeading>
           <BodyText>
             Clue type tells you what kind of wordplay is happening. Difficulty
             tells you how obvious or demanding the clue is likely to feel. An
@@ -205,12 +205,12 @@ export default async function CrypticClueTypesPage({
             if the definition is subtle. A charade can be easy with simple parts
             or harder if abbreviations and segmentation are less obvious.
           </BodyText>
-          <BodyText>
-            This distinction matters because many users confuse topic pages with
-            difficulty pages. If you want to study a mechanism, use a clue-type
-            page. If you want to control resistance and volume, use an easy,
-            medium, or hard archive page instead.
-          </BodyText>
+          <CalloutBox type="tip" title="Use the Right Page for the Right Goal">
+            If you want to study a mechanism, use a clue-type page. If you want
+            to control resistance and volume, use an easy, medium, or hard
+            archive page instead. Mixing these up is one of the most common
+            reasons beginners feel stuck.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="Which Types Are Best for Beginners?" id="best-types-for-beginners">
@@ -219,17 +219,17 @@ export default async function CrypticClueTypesPage({
             container third, double definition fourth. That order moves from
             visible letter operations toward more semantic subtlety. It gives
             beginners enough repetition to understand each family before
-            introducing looser or more deceptive clue behavior.
+            introducing looser or more deceptive clue behaviour.
           </BodyText>
-          <BodyText>
-            This is not a law. It is a training sequence. If one clue type
-            clicks early for you, lean into it, but keep the overall path
-            structured. Skill compounds faster when categories are learned in
-            batches instead of random fragments.
-          </BodyText>
+          <CalloutBox type="highlight" title="It Is a Training Sequence, Not a Law">
+            If one clue type clicks early for you, lean into it — but keep the
+            overall path structured. Skill compounds faster when categories are
+            learned in batches instead of random fragments.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="How to Practice by Type" id="practice-by-type">
+          <SubHeading>Focus Before You Mix</SubHeading>
           <BodyText>
             Practice works best when clue type and difficulty are both under
             control. Do three easy anagrams in a row. Then switch to charades
@@ -237,33 +237,51 @@ export default async function CrypticClueTypesPage({
             the answer from outside to inside. For double definitions, force
             yourself to restate both meanings before you check.
           </BodyText>
+          <SubHeading>What a Good Study Block Looks Like</SubHeading>
+          <BodyText>
+            Solve two or three clues from one family, then pause and review what
+            repeated. Was the main issue clue segmentation, indicator reading,
+            definition testing, or order control? If you can name the repeated
+            issue, the practice set has already become productive.
+          </BodyText>
+          <SubHeading>When to Start Mixing</SubHeading>
           <BodyText>
             Mixing practice is useful later, but early on it helps to compare
             related examples directly. That is how clue types stop being labels
             and become usable solving instincts.
           </BodyText>
-          <BodyText>
-            A good study block is small. Solve two or three clues from one
-            family, then pause and review what repeated. Was the main issue clue
-            segmentation, indicator reading, definition testing, or order
-            control? If you can name the repeated issue, the practice set has
-            already become productive.
-          </BodyText>
         </ContentSection>
 
         <ContentSection title="A Suggested Learning Order for New Solvers" id="suggested-learning-order">
+          <StepList
+            items={[
+              {
+                title: "Anagram — Start Here",
+                description:
+                  "Provides the clearest mechanical proof. Indicator, fodder, count, and definition can all be checked independently.",
+              },
+              {
+                title: "Charade — Build Segmentation Skills",
+                description:
+                  "Move here once you are comfortable splitting clues into parts. Teaches you to read clue structure rather than just surface meaning.",
+              },
+              {
+                title: "Container — Sharpen Positional Thinking",
+                description:
+                  "Add containers when you want to practice order and direction control inside a more structural framework.",
+              },
+              {
+                title: "Double Definition — Test Semantic Fairness",
+                description:
+                  "Save these for when you are ready to judge meaning more carefully instead of relying on visible letter work.",
+              },
+            ]}
+          />
           <BodyText>
-            Start with anagrams because they provide the clearest mechanical
-            proof. Move to charades once you are comfortable splitting clues
-            into parts. Add containers when you want to sharpen positional
-            thinking. Save double definitions for when you are ready to judge
-            fairness more carefully instead of relying on visible letter work.
-          </BodyText>
-          <BodyText>
-            This sequence is not meant to be rigid forever. It is a training
-            scaffold. Once you have basic confidence, you should mix types more
-            freely. But in the early stage, ordered exposure helps the clue
-            families feel distinct instead of blurred together.
+            This sequence is a training scaffold, not a permanent rule. Once
+            you have basic confidence in all four families, mix them freely.
+            But in the early stage, ordered exposure helps the clue families
+            feel distinct instead of blurred together.
           </BodyText>
         </ContentSection>
 

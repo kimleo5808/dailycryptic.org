@@ -1,10 +1,13 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
   ExamplePuzzleGrid,
   RelatedLinks,
   SimpleFaq,
+  StepList,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -111,6 +114,7 @@ export default async function DoubleDefinitionCluesPage({
             { href: "#why-double-definitions-feel-different", label: "Why they feel different" },
             { href: "#recognize-two-definitions", label: "How to recognize two definitions" },
             { href: "#test-a-candidate-answer", label: "How to test a candidate answer" },
+            { href: "#double-definitions-train-fairness", label: "Why they train fairness" },
             { href: "#real-double-definition-examples", label: "Real examples" },
             { href: "#common-double-definition-mistakes", label: "Common mistakes" },
             { href: "#avoid-forcing-the-second-meaning", label: "Avoid forcing the second meaning" },
@@ -125,6 +129,7 @@ export default async function DoubleDefinitionCluesPage({
             the clue may not have obvious operational language. Instead, the
             answer succeeds because it satisfies two senses at once.
           </BodyText>
+          <SubHeading>Useful Training for Semantic Discipline</SubHeading>
           <BodyText>
             That makes these clues useful training for semantic discipline. They
             force you to ask whether both meanings are fair instead of stopping
@@ -133,6 +138,7 @@ export default async function DoubleDefinitionCluesPage({
         </ContentSection>
 
         <ContentSection title="Why Double Definition Clues Feel Different" id="why-double-definitions-feel-different">
+          <SubHeading>Meaning Over Mechanics</SubHeading>
           <BodyText>
             Most clue types ask you to do something with letters. Double
             definitions often ask you to recognize the same word in two
@@ -140,21 +146,19 @@ export default async function DoubleDefinitionCluesPage({
             clue is short, but it also removes many of the explicit signals that
             help beginners in more mechanical clues.
           </BodyText>
+          <SubHeading>The Fairness Standard</SubHeading>
           <BodyText>
             That is why these clues are often solved by fairness testing. If one
             meaning works beautifully and the other feels strained, you are
-            probably not finished yet.
-          </BodyText>
-          <BodyText>
-            This clue type often feels more literary than mechanical, but the
-            discipline is still rigorous. You are not allowed to keep a weak
-            second meaning just because the first one is attractive. That is why
-            double definitions are such a good training ground for semantic
-            honesty.
+            probably not finished yet. This clue type often feels more literary
+            than mechanical, but the discipline is still rigorous — you are not
+            allowed to keep a weak second meaning just because the first one is
+            attractive.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Recognize Two Definitions" id="recognize-two-definitions">
+          <SubHeading>The Balanced Clue Structure</SubHeading>
           <BodyText>
             The clue often feels balanced or split into two meaning zones rather
             than one meaning zone plus one operation zone. There may be no clear
@@ -162,66 +166,80 @@ export default async function DoubleDefinitionCluesPage({
             should prompt a different question: can one answer satisfy both
             senses naturally?
           </BodyText>
+          <SubHeading>When to Stop Looking for Hidden Machinery</SubHeading>
           <BodyText>
             This is also where misdirection happens. A clue can sound too plain,
             making the solver overcomplicate it. Sometimes the right move is not
             to search for hidden machinery, but to test whether two clean
             meanings are already present.
           </BodyText>
+          <SubHeading>The Honesty Test</SubHeading>
           <BodyText>
-            That is why double definitions are such good honesty tests. They
-            punish the habit of overbuilding explanations that the clue never
-            actually asked for. If the clue is simple, the solve may also need
-            to stay simple.
-          </BodyText>
-          <BodyText>
-            A good working question is this: if I remove the idea of letter
+            Double definitions are such good honesty tests because they punish
+            the habit of overbuilding explanations the clue never actually asked
+            for. A good working question is this: if I remove the idea of letter
             mechanics entirely, does the clue still hold together as two fair
-            meanings? If the answer is yes, you may really be in double
-            definition territory.
+            meanings? If yes, you may really be in double definition territory.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Test a Candidate Answer" id="test-a-candidate-answer">
           <BodyText>
-            First, check the answer against the first meaning. Then do the same
-            against the second meaning independently. If one side only works
-            through vague association, reject the answer. The standard is not
-            close enough. The standard is fair support from both sides.
+            The standard is not "close enough." The standard is fair support
+            from both sides, independently tested.
           </BodyText>
+          <StepList
+            items={[
+              {
+                title: "Check the First Meaning",
+                description:
+                  "Test your candidate answer against the first definition phrase. Does it fit cleanly — not approximately?",
+              },
+              {
+                title: "Check the Second Meaning Independently",
+                description:
+                  "Now test the same answer against the second phrase, as if you had never thought of the first. If one side only works through vague association, reject the answer.",
+              },
+              {
+                title: "Restate Both Meanings in Your Own Words",
+                description:
+                  "Without copying the clue, explain both meanings clearly. If you cannot do that, the clue is not yet solved to a useful standard.",
+              },
+            ]}
+          />
+          <SubHeading>The Hindsight Illusion</SubHeading>
           <BodyText>
             This testing habit is especially important because double definition
             clues create strong hindsight illusions. Once you know the answer,
             both meanings can seem obvious even if the second one was weak
-            during the solve.
-          </BodyText>
-          <BodyText>
-            A practical rule is to restate both meanings in your own words. If
-            you cannot do that clearly, the clue is not yet solved to a useful
-            standard. This short verbal check is often enough to catch forced
-            readings before you commit.
+            during the solve. The verbal restatement check catches this before
+            you commit.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Why Double Definitions Train Fairness" id="double-definitions-train-fairness">
+          <SubHeading>Semantic Accuracy Over Structural Cleverness</SubHeading>
           <BodyText>
             More mechanical clue types let you lean on structure heavily. Double
-            definitions push you toward semantic accuracy instead. They teach you
-            to respect nuance in meaning and to reject answers that only match
-            one half of the clue strongly.
+            definitions push you toward semantic accuracy instead. They teach
+            you to respect nuance in meaning and to reject answers that only
+            match one half of the clue strongly.
           </BodyText>
+          <SubHeading>Building Restraint</SubHeading>
           <BodyText>
-            That makes them valuable even for solvers who prefer more visible
-            wordplay. If your definition discipline is weak, double definition
-            practice can expose that quickly.
+            These clues improve restraint. Many cryptic mistakes come from
+            trying to manufacture a clever explanation when a clue is actually
+            asking for two plain, fair senses of the same word. Double
+            definition practice teaches you to stop decorating the clue and
+            start checking whether the language already supports the answer
+            cleanly.
           </BodyText>
-          <BodyText>
-            They also improve restraint. Many cryptic mistakes come from trying
-            to manufacture a clever explanation when a clue is actually asking
-            for two plain, fair senses of the same word. Double definition
-            practice teaches you to stop decorating the clue and start checking
-            whether the language already supports the answer cleanly.
-          </BodyText>
+          <CalloutBox type="highlight" title="Even If You Prefer Letter Wordplay">
+            Double definition practice is valuable for all solver types. If your
+            definition discipline is weak, these clues expose that quickly —
+            making them one of the best tools for identifying gaps in your
+            overall solving process.
+          </CalloutBox>
         </ContentSection>
 
         <ExamplePuzzleGrid
@@ -232,56 +250,42 @@ export default async function DoubleDefinitionCluesPage({
         />
 
         <ContentSection title="Common Double Definition Mistakes" id="common-double-definition-mistakes">
+          <CalloutBox type="warning" title="Patterns to Watch For">
+            <ul className="mt-1 list-inside list-disc space-y-1">
+              <li>Accepting one strong meaning and forcing the second after the fact</li>
+              <li>Assuming every short clue with no clear indicator is a double definition</li>
+              <li>Trusting your first answer because the clue "looks easy"</li>
+            </ul>
+          </CalloutBox>
+          <SubHeading>Stay Open to Other Clue Types</SubHeading>
           <BodyText>
-            The most common mistake is accepting one strong meaning and forcing
-            the second after the fact. Another is assuming every short clue with
-            no clear indicator must be a double definition. The fix is to demand
-            clean support from both meanings and to stay open to the possibility
-            that another clue type is at work.
-          </BodyText>
-          <BodyText>
-            Another mistake is assuming that because a clue feels simple, your
-            first answer must be right. Double definitions often look easier
-            than they are. The more compact the clue, the more important it is
-            to be strict about fairness.
+            The fix is to demand clean support from both meanings and to stay
+            open to the possibility that another clue type is at work. The more
+            compact the clue, the more important it is to be strict about
+            fairness before committing.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Practice Double Definition Clues Efficiently" id="practice-double-definition-clues">
+          <SubHeading>Write Both Meanings After Each Solve</SubHeading>
           <BodyText>
             Practice these clues by writing both meanings down after each solve.
             If one side still feels vague when you restate it, revisit the clue
             before moving on. This habit trains exactly the semantic precision
             that the clue type is designed to test.
           </BodyText>
+          <SubHeading>Pair With Medium Archive Practice</SubHeading>
           <BodyText>
-            Double definitions also pair well with medium archive practice
-            because that difficulty range often exposes whether you are solving
-            by fairness or by hopeful intuition.
-          </BodyText>
-          <BodyText>
-            One strong method is to pause after the solve and write the two
-            meanings in your own words without copying the clue. If you can do
-            that cleanly, you understood the clue. If not, review again before
-            moving on.
-          </BodyText>
-        </ContentSection>
-
-        <ContentSection title="When Double Definitions Become Advanced" id="when-double-definitions-become-advanced">
-          <BodyText>
-            Double definition clues become harder when one meaning is slightly
-            less common or when the surface strongly encourages you to search for
-            a mechanical explanation that is not really there. This is where the
-            clue type becomes a higher-level test of restraint.
-          </BodyText>
-          <BodyText>
-            Advanced solving here does not mean inventing more theory. It means
-            trusting fair meaning more confidently and forcing weak semantic
-            matches less often. That is a subtle skill, but it is a real one.
+            Double definitions pair well with medium archive practice because
+            that difficulty range often exposes whether you are solving by
+            fairness or by hopeful intuition. If you can write both meanings
+            clearly without copying the clue, you understood it. If not, review
+            again before moving on.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Avoid Forcing the Second Meaning" id="avoid-forcing-the-second-meaning">
+          <SubHeading>The Paraphrase Test</SubHeading>
           <BodyText>
             The safest test is to separate the clue into two short paraphrases
             and ask whether each one could stand alone as a fair pointer to the
@@ -289,27 +293,30 @@ export default async function DoubleDefinitionCluesPage({
             should stay skeptical. Good double definitions feel fair in both
             directions, not only in hindsight.
           </BodyText>
+          <SubHeading>The Rival Candidate Method</SubHeading>
           <BodyText>
-            Another useful habit is to compare your candidate answer against at
-            least one rival. If a second word fits the first meaning equally
-            well, the clue is telling you to be stricter about the second. This
-            is one of the best ways to stop semantic laziness before it settles
-            into your solving process.
+            Compare your candidate answer against at least one rival. If a
+            second word fits the first meaning equally well, the clue is telling
+            you to be stricter about the second. This is one of the best ways
+            to stop semantic laziness before it settles into your solving
+            process.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How Double Definitions Fit Into a Broader Solving Routine" id="double-definitions-in-broader-routine">
+          <SubHeading>Mixed Practice Reveals the Contrast</SubHeading>
           <BodyText>
             These clues work best when they sit inside mixed practice rather
             than in total isolation. Solve a few more structural clues, then
             come back to one double definition and notice how different the
             proof standard feels. That contrast makes the lesson clearer.
           </BodyText>
+          <SubHeading>The Review Clue Role</SubHeading>
           <BodyText>
-            In practical terms, double definitions are excellent review clues.
-            They remind you that cryptic solving is not only about operations on
-            letters. It is also about fair language, controlled meaning, and the
-            discipline to reject answers that only sound right at first glance.
+            Double definitions are excellent review clues. They remind you that
+            cryptic solving is not only about operations on letters. It is also
+            about fair language, controlled meaning, and the discipline to
+            reject answers that only sound right at first glance.
           </BodyText>
         </ContentSection>
 

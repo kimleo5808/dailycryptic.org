@@ -1,10 +1,13 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
   DifficultyArchiveList,
   RelatedLinks,
   SimpleFaq,
+  StepList,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -127,6 +130,7 @@ export default async function HardMinuteCrypticPage({
         />
 
         <ContentSection title="What Makes a Clue Hard?" id="what-makes-a-clue-hard">
+          <SubHeading>Tighter Standards, Not Unfamiliar Types</SubHeading>
           <BodyText>
             Hard clues usually combine tighter definition control, subtler
             surface misdirection, and a higher penalty for small parse errors.
@@ -134,46 +138,52 @@ export default async function HardMinuteCrypticPage({
             Solvers often feel the difference not because the clue type is
             unknown, but because the clue demands much cleaner execution.
           </BodyText>
+          <SubHeading>A Well-Reviewed Miss Teaches More Than an Easy Win</SubHeading>
           <BodyText>
-            That is why hard practice should not be measured only by win rate. A
-            well-reviewed hard miss can teach more than an easy unexamined
-            solve.
+            That is why hard practice should not be measured only by win rate.
+            A well-reviewed hard miss can teach more than an easy unexamined
+            solve. The goal is not to succeed on every attempt — it is to
+            extract useful information from every attempt.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How Experienced Solvers Approach Hard Clues" id="experienced-solvers-approach">
+          <SubHeading>Structure Before Confidence</SubHeading>
           <BodyText>
             Experienced solvers prioritize structure before confidence and proof
             before speed. They do not treat surface elegance as evidence. They
             test definitions carefully, insist on mechanical fit, and stay
             willing to reset when a clue path becomes shaky.
           </BodyText>
+          <SubHeading>Precision Against Misleading Intuition</SubHeading>
           <BodyText>
             This mindset matters because hard clues often generate strong but
             misleading intuitions. Precision protects you from following those
             intuitions too far.
           </BodyText>
+          <SubHeading>When to Pause and Rebuild</SubHeading>
           <BodyText>
             Hard clues are also where calmness matters. If you become too eager
             to force progress, you usually make the clue worse. The best
             advanced solvers know when to pause, reset, and rebuild the clue
-            from first principles.
+            from first principles — and they do it without treating the reset as
+            a failure.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="When to Persist and When to Use a Hint" id="persist-or-use-a-hint">
+          <SubHeading>One Structured Reset Before Hint Use</SubHeading>
           <BodyText>
             A good rule for hard clues is one structured reset before hint use.
             Re-evaluate the definition boundary, re-read the likely indicator,
-            and check enumeration again. If the clue still has no coherent path,
-            reveal one hint level and retry immediately. Hints should unblock,
-            not replace, the solve.
+            and check enumeration again.
           </BodyText>
-          <BodyText>
-            This matters because hard clues can easily consume too much time if
-            you stay attached to one bad answer path. A reset is not giving up.
-            It is part of advanced technique.
-          </BodyText>
+          <CalloutBox type="tip" title="How to Use a Hint Well">
+            If the clue still has no coherent path after resetting, reveal one
+            hint level and retry immediately. Hints should unblock, not replace,
+            the solve. A reset is not giving up — it is part of advanced
+            technique.
+          </CalloutBox>
         </ContentSection>
 
         <DifficultyArchiveList
@@ -184,119 +194,127 @@ export default async function HardMinuteCrypticPage({
         />
 
         <ContentSection title="How to Review Failed Solves" id="review-failed-solves">
+          <SubHeading>Specific Diagnosis Over General Frustration</SubHeading>
           <BodyText>
-            The best review question is not why did I miss in general. It is
-            which step failed. Did you misread the definition, misidentify the
+            The best review question is not "why did I miss in general?" It is
+            "which step failed?" Did you misread the definition, misidentify the
             mechanism, ignore letter count, or place parts in the wrong order?
             Specific diagnosis turns frustration into usable training data.
           </BodyText>
+          <CalloutBox type="tip" title="Log One Recurring Weakness Only">
+            After each hard clue, write down one specific issue — not a general
+            complaint about difficulty. If the note is specific enough to
+            influence your next solve, the miss was useful. That is the standard
+            to aim for.
+          </CalloutBox>
+          <SubHeading>Analytical, Not Emotional</SubHeading>
           <BodyText>
-            After each hard clue, log one recurring weakness only. That keeps
-            the review loop concrete and prevents overload.
-          </BodyText>
-          <BodyText>
-            Good hard-clue review should feel analytical, not emotional. If the
-            note you write after a failed clue is specific enough to influence
-            the next solve, the miss was useful. If it is only a complaint about
-            difficulty, the review has not yet done its job.
+            Good hard-clue review should feel analytical. The information in a
+            failed solve is only accessible if you can read it clearly. Emotion
+            blocks that read. Calmness enables it.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Why Hard Clues Are Worth Practicing" id="why-hard-clues-are-worth-practicing">
+          <SubHeading>Resilience, Precision, and Post-Solve Honesty</SubHeading>
           <BodyText>
             Hard clues build resilience, precision, and post-solve honesty. They
             show whether your solving habits still work when the clue becomes
             less generous. For that reason, hard practice is valuable even when
             it lowers your success rate in the short term.
           </BodyText>
+          <SubHeading>Stopping the Archive From Becoming Too Comfortable</SubHeading>
           <BodyText>
-            They also stop the archive from becoming too comfortable. Advanced
-            practice prevents your solving from turning into pattern-matching
-            without proof. Used carefully, hard clues keep your standards high.
-          </BodyText>
-          <BodyText>
-            Hard clues also create better review questions. When a clue resists
-            you, it forces you to inspect your process more closely. That level
-            of inspection is often where the most valuable adjustments happen.
+            Advanced practice prevents your solving from turning into
+            pattern-matching without proof. Used carefully, hard clues keep your
+            standards high and your review questions sharp.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How to Use Hard Clues Without Burning Out" id="use-hard-clues-without-burning-out">
-          <BodyText>
-            The best approach is controlled exposure. Do not run a long block of
-            hard clues unless you are deliberately training endurance. Instead,
-            mix one hard clue into a session that also contains medium review or
-            easier reinforcement. That keeps the session demanding without
-            making it unproductive.
-          </BodyText>
-          <BodyText>
-            Hard clues are most valuable when they sharpen your process, not
-            when they simply exhaust your attention. The right amount is enough
-            to challenge your habits while leaving enough energy to review the
-            explanation properly afterward.
-          </BodyText>
+          <CalloutBox type="tip" title="Controlled Exposure Works Better Than Long Streaks">
+            Mix one hard clue into a session that also contains medium review or
+            easier reinforcement. That keeps the session demanding without making
+            it unproductive. Hard clues are most valuable when they sharpen your
+            process — not when they simply exhaust your attention.
+          </CalloutBox>
+          <SubHeading>The Right Amount</SubHeading>
           <BodyText>
             If you notice that every hard clue session ends with random guessing,
             reduce the session size. Better one carefully reviewed hard clue than
-            five clues that dissolve into noise.
+            five clues that dissolve into noise. The right amount is enough to
+            challenge your habits while leaving enough energy to review the
+            explanation properly afterward.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="A Strong Hard-Clue Review Framework" id="hard-review-framework">
           <BodyText>
-            After a difficult clue, write three notes only: what I thought the
-            clue type was, where my parse first went wrong, and which signal I
-            should have respected sooner. This creates a compact record of
-            advanced mistakes without drowning you in detail.
+            After a difficult clue, write three notes only. This creates a
+            compact record of advanced mistakes without drowning you in detail.
           </BodyText>
+          <StepList
+            items={[
+              {
+                title: "Note Your Initial Clue Type Read",
+                description:
+                  "Write what clue family you thought it was and why. This forces you to articulate an assumption that may have been invisible during the solve.",
+              },
+              {
+                title: "Identify Where the Parse First Went Wrong",
+                description:
+                  "Was it the definition boundary, the mechanism, the letter count, or the word order? Name the exact step, not the general feeling.",
+              },
+              {
+                title: "Name the Signal You Should Have Noticed Sooner",
+                description:
+                  "Pick one indicator word or structural element that would have redirected your thinking earlier. This is your takeaway for the next clue.",
+              },
+            ]}
+          />
+          <SubHeading>When This Framework Starts Paying Off</SubHeading>
           <BodyText>
             If you keep that habit over multiple hard clues, you start to see
             which problems repeat. That is the point where advanced practice
-            becomes strategic instead of merely impressive.
-          </BodyText>
-        </ContentSection>
-
-        <ContentSection title="When Hard Clues Start Paying Off" id="when-hard-clues-pay-off">
-          <BodyText>
-            Hard clues start paying off when your review becomes specific and
-            transferable. If you can finish a difficult clue and identify one
-            principle that will help on the next one, the session was productive
-            even if the solve itself was messy.
-          </BodyText>
-          <BodyText>
-            That is the real purpose of advanced archive work on a site like
-            this. Not prestige. Not volume. Better standards, cleaner proof, and
-            stronger self-diagnosis.
+            becomes strategic instead of merely impressive. Hard clues start
+            paying off when your review becomes specific and transferable — not
+            prestige, not volume, but better standards and cleaner proof.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Common Mistakes Solvers Make on Hard Clues" id="hard-clue-mistakes">
+          <CalloutBox type="warning" title="Advanced Traps to Avoid">
+            <ul className="mt-1 list-inside list-disc space-y-1">
+              <li>Accepting vague definitions or partial parses because the clue "feels" hard</li>
+              <li>Overcommitting to the first clever idea that appears</li>
+              <li>Defending a wrong theory harder instead of resetting</li>
+              <li>Treating difficulty as a reason to lower proof standards</li>
+            </ul>
+          </CalloutBox>
+          <SubHeading>Hard Clues Punish Compromise</SubHeading>
           <BodyText>
-            The most common advanced mistake is treating difficulty as a reason
-            to lower standards. Solvers sometimes accept vague definitions,
-            partial parses, or answers that only work emotionally because the
-            clue feels tough. Hard clues punish that compromise sharply.
-          </BodyText>
-          <BodyText>
-            Another common problem is overcommitting to the first clever idea.
-            Hard clues often produce persuasive but wrong paths. If a clue stops
-            making mechanical sense, the correct response is to reset, not to
-            defend the original theory harder.
+            Hard clues often produce persuasive but wrong paths. The correct
+            response when a clue stops making mechanical sense is to reset —
+            not to defend the original theory. That is one of the clearest
+            differences between intermediate and advanced solving behaviour.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="How Hard Practice Fits Into a Weekly Routine" id="hard-practice-weekly-routine">
+          <SubHeading>Balance Over Dominance</SubHeading>
           <BodyText>
             Hard archive work is most effective when it sits inside a balanced
             week rather than dominating it. One or two hard clues surrounded by
             medium review and easier reinforcement usually teach more than long
             streaks of pure difficulty.
           </BodyText>
+          <SubHeading>Make the Lesson Repeatable</SubHeading>
           <BodyText>
             That balance matters because advanced training is only useful if you
-            can still review with clarity afterward. Use this page to stress-test
-            your process, then return to medium or mixed practice so the lesson
-            becomes repeatable instead of remaining a one-off struggle.
+            can still review with clarity afterward. Use this page to
+            stress-test your process, then return to medium or mixed practice
+            so the lesson becomes repeatable instead of remaining a one-off
+            struggle.
           </BodyText>
         </ContentSection>
 

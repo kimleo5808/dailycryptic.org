@@ -1,9 +1,12 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
+  IndicatorTagList,
   RelatedLinks,
   SimpleFaq,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -40,6 +43,51 @@ const FAQ_ITEMS = [
     question: "Do all cryptic clues have indicators?",
     answer:
       "Not always in an obvious form. Some clue families, especially double definitions, rely less on explicit indicator language than mechanical clue types do.",
+  },
+];
+
+const INDICATOR_OVERVIEW = [
+  {
+    id: "anagram-indicators",
+    label: "Anagram",
+    color: "blue" as const,
+    summary: "Signal that letters should be rearranged.",
+    examples: ["mixed", "wild", "broken"],
+  },
+  {
+    id: "container-indicators",
+    label: "Container",
+    color: "green" as const,
+    summary: "Signal that one part goes inside another.",
+    examples: ["in", "around", "holding"],
+  },
+  {
+    id: "reversal-indicators",
+    label: "Reversal",
+    color: "orange" as const,
+    summary: "Signal that letters are read backwards.",
+    examples: ["back", "returned", "reversed"],
+  },
+  {
+    id: "deletion-indicators",
+    label: "Deletion",
+    color: "purple" as const,
+    summary: "Signal that one or more letters are removed.",
+    examples: ["without", "losing", "headless"],
+  },
+  {
+    id: "hidden-word-indicators",
+    label: "Hidden Word",
+    color: "teal" as const,
+    summary: "Signal that the answer hides inside the clue text.",
+    examples: ["some of", "in", "part of"],
+  },
+  {
+    id: "homophone-indicators",
+    label: "Homophone",
+    color: "default" as const,
+    summary: "Signal that the answer sounds like another word.",
+    examples: ["heard", "reportedly", "we hear"],
   },
 ];
 
@@ -116,6 +164,40 @@ export default async function CrypticIndicatorsPage({
           ]}
         />
 
+        {/* Quick-reference overview grid */}
+        <section className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Quick Reference: 6 Indicator Types
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Jump to any section below, or use these cards as a fast reminder while solving.
+          </p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {INDICATOR_OVERVIEW.map((ind) => (
+              <a
+                key={ind.id}
+                href={`#${ind.id}`}
+                className="rounded-xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-sm"
+              >
+                <h3 className="text-sm font-bold text-foreground">{ind.label}</h3>
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  {ind.summary}
+                </p>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {ind.examples.map((ex) => (
+                    <span
+                      key={ex}
+                      className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground"
+                    >
+                      {ex}
+                    </span>
+                  ))}
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <ContentSection title="What Are Cryptic Indicators?" id="what-are-cryptic-indicators">
           <BodyText>
             A cryptic indicator is a word or phrase that points toward the
@@ -124,15 +206,15 @@ export default async function CrypticIndicatorsPage({
             hidden run, or think of a sound-alike form. Indicators matter
             because they narrow the set of possible operations quickly.
           </BodyText>
-          <BodyText>
-            The most important caution is that indicators are contextual. A word
-            that looks like a classic anagram signal in one clue might not be
-            functioning as an indicator in another. You have to test indicator,
-            structure, and definition together.
-          </BodyText>
+          <CalloutBox type="warning" title="Indicators Are Contextual">
+            A word that looks like a classic anagram signal in one clue might
+            not be functioning as an indicator in another. You have to test
+            indicator, structure, and definition together — never in isolation.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="Why Indicators Matter" id="why-indicators-matter">
+          <SubHeading>Turning Guessing Into Decision-Making</SubHeading>
           <BodyText>
             Indicators reduce blind guessing. If a clue contains language that
             strongly suggests rearrangement, you can test an anagram route first
@@ -140,111 +222,151 @@ export default async function CrypticIndicatorsPage({
             you know to look for inner and outer parts. This turns clue solving
             into a sequence of decisions rather than a search for inspiration.
           </BodyText>
+          <SubHeading>The Beginner Foothold</SubHeading>
           <BodyText>
-            They are especially useful for beginners because they provide an
-            early foothold. When the surface reading feels misleading, indicator
-            language often gives you the first reliable structural clue.
+            Indicators are especially useful for beginners because they provide
+            an early foothold. When the surface reading feels misleading,
+            indicator language often gives you the first reliable structural
+            clue — a place to start rather than a blank page.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Anagram Indicators" id="anagram-indicators">
           <BodyText>
             Anagram indicators usually suggest change, disorder, movement, or
-            instability. Words like mixed, altered, wild, broken, scrambled, and
-            arranged are common examples. These signals tell you that the clue
-            likely wants the fodder letters rebuilt into a new form.
+            instability. These signals tell you that the clue likely wants the
+            fodder letters rebuilt into a new form.
           </BodyText>
+          <IndicatorTagList
+            tags={["mixed", "altered", "wild", "broken", "scrambled", "arranged", "confused", "upset", "chaotic", "troubled"]}
+            color="blue"
+          />
+          <SubHeading>The Fodder Pairing Rule</SubHeading>
           <BodyText>
             The indicator alone is not enough. You still need to identify the
-            correct fodder, verify the length, and confirm the definition. That
-            is why anagram solving works best when indicator and letter count
-            are checked together.
+            correct fodder, verify the length, and confirm the definition. This
+            pairing is important because anagram indicators are some of the
+            easiest to over-trust — a clue can contain a lively word without
+            actually instructing a rearrangement.
           </BodyText>
           <BodyText>
-            This pairing is important because anagram indicators are some of the
-            easiest to over-trust. A clue can contain a lively word without
-            actually instructing a rearrangement. Good solving means matching
-            the indicator to the actual grammar of the clue.
+            A word only functions as an indicator when it actually directs a
+            letter transformation inside that specific clue. Good solving means
+            matching the indicator to the actual grammar of the clue.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Container Indicators" id="container-indicators">
           <BodyText>
             Container indicators suggest holding, surrounding, covering, or
-            placing something inside something else. Common signals include in,
-            around, within, holding, containing, and about. They often also
-            imply direction, which matters a lot because A around B is not the
-            same thing as B around A.
+            placing something inside something else.
           </BodyText>
+          <IndicatorTagList
+            tags={["in", "around", "within", "holding", "containing", "about", "inside", "surrounding", "swallowing", "embracing"]}
+            color="green"
+          />
+          <SubHeading>Two Questions to Ask Immediately</SubHeading>
           <BodyText>
-            When you see this kind of language, ask two questions immediately:
-            what is the shell, and what is being inserted? That one habit solves
-            many container clues faster than hunting for the answer directly.
+            When you see container language, ask two questions right away: what
+            is the shell, and what is being inserted? That habit solves many
+            container clues faster than hunting for the answer directly.
           </BodyText>
+          <SubHeading>Direction Matters</SubHeading>
           <BodyText>
-            Container indicators also train directional reading. You are not
-            just spotting a family label. You are extracting positional
-            information from the clue. That makes these indicators especially
-            useful for strengthening structural discipline.
+            Container indicators often also imply direction, which matters a lot
+            because A around B is not the same thing as B around A. These
+            indicators train directional reading — not just spotting a family
+            label, but extracting positional information from the clue text.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Reversal Indicators" id="reversal-indicators">
           <BodyText>
             Reversal indicators suggest turning back or reversing direction.
-            Common examples include back, returned, reversed, and turned. These
-            indicators matter because reversal is often a small operation with a
-            large impact on the final answer.
+            These signals matter because reversal is often a small operation
+            with a large impact on the final answer.
+          </BodyText>
+          <IndicatorTagList
+            tags={["back", "returned", "reversed", "turned", "reflected", "about-turn", "going west", "from the east"]}
+            color="orange"
+          />
+          <SubHeading>Across vs. Down Clues</SubHeading>
+          <BodyText>
+            In grid crosswords, directional language differs for across and down
+            clues — "going up" signals reversal for a down answer but not an
+            across one. In minute cryptic puzzles, the phrasing usually makes
+            the direction unambiguous, but it is worth noting.
           </BodyText>
           <BodyText>
-            Even when reversal is not the main focus of your current archive,
-            learning its signals improves your wider cryptic literacy. It helps
-            you distinguish clues that build letters forward from clues that ask
-            you to flip the structure.
+            Learning reversal signals also improves your wider cryptic literacy.
+            It helps you distinguish clues that build letters forward from clues
+            that ask you to flip the structure.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Deletion Indicators" id="deletion-indicators">
           <BodyText>
-            Deletion indicators suggest removing or losing part of a word. Words
-            like without, dropping, losing, headless, or endless often perform
-            this function. These clues reward close attention because the clue
-            may only remove one letter while leaving the rest untouched.
+            Deletion indicators suggest removing or losing part of a word.
           </BodyText>
+          <IndicatorTagList
+            tags={["without", "dropping", "losing", "headless", "endless", "decapitated", "curtailed", "cut short"]}
+            color="purple"
+          />
+          <SubHeading>Small Operations, Real Impact</SubHeading>
           <BodyText>
             Deletion indicators are useful to study early because they teach a
-            useful general lesson: clue operations can be very small. You do not
-            always need a dramatic transformation for a clue to be cryptic.
+            valuable general lesson: clue operations can be very small. The clue
+            may only remove one letter while leaving the rest untouched. You do
+            not always need a dramatic transformation for a clue to be cryptic.
+          </BodyText>
+          <BodyText>
+            These clues reward close attention because the specific letter being
+            removed — first, last, or somewhere in the middle — changes the
+            answer completely.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Hidden Word Indicators" id="hidden-word-indicators">
           <BodyText>
             Hidden word indicators imply that the answer lies inside a larger
-            phrase. Common signals include in, part of, contained in, some of,
-            and hidden in. These clues train close scanning and exact letter
-            matching rather than abstract transformation.
+            phrase, spelled out across adjacent letters in the clue.
           </BodyText>
+          <IndicatorTagList
+            tags={["in", "part of", "contained in", "some of", "hidden in", "within", "found in", "embedded in"]}
+            color="teal"
+          />
+          <SubHeading>Training Visual Precision</SubHeading>
           <BodyText>
             Hidden-word practice is useful because it teaches you to respect
             contiguous letter runs. This sharpens visual discipline and helps
             prevent overly imaginative solving when the clue is actually much
             simpler than it appears.
           </BodyText>
+          <BodyText>
+            Notice that "in" appears here and in the container list. Context
+            determines which operation it signals — another reason to test
+            indicator and structure together rather than relying on one alone.
+          </BodyText>
         </ContentSection>
 
         <ContentSection title="Homophone Indicators" id="homophone-indicators">
           <BodyText>
             Homophone indicators suggest hearing, saying, or sounding like
-            another word. Examples include heard, reportedly, we hear, and by
-            the sound of it. These clues rely on pronunciation rather than
+            another word. These clues rely on pronunciation rather than
             spelling, which makes them feel different from most letter-driven
             clue families.
           </BodyText>
+          <IndicatorTagList
+            tags={["heard", "reportedly", "we hear", "by the sound of it", "sounds like", "in speech", "orally", "they say"]}
+            color="default"
+          />
+          <SubHeading>A Note on Accents</SubHeading>
           <BodyText>
-            They also require humility. Pronunciation varies by accent and
-            region, so homophone clues are best approached as fair sound
-            approximations rather than as perfectly identical spoken forms.
+            Pronunciation varies by accent and region, so homophone clues are
+            best approached as fair sound approximations rather than as
+            perfectly identical spoken forms. They also require humility — if
+            a clue depends on a regional pronunciation you do not share,
+            the published explanation will clarify the intended sound.
           </BodyText>
         </ContentSection>
 
@@ -252,6 +374,7 @@ export default async function CrypticIndicatorsPage({
           title="How to Use Indicators Without Guessing Blindly"
           id="use-indicators-without-guessing"
         >
+          <SubHeading>Combine Indicator and Definition</SubHeading>
           <BodyText>
             The best workflow is to combine indicator and definition, not to use
             either in isolation. Start by asking what the clue probably means,
@@ -259,20 +382,19 @@ export default async function CrypticIndicatorsPage({
             toward the same answer path, continue. If they conflict, your parse
             is probably weak.
           </BodyText>
+          <SubHeading>Indicators Narrow the Field — They Do Not Replace Proof</SubHeading>
           <BodyText>
-            This discipline matters because indicators can create false
-            confidence. A clue may contain a word that looks like a known
-            signal, but if the answer does not satisfy the full clue fairly, you
-            still need to reject it. Indicators narrow the field; they do not
-            replace proof.
+            Indicators can create false confidence. A clue may contain a word
+            that looks like a known signal, but if the answer does not satisfy
+            the full clue fairly, you still need to reject it.
           </BodyText>
-          <BodyText>
-            The best long-term use of indicators is as a filter, not as a
-            shortcut. They help you ask better questions earlier. They do not
-            give you permission to stop checking count, structure, and
-            definition. Solvers who remember that use indicator knowledge well.
-            Solvers who forget it become overconfident very quickly.
-          </BodyText>
+          <CalloutBox type="tip" title="The Right Mental Model">
+            Use indicators as a filter, not a shortcut. They help you ask better
+            questions earlier. They do not give you permission to stop checking
+            count, structure, and definition. Solvers who remember that use
+            indicator knowledge well. Solvers who forget it become overconfident
+            very quickly.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="Cryptic Indicators FAQ" id="cryptic-indicators-faq">

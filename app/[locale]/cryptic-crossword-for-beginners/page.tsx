@@ -1,10 +1,15 @@
 import {
   BodyText,
+  CalloutBox,
   ContentHero,
   ContentSection,
+  DayRoutineGrid,
   ExamplePuzzleGrid,
+  LearningBadge,
   RelatedLinks,
   SimpleFaq,
+  StepList,
+  SubHeading,
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import { BASE_URL } from "@/config/site";
@@ -19,6 +24,7 @@ import {
 } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { Metadata } from "next";
+import Link from "next/link";
 
 type Params = Promise<{ locale: string }>;
 const CONTENT_PUBLISHED_AT = "2026-03-09";
@@ -48,6 +54,82 @@ const FAQ_ITEMS = [
     question: "Is it normal to understand the answer but not the wordplay?",
     answer:
       "Yes. That is one of the most common beginner stages. The key is to review the explanation until you can restate how the clue actually built the answer.",
+  },
+];
+
+const SEVEN_DAY_ROUTINE = [
+  {
+    day: 1,
+    title: "First Clue",
+    description: "Solve one easy clue and review the full explanation before moving on.",
+    focus: "Review Quality",
+  },
+  {
+    day: 2,
+    title: "Definition First",
+    description: "Identify the definition before touching the hint system.",
+    focus: "Clue Boundary",
+  },
+  {
+    day: 3,
+    title: "Mixed Session",
+    description: "One clue from today's route and one from the archive.",
+    focus: "Volume",
+  },
+  {
+    day: 4,
+    title: "Type Recognition",
+    description: "Guess the clue family before you submit your answer.",
+    focus: "Pattern Reading",
+  },
+  {
+    day: 5,
+    title: "Disciplined Hints",
+    description: "Use only one hint per clue, then retry immediately.",
+    focus: "Hint Control",
+  },
+  {
+    day: 6,
+    title: "Review Day",
+    description: "Go back to solved clues and restate each mechanism in your own words.",
+    focus: "Retention",
+  },
+  {
+    day: 7,
+    title: "Mixed Set",
+    description: "One easy clue, one today's clue, one from a clue-type page you found difficult.",
+    focus: "Integration",
+  },
+];
+
+const CLUE_TYPE_CARDS = [
+  {
+    href: "/cryptic-clue-types/anagram",
+    title: "Anagram clues",
+    badge: "easiest" as const,
+    description:
+      "Rearrange a set of letters into the answer. Ideal for beginners because you can verify the indicator, letter pool, count, and definition independently.",
+  },
+  {
+    href: "/cryptic-clue-types/charade",
+    title: "Charade clues",
+    badge: "beginner" as const,
+    description:
+      "Build answers from smaller pieces placed in sequence. Teaches segmentation and makes clue structure easier to see.",
+  },
+  {
+    href: "/cryptic-clue-types/container",
+    title: "Container clues",
+    badge: "intermediate" as const,
+    description:
+      "Place one set of letters inside another. Trains precise order control and positional thinking.",
+  },
+  {
+    href: "/cryptic-clue-types/double-definition",
+    title: "Double definition clues",
+    badge: "beginner" as const,
+    description:
+      "Two meanings point to the same answer. Sharpens your ability to demand fair definitions instead of settling for something that merely sounds close.",
   },
 ];
 
@@ -145,6 +227,7 @@ export default async function CrypticCrosswordForBeginnersPage({
             { href: "#common-beginner-mistakes", label: "Common beginner mistakes" },
             { href: "#beginner-practice-clues", label: "Beginner practice clues" },
             { href: "#where-to-practice-next", label: "Where to practice next" },
+            { href: "#starter-routine", label: "7-Day starter routine" },
             { href: "#beginner-faq", label: "Beginner FAQ" },
           ]}
         />
@@ -160,6 +243,7 @@ export default async function CrypticCrosswordForBeginnersPage({
             less obvious way. That is the central difference between cryptic
             clues and regular crossword clues.
           </BodyText>
+          <SubHeading>Why Structure Matters More Than Vocabulary</SubHeading>
           <BodyText>
             Beginners often think cryptics require obscure vocabulary or lucky
             intuition. In practice, progress comes from recognizing structure.
@@ -183,19 +267,20 @@ export default async function CrypticCrosswordForBeginnersPage({
             not fit the definition. The goal is always the same: one answer,
             two clean justifications.
           </BodyText>
+          <SubHeading>Two-Pass Reading</SubHeading>
           <BodyText>
-            Another useful beginner rule is to separate clue reading into two
+            A useful beginner habit is to separate clue reading into two
             passes. The first pass reads for plain meaning. The second pass
             reads for structure. Many beginners only do the first pass, which
             makes the clue feel clever but unfair. Once you deliberately reread
             for structure, indicator words and possible clue boundaries start to
             appear much more often than you expect.
           </BodyText>
+          <SubHeading>Using Enumeration as a Filter</SubHeading>
           <BodyText>
-            This is also where answer length becomes valuable. Enumeration is
-            not only there to help you fill squares. It keeps your reasoning
-            honest. If a candidate word does not fit the count, you can drop it
-            immediately and move on without emotional attachment.
+            Answer length is not only there to help you fill squares. It keeps
+            your reasoning honest. If a candidate word does not fit the count,
+            you can drop it immediately and move on without emotional attachment.
           </BodyText>
         </ContentSection>
 
@@ -204,114 +289,108 @@ export default async function CrypticCrosswordForBeginnersPage({
           id="best-clue-types-for-beginners"
         >
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl border border-border p-4">
-              <h3 className="text-sm font-bold text-foreground">Anagram clues</h3>
-              <BodyText>
-                These clues ask you to rearrange letters. They are ideal for
-                beginners because you can verify the indicator, the letter pool,
-                the count, and the definition.
-              </BodyText>
-            </div>
-            <div className="rounded-xl border border-border p-4">
-              <h3 className="text-sm font-bold text-foreground">Charade clues</h3>
-              <BodyText>
-                Charades build answers from smaller pieces placed in sequence.
-                They teach segmentation and make clue structure easier to see.
-              </BodyText>
-            </div>
-            <div className="rounded-xl border border-border p-4">
-              <h3 className="text-sm font-bold text-foreground">Container clues</h3>
-              <BodyText>
-                These place one set of letters inside another. They are useful
-                early because they train precise order control and structure.
-              </BodyText>
-            </div>
-            <div className="rounded-xl border border-border p-4">
-              <h3 className="text-sm font-bold text-foreground">
-                Double definition clues
-              </h3>
-              <BodyText>
-                Two meanings point to the same answer. These clues sharpen your
-                ability to demand fair definitions instead of settling for
-                something that merely sounds close.
-              </BodyText>
-            </div>
+            {CLUE_TYPE_CARDS.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="rounded-xl border border-border bg-background p-4 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-sm"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="text-sm font-bold text-foreground">{card.title}</h3>
+                  <LearningBadge variant={card.badge} />
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {card.description}
+                </p>
+                <p className="mt-3 text-xs font-semibold text-primary">
+                  See examples →
+                </p>
+              </Link>
+            ))}
           </div>
-          <BodyText>
-            If you start with these four families, you cover the most useful
-            beginner territory without drowning in theory. Learn how each type
-            feels, then compare that feeling with real examples from the site.
-          </BodyText>
+          <CalloutBox type="highlight" title="Recommended Learning Order">
+            Anagram → Charade → Container → Double Definition. This order moves
+            from visible letter operations toward more semantic subtlety, giving
+            you a solid base before introducing looser clue behaviour.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="A Simple 3-Step Solving Method" id="simple-solving-method">
+          <StepList
+            items={[
+              {
+                title: "Find the Likely Definition",
+                description:
+                  "Test clue boundaries first. The definition usually sits at the very beginning or the very end of the clue.",
+              },
+              {
+                title: "Check the Answer Length",
+                description:
+                  "Enumeration is a hard filter, not a soft suggestion. If a candidate word does not fit the count, drop it immediately.",
+              },
+              {
+                title: "Prove the Wordplay",
+                description:
+                  "Confirm the clue type and make sure the wordplay mechanism supports the same answer as the definition before you submit.",
+              },
+            ]}
+          />
+          <SubHeading>Why This Order Matters</SubHeading>
           <BodyText>
-            Step one: find the likely definition. Test clue boundaries first.
-            Step two: check the answer length immediately. Enumeration is a hard
-            filter, not a soft suggestion. Step three: prove the wordplay
-            before you submit.
+            A repeatable process builds confidence much faster than occasional
+            lucky solves. Beginners who adopt a disciplined solve order usually
+            improve faster than those who consume lots of theory without
+            practicing a fixed routine.
           </BodyText>
-          <BodyText>
-            This method matters because it reduces random guessing. A repeatable
-            process builds confidence much faster than occasional lucky solves.
-            Beginners who adopt a disciplined solve order usually improve faster
-            than those who consume lots of theory without practicing a fixed
-            routine.
-          </BodyText>
-          <BodyText>
-            The hidden value of this method is emotional control. Cryptic clues
-            often create strong but misleading first impressions. A step-based
-            approach prevents you from committing too early to a surface-level
-            answer. It gives you a small checklist instead of a vague feeling,
-            and that is usually what makes the clue feel solvable.
-          </BodyText>
-          <BodyText>
-            If you want to improve quickly, keep the method stable across
-            multiple clues. Do not invent a new solving style every time you
-            get stuck. Use the same order repeatedly until it becomes natural:
-            definition, count, mechanism, proof. Consistency is a much bigger
-            advantage than cleverness at the beginner stage.
-          </BodyText>
+          <CalloutBox type="tip" title="Emotional Control">
+            Cryptic clues often create strong but misleading first impressions.
+            A step-based approach prevents you from committing too early to a
+            surface-level answer. Use the same order repeatedly until it becomes
+            natural: definition, count, mechanism, proof.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection
           title="What Beginners Usually Misunderstand About Cryptics"
           id="what-beginners-usually-misunderstand"
         >
+          <SubHeading>Cryptics Are About Structure, Not Vocabulary</SubHeading>
           <BodyText>
             Many beginners assume cryptics are mainly about tricky vocabulary.
             In reality, most progress comes from reading clues as systems rather
             than as riddles. The answer is rarely hidden by a needlessly obscure
-            word. It is more often hidden by a failure to separate what the clue
-            means from what the clue is doing.
+            word — it is more often hidden by a failure to separate what the
+            clue means from what the clue is doing.
           </BodyText>
+          <SubHeading>Speed Is Not the Goal Early On</SubHeading>
           <BodyText>
-            Another misunderstanding is that speed matters early. It does not.
             Fast guessing creates weak habits. Slow proof creates strong habits.
             Once your proof quality improves, speed follows almost by itself
             because you stop wasting time on weak answer paths.
           </BodyText>
+          <SubHeading>Hints Are a Tool, Not a Sign of Failure</SubHeading>
           <BodyText>
-            A third misunderstanding is that hints are a form of failure. On a
-            learning site, that is the wrong model. Hints are useful when they
-            preserve your involvement. The real risk is not using hints. The
-            real risk is opening too many hints before you retry the clue.
+            On a learning site, hints work best when they preserve your
+            involvement. The real risk is not using hints — the real risk is
+            opening too many hints before you retry the clue.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="Common Beginner Mistakes" id="common-beginner-mistakes">
+          <CalloutBox type="warning" title="Watch for These Patterns">
+            <ul className="mt-1 list-inside list-disc space-y-1">
+              <li>Guessing from surface meaning only</li>
+              <li>Ignoring wordplay once an attractive answer appears</li>
+              <li>Opening several hints before re-attempting the clue</li>
+              <li>Reading the clue like a normal sentence instead of a structured prompt</li>
+            </ul>
+          </CalloutBox>
+          <SubHeading>The Surface Reading Trap</SubHeading>
           <BodyText>
-            The most common mistake is guessing from surface meaning only. The
-            second most common is ignoring wordplay once an attractive answer
-            appears. Another frequent mistake is using several hints in a row
-            before re-attempting the clue. That turns the session into reading,
-            not solving.
-          </BodyText>
-          <BodyText>
-            A subtler problem is reading the clue like a normal sentence instead
-            of a structured prompt. Good cryptic clues often hide their logic in
-            fluent language. You do not beat that misdirection by reading more
-            dramatically. You beat it by asking what each clue segment is doing.
+            Good cryptic clues often hide their logic in fluent language. You do
+            not beat that misdirection by reading more dramatically. You beat it
+            by asking what each clue segment is actually doing — definition,
+            indicator, fodder, or linking word.
           </BodyText>
         </ContentSection>
 
@@ -323,6 +402,7 @@ export default async function CrypticCrosswordForBeginnersPage({
         />
 
         <ContentSection title="Where Beginners Should Practice Next" id="where-to-practice-next">
+          <SubHeading>The Best First Steps</SubHeading>
           <BodyText>
             The best next step is not to search for harder theory. It is to run
             short sets of real clues in a controlled order. Start with easy
@@ -330,44 +410,34 @@ export default async function CrypticCrosswordForBeginnersPage({
             After each solve, compare your own reasoning to the published
             explanation and write down one thing you misread.
           </BodyText>
+          <SubHeading>A Simple Weekly Routine</SubHeading>
           <BodyText>
-            A good seven-day routine is simple: one clue per day, one archive
-            clue every other day, and one repeated review habit. That is enough
-            volume to build pattern memory without overwhelming yourself.
+            One clue per day, one archive clue every other day, and one repeated
+            review habit. That is enough volume to build pattern memory without
+            overwhelming yourself.
           </BodyText>
+          <SubHeading>The Practice Loop</SubHeading>
           <BodyText>
-            If you want a practical progression, begin with easy clue archives,
-            then study clue types when one mechanism keeps repeating, then use
-            today's clue as your daily benchmark. This creates a useful loop:
-            learn the pattern, solve a live clue, reinforce with archive
-            repetition. That loop is much more effective than reading five
-            guides in a row and solving nothing.
+            Begin with easy clue archives, then study clue types when one
+            mechanism keeps repeating, then use today's clue as your daily
+            benchmark. Learn the pattern → solve a live clue → reinforce with
+            archive repetition. That loop is much more effective than reading
+            five guides in a row and solving nothing.
           </BodyText>
         </ContentSection>
 
         <ContentSection title="A 7-Day Starter Routine for New Solvers" id="starter-routine">
           <BodyText>
-            Day one: solve one easy clue and review the explanation in full.
-            Day two: solve one easy clue and identify the definition before you
-            touch the hint system. Day three: solve one clue from today's route
-            and one from the archive. Day four: focus on clue type recognition
-            and guess the family before you submit. Day five: use only one hint
-            on each clue and retry immediately after reading it.
+            You do not need long sessions to improve. Seven short days with a
+            clear focus is enough to build the pattern recognition that makes
+            cryptic clues feel manageable.
           </BodyText>
-          <BodyText>
-            Day six should be a review day. Go back to the clues you solved and
-            ask yourself whether you could now explain the mechanism without
-            seeing the published note. Day seven should be a short mixed set:
-            one easy clue, one clue from today, and one clue from a clue-type
-            page you found difficult. That combination creates enough repetition
-            to show real progress without needing long sessions.
-          </BodyText>
-          <BodyText>
-            The purpose of this routine is not to test endurance. It is to make
-            clue solving feel familiar. Once the process feels familiar, the
-            intimidation factor drops sharply, and your attention can move from
-            confusion to craft.
-          </BodyText>
+          <DayRoutineGrid items={SEVEN_DAY_ROUTINE} />
+          <CalloutBox type="highlight" title="The Goal of This Routine">
+            Not endurance — familiarity. Once the solving process feels familiar,
+            the intimidation factor drops sharply and your attention can move
+            from confusion to craft.
+          </CalloutBox>
         </ContentSection>
 
         <ContentSection title="Cryptic Crossword for Beginners FAQ" id="beginner-faq">
