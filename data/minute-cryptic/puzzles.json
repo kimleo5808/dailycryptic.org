@@ -7,16 +7,16 @@
       "publishDate": "2026-02-15",
       "status": "published",
       "clue": "Warning from LATER oddly mixed (5)",
-      "answer": "ALERT",
+      "answer": "QUxFUlQ=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a common warning word.",
-        "This clue uses an anagram.",
-        "Rearrange the letters in LATER.",
-        "Starts with A."
+        "VGhpbmsgb2YgYSBjb21tb24gd2FybmluZyB3b3JkLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIGluIExBVEVSLg==",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "LATER mixed gives ALERT."
+      "explanation": "TEFURVIgbWl4ZWQgZ2l2ZXMgQUxFUlQu"
     },
     {
       "id": 2,
@@ -24,16 +24,16 @@
       "publishDate": "2026-02-16",
       "status": "published",
       "clue": "Quiet when LISTEN is mixed (6)",
-      "answer": "SILENT",
+      "answer": "U0lMRU5U",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a word meaning quiet.",
-        "This clue uses an anagram.",
-        "Rearrange LISTEN.",
-        "Starts with S."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgcXVpZXQu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIExJU1RFTi4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "LISTEN mixed gives SILENT."
+      "explanation": "TElTVEVOIG1peGVkIGdpdmVzIFNJTEVOVC4="
     },
     {
       "id": 3,
@@ -41,16 +41,16 @@
       "publishDate": "2026-02-17",
       "status": "scheduled",
       "clue": "Plot from DANGER turned around (6)",
-      "answer": "GARDEN",
+      "answer": "R0FSREVO",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a place where flowers grow.",
-        "This clue uses an anagram.",
-        "Rearrange DANGER.",
-        "Starts with G."
+        "VGhpbmsgb2YgYSBwbGFjZSB3aGVyZSBmbG93ZXJzIGdyb3cu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIERBTkdFUi4=",
+        "U3RhcnRzIHdpdGggRy4="
       ],
-      "explanation": "DANGER turned around gives GARDEN."
+      "explanation": "REFOR0VSIHR1cm5lZCBhcm91bmQgZ2l2ZXMgR0FSREVOLg=="
     },
     {
       "id": 4,
@@ -58,16 +58,16 @@
       "publishDate": "2026-02-18",
       "status": "scheduled",
       "clue": "Paid back after DIAPER is altered (6)",
-      "answer": "REPAID",
+      "answer": "UkVQQUlE",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Paid back\".",
-        "This clue uses an anagram.",
-        "Alter DIAPER.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiUGFpZCBiYWNrIi4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "QWx0ZXIgRElBUEVSLg==",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "DIAPER altered gives REPAID."
+      "explanation": "RElBUEVSIGFsdGVyZWQgZ2l2ZXMgUkVQQUlELg=="
     },
     {
       "id": 5,
@@ -75,16 +75,16 @@
       "publishDate": "2026-02-19",
       "status": "scheduled",
       "clue": "Step to READ with T in front (5)",
-      "answer": "TREAD",
+      "answer": "VFJFQUQ=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Step\".",
-        "Build it from two parts.",
-        "Put T before READ.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiU3RlcCIu",
+        "QnVpbGQgaXQgZnJvbSB0d28gcGFydHMu",
+        "UHV0IFQgYmVmb3JlIFJFQUQu",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "T + READ gives TREAD."
+      "explanation": "VCArIFJFQUQgZ2l2ZXMgVFJFQUQu"
     },
     {
       "id": 6,
@@ -92,16 +92,16 @@
       "publishDate": "2026-02-20",
       "status": "scheduled",
       "clue": "Sketch from OUT + LINE (7)",
-      "answer": "OUTLINE",
+      "answer": "T1VUTElORQ==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Sketch\".",
-        "This is a charade clue.",
-        "Join OUT and LINE.",
-        "Starts with O."
+        "RGVmaW5pdGlvbiBpcyAiU2tldGNoIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBPVVQgYW5kIExJTkUu",
+        "U3RhcnRzIHdpdGggTy4="
       ],
-      "explanation": "OUT + LINE gives OUTLINE."
+      "explanation": "T1VUICsgTElORSBnaXZlcyBPVVRMSU5FLg=="
     },
     {
       "id": 7,
@@ -109,16 +109,16 @@
       "publishDate": "2026-02-21",
       "status": "scheduled",
       "clue": "Core from EARTH scrambled (5)",
-      "answer": "HEART",
+      "answer": "SEVBUlQ=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Core\".",
-        "This clue uses an anagram.",
-        "Scramble EARTH.",
-        "Starts with H."
+        "RGVmaW5pdGlvbiBpcyAiQ29yZSIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "U2NyYW1ibGUgRUFSVEgu",
+        "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "EARTH scrambled gives HEART."
+      "explanation": "RUFSVEggc2NyYW1ibGVkIGdpdmVzIEhFQVJULg=="
     },
     {
       "id": 8,
@@ -126,16 +126,16 @@
       "publishDate": "2026-02-22",
       "status": "scheduled",
       "clue": "Respond as CRATE gets mixed (5)",
-      "answer": "REACT",
+      "answer": "UkVBQ1Q=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Respond\".",
-        "This clue uses an anagram.",
-        "Mix CRATE.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiUmVzcG9uZCIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IENSQVRFLg==",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "CRATE mixed gives REACT."
+      "explanation": "Q1JBVEUgbWl4ZWQgZ2l2ZXMgUkVBQ1Qu"
     },
     {
       "id": 9,
@@ -143,16 +143,16 @@
       "publishDate": "2026-02-23",
       "status": "scheduled",
       "clue": "Dark period: THING twisted (5)",
-      "answer": "NIGHT",
+      "answer": "TklHSFQ=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Dark period\".",
-        "This clue uses an anagram.",
-        "Twist THING.",
-        "Starts with N."
+        "RGVmaW5pdGlvbiBpcyAiRGFyayBwZXJpb2QiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "VHdpc3QgVEhJTkcu",
+        "U3RhcnRzIHdpdGggTi4="
       ],
-      "explanation": "THING twisted gives NIGHT."
+      "explanation": "VEhJTkcgdHdpc3RlZCBnaXZlcyBOSUdIVC4="
     },
     {
       "id": 10,
@@ -160,16 +160,16 @@
       "publishDate": "2026-02-24",
       "status": "scheduled",
       "clue": "Extra item from SPEAR mixed (5)",
-      "answer": "SPARE",
+      "answer": "U1BBUkU=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Extra item\".",
-        "This clue uses an anagram.",
-        "Rearrange SPEAR.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiRXh0cmEgaXRlbSIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFNQRUFSLg==",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SPEAR mixed gives SPARE."
+      "explanation": "U1BFQVIgbWl4ZWQgZ2l2ZXMgU1BBUkUu"
     },
     {
       "id": 11,
@@ -177,16 +177,16 @@
       "publishDate": "2026-02-25",
       "status": "scheduled",
       "clue": "Post sent by AIR + MAIL (7)",
-      "answer": "AIRMAIL",
+      "answer": "QUlSTUFJTA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Post sent\".",
-        "This is a charade clue.",
-        "Join AIR and MAIL.",
-        "Starts with A."
+        "RGVmaW5pdGlvbiBpcyAiUG9zdCBzZW50Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBBSVIgYW5kIE1BSUwu",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "AIR + MAIL gives AIRMAIL."
+      "explanation": "QUlSICsgTUFJTCBnaXZlcyBBSVJNQUlMLg=="
     },
     {
       "id": 12,
@@ -194,16 +194,16 @@
       "publishDate": "2026-02-26",
       "status": "scheduled",
       "clue": "Evening close from SUN + SET (6)",
-      "answer": "SUNSET",
+      "answer": "U1VOU0VU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Evening close\".",
-        "This is a charade clue.",
-        "Join SUN and SET.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiRXZlbmluZyBjbG9zZSIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVU4gYW5kIFNFVC4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SUN + SET gives SUNSET."
+      "explanation": "U1VOICsgU0VUIGdpdmVzIFNVTlNFVC4="
     },
     {
       "id": 13,
@@ -211,16 +211,16 @@
       "publishDate": "2026-02-27",
       "status": "scheduled",
       "clue": "Night-bright from MOON + LIT (7)",
-      "answer": "MOONLIT",
+      "answer": "TU9PTkxJVA==",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Night-bright\".",
-        "This is a charade clue.",
-        "Join MOON and LIT.",
-        "Starts with M."
+        "RGVmaW5pdGlvbiBpcyAiTmlnaHQtYnJpZ2h0Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBNT09OIGFuZCBMSVQu",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MOON + LIT gives MOONLIT."
+      "explanation": "TU9PTiArIExJVCBnaXZlcyBNT09OTElULg=="
     },
     {
       "id": 14,
@@ -228,16 +228,16 @@
       "publishDate": "2026-02-28",
       "status": "scheduled",
       "clue": "Free leaflet from HAND + OUT (7)",
-      "answer": "HANDOUT",
+      "answer": "SEFORE9VVA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Free leaflet\".",
-        "This is a charade clue.",
-        "Join HAND and OUT.",
-        "Starts with H."
+        "RGVmaW5pdGlvbiBpcyAiRnJlZSBsZWFmbGV0Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBIQU5EIGFuZCBPVVQu",
+        "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "HAND + OUT gives HANDOUT."
+      "explanation": "SEFORCArIE9VVCBnaXZlcyBIQU5ET1VULg=="
     },
     {
       "id": 15,
@@ -245,16 +245,16 @@
       "publishDate": "2026-03-01",
       "status": "scheduled",
       "clue": "Outer garment from OVER + COAT (8)",
-      "answer": "OVERCOAT",
+      "answer": "T1ZFUkNPQVQ=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Outer garment\".",
-        "This is a charade clue.",
-        "Join OVER and COAT.",
-        "Starts with O."
+        "RGVmaW5pdGlvbiBpcyAiT3V0ZXIgZ2FybWVudCIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBPVkVSIGFuZCBDT0FULg==",
+        "U3RhcnRzIHdpdGggTy4="
       ],
-      "explanation": "OVER + COAT gives OVERCOAT."
+      "explanation": "T1ZFUiArIENPQVQgZ2l2ZXMgT1ZFUkNPQVQu"
     },
     {
       "id": 16,
@@ -262,16 +262,16 @@
       "publishDate": "2026-03-02",
       "status": "scheduled",
       "clue": "Border: FAME holding R (5)",
-      "answer": "FRAME",
+      "answer": "RlJBTUU=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Border\".",
-        "This is a container clue.",
-        "Put R inside FAME.",
-        "Starts with F."
+        "RGVmaW5pdGlvbiBpcyAiQm9yZGVyIi4=",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFIgaW5zaWRlIEZBTUUu",
+        "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "FAME holding R gives FRAME."
+      "explanation": "RkFNRSBob2xkaW5nIFIgZ2l2ZXMgRlJBTUUu"
     },
     {
       "id": 17,
@@ -279,16 +279,16 @@
       "publishDate": "2026-03-03",
       "status": "scheduled",
       "clue": "Small wood from ROVE holding G (5)",
-      "answer": "GROVE",
+      "answer": "R1JPVkU=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Small wood\".",
-        "This is a container clue.",
-        "Put G inside ROVE.",
-        "Starts with G."
+        "RGVmaW5pdGlvbiBpcyAiU21hbGwgd29vZCIu",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IEcgaW5zaWRlIFJPVkUu",
+        "U3RhcnRzIHdpdGggRy4="
       ],
-      "explanation": "ROVE holding G gives GROVE."
+      "explanation": "Uk9WRSBob2xkaW5nIEcgZ2l2ZXMgR1JPVkUu"
     },
     {
       "id": 18,
@@ -296,16 +296,16 @@
       "publishDate": "2026-03-04",
       "status": "scheduled",
       "clue": "Leap and season (6)",
-      "answer": "SPRING",
+      "answer": "U1BSSU5H",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means a jump.",
-        "The other is a time of year.",
-        "Starts with S."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGEganVtcC4=",
+        "VGhlIG90aGVyIGlzIGEgdGltZSBvZiB5ZWFyLg==",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SPRING means both a leap and a season."
+      "explanation": "U1BSSU5HIG1lYW5zIGJvdGggYSBsZWFwIGFuZCBhIHNlYXNvbi4="
     },
     {
       "id": 19,
@@ -313,16 +313,16 @@
       "publishDate": "2026-03-05",
       "status": "scheduled",
       "clue": "Throw or musical tone (5)",
-      "answer": "PITCH",
+      "answer": "UElUQ0g=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One means to throw.",
-        "The other is a musical quality.",
-        "Starts with P."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIHRvIHRocm93Lg==",
+        "VGhlIG90aGVyIGlzIGEgbXVzaWNhbCBxdWFsaXR5Lg==",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "PITCH means both throw and musical tone."
+      "explanation": "UElUQ0ggbWVhbnMgYm90aCB0aHJvdyBhbmQgbXVzaWNhbCB0b25lLg=="
     },
     {
       "id": 20,
@@ -330,16 +330,16 @@
       "publishDate": "2026-03-06",
       "status": "scheduled",
       "clue": "Intelligent and piercing (5)",
-      "answer": "SHARP",
+      "answer": "U0hBUlA=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means mentally quick.",
-        "The other means pointed or piercing.",
-        "Starts with S."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIG1lbnRhbGx5IHF1aWNrLg==",
+        "VGhlIG90aGVyIG1lYW5zIHBvaW50ZWQgb3IgcGllcmNpbmcu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SHARP can mean intelligent and piercing."
+      "explanation": "U0hBUlAgY2FuIG1lYW4gaW50ZWxsaWdlbnQgYW5kIHBpZXJjaW5nLg=="
     },
     {
       "id": 21,
@@ -347,16 +347,16 @@
       "publishDate": "2026-03-07",
       "status": "scheduled",
       "clue": "Ban with R inserted gives farm building (4)",
-      "answer": "BARN",
+      "answer": "QkFSTg==",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"farm building\".",
-        "This is a container clue.",
-        "Put R inside BAN.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiZmFybSBidWlsZGluZyIu",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFIgaW5zaWRlIEJBTi4=",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BAN containing R gives BARN."
+      "explanation": "QkFOIGNvbnRhaW5pbmcgUiBnaXZlcyBCQVJOLg=="
     },
     {
       "id": 22,
@@ -364,16 +364,16 @@
       "publishDate": "2026-03-08",
       "status": "scheduled",
       "clue": "Aircraft from PANE containing L (5)",
-      "answer": "PLANE",
+      "answer": "UExBTkU=",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Aircraft\".",
-        "This is a container clue.",
-        "Insert L into PANE.",
-        "Starts with P."
+        "RGVmaW5pdGlvbiBpcyAiQWlyY3JhZnQiLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "SW5zZXJ0IEwgaW50byBQQU5FLg==",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "PANE containing L gives PLANE."
+      "explanation": "UEFORSBjb250YWluaW5nIEwgZ2l2ZXMgUExBTkUu"
     },
     {
       "id": 23,
@@ -381,16 +381,16 @@
       "publishDate": "2026-03-09",
       "status": "scheduled",
       "clue": "Snare from TAP around R (4)",
-      "answer": "TRAP",
+      "answer": "VFJBUA==",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Snare\".",
-        "This is a container clue.",
-        "Put R inside TAP.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiU25hcmUiLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFIgaW5zaWRlIFRBUC4=",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TAP around R gives TRAP."
+      "explanation": "VEFQIGFyb3VuZCBSIGdpdmVzIFRSQVAu"
     },
     {
       "id": 24,
@@ -398,16 +398,16 @@
       "publishDate": "2026-03-10",
       "status": "scheduled",
       "clue": "Defeat from BAT holding E (4)",
-      "answer": "BEAT",
+      "answer": "QkVBVA==",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Defeat\".",
-        "This is a container clue.",
-        "Put E inside BAT.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiRGVmZWF0Ii4=",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IEUgaW5zaWRlIEJBVC4=",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BAT holding E gives BEAT."
+      "explanation": "QkFUIGhvbGRpbmcgRSBnaXZlcyBCRUFULg=="
     },
     {
       "id": 25,
@@ -415,16 +415,16 @@
       "publishDate": "2026-03-11",
       "status": "scheduled",
       "clue": "Coast from SHOE holding R (5)",
-      "answer": "SHORE",
+      "answer": "U0hPUkU=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Coast\".",
-        "This is a container clue.",
-        "Put R inside SHOE.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQ29hc3QiLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFIgaW5zaWRlIFNIT0Uu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SHOE holding R gives SHORE."
+      "explanation": "U0hPRSBob2xkaW5nIFIgZ2l2ZXMgU0hPUkUu"
     },
     {
       "id": 26,
@@ -432,16 +432,16 @@
       "publishDate": "2026-03-12",
       "status": "scheduled",
       "clue": "Dog's cry or tree covering (4)",
-      "answer": "BARK",
+      "answer": "QkFSSw==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a sound made by a dog.",
-        "The other is the outer layer of a tree.",
-        "Starts with B."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgc291bmQgbWFkZSBieSBhIGRvZy4=",
+        "VGhlIG90aGVyIGlzIHRoZSBvdXRlciBsYXllciBvZiBhIHRyZWUu",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BARK means both a dog sound and tree covering."
+      "explanation": "QkFSSyBtZWFucyBib3RoIGEgZG9nIHNvdW5kIGFuZCB0cmVlIGNvdmVyaW5nLg=="
     },
     {
       "id": 27,
@@ -449,16 +449,16 @@
       "publishDate": "2026-03-13",
       "status": "scheduled",
       "clue": "Close tightly or sea mammal (4)",
-      "answer": "SEAL",
+      "answer": "U0VBTA==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means to close securely.",
-        "The other is a marine animal.",
-        "Starts with S."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIHRvIGNsb3NlIHNlY3VyZWx5Lg==",
+        "VGhlIG90aGVyIGlzIGEgbWFyaW5lIGFuaW1hbC4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SEAL means both close tightly and sea mammal."
+      "explanation": "U0VBTCBtZWFucyBib3RoIGNsb3NlIHRpZ2h0bHkgYW5kIHNlYSBtYW1tYWwu"
     },
     {
       "id": 28,
@@ -466,16 +466,16 @@
       "publishDate": "2026-03-14",
       "status": "scheduled",
       "clue": "Contest or pair up (5)",
-      "answer": "MATCH",
+      "answer": "TUFUQ0g=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a sports contest.",
-        "The other means to pair things.",
-        "Starts with M."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgc3BvcnRzIGNvbnRlc3Qu",
+        "VGhlIG90aGVyIG1lYW5zIHRvIHBhaXIgdGhpbmdzLg==",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MATCH can mean contest or pair up."
+      "explanation": "TUFUQ0ggY2FuIG1lYW4gY29udGVzdCBvciBwYWlyIHVwLg=="
     },
     {
       "id": 29,
@@ -483,16 +483,16 @@
       "publishDate": "2026-03-15",
       "status": "scheduled",
       "clue": "Alphabet character or posted message (6)",
-      "answer": "LETTER",
+      "answer": "TEVUVEVS",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One belongs to the alphabet.",
-        "The other is mail you can post.",
-        "Starts with L."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGJlbG9uZ3MgdG8gdGhlIGFscGhhYmV0Lg==",
+        "VGhlIG90aGVyIGlzIG1haWwgeW91IGNhbiBwb3N0Lg==",
+        "U3RhcnRzIHdpdGggTC4="
       ],
-      "explanation": "LETTER is both an alphabet character and a posted message."
+      "explanation": "TEVUVEVSIGlzIGJvdGggYW4gYWxwaGFiZXQgY2hhcmFjdGVyIGFuZCBhIHBvc3RlZCBtZXNzYWdlLg=="
     },
     {
       "id": 30,
@@ -500,16 +500,16 @@
       "publishDate": "2026-03-16",
       "status": "scheduled",
       "clue": "Association or heavy stick (4)",
-      "answer": "CLUB",
+      "answer": "Q0xVQg==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One means an organized group.",
-        "The other is a heavy striking stick.",
-        "Starts with C."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGFuIG9yZ2FuaXplZCBncm91cC4=",
+        "VGhlIG90aGVyIGlzIGEgaGVhdnkgc3RyaWtpbmcgc3RpY2su",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "CLUB means both an association and a heavy stick."
+      "explanation": "Q0xVQiBtZWFucyBib3RoIGFuIGFzc29jaWF0aW9uIGFuZCBhIGhlYXZ5IHN0aWNrLg=="
     },
     {
       "id": 31,
@@ -517,16 +517,16 @@
       "publishDate": "2026-03-17",
       "status": "scheduled",
       "clue": "Heavenly being, or startup investor (5)",
-      "answer": "ANGEL",
+      "answer": "QU5HRUw=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a celestial being.",
-        "The other is a type of early business backer.",
-        "Starts with A."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgY2VsZXN0aWFsIGJlaW5nLg==",
+        "VGhlIG90aGVyIGlzIGEgdHlwZSBvZiBlYXJseSBidXNpbmVzcyBiYWNrZXIu",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "ANGEL means both a heavenly being and a startup investor."
+      "explanation": "QU5HRUwgbWVhbnMgYm90aCBhIGhlYXZlbmx5IGJlaW5nIGFuZCBhIHN0YXJ0dXAgaW52ZXN0b3Iu"
     },
     {
       "id": 32,
@@ -534,16 +534,16 @@
       "publishDate": "2026-03-18",
       "status": "scheduled",
       "clue": "Praise, or trust for later payment (6)",
-      "answer": "CREDIT",
+      "answer": "Q1JFRElU",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One means praise or acknowledgment.",
-        "The other means buying now and paying later.",
-        "Starts with C."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIHByYWlzZSBvciBhY2tub3dsZWRnbWVudC4=",
+        "VGhlIG90aGVyIG1lYW5zIGJ1eWluZyBub3cgYW5kIHBheWluZyBsYXRlci4=",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "CREDIT means both praise and trust for deferred payment."
+      "explanation": "Q1JFRElUIG1lYW5zIGJvdGggcHJhaXNlIGFuZCB0cnVzdCBmb3IgZGVmZXJyZWQgcGF5bWVudC4="
     },
     {
       "id": 33,
@@ -551,16 +551,16 @@
       "publishDate": "2026-03-19",
       "status": "scheduled",
       "clue": "Supporter or close companion (6)",
-      "answer": "FRIEND",
+      "answer": "RlJJRU5E",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is someone on your side.",
-        "The other is someone close to you.",
-        "Starts with F."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIHNvbWVvbmUgb24geW91ciBzaWRlLg==",
+        "VGhlIG90aGVyIGlzIHNvbWVvbmUgY2xvc2UgdG8geW91Lg==",
+        "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "FRIEND can mean supporter or close companion."
+      "explanation": "RlJJRU5EIGNhbiBtZWFuIHN1cHBvcnRlciBvciBjbG9zZSBjb21wYW5pb24u"
     },
     {
       "id": 34,
@@ -568,16 +568,16 @@
       "publishDate": "2026-03-20",
       "status": "scheduled",
       "clue": "Hear as SILENT is rearranged (6)",
-      "answer": "LISTEN",
+      "answer": "TElTVEVO",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Hear\".",
-        "This clue uses an anagram.",
-        "Rearrange SILENT.",
-        "Starts with L."
+        "RGVmaW5pdGlvbiBpcyAiSGVhciIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFNJTEVOVC4=",
+        "U3RhcnRzIHdpdGggTC4="
       ],
-      "explanation": "SILENT rearranged gives LISTEN."
+      "explanation": "U0lMRU5UIHJlYXJyYW5nZWQgZ2l2ZXMgTElTVEVOLg=="
     },
     {
       "id": 35,
@@ -585,16 +585,16 @@
       "publishDate": "2026-03-21",
       "status": "scheduled",
       "clue": "Shape from INTEGRAL mixed (8)",
-      "answer": "TRIANGLE",
+      "answer": "VFJJQU5HTEU=",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Shape\".",
-        "This clue uses an anagram.",
-        "Mix INTEGRAL.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiU2hhcGUiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IElOVEVHUkFMLg==",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "INTEGRAL mixed gives TRIANGLE."
+      "explanation": "SU5URUdSQUwgbWl4ZWQgZ2l2ZXMgVFJJQU5HTEUu"
     },
     {
       "id": 36,
@@ -602,16 +602,16 @@
       "publishDate": "2026-03-22",
       "status": "scheduled",
       "clue": "Maker from REACTOR reorganized (7)",
-      "answer": "CREATOR",
+      "answer": "Q1JFQVRPUg==",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Maker\".",
-        "This clue uses an anagram.",
-        "Reorganize REACTOR.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiTWFrZXIiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVvcmdhbml6ZSBSRUFDVE9SLg==",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "REACTOR reorganized gives CREATOR."
+      "explanation": "UkVBQ1RPUiByZW9yZ2FuaXplZCBnaXZlcyBDUkVBVE9SLg=="
     },
     {
       "id": 37,
@@ -619,16 +619,16 @@
       "publishDate": "2026-03-23",
       "status": "scheduled",
       "clue": "Flight hub from AIR + PORT (7)",
-      "answer": "AIRPORT",
+      "answer": "QUlSUE9SVA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Flight hub\".",
-        "This is a charade clue.",
-        "Join AIR and PORT.",
-        "Starts with A."
+        "RGVmaW5pdGlvbiBpcyAiRmxpZ2h0IGh1YiIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBBSVIgYW5kIFBPUlQu",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "AIR + PORT gives AIRPORT."
+      "explanation": "QUlSICsgUE9SVCBnaXZlcyBBSVJQT1JULg=="
     },
     {
       "id": 38,
@@ -636,16 +636,16 @@
       "publishDate": "2026-03-24",
       "status": "scheduled",
       "clue": "Arc of colours from RAIN + BOW (7)",
-      "answer": "RAINBOW",
+      "answer": "UkFJTkJPVw==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Arc of colours\".",
-        "This is a charade clue.",
-        "Join RAIN and BOW.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiQXJjIG9mIGNvbG91cnMiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBSQUlOIGFuZCBCT1cu",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "RAIN + BOW gives RAINBOW."
+      "explanation": "UkFJTiArIEJPVyBnaXZlcyBSQUlOQk9XLg=="
     },
     {
       "id": 39,
@@ -653,16 +653,16 @@
       "publishDate": "2026-03-25",
       "status": "scheduled",
       "clue": "Morning meal from BREAK + FAST (9)",
-      "answer": "BREAKFAST",
+      "answer": "QlJFQUtGQVNU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Morning meal\".",
-        "This is a charade clue.",
-        "Join BREAK and FAST.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiTW9ybmluZyBtZWFsIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBCUkVBSyBhbmQgRkFTVC4=",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BREAK + FAST gives BREAKFAST."
+      "explanation": "QlJFQUsgKyBGQVNUIGdpdmVzIEJSRUFLRkFTVC4="
     },
     {
       "id": 40,
@@ -670,16 +670,16 @@
       "publishDate": "2026-03-26",
       "status": "scheduled",
       "clue": "Dawn from DAY + BREAK (8)",
-      "answer": "DAYBREAK",
+      "answer": "REFZQlJFQUs=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Dawn\".",
-        "This is a charade clue.",
-        "Join DAY and BREAK.",
-        "Starts with D."
+        "RGVmaW5pdGlvbiBpcyAiRGF3biIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBEQVkgYW5kIEJSRUFLLg==",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "DAY + BREAK gives DAYBREAK."
+      "explanation": "REFZICsgQlJFQUsgZ2l2ZXMgREFZQlJFQUsu"
     },
     {
       "id": 41,
@@ -687,16 +687,16 @@
       "publishDate": "2026-03-27",
       "status": "scheduled",
       "clue": "Editorial office from NEWS + ROOM (8)",
-      "answer": "NEWSROOM",
+      "answer": "TkVXU1JPT00=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Editorial office\".",
-        "This is a charade clue.",
-        "Join NEWS and ROOM.",
-        "Starts with N."
+        "RGVmaW5pdGlvbiBpcyAiRWRpdG9yaWFsIG9mZmljZSIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBORVdTIGFuZCBST09NLg==",
+        "U3RhcnRzIHdpdGggTi4="
       ],
-      "explanation": "NEWS + ROOM gives NEWSROOM."
+      "explanation": "TkVXUyArIFJPT00gZ2l2ZXMgTkVXU1JPT00u"
     },
     {
       "id": 42,
@@ -704,16 +704,16 @@
       "publishDate": "2026-03-28",
       "status": "scheduled",
       "clue": "Support from BET holding RACK (7)",
-      "answer": "BRACKET",
+      "answer": "QlJBQ0tFVA==",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Support\".",
-        "This is a container clue.",
-        "Put RACK inside BET.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiU3VwcG9ydCIu",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFJBQ0sgaW5zaWRlIEJFVC4=",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BET holding RACK gives BRACKET."
+      "explanation": "QkVUIGhvbGRpbmcgUkFDSyBnaXZlcyBCUkFDS0VULg=="
     },
     {
       "id": 43,
@@ -721,16 +721,16 @@
       "publishDate": "2026-03-29",
       "status": "scheduled",
       "clue": "Neckwear from SCAR + F (5)",
-      "answer": "SCARF",
+      "answer": "U0NBUkY=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Neckwear\".",
-        "This is a charade clue.",
-        "Add F to SCAR.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiTmVja3dlYXIiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "QWRkIEYgdG8gU0NBUi4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SCAR + F gives SCARF."
+      "explanation": "U0NBUiArIEYgZ2l2ZXMgU0NBUkYu"
     },
     {
       "id": 44,
@@ -738,16 +738,16 @@
       "publishDate": "2026-03-30",
       "status": "scheduled",
       "clue": "World from PLANE + T (6)",
-      "answer": "PLANET",
+      "answer": "UExBTkVU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"World\".",
-        "This is a charade clue.",
-        "Add T to PLANE.",
-        "Starts with P."
+        "RGVmaW5pdGlvbiBpcyAiV29ybGQiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "QWRkIFQgdG8gUExBTkUu",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "PLANE + T gives PLANET."
+      "explanation": "UExBTkUgKyBUIGdpdmVzIFBMQU5FVC4="
     },
     {
       "id": 45,
@@ -755,16 +755,16 @@
       "publishDate": "2026-03-31",
       "status": "scheduled",
       "clue": "Vapour from MEATS cooked (5)",
-      "answer": "STEAM",
+      "answer": "U1RFQU0=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Vapour\".",
-        "This clue uses an anagram.",
-        "Cook (mix) MEATS.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiVmFwb3VyIi4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "Q29vayAobWl4KSBNRUFUUy4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "MEATS cooked gives STEAM."
+      "explanation": "TUVBVFMgY29va2VkIGdpdmVzIFNURUFNLg=="
     },
     {
       "id": 46,
@@ -772,16 +772,16 @@
       "publishDate": "2026-04-01",
       "status": "scheduled",
       "clue": "Flash from PARK with S in front (5)",
-      "answer": "SPARK",
+      "answer": "U1BBUks=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Flash\".",
-        "This is a charade clue.",
-        "Put S before PARK.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiRmxhc2giLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "UHV0IFMgYmVmb3JlIFBBUksu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "S + PARK gives SPARK."
+      "explanation": "UyArIFBBUksgZ2l2ZXMgU1BBUksu"
     },
     {
       "id": 47,
@@ -789,16 +789,16 @@
       "publishDate": "2026-04-02",
       "status": "scheduled",
       "clue": "Spy, or burrowing animal (4)",
-      "answer": "MOLE",
+      "answer": "TU9MRQ==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a hidden agent.",
-        "The other is a small burrowing mammal.",
-        "Starts with M."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgaGlkZGVuIGFnZW50Lg==",
+        "VGhlIG90aGVyIGlzIGEgc21hbGwgYnVycm93aW5nIG1hbW1hbC4=",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MOLE means both spy and burrowing animal."
+      "explanation": "TU9MRSBtZWFucyBib3RoIHNweSBhbmQgYnVycm93aW5nIGFuaW1hbC4="
     },
     {
       "id": 48,
@@ -806,16 +806,16 @@
       "publishDate": "2026-04-03",
       "status": "scheduled",
       "clue": "Machine for lifting, or tall bird (5)",
-      "answer": "CRANE",
+      "answer": "Q1JBTkU=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is construction equipment.",
-        "The other is a long-legged bird.",
-        "Starts with C."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGNvbnN0cnVjdGlvbiBlcXVpcG1lbnQu",
+        "VGhlIG90aGVyIGlzIGEgbG9uZy1sZWdnZWQgYmlyZC4=",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "CRANE means both lifting machine and bird."
+      "explanation": "Q1JBTkUgbWVhbnMgYm90aCBsaWZ0aW5nIG1hY2hpbmUgYW5kIGJpcmQu"
     },
     {
       "id": 49,
@@ -823,16 +823,16 @@
       "publishDate": "2026-04-04",
       "status": "scheduled",
       "clue": "Observe, or timepiece (5)",
-      "answer": "WATCH",
+      "answer": "V0FUQ0g=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means to observe.",
-        "The other is worn on the wrist.",
-        "Starts with W."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIHRvIG9ic2VydmUu",
+        "VGhlIG90aGVyIGlzIHdvcm4gb24gdGhlIHdyaXN0Lg==",
+        "U3RhcnRzIHdpdGggVy4="
       ],
-      "explanation": "WATCH means both observe and timepiece."
+      "explanation": "V0FUQ0ggbWVhbnMgYm90aCBvYnNlcnZlIGFuZCB0aW1lcGllY2Uu"
     },
     {
       "id": 50,
@@ -840,16 +840,16 @@
       "publishDate": "2026-04-05",
       "status": "scheduled",
       "clue": "Fruit, or appointment day (4)",
-      "answer": "DATE",
+      "answer": "REFURQ==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is an edible fruit.",
-        "The other is a day marked on the calendar.",
-        "Starts with D."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGFuIGVkaWJsZSBmcnVpdC4=",
+        "VGhlIG90aGVyIGlzIGEgZGF5IG1hcmtlZCBvbiB0aGUgY2FsZW5kYXIu",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "DATE means both fruit and appointment day."
+      "explanation": "REFURSBtZWFucyBib3RoIGZydWl0IGFuZCBhcHBvaW50bWVudCBkYXku"
     },
     {
       "id": 51,
@@ -857,16 +857,16 @@
       "publishDate": "2026-04-06",
       "status": "scheduled",
       "clue": "Wordy as OBSERVE is scrambled (7)",
-      "answer": "VERBOSE",
+      "answer": "VkVSQk9TRQ==",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Wordy\".",
-        "This clue uses an anagram.",
-        "Scramble OBSERVE.",
-        "Starts with V."
+        "RGVmaW5pdGlvbiBpcyAiV29yZHkiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "U2NyYW1ibGUgT0JTRVJWRS4=",
+        "U3RhcnRzIHdpdGggVi4="
       ],
-      "explanation": "OBSERVE scrambled gives VERBOSE."
+      "explanation": "T0JTRVJWRSBzY3JhbWJsZWQgZ2l2ZXMgVkVSQk9TRS4="
     },
     {
       "id": 52,
@@ -874,16 +874,16 @@
       "publishDate": "2026-04-07",
       "status": "scheduled",
       "clue": "Changed when RELATED is upset (7)",
-      "answer": "ALTERED",
+      "answer": "QUxURVJFRA==",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Changed\".",
-        "This clue uses an anagram.",
-        "Upset RELATED.",
-        "Starts with A."
+        "RGVmaW5pdGlvbiBpcyAiQ2hhbmdlZCIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "VXBzZXQgUkVMQVRFRC4=",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "RELATED upset gives ALTERED."
+      "explanation": "UkVMQVRFRCB1cHNldCBnaXZlcyBBTFRFUkVELg=="
     },
     {
       "id": 53,
@@ -891,16 +891,16 @@
       "publishDate": "2026-04-08",
       "status": "scheduled",
       "clue": "Fraud from TEACHER in confusion (7)",
-      "answer": "CHEATER",
+      "answer": "Q0hFQVRFUg==",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Fraud\".",
-        "This clue uses an anagram.",
-        "Mix TEACHER.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiRnJhdWQiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFRFQUNIRVIu",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "TEACHER in confusion gives CHEATER."
+      "explanation": "VEVBQ0hFUiBpbiBjb25mdXNpb24gZ2l2ZXMgQ0hFQVRFUi4="
     },
     {
       "id": 54,
@@ -908,16 +908,16 @@
       "publishDate": "2026-04-09",
       "status": "scheduled",
       "clue": "Accounts as RIOTERS turns wild (7)",
-      "answer": "STORIES",
+      "answer": "U1RPUklFUw==",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Accounts\".",
-        "This clue uses an anagram.",
-        "Rearrange RIOTERS.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQWNjb3VudHMiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFJJT1RFUlMu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "RIOTERS turns wild to give STORIES."
+      "explanation": "UklPVEVSUyB0dXJucyB3aWxkIHRvIGdpdmUgU1RPUklFUy4="
     },
     {
       "id": 55,
@@ -925,16 +925,16 @@
       "publishDate": "2026-04-10",
       "status": "scheduled",
       "clue": "Recover from RE + GAIN (6)",
-      "answer": "REGAIN",
+      "answer": "UkVHQUlO",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Recover\".",
-        "This is a charade clue.",
-        "Join RE and GAIN.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiUmVjb3ZlciIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBSRSBhbmQgR0FJTi4=",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "RE + GAIN gives REGAIN."
+      "explanation": "UkUgKyBHQUlOIGdpdmVzIFJFR0FJTi4="
     },
     {
       "id": 56,
@@ -942,16 +942,16 @@
       "publishDate": "2026-04-11",
       "status": "scheduled",
       "clue": "Writing pad from NOTE + PAD (7)",
-      "answer": "NOTEPAD",
+      "answer": "Tk9URVBBRA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Writing pad\".",
-        "This is a charade clue.",
-        "Join NOTE and PAD.",
-        "Starts with N."
+        "RGVmaW5pdGlvbiBpcyAiV3JpdGluZyBwYWQiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBOT1RFIGFuZCBQQUQu",
+        "U3RhcnRzIHdpdGggTi4="
       ],
-      "explanation": "NOTE + PAD gives NOTEPAD."
+      "explanation": "Tk9URSArIFBBRCBnaXZlcyBOT1RFUEFELg=="
     },
     {
       "id": 57,
@@ -959,16 +959,16 @@
       "publishDate": "2026-04-12",
       "status": "scheduled",
       "clue": "Carrier from AIR + LINE (7)",
-      "answer": "AIRLINE",
+      "answer": "QUlSTElORQ==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Carrier\".",
-        "This is a charade clue.",
-        "Join AIR and LINE.",
-        "Starts with A."
+        "RGVmaW5pdGlvbiBpcyAiQ2FycmllciIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBBSVIgYW5kIExJTkUu",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "AIR + LINE gives AIRLINE."
+      "explanation": "QUlSICsgTElORSBnaXZlcyBBSVJMSU5FLg=="
     },
     {
       "id": 58,
@@ -976,16 +976,16 @@
       "publishDate": "2026-04-13",
       "status": "scheduled",
       "clue": "Plant from SUN + FLOWER (9)",
-      "answer": "SUNFLOWER",
+      "answer": "U1VORkxPV0VS",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Plant\".",
-        "This is a charade clue.",
-        "Join SUN and FLOWER.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiUGxhbnQiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVU4gYW5kIEZMT1dFUi4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SUN + FLOWER gives SUNFLOWER."
+      "explanation": "U1VOICsgRkxPV0VSIGdpdmVzIFNVTkZMT1dFUi4="
     },
     {
       "id": 59,
@@ -993,16 +993,16 @@
       "publishDate": "2026-04-14",
       "status": "scheduled",
       "clue": "Sea creature from STAR + FISH (8)",
-      "answer": "STARFISH",
+      "answer": "U1RBUkZJU0g=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Sea creature\".",
-        "This is a charade clue.",
-        "Join STAR and FISH.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiU2VhIGNyZWF0dXJlIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVEFSIGFuZCBGSVNILg==",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "STAR + FISH gives STARFISH."
+      "explanation": "U1RBUiArIEZJU0ggZ2l2ZXMgU1RBUkZJU0gu"
     },
     {
       "id": 60,
@@ -1010,16 +1010,16 @@
       "publishDate": "2026-04-15",
       "status": "scheduled",
       "clue": "Shore border from COAST + LINE (9)",
-      "answer": "COASTLINE",
+      "answer": "Q09BU1RMSU5F",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Shore border\".",
-        "This is a charade clue.",
-        "Join COAST and LINE.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiU2hvcmUgYm9yZGVyIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBDT0FTVCBhbmQgTElORS4=",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "COAST + LINE gives COASTLINE."
+      "explanation": "Q09BU1QgKyBMSU5FIGdpdmVzIENPQVNUTElORS4="
     },
     {
       "id": 61,
@@ -1027,16 +1027,16 @@
       "publishDate": "2026-04-16",
       "status": "scheduled",
       "clue": "Reference mark from FOOT + NOTE (8)",
-      "answer": "FOOTNOTE",
+      "answer": "Rk9PVE5PVEU=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Reference mark\".",
-        "This is a charade clue.",
-        "Join FOOT and NOTE.",
-        "Starts with F."
+        "RGVmaW5pdGlvbiBpcyAiUmVmZXJlbmNlIG1hcmsiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBGT09UIGFuZCBOT1RFLg==",
+        "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "FOOT + NOTE gives FOOTNOTE."
+      "explanation": "Rk9PVCArIE5PVEUgZ2l2ZXMgRk9PVE5PVEUu"
     },
     {
       "id": 62,
@@ -1044,16 +1044,16 @@
       "publishDate": "2026-04-17",
       "status": "scheduled",
       "clue": "Night glow from MOON + LIGHT (9)",
-      "answer": "MOONLIGHT",
+      "answer": "TU9PTkxJR0hU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Night glow\".",
-        "This is a charade clue.",
-        "Join MOON and LIGHT.",
-        "Starts with M."
+        "RGVmaW5pdGlvbiBpcyAiTmlnaHQgZ2xvdyIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBNT09OIGFuZCBMSUdIVC4=",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MOON + LIGHT gives MOONLIGHT."
+      "explanation": "TU9PTiArIExJR0hUIGdpdmVzIE1PT05MSUdIVC4="
     },
     {
       "id": 63,
@@ -1061,16 +1061,16 @@
       "publishDate": "2026-04-18",
       "status": "scheduled",
       "clue": "Begin when TART follows S (5)",
-      "answer": "START",
+      "answer": "U1RBUlQ=",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Begin\".",
-        "This is a charade clue.",
-        "Put S before TART.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQmVnaW4iLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "UHV0IFMgYmVmb3JlIFRBUlQu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "S + TART gives START."
+      "explanation": "UyArIFRBUlQgZ2l2ZXMgU1RBUlQu"
     },
     {
       "id": 64,
@@ -1078,16 +1078,16 @@
       "publishDate": "2026-04-19",
       "status": "scheduled",
       "clue": "Gaze as TEARS are mixed (5)",
-      "answer": "STARE",
+      "answer": "U1RBUkU=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Gaze\".",
-        "This clue uses an anagram.",
-        "Mix TEARS.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiR2F6ZSIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFRFQVJTLg==",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "TEARS mixed gives STARE."
+      "explanation": "VEVBUlMgbWl4ZWQgZ2l2ZXMgU1RBUkUu"
     },
     {
       "id": 65,
@@ -1095,16 +1095,16 @@
       "publishDate": "2026-04-20",
       "status": "scheduled",
       "clue": "Frighten from S + CARE (5)",
-      "answer": "SCARE",
+      "answer": "U0NBUkU=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Frighten\".",
-        "This is a charade clue.",
-        "Join S and CARE.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiRnJpZ2h0ZW4iLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTIGFuZCBDQVJFLg==",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "S + CARE gives SCARE."
+      "explanation": "UyArIENBUkUgZ2l2ZXMgU0NBUkUu"
     },
     {
       "id": 66,
@@ -1112,16 +1112,16 @@
       "publishDate": "2026-04-21",
       "status": "scheduled",
       "clue": "Bleak from STAR + K (5)",
-      "answer": "STARK",
+      "answer": "U1RBUks=",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Bleak\".",
-        "This is a charade clue.",
-        "Join STAR and K (abbrev. for king).",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQmxlYWsiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVEFSIGFuZCBLIChhYmJyZXYuIGZvciBraW5nKS4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "STAR + K (king) gives STARK."
+      "explanation": "U1RBUiArIEsgKGtpbmcpIGdpdmVzIFNUQVJLLg=="
     },
     {
       "id": 67,
@@ -1129,16 +1129,16 @@
       "publishDate": "2026-04-22",
       "status": "scheduled",
       "clue": "Student, or center of an eye (5)",
-      "answer": "PUPIL",
+      "answer": "UFVQSUw=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means a student.",
-        "The other is the dark center of the eye.",
-        "Starts with P."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGEgc3R1ZGVudC4=",
+        "VGhlIG90aGVyIGlzIHRoZSBkYXJrIGNlbnRlciBvZiB0aGUgZXllLg==",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "PUPIL means both student and center of the eye."
+      "explanation": "UFVQSUwgbWVhbnMgYm90aCBzdHVkZW50IGFuZCBjZW50ZXIgb2YgdGhlIGV5ZS4="
     },
     {
       "id": 68,
@@ -1146,16 +1146,16 @@
       "publishDate": "2026-04-23",
       "status": "scheduled",
       "clue": "Flying mammal, or strike (3)",
-      "answer": "BAT",
+      "answer": "QkFU",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a nocturnal flying mammal.",
-        "The other is to strike at something.",
-        "Starts with B."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgbm9jdHVybmFsIGZseWluZyBtYW1tYWwu",
+        "VGhlIG90aGVyIGlzIHRvIHN0cmlrZSBhdCBzb21ldGhpbmcu",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BAT means both a flying mammal and to strike."
+      "explanation": "QkFUIG1lYW5zIGJvdGggYSBmbHlpbmcgbWFtbWFsIGFuZCB0byBzdHJpa2Uu"
     },
     {
       "id": 69,
@@ -1163,16 +1163,16 @@
       "publishDate": "2026-04-24",
       "status": "scheduled",
       "clue": "Tie, or sketch (4)",
-      "answer": "DRAW",
+      "answer": "RFJBVw==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One result is a tie in a game.",
-        "The other is to sketch with a pencil.",
-        "Starts with D."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIHJlc3VsdCBpcyBhIHRpZSBpbiBhIGdhbWUu",
+        "VGhlIG90aGVyIGlzIHRvIHNrZXRjaCB3aXRoIGEgcGVuY2lsLg==",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "DRAW means both tie and sketch."
+      "explanation": "RFJBVyBtZWFucyBib3RoIHRpZSBhbmQgc2tldGNoLg=="
     },
     {
       "id": 70,
@@ -1180,16 +1180,16 @@
       "publishDate": "2026-04-25",
       "status": "scheduled",
       "clue": "Correct, or entitlement (5)",
-      "answer": "RIGHT",
+      "answer": "UklHSFQ=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means correct.",
-        "The other means an entitlement.",
-        "Starts with R."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGNvcnJlY3Qu",
+        "VGhlIG90aGVyIG1lYW5zIGFuIGVudGl0bGVtZW50Lg==",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "RIGHT means both correct and entitlement."
+      "explanation": "UklHSFQgbWVhbnMgYm90aCBjb3JyZWN0IGFuZCBlbnRpdGxlbWVudC4="
     },
     {
       "id": 71,
@@ -1197,16 +1197,16 @@
       "publishDate": "2026-04-26",
       "status": "scheduled",
       "clue": "Box from REACT mixed (5)",
-      "answer": "CRATE",
+      "answer": "Q1JBVEU=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Box\".",
-        "This clue uses an anagram.",
-        "Mix REACT.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiQm94Ii4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFJFQUNULg==",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "REACT mixed gives CRATE."
+      "explanation": "UkVBQ1QgbWl4ZWQgZ2l2ZXMgQ1JBVEUu"
     },
     {
       "id": 72,
@@ -1214,16 +1214,16 @@
       "publishDate": "2026-04-27",
       "status": "scheduled",
       "clue": "Resin from RINSE mixed (5)",
-      "answer": "RESIN",
+      "answer": "UkVTSU4=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Resin\".",
-        "This clue uses an anagram.",
-        "Mix RINSE.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiUmVzaW4iLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFJJTlNFLg==",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "RINSE mixed gives RESIN."
+      "explanation": "UklOU0UgbWl4ZWQgZ2l2ZXMgUkVTSU4u"
     },
     {
       "id": 73,
@@ -1231,16 +1231,16 @@
       "publishDate": "2026-04-28",
       "status": "scheduled",
       "clue": "Provide food as CRATE is mixed (5)",
-      "answer": "CATER",
+      "answer": "Q0FURVI=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Provide food\".",
-        "This clue uses an anagram.",
-        "Mix CRATE.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiUHJvdmlkZSBmb29kIi4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IENSQVRFLg==",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "CRATE mixed gives CATER."
+      "explanation": "Q1JBVEUgbWl4ZWQgZ2l2ZXMgQ0FURVIu"
     },
     {
       "id": 74,
@@ -1248,16 +1248,16 @@
       "publishDate": "2026-04-29",
       "status": "scheduled",
       "clue": "Service member from AIR + MAN (6)",
-      "answer": "AIRMAN",
+      "answer": "QUlSTUFO",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Service member\".",
-        "This is a charade clue.",
-        "Join AIR and MAN.",
-        "Starts with A."
+        "RGVmaW5pdGlvbiBpcyAiU2VydmljZSBtZW1iZXIiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBBSVIgYW5kIE1BTi4=",
+        "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "AIR + MAN gives AIRMAN."
+      "explanation": "QUlSICsgTUFOIGdpdmVzIEFJUk1BTi4="
     },
     {
       "id": 75,
@@ -1265,16 +1265,16 @@
       "publishDate": "2026-04-30",
       "status": "scheduled",
       "clue": "Store for readers from BOOK + SHOP (8)",
-      "answer": "BOOKSHOP",
+      "answer": "Qk9PS1NIT1A=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Store for readers\".",
-        "This is a charade clue.",
-        "Join BOOK and SHOP.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiU3RvcmUgZm9yIHJlYWRlcnMiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBCT09LIGFuZCBTSE9QLg==",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BOOK + SHOP gives BOOKSHOP."
+      "explanation": "Qk9PSyArIFNIT1AgZ2l2ZXMgQk9PS1NIT1Au"
     },
     {
       "id": 76,
@@ -1282,16 +1282,16 @@
       "publishDate": "2026-05-01",
       "status": "scheduled",
       "clue": "Title line from HEAD + LINE (8)",
-      "answer": "HEADLINE",
+      "answer": "SEVBRExJTkU=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Title line\".",
-        "This is a charade clue.",
-        "Join HEAD and LINE.",
-        "Starts with H."
+        "RGVmaW5pdGlvbiBpcyAiVGl0bGUgbGluZSIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBIRUFEIGFuZCBMSU5FLg==",
+        "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "HEAD + LINE gives HEADLINE."
+      "explanation": "SEVBRCArIExJTkUgZ2l2ZXMgSEVBRExJTkUu"
     },
     {
       "id": 77,
@@ -1299,16 +1299,16 @@
       "publishDate": "2026-05-02",
       "status": "scheduled",
       "clue": "Coastal area from SEA + SIDE (7)",
-      "answer": "SEASIDE",
+      "answer": "U0VBU0lERQ==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Coastal area\".",
-        "This is a charade clue.",
-        "Join SEA and SIDE.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQ29hc3RhbCBhcmVhIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTRUEgYW5kIFNJREUu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SEA + SIDE gives SEASIDE."
+      "explanation": "U0VBICsgU0lERSBnaXZlcyBTRUFTSURFLg=="
     },
     {
       "id": 78,
@@ -1316,16 +1316,16 @@
       "publishDate": "2026-05-03",
       "status": "scheduled",
       "clue": "Night ray from MOON + BEAM (8)",
-      "answer": "MOONBEAM",
+      "answer": "TU9PTkJFQU0=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Night ray\".",
-        "This is a charade clue.",
-        "Join MOON and BEAM.",
-        "Starts with M."
+        "RGVmaW5pdGlvbiBpcyAiTmlnaHQgcmF5Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBNT09OIGFuZCBCRUFNLg==",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MOON + BEAM gives MOONBEAM."
+      "explanation": "TU9PTiArIEJFQU0gZ2l2ZXMgTU9PTkJFQU0u"
     },
     {
       "id": 79,
@@ -1333,16 +1333,16 @@
       "publishDate": "2026-05-04",
       "status": "scheduled",
       "clue": "Greeting from HAND + SHAKE (9)",
-      "answer": "HANDSHAKE",
+      "answer": "SEFORFNIQUtF",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Greeting\".",
-        "This is a charade clue.",
-        "Join HAND and SHAKE.",
-        "Starts with H."
+        "RGVmaW5pdGlvbiBpcyAiR3JlZXRpbmciLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBIQU5EIGFuZCBTSEFLRS4=",
+        "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "HAND + SHAKE gives HANDSHAKE."
+      "explanation": "SEFORCArIFNIQUtFIGdpdmVzIEhBTkRTSEFLRS4="
     },
     {
       "id": 80,
@@ -1350,16 +1350,16 @@
       "publishDate": "2026-05-05",
       "status": "scheduled",
       "clue": "Emergency support from LIFE + LINE (8)",
-      "answer": "LIFELINE",
+      "answer": "TElGRUxJTkU=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Emergency support\".",
-        "This is a charade clue.",
-        "Join LIFE and LINE.",
-        "Starts with L."
+        "RGVmaW5pdGlvbiBpcyAiRW1lcmdlbmN5IHN1cHBvcnQiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBMSUZFIGFuZCBMSU5FLg==",
+        "U3RhcnRzIHdpdGggTC4="
       ],
-      "explanation": "LIFE + LINE gives LIFELINE."
+      "explanation": "TElGRSArIExJTkUgZ2l2ZXMgTElGRUxJTkUu"
     },
     {
       "id": 81,
@@ -1367,16 +1367,16 @@
       "publishDate": "2026-05-06",
       "status": "scheduled",
       "clue": "Night glow from STAR + LIGHT (9)",
-      "answer": "STARLIGHT",
+      "answer": "U1RBUkxJR0hU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Night glow\".",
-        "This is a charade clue.",
-        "Join STAR and LIGHT.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiTmlnaHQgZ2xvdyIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVEFSIGFuZCBMSUdIVC4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "STAR + LIGHT gives STARLIGHT."
+      "explanation": "U1RBUiArIExJR0hUIGdpdmVzIFNUQVJMSUdIVC4="
     },
     {
       "id": 82,
@@ -1384,16 +1384,16 @@
       "publishDate": "2026-05-07",
       "status": "scheduled",
       "clue": "Entrance mat from DOOR + MAT (7)",
-      "answer": "DOORMAT",
+      "answer": "RE9PUk1BVA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Entrance mat\".",
-        "This is a charade clue.",
-        "Join DOOR and MAT.",
-        "Starts with D."
+        "RGVmaW5pdGlvbiBpcyAiRW50cmFuY2UgbWF0Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBET09SIGFuZCBNQVQu",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "DOOR + MAT gives DOORMAT."
+      "explanation": "RE9PUiArIE1BVCBnaXZlcyBET09STUFULg=="
     },
     {
       "id": 83,
@@ -1401,16 +1401,16 @@
       "publishDate": "2026-05-08",
       "status": "scheduled",
       "clue": "Drinking vessel from TEA + CUP (6)",
-      "answer": "TEACUP",
+      "answer": "VEVBQ1VQ",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Drinking vessel\".",
-        "This is a charade clue.",
-        "Join TEA and CUP.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiRHJpbmtpbmcgdmVzc2VsIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBURUEgYW5kIENVUC4=",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TEA + CUP gives TEACUP."
+      "explanation": "VEVBICsgQ1VQIGdpdmVzIFRFQUNVUC4="
     },
     {
       "id": 84,
@@ -1418,16 +1418,16 @@
       "publishDate": "2026-05-09",
       "status": "scheduled",
       "clue": "Play area from SAND + PIT (7)",
-      "answer": "SANDPIT",
+      "answer": "U0FORFBJVA==",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Play area\".",
-        "This is a charade clue.",
-        "Join SAND and PIT.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiUGxheSBhcmVhIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTQU5EIGFuZCBQSVQu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SAND + PIT gives SANDPIT."
+      "explanation": "U0FORCArIFBJVCBnaXZlcyBTQU5EUElULg=="
     },
     {
       "id": 85,
@@ -1435,16 +1435,16 @@
       "publishDate": "2026-05-10",
       "status": "scheduled",
       "clue": "Concern from RACE mixed (4)",
-      "answer": "CARE",
+      "answer": "Q0FSRQ==",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Concern\".",
-        "This clue uses an anagram.",
-        "Mix RACE.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiQ29uY2VybiIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFJBQ0Uu",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "RACE mixed gives CARE."
+      "explanation": "UkFDRSBtaXhlZCBnaXZlcyBDQVJFLg=="
     },
     {
       "id": 86,
@@ -1452,16 +1452,16 @@
       "publishDate": "2026-05-11",
       "status": "scheduled",
       "clue": "Gem from PEAL holding R (5)",
-      "answer": "PEARL",
+      "answer": "UEVBUkw=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Gem\".",
-        "This is a container clue.",
-        "Put R inside PEAL.",
-        "Starts with P."
+        "RGVmaW5pdGlvbiBpcyAiR2VtIi4=",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFIgaW5zaWRlIFBFQUwu",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "PEAL holding R gives PEARL."
+      "explanation": "UEVBTCBob2xkaW5nIFIgZ2l2ZXMgUEVBUkwu"
     },
     {
       "id": 87,
@@ -1469,16 +1469,16 @@
       "publishDate": "2026-05-12",
       "status": "scheduled",
       "clue": "Craft from OATS with B in front (5)",
-      "answer": "BOATS",
+      "answer": "Qk9BVFM=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Craft\" (plural).",
-        "This is a charade clue.",
-        "Put B before OATS.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiQ3JhZnQiIChwbHVyYWwpLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "UHV0IEIgYmVmb3JlIE9BVFMu",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "B + OATS gives BOATS."
+      "explanation": "QiArIE9BVFMgZ2l2ZXMgQk9BVFMu"
     },
     {
       "id": 88,
@@ -1486,16 +1486,16 @@
       "publishDate": "2026-05-13",
       "status": "scheduled",
       "clue": "Illumination, or not heavy (5)",
-      "answer": "LIGHT",
+      "answer": "TElHSFQ=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means illumination.",
-        "The other means not heavy.",
-        "Starts with L."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGlsbHVtaW5hdGlvbi4=",
+        "VGhlIG90aGVyIG1lYW5zIG5vdCBoZWF2eS4=",
+        "U3RhcnRzIHdpdGggTC4="
       ],
-      "explanation": "LIGHT means both illumination and not heavy."
+      "explanation": "TElHSFQgbWVhbnMgYm90aCBpbGx1bWluYXRpb24gYW5kIG5vdCBoZWF2eS4="
     },
     {
       "id": 89,
@@ -1503,16 +1503,16 @@
       "publishDate": "2026-05-14",
       "status": "scheduled",
       "clue": "Fastener, or run suddenly (4)",
-      "answer": "BOLT",
+      "answer": "Qk9MVA==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a metal fastener.",
-        "The other means to run suddenly.",
-        "Starts with B."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgbWV0YWwgZmFzdGVuZXIu",
+        "VGhlIG90aGVyIG1lYW5zIHRvIHJ1biBzdWRkZW5seS4=",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BOLT means both fastener and run suddenly."
+      "explanation": "Qk9MVCBtZWFucyBib3RoIGZhc3RlbmVyIGFuZCBydW4gc3VkZGVubHku"
     },
     {
       "id": 90,
@@ -1520,16 +1520,16 @@
       "publishDate": "2026-05-15",
       "status": "scheduled",
       "clue": "Dossier, or rasping tool (4)",
-      "answer": "FILE",
+      "answer": "RklMRQ==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One is a collection of documents.",
-        "The other is a tool for smoothing.",
-        "Starts with F."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgY29sbGVjdGlvbiBvZiBkb2N1bWVudHMu",
+        "VGhlIG90aGVyIGlzIGEgdG9vbCBmb3Igc21vb3RoaW5nLg==",
+        "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "FILE means both dossier and rasping tool."
+      "explanation": "RklMRSBtZWFucyBib3RoIGRvc3NpZXIgYW5kIHJhc3BpbmcgdG9vbC4="
     },
     {
       "id": 91,
@@ -1537,16 +1537,16 @@
       "publishDate": "2026-05-16",
       "status": "scheduled",
       "clue": "Bright weather, or cheerful mood (8)",
-      "answer": "SUNSHINE",
+      "answer": "U1VOU0hJTkU=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One refers to bright weather.",
-        "The other means a cheerful mood or temperament.",
-        "Starts with S."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIHJlZmVycyB0byBicmlnaHQgd2VhdGhlci4=",
+        "VGhlIG90aGVyIG1lYW5zIGEgY2hlZXJmdWwgbW9vZCBvciB0ZW1wZXJhbWVudC4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SUNSHINE can mean bright weather or cheerful mood."
+      "explanation": "U1VOU0hJTkUgY2FuIG1lYW4gYnJpZ2h0IHdlYXRoZXIgb3IgY2hlZXJmdWwgbW9vZC4="
     },
     {
       "id": 92,
@@ -1554,16 +1554,16 @@
       "publishDate": "2026-05-17",
       "status": "scheduled",
       "clue": "Briny liquid from AWE + TEARS mixed (8)",
-      "answer": "SEAWATER",
+      "answer": "U0VBV0FURVI=",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Briny liquid\".",
-        "This clue uses an anagram.",
-        "Mix AWE and TEARS together.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiQnJpbnkgbGlxdWlkIi4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IEFXRSBhbmQgVEVBUlMgdG9nZXRoZXIu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "AWE + TEARS mixed gives SEAWATER."
+      "explanation": "QVdFICsgVEVBUlMgbWl4ZWQgZ2l2ZXMgU0VBV0FURVIu"
     },
     {
       "id": 93,
@@ -1571,16 +1571,16 @@
       "publishDate": "2026-05-18",
       "status": "scheduled",
       "clue": "Night ascent from MOON + RISE (8)",
-      "answer": "MOONRISE",
+      "answer": "TU9PTlJJU0U=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Night ascent\".",
-        "This is a charade clue.",
-        "Join MOON and RISE.",
-        "Starts with M."
+        "RGVmaW5pdGlvbiBpcyAiTmlnaHQgYXNjZW50Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBNT09OIGFuZCBSSVNFLg==",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "MOON + RISE gives MOONRISE."
+      "explanation": "TU9PTiArIFJJU0UgZ2l2ZXMgTU9PTlJJU0Uu"
     },
     {
       "id": 94,
@@ -1588,16 +1588,16 @@
       "publishDate": "2026-05-19",
       "status": "scheduled",
       "clue": "Famous feature from LAND + MARK (8)",
-      "answer": "LANDMARK",
+      "answer": "TEFORE1BUks=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Famous feature\".",
-        "This is a charade clue.",
-        "Join LAND and MARK.",
-        "Starts with L."
+        "RGVmaW5pdGlvbiBpcyAiRmFtb3VzIGZlYXR1cmUiLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBMQU5EIGFuZCBNQVJLLg==",
+        "U3RhcnRzIHdpdGggTC4="
       ],
-      "explanation": "LAND + MARK gives LANDMARK."
+      "explanation": "TEFORCArIE1BUksgZ2l2ZXMgTEFORE1BUksu"
     },
     {
       "id": 95,
@@ -1605,16 +1605,16 @@
       "publishDate": "2026-05-20",
       "status": "scheduled",
       "clue": "Cafe from TEA + HOUSE (8)",
-      "answer": "TEAHOUSE",
+      "answer": "VEVBSE9VU0U=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Cafe\".",
-        "This is a charade clue.",
-        "Join TEA and HOUSE.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiQ2FmZSIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBURUEgYW5kIEhPVVNFLg==",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TEA + HOUSE gives TEAHOUSE."
+      "explanation": "VEVBICsgSE9VU0UgZ2l2ZXMgVEVBSE9VU0Uu"
     },
     {
       "id": 96,
@@ -1622,16 +1622,16 @@
       "publishDate": "2026-05-21",
       "status": "scheduled",
       "clue": "Skill from LATENT mixed (6)",
-      "answer": "TALENT",
+      "answer": "VEFMRU5U",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Skill\".",
-        "This clue uses an anagram.",
-        "Mix LATENT.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiU2tpbGwiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IExBVEVOVC4=",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "LATENT mixed gives TALENT."
+      "explanation": "TEFURU5UIG1peGVkIGdpdmVzIFRBTEVOVC4="
     },
     {
       "id": 97,
@@ -1639,16 +1639,16 @@
       "publishDate": "2026-05-22",
       "status": "scheduled",
       "clue": "Meal from PASTER mixed (6)",
-      "answer": "REPAST",
+      "answer": "UkVQQVNU",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Meal\".",
-        "This clue uses an anagram.",
-        "Mix PASTER.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiTWVhbCIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IFBBU1RFUi4=",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "PASTER mixed gives REPAST."
+      "explanation": "UEFTVEVSIG1peGVkIGdpdmVzIFJFUEFTVC4="
     },
     {
       "id": 98,
@@ -1656,16 +1656,16 @@
       "publishDate": "2026-05-23",
       "status": "scheduled",
       "clue": "Ship side from STAR + BOARD (9)",
-      "answer": "STARBOARD",
+      "answer": "U1RBUkJPQVJE",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Ship side\".",
-        "This is a charade clue.",
-        "Join STAR and BOARD.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiU2hpcCBzaWRlIi4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBTVEFSIGFuZCBCT0FSRC4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "STAR + BOARD gives STARBOARD."
+      "explanation": "U1RBUiArIEJPQVJEIGdpdmVzIFNUQVJCT0FSRC4="
     },
     {
       "id": 99,
@@ -1673,16 +1673,16 @@
       "publishDate": "2026-05-24",
       "status": "scheduled",
       "clue": "Dish from LATE holding P (5)",
-      "answer": "PLATE",
+      "answer": "UExBVEU=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Dish\".",
-        "This is a container clue.",
-        "Put P inside LATE.",
-        "Starts with P."
+        "RGVmaW5pdGlvbiBpcyAiRGlzaCIu",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IFAgaW5zaWRlIExBVEUu",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "LATE holding P gives PLATE."
+      "explanation": "TEFURSBob2xkaW5nIFAgZ2l2ZXMgUExBVEUu"
     },
     {
       "id": 100,
@@ -1690,16 +1690,16 @@
       "publishDate": "2026-05-25",
       "status": "scheduled",
       "clue": "Leader, or measuring tool (5)",
-      "answer": "RULER",
+      "answer": "UlVMRVI=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means a leader.",
-        "The other is used to measure length.",
-        "Starts with R."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGEgbGVhZGVyLg==",
+        "VGhlIG90aGVyIGlzIHVzZWQgdG8gbWVhc3VyZSBsZW5ndGgu",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "RULER means both leader and measuring tool."
+      "explanation": "UlVMRVIgbWVhbnMgYm90aCBsZWFkZXIgYW5kIG1lYXN1cmluZyB0b29sLg=="
     },
     {
       "id": 101,
@@ -1707,16 +1707,16 @@
       "publishDate": "2026-05-26",
       "status": "scheduled",
       "clue": "Turbulent STREAM reveals an expert (6)",
-      "answer": "MASTER",
+      "answer": "TUFTVEVS",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a word meaning expert.",
-        "This clue uses an anagram.",
-        "Rearrange STREAM.",
-        "Starts with M."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgZXhwZXJ0Lg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFNUUkVBTS4=",
+        "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "STREAM rearranged gives MASTER."
+      "explanation": "U1RSRUFNIHJlYXJyYW5nZWQgZ2l2ZXMgTUFTVEVSLg=="
     },
     {
       "id": 102,
@@ -1724,16 +1724,16 @@
       "publishDate": "2026-05-27",
       "status": "scheduled",
       "clue": "Fairy emerges from torn STRIPE (6)",
-      "answer": "SPRITE",
+      "answer": "U1BSSVRF",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a word meaning fairy.",
-        "This clue uses an anagram.",
-        "Rearrange STRIPE.",
-        "Starts with S."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgZmFpcnku",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFNUUklQRS4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "STRIPE rearranged gives SPRITE."
+      "explanation": "U1RSSVBFIHJlYXJyYW5nZWQgZ2l2ZXMgU1BSSVRFLg=="
     },
     {
       "id": 103,
@@ -1741,16 +1741,16 @@
       "publishDate": "2026-05-28",
       "status": "scheduled",
       "clue": "TAILED erratically, note the particular (6)",
-      "answer": "DETAIL",
+      "answer": "REVUQUlM",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a word meaning particular.",
-        "This clue uses an anagram.",
-        "Rearrange TAILED.",
-        "Starts with D."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgcGFydGljdWxhci4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIFRBSUxFRC4=",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "TAILED rearranged gives DETAIL."
+      "explanation": "VEFJTEVEIHJlYXJyYW5nZWQgZ2l2ZXMgREVUQUlMLg=="
     },
     {
       "id": 104,
@@ -1758,16 +1758,16 @@
       "publishDate": "2026-05-29",
       "status": "scheduled",
       "clue": "Vehicle carrying animal makes floor covering (6)",
-      "answer": "CARPET",
+      "answer": "Q0FSUEVU",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"floor covering\".",
-        "This is a charade clue.",
-        "A vehicle plus an animal.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiZmxvb3IgY292ZXJpbmciLg==",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "QSB2ZWhpY2xlIHBsdXMgYW4gYW5pbWFsLg==",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "CAR (vehicle) + PET (animal) gives CARPET."
+      "explanation": "Q0FSICh2ZWhpY2xlKSArIFBFVCAoYW5pbWFsKSBnaXZlcyBDQVJQRVQu"
     },
     {
       "id": 105,
@@ -1775,16 +1775,16 @@
       "publishDate": "2026-05-30",
       "status": "scheduled",
       "clue": "Give a few - that's attractive (8)",
-      "answer": "HANDSOME",
+      "answer": "SEFORFNPTUU=",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"attractive\".",
-        "This is a charade clue.",
-        "Think of words for give and a few.",
-        "Starts with H."
+        "RGVmaW5pdGlvbiBpcyAiYXR0cmFjdGl2ZSIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "VGhpbmsgb2Ygd29yZHMgZm9yIGdpdmUgYW5kIGEgZmV3Lg==",
+        "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "HAND (give) + SOME (a few) gives HANDSOME."
+      "explanation": "SEFORCAoZ2l2ZSkgKyBTT01FIChhIGZldykgZ2l2ZXMgSEFORFNPTUUu"
     },
     {
       "id": 106,
@@ -1792,16 +1792,16 @@
       "publishDate": "2026-05-31",
       "status": "scheduled",
       "clue": "Listen to the call for jewellery (7)",
-      "answer": "EARRING",
+      "answer": "RUFSUklORw==",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a piece of jewellery.",
-        "This is a charade clue.",
-        "Listen plus call.",
-        "Starts with E."
+        "VGhpbmsgb2YgYSBwaWVjZSBvZiBqZXdlbGxlcnku",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "TGlzdGVuIHBsdXMgY2FsbC4=",
+        "U3RhcnRzIHdpdGggRS4="
       ],
-      "explanation": "EAR (listen) + RING (call) gives EARRING."
+      "explanation": "RUFSIChsaXN0ZW4pICsgUklORyAoY2FsbCkgZ2l2ZXMgRUFSUklORy4="
     },
     {
       "id": 107,
@@ -1809,16 +1809,16 @@
       "publishDate": "2026-06-01",
       "status": "scheduled",
       "clue": "Metal container holds sun god - it's a coach (5)",
-      "answer": "TRAIN",
+      "answer": "VFJBSU4=",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"coach\".",
-        "This is a container clue.",
-        "A metal container holds a sun god inside.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiY29hY2giLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "QSBtZXRhbCBjb250YWluZXIgaG9sZHMgYSBzdW4gZ29kIGluc2lkZS4=",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TIN (metal container) holding RA (sun god) gives T-RA-IN = TRAIN."
+      "explanation": "VElOIChtZXRhbCBjb250YWluZXIpIGhvbGRpbmcgUkEgKHN1biBnb2QpIGdpdmVzIFQtUkEtSU4gPSBUUkFJTi4="
     },
     {
       "id": 108,
@@ -1826,16 +1826,16 @@
       "publishDate": "2026-06-02",
       "status": "scheduled",
       "clue": "Apartment embracing nothing - just drift (5)",
-      "answer": "FLOAT",
+      "answer": "RkxPQVQ=",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"drift\".",
-        "This is a container clue.",
-        "An apartment holds nothing inside.",
-        "Starts with F."
+        "RGVmaW5pdGlvbiBpcyAiZHJpZnQiLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "QW4gYXBhcnRtZW50IGhvbGRzIG5vdGhpbmcgaW5zaWRlLg==",
+        "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "FLAT (apartment) embracing O (nothing) gives FL-O-AT = FLOAT."
+      "explanation": "RkxBVCAoYXBhcnRtZW50KSBlbWJyYWNpbmcgTyAobm90aGluZykgZ2l2ZXMgRkwtTy1BVCA9IEZMT0FULg=="
     },
     {
       "id": 109,
@@ -1843,16 +1843,16 @@
       "publishDate": "2026-06-03",
       "status": "scheduled",
       "clue": "Clever, or full of light (6)",
-      "answer": "BRIGHT",
+      "answer": "QlJJR0hU",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means clever.",
-        "The other means full of light.",
-        "Starts with B."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGNsZXZlci4=",
+        "VGhlIG90aGVyIG1lYW5zIGZ1bGwgb2YgbGlnaHQu",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BRIGHT means both clever and full of light."
+      "explanation": "QlJJR0hUIG1lYW5zIGJvdGggY2xldmVyIGFuZCBmdWxsIG9mIGxpZ2h0Lg=="
     },
     {
       "id": 110,
@@ -1860,16 +1860,16 @@
       "publishDate": "2026-06-04",
       "status": "scheduled",
       "clue": "Rain, or one who displays (6)",
-      "answer": "SHOWER",
+      "answer": "U0hPV0VS",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One means a type of rain.",
-        "The other means one who shows.",
-        "Starts with S."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGEgdHlwZSBvZiByYWluLg==",
+        "VGhlIG90aGVyIG1lYW5zIG9uZSB3aG8gc2hvd3Mu",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SHOWER means both rain and one who shows."
+      "explanation": "U0hPV0VSIG1lYW5zIGJvdGggcmFpbiBhbmQgb25lIHdobyBzaG93cy4="
     },
     {
       "id": 111,
@@ -1877,16 +1877,16 @@
       "publishDate": "2026-06-05",
       "status": "scheduled",
       "clue": "Comfort when FIREEL broke out - bananas, in fact (6)",
-      "answer": "RELIEF",
+      "answer": "UkVMSUVG",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Comfort\".",
-        "This clue uses an anagram.",
-        "Rearrange FIREEL.",
-        "Starts with R."
+        "RGVmaW5pdGlvbiBpcyAiQ29tZm9ydCIu",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIEZJUkVFTC4=",
+        "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "FIREEL broken out gives RELIEF."
+      "explanation": "RklSRUVMIGJyb2tlbiBvdXQgZ2l2ZXMgUkVMSUVGLg=="
     },
     {
       "id": 112,
@@ -1894,16 +1894,16 @@
       "publishDate": "2026-06-06",
       "status": "scheduled",
       "clue": "Mythical yarn from TALL + TALE (8)",
-      "answer": "TALLTALE",
+      "answer": "VEFMTFRBTEU=",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Mythical yarn\".",
-        "This is a charade clue.",
-        "Join TALL and TALE.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiTXl0aGljYWwgeWFybiIu",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBUQUxMIGFuZCBUQUxFLg==",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TALL + TALE gives TALLTALE."
+      "explanation": "VEFMTCArIFRBTEUgZ2l2ZXMgVEFMTFRBTEUu"
     },
     {
       "id": 113,
@@ -1911,16 +1911,16 @@
       "publishDate": "2026-06-07",
       "status": "scheduled",
       "clue": "Pouch from POET holding CK (6)",
-      "answer": "POCKET",
+      "answer": "UE9DS0VU",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Pouch\".",
-        "This is a container clue.",
-        "Put CK inside POET.",
-        "Starts with P."
+        "RGVmaW5pdGlvbiBpcyAiUG91Y2giLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IENLIGluc2lkZSBQT0VULg==",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "POET holding CK gives POCKET."
+      "explanation": "UE9FVCBob2xkaW5nIENLIGdpdmVzIFBPQ0tFVC4="
     },
     {
       "id": 114,
@@ -1928,16 +1928,16 @@
       "publishDate": "2026-06-08",
       "status": "scheduled",
       "clue": "Beer on tap, or preliminary version (5)",
-      "answer": "DRAFT",
+      "answer": "RFJBRlQ=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "There are two definitions.",
-        "One means beer on tap.",
-        "The other means a preliminary version.",
-        "Starts with D."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIGJlZXIgb24gdGFwLg==",
+        "VGhlIG90aGVyIG1lYW5zIGEgcHJlbGltaW5hcnkgdmVyc2lvbi4=",
+        "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "DRAFT means both beer on tap and a preliminary version."
+      "explanation": "RFJBRlQgbWVhbnMgYm90aCBiZWVyIG9uIHRhcCBhbmQgYSBwcmVsaW1pbmFyeSB2ZXJzaW9uLg=="
     },
     {
       "id": 115,
@@ -1945,16 +1945,16 @@
       "publishDate": "2026-06-09",
       "status": "scheduled",
       "clue": "Metal from LIVERS wildly mixed (6)",
-      "answer": "SILVER",
+      "answer": "U0lMVkVS",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "Definition is \"Metal\".",
-        "This clue uses an anagram.",
-        "Mix LIVERS.",
-        "Starts with S."
+        "RGVmaW5pdGlvbiBpcyAiTWV0YWwiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "TWl4IExJVkVSUy4=",
+        "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "LIVERS wildly mixed gives SILVER."
+      "explanation": "TElWRVJTIHdpbGRseSBtaXhlZCBnaXZlcyBTSUxWRVIu"
     },
     {
       "id": 116,
@@ -1962,16 +1962,16 @@
       "publishDate": "2026-06-10",
       "status": "scheduled",
       "clue": "Cotton from TREAD holding H (6)",
-      "answer": "THREAD",
+      "answer": "VEhSRUFE",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Cotton\".",
-        "This is a container clue.",
-        "Put H inside TREAD.",
-        "Starts with T."
+        "RGVmaW5pdGlvbiBpcyAiQ290dG9uIi4=",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IEggaW5zaWRlIFRSRUFELg==",
+        "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "TREAD holding H gives THREAD."
+      "explanation": "VFJFQUQgaG9sZGluZyBIIGdpdmVzIFRIUkVBRC4="
     },
     {
       "id": 117,
@@ -1979,16 +1979,16 @@
       "publishDate": "2026-06-11",
       "status": "scheduled",
       "clue": "Hearing part from EAR + DRUM (7)",
-      "answer": "EARDRUM",
+      "answer": "RUFSRFJVTQ==",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Hearing part\".",
-        "This is a charade clue.",
-        "Join EAR and DRUM.",
-        "Starts with E."
+        "RGVmaW5pdGlvbiBpcyAiSGVhcmluZyBwYXJ0Ii4=",
+        "VGhpcyBpcyBhIGNoYXJhZGUgY2x1ZS4=",
+        "Sm9pbiBFQVIgYW5kIERSVU0u",
+        "U3RhcnRzIHdpdGggRS4="
       ],
-      "explanation": "EAR + DRUM gives EARDRUM."
+      "explanation": "RUFSICsgRFJVTSBnaXZlcyBFQVJEUlVNLg=="
     },
     {
       "id": 118,
@@ -1996,16 +1996,16 @@
       "publishDate": "2026-06-12",
       "status": "scheduled",
       "clue": "Hit hard, or British money (5)",
-      "answer": "POUND",
+      "answer": "UE9VTkQ=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "There are two definitions.",
-        "One means to hit hard.",
-        "The other is British money.",
-        "Starts with P."
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIG1lYW5zIHRvIGhpdCBoYXJkLg==",
+        "VGhlIG90aGVyIGlzIEJyaXRpc2ggbW9uZXku",
+        "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "POUND means both to hit hard and a unit of British currency."
+      "explanation": "UE9VTkQgbWVhbnMgYm90aCB0byBoaXQgaGFyZCBhbmQgYSB1bml0IG9mIEJyaXRpc2ggY3VycmVuY3ku"
     },
     {
       "id": 119,
@@ -2013,16 +2013,16 @@
       "publishDate": "2026-06-13",
       "status": "scheduled",
       "clue": "Route from SOURCE stirred up (6)",
-      "answer": "COURSE",
+      "answer": "Q09VUlNF",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "Definition is \"Route\".",
-        "This clue uses an anagram.",
-        "Stir up SOURCE.",
-        "Starts with C."
+        "RGVmaW5pdGlvbiBpcyAiUm91dGUiLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "U3RpciB1cCBTT1VSQ0Uu",
+        "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "SOURCE stirred up gives COURSE."
+      "explanation": "U09VUkNFIHN0aXJyZWQgdXAgZ2l2ZXMgQ09VUlNFLg=="
     },
     {
       "id": 120,
@@ -2030,16 +2030,16 @@
       "publishDate": "2026-06-14",
       "status": "scheduled",
       "clue": "Crossing from BRIDE holding G (6)",
-      "answer": "BRIDGE",
+      "answer": "QlJJREdF",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "Definition is \"Crossing\".",
-        "This is a container clue.",
-        "Put G inside BRIDE.",
-        "Starts with B."
+        "RGVmaW5pdGlvbiBpcyAiQ3Jvc3NpbmciLg==",
+        "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLg==",
+        "UHV0IEcgaW5zaWRlIEJSSURFLg==",
+        "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "BRIDE holding G gives BRIDGE."
+      "explanation": "QlJJREUgaG9sZGluZyBHIGdpdmVzIEJSSURHRS4="
     },
     {
       "id": 121,
@@ -2047,16 +2047,16 @@
       "publishDate": "2026-06-15",
       "status": "scheduled",
       "clue": "Right click! Left click! Copy! Paste! Paste! (4)",
-      "answer": "TAPE",
+      "answer": "VEFQRQ==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Paste\" has more than just a computer meaning.",
-        "Think about what \"copy and paste\" looks like in real life — sticking things together.",
-        "What do you use to stick paper to a wall?",
-        "Starts with T, ends with E."
+        "IlBhc3RlIiBoYXMgbW9yZSB0aGFuIGp1c3QgYSBjb21wdXRlciBtZWFuaW5nLg==",
+        "VGhpbmsgYWJvdXQgd2hhdCAiY29weSBhbmQgcGFzdGUiIGxvb2tzIGxpa2UgaW4gcmVhbCBsaWZlIOKAlCBzdGlja2luZyB0aGluZ3MgdG9nZXRoZXIu",
+        "V2hhdCBkbyB5b3UgdXNlIHRvIHN0aWNrIHBhcGVyIHRvIGEgd2FsbD8=",
+        "U3RhcnRzIHdpdGggVCwgZW5kcyB3aXRoIEUu"
       ],
-      "explanation": "The surface reads like computer actions. \"Paste\" also means to stick — TAPE is what you use to paste things in the physical world."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBjb21wdXRlciBhY3Rpb25zLiAiUGFzdGUiIGFsc28gbWVhbnMgdG8gc3RpY2sg4oCUIFRBUEUgaXMgd2hhdCB5b3UgdXNlIHRvIHBhc3RlIHRoaW5ncyBpbiB0aGUgcGh5c2ljYWwgd29ybGQu"
     },
     {
       "id": 122,
@@ -2064,16 +2064,16 @@
       "publishDate": "2026-06-16",
       "status": "scheduled",
       "clue": "High note! Low note! Scale! Scale! (5)",
-      "answer": "WEIGH",
+      "answer": "V0VJR0g=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Scale\" isn't only musical.",
-        "Leave the music room, head to the kitchen.",
-        "What do you do on a bathroom scale?",
-        "Starts with W, 5 letters."
+        "IlNjYWxlIiBpc24ndCBvbmx5IG11c2ljYWwu",
+        "TGVhdmUgdGhlIG11c2ljIHJvb20sIGhlYWQgdG8gdGhlIGtpdGNoZW4u",
+        "V2hhdCBkbyB5b3UgZG8gb24gYSBiYXRocm9vbSBzY2FsZT8=",
+        "U3RhcnRzIHdpdGggVywgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests music. \"Scale\" also means a weighing device — you WEIGH things on a scale."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgbXVzaWMuICJTY2FsZSIgYWxzbyBtZWFucyBhIHdlaWdoaW5nIGRldmljZSDigJQgeW91IFdFSUdIIHRoaW5ncyBvbiBhIHNjYWxlLg=="
     },
     {
       "id": 123,
@@ -2081,16 +2081,16 @@
       "publishDate": "2026-06-17",
       "status": "scheduled",
       "clue": "Fast lane! Slow lane! Merge! Merge! (4)",
-      "answer": "POOL",
+      "answer": "UE9PTA==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Lane\" doesn't have to be on a highway.",
-        "Think about where else you'd find lanes — somewhere with water.",
-        "A swimming ___?",
-        "Starts with P, 4 letters."
+        "IkxhbmUiIGRvZXNuJ3QgaGF2ZSB0byBiZSBvbiBhIGhpZ2h3YXku",
+        "VGhpbmsgYWJvdXQgd2hlcmUgZWxzZSB5b3UnZCBmaW5kIGxhbmVzIOKAlCBzb21ld2hlcmUgd2l0aCB3YXRlci4=",
+        "QSBzd2ltbWluZyBfX18/",
+        "U3RhcnRzIHdpdGggUCwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like highway driving. \"Lane\" and \"merge\" also apply to a swimming POOL, where lanes merge at the wall."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBoaWdod2F5IGRyaXZpbmcuICJMYW5lIiBhbmQgIm1lcmdlIiBhbHNvIGFwcGx5IHRvIGEgc3dpbW1pbmcgUE9PTCwgd2hlcmUgbGFuZXMgbWVyZ2UgYXQgdGhlIHdhbGwu"
     },
     {
       "id": 124,
@@ -2098,16 +2098,16 @@
       "publishDate": "2026-06-18",
       "status": "scheduled",
       "clue": "Cut! Cut! Stitch! Stitch! (4)",
-      "answer": "EDIT",
+      "answer": "RURJVA==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Cut\" is a common word in filmmaking.",
-        "\"Stitch\" can mean joining clips together.",
-        "What does a film editor do?",
-        "Starts with E, 4 letters."
+        "IkN1dCIgaXMgYSBjb21tb24gd29yZCBpbiBmaWxtbWFraW5nLg==",
+        "IlN0aXRjaCIgY2FuIG1lYW4gam9pbmluZyBjbGlwcyB0b2dldGhlci4=",
+        "V2hhdCBkb2VzIGEgZmlsbSBlZGl0b3IgZG8/",
+        "U3RhcnRzIHdpdGggRSwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface sounds like sewing. \"Cut\" and \"stitch\" are also film editing terms — the answer is EDIT."
+      "explanation": "VGhlIHN1cmZhY2Ugc291bmRzIGxpa2Ugc2V3aW5nLiAiQ3V0IiBhbmQgInN0aXRjaCIgYXJlIGFsc28gZmlsbSBlZGl0aW5nIHRlcm1zIOKAlCB0aGUgYW5zd2VyIGlzIEVESVQu"
     },
     {
       "id": 125,
@@ -2115,16 +2115,16 @@
       "publishDate": "2026-06-19",
       "status": "scheduled",
       "clue": "Serve! Serve! Return! Return! (4)",
-      "answer": "SHOP",
+      "answer": "U0hPUA==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "The surface looks like tennis, but step off the court.",
-        "\"Return\" also means bringing something back to a store.",
-        "Where do you return items?",
-        "Starts with S, 4 letters."
+        "VGhlIHN1cmZhY2UgbG9va3MgbGlrZSB0ZW5uaXMsIGJ1dCBzdGVwIG9mZiB0aGUgY291cnQu",
+        "IlJldHVybiIgYWxzbyBtZWFucyBicmluZ2luZyBzb21ldGhpbmcgYmFjayB0byBhIHN0b3JlLg==",
+        "V2hlcmUgZG8geW91IHJldHVybiBpdGVtcz8=",
+        "U3RhcnRzIHdpdGggUywgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface mimics tennis. \"Serve\" customers and \"return\" goods both happen at a SHOP."
+      "explanation": "VGhlIHN1cmZhY2UgbWltaWNzIHRlbm5pcy4gIlNlcnZlIiBjdXN0b21lcnMgYW5kICJyZXR1cm4iIGdvb2RzIGJvdGggaGFwcGVuIGF0IGEgU0hPUC4="
     },
     {
       "id": 126,
@@ -2132,16 +2132,16 @@
       "publishDate": "2026-06-20",
       "status": "scheduled",
       "clue": "Red card! Yellow card! Foul! Foul! (4)",
-      "answer": "BANK",
+      "answer": "QkFOSw==",
       "clueType": "double-definition",
       "difficulty": "hard",
       "hintLevels": [
-        "\"Card\" exists far beyond the football pitch.",
-        "Think about where you swipe or tap a card every day.",
-        "A debit card belongs to a ___?",
-        "Starts with B, 4 letters."
+        "IkNhcmQiIGV4aXN0cyBmYXIgYmV5b25kIHRoZSBmb290YmFsbCBwaXRjaC4=",
+        "VGhpbmsgYWJvdXQgd2hlcmUgeW91IHN3aXBlIG9yIHRhcCBhIGNhcmQgZXZlcnkgZGF5Lg==",
+        "QSBkZWJpdCBjYXJkIGJlbG9uZ3MgdG8gYSBfX18/",
+        "U3RhcnRzIHdpdGggQiwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like a football match. \"Card\" also means bank card — the answer is BANK."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhIGZvb3RiYWxsIG1hdGNoLiAiQ2FyZCIgYWxzbyBtZWFucyBiYW5rIGNhcmQg4oCUIHRoZSBhbnN3ZXIgaXMgQkFOSy4="
     },
     {
       "id": 127,
@@ -2149,16 +2149,16 @@
       "publishDate": "2026-06-21",
       "status": "scheduled",
       "clue": "Takeoff! Landing! Gate! Gate! (4)",
-      "answer": "DOOR",
+      "answer": "RE9PUg==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Gate\" isn't only at an airport.",
-        "Think about the most basic meaning of \"gate.\"",
-        "A gate and a ___ both let you enter a space.",
-        "Starts with D, 4 letters."
+        "IkdhdGUiIGlzbid0IG9ubHkgYXQgYW4gYWlycG9ydC4=",
+        "VGhpbmsgYWJvdXQgdGhlIG1vc3QgYmFzaWMgbWVhbmluZyBvZiAiZ2F0ZS4i",
+        "QSBnYXRlIGFuZCBhIF9fXyBib3RoIGxldCB5b3UgZW50ZXIgYSBzcGFjZS4=",
+        "U3RhcnRzIHdpdGggRCwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests air travel. \"Gate\" in its simplest form is an entrance — a DOOR."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgYWlyIHRyYXZlbC4gIkdhdGUiIGluIGl0cyBzaW1wbGVzdCBmb3JtIGlzIGFuIGVudHJhbmNlIOKAlCBhIERPT1Iu"
     },
     {
       "id": 128,
@@ -2166,16 +2166,16 @@
       "publishDate": "2026-06-22",
       "status": "scheduled",
       "clue": "Blackout! Brownout! Switch! Switch! (6)",
-      "answer": "REMOTE",
+      "answer": "UkVNT1RF",
       "clueType": "double-definition",
       "difficulty": "hard",
       "hintLevels": [
-        "\"Switch\" doesn't just mean a light switch.",
-        "Think about switching channels.",
-        "What device do you use to switch channels from the couch?",
-        "Starts with R, 6 letters."
+        "IlN3aXRjaCIgZG9lc24ndCBqdXN0IG1lYW4gYSBsaWdodCBzd2l0Y2gu",
+        "VGhpbmsgYWJvdXQgc3dpdGNoaW5nIGNoYW5uZWxzLg==",
+        "V2hhdCBkZXZpY2UgZG8geW91IHVzZSB0byBzd2l0Y2ggY2hhbm5lbHMgZnJvbSB0aGUgY291Y2g/",
+        "U3RhcnRzIHdpdGggUiwgNiBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like a power outage. \"Switch\" also means changing channels — you do that with a REMOTE."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhIHBvd2VyIG91dGFnZS4gIlN3aXRjaCIgYWxzbyBtZWFucyBjaGFuZ2luZyBjaGFubmVscyDigJQgeW91IGRvIHRoYXQgd2l0aCBhIFJFTU9URS4="
     },
     {
       "id": 129,
@@ -2183,16 +2183,16 @@
       "publishDate": "2026-06-23",
       "status": "scheduled",
       "clue": "Headshot! Body shot! Reload! Reload! (3)",
-      "answer": "WEB",
+      "answer": "V0VC",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Reload\" isn't only about guns.",
-        "Think about what you reload every day on your computer.",
-        "You reload a ___ page.",
-        "Starts with W, 3 letters."
+        "IlJlbG9hZCIgaXNuJ3Qgb25seSBhYm91dCBndW5zLg==",
+        "VGhpbmsgYWJvdXQgd2hhdCB5b3UgcmVsb2FkIGV2ZXJ5IGRheSBvbiB5b3VyIGNvbXB1dGVyLg==",
+        "WW91IHJlbG9hZCBhIF9fXyBwYWdlLg==",
+        "U3RhcnRzIHdpdGggVywgMyBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface sounds like a shooter game. \"Reload\" also means refreshing a page — on the WEB."
+      "explanation": "VGhlIHN1cmZhY2Ugc291bmRzIGxpa2UgYSBzaG9vdGVyIGdhbWUuICJSZWxvYWQiIGFsc28gbWVhbnMgcmVmcmVzaGluZyBhIHBhZ2Ug4oCUIG9uIHRoZSBXRUIu"
     },
     {
       "id": 130,
@@ -2200,16 +2200,16 @@
       "publishDate": "2026-06-24",
       "status": "scheduled",
       "clue": "Pitch up! Pitch down! Key! Key! (4)",
-      "answer": "LOCK",
+      "answer": "TE9DSw==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Key\" has a life outside of music.",
-        "Think about the metal object in your pocket.",
-        "A key goes into a ___?",
-        "Starts with L, 4 letters."
+        "IktleSIgaGFzIGEgbGlmZSBvdXRzaWRlIG9mIG11c2ljLg==",
+        "VGhpbmsgYWJvdXQgdGhlIG1ldGFsIG9iamVjdCBpbiB5b3VyIHBvY2tldC4=",
+        "QSBrZXkgZ29lcyBpbnRvIGEgX19fPw==",
+        "U3RhcnRzIHdpdGggTCwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests music. \"Key\" is also what opens a LOCK."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgbXVzaWMuICJLZXkiIGlzIGFsc28gd2hhdCBvcGVucyBhIExPQ0su"
     },
     {
       "id": 131,
@@ -2217,16 +2217,16 @@
       "publishDate": "2026-06-25",
       "status": "scheduled",
       "clue": "Pawn up! Queen down! Check! Check! (4)",
-      "answer": "BILL",
+      "answer": "QklMTA==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Check\" isn't just a chess move.",
-        "Think about what arrives at the end of a restaurant meal.",
-        "\"Check, please!\" — another word for that?",
-        "Starts with B, 4 letters."
+        "IkNoZWNrIiBpc24ndCBqdXN0IGEgY2hlc3MgbW92ZS4=",
+        "VGhpbmsgYWJvdXQgd2hhdCBhcnJpdmVzIGF0IHRoZSBlbmQgb2YgYSByZXN0YXVyYW50IG1lYWwu",
+        "IkNoZWNrLCBwbGVhc2UhIiDigJQgYW5vdGhlciB3b3JkIGZvciB0aGF0Pw==",
+        "U3RhcnRzIHdpdGggQiwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like chess. \"Check\" also means a restaurant bill — the answer is BILL."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBjaGVzcy4gIkNoZWNrIiBhbHNvIG1lYW5zIGEgcmVzdGF1cmFudCBiaWxsIOKAlCB0aGUgYW5zd2VyIGlzIEJJTEwu"
     },
     {
       "id": 132,
@@ -2234,16 +2234,16 @@
       "publishDate": "2026-06-26",
       "status": "scheduled",
       "clue": "Shuffle! Deal! Fold! Fold! (6)",
-      "answer": "CREASE",
+      "answer": "Q1JFQVNF",
       "clueType": "double-definition",
       "difficulty": "hard",
       "hintLevels": [
-        "\"Fold\" isn't only a poker move.",
-        "Think about what happens to paper when you fold it.",
-        "A fold leaves a ___?",
-        "Starts with C, 6 letters."
+        "IkZvbGQiIGlzbid0IG9ubHkgYSBwb2tlciBtb3ZlLg==",
+        "VGhpbmsgYWJvdXQgd2hhdCBoYXBwZW5zIHRvIHBhcGVyIHdoZW4geW91IGZvbGQgaXQu",
+        "QSBmb2xkIGxlYXZlcyBhIF9fXz8=",
+        "U3RhcnRzIHdpdGggQywgNiBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface sounds like a card game. \"Fold\" physically creates a CREASE."
+      "explanation": "VGhlIHN1cmZhY2Ugc291bmRzIGxpa2UgYSBjYXJkIGdhbWUuICJGb2xkIiBwaHlzaWNhbGx5IGNyZWF0ZXMgYSBDUkVBU0Uu"
     },
     {
       "id": 133,
@@ -2251,16 +2251,16 @@
       "publishDate": "2026-06-27",
       "status": "scheduled",
       "clue": "Anchor! Sail! Port! Port! (4)",
-      "answer": "WINE",
+      "answer": "V0lORQ==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Port\" has a famous second meaning.",
-        "Think about what you'd drink, not where you'd dock.",
-        "Port is a type of ___?",
-        "Starts with W, 4 letters."
+        "IlBvcnQiIGhhcyBhIGZhbW91cyBzZWNvbmQgbWVhbmluZy4=",
+        "VGhpbmsgYWJvdXQgd2hhdCB5b3UnZCBkcmluaywgbm90IHdoZXJlIHlvdSdkIGRvY2su",
+        "UG9ydCBpcyBhIHR5cGUgb2YgX19fPw==",
+        "U3RhcnRzIHdpdGggVywgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like sailing. \"Port\" is also a type of WINE."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBzYWlsaW5nLiAiUG9ydCIgaXMgYWxzbyBhIHR5cGUgb2YgV0lORS4="
     },
     {
       "id": 134,
@@ -2268,16 +2268,16 @@
       "publishDate": "2026-06-28",
       "status": "scheduled",
       "clue": "Siren! Hose! Drill! Drill! (5)",
-      "answer": "COACH",
+      "answer": "Q09BQ0g=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Drill\" isn't only a fire drill.",
-        "Think about who runs drills for a team.",
-        "Athletes follow a ___'s instructions.",
-        "Starts with C, 5 letters."
+        "IkRyaWxsIiBpc24ndCBvbmx5IGEgZmlyZSBkcmlsbC4=",
+        "VGhpbmsgYWJvdXQgd2hvIHJ1bnMgZHJpbGxzIGZvciBhIHRlYW0u",
+        "QXRobGV0ZXMgZm9sbG93IGEgX19fJ3MgaW5zdHJ1Y3Rpb25zLg==",
+        "U3RhcnRzIHdpdGggQywgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests a fire station. \"Drill\" also means to train a team — that's what a COACH does."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgYSBmaXJlIHN0YXRpb24uICJEcmlsbCIgYWxzbyBtZWFucyB0byB0cmFpbiBhIHRlYW0g4oCUIHRoYXQncyB3aGF0IGEgQ09BQ0ggZG9lcy4="
     },
     {
       "id": 135,
@@ -2285,16 +2285,16 @@
       "publishDate": "2026-06-29",
       "status": "scheduled",
       "clue": "Bloom! Wilt! Stem! Stem! (4)",
-      "answer": "STOP",
+      "answer": "U1RPUA==",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Stem\" isn't just part of a flower.",
-        "Think about \"stem the tide\" or \"stem the bleeding.\"",
-        "To stem something means to ___ it.",
-        "Starts with S, 4 letters."
+        "IlN0ZW0iIGlzbid0IGp1c3QgcGFydCBvZiBhIGZsb3dlci4=",
+        "VGhpbmsgYWJvdXQgInN0ZW0gdGhlIHRpZGUiIG9yICJzdGVtIHRoZSBibGVlZGluZy4i",
+        "VG8gc3RlbSBzb21ldGhpbmcgbWVhbnMgdG8gX19fIGl0Lg==",
+        "U3RhcnRzIHdpdGggUywgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like a garden. \"Stem\" also means to halt — STOP."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhIGdhcmRlbi4gIlN0ZW0iIGFsc28gbWVhbnMgdG8gaGFsdCDigJQgU1RPUC4="
     },
     {
       "id": 136,
@@ -2302,16 +2302,16 @@
       "publishDate": "2026-06-30",
       "status": "scheduled",
       "clue": "Upload! Download! Stream! Stream! (5)",
-      "answer": "RIVER",
+      "answer": "UklWRVI=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Stream\" isn't only about Netflix.",
-        "Step outside and think about nature.",
-        "A stream flows into a ___?",
-        "Starts with R, 5 letters."
+        "IlN0cmVhbSIgaXNuJ3Qgb25seSBhYm91dCBOZXRmbGl4Lg==",
+        "U3RlcCBvdXRzaWRlIGFuZCB0aGluayBhYm91dCBuYXR1cmUu",
+        "QSBzdHJlYW0gZmxvd3MgaW50byBhIF9fXz8=",
+        "U3RhcnRzIHdpdGggUiwgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests internet activity. \"Stream\" is also a body of water — a small one leads to a RIVER."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgaW50ZXJuZXQgYWN0aXZpdHkuICJTdHJlYW0iIGlzIGFsc28gYSBib2R5IG9mIHdhdGVyIOKAlCBhIHNtYWxsIG9uZSBsZWFkcyB0byBhIFJJVkVSLg=="
     },
     {
       "id": 137,
@@ -2319,16 +2319,16 @@
       "publishDate": "2026-07-01",
       "status": "scheduled",
       "clue": "Debit! Credit! Balance! Balance! (5)",
-      "answer": "SCALE",
+      "answer": "U0NBTEU=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Balance\" isn't only about money.",
-        "Think about an old-fashioned tool for weighing.",
-        "A balance is another word for a ___?",
-        "Starts with S, 5 letters."
+        "IkJhbGFuY2UiIGlzbid0IG9ubHkgYWJvdXQgbW9uZXku",
+        "VGhpbmsgYWJvdXQgYW4gb2xkLWZhc2hpb25lZCB0b29sIGZvciB3ZWlnaGluZy4=",
+        "QSBiYWxhbmNlIGlzIGFub3RoZXIgd29yZCBmb3IgYSBfX18/",
+        "U3RhcnRzIHdpdGggUywgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like banking. \"Balance\" also refers to a weighing SCALE."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBiYW5raW5nLiAiQmFsYW5jZSIgYWxzbyByZWZlcnMgdG8gYSB3ZWlnaGluZyBTQ0FMRS4="
     },
     {
       "id": 138,
@@ -2336,16 +2336,16 @@
       "publishDate": "2026-07-02",
       "status": "scheduled",
       "clue": "Frost! Thaw! Draft! Draft! (4)",
-      "answer": "BEER",
+      "answer": "QkVFUg==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Draft\" isn't just a cold breeze.",
-        "Think about what's on tap at a pub.",
-        "A draft ___ comes from a keg.",
-        "Starts with B, 4 letters."
+        "IkRyYWZ0IiBpc24ndCBqdXN0IGEgY29sZCBicmVlemUu",
+        "VGhpbmsgYWJvdXQgd2hhdCdzIG9uIHRhcCBhdCBhIHB1Yi4=",
+        "QSBkcmFmdCBfX18gY29tZXMgZnJvbSBhIGtlZy4=",
+        "U3RhcnRzIHdpdGggQiwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests winter weather. \"Draft\" also means beer on tap — BEER."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgd2ludGVyIHdlYXRoZXIuICJEcmFmdCIgYWxzbyBtZWFucyBiZWVyIG9uIHRhcCDigJQgQkVFUi4="
     },
     {
       "id": 139,
@@ -2353,16 +2353,16 @@
       "publishDate": "2026-07-03",
       "status": "scheduled",
       "clue": "Dribble! Shoot! Court! Court! (5)",
-      "answer": "JUDGE",
+      "answer": "SlVER0U=",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "\"Court\" isn't only a basketball court.",
-        "Think about a courtroom.",
-        "Who presides over a court?",
-        "Starts with J, 5 letters."
+        "IkNvdXJ0IiBpc24ndCBvbmx5IGEgYmFza2V0YmFsbCBjb3VydC4=",
+        "VGhpbmsgYWJvdXQgYSBjb3VydHJvb20u",
+        "V2hvIHByZXNpZGVzIG92ZXIgYSBjb3VydD8=",
+        "U3RhcnRzIHdpdGggSiwgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface reads like basketball. \"Court\" also means a court of law — led by a JUDGE."
+      "explanation": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBiYXNrZXRiYWxsLiAiQ291cnQiIGFsc28gbWVhbnMgYSBjb3VydCBvZiBsYXcg4oCUIGxlZCBieSBhIEpVREdFLg=="
     },
     {
       "id": 140,
@@ -2370,16 +2370,16 @@
       "publishDate": "2026-07-04",
       "status": "scheduled",
       "clue": "Orbit! Dock! Launch! Launch! (5)",
-      "answer": "BEGIN",
+      "answer": "QkVHSU4=",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "\"Launch\" isn't only about rockets.",
-        "Think about launching a new product or project.",
-        "To launch = to ___?",
-        "Starts with B, 5 letters."
+        "IkxhdW5jaCIgaXNuJ3Qgb25seSBhYm91dCByb2NrZXRzLg==",
+        "VGhpbmsgYWJvdXQgbGF1bmNoaW5nIGEgbmV3IHByb2R1Y3Qgb3IgcHJvamVjdC4=",
+        "VG8gbGF1bmNoID0gdG8gX19fPw==",
+        "U3RhcnRzIHdpdGggQiwgNSBsZXR0ZXJzLg=="
       ],
-      "explanation": "The surface suggests space travel. \"Launch\" also means to kick off — BEGIN."
+      "explanation": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgc3BhY2UgdHJhdmVsLiAiTGF1bmNoIiBhbHNvIG1lYW5zIHRvIGtpY2sgb2ZmIOKAlCBCRUdJTi4="
     },
     {
       "id": 141,
@@ -2387,16 +2387,16 @@
       "publishDate": "2026-07-05",
       "status": "scheduled",
       "clue": "Menace found in three athletes (6)",
-      "answer": "THREAT",
+      "answer": "VEhSRUFU",
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "The answer is hiding inside the clue text.",
-        "Look across the word boundaries.",
-        "Found in \"tHREe AThletes\" — span those letters.",
-        "Starts with T, 6 letters."
+        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW5zaWRlIHRoZSBjbHVlIHRleHQu",
+        "TG9vayBhY3Jvc3MgdGhlIHdvcmQgYm91bmRhcmllcy4=",
+        "Rm91bmQgaW4gInRIUkVlIEFUaGxldGVzIiDigJQgc3BhbiB0aG9zZSBsZXR0ZXJzLg==",
+        "U3RhcnRzIHdpdGggVCwgNiBsZXR0ZXJzLg=="
       ],
-      "explanation": "Hidden word: the letters T-H-R-E-A-T are concealed across \"tHREe AThletes.\" The definition is \"menace.\""
+      "explanation": "SGlkZGVuIHdvcmQ6IHRoZSBsZXR0ZXJzIFQtSC1SLUUtQS1UIGFyZSBjb25jZWFsZWQgYWNyb3NzICJ0SFJFZSBBVGhsZXRlcy4iIFRoZSBkZWZpbml0aW9uIGlzICJtZW5hY2UuIg=="
     },
     {
       "id": 142,
@@ -2404,16 +2404,16 @@
       "publishDate": "2026-07-06",
       "status": "scheduled",
       "clue": "Nobleman found in pearly gates (4)",
-      "answer": "EARL",
+      "answer": "RUFSTA==",
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "The answer is hidden inside the clue.",
-        "Look within one of the words.",
-        "Focus on 'pearly' — the answer is inside it.",
-        "Hidden in p-EARL-y. An earl is a nobleman."
+        "VGhlIGFuc3dlciBpcyBoaWRkZW4gaW5zaWRlIHRoZSBjbHVlLg==",
+        "TG9vayB3aXRoaW4gb25lIG9mIHRoZSB3b3Jkcy4=",
+        "Rm9jdXMgb24gJ3BlYXJseScg4oCUIHRoZSBhbnN3ZXIgaXMgaW5zaWRlIGl0Lg==",
+        "SGlkZGVuIGluIHAtRUFSTC15LiBBbiBlYXJsIGlzIGEgbm9ibGVtYW4u"
       ],
-      "explanation": "Hidden word: EARL is concealed inside 'pEARLy'. 'Found in' signals a hidden word. 'Nobleman' is the definition — an earl is a British title of nobility."
+      "explanation": "SGlkZGVuIHdvcmQ6IEVBUkwgaXMgY29uY2VhbGVkIGluc2lkZSAncEVBUkx5Jy4gJ0ZvdW5kIGluJyBzaWduYWxzIGEgaGlkZGVuIHdvcmQuICdOb2JsZW1hbicgaXMgdGhlIGRlZmluaXRpb24g4oCUIGFuIGVhcmwgaXMgYSBCcml0aXNoIHRpdGxlIG9mIG5vYmlsaXR5Lg=="
     },
     {
       "id": 143,
@@ -2421,16 +2421,16 @@
       "publishDate": "2026-07-07",
       "status": "scheduled",
       "clue": "Rogue found in ultra scale model (6)",
-      "answer": "RASCAL",
+      "answer": "UkFTQ0FM",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "The answer is hidden in the clue text.",
-        "\"Found in\" is your indicator.",
-        "Look across two adjacent words.",
-        "Hidden across 'ultRASCALe' — RASCAL spans 'ultra scale'."
+        "VGhlIGFuc3dlciBpcyBoaWRkZW4gaW4gdGhlIGNsdWUgdGV4dC4=",
+        "IkZvdW5kIGluIiBpcyB5b3VyIGluZGljYXRvci4=",
+        "TG9vayBhY3Jvc3MgdHdvIGFkamFjZW50IHdvcmRzLg==",
+        "SGlkZGVuIGFjcm9zcyAndWx0UkFTQ0FMZScg4oCUIFJBU0NBTCBzcGFucyAndWx0cmEgc2NhbGUnLg=="
       ],
-      "explanation": "Hidden word: RASCAL is concealed across 'ultRASCALe'. 'Found in' signals a hidden word. 'Rogue' is the definition."
+      "explanation": "SGlkZGVuIHdvcmQ6IFJBU0NBTCBpcyBjb25jZWFsZWQgYWNyb3NzICd1bHRSQVNDQUxlJy4gJ0ZvdW5kIGluJyBzaWduYWxzIGEgaGlkZGVuIHdvcmQuICdSb2d1ZScgaXMgdGhlIGRlZmluaXRpb24u"
     },
     {
       "id": 144,
@@ -2438,16 +2438,16 @@
       "publishDate": "2026-07-08",
       "status": "scheduled",
       "clue": "Weapon concealed in capital stolen (6)",
-      "answer": "PISTOL",
+      "answer": "UElTVE9M",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "The answer is hiding in the clue text.",
-        "\"Concealed in\" is your indicator.",
-        "Look across 'capital stolen' carefully.",
-        "Hidden across 'caPISTOLen' — PISTOL spans the two words."
+        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW4gdGhlIGNsdWUgdGV4dC4=",
+        "IkNvbmNlYWxlZCBpbiIgaXMgeW91ciBpbmRpY2F0b3Iu",
+        "TG9vayBhY3Jvc3MgJ2NhcGl0YWwgc3RvbGVuJyBjYXJlZnVsbHku",
+        "SGlkZGVuIGFjcm9zcyAnY2FQSVNUT0xlbicg4oCUIFBJU1RPTCBzcGFucyB0aGUgdHdvIHdvcmRzLg=="
       ],
-      "explanation": "Hidden word: PISTOL is concealed across 'caPISTOLen'. 'Concealed in' signals a hidden word. 'Weapon' is the definition."
+      "explanation": "SGlkZGVuIHdvcmQ6IFBJU1RPTCBpcyBjb25jZWFsZWQgYWNyb3NzICdjYVBJU1RPTGVuJy4gJ0NvbmNlYWxlZCBpbicgc2lnbmFscyBhIGhpZGRlbiB3b3JkLiAnV2VhcG9uJyBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 145,
@@ -2455,16 +2455,16 @@
       "publishDate": "2026-07-09",
       "status": "scheduled",
       "clue": "Fruit some of the grapes are (4)",
-      "answer": "PEAR",
+      "answer": "UEVBUg==",
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "The answer is hiding in the clue.",
-        "\"Some of\" signals a hidden word.",
-        "Look across \"graPEs ARe.\"",
-        "Starts with P, 4 letters."
+        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW4gdGhlIGNsdWUu",
+        "IlNvbWUgb2YiIHNpZ25hbHMgYSBoaWRkZW4gd29yZC4=",
+        "TG9vayBhY3Jvc3MgImdyYVBFcyBBUmUuIg==",
+        "U3RhcnRzIHdpdGggUCwgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "Hidden word: P-E-A-R is concealed in \"graPEs ARe.\" \"Some of\" is the hidden word indicator. \"Fruit\" is the definition."
+      "explanation": "SGlkZGVuIHdvcmQ6IFAtRS1BLVIgaXMgY29uY2VhbGVkIGluICJncmFQRXMgQVJlLiIgIlNvbWUgb2YiIGlzIHRoZSBoaWRkZW4gd29yZCBpbmRpY2F0b3IuICJGcnVpdCIgaXMgdGhlIGRlZmluaXRpb24u"
     },
     {
       "id": 146,
@@ -2472,16 +2472,16 @@
       "publishDate": "2026-07-10",
       "status": "scheduled",
       "clue": "Vegetable within the spinach arrived (4)",
-      "answer": "CHAR",
+      "answer": "Q0hBUg==",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "The answer is hiding inside the clue text.",
-        "\"Within\" signals a hidden word.",
-        "Look across \"spinaCH ARrived.\"",
-        "Starts with C, 4 letters."
+        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW5zaWRlIHRoZSBjbHVlIHRleHQu",
+        "IldpdGhpbiIgc2lnbmFscyBhIGhpZGRlbiB3b3JkLg==",
+        "TG9vayBhY3Jvc3MgInNwaW5hQ0ggQVJyaXZlZC4i",
+        "U3RhcnRzIHdpdGggQywgNCBsZXR0ZXJzLg=="
       ],
-      "explanation": "Hidden word: C-H-A-R is concealed in \"spinaCH ARrived.\" \"Within\" is the indicator. \"Vegetable\" is the definition — chard is a leafy green, and CHAR can refer to a type of fish or to partially burn."
+      "explanation": "SGlkZGVuIHdvcmQ6IEMtSC1BLVIgaXMgY29uY2VhbGVkIGluICJzcGluYUNIIEFScml2ZWQuIiAiV2l0aGluIiBpcyB0aGUgaW5kaWNhdG9yLiAiVmVnZXRhYmxlIiBpcyB0aGUgZGVmaW5pdGlvbiDigJQgY2hhcmQgaXMgYSBsZWFmeSBncmVlbiwgYW5kIENIQVIgY2FuIHJlZmVyIHRvIGEgdHlwZSBvZiBmaXNoIG9yIHRvIHBhcnRpYWxseSBidXJuLg=="
     },
     {
       "id": 147,
@@ -2489,16 +2489,16 @@
       "publishDate": "2026-07-11",
       "status": "scheduled",
       "clue": "Rodents going back in STAR formation (4)",
-      "answer": "RATS",
+      "answer": "UkFUUw==",
       "clueType": "reversal",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of small animals.",
-        "\"Going back\" signals a reversal.",
-        "Reverse the letters in STAR.",
-        "STAR backwards = ?"
+        "VGhpbmsgb2Ygc21hbGwgYW5pbWFscy4=",
+        "IkdvaW5nIGJhY2siIHNpZ25hbHMgYSByZXZlcnNhbC4=",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBpbiBTVEFSLg==",
+        "U1RBUiBiYWNrd2FyZHMgPSA/"
       ],
-      "explanation": "STAR reversed gives RATS. \"Going back\" is the reversal indicator. \"Rodents\" is the definition."
+      "explanation": "U1RBUiByZXZlcnNlZCBnaXZlcyBSQVRTLiAiR29pbmcgYmFjayIgaXMgdGhlIHJldmVyc2FsIGluZGljYXRvci4gIlJvZGVudHMiIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 148,
@@ -2506,16 +2506,16 @@
       "publishDate": "2026-07-12",
       "status": "scheduled",
       "clue": "Container returned as cooking vessel (3)",
-      "answer": "POT",
+      "answer": "UE9U",
       "clueType": "reversal",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of something you cook in.",
-        "\"Returned\" signals a reversal.",
-        "What word for container reverses to a cooking vessel?",
-        "TOP reversed = ?"
+        "VGhpbmsgb2Ygc29tZXRoaW5nIHlvdSBjb29rIGluLg==",
+        "IlJldHVybmVkIiBzaWduYWxzIGEgcmV2ZXJzYWwu",
+        "V2hhdCB3b3JkIGZvciBjb250YWluZXIgcmV2ZXJzZXMgdG8gYSBjb29raW5nIHZlc3NlbD8=",
+        "VE9QIHJldmVyc2VkID0gPw=="
       ],
-      "explanation": "TOP (container/lid) reversed gives POT. \"Returned\" is the reversal indicator. \"Cooking vessel\" is the definition."
+      "explanation": "VE9QIChjb250YWluZXIvbGlkKSByZXZlcnNlZCBnaXZlcyBQT1QuICJSZXR1cm5lZCIgaXMgdGhlIHJldmVyc2FsIGluZGljYXRvci4gIkNvb2tpbmcgdmVzc2VsIiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 149,
@@ -2523,16 +2523,16 @@
       "publishDate": "2026-07-13",
       "status": "scheduled",
       "clue": "Dog brought back as a deity (3)",
-      "answer": "GOD",
+      "answer": "R09E",
       "clueType": "reversal",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a supreme being.",
-        "\"Brought back\" signals a reversal.",
-        "What word for dog reversed gives a deity?",
-        "DOG reversed = ?"
+        "VGhpbmsgb2YgYSBzdXByZW1lIGJlaW5nLg==",
+        "IkJyb3VnaHQgYmFjayIgc2lnbmFscyBhIHJldmVyc2FsLg==",
+        "V2hhdCB3b3JkIGZvciBkb2cgcmV2ZXJzZWQgZ2l2ZXMgYSBkZWl0eT8=",
+        "RE9HIHJldmVyc2VkID0gPw=="
       ],
-      "explanation": "DOG reversed gives GOD. \"Brought back\" is the reversal indicator. \"Deity\" is the definition."
+      "explanation": "RE9HIHJldmVyc2VkIGdpdmVzIEdPRC4gIkJyb3VnaHQgYmFjayIgaXMgdGhlIHJldmVyc2FsIGluZGljYXRvci4gIkRlaXR5IiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 150,
@@ -2540,16 +2540,16 @@
       "publishDate": "2026-07-14",
       "status": "scheduled",
       "clue": "Exist when evil is reflected (4)",
-      "answer": "LIVE",
+      "answer": "TElWRQ==",
       "clueType": "reversal",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a word meaning exist or be alive.",
-        "\"Reflected\" signals a reversal.",
-        "Reverse the letters of EVIL.",
-        "EVIL backwards = ?"
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgZXhpc3Qgb3IgYmUgYWxpdmUu",
+        "IlJlZmxlY3RlZCIgc2lnbmFscyBhIHJldmVyc2FsLg==",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBFVklMLg==",
+        "RVZJTCBiYWNrd2FyZHMgPSA/"
       ],
-      "explanation": "EVIL reversed gives LIVE. \"Reflected\" is the reversal indicator. \"Exist\" is the definition."
+      "explanation": "RVZJTCByZXZlcnNlZCBnaXZlcyBMSVZFLiAiUmVmbGVjdGVkIiBpcyB0aGUgcmV2ZXJzYWwgaW5kaWNhdG9yLiAiRXhpc3QiIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 151,
@@ -2557,16 +2557,16 @@
       "publishDate": "2026-07-15",
       "status": "scheduled",
       "clue": "Compensation coming back from the drawer (6)",
-      "answer": "REWARD",
+      "answer": "UkVXQVJE",
       "clueType": "reversal",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of money you receive for helping.",
-        "\"Coming back\" signals a reversal.",
-        "Drawer is not furniture here — it's someone who draws.",
-        "DRAWER reversed = ?"
+        "VGhpbmsgb2YgbW9uZXkgeW91IHJlY2VpdmUgZm9yIGhlbHBpbmcu",
+        "IkNvbWluZyBiYWNrIiBzaWduYWxzIGEgcmV2ZXJzYWwu",
+        "RHJhd2VyIGlzIG5vdCBmdXJuaXR1cmUgaGVyZSDigJQgaXQncyBzb21lb25lIHdobyBkcmF3cy4=",
+        "RFJBV0VSIHJldmVyc2VkID0gPw=="
       ],
-      "explanation": "DRAWER reversed gives REWARD. \"Coming back\" is the reversal indicator. \"Compensation\" is the definition. The misdirection is that \"drawer\" reads like furniture but is actually a word to be reversed."
+      "explanation": "RFJBV0VSIHJldmVyc2VkIGdpdmVzIFJFV0FSRC4gIkNvbWluZyBiYWNrIiBpcyB0aGUgcmV2ZXJzYWwgaW5kaWNhdG9yLiAiQ29tcGVuc2F0aW9uIiBpcyB0aGUgZGVmaW5pdGlvbi4gVGhlIG1pc2RpcmVjdGlvbiBpcyB0aGF0ICJkcmF3ZXIiIHJlYWRzIGxpa2UgZnVybml0dXJlIGJ1dCBpcyBhY3R1YWxseSBhIHdvcmQgdG8gYmUgcmV2ZXJzZWQu"
     },
     {
       "id": 152,
@@ -2574,16 +2574,16 @@
       "publishDate": "2026-07-16",
       "status": "scheduled",
       "clue": "Portions returned as a strap (5)",
-      "answer": "PARTS",
+      "answer": "UEFSVFM=",
       "clueType": "reversal",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of sections or pieces.",
-        "\"Returned\" signals a reversal.",
-        "What word for strap reverses to give portions?",
-        "STRAP reversed = ?"
+        "VGhpbmsgb2Ygc2VjdGlvbnMgb3IgcGllY2VzLg==",
+        "IlJldHVybmVkIiBzaWduYWxzIGEgcmV2ZXJzYWwu",
+        "V2hhdCB3b3JkIGZvciBzdHJhcCByZXZlcnNlcyB0byBnaXZlIHBvcnRpb25zPw==",
+        "U1RSQVAgcmV2ZXJzZWQgPSA/"
       ],
-      "explanation": "STRAP reversed gives PARTS. \"Returned\" is the reversal indicator. \"Portions\" is the definition."
+      "explanation": "U1RSQVAgcmV2ZXJzZWQgZ2l2ZXMgUEFSVFMuICJSZXR1cm5lZCIgaXMgdGhlIHJldmVyc2FsIGluZGljYXRvci4gIlBvcnRpb25zIiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 153,
@@ -2591,16 +2591,16 @@
       "publishDate": "2026-07-17",
       "status": "scheduled",
       "clue": "Meat we hear is a stake (5)",
-      "answer": "STEAK",
+      "answer": "U1RFQUs=",
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a cut of beef.",
-        "\"We hear\" signals a homophone.",
-        "What sounds like STAKE but is food?",
-        "STAKE sounds like STEAK."
+        "VGhpbmsgb2YgYSBjdXQgb2YgYmVlZi4=",
+        "IldlIGhlYXIiIHNpZ25hbHMgYSBob21vcGhvbmUu",
+        "V2hhdCBzb3VuZHMgbGlrZSBTVEFLRSBidXQgaXMgZm9vZD8=",
+        "U1RBS0Ugc291bmRzIGxpa2UgU1RFQUsu"
       ],
-      "explanation": "STEAK sounds like STAKE. \"We hear\" is the homophone indicator. \"Meat\" is the definition."
+      "explanation": "U1RFQUsgc291bmRzIGxpa2UgU1RBS0UuICJXZSBoZWFyIiBpcyB0aGUgaG9tb3Bob25lIGluZGljYXRvci4gIk1lYXQiIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 154,
@@ -2608,16 +2608,16 @@
       "publishDate": "2026-07-18",
       "status": "scheduled",
       "clue": "Correct, reportedly, to compose (5)",
-      "answer": "WRITE",
+      "answer": "V1JJVEU=",
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of putting words on paper.",
-        "\"Reportedly\" signals a homophone.",
-        "What sounds like RIGHT but means compose?",
-        "RIGHT sounds like WRITE."
+        "VGhpbmsgb2YgcHV0dGluZyB3b3JkcyBvbiBwYXBlci4=",
+        "IlJlcG9ydGVkbHkiIHNpZ25hbHMgYSBob21vcGhvbmUu",
+        "V2hhdCBzb3VuZHMgbGlrZSBSSUdIVCBidXQgbWVhbnMgY29tcG9zZT8=",
+        "UklHSFQgc291bmRzIGxpa2UgV1JJVEUu"
       ],
-      "explanation": "WRITE sounds like RIGHT (correct). \"Reportedly\" is the homophone indicator. \"To compose\" is the definition."
+      "explanation": "V1JJVEUgc291bmRzIGxpa2UgUklHSFQgKGNvcnJlY3QpLiAiUmVwb3J0ZWRseSIgaXMgdGhlIGhvbW9waG9uZSBpbmRpY2F0b3IuICJUbyBjb21wb3NlIiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 155,
@@ -2625,16 +2625,16 @@
       "publishDate": "2026-07-19",
       "status": "scheduled",
       "clue": "Flower that sounds like quarrels (4)",
-      "answer": "ROSE",
+      "answer": "Uk9TRQ==",
       "clueType": "homophone",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a common garden flower.",
-        "\"Sounds like\" signals a homophone.",
-        "What flower sounds like a word meaning arguments?",
-        "ROSE sounds like ROWS (quarrels)."
+        "VGhpbmsgb2YgYSBjb21tb24gZ2FyZGVuIGZsb3dlci4=",
+        "IlNvdW5kcyBsaWtlIiBzaWduYWxzIGEgaG9tb3Bob25lLg==",
+        "V2hhdCBmbG93ZXIgc291bmRzIGxpa2UgYSB3b3JkIG1lYW5pbmcgYXJndW1lbnRzPw==",
+        "Uk9TRSBzb3VuZHMgbGlrZSBST1dTIChxdWFycmVscyku"
       ],
-      "explanation": "Homophone: ROSE sounds like ROWS (quarrels/arguments). 'Sounds like' signals a homophone. 'Flower' is the definition."
+      "explanation": "SG9tb3Bob25lOiBST1NFIHNvdW5kcyBsaWtlIFJPV1MgKHF1YXJyZWxzL2FyZ3VtZW50cykuICdTb3VuZHMgbGlrZScgc2lnbmFscyBhIGhvbW9waG9uZS4gJ0Zsb3dlcicgaXMgdGhlIGRlZmluaXRpb24u"
     },
     {
       "id": 156,
@@ -2642,16 +2642,16 @@
       "publishDate": "2026-07-20",
       "status": "scheduled",
       "clue": "Bare reportedly is an animal (4)",
-      "answer": "BEAR",
+      "answer": "QkVBUg==",
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a large furry animal.",
-        "\"Reportedly\" signals a homophone.",
-        "What sounds like BARE but is an animal?",
-        "BARE sounds like BEAR."
+        "VGhpbmsgb2YgYSBsYXJnZSBmdXJyeSBhbmltYWwu",
+        "IlJlcG9ydGVkbHkiIHNpZ25hbHMgYSBob21vcGhvbmUu",
+        "V2hhdCBzb3VuZHMgbGlrZSBCQVJFIGJ1dCBpcyBhbiBhbmltYWw/",
+        "QkFSRSBzb3VuZHMgbGlrZSBCRUFSLg=="
       ],
-      "explanation": "BEAR sounds like BARE. \"Reportedly\" is the homophone indicator. \"Animal\" is the definition."
+      "explanation": "QkVBUiBzb3VuZHMgbGlrZSBCQVJFLiAiUmVwb3J0ZWRseSIgaXMgdGhlIGhvbW9waG9uZSBpbmRpY2F0b3IuICJBbmltYWwiIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 157,
@@ -2659,16 +2659,16 @@
       "publishDate": "2026-07-21",
       "status": "scheduled",
       "clue": "Cash heard as something owed (5)",
-      "answer": "DOUGH",
+      "answer": "RE9VR0g=",
       "clueType": "homophone",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of slang for money.",
-        "\"Heard\" signals a homophone.",
-        "What slang word for money sounds like DOE?",
-        "DOE (female deer) sounds like DOUGH."
+        "VGhpbmsgb2Ygc2xhbmcgZm9yIG1vbmV5Lg==",
+        "IkhlYXJkIiBzaWduYWxzIGEgaG9tb3Bob25lLg==",
+        "V2hhdCBzbGFuZyB3b3JkIGZvciBtb25leSBzb3VuZHMgbGlrZSBET0U/",
+        "RE9FIChmZW1hbGUgZGVlcikgc291bmRzIGxpa2UgRE9VR0gu"
       ],
-      "explanation": "DOUGH sounds like DOE. \"Heard\" is the homophone indicator. \"Cash\" is the definition — dough is slang for money."
+      "explanation": "RE9VR0ggc291bmRzIGxpa2UgRE9FLiAiSGVhcmQiIGlzIHRoZSBob21vcGhvbmUgaW5kaWNhdG9yLiAiQ2FzaCIgaXMgdGhlIGRlZmluaXRpb24g4oCUIGRvdWdoIGlzIHNsYW5nIGZvciBtb25leS4="
     },
     {
       "id": 158,
@@ -2676,16 +2676,16 @@
       "publishDate": "2026-07-22",
       "status": "scheduled",
       "clue": "Bored by the sound of a plank (5)",
-      "answer": "BOARD",
+      "answer": "Qk9BUkQ=",
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a flat piece of wood.",
-        "\"By the sound of\" signals a homophone.",
-        "What sounds like BORED but is a piece of wood?",
-        "BORED sounds like BOARD."
+        "VGhpbmsgb2YgYSBmbGF0IHBpZWNlIG9mIHdvb2Qu",
+        "IkJ5IHRoZSBzb3VuZCBvZiIgc2lnbmFscyBhIGhvbW9waG9uZS4=",
+        "V2hhdCBzb3VuZHMgbGlrZSBCT1JFRCBidXQgaXMgYSBwaWVjZSBvZiB3b29kPw==",
+        "Qk9SRUQgc291bmRzIGxpa2UgQk9BUkQu"
       ],
-      "explanation": "BOARD sounds like BORED. \"By the sound of\" is the homophone indicator. \"Plank\" is the definition."
+      "explanation": "Qk9BUkQgc291bmRzIGxpa2UgQk9SRUQuICJCeSB0aGUgc291bmQgb2YiIGlzIHRoZSBob21vcGhvbmUgaW5kaWNhdG9yLiAiUGxhbmsiIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 159,
@@ -2693,16 +2693,16 @@
       "publishDate": "2026-07-23",
       "status": "scheduled",
       "clue": "Warmth from wheat losing its head (4)",
-      "answer": "HEAT",
+      "answer": "SEVBVA==",
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of something warm.",
-        "\"Losing its head\" signals a beheadment — remove the first letter.",
-        "Take the first letter off WHEAT.",
-        "W-HEAT: remove W to get HEAT."
+        "VGhpbmsgb2Ygc29tZXRoaW5nIHdhcm0u",
+        "Ikxvc2luZyBpdHMgaGVhZCIgc2lnbmFscyBhIGJlaGVhZG1lbnQg4oCUIHJlbW92ZSB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "VGFrZSB0aGUgZmlyc3QgbGV0dGVyIG9mZiBXSEVBVC4=",
+        "Vy1IRUFUOiByZW1vdmUgVyB0byBnZXQgSEVBVC4="
       ],
-      "explanation": "WHEAT without its first letter W gives HEAT. \"Losing its head\" signals beheadment. \"Warmth\" is the definition."
+      "explanation": "V0hFQVQgd2l0aG91dCBpdHMgZmlyc3QgbGV0dGVyIFcgZ2l2ZXMgSEVBVC4gIkxvc2luZyBpdHMgaGVhZCIgc2lnbmFscyBiZWhlYWRtZW50LiAiV2FybXRoIiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 160,
@@ -2710,16 +2710,16 @@
       "publishDate": "2026-07-24",
       "status": "scheduled",
       "clue": "Weapon is sword cut short (5)",
-      "answer": "SWORD",
+      "answer": "U1dPUkQ=",
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a bladed weapon.",
-        "\"Cut short\" signals curtailment — remove the last letter.",
-        "What word becomes a weapon when curtailed?",
-        "SWORDS without S = SWORD."
+        "VGhpbmsgb2YgYSBibGFkZWQgd2VhcG9uLg==",
+        "IkN1dCBzaG9ydCIgc2lnbmFscyBjdXJ0YWlsbWVudCDigJQgcmVtb3ZlIHRoZSBsYXN0IGxldHRlci4=",
+        "V2hhdCB3b3JkIGJlY29tZXMgYSB3ZWFwb24gd2hlbiBjdXJ0YWlsZWQ/",
+        "U1dPUkRTIHdpdGhvdXQgUyA9IFNXT1JELg=="
       ],
-      "explanation": "SWORDS without its last letter S gives SWORD. \"Cut short\" signals curtailment. \"Weapon\" is the definition."
+      "explanation": "U1dPUkRTIHdpdGhvdXQgaXRzIGxhc3QgbGV0dGVyIFMgZ2l2ZXMgU1dPUkQuICJDdXQgc2hvcnQiIHNpZ25hbHMgY3VydGFpbG1lbnQuICJXZWFwb24iIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 161,
@@ -2727,16 +2727,16 @@
       "publishDate": "2026-07-25",
       "status": "scheduled",
       "clue": "Territory from bland without the leader (4)",
-      "answer": "LAND",
+      "answer": "TEFORA==",
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "Think of a word meaning territory or ground.",
-        "\"Without the leader\" signals beheadment.",
-        "Remove the first letter of BLAND.",
-        "B-LAND: remove B to get LAND."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdGVycml0b3J5IG9yIGdyb3VuZC4=",
+        "IldpdGhvdXQgdGhlIGxlYWRlciIgc2lnbmFscyBiZWhlYWRtZW50Lg==",
+        "UmVtb3ZlIHRoZSBmaXJzdCBsZXR0ZXIgb2YgQkxBTkQu",
+        "Qi1MQU5EOiByZW1vdmUgQiB0byBnZXQgTEFORC4="
       ],
-      "explanation": "BLAND without its first letter B gives LAND. \"Without the leader\" signals beheadment. \"Territory\" is the definition."
+      "explanation": "QkxBTkQgd2l0aG91dCBpdHMgZmlyc3QgbGV0dGVyIEIgZ2l2ZXMgTEFORC4gIldpdGhvdXQgdGhlIGxlYWRlciIgc2lnbmFscyBiZWhlYWRtZW50LiAiVGVycml0b3J5IiBpcyB0aGUgZGVmaW5pdGlvbi4="
     },
     {
       "id": 162,
@@ -2744,16 +2744,16 @@
       "publishDate": "2026-07-26",
       "status": "scheduled",
       "clue": "Cereal nearly becomes grain (4)",
-      "answer": "BRAN",
+      "answer": "QlJBTg==",
       "clueType": "deletion",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a word for grain husks.",
-        "\"Nearly\" signals curtailment — remove the last letter.",
-        "What word becomes BRAN when curtailed?",
-        "BRAND without D = BRAN."
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBncmFpbiBodXNrcy4=",
+        "Ik5lYXJseSIgc2lnbmFscyBjdXJ0YWlsbWVudCDigJQgcmVtb3ZlIHRoZSBsYXN0IGxldHRlci4=",
+        "V2hhdCB3b3JkIGJlY29tZXMgQlJBTiB3aGVuIGN1cnRhaWxlZD8=",
+        "QlJBTkQgd2l0aG91dCBEID0gQlJBTi4="
       ],
-      "explanation": "BRAND without its last letter D gives BRAN. \"Nearly\" signals curtailment. \"Grain\" is the definition."
+      "explanation": "QlJBTkQgd2l0aG91dCBpdHMgbGFzdCBsZXR0ZXIgRCBnaXZlcyBCUkFOLiAiTmVhcmx5IiBzaWduYWxzIGN1cnRhaWxtZW50LiAiR3JhaW4iIGlzIHRoZSBkZWZpbml0aW9uLg=="
     },
     {
       "id": 163,
@@ -2761,16 +2761,16 @@
       "publishDate": "2026-07-27",
       "status": "scheduled",
       "clue": "Cereal brand is almost the entire world (5)",
-      "answer": "GLOBE",
+      "answer": "R0xPQkU=",
       "clueType": "deletion",
       "difficulty": "medium",
       "hintLevels": [
-        "Think of a word meaning the world or a sphere.",
-        "\"Almost\" signals curtailment — remove the last letter.",
-        "What word curtailed gives GLOBE?",
-        "GLOBES without S = GLOBE."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdGhlIHdvcmxkIG9yIGEgc3BoZXJlLg==",
+        "IkFsbW9zdCIgc2lnbmFscyBjdXJ0YWlsbWVudCDigJQgcmVtb3ZlIHRoZSBsYXN0IGxldHRlci4=",
+        "V2hhdCB3b3JkIGN1cnRhaWxlZCBnaXZlcyBHTE9CRT8=",
+        "R0xPQkVTIHdpdGhvdXQgUyA9IEdMT0JFLg=="
       ],
-      "explanation": "GLOBES without its last letter S gives GLOBE. \"Almost\" signals curtailment. \"World\" is the definition."
+      "explanation": "R0xPQkVTIHdpdGhvdXQgaXRzIGxhc3QgbGV0dGVyIFMgZ2l2ZXMgR0xPQkUuICJBbG1vc3QiIHNpZ25hbHMgY3VydGFpbG1lbnQuICJXb3JsZCIgaXMgdGhlIGRlZmluaXRpb24u"
     },
     {
       "id": 164,
@@ -2778,16 +2778,16 @@
       "publishDate": "2026-07-28",
       "status": "scheduled",
       "clue": "Heartless flair makes something just (4)",
-      "answer": "FAIR",
+      "answer": "RkFJUg==",
       "clueType": "deletion",
       "difficulty": "hard",
       "hintLevels": [
-        "Think of a word meaning just or equitable.",
-        "\"Heartless\" signals internal deletion — remove the middle letter.",
-        "Remove the middle letter from FLAIR.",
-        "F-L-A-I-R: remove L (the heart) = FAIR."
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcganVzdCBvciBlcXVpdGFibGUu",
+        "IkhlYXJ0bGVzcyIgc2lnbmFscyBpbnRlcm5hbCBkZWxldGlvbiDigJQgcmVtb3ZlIHRoZSBtaWRkbGUgbGV0dGVyLg==",
+        "UmVtb3ZlIHRoZSBtaWRkbGUgbGV0dGVyIGZyb20gRkxBSVIu",
+        "Ri1MLUEtSS1SOiByZW1vdmUgTCAodGhlIGhlYXJ0KSA9IEZBSVIu"
       ],
-      "explanation": "FLAIR without its middle letter L gives FAIR. \"Heartless\" signals internal deletion. \"Just\" is the definition."
+      "explanation": "RkxBSVIgd2l0aG91dCBpdHMgbWlkZGxlIGxldHRlciBMIGdpdmVzIEZBSVIuICJIZWFydGxlc3MiIHNpZ25hbHMgaW50ZXJuYWwgZGVsZXRpb24uICJKdXN0IiBpcyB0aGUgZGVmaW5pdGlvbi4="
     }
   ]
 }

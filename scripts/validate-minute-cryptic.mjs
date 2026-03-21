@@ -2,6 +2,10 @@ import fs from "fs";
 
 const FILE_PATH = "data/minute-cryptic/puzzles.json";
 const TODAY = new Date().toISOString().split("T")[0];
+
+function fromBase64(str) {
+  return Buffer.from(str, "base64").toString("utf8");
+}
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const VALID_STATUS = new Set(["published", "scheduled", "draft"]);
 const VALID_TYPES = new Set([
@@ -60,7 +64,21 @@ if (!Array.isArray(data?.puzzles)) {
   errors.push("`puzzles` must be an array.");
 }
 
-const puzzles = Array.isArray(data?.puzzles) ? data.puzzles : [];
+const puzzlesRaw = Array.isArray(data?.puzzles) ? data.puzzles : [];
+const puzzles = puzzlesRaw.map((p) => {
+  if (!p || typeof p !== "object") return p;
+  return {
+    ...p,
+    answer: typeof p.answer === "string" ? fromBase64(p.answer) : p.answer,
+    explanation:
+      typeof p.explanation === "string"
+        ? fromBase64(p.explanation)
+        : p.explanation,
+    hintLevels: Array.isArray(p.hintLevels)
+      ? p.hintLevels.map((h) => (typeof h === "string" ? fromBase64(h) : h))
+      : p.hintLevels,
+  };
+});
 const seenIds = new Set();
 const seenDates = new Set();
 const seenAnswers = new Map();

@@ -5,7 +5,24 @@ import type {
 } from "@/types/minute-cryptic";
 import { cache } from "react";
 
-const data = puzzlesData as unknown as MinuteCrypticDataFile;
+function fromBase64(encoded: string): string {
+  return Buffer.from(encoded, "base64").toString("utf8");
+}
+
+function decodePuzzle(puzzle: MinuteCrypticPuzzle): MinuteCrypticPuzzle {
+  return {
+    ...puzzle,
+    answer: fromBase64(puzzle.answer),
+    explanation: fromBase64(puzzle.explanation),
+    hintLevels: puzzle.hintLevels.map(fromBase64) as [string, string, string, string],
+  };
+}
+
+const rawData = puzzlesData as unknown as MinuteCrypticDataFile;
+const data: MinuteCrypticDataFile = {
+  ...rawData,
+  puzzles: rawData.puzzles.map(decodePuzzle),
+};
 const ARCHIVE_VISIBLE_COUNT_RAW =
   process.env.MINUTE_CRYPTIC_ARCHIVE_VISIBLE_COUNT ??
   process.env.MINUTE_CRYPTIC_VISIBLE_COUNT ??
