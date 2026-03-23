@@ -27,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/minute-cryptic/medium',
     '/minute-cryptic/hard',
     '/minute-cryptic-unlimited',
+    '/anagram-solver',
     '/blog',
     '/share',
     '/about',

@@ -115,6 +115,10 @@
             {
               "href": "/crossword-word-finder",
               "name": "Word Finder"
+            },
+            {
+              "href": "/anagram-solver",
+              "name": "Anagram Solver"
             }
           ]
         },

@@ -96,6 +96,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/crossword-word-finder",
             description: "Find words by letter pattern",
           },
+          {
+            name: "Anagram Solver",
+            href: "/anagram-solver",
+            description: "Unscramble letters into words",
+          },
         ],
       },
       {
