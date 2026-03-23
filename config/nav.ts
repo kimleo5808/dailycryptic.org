@@ -125,6 +125,26 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
       },
     ],
   },
+  {
+    label: "Games",
+    sections: [
+      {
+        title: "NYT Connections",
+        links: [
+          {
+            name: "Connections Hints",
+            href: "/connections-hint-today",
+            description: "Today's hints and answers",
+          },
+          {
+            name: "Connections Archive",
+            href: "/connections-hint",
+            description: "Browse past puzzles",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const NAV_CTA: NavLink = {

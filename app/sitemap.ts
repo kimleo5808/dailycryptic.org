@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site'
 import { getAllMinuteCryptics } from '@/lib/minute-cryptic-data'
+import { getAllConnectionsPuzzles } from '@/lib/connections-data'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
 import { MetadataRoute } from 'next'
@@ -28,6 +29,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/minute-cryptic/hard',
     '/minute-cryptic-unlimited',
     '/anagram-solver',
+    '/connections-hint-today',
+    '/connections-hint',
     '/blog',
     '/share',
     '/about',
@@ -39,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic'
+    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
@@ -50,15 +53,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ? 0.95
         : page === '/minute-cryptic-today'
           ? 0.95
-          : page === '/blog'
-            ? 0.85
-            : 0.8,
+          : page === '/connections-hint-today'
+            ? 0.95
+            : page === '/blog'
+              ? 0.85
+              : 0.8,
   }))
 
   // Puzzle pages
   const allPuzzles = await getAllMinuteCryptics()
   const puzzlePages = allPuzzles.map(puzzle => ({
     url: `${siteUrl}/minute-cryptic/${puzzle.printDate}`,
+    lastModified: new Date(puzzle.printDate),
+    changeFrequency: 'monthly' as ChangeFrequency,
+    priority: 0.6,
+  }))
+
+  // Connections hint pages
+  const allConnections = await getAllConnectionsPuzzles()
+  const connectionsPages = allConnections.map(puzzle => ({
+    url: `${siteUrl}/connections-hint/${puzzle.printDate}`,
     lastModified: new Date(puzzle.printDate),
     changeFrequency: 'monthly' as ChangeFrequency,
     priority: 0.6,
@@ -85,6 +99,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...pages,
     ...puzzlePages,
+    ...connectionsPages,
     ...postPages,
   ]
 }

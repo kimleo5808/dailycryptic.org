@@ -140,6 +140,19 @@
           ]
         },
         {
+          "title": "Games",
+          "links": [
+            {
+              "href": "/connections-hint-today",
+              "name": "Connections Hints"
+            },
+            {
+              "href": "/connections-hint",
+              "name": "Connections Archive"
+            }
+          ]
+        },
+        {
           "title": "About",
           "links": [
             {
