@@ -137,6 +137,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             description: "Today's hints and answers",
           },
           {
+            name: "Play Connections",
+            href: "/connections-game",
+            description: "Play today's puzzle online",
+          },
+          {
             name: "Connections Archive",
             href: "/connections-hint",
             description: "Browse past puzzles",

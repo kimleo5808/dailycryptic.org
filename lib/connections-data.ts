@@ -34,13 +34,14 @@ function decodePuzzle(puzzle: ConnectionsPuzzle): DecodedConnectionsPuzzle {
 const rawData = puzzlesData as unknown as ConnectionsDataFile;
 const today = new Date().toISOString().split("T")[0];
 
-const publishedPuzzles = rawData.puzzles
+const rawPublished = rawData.puzzles
   .filter((p) => {
     if (p.status === "scheduled") return p.printDate <= today;
     return true;
   })
-  .map(decodePuzzle)
   .sort((a, b) => b.printDate.localeCompare(a.printDate));
+
+const publishedPuzzles = rawPublished.map(decodePuzzle);
 
 export const getAllConnectionsPuzzles = cache(
   async (): Promise<DecodedConnectionsPuzzle[]> => {
@@ -58,6 +59,14 @@ export const getTodaysConnectionsPuzzle = cache(
   async (): Promise<DecodedConnectionsPuzzle | undefined> => {
     if (publishedPuzzles.length === 0) return undefined;
     return publishedPuzzles[0];
+  }
+);
+
+/** Returns the raw (base64-encoded) puzzle for client-side game component */
+export const getRawTodaysConnectionsPuzzle = cache(
+  async (): Promise<ConnectionsPuzzle | undefined> => {
+    if (rawPublished.length === 0) return undefined;
+    return rawPublished[0];
   }
 );
 

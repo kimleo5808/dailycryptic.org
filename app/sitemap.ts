@@ -31,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/anagram-solver',
     '/connections-hint-today',
     '/connections-hint',
+    '/connections-game',
     '/blog',
     '/share',
     '/about',

@@ -160,6 +160,16 @@ export default async function ConnectionsHintTodayPage({
       />
 
       <div className="mt-8 space-y-8">
+        {/* Play CTA */}
+        <div className="text-center">
+          <Link
+            href="/connections-game"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+          >
+            Play Today&apos;s Puzzle →
+          </Link>
+        </div>
+
         {/* Daily hints */}
         <div className="space-y-3">
           {puzzle.groups.map((group) => (

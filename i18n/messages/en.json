@@ -143,6 +143,10 @@
           "title": "Games",
           "links": [
             {
+              "href": "/connections-game",
+              "name": "Play Connections"
+            },
+            {
               "href": "/connections-hint-today",
               "name": "Connections Hints"
             },
