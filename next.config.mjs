@@ -80,53 +80,28 @@ const nextConfig = {
       },
       { source: "/archive/:date", destination: "/minute-cryptic/:date", permanent: true },
 
-      // Legacy Strands namespace
-      { source: "/nyt-strands-hint", destination: "/minute-cryptic", permanent: true },
-      { source: "/strands-hint-archive", destination: "/minute-cryptic", permanent: true },
-      { source: "/strands-hint", destination: "/minute-cryptic", permanent: true },
-      {
-        source: "/strands-hint-today",
-        destination: "/minute-cryptic-today",
-        permanent: true,
-      },
+      // Legacy Strands aliases
+      { source: "/nyt-strands-hint", destination: "/strands-hint-today", permanent: true },
+      { source: "/strands-hint-archive", destination: "/strands-hint", permanent: true },
       {
         source: "/strands-hint-faq",
-        destination: "/minute-cryptic-faq",
-        permanent: true,
-      },
-      {
-        source: "/strands-hint/:date",
-        destination: "/minute-cryptic/:date",
+        destination: "/strands-hint-today#faq",
         permanent: true,
       },
       {
         source: "/how-to-play-strands",
-        destination: "/how-to-play-minute-cryptic",
+        destination: "/strands-hint-today#how-to-play",
         permanent: true,
       },
-      {
-        source: "/:locale/strands-hint",
-        destination: "/:locale/minute-cryptic",
-        permanent: true,
-      },
-      {
-        source: "/:locale/strands-hint-today",
-        destination: "/:locale/minute-cryptic-today",
-        permanent: true,
-      },
+      { source: "/:locale/strands-hint-archive", destination: "/:locale/strands-hint", permanent: true },
       {
         source: "/:locale/strands-hint-faq",
-        destination: "/:locale/minute-cryptic-faq",
-        permanent: true,
-      },
-      {
-        source: "/:locale/strands-hint/:date",
-        destination: "/:locale/minute-cryptic/:date",
+        destination: "/:locale/strands-hint-today#faq",
         permanent: true,
       },
       {
         source: "/:locale/how-to-play-strands",
-        destination: "/:locale/how-to-play-minute-cryptic",
+        destination: "/:locale/strands-hint-today#how-to-play",
         permanent: true,
       },
       {
@@ -171,25 +146,15 @@ const nextConfig = {
         destination: "/en/minute-cryptic/:date",
         permanent: true,
       },
-      { source: "/en/strands-hint", destination: "/en/minute-cryptic", permanent: true },
-      {
-        source: "/en/strands-hint-today",
-        destination: "/en/minute-cryptic-today",
-        permanent: true,
-      },
+      { source: "/en/strands-hint-archive", destination: "/en/strands-hint", permanent: true },
       {
         source: "/en/strands-hint-faq",
-        destination: "/en/minute-cryptic-faq",
-        permanent: true,
-      },
-      {
-        source: "/en/strands-hint/:date",
-        destination: "/en/minute-cryptic/:date",
+        destination: "/en/strands-hint-today#faq",
         permanent: true,
       },
       {
         source: "/en/how-to-play-strands",
-        destination: "/en/how-to-play-minute-cryptic",
+        destination: "/en/strands-hint-today#how-to-play",
         permanent: true,
       },
       {
