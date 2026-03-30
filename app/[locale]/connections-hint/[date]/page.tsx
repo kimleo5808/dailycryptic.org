@@ -171,11 +171,16 @@ export default async function ConnectionsHintDatePage({
   );
 }
 
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const puzzles = await getAllConnectionsPuzzles();
+  // Only pre-generate the most recent 90 days to keep build output small.
+  // Older pages are generated on-demand via SSR and cached by R2.
+  const recent = puzzles.slice(0, 90);
   const params: { locale: string; date: string }[] = [];
   for (const locale of LOCALES) {
-    for (const puzzle of puzzles) {
+    for (const puzzle of recent) {
       params.push({ locale, date: puzzle.printDate });
     }
   }
