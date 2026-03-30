@@ -148,6 +148,21 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           },
         ],
       },
+      {
+        title: "NYT Strands",
+        links: [
+          {
+            name: "Strands Hints",
+            href: "/strands-hint-today",
+            description: "Today's hints, spangram and answers",
+          },
+          {
+            name: "Strands Archive",
+            href: "/strands-hint",
+            description: "Browse past puzzles",
+          },
+        ],
+      },
     ],
   },
 ];

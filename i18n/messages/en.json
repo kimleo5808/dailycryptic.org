@@ -153,6 +153,14 @@
             {
               "href": "/connections-hint",
               "name": "Connections Archive"
+            },
+            {
+              "href": "/strands-hint-today",
+              "name": "Strands Hints"
+            },
+            {
+              "href": "/strands-hint",
+              "name": "Strands Archive"
             }
           ]
         },
