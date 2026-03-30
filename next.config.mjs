@@ -194,6 +194,26 @@ const nextConfig = {
           destination: "/en",
         },
         {
+          source: "/minute-cryptic/:date",
+          destination: "/en/minute-cryptic/:date",
+        },
+        {
+          source: "/daily-solution/:date",
+          destination: "/en/daily-solution/:date",
+        },
+        {
+          source: "/connections-hint/:date",
+          destination: "/en/connections-hint/:date",
+        },
+        {
+          source: "/strands-hint/:date",
+          destination: "/en/strands-hint/:date",
+        },
+        {
+          source: "/blog/:slug",
+          destination: "/en/blog/:slug",
+        },
+        {
           source:
             "/:path((?!en(?:/|$)|api(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|.*\\..*).*)",
           destination: "/en/:path",
