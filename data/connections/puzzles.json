@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-03-30T07:04:40.376Z",
+  "lastUpdated": "2026-03-31T06:47:06.538Z",
   "puzzles": [
+    {
+      "id": 1103,
+      "printDate": "2026-03-31",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U0hPUlRBR0U=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Q1JVTkNI",
+            "UElOQ0g=",
+            "QUJTRU5DRQ==",
+            "REVGSUNJVA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "UEFSVFMgT0YgQSBQSVJBVEUgU0hJUA==",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "UExBTks=",
+            "Q0FOTk9O",
+            "Q1JPVydTIE5FU1Q=",
+            "Sk9MTFkgUk9HRVI="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "S0lORFMgT0YgQlJBUw==",
+          "hint": "Think about different bras",
+          "words": [
+            "V0lSRUxFU1M=",
+            "UFVTSC1VUA==",
+            "U1BPUlRT",
+            "UExVTkdF"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBCQUJZIEFOSU1BTFM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "S0lUIEtBVA==",
+            "Q0hJQ0sgRkxJQ0s=",
+            "Q0FMRiBSQUlTRQ==",
+            "RlJZIENPT0s="
+          ]
+        }
+      ]
+    },
     {
       "id": 1110,
       "printDate": "2026-03-30",
