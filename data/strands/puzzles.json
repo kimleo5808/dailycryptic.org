@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-03-30T05:30:00.000Z",
+  "lastUpdated": "2026-03-31T06:51:05.155Z",
   "puzzles": [
+    {
+      "id": 932,
+      "printDate": "2026-03-31",
+      "status": "published",
+      "clue": "While you were sleeping ...",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VCBIIEUgVCBPIE8gVCBIIEYgQSBJIFIgWQ==",
+      "spangram": "VEhFVE9PVEhGQUlSWQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q09JTg==",
+        "RVhDSEFOR0U=",
+        "Tk9URQ==",
+        "UElMTE9X",
+        "VFVUVQ==",
+        "V0FORA==",
+        "V0lOR1M="
+      ]
+    },
     {
       "id": 931,
       "printDate": "2026-03-30",
