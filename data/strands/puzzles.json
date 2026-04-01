@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-03-31T06:51:05.155Z",
+  "lastUpdated": "2026-04-01T07:00:52.093Z",
   "puzzles": [
+    {
+      "id": 922,
+      "printDate": "2026-04-01",
+      "status": "published",
+      "clue": "Don't make a peep",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBIIEggSCBIIEggSCBIIEggSCBIIEggSA==",
+      "spangram": "U0hISEhISEhISEhISA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "SFVTSEVE",
+        "SU5BVURJQkxF",
+        "Tk9JU0VMRVNT",
+        "UVVJRVQ=",
+        "U0lMRU5U"
+      ]
+    },
     {
       "id": 932,
       "printDate": "2026-03-31",
