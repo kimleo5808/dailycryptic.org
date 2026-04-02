@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-01T07:00:52.093Z",
+  "lastUpdated": "2026-04-02T06:50:32.996Z",
   "puzzles": [
+    {
+      "id": 933,
+      "printDate": "2026-04-02",
+      "status": "published",
+      "clue": "On track",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBPIFIgUyBFIFIgQSBDIEkgTiBH",
+      "spangram": "SE9SU0VSQUNJTkc=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QUdFTlQ=",
+        "QkVUVE9S",
+        "Qk9PS0lF",
+        "Sk9DS0VZ",
+        "VElQU1RFUg==",
+        "VFJBSU5FUg=="
+      ]
+    },
     {
       "id": 922,
       "printDate": "2026-04-01",
