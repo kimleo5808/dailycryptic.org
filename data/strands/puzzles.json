@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-02T06:50:32.996Z",
+  "lastUpdated": "2026-04-03T06:47:44.241Z",
   "puzzles": [
+    {
+      "id": 934,
+      "printDate": "2026-04-03",
+      "status": "published",
+      "clue": "Smooth(ie) operator",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBSIE8gUCBJIEMgQSBMIEYgUiBVIEkgVA==",
+      "spangram": "VFJPUElDQUxGUlVJVA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QUNBSQ==",
+        "R1VBVkE=",
+        "TFlDSEVF",
+        "TUFOR08=",
+        "UEFQQVlB",
+        "UElORUFQUExF"
+      ]
+    },
     {
       "id": 933,
       "printDate": "2026-04-02",
