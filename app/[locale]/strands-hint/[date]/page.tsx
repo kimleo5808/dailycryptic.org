@@ -186,7 +186,9 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const puzzles = await getAllStrandsPuzzles();
-  const recent = puzzles.slice(0, 90);
+  // Limit pre-generation to avoid Cloudflare R2 upload timeouts.
+  // Older pages are generated on-demand and cached.
+  const recent = puzzles.slice(0, 30);
   const params: { locale: string; date: string }[] = [];
   for (const locale of LOCALES) {
     for (const puzzle of recent) {
