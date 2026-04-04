@@ -1,4 +1,5 @@
-import puzzlesData from "@/data/connections/puzzles.json";
+import { readFileSync } from "fs";
+import { join } from "path";
 import type {
   ConnectionsDataFile,
   ConnectionsPuzzle,
@@ -31,7 +32,9 @@ function decodePuzzle(puzzle: ConnectionsPuzzle): DecodedConnectionsPuzzle {
   };
 }
 
-const rawData = puzzlesData as unknown as ConnectionsDataFile;
+const rawData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "connections", "puzzles.json"), "utf8")
+) as ConnectionsDataFile;
 const today = new Date().toISOString().split("T")[0];
 
 const rawPublished = rawData.puzzles

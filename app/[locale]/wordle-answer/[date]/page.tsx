@@ -69,10 +69,15 @@ export default async function WordleDatePage({
     year: "numeric",
   });
 
-  // Get raw puzzle for encoded solution
-  const rawPuzzlesModule = await import("@/data/wordle/puzzles.json");
-  const rawPuzzles = (rawPuzzlesModule.default as { puzzles: { printDate: string; solution: string }[] }).puzzles;
-  const rawPuzzle = rawPuzzles.find((p) => p.printDate === date);
+  // Read raw puzzle for encoded solution (fs to avoid bundling into Worker)
+  const { readFileSync } = await import("fs");
+  const { join } = await import("path");
+  const rawData = JSON.parse(
+    readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
+  );
+  const rawPuzzle = (rawData.puzzles as { printDate: string; solution: string }[]).find(
+    (p) => p.printDate === date
+  );
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">

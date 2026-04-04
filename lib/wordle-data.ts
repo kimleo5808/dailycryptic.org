@@ -1,4 +1,5 @@
-import puzzlesData from "@/data/wordle/puzzles.json";
+import { readFileSync } from "fs";
+import { join } from "path";
 import type {
   WordleDataFile,
   WordlePuzzle,
@@ -22,7 +23,9 @@ function decodePuzzle(puzzle: WordlePuzzle): DecodedWordlePuzzle {
   };
 }
 
-const rawData = puzzlesData as unknown as WordleDataFile;
+const rawData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
+) as WordleDataFile;
 const today = new Date().toISOString().split("T")[0];
 
 const rawPublished = rawData.puzzles

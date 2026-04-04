@@ -1,4 +1,3 @@
-import puzzlesData from "@/data/strands/puzzles.json";
 import { readFileSync } from "fs";
 import { join } from "path";
 import type {
@@ -29,7 +28,9 @@ function decodePuzzle(puzzle: StrandsPuzzle): DecodedStrandsPuzzle {
   };
 }
 
-const rawData = puzzlesData as unknown as StrandsDataFile;
+const rawData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "strands", "puzzles.json"), "utf8")
+) as StrandsDataFile;
 const today = new Date().toISOString().split("T")[0];
 
 const rawPublished = rawData.puzzles

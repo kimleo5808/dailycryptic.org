@@ -1,4 +1,5 @@
-import puzzlesData from "@/data/minute-cryptic/puzzles.json";
+import { readFileSync } from "fs";
+import { join } from "path";
 import type {
   MinuteCrypticDataFile,
   MinuteCrypticPuzzle,
@@ -18,7 +19,9 @@ function decodePuzzle(puzzle: MinuteCrypticPuzzle): MinuteCrypticPuzzle {
   };
 }
 
-const rawData = puzzlesData as unknown as MinuteCrypticDataFile;
+const rawData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "minute-cryptic", "puzzles.json"), "utf8")
+) as MinuteCrypticDataFile;
 const data: MinuteCrypticDataFile = {
   ...rawData,
   puzzles: rawData.puzzles.map(decodePuzzle),
