@@ -32,71 +32,77 @@ function decodePuzzle(puzzle: ConnectionsPuzzle): DecodedConnectionsPuzzle {
   };
 }
 
-const rawData = JSON.parse(
-  readFileSync(join(process.cwd(), "data", "connections", "puzzles.json"), "utf8")
-) as ConnectionsDataFile;
-const today = new Date().toISOString().split("T")[0];
+/* Lazy-load: only read from fs when first accessed (build time),
+   not at module import time (which also runs in the Worker). */
+let _raw: ConnectionsPuzzle[] | null = null;
+let _decoded: DecodedConnectionsPuzzle[] | null = null;
 
-const rawPublished = rawData.puzzles
-  .filter((p) => {
-    if (p.status === "scheduled") return p.printDate <= today;
-    return true;
-  })
-  .sort((a, b) => b.printDate.localeCompare(a.printDate));
+function getRawPublished(): ConnectionsPuzzle[] {
+  if (!_raw) {
+    const rawData = JSON.parse(
+      readFileSync(join(process.cwd(), "data", "connections", "puzzles.json"), "utf8")
+    ) as ConnectionsDataFile;
+    const today = new Date().toISOString().split("T")[0];
+    _raw = rawData.puzzles
+      .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
+      .sort((a, b) => b.printDate.localeCompare(a.printDate));
+  }
+  return _raw;
+}
 
-const publishedPuzzles = rawPublished.map(decodePuzzle);
+function getPublished(): DecodedConnectionsPuzzle[] {
+  if (!_decoded) {
+    _decoded = getRawPublished().map(decodePuzzle);
+  }
+  return _decoded;
+}
 
 export const getAllConnectionsPuzzles = cache(
   async (): Promise<DecodedConnectionsPuzzle[]> => {
-    return publishedPuzzles;
+    return getPublished();
   }
 );
 
 export const getConnectionsPuzzleByDate = cache(
   async (date: string): Promise<DecodedConnectionsPuzzle | undefined> => {
-    return publishedPuzzles.find((p) => p.printDate === date);
+    return getPublished().find((p) => p.printDate === date);
   }
 );
 
 export const getTodaysConnectionsPuzzle = cache(
   async (): Promise<DecodedConnectionsPuzzle | undefined> => {
-    if (publishedPuzzles.length === 0) return undefined;
-    return publishedPuzzles[0];
+    const puzzles = getPublished();
+    return puzzles.length > 0 ? puzzles[0] : undefined;
   }
 );
 
-/** Returns the raw (base64-encoded) puzzle for client-side game component */
 export const getRawTodaysConnectionsPuzzle = cache(
   async (): Promise<ConnectionsPuzzle | undefined> => {
-    if (rawPublished.length === 0) return undefined;
-    return rawPublished[0];
+    const raw = getRawPublished();
+    return raw.length > 0 ? raw[0] : undefined;
   }
 );
 
 export const getRecentConnectionsPuzzles = cache(
   async (count: number = 4): Promise<DecodedConnectionsPuzzle[]> => {
-    return publishedPuzzles.slice(1, count + 1);
+    return getPublished().slice(1, count + 1);
   }
 );
 
 export const getConnectionsPuzzlesByMonth = cache(
   async (): Promise<ConnectionsMonthData[]> => {
     const months = new Map<string, DecodedConnectionsPuzzle[]>();
-
-    for (const puzzle of publishedPuzzles) {
-      const monthKey = puzzle.printDate.slice(0, 7); // "2026-03"
+    for (const puzzle of getPublished()) {
+      const monthKey = puzzle.printDate.slice(0, 7);
       const arr = months.get(monthKey);
       if (arr) arr.push(puzzle);
       else months.set(monthKey, [puzzle]);
     }
-
     return Array.from(months.entries())
       .sort((a, b) => b[0].localeCompare(a[0]))
       .map(([key, puzzles]) => {
-        const [year, month] = key.split("-");
-        const monthName = new Date(`${key}-01`).toLocaleString("en", {
-          month: "long",
-        });
+        const [year] = key.split("-");
+        const monthName = new Date(`${key}-01`).toLocaleString("en", { month: "long" });
         const first = puzzles[puzzles.length - 1];
         const last = puzzles[0];
         return {
@@ -109,17 +115,16 @@ export const getConnectionsPuzzlesByMonth = cache(
 );
 
 export const getAdjacentConnectionsPuzzles = cache(
-  async (
-    date: string
-  ): Promise<{
+  async (date: string): Promise<{
     prev: DecodedConnectionsPuzzle | undefined;
     next: DecodedConnectionsPuzzle | undefined;
   }> => {
-    const idx = publishedPuzzles.findIndex((p) => p.printDate === date);
+    const puzzles = getPublished();
+    const idx = puzzles.findIndex((p) => p.printDate === date);
     if (idx === -1) return { prev: undefined, next: undefined };
     return {
-      prev: publishedPuzzles[idx + 1],
-      next: idx > 0 ? publishedPuzzles[idx - 1] : undefined,
+      prev: puzzles[idx + 1],
+      next: idx > 0 ? puzzles[idx - 1] : undefined,
     };
   }
 );

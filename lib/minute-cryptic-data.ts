@@ -19,172 +19,136 @@ function decodePuzzle(puzzle: MinuteCrypticPuzzle): MinuteCrypticPuzzle {
   };
 }
 
-const rawData = JSON.parse(
-  readFileSync(join(process.cwd(), "data", "minute-cryptic", "puzzles.json"), "utf8")
-) as MinuteCrypticDataFile;
-const data: MinuteCrypticDataFile = {
-  ...rawData,
-  puzzles: rawData.puzzles.map(decodePuzzle),
-};
-const ARCHIVE_VISIBLE_COUNT_RAW =
-  process.env.MINUTE_CRYPTIC_ARCHIVE_VISIBLE_COUNT ??
-  process.env.MINUTE_CRYPTIC_VISIBLE_COUNT ??
-  "";
-const parsedArchiveVisibleCount = Number.parseInt(
-  ARCHIVE_VISIBLE_COUNT_RAW,
-  10
-);
-const ARCHIVE_VISIBLE_COUNT =
-  Number.isFinite(parsedArchiveVisibleCount) && parsedArchiveVisibleCount > 0
-    ? parsedArchiveVisibleCount
-    : null;
-
 function sortAscByDate(a: MinuteCrypticPuzzle, b: MinuteCrypticPuzzle) {
   const dateA = a.publishDate ?? a.printDate;
   const dateB = b.publishDate ?? b.printDate;
   return dateA.localeCompare(dateB);
 }
 
-const sortedPuzzles = [...data.puzzles].sort(sortAscByDate);
-const today = new Date().toISOString().split("T")[0];
+/* Lazy-load to avoid fs.readFileSync at module import time (crashes Worker) */
+let _allDesc: MinuteCrypticPuzzle[] | null = null;
+let _publicSource: MinuteCrypticPuzzle[] | null = null;
+let _archiveDesc: MinuteCrypticPuzzle[] | null = null;
 
-function isPublishedPuzzle(puzzle: MinuteCrypticPuzzle): boolean {
-  if (puzzle.status === "draft") return false;
+function init() {
+  if (_allDesc) return;
+  const rawData = JSON.parse(
+    readFileSync(join(process.cwd(), "data", "minute-cryptic", "puzzles.json"), "utf8")
+  ) as MinuteCrypticDataFile;
+  const data: MinuteCrypticDataFile = {
+    ...rawData,
+    puzzles: rawData.puzzles.map(decodePuzzle),
+  };
+  const ARCHIVE_VISIBLE_COUNT_RAW =
+    process.env.MINUTE_CRYPTIC_ARCHIVE_VISIBLE_COUNT ??
+    process.env.MINUTE_CRYPTIC_VISIBLE_COUNT ??
+    "";
+  const parsed = Number.parseInt(ARCHIVE_VISIBLE_COUNT_RAW, 10);
+  const ARCHIVE_VISIBLE_COUNT =
+    Number.isFinite(parsed) && parsed > 0 ? parsed : null;
 
-  const publishDate = puzzle.publishDate ?? puzzle.printDate;
-  return publishDate <= today;
+  const sortedPuzzles = [...data.puzzles].sort(sortAscByDate);
+  const today = new Date().toISOString().split("T")[0];
+
+  const publishedPuzzles = sortedPuzzles.filter((p) => {
+    if (p.status === "draft") return false;
+    return (p.publishDate ?? p.printDate) <= today;
+  });
+
+  _publicSource =
+    publishedPuzzles.length > 0 ? publishedPuzzles : sortedPuzzles;
+  _allDesc = [..._publicSource].reverse();
+  _archiveDesc =
+    ARCHIVE_VISIBLE_COUNT && ARCHIVE_VISIBLE_COUNT > 0
+      ? _allDesc.slice(0, ARCHIVE_VISIBLE_COUNT)
+      : _allDesc;
 }
 
-const publishedPuzzles = sortedPuzzles.filter(isPublishedPuzzle);
-const publicSource =
-  publishedPuzzles.length > 0 ? publishedPuzzles : sortedPuzzles;
-const allPublicPuzzlesDesc = [...publicSource].reverse();
-const archiveVisiblePuzzlesDesc =
-  ARCHIVE_VISIBLE_COUNT && ARCHIVE_VISIBLE_COUNT > 0
-    ? allPublicPuzzlesDesc.slice(0, ARCHIVE_VISIBLE_COUNT)
-    : allPublicPuzzlesDesc;
+function getAllDesc(): MinuteCrypticPuzzle[] {
+  init();
+  return _allDesc!;
+}
+function getPublicSource(): MinuteCrypticPuzzle[] {
+  init();
+  return _publicSource!;
+}
+function getArchiveDesc(): MinuteCrypticPuzzle[] {
+  init();
+  return _archiveDesc!;
+}
 
 export const getMinuteCrypticByDate = cache(
-  async (date: string): Promise<MinuteCrypticPuzzle | undefined> => {
-    return publicSource.find((p) => p.printDate === date);
-  }
+  async (date: string): Promise<MinuteCrypticPuzzle | undefined> =>
+    getPublicSource().find((p) => p.printDate === date)
 );
 
 export const getLatestMinuteCryptic = cache(
   async (): Promise<MinuteCrypticPuzzle | undefined> => {
-    if (publicSource.length === 0) return undefined;
-
-    for (let i = publicSource.length - 1; i >= 0; i -= 1) {
-      const publishDate =
-        publicSource[i].publishDate ?? publicSource[i].printDate;
-      if (publishDate <= today) {
-        return publicSource[i];
-      }
+    const src = getPublicSource();
+    if (src.length === 0) return undefined;
+    const today = new Date().toISOString().split("T")[0];
+    for (let i = src.length - 1; i >= 0; i -= 1) {
+      if ((src[i].publishDate ?? src[i].printDate) <= today) return src[i];
     }
-
-    return publicSource[publicSource.length - 1];
+    return src[src.length - 1];
   }
 );
 
 export const getRecentMinuteCryptics = cache(
-  async (count: number = 7): Promise<MinuteCrypticPuzzle[]> => {
-    return allPublicPuzzlesDesc.slice(0, count);
-  }
+  async (count: number = 7): Promise<MinuteCrypticPuzzle[]> =>
+    getAllDesc().slice(0, count)
 );
 
 export const getAllMinuteCryptics = cache(
-  async (): Promise<MinuteCrypticPuzzle[]> => {
-    return allPublicPuzzlesDesc;
-  }
+  async (): Promise<MinuteCrypticPuzzle[]> => getAllDesc()
 );
 
-export const getMinuteCrypticCount = cache(async (): Promise<number> => {
-  return allPublicPuzzlesDesc.length;
-});
+export const getMinuteCrypticCount = cache(
+  async (): Promise<number> => getAllDesc().length
+);
 
 export const getArchiveMinuteCryptics = cache(
-  async (): Promise<MinuteCrypticPuzzle[]> => {
-    return archiveVisiblePuzzlesDesc;
-  }
+  async (): Promise<MinuteCrypticPuzzle[]> => getArchiveDesc()
 );
 
-export const getArchiveMinuteCrypticCount = cache(async (): Promise<number> => {
-  return archiveVisiblePuzzlesDesc.length;
-});
+export const getArchiveMinuteCrypticCount = cache(
+  async (): Promise<number> => getArchiveDesc().length
+);
 
 export const getMinuteCrypticsByClueType = cache(
-  async (clueType: MinuteCrypticPuzzle["clueType"]): Promise<MinuteCrypticPuzzle[]> => {
-    return allPublicPuzzlesDesc.filter((puzzle) => puzzle.clueType === clueType);
-  }
+  async (clueType: MinuteCrypticPuzzle["clueType"]): Promise<MinuteCrypticPuzzle[]> =>
+    getAllDesc().filter((p) => p.clueType === clueType)
 );
 
 export const getMinuteCrypticsByDifficulty = cache(
-  async (
-    difficulty: MinuteCrypticPuzzle["difficulty"]
-  ): Promise<MinuteCrypticPuzzle[]> => {
-    return allPublicPuzzlesDesc.filter(
-      (puzzle) => puzzle.difficulty === difficulty
-    );
-  }
+  async (difficulty: MinuteCrypticPuzzle["difficulty"]): Promise<MinuteCrypticPuzzle[]> =>
+    getAllDesc().filter((p) => p.difficulty === difficulty)
 );
 
 export const getExampleMinuteCrypticsByClueType = cache(
-  async (
-    clueType: MinuteCrypticPuzzle["clueType"],
-    count: number = 3
-  ): Promise<MinuteCrypticPuzzle[]> => {
-    return allPublicPuzzlesDesc
-      .filter((puzzle) => puzzle.clueType === clueType)
-      .slice(0, count);
-  }
+  async (clueType: MinuteCrypticPuzzle["clueType"], count: number = 3): Promise<MinuteCrypticPuzzle[]> =>
+    getAllDesc().filter((p) => p.clueType === clueType).slice(0, count)
 );
 
 export const getRelatedMinuteCryptics = cache(
-  async (
-    currentPuzzle: MinuteCrypticPuzzle,
-    count: number = 6
-  ): Promise<MinuteCrypticPuzzle[]> => {
-    const sameTypeAndDifficulty = allPublicPuzzlesDesc.filter(
-      (puzzle) =>
-        puzzle.printDate !== currentPuzzle.printDate &&
-        puzzle.clueType === currentPuzzle.clueType &&
-        puzzle.difficulty === currentPuzzle.difficulty
-    );
-    const sameType = allPublicPuzzlesDesc.filter(
-      (puzzle) =>
-        puzzle.printDate !== currentPuzzle.printDate &&
-        puzzle.clueType === currentPuzzle.clueType &&
-        puzzle.difficulty !== currentPuzzle.difficulty
-    );
-    const sameDifficulty = allPublicPuzzlesDesc.filter(
-      (puzzle) =>
-        puzzle.printDate !== currentPuzzle.printDate &&
-        puzzle.difficulty === currentPuzzle.difficulty &&
-        puzzle.clueType !== currentPuzzle.clueType
-    );
-    const fallbackRecent = allPublicPuzzlesDesc.filter(
-      (puzzle) => puzzle.printDate !== currentPuzzle.printDate
-    );
-
+  async (currentPuzzle: MinuteCrypticPuzzle, count: number = 6): Promise<MinuteCrypticPuzzle[]> => {
+    const all = getAllDesc();
+    const buckets = [
+      all.filter((p) => p.printDate !== currentPuzzle.printDate && p.clueType === currentPuzzle.clueType && p.difficulty === currentPuzzle.difficulty),
+      all.filter((p) => p.printDate !== currentPuzzle.printDate && p.clueType === currentPuzzle.clueType && p.difficulty !== currentPuzzle.difficulty),
+      all.filter((p) => p.printDate !== currentPuzzle.printDate && p.difficulty === currentPuzzle.difficulty && p.clueType !== currentPuzzle.clueType),
+      all.filter((p) => p.printDate !== currentPuzzle.printDate),
+    ];
     const seen = new Set<string>();
     const result: MinuteCrypticPuzzle[] = [];
-
-    for (const bucket of [
-      sameTypeAndDifficulty,
-      sameType,
-      sameDifficulty,
-      fallbackRecent,
-    ]) {
+    for (const bucket of buckets) {
       for (const puzzle of bucket) {
         if (seen.has(puzzle.printDate)) continue;
         seen.add(puzzle.printDate);
         result.push(puzzle);
-        if (result.length >= count) {
-          return result;
-        }
+        if (result.length >= count) return result;
       }
     }
-
     return result;
   }
 );
@@ -195,8 +159,8 @@ export type UnlimitedPuzzle = Pick<
 >;
 
 export const getAllPuzzlesForUnlimited = cache(
-  async (): Promise<UnlimitedPuzzle[]> => {
-    return allPublicPuzzlesDesc.map((p) => ({
+  async (): Promise<UnlimitedPuzzle[]> =>
+    getAllDesc().map((p) => ({
       id: p.id,
       clue: p.clue,
       answer: p.answer,
@@ -204,6 +168,5 @@ export const getAllPuzzlesForUnlimited = cache(
       clueType: p.clueType,
       difficulty: p.difficulty,
       explanation: p.explanation,
-    }));
-  }
+    }))
 );

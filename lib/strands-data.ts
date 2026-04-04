@@ -28,78 +28,76 @@ function decodePuzzle(puzzle: StrandsPuzzle): DecodedStrandsPuzzle {
   };
 }
 
-const rawData = JSON.parse(
-  readFileSync(join(process.cwd(), "data", "strands", "puzzles.json"), "utf8")
-) as StrandsDataFile;
-const today = new Date().toISOString().split("T")[0];
+let _raw: StrandsPuzzle[] | null = null;
+let _decoded: DecodedStrandsPuzzle[] | null = null;
 
-const rawPublished = rawData.puzzles
-  .filter((p) => {
-    if (p.status === "scheduled") return p.printDate <= today;
-    return true;
-  })
-  .sort((a, b) => b.printDate.localeCompare(a.printDate));
+function getRawPublished(): StrandsPuzzle[] {
+  if (!_raw) {
+    const rawData = JSON.parse(
+      readFileSync(join(process.cwd(), "data", "strands", "puzzles.json"), "utf8")
+    ) as StrandsDataFile;
+    const today = new Date().toISOString().split("T")[0];
+    _raw = rawData.puzzles
+      .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
+      .sort((a, b) => b.printDate.localeCompare(a.printDate));
+  }
+  return _raw;
+}
 
-const publishedPuzzles = rawPublished.map(decodePuzzle);
+function getPublished(): DecodedStrandsPuzzle[] {
+  if (!_decoded) {
+    _decoded = getRawPublished().map(decodePuzzle);
+  }
+  return _decoded;
+}
 
 export const getAllStrandsPuzzles = cache(
-  async (): Promise<DecodedStrandsPuzzle[]> => {
-    return publishedPuzzles;
-  }
+  async (): Promise<DecodedStrandsPuzzle[]> => getPublished()
 );
 
 export const getStrandsPuzzleByDate = cache(
-  async (date: string): Promise<DecodedStrandsPuzzle | undefined> => {
-    return publishedPuzzles.find((p) => p.printDate === date);
-  }
+  async (date: string): Promise<DecodedStrandsPuzzle | undefined> =>
+    getPublished().find((p) => p.printDate === date)
 );
 
 export const getTodaysStrandsPuzzle = cache(
   async (): Promise<DecodedStrandsPuzzle | undefined> => {
-    if (publishedPuzzles.length === 0) return undefined;
-    return publishedPuzzles[0];
+    const p = getPublished();
+    return p.length > 0 ? p[0] : undefined;
   }
 );
 
-/** Returns the raw (base64-encoded) puzzle for client-side hint components */
 export const getRawTodaysStrandsPuzzle = cache(
   async (): Promise<StrandsPuzzle | undefined> => {
-    if (rawPublished.length === 0) return undefined;
-    return rawPublished[0];
+    const r = getRawPublished();
+    return r.length > 0 ? r[0] : undefined;
   }
 );
 
-/** Returns the raw (base64-encoded) puzzle by date for client-side hint components */
 export const getRawStrandsPuzzleByDate = cache(
-  async (date: string): Promise<StrandsPuzzle | undefined> => {
-    return rawPublished.find((p) => p.printDate === date);
-  }
+  async (date: string): Promise<StrandsPuzzle | undefined> =>
+    getRawPublished().find((p) => p.printDate === date)
 );
 
 export const getRecentStrandsPuzzles = cache(
-  async (count: number = 4): Promise<DecodedStrandsPuzzle[]> => {
-    return publishedPuzzles.slice(1, count + 1);
-  }
+  async (count: number = 4): Promise<DecodedStrandsPuzzle[]> =>
+    getPublished().slice(1, count + 1)
 );
 
 export const getStrandsPuzzlesByMonth = cache(
   async (): Promise<StrandsMonthData[]> => {
     const months = new Map<string, DecodedStrandsPuzzle[]>();
-
-    for (const puzzle of publishedPuzzles) {
+    for (const puzzle of getPublished()) {
       const monthKey = puzzle.printDate.slice(0, 7);
       const arr = months.get(monthKey);
       if (arr) arr.push(puzzle);
       else months.set(monthKey, [puzzle]);
     }
-
     return Array.from(months.entries())
       .sort((a, b) => b[0].localeCompare(a[0]))
       .map(([key, puzzles]) => {
         const [year] = key.split("-");
-        const monthName = new Date(`${key}-01`).toLocaleString("en", {
-          month: "long",
-        });
+        const monthName = new Date(`${key}-01`).toLocaleString("en", { month: "long" });
         const first = puzzles[puzzles.length - 1];
         const last = puzzles[0];
         return {
@@ -112,39 +110,35 @@ export const getStrandsPuzzlesByMonth = cache(
 );
 
 export const getAdjacentStrandsPuzzles = cache(
-  async (
-    date: string
-  ): Promise<{
+  async (date: string): Promise<{
     prev: DecodedStrandsPuzzle | undefined;
     next: DecodedStrandsPuzzle | undefined;
   }> => {
-    const idx = publishedPuzzles.findIndex((p) => p.printDate === date);
+    const puzzles = getPublished();
+    const idx = puzzles.findIndex((p) => p.printDate === date);
     if (idx === -1) return { prev: undefined, next: undefined };
     return {
-      prev: publishedPuzzles[idx + 1],
-      next: idx > 0 ? publishedPuzzles[idx - 1] : undefined,
+      prev: puzzles[idx + 1],
+      next: idx > 0 ? puzzles[idx - 1] : undefined,
     };
   }
 );
 
-/**
- * Board data is read via fs instead of static import to keep it out of
- * the Cloudflare Worker bundle. This only runs at build time (SSG).
- */
 function loadBoards(): StrandsBoardsFile {
-  const filePath = join(process.cwd(), "data", "strands", "boards.json");
-  return JSON.parse(readFileSync(filePath, "utf8"));
+  return JSON.parse(
+    readFileSync(join(process.cwd(), "data", "strands", "boards.json"), "utf8")
+  );
 }
 
 export const getStrandsBoardByDate = cache(
-  async (date: string): Promise<StrandsBoardData | undefined> => {
-    return loadBoards().boards[date];
-  }
+  async (date: string): Promise<StrandsBoardData | undefined> =>
+    loadBoards().boards[date]
 );
 
 export const getTodaysStrandsBoard = cache(
   async (): Promise<StrandsBoardData | undefined> => {
-    if (rawPublished.length === 0) return undefined;
-    return loadBoards().boards[rawPublished[0].printDate];
+    const r = getRawPublished();
+    if (r.length === 0) return undefined;
+    return loadBoards().boards[r[0].printDate];
   }
 );

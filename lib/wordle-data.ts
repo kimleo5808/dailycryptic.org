@@ -23,70 +23,71 @@ function decodePuzzle(puzzle: WordlePuzzle): DecodedWordlePuzzle {
   };
 }
 
-const rawData = JSON.parse(
-  readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
-) as WordleDataFile;
-const today = new Date().toISOString().split("T")[0];
+let _raw: WordlePuzzle[] | null = null;
+let _decoded: DecodedWordlePuzzle[] | null = null;
 
-const rawPublished = rawData.puzzles
-  .filter((p) => {
-    if (p.status === "scheduled") return p.printDate <= today;
-    return true;
-  })
-  .sort((a, b) => b.printDate.localeCompare(a.printDate));
+function getRawPublished(): WordlePuzzle[] {
+  if (!_raw) {
+    const rawData = JSON.parse(
+      readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
+    ) as WordleDataFile;
+    const today = new Date().toISOString().split("T")[0];
+    _raw = rawData.puzzles
+      .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
+      .sort((a, b) => b.printDate.localeCompare(a.printDate));
+  }
+  return _raw;
+}
 
-const publishedPuzzles = rawPublished.map(decodePuzzle);
+function getPublished(): DecodedWordlePuzzle[] {
+  if (!_decoded) {
+    _decoded = getRawPublished().map(decodePuzzle);
+  }
+  return _decoded;
+}
 
 export const getAllWordlePuzzles = cache(
-  async (): Promise<DecodedWordlePuzzle[]> => {
-    return publishedPuzzles;
-  }
+  async (): Promise<DecodedWordlePuzzle[]> => getPublished()
 );
 
 export const getWordlePuzzleByDate = cache(
-  async (date: string): Promise<DecodedWordlePuzzle | undefined> => {
-    return publishedPuzzles.find((p) => p.printDate === date);
-  }
+  async (date: string): Promise<DecodedWordlePuzzle | undefined> =>
+    getPublished().find((p) => p.printDate === date)
 );
 
 export const getTodaysWordlePuzzle = cache(
   async (): Promise<DecodedWordlePuzzle | undefined> => {
-    if (publishedPuzzles.length === 0) return undefined;
-    return publishedPuzzles[0];
+    const p = getPublished();
+    return p.length > 0 ? p[0] : undefined;
   }
 );
 
 export const getRawTodaysWordlePuzzle = cache(
   async (): Promise<WordlePuzzle | undefined> => {
-    if (rawPublished.length === 0) return undefined;
-    return rawPublished[0];
+    const r = getRawPublished();
+    return r.length > 0 ? r[0] : undefined;
   }
 );
 
 export const getRecentWordlePuzzles = cache(
-  async (count: number = 4): Promise<DecodedWordlePuzzle[]> => {
-    return publishedPuzzles.slice(1, count + 1);
-  }
+  async (count: number = 4): Promise<DecodedWordlePuzzle[]> =>
+    getPublished().slice(1, count + 1)
 );
 
 export const getWordlePuzzlesByMonth = cache(
   async (): Promise<WordleMonthData[]> => {
     const months = new Map<string, DecodedWordlePuzzle[]>();
-
-    for (const puzzle of publishedPuzzles) {
+    for (const puzzle of getPublished()) {
       const monthKey = puzzle.printDate.slice(0, 7);
       const arr = months.get(monthKey);
       if (arr) arr.push(puzzle);
       else months.set(monthKey, [puzzle]);
     }
-
     return Array.from(months.entries())
       .sort((a, b) => b[0].localeCompare(a[0]))
       .map(([key, puzzles]) => {
         const [year] = key.split("-");
-        const monthName = new Date(`${key}-01`).toLocaleString("en", {
-          month: "long",
-        });
+        const monthName = new Date(`${key}-01`).toLocaleString("en", { month: "long" });
         const first = puzzles[puzzles.length - 1];
         const last = puzzles[0];
         return {
@@ -99,17 +100,16 @@ export const getWordlePuzzlesByMonth = cache(
 );
 
 export const getAdjacentWordlePuzzles = cache(
-  async (
-    date: string
-  ): Promise<{
+  async (date: string): Promise<{
     prev: DecodedWordlePuzzle | undefined;
     next: DecodedWordlePuzzle | undefined;
   }> => {
-    const idx = publishedPuzzles.findIndex((p) => p.printDate === date);
+    const puzzles = getPublished();
+    const idx = puzzles.findIndex((p) => p.printDate === date);
     if (idx === -1) return { prev: undefined, next: undefined };
     return {
-      prev: publishedPuzzles[idx + 1],
-      next: idx > 0 ? publishedPuzzles[idx - 1] : undefined,
+      prev: puzzles[idx + 1],
+      next: idx > 0 ? puzzles[idx - 1] : undefined,
     };
   }
 );
