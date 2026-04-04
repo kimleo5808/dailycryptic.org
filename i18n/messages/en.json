@@ -72,6 +72,10 @@
               "name": "Play Connections"
             },
             {
+              "href": "/strands-game",
+              "name": "Play Strands"
+            },
+            {
               "href": "/minute-cryptic-unlimited",
               "name": "Unlimited Cryptic"
             }

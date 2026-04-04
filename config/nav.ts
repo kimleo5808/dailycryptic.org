@@ -172,6 +172,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             description: "Play today's puzzle online",
           },
           {
+            name: "Play Strands",
+            href: "/strands-game",
+            description: "Find hidden words in the letter grid",
+          },
+          {
             name: "Unlimited Cryptic",
             href: "/minute-cryptic-unlimited",
             description: "Practice with unlimited clues",

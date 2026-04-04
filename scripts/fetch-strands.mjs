@@ -135,6 +135,13 @@ function parseNYTData(data, dateStr) {
     .trim()
     .toUpperCase();
 
+  // Build base64-keyed themeCoords map
+  const rawThemeCoords = data.themeCoords || {};
+  const encodedThemeCoords = {};
+  for (const [word, coords] of Object.entries(rawThemeCoords)) {
+    encodedThemeCoords[toBase64(word)] = coords;
+  }
+
   return {
     id: data.id || 0,
     printDate: dateStr,
@@ -146,6 +153,9 @@ function parseNYTData(data, dateStr) {
     spangramDirection: direction,
     spangramLetterCount: spangram.length,
     themeWords: themeWords.map(toBase64),
+    startingBoard: data.startingBoard || [],
+    themeCoords: encodedThemeCoords,
+    spangramCoords,
   };
 }
 
@@ -252,13 +262,61 @@ async function fetchBatch(startDate, endDate) {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Backfill board data for existing puzzles                           */
+/* ------------------------------------------------------------------ */
+
+async function backfillBoards() {
+  const puzzlesData = loadPuzzlesData();
+  const needUpdate = puzzlesData.puzzles.filter((p) => !p.startingBoard || p.startingBoard.length === 0);
+
+  console.log(`Backfill: ${needUpdate.length} puzzles need board data (of ${puzzlesData.puzzles.length} total)`);
+
+  let updated = 0;
+  let failed = 0;
+
+  for (const puzzle of needUpdate) {
+    try {
+      console.log(`[${updated + failed + 1}/${needUpdate.length}] Fetching board for ${puzzle.printDate}...`);
+      const nytData = await fetchPuzzle(puzzle.printDate);
+
+      puzzle.startingBoard = nytData.startingBoard || [];
+
+      const rawThemeCoords = nytData.themeCoords || {};
+      const encodedThemeCoords = {};
+      for (const [word, coords] of Object.entries(rawThemeCoords)) {
+        encodedThemeCoords[toBase64(word)] = coords;
+      }
+      puzzle.themeCoords = encodedThemeCoords;
+      puzzle.spangramCoords = nytData.spangramCoords || [];
+
+      updated++;
+      // Save periodically
+      if (updated % 10 === 0) {
+        savePuzzlesData(puzzlesData);
+        console.log(`  (saved ${updated} so far)`);
+      }
+      await sleep(BATCH_DELAY_MS);
+    } catch (err) {
+      console.error(`  FAILED ${puzzle.printDate}: ${err.message}`);
+      failed++;
+      await sleep(BATCH_DELAY_MS);
+    }
+  }
+
+  savePuzzlesData(puzzlesData);
+  console.log(`\nDone. Updated: ${updated}, Failed: ${failed}`);
+}
+
+/* ------------------------------------------------------------------ */
 /*  Main                                                               */
 /* ------------------------------------------------------------------ */
 
 async function main() {
   const args = process.argv.slice(2);
 
-  if (args[0] === "--batch" && args[1] && args[2]) {
+  if (args[0] === "--backfill") {
+    await backfillBoards();
+  } else if (args[0] === "--batch" && args[1] && args[2]) {
     await fetchBatch(args[1], args[2]);
   } else {
     const dateStr = args[0] || new Date().toISOString().split("T")[0];

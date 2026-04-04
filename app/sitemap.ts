@@ -35,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/connections-game',
     '/strands-hint-today',
     '/strands-hint',
+    '/strands-game',
     '/blog',
     '/share',
     '/about',

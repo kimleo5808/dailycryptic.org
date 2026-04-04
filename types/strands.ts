@@ -16,6 +16,12 @@ export interface StrandsPuzzle {
   spangramLetterCount: number;
   /** Base64-encoded theme words (excluding spangram) */
   themeWords: string[];
+  /** 8×6 letter grid — each string is one row of 6 characters */
+  startingBoard?: string[];
+  /** Grid coordinates for each theme word — keys are Base64-encoded word strings */
+  themeCoords?: Record<string, [number, number][]>;
+  /** Grid coordinates for the spangram */
+  spangramCoords?: [number, number][];
 }
 
 export interface StrandsDataFile {
@@ -33,6 +39,9 @@ export interface DecodedStrandsPuzzle {
   spangramDirection: "horizontal" | "vertical";
   spangramLetterCount: number;
   themeWords: string[];
+  startingBoard?: string[];
+  themeCoords?: Record<string, [number, number][]>;
+  spangramCoords?: [number, number][];
 }
 
 export interface StrandsMonthData {
