@@ -19,6 +19,7 @@ import { constructMetadata } from "@/lib/metadata";
 import {
   getTodaysStrandsPuzzle,
   getRawTodaysStrandsPuzzle,
+  getTodaysStrandsBoard,
 } from "@/lib/strands-data";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -88,8 +89,9 @@ export default async function StrandsGamePage({
   await params;
   const puzzle = await getTodaysStrandsPuzzle();
   const rawPuzzle = await getRawTodaysStrandsPuzzle();
+  const board = await getTodaysStrandsBoard();
 
-  if (!puzzle || !rawPuzzle || !rawPuzzle.startingBoard || rawPuzzle.startingBoard.length === 0) {
+  if (!puzzle || !rawPuzzle || !board || !board.startingBoard || board.startingBoard.length === 0) {
     return (
       <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <ContentHero
@@ -150,10 +152,10 @@ export default async function StrandsGamePage({
         <StrandsGame
           puzzleId={puzzle.id}
           clue={puzzle.clue}
-          startingBoard={rawPuzzle.startingBoard}
-          encodedThemeCoords={rawPuzzle.themeCoords || {}}
+          startingBoard={board.startingBoard}
+          encodedThemeCoords={board.themeCoords}
           encodedSpangram={rawPuzzle.spangram}
-          spangramCoords={rawPuzzle.spangramCoords || []}
+          spangramCoords={board.spangramCoords}
           encodedThemeWords={rawPuzzle.themeWords}
         />
 

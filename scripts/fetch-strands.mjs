@@ -21,6 +21,13 @@ const PUZZLES_PATH = path.join(
   "strands",
   "puzzles.json"
 );
+const BOARDS_PATH = path.join(
+  __dirname,
+  "..",
+  "data",
+  "strands",
+  "boards.json"
+);
 
 const BATCH_DELAY_MS = 1500;
 
@@ -142,7 +149,7 @@ function parseNYTData(data, dateStr) {
     encodedThemeCoords[toBase64(word)] = coords;
   }
 
-  return {
+  const puzzle = {
     id: data.id || 0,
     printDate: dateStr,
     status: "published",
@@ -153,10 +160,15 @@ function parseNYTData(data, dateStr) {
     spangramDirection: direction,
     spangramLetterCount: spangram.length,
     themeWords: themeWords.map(toBase64),
+  };
+
+  const board = {
     startingBoard: data.startingBoard || [],
     themeCoords: encodedThemeCoords,
     spangramCoords,
   };
+
+  return { puzzle, board };
 }
 
 /* ------------------------------------------------------------------ */
@@ -172,10 +184,22 @@ function loadPuzzlesData() {
   }
 }
 
-function savePuzzlesData(puzzlesData) {
+function loadBoardsData() {
+  try {
+    const raw = fs.readFileSync(BOARDS_PATH, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return { lastUpdated: new Date().toISOString(), boards: {} };
+  }
+}
+
+function saveData(puzzlesData, boardsData) {
   puzzlesData.puzzles.sort((a, b) => b.printDate.localeCompare(a.printDate));
-  puzzlesData.lastUpdated = new Date().toISOString();
+  const ts = new Date().toISOString();
+  puzzlesData.lastUpdated = ts;
+  boardsData.lastUpdated = ts;
   fs.writeFileSync(PUZZLES_PATH, JSON.stringify(puzzlesData, null, 2) + "\n");
+  fs.writeFileSync(BOARDS_PATH, JSON.stringify(boardsData, null, 2) + "\n");
 }
 
 /* ------------------------------------------------------------------ */
@@ -184,6 +208,7 @@ function savePuzzlesData(puzzlesData) {
 
 async function fetchSingle(dateStr) {
   const puzzlesData = loadPuzzlesData();
+  const boardsData = loadBoardsData();
 
   const exists = puzzlesData.puzzles.some((p) => p.printDate === dateStr);
   if (exists) {
@@ -193,14 +218,15 @@ async function fetchSingle(dateStr) {
 
   console.log(`Fetching: ${dateStr}`);
   const nytData = await fetchPuzzle(dateStr);
-  const puzzle = parseNYTData(nytData, dateStr);
+  const { puzzle, board } = parseNYTData(nytData, dateStr);
 
   console.log(
     `  #${puzzle.id}: ${Buffer.from(puzzle.spangram, "base64").toString("utf8")} (${puzzle.themeWords.length} words, ${puzzle.spangramDirection})`
   );
 
   puzzlesData.puzzles.push(puzzle);
-  savePuzzlesData(puzzlesData);
+  boardsData.boards[dateStr] = board;
+  saveData(puzzlesData, boardsData);
   console.log(`Saved.`);
 }
 
@@ -217,6 +243,7 @@ async function fetchBatch(startDate, endDate) {
   console.log("");
 
   const puzzlesData = loadPuzzlesData();
+  const boardsData = loadBoardsData();
   const existingDates = new Set(puzzlesData.puzzles.map((p) => p.printDate));
 
   let fetched = 0;
@@ -234,17 +261,18 @@ async function fetchBatch(startDate, endDate) {
         `[${fetched + skipped + failed + 1}/${dates.length}] Fetching ${dateStr}...`
       );
       const nytData = await fetchPuzzle(dateStr);
-      const puzzle = parseNYTData(nytData, dateStr);
+      const { puzzle, board } = parseNYTData(nytData, dateStr);
 
       console.log(
         `  #${puzzle.id}: ${Buffer.from(puzzle.spangram, "base64").toString("utf8")} (${puzzle.themeWords.length} words)`
       );
 
       puzzlesData.puzzles.push(puzzle);
+      boardsData.boards[dateStr] = board;
       existingDates.add(dateStr);
       fetched++;
 
-      savePuzzlesData(puzzlesData);
+      saveData(puzzlesData, boardsData);
 
       if (dateStr !== dates[dates.length - 1]) {
         await sleep(BATCH_DELAY_MS);
@@ -262,61 +290,13 @@ async function fetchBatch(startDate, endDate) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Backfill board data for existing puzzles                           */
-/* ------------------------------------------------------------------ */
-
-async function backfillBoards() {
-  const puzzlesData = loadPuzzlesData();
-  const needUpdate = puzzlesData.puzzles.filter((p) => !p.startingBoard || p.startingBoard.length === 0);
-
-  console.log(`Backfill: ${needUpdate.length} puzzles need board data (of ${puzzlesData.puzzles.length} total)`);
-
-  let updated = 0;
-  let failed = 0;
-
-  for (const puzzle of needUpdate) {
-    try {
-      console.log(`[${updated + failed + 1}/${needUpdate.length}] Fetching board for ${puzzle.printDate}...`);
-      const nytData = await fetchPuzzle(puzzle.printDate);
-
-      puzzle.startingBoard = nytData.startingBoard || [];
-
-      const rawThemeCoords = nytData.themeCoords || {};
-      const encodedThemeCoords = {};
-      for (const [word, coords] of Object.entries(rawThemeCoords)) {
-        encodedThemeCoords[toBase64(word)] = coords;
-      }
-      puzzle.themeCoords = encodedThemeCoords;
-      puzzle.spangramCoords = nytData.spangramCoords || [];
-
-      updated++;
-      // Save periodically
-      if (updated % 10 === 0) {
-        savePuzzlesData(puzzlesData);
-        console.log(`  (saved ${updated} so far)`);
-      }
-      await sleep(BATCH_DELAY_MS);
-    } catch (err) {
-      console.error(`  FAILED ${puzzle.printDate}: ${err.message}`);
-      failed++;
-      await sleep(BATCH_DELAY_MS);
-    }
-  }
-
-  savePuzzlesData(puzzlesData);
-  console.log(`\nDone. Updated: ${updated}, Failed: ${failed}`);
-}
-
-/* ------------------------------------------------------------------ */
 /*  Main                                                               */
 /* ------------------------------------------------------------------ */
 
 async function main() {
   const args = process.argv.slice(2);
 
-  if (args[0] === "--backfill") {
-    await backfillBoards();
-  } else if (args[0] === "--batch" && args[1] && args[2]) {
+  if (args[0] === "--batch" && args[1] && args[2]) {
     await fetchBatch(args[1], args[2]);
   } else {
     const dateStr = args[0] || new Date().toISOString().split("T")[0];

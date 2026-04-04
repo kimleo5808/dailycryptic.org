@@ -1,7 +1,10 @@
 import puzzlesData from "@/data/strands/puzzles.json";
+import boardsData from "@/data/strands/boards.json";
 import type {
   StrandsDataFile,
   StrandsPuzzle,
+  StrandsBoardsFile,
+  StrandsBoardData,
   DecodedStrandsPuzzle,
   StrandsMonthData,
 } from "@/types/strands";
@@ -119,5 +122,21 @@ export const getAdjacentStrandsPuzzles = cache(
       prev: publishedPuzzles[idx + 1],
       next: idx > 0 ? publishedPuzzles[idx - 1] : undefined,
     };
+  }
+);
+
+/** Board data is stored separately to reduce server bundle size */
+const rawBoards = boardsData as unknown as StrandsBoardsFile;
+
+export const getStrandsBoardByDate = cache(
+  async (date: string): Promise<StrandsBoardData | undefined> => {
+    return rawBoards.boards[date];
+  }
+);
+
+export const getTodaysStrandsBoard = cache(
+  async (): Promise<StrandsBoardData | undefined> => {
+    if (rawPublished.length === 0) return undefined;
+    return rawBoards.boards[rawPublished[0].printDate];
   }
 );
