@@ -334,66 +334,97 @@ export default function StrandsGame({
 
         {/* Right: grid */}
         <div
-          ref={gridRef}
-          className={`select-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
+          className={`relative select-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
           style={{
-            display: "grid",
-            gridTemplateColumns: `repeat(${COLS}, 1fr)`,
-            gridTemplateRows: `repeat(${ROWS}, 1fr)`,
             width: "min(360px, 85vw)",
             aspectRatio: `${COLS} / ${ROWS}`,
           }}
         >
-          {letters.flatMap((row, r) =>
-            row.map((letter, c) => {
-              const key = cellKey(r, c);
-              const state = cellStates.get(key);
-              const inPath = pathSet.has(key);
-              const isLast =
-                path.length > 0 &&
-                path[path.length - 1][0] === r &&
-                path[path.length - 1][1] === c;
-              const isHinted = hintedCell === key;
-
-              let bg = "";
-              let textColor = "text-foreground";
-              let ring = "";
-
-              if (state === "spangram") {
-                bg = "bg-amber-300 dark:bg-amber-500";
-                textColor = "text-amber-950";
-              } else if (state === "found") {
-                bg = "bg-blue-300 dark:bg-blue-500";
-                textColor = "text-blue-950";
-              } else if (isLast) {
-                bg = "bg-stone-400 dark:bg-stone-500";
-                textColor = "text-white";
-                ring = "ring-2 ring-stone-500 dark:ring-stone-400";
-              } else if (inPath) {
-                bg = "bg-stone-300 dark:bg-stone-600";
-                textColor = "text-stone-900 dark:text-stone-100";
-              } else if (isHinted) {
-                bg = "bg-amber-100 dark:bg-amber-900";
-                ring = "ring-2 ring-amber-400";
-              }
-
-              return (
-                <div
-                  key={key}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleClickCell(r, c);
-                  }}
-                  className={`flex items-center justify-center rounded-full text-lg font-bold sm:text-xl ${bg} ${textColor} ${ring} ${
-                    state ? "cursor-default" : "cursor-pointer"
-                  }`}
-                  style={{ margin: "2px" }}
-                >
-                  {letter}
-                </div>
-              );
-            })
+          {/* SVG connection lines */}
+          {path.length >= 2 && (
+            <svg
+              className="pointer-events-none absolute inset-0"
+              style={{ width: "100%", height: "100%", zIndex: 1 }}
+              viewBox={`0 0 ${COLS} ${ROWS}`}
+              preserveAspectRatio="none"
+            >
+              <polyline
+                points={path
+                  .map(([r, c]) => `${c + 0.5},${r + 0.5}`)
+                  .join(" ")}
+                fill="none"
+                stroke="rgba(120,113,108,0.45)"
+                strokeWidth="0.35"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           )}
+
+          {/* Letter grid */}
+          <div
+            ref={gridRef}
+            style={{
+              display: "grid",
+              gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+              gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+              position: "absolute",
+              inset: 0,
+              zIndex: 2,
+            }}
+          >
+            {letters.flatMap((row, r) =>
+              row.map((letter, c) => {
+                const key = cellKey(r, c);
+                const state = cellStates.get(key);
+                const inPath = pathSet.has(key);
+                const isLast =
+                  path.length > 0 &&
+                  path[path.length - 1][0] === r &&
+                  path[path.length - 1][1] === c;
+                const isHinted = hintedCell === key;
+
+                let bg = "";
+                let textColor = "text-foreground";
+                let ring = "";
+
+                if (state === "spangram") {
+                  bg = "bg-amber-300 dark:bg-amber-500";
+                  textColor = "text-amber-950";
+                } else if (state === "found") {
+                  bg = "bg-blue-300 dark:bg-blue-500";
+                  textColor = "text-blue-950";
+                } else if (isLast) {
+                  bg = "bg-stone-400 dark:bg-stone-500";
+                  textColor = "text-white";
+                  ring = "ring-2 ring-stone-500 dark:ring-stone-400";
+                } else if (inPath) {
+                  bg = "bg-stone-300 dark:bg-stone-600";
+                  textColor = "text-stone-900 dark:text-stone-100";
+                } else if (isHinted) {
+                  bg = "bg-amber-100 dark:bg-amber-900";
+                  ring = "ring-2 ring-amber-400";
+                }
+
+                return (
+                  <div
+                    key={key}
+                    className="flex items-center justify-center"
+                    style={{ padding: "2px" }}
+                  >
+                    <div
+                      onClick={() => handleClickCell(r, c)}
+                      className={`flex h-full w-full items-center justify-center rounded-full text-lg font-bold sm:text-xl ${bg} ${textColor} ${ring} ${
+                        state ? "cursor-default" : "cursor-pointer"
+                      }`}
+                    >
+                      {letter}
+                    </div>
+                  </div>
+                );
+              })
+            )}
+          </div>
         </div>
 
         {/* Submit / Clear buttons */}
