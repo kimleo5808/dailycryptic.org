@@ -1,5 +1,6 @@
 import puzzlesData from "@/data/strands/puzzles.json";
-import boardsData from "@/data/strands/boards.json";
+import { readFileSync } from "fs";
+import { join } from "path";
 import type {
   StrandsDataFile,
   StrandsPuzzle,
@@ -125,18 +126,24 @@ export const getAdjacentStrandsPuzzles = cache(
   }
 );
 
-/** Board data is stored separately to reduce server bundle size */
-const rawBoards = boardsData as unknown as StrandsBoardsFile;
+/**
+ * Board data is read via fs instead of static import to keep it out of
+ * the Cloudflare Worker bundle. This only runs at build time (SSG).
+ */
+function loadBoards(): StrandsBoardsFile {
+  const filePath = join(process.cwd(), "data", "strands", "boards.json");
+  return JSON.parse(readFileSync(filePath, "utf8"));
+}
 
 export const getStrandsBoardByDate = cache(
   async (date: string): Promise<StrandsBoardData | undefined> => {
-    return rawBoards.boards[date];
+    return loadBoards().boards[date];
   }
 );
 
 export const getTodaysStrandsBoard = cache(
   async (): Promise<StrandsBoardData | undefined> => {
     if (rawPublished.length === 0) return undefined;
-    return rawBoards.boards[rawPublished[0].printDate];
+    return loadBoards().boards[rawPublished[0].printDate];
   }
 );
