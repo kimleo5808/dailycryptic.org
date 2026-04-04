@@ -39,6 +39,18 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/** Connections puzzle #1 was published on 2023-06-12. Calculate the sequential
+ *  puzzle number from a YYYY-MM-DD date string. */
+function puzzleNumberFromDate(dateStr) {
+  const origin = Date.UTC(2023, 5, 11); // day before #1
+  const target = Date.UTC(
+    +dateStr.slice(0, 4),
+    +dateStr.slice(5, 7) - 1,
+    +dateStr.slice(8, 10)
+  );
+  return Math.round((target - origin) / 86_400_000);
+}
+
 function generateHint(groupName, words) {
   const name = groupName.toLowerCase();
 
@@ -129,7 +141,7 @@ function parseNYTData(data, dateStr) {
   });
 
   return {
-    id: data.id || 0,
+    id: puzzleNumberFromDate(dateStr),
     printDate: dateStr,
     status: "published",
     groups,
