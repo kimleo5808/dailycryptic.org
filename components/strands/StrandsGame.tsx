@@ -98,7 +98,6 @@ export default function StrandsGame({
   const [shakeCells, setShakeCells] = useState(false);
   const [hintedCell, setHintedCell] = useState<string | null>(null);
 
-  const dragging = useRef(false);
   const gridRef = useRef<HTMLDivElement>(null);
 
   const gameOver = foundWords.length === themeWords.length && spangramFound;
@@ -203,102 +202,51 @@ export default function StrandsGame({
     setTimeout(() => setHintedCell(null), 3000);
   }
 
-  /* ---------- coordinate hit-test from pointer position ---------- */
-  const cellFromPointer = useCallback(
-    (clientX: number, clientY: number): [number, number] | null => {
-      const el = gridRef.current;
-      if (!el) return null;
-      const rect = el.getBoundingClientRect();
-      const x = clientX - rect.left;
-      const y = clientY - rect.top;
-      const cw = rect.width / COLS;
-      const ch = rect.height / ROWS;
-      const col = Math.floor(x / cw);
-      const row = Math.floor(y / ch);
-      if (row < 0 || row >= ROWS || col < 0 || col >= COLS) return null;
-      return [row, col];
+  /* ---------- click handler (tap cells to build path) ---------- */
+  const handleClickCell = useCallback(
+    (r: number, c: number) => {
+      if (gameOver) return;
+      if (!isCellUsable(r, c)) return;
+      setFeedback(null);
+
+      setPath((prev) => {
+        if (prev.length === 0) return [[r, c]];
+        const [lr, lc] = prev[prev.length - 1];
+        if (lr === r && lc === c) return prev;
+        // Undo: click second-to-last cell
+        if (prev.length >= 2) {
+          const [sr, sc] = prev[prev.length - 2];
+          if (sr === r && sc === c) return prev.slice(0, -1);
+        }
+        // Adjacent and not visited → extend
+        if (areAdjacent(lr, lc, r, c) && !prev.some(([pr, pc]) => pr === r && pc === c)) {
+          return [...prev, [r, c]];
+        }
+        // Not adjacent → start new path
+        return [[r, c]];
+      });
     },
-    [ROWS, COLS]
+    [gameOver, isCellUsable]
   );
 
-  /* ---------- path building ---------- */
-  const tryAddCell = useCallback(
-    (r: number, c: number, prev: [number, number][]): [number, number][] => {
-      if (!isCellUsable(r, c)) return prev;
-      if (prev.length === 0) return [[r, c]];
+  /* ---------- manual submit (click mode) ---------- */
+  const handleSubmit = useCallback(() => {
+    doSubmit(path);
+    setPath([]);
+  }, [path, doSubmit]);
 
-      const [lr, lc] = prev[prev.length - 1];
-      if (lr === r && lc === c) return prev; // same cell
-
-      // undo: going back
-      if (prev.length >= 2) {
-        const [sr, sc] = prev[prev.length - 2];
-        if (sr === r && sc === c) return prev.slice(0, -1);
-      }
-
-      if (!areAdjacent(lr, lc, r, c)) return prev; // not adjacent
-      if (prev.some(([pr, pc]) => pr === r && pc === c)) return prev; // revisit
-      return [...prev, [r, c]];
-    },
-    [isCellUsable]
-  );
-
-  /* ---------- pointer handlers (all on grid container) ---------- */
+  /* ---------- prevent touch scroll on grid ---------- */
   useEffect(() => {
     const el = gridRef.current;
     if (!el) return;
-
-    function onDown(e: PointerEvent) {
-      if (gameOver) return;
-      const cell = cellFromPointer(e.clientX, e.clientY);
-      if (!cell) return;
-      e.preventDefault();
-      dragging.current = true;
-      setPath([cell]);
-      setFeedback(null);
-    }
-
-    function onMove(e: PointerEvent) {
-      if (!dragging.current || gameOver) return;
-      e.preventDefault();
-      const cell = cellFromPointer(e.clientX, e.clientY);
-      if (!cell) return;
-      setPath((prev) => tryAddCell(cell[0], cell[1], prev));
-    }
-
-    function onUp() {
-      if (!dragging.current) return;
-      dragging.current = false;
-      setPath((prev) => {
-        if (prev.length >= 3) {
-          // Use setTimeout so state updates from doSubmit don't conflict
-          setTimeout(() => doSubmit(prev), 0);
-        }
-        return [];
-      });
-    }
-
-    el.addEventListener("pointerdown", onDown);
-    el.addEventListener("pointermove", onMove);
-    el.addEventListener("pointerup", onUp);
-    el.addEventListener("pointerleave", onUp);
-    el.addEventListener("pointercancel", onUp);
-
-    // Prevent touch scrolling on the grid
-    const preventTouch = (e: TouchEvent) => e.preventDefault();
-    el.addEventListener("touchstart", preventTouch, { passive: false });
-    el.addEventListener("touchmove", preventTouch, { passive: false });
-
+    const prevent = (e: TouchEvent) => e.preventDefault();
+    el.addEventListener("touchstart", prevent, { passive: false });
+    el.addEventListener("touchmove", prevent, { passive: false });
     return () => {
-      el.removeEventListener("pointerdown", onDown);
-      el.removeEventListener("pointermove", onMove);
-      el.removeEventListener("pointerup", onUp);
-      el.removeEventListener("pointerleave", onUp);
-      el.removeEventListener("pointercancel", onUp);
-      el.removeEventListener("touchstart", preventTouch);
-      el.removeEventListener("touchmove", preventTouch);
+      el.removeEventListener("touchstart", prevent);
+      el.removeEventListener("touchmove", prevent);
     };
-  }, [gameOver, cellFromPointer, tryAddCell, doSubmit]);
+  }, []);
 
   /* ---------- render ---------- */
   return (
@@ -387,14 +335,13 @@ export default function StrandsGame({
         {/* Right: grid */}
         <div
           ref={gridRef}
-          className={`select-none touch-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
+          className={`select-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
           style={{
             display: "grid",
             gridTemplateColumns: `repeat(${COLS}, 1fr)`,
             gridTemplateRows: `repeat(${ROWS}, 1fr)`,
             width: "min(360px, 85vw)",
             aspectRatio: `${COLS} / ${ROWS}`,
-            cursor: gameOver ? "default" : "pointer",
           }}
         >
           {letters.flatMap((row, r) =>
@@ -433,7 +380,13 @@ export default function StrandsGame({
               return (
                 <div
                   key={key}
-                  className={`pointer-events-none flex items-center justify-center rounded-full text-lg font-bold sm:text-xl ${bg} ${textColor} ${ring}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleClickCell(r, c);
+                  }}
+                  className={`flex items-center justify-center rounded-full text-lg font-bold sm:text-xl ${bg} ${textColor} ${ring} ${
+                    state ? "cursor-default" : "cursor-pointer"
+                  }`}
                   style={{ margin: "2px" }}
                 >
                   {letter}
@@ -442,6 +395,36 @@ export default function StrandsGame({
             })
           )}
         </div>
+
+        {/* Submit / Clear buttons */}
+        {!gameOver && (
+          <div className="flex justify-center gap-3 mt-2">
+            <button
+              type="button"
+              onClick={() => setPath([])}
+              disabled={path.length === 0}
+              className={`rounded-full border border-border px-5 py-2 text-sm font-semibold transition ${
+                path.length > 0
+                  ? "bg-background text-foreground hover:bg-muted"
+                  : "bg-muted text-muted-foreground cursor-not-allowed"
+              }`}
+            >
+              Clear
+            </button>
+            <button
+              type="button"
+              onClick={handleSubmit}
+              disabled={path.length < 3}
+              className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+                path.length >= 3
+                  ? "bg-stone-800 text-white hover:bg-stone-900 dark:bg-stone-200 dark:text-stone-900 dark:hover:bg-stone-100"
+                  : "bg-stone-200 text-stone-400 cursor-not-allowed dark:bg-stone-800 dark:text-stone-600"
+              }`}
+            >
+              Submit
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Game over */}
