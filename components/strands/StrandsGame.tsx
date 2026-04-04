@@ -222,65 +222,42 @@ export default function StrandsGame({
     setTimeout(() => setHintedCell(null), 3000);
   }
 
-  /* ---------- pointer / touch handlers ---------- */
-  const getCellFromEvent = useCallback(
-    (e: React.PointerEvent | PointerEvent): [number, number] | null => {
-      if (!gridRef.current) return null;
-      const rect = gridRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const cols = 6;
-      const rows = startingBoard.length;
-      const cellW = rect.width / cols;
-      const cellH = rect.height / rows;
-      const col = Math.floor(x / cellW);
-      const row = Math.floor(y / cellH);
-      if (row < 0 || row >= rows || col < 0 || col >= cols) return null;
-      return [row, col];
+  /* ---------- cell hit-testing ---------- */
+  const getCellFromPoint = useCallback(
+    (clientX: number, clientY: number): [number, number] | null => {
+      // Use elementFromPoint for accurate hit-testing
+      const el = document.elementFromPoint(clientX, clientY);
+      if (!el) return null;
+      const attr = el.getAttribute("data-cell");
+      if (!attr) return null;
+      const [r, c] = attr.split("-").map(Number);
+      if (isNaN(r) || isNaN(c)) return null;
+      return [r, c];
     },
-    [startingBoard.length]
+    []
   );
 
-  const handlePointerDown = useCallback(
-    (e: React.PointerEvent) => {
-      if (gameOver) return;
-      e.preventDefault();
-      const cell = getCellFromEvent(e);
-      if (!cell) return;
-      // Don't start on already found cells
-      const key = cellKey(cell[0], cell[1]);
-      const state = cellStates.get(key);
-      if (state === "found" || state === "spangram") return;
-
-      setIsDragging(true);
-      setPath([cell]);
-      setFeedback(null);
-      // Capture pointer
-      (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+  const isCellUsable = useCallback(
+    (r: number, c: number): boolean => {
+      const state = cellStates.get(cellKey(r, c));
+      return state !== "found" && state !== "spangram";
     },
-    [gameOver, getCellFromEvent, cellStates]
+    [cellStates]
   );
 
-  const handlePointerMove = useCallback(
-    (e: React.PointerEvent) => {
-      if (!isDragging || gameOver) return;
-      const cell = getCellFromEvent(e);
-      if (!cell) return;
-      const [r, c] = cell;
-
-      // Don't add already found cells
-      const key = cellKey(r, c);
-      const state = cellStates.get(key);
-      if (state === "found" || state === "spangram") return;
+  /* ---------- add cell to path (shared by drag + click) ---------- */
+  const addCellToPath = useCallback(
+    (r: number, c: number) => {
+      if (!isCellUsable(r, c)) return;
 
       setPath((prev) => {
         if (prev.length === 0) return [[r, c]];
 
         const last = prev[prev.length - 1];
-        // Same cell
+        // Same cell — ignore
         if (last[0] === r && last[1] === c) return prev;
 
-        // If going back to previous cell, remove last
+        // Going back to previous cell — undo last step
         if (prev.length >= 2) {
           const secondLast = prev[prev.length - 2];
           if (secondLast[0] === r && secondLast[1] === c) {
@@ -288,7 +265,7 @@ export default function StrandsGame({
           }
         }
 
-        // Must be adjacent to last cell
+        // Must be adjacent
         if (!areAdjacent(last[0], last[1], r, c)) return prev;
 
         // No revisiting
@@ -297,14 +274,92 @@ export default function StrandsGame({
         return [...prev, [r, c]];
       });
     },
-    [isDragging, gameOver, getCellFromEvent, cellStates]
+    [isCellUsable]
   );
 
-  const handlePointerUp = useCallback(() => {
-    if (!isDragging) return;
-    setIsDragging(false);
-    submitPath();
-  }, [isDragging, submitPath]);
+  /* ---------- drag handlers (pointer events on grid container) ---------- */
+  const handlePointerDown = useCallback(
+    (e: React.PointerEvent) => {
+      if (gameOver) return;
+      const cell = getCellFromPoint(e.clientX, e.clientY);
+      if (!cell || !isCellUsable(cell[0], cell[1])) return;
+
+      e.preventDefault();
+      // Capture pointer on the grid container itself
+      gridRef.current?.setPointerCapture(e.pointerId);
+      setIsDragging(true);
+      setPath([cell]);
+      setFeedback(null);
+    },
+    [gameOver, getCellFromPoint, isCellUsable]
+  );
+
+  const handlePointerMove = useCallback(
+    (e: React.PointerEvent) => {
+      if (!isDragging || gameOver) return;
+      const cell = getCellFromPoint(e.clientX, e.clientY);
+      if (!cell) return;
+      addCellToPath(cell[0], cell[1]);
+    },
+    [isDragging, gameOver, getCellFromPoint, addCellToPath]
+  );
+
+  const handlePointerUp = useCallback(
+    (e: React.PointerEvent) => {
+      if (!isDragging) return;
+      gridRef.current?.releasePointerCapture(e.pointerId);
+      setIsDragging(false);
+      // Only auto-submit on drag if we dragged through multiple cells
+      if (path.length >= 3) {
+        submitPath();
+      }
+      // If path is 1-2 cells from a very short drag, keep path for click-mode continuation
+    },
+    [isDragging, path.length, submitPath]
+  );
+
+  /* ---------- click handler (tap individual cells) ---------- */
+  const handleCellClick = useCallback(
+    (r: number, c: number) => {
+      if (gameOver || isDragging) return;
+      if (!isCellUsable(r, c)) return;
+
+      setFeedback(null);
+
+      // If no path yet, start one
+      if (path.length === 0) {
+        setPath([[r, c]]);
+        return;
+      }
+
+      const last = path[path.length - 1];
+
+      // Clicking the same cell as last — ignore
+      if (last[0] === r && last[1] === c) return;
+
+      // Clicking the second-to-last cell — undo
+      if (path.length >= 2) {
+        const secondLast = path[path.length - 2];
+        if (secondLast[0] === r && secondLast[1] === c) {
+          setPath(path.slice(0, -1));
+          return;
+        }
+      }
+
+      // Adjacent — add to path
+      if (areAdjacent(last[0], last[1], r, c)) {
+        // Not already in path
+        if (!path.some(([pr, pc]) => pr === r && pc === c)) {
+          setPath([...path, [r, c]]);
+          return;
+        }
+      }
+
+      // Not adjacent or already visited — start a new path from this cell
+      setPath([[r, c]]);
+    },
+    [gameOver, isDragging, isCellUsable, path]
+  );
 
   /* ---------- prevent scroll while dragging on mobile ---------- */
   useEffect(() => {
@@ -402,54 +457,95 @@ export default function StrandsGame({
           )}
         </div>
 
-        {/* Right: letter grid */}
-        <div
-          ref={gridRef}
-          className={`grid select-none touch-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
-          style={{
-            gridTemplateColumns: "repeat(6, 1fr)",
-            gridTemplateRows: `repeat(${startingBoard.length}, 1fr)`,
-            width: "min(360px, 85vw)",
-            aspectRatio: `6 / ${startingBoard.length}`,
-          }}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerCancel={handlePointerUp}
-        >
-          {grid.flatMap((row) =>
-            row.map((cell) => {
-              const key = cellKey(cell.row, cell.col);
-              const state = cellStates.get(key);
-              const inPath = pathSet.has(key);
-              const isHinted = hintedCell === key;
+        {/* Right: letter grid + actions */}
+        <div className="flex flex-col items-center gap-3">
+          <div
+            ref={gridRef}
+            className={`grid select-none touch-none ${shakeCells ? "animate-[shake_0.3s_ease-in-out]" : ""}`}
+            style={{
+              gridTemplateColumns: "repeat(6, 1fr)",
+              gridTemplateRows: `repeat(${startingBoard.length}, 1fr)`,
+              width: "min(360px, 85vw)",
+              aspectRatio: `6 / ${startingBoard.length}`,
+            }}
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerUp}
+          >
+            {grid.flatMap((row) =>
+              row.map((cell) => {
+                const key = cellKey(cell.row, cell.col);
+                const state = cellStates.get(key);
+                const inPath = pathSet.has(key);
+                const isHinted = hintedCell === key;
+                const isLast =
+                  path.length > 0 &&
+                  path[path.length - 1][0] === cell.row &&
+                  path[path.length - 1][1] === cell.col;
 
-              let bg = "";
-              let textColor = "text-foreground";
+                let bg = "";
+                let textColor = "text-foreground";
 
-              if (state === "spangram") {
-                bg = "bg-amber-300 dark:bg-amber-500";
-                textColor = "text-amber-950";
-              } else if (state === "found") {
-                bg = "bg-blue-300 dark:bg-blue-500";
-                textColor = "text-blue-950";
-              } else if (inPath) {
-                bg = "bg-sky-200 dark:bg-sky-700";
-              } else if (isHinted) {
-                bg = "bg-amber-100 dark:bg-amber-900 ring-2 ring-amber-400";
-              }
+                if (state === "spangram") {
+                  bg = "bg-amber-300 dark:bg-amber-500";
+                  textColor = "text-amber-950";
+                } else if (state === "found") {
+                  bg = "bg-blue-300 dark:bg-blue-500";
+                  textColor = "text-blue-950";
+                } else if (isLast) {
+                  bg = "bg-sky-400 dark:bg-sky-600";
+                  textColor = "text-white";
+                } else if (inPath) {
+                  bg = "bg-sky-200 dark:bg-sky-700";
+                } else if (isHinted) {
+                  bg = "bg-amber-100 dark:bg-amber-900 ring-2 ring-amber-400";
+                }
 
-              return (
-                <div
-                  key={key}
-                  className={`flex items-center justify-center text-lg font-bold transition-colors duration-100 sm:text-xl ${bg} ${textColor} ${
-                    state ? "cursor-default" : "cursor-pointer"
-                  }`}
-                >
-                  {cell.letter}
-                </div>
-              );
-            })
+                return (
+                  <div
+                    key={key}
+                    data-cell={key}
+                    onClick={() => handleCellClick(cell.row, cell.col)}
+                    className={`flex items-center justify-center rounded-sm text-lg font-bold transition-colors duration-100 sm:text-xl ${bg} ${textColor} ${
+                      state ? "cursor-default" : "cursor-pointer"
+                    }`}
+                  >
+                    {cell.letter}
+                  </div>
+                );
+              })
+            )}
+          </div>
+
+          {/* Submit / Clear buttons for click mode */}
+          {!gameOver && (
+            <div className="flex gap-3">
+              <button
+                type="button"
+                onClick={() => setPath([])}
+                disabled={path.length === 0}
+                className={`rounded-full border border-border px-5 py-2 text-sm font-semibold transition ${
+                  path.length > 0
+                    ? "bg-background text-foreground hover:bg-muted"
+                    : "bg-muted text-muted-foreground cursor-not-allowed"
+                }`}
+              >
+                Clear
+              </button>
+              <button
+                type="button"
+                onClick={submitPath}
+                disabled={path.length < 3}
+                className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
+                  path.length >= 3
+                    ? "bg-stone-800 text-white hover:bg-stone-900 dark:bg-stone-200 dark:text-stone-900 dark:hover:bg-stone-100"
+                    : "bg-stone-200 text-stone-400 cursor-not-allowed dark:bg-stone-800 dark:text-stone-600"
+                }`}
+              >
+                Submit
+              </button>
+            </div>
           )}
         </div>
       </div>
