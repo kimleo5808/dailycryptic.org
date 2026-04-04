@@ -129,6 +129,21 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
     label: "Hints",
     sections: [
       {
+        title: "NYT Wordle",
+        links: [
+          {
+            name: "Wordle Hints",
+            href: "/wordle-answer-today",
+            description: "Today's hints and answer",
+          },
+          {
+            name: "Wordle Archive",
+            href: "/wordle-answer",
+            description: "Browse past answers",
+          },
+        ],
+      },
+      {
         title: "NYT Connections",
         links: [
           {

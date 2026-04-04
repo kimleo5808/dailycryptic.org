@@ -47,16 +47,24 @@
           "title": "Hints",
           "links": [
             {
+              "href": "/wordle-answer-today",
+              "name": "Wordle Hints"
+            },
+            {
               "href": "/connections-hint-today",
               "name": "Connections Hints"
             },
             {
-              "href": "/connections-hint",
-              "name": "Connections Archive"
-            },
-            {
               "href": "/strands-hint-today",
               "name": "Strands Hints"
+            },
+            {
+              "href": "/wordle-answer",
+              "name": "Wordle Archive"
+            },
+            {
+              "href": "/connections-hint",
+              "name": "Connections Archive"
             },
             {
               "href": "/strands-hint",

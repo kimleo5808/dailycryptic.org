@@ -2,6 +2,7 @@ import { siteConfig } from '@/config/site'
 import { getAllMinuteCryptics } from '@/lib/minute-cryptic-data'
 import { getAllConnectionsPuzzles } from '@/lib/connections-data'
 import { getAllStrandsPuzzles } from '@/lib/strands-data'
+import { getAllWordlePuzzles } from '@/lib/wordle-data'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
 import { MetadataRoute } from 'next'
@@ -33,6 +34,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/connections-hint-today',
     '/connections-hint',
     '/connections-game',
+    '/wordle-answer-today',
+    '/wordle-answer',
     '/strands-hint-today',
     '/strands-hint',
     '/strands-game',
@@ -47,7 +50,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint'
+    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
@@ -60,8 +63,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           ? 0.95
           : page === '/connections-hint-today'
             ? 0.95
-            : page === '/strands-hint-today'
+            : page === '/wordle-answer-today'
               ? 0.95
+              : page === '/strands-hint-today'
+                ? 0.95
               : page === '/blog'
                 ? 0.85
                 : 0.8,
@@ -94,6 +99,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
+  // Wordle answer pages
+  const allWordle = await getAllWordlePuzzles()
+  const wordlePages = allWordle.map(puzzle => ({
+    url: `${siteUrl}/wordle-answer/${puzzle.printDate}`,
+    lastModified: new Date(puzzle.printDate),
+    changeFrequency: 'monthly' as ChangeFrequency,
+    priority: 0.6,
+  }))
+
   // Blog post pages
   const { posts } = await getPosts(DEFAULT_LOCALE)
   const postPages = posts
@@ -117,6 +131,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...puzzlePages,
     ...connectionsPages,
     ...strandsPages,
+    ...wordlePages,
     ...postPages,
   ]
 }

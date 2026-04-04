@@ -210,6 +210,10 @@ const nextConfig = {
           destination: "/en/strands-hint/:date",
         },
         {
+          source: "/wordle-answer/:date",
+          destination: "/en/wordle-answer/:date",
+        },
+        {
           source: "/blog/:slug",
           destination: "/en/blog/:slug",
         },
