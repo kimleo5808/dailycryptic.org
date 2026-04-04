@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-04-03T06:47:44.241Z",
+  "lastUpdated": "2026-04-04T06:37:12.439Z",
   "puzzles": [
+    {
+      "id": 935,
+      "printDate": "2026-04-04",
+      "status": "published",
+      "clue": "Early risers",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBQIFIgSSBOIEcgQiBMIE8gUyBTIE8gTQ==",
+      "spangram": "U1BSSU5HQkxPU1NPTQ==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q1JPQ1VT",
+        "REFGRk9ESUw=",
+        "SFlBQ0lOVEg=",
+        "U05PV0RST1A=",
+        "VFVMSVA="
+      ]
+    },
     {
       "id": 934,
       "printDate": "2026-04-03",
