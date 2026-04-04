@@ -126,7 +126,7 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
     ],
   },
   {
-    label: "Games",
+    label: "Hints",
     sections: [
       {
         title: "NYT Connections",
@@ -135,11 +135,6 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Connections Hints",
             href: "/connections-hint-today",
             description: "Today's hints and answers",
-          },
-          {
-            name: "Play Connections",
-            href: "/connections-game",
-            description: "Play today's puzzle online",
           },
           {
             name: "Connections Archive",
@@ -160,6 +155,26 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Strands Archive",
             href: "/strands-hint",
             description: "Browse past puzzles",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Games",
+    sections: [
+      {
+        title: "Play Online",
+        links: [
+          {
+            name: "Play Connections",
+            href: "/connections-game",
+            description: "Play today's puzzle online",
+          },
+          {
+            name: "Unlimited Cryptic",
+            href: "/minute-cryptic-unlimited",
+            description: "Practice with unlimited clues",
           },
         ],
       },

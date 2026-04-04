@@ -7,45 +7,20 @@
     "Links": {
       "groups": [
         {
-          "title": "Minute Cryptic",
+          "title": "Cryptic",
           "links": [
-            {
-              "href": "/daily-cryptic",
-              "name": "Daily Cryptic"
-            },
             {
               "href": "/minute-cryptic-today",
               "name": "Today's Clue"
             },
             {
               "href": "/minute-cryptic",
-              "name": "Archive"
-            },
-            {
-              "href": "/minute-cryptic-unlimited",
-              "name": "Unlimited"
+              "name": "Clue Archive"
             },
             {
               "href": "/daily-solution",
               "name": "Daily Solutions"
             },
-            {
-              "href": "/minute-cryptic/easy",
-              "name": "Easy Clues"
-            },
-            {
-              "href": "/minute-cryptic/medium",
-              "name": "Medium Clues"
-            },
-            {
-              "href": "/minute-cryptic/hard",
-              "name": "Hard Clues"
-            }
-          ]
-        },
-        {
-          "title": "Guide",
-          "links": [
             {
               "href": "/cryptic-crossword-for-beginners",
               "name": "Beginner Guide"
@@ -54,60 +29,6 @@
               "href": "/cryptic-clue-types",
               "name": "Clue Types"
             },
-            {
-              "href": "/cryptic-indicators",
-              "name": "Cryptic Indicators"
-            },
-            {
-              "href": "/how-to-play-minute-cryptic",
-              "name": "How to Solve"
-            },
-            {
-              "href": "/minute-cryptic-faq",
-              "name": "FAQ"
-            }
-          ]
-        },
-        {
-          "title": "Clue Types",
-          "links": [
-            {
-              "href": "/cryptic-clue-types/anagram",
-              "name": "Anagram"
-            },
-            {
-              "href": "/cryptic-clue-types/charade",
-              "name": "Charade"
-            },
-            {
-              "href": "/cryptic-clue-types/container",
-              "name": "Container"
-            },
-            {
-              "href": "/cryptic-clue-types/double-definition",
-              "name": "Double Definition"
-            },
-            {
-              "href": "/cryptic-clue-types/hidden-word",
-              "name": "Hidden Word"
-            },
-            {
-              "href": "/cryptic-clue-types/reversal",
-              "name": "Reversal"
-            },
-            {
-              "href": "/cryptic-clue-types/homophone",
-              "name": "Homophone"
-            },
-            {
-              "href": "/cryptic-clue-types/deletion",
-              "name": "Deletion"
-            }
-          ]
-        },
-        {
-          "title": "Tools",
-          "links": [
             {
               "href": "/cryptic-crossword-solver",
               "name": "Clue Solver"
@@ -123,29 +44,8 @@
           ]
         },
         {
-          "title": "Reference",
+          "title": "Hints",
           "links": [
-            {
-              "href": "/cryptic-abbreviations",
-              "name": "Abbreviations"
-            },
-            {
-              "href": "/common-crossword-answers",
-              "name": "Common Answers"
-            },
-            {
-              "href": "/cryptic-glossary",
-              "name": "Glossary"
-            }
-          ]
-        },
-        {
-          "title": "Games",
-          "links": [
-            {
-              "href": "/connections-game",
-              "name": "Play Connections"
-            },
             {
               "href": "/connections-hint-today",
               "name": "Connections Hints"
@@ -161,6 +61,19 @@
             {
               "href": "/strands-hint",
               "name": "Strands Archive"
+            }
+          ]
+        },
+        {
+          "title": "Games",
+          "links": [
+            {
+              "href": "/connections-game",
+              "name": "Play Connections"
+            },
+            {
+              "href": "/minute-cryptic-unlimited",
+              "name": "Unlimited Cryptic"
             }
           ]
         },
