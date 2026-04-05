@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-04T08:36:02.159Z",
+  "lastUpdated": "2026-04-05T06:44:22.054Z",
   "puzzles": [
+    {
+      "id": 936,
+      "printDate": "2026-04-05",
+      "status": "published",
+      "clue": "Pouch perfect",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBBIFIgUyBVIFAgSSBBIEwgUw==",
+      "spangram": "TUFSU1VQSUFMUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QklMQlk=",
+        "S0FOR0FST08=",
+        "S09BTEE=",
+        "T1BPU1NVTQ==",
+        "V0FMTEFCWQ==",
+        "V09NQkFU"
+      ]
+    },
     {
       "id": 935,
       "printDate": "2026-04-04",
