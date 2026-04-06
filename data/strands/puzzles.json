@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-05T06:44:22.054Z",
+  "lastUpdated": "2026-04-06T07:09:27.627Z",
   "puzzles": [
+    {
+      "id": 937,
+      "printDate": "2026-04-06",
+      "status": "published",
+      "clue": "Fringe group",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TyBVIFQgRSBSIEwgSSBNIEkgVCBT",
+      "spangram": "T1VURVJMSU1JVFM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Qk9VTkRBUlk=",
+        "QlJJTks=",
+        "RURHRQ==",
+        "RVhUUkVNSVRZ",
+        "TUFSR0lO",
+        "VkVSR0U="
+      ]
+    },
     {
       "id": 936,
       "printDate": "2026-04-05",
