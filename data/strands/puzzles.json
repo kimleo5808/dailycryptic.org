@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-06T07:09:27.627Z",
+  "lastUpdated": "2026-04-07T06:53:27.067Z",
   "puzzles": [
+    {
+      "id": 939,
+      "printDate": "2026-04-07",
+      "status": "published",
+      "clue": "Taking the helm",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBNIE8gTyBUIEggUyBBIEkgTCBJIE4gRw==",
+      "spangram": "U01PT1RIU0FJTElORw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QkVBUklORw==",
+        "Q09VUlNF",
+        "RkFUSE9N",
+        "S05PVA==",
+        "TUFSSw==",
+        "V0FZUE9JTlQ="
+      ]
+    },
     {
       "id": 937,
       "printDate": "2026-04-06",
