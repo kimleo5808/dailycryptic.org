@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-04-07T06:50:07.669Z",
+  "lastUpdated": "2026-04-08T06:52:48.739Z",
   "puzzles": [
+    {
+      "id": 1032,
+      "printDate": "2026-04-08",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q09IT1JUIE1FTUJFUg==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVNTT0NJQVRF",
+            "UEVFUg==",
+            "RkVMTE9X",
+            "Q09MTEVBR1VF"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "QUVTVEhFVElD",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U0NIRU1F",
+            "TE9PSw==",
+            "REVTSUdO",
+            "U1RZTEU="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "S0lORFMgT0YgQkFSIEFQUEFSQVRVU0VT",
+          "hint": "Think about different bar apparatuses",
+          "words": [
+            "TU9OS0VZ",
+            "UFVMTC1VUA==",
+            "VU5FVkVO",
+            "UEFSQUxMRUw="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RVlFV0VBUiBJTiBUSEUgU0lOR1VMQVI=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U1BFQ1RBQ0xF",
+            "Q09OVEFDVA==",
+            "U0hBREU=",
+            "R09HR0xF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1031,
       "printDate": "2026-04-07",
