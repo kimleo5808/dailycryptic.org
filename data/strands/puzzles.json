@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-07T06:53:27.067Z",
+  "lastUpdated": "2026-04-08T06:55:46.934Z",
   "puzzles": [
+    {
+      "id": 940,
+      "printDate": "2026-04-08",
+      "status": "published",
+      "clue": "We're going under cover",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBFIEQgQyBMIE8gVCBIIEUgUw==",
+      "spangram": "QkVEQ0xPVEhFUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QUZHSEFO",
+        "QkxBTktFVA==",
+        "Q09NRk9SVEVS",
+        "UVVJTFQ=",
+        "U1BSRUFE",
+        "VEhST1c="
+      ]
+    },
     {
       "id": 939,
       "printDate": "2026-04-07",
