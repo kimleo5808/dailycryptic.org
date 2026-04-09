@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-08T06:55:46.934Z",
+  "lastUpdated": "2026-04-09T06:57:40.825Z",
   "puzzles": [
+    {
+      "id": 941,
+      "printDate": "2026-04-09",
+      "status": "published",
+      "clue": "In the paint",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBFIEQgSSBVIE0=",
+      "spangram": "TUVESVVN",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 6,
+      "themeWords": [
+        "QUNSWUxJQw==",
+        "RU5BTUVM",
+        "RlJFU0NP",
+        "UEFTVEVM",
+        "VEVNUEVSQQ==",
+        "V0FURVJDT0xPUg=="
+      ]
+    },
     {
       "id": 940,
       "printDate": "2026-04-08",
