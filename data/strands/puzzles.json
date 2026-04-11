@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-04-10T07:07:11.957Z",
+  "lastUpdated": "2026-04-11T06:39:11.327Z",
   "puzzles": [
+    {
+      "id": 943,
+      "printDate": "2026-04-11",
+      "status": "published",
+      "clue": "You're putting me on",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VCBPIFAgRyBFIEEgUg==",
+      "spangram": "VE9QR0VBUg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "QkVBTklF",
+        "QkVSRVQ=",
+        "Qk9XTEVS",
+        "REVSQlk=",
+        "RkVET1JB",
+        "U09NQlJFUk8=",
+        "VE9RVUU="
+      ]
+    },
     {
       "id": 942,
       "printDate": "2026-04-10",
