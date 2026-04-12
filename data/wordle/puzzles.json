@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-11T06:36:37.435Z",
+  "lastUpdated": "2026-04-12T06:52:11.268Z",
   "puzzles": [
+    {
+      "id": 1758,
+      "printDate": "2026-04-12",
+      "status": "published",
+      "solution": "YWxsZXk=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with A and has 2 vowels.",
+      "hint3": "A _ L _ Y"
+    },
     {
       "id": 1757,
       "printDate": "2026-04-11",
