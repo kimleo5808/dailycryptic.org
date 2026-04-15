@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-14T07:06:33.146Z",
+  "lastUpdated": "2026-04-15T07:07:37.394Z",
   "puzzles": [
+    {
+      "id": 1761,
+      "printDate": "2026-04-15",
+      "status": "published",
+      "solution": "YmVndW4=",
+      "hint1": "This word begins with a bold consonant.",
+      "hint2": "The word starts with B and has 2 vowels.",
+      "hint3": "B _ G _ N"
+    },
     {
       "id": 1760,
       "printDate": "2026-04-14",
