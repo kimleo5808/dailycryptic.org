@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-14T07:08:19.535Z",
+  "lastUpdated": "2026-04-15T07:09:00.010Z",
   "puzzles": [
+    {
+      "id": 947,
+      "printDate": "2026-04-15",
+      "status": "published",
+      "clue": "Gift of the month",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBJIFIgVCBIIFMgVCBPIE4gRQ==",
+      "spangram": "QklSVEhTVE9ORQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "RElBTU9ORA==",
+        "R0FSTkVU",
+        "T1BBTA==",
+        "UEVSSURPVA==",
+        "VE9QQVo=",
+        "VFVSUVVPSVNF"
+      ]
+    },
     {
       "id": 946,
       "printDate": "2026-04-14",
