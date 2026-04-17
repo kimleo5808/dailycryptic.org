@@ -13,8 +13,8 @@ interface WordleBoardProps {
   /** Use smaller tiles for multi-board layouts (e.g. Quordle 2×2). */
   compact?: boolean;
   /**
-   * Collapse future (non-active, non-submitted) rows into thin bars
-   * to reduce vertical footprint — matches merriam-webster Quordle layout.
+   * Collapse future (non-active, non-submitted) rows into thin bars.
+   * Kept as an opt-in — off by default for standard full-grid rendering.
    */
   stubEmptyRows?: boolean;
   /** Shake the active row (e.g. invalid guess). */
@@ -27,27 +27,36 @@ interface WordleBoardProps {
   ariaLabel?: string;
 }
 
+/*
+ * Wordle-proven semantic palette. Chosen for maximum legibility and because
+ * it matches the mental model users already have from the original game.
+ *   correct: #6aaa64 (light) / #538d4e (dark)
+ *   present: #c9b458 (light) / #b59f3b (dark)
+ *   absent:  #787c7e (light) / #3a3a3c (dark)
+ * Empty tiles get a visible 2px border so the grid reads clearly.
+ */
+
 function tileColor(state: LetterState, colorBlind: boolean): string {
   switch (state) {
     case "correct":
       return colorBlind
-        ? "bg-blue-500 text-white dark:bg-blue-600"
-        : "bg-emerald-500 text-white dark:bg-emerald-600";
+        ? "bg-[#3b82f6] border-2 border-[#3b82f6] text-white dark:bg-[#2563eb] dark:border-[#2563eb]"
+        : "bg-[#6aaa64] border-2 border-[#6aaa64] text-white dark:bg-[#538d4e] dark:border-[#538d4e]";
     case "present":
       return colorBlind
-        ? "bg-orange-400 text-white dark:bg-orange-500"
-        : "bg-amber-400 text-white dark:bg-amber-500";
+        ? "bg-[#f97316] border-2 border-[#f97316] text-white dark:bg-[#ea580c] dark:border-[#ea580c]"
+        : "bg-[#c9b458] border-2 border-[#c9b458] text-white dark:bg-[#b59f3b] dark:border-[#b59f3b]";
     case "absent":
-      return "bg-zinc-400 text-white dark:bg-zinc-700";
+      return "bg-[#787c7e] border-2 border-[#787c7e] text-white dark:bg-[#3a3a3c] dark:border-[#3a3a3c]";
     default:
-      return "bg-zinc-100 text-zinc-900 dark:bg-zinc-800/70 dark:text-zinc-100";
+      return TILE_EMPTY;
   }
 }
 
 const TILE_EMPTY =
-  "bg-zinc-100 text-zinc-900 dark:bg-zinc-800/70 dark:text-zinc-100";
+  "bg-white border-2 border-[#d3d6da] text-[#1a1a1b] dark:bg-transparent dark:border-[#3a3a3c] dark:text-white";
 const TILE_FILLED =
-  "bg-background text-foreground ring-[1.5px] ring-inset ring-zinc-400 dark:ring-zinc-400";
+  "bg-white border-2 border-[#878a8c] text-[#1a1a1b] dark:bg-transparent dark:border-[#565758] dark:text-white";
 
 export default function WordleBoard({
   rows,
@@ -64,13 +73,11 @@ export default function WordleBoard({
   className,
   ariaLabel,
 }: WordleBoardProps) {
-  // Tile sizing — responsive: small tiles for 2×2 mobile/tablet,
-  // large tiles for 1×4 desktop layout to fill viewport.
   const tileSize = compact
     ? "h-7 w-7 text-sm sm:h-8 sm:w-8 sm:text-base lg:h-11 lg:w-11 lg:text-lg"
     : "h-12 w-12 text-xl sm:h-14 sm:w-14 sm:text-2xl";
   const stubWidth = compact ? "w-7 sm:w-8 lg:w-11" : "w-12 sm:w-14";
-  const rowGap = "gap-[2px] sm:gap-[3px]";
+  const rowGap = "gap-[3px] sm:gap-[4px]";
   const activeRowIndex = guesses.length;
 
   return (
@@ -80,7 +87,7 @@ export default function WordleBoard({
       className={cn(
         "inline-flex flex-col",
         rowGap,
-        dimmed && "opacity-70",
+        dimmed && "opacity-75",
         className,
       )}
     >
@@ -97,7 +104,6 @@ export default function WordleBoard({
         const evals = isSubmitted ? evaluations[rowIdx] : [];
 
         if (collapsed) {
-          // Thin stub row: a single horizontal strip per cell
           return (
             <div role="row" key={rowIdx} className={cn("inline-flex", rowGap)}>
               {Array.from({ length: wordLength }).map((__, colIdx) => (
@@ -106,7 +112,7 @@ export default function WordleBoard({
                   key={colIdx}
                   aria-hidden="true"
                   className={cn(
-                    "h-[6px] rounded-sm bg-zinc-200 dark:bg-zinc-800/60",
+                    "h-[6px] rounded-sm bg-[#d3d6da] dark:bg-[#3a3a3c]",
                     stubWidth,
                   )}
                 />
@@ -137,10 +143,13 @@ export default function WordleBoard({
                   role="gridcell"
                   key={colIdx}
                   className={cn(
-                    "inline-flex items-center justify-center rounded-[4px] font-heading font-bold uppercase transition-colors",
+                    "inline-flex items-center justify-center rounded-[3px] font-heading font-extrabold uppercase leading-none transition-colors",
                     tileSize,
                     isSubmitted
-                      ? cn(tileColor(state ?? "empty", colorBlind), "animate-tile-flip")
+                      ? cn(
+                          tileColor(state ?? "empty", colorBlind),
+                          "animate-tile-flip",
+                        )
                       : filled
                         ? TILE_FILLED
                         : TILE_EMPTY,
@@ -152,9 +161,7 @@ export default function WordleBoard({
                   }
                   aria-label={
                     letter
-                      ? `${letter}${
-                          state ? ` (${state})` : ""
-                        }`
+                      ? `${letter}${state ? ` (${state})` : ""}`
                       : "empty"
                   }
                 >
