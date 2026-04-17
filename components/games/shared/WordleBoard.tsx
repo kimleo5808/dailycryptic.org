@@ -64,11 +64,12 @@ export default function WordleBoard({
   className,
   ariaLabel,
 }: WordleBoardProps) {
-  // Tile sizing: bigger by default, merriam-webster-like presence
+  // Tile sizing — responsive: small tiles for 2×2 mobile/tablet,
+  // large tiles for 1×4 desktop layout to fill viewport.
   const tileSize = compact
-    ? "h-9 w-9 text-base sm:h-10 sm:w-10 sm:text-lg"
+    ? "h-7 w-7 text-sm sm:h-8 sm:w-8 sm:text-base lg:h-11 lg:w-11 lg:text-lg"
     : "h-12 w-12 text-xl sm:h-14 sm:w-14 sm:text-2xl";
-  const stubWidth = compact ? "w-9 sm:w-10" : "w-12 sm:w-14";
+  const stubWidth = compact ? "w-7 sm:w-8 lg:w-11" : "w-12 sm:w-14";
   const rowGap = "gap-[2px] sm:gap-[3px]";
   const activeRowIndex = guesses.length;
 

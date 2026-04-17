@@ -205,9 +205,9 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
   );
 
   return (
-    <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-3">
+    <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-3 lg:max-w-5xl">
       {/* Unified status bar */}
-      <div className="flex w-full items-center justify-between gap-3 border-b border-border pb-2">
+      <div className="flex w-full max-w-xl items-center justify-between gap-3 border-b border-border pb-2">
         <QuordleModeTabs mode={mode} onChange={onModeChange} />
         <div className="flex items-center gap-3 text-xs text-muted-foreground">
           <span className="font-semibold text-foreground">
@@ -243,8 +243,8 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
 
       {hydrated && current && (
         <>
-          {/* 2×2 board grid — always two columns, merriam-webster spacing */}
-          <div className="grid grid-cols-2 justify-items-center gap-x-6 gap-y-3 sm:gap-x-10 sm:gap-y-4">
+          {/* 2×2 on mobile/tablet, 1×4 horizontal on desktop — fills viewport */}
+          <div className="grid grid-cols-2 justify-items-center gap-x-4 gap-y-3 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-0">
             {boards.map((b, i) => (
               <WordleBoard
                 key={i}
@@ -255,7 +255,6 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
                 currentGuess={b.status === "playing" ? currentGuess : ""}
                 status={b.status}
                 compact
-                stubEmptyRows
                 shake={shake && b.status === "playing"}
                 dimmed={b.status !== "playing"}
                 colorBlind={colorBlind}
