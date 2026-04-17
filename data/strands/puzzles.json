@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-04-16T07:10:08.172Z",
+  "lastUpdated": "2026-04-17T07:10:21.168Z",
   "puzzles": [
+    {
+      "id": 949,
+      "printDate": "2026-04-17",
+      "status": "published",
+      "clue": "Shell company",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TSBPIEwgTCBVIFMgSw==",
+      "spangram": "TU9MTFVTSw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "QUJBTE9ORQ==",
+        "Q0xBTQ==",
+        "Q09OQ0g=",
+        "TElNUEVU",
+        "TVVTU0VM",
+        "T1lTVEVS",
+        "U0NBTExPUA=="
+      ]
+    },
     {
       "id": 948,
       "printDate": "2026-04-16",
