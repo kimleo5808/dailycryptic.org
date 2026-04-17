@@ -22,27 +22,26 @@ interface WordleBoardProps {
   ariaLabel?: string;
 }
 
-const TILE_EMPTY =
-  "border-2 border-zinc-300 bg-transparent text-foreground dark:border-zinc-700";
-const TILE_FILLED =
-  "border-2 border-zinc-400 bg-transparent text-foreground dark:border-zinc-500";
-
 function tileColor(state: LetterState, colorBlind: boolean): string {
   switch (state) {
     case "correct":
       return colorBlind
-        ? "border-blue-500 bg-blue-500 text-white dark:border-blue-600 dark:bg-blue-600"
-        : "border-emerald-500 bg-emerald-500 text-white dark:border-emerald-600 dark:bg-emerald-600";
+        ? "bg-blue-500 text-white dark:bg-blue-600"
+        : "bg-emerald-500 text-white dark:bg-emerald-600";
     case "present":
       return colorBlind
-        ? "border-orange-400 bg-orange-400 text-white dark:border-orange-500 dark:bg-orange-500"
-        : "border-amber-400 bg-amber-400 text-white dark:border-amber-500 dark:bg-amber-500";
+        ? "bg-orange-400 text-white dark:bg-orange-500"
+        : "bg-amber-400 text-white dark:bg-amber-500";
     case "absent":
-      return "border-zinc-400 bg-zinc-400 text-white dark:border-zinc-700 dark:bg-zinc-700";
+      return "bg-zinc-400 text-white dark:bg-zinc-700";
     default:
-      return TILE_EMPTY;
+      return "bg-zinc-100 text-foreground dark:bg-zinc-800/70";
   }
 }
+
+const TILE_EMPTY = "bg-zinc-100 text-foreground dark:bg-zinc-800/70";
+const TILE_FILLED =
+  "bg-background text-foreground ring-1 ring-inset ring-zinc-400 dark:ring-zinc-500";
 
 export default function WordleBoard({
   rows,
@@ -58,11 +57,11 @@ export default function WordleBoard({
   className,
   ariaLabel,
 }: WordleBoardProps) {
+  // Quordle-optimized compact sizing: 24px on very small, 28px default, 32px md+
   const tileSize = compact
-    ? "h-8 w-8 text-base sm:h-9 sm:w-9 sm:text-lg"
-    : "h-12 w-12 text-xl sm:h-14 sm:w-14 sm:text-2xl";
-  const gap = compact ? "gap-1" : "gap-1.5";
-  const rowGap = compact ? "gap-1" : "gap-1.5";
+    ? "h-6 w-6 text-[0.7rem] sm:h-7 sm:w-7 sm:text-sm md:h-8 md:w-8 md:text-base"
+    : "h-11 w-11 text-lg sm:h-14 sm:w-14 sm:text-2xl";
+  const gap = compact ? "gap-[3px] sm:gap-1" : "gap-1.5";
   const activeRowIndex = guesses.length;
 
   return (
@@ -71,7 +70,7 @@ export default function WordleBoard({
       aria-label={ariaLabel ?? "Wordle board"}
       className={cn(
         "inline-flex flex-col",
-        rowGap,
+        gap,
         dimmed && "opacity-70",
         className,
       )}
@@ -109,7 +108,7 @@ export default function WordleBoard({
                   role="gridcell"
                   key={colIdx}
                   className={cn(
-                    "inline-flex items-center justify-center rounded-sm font-heading font-bold uppercase transition-colors",
+                    "inline-flex items-center justify-center rounded-[4px] font-heading font-bold uppercase transition-colors",
                     tileSize,
                     isSubmitted
                       ? cn(tileColor(state ?? "empty", colorBlind), "animate-tile-flip")

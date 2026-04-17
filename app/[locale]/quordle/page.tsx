@@ -1,6 +1,5 @@
 import {
   BodyText,
-  ContentHero,
   ContentSection,
   RelatedLinks,
   SimpleFaq,
@@ -156,22 +155,23 @@ export default async function QuordlePage({ params }: { params: Params }) {
       />
       <JsonLd data={faqPageSchema(FAQ_ITEMS)} />
 
-      <ContentHero
-        eyebrow="Quordle"
-        title="Play Quordle — Daily 4-Word Puzzle Game"
-        description="Guess 4 five-letter words in 9 tries. A new daily Quordle is released every day at midnight UTC, and Practice mode gives you unlimited random puzzles. Free, no sign-in, no ads in the game area."
-      />
+      <header className="text-center">
+        <span className="text-xs font-medium uppercase tracking-wide text-primary">
+          Quordle
+        </span>
+        <h1 className="mt-1 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+          Play Quordle — Daily 4-Word Puzzle
+        </h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Guess 4 five-letter words in 9 tries. New puzzle every day, plus
+          unlimited practice.
+        </p>
+      </header>
 
       {/* Above-the-fold game */}
-      <div className="mt-6">
+      <div className="mt-4">
         <QuordleApp />
       </div>
-
-      {/* Disclaimer — small, legible */}
-      <p className="mt-4 text-center text-xs text-muted-foreground">
-        This site is not affiliated with Merriam-Webster, Quordle, Wordle, or
-        The New York Times. Quordle is a trademark of its respective owner.
-      </p>
 
       <div className="mt-10 space-y-8">
         <TableOfContents

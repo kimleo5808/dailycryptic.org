@@ -5,6 +5,8 @@ import WordleBoard from "@/components/games/shared/WordleBoard";
 import WordleKeyboard, {
   type WordleKey,
 } from "@/components/games/shared/WordleKeyboard";
+import QuordleModeTabs from "@/components/quordle/QuordleModeTabs";
+import QuordleSettingsMenu from "@/components/quordle/QuordleSettingsMenu";
 import QuordleShareButton from "@/components/quordle/QuordleShareButton";
 import { useWordleGame } from "@/hooks/useWordleGame";
 import {
@@ -22,6 +24,7 @@ import type { LetterState, QuordleMode } from "@/types/quordle";
 
 interface QuordleGameProps {
   mode: QuordleMode;
+  onModeChange: (mode: QuordleMode) => void;
 }
 
 function formatElapsed(ms: number | null): string {
@@ -32,7 +35,7 @@ function formatElapsed(ms: number | null): string {
   return `${m}:${s}`;
 }
 
-export default function QuordleGame({ mode }: QuordleGameProps) {
+export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
   const hydrate = useQuordleStore((s) => s.hydrate);
   const hydrated = useQuordleStore((s) => s.hydrated);
   const colorBlind = useQuordleStore((s) => s.colorBlind);
@@ -109,7 +112,6 @@ export default function QuordleGame({ mode }: QuordleGameProps) {
   const gameOver =
     current !== null && (allWon || sharedGuesses.length >= QUORDLE_MAX_GUESSES);
 
-  // Mark finished once we know the game is over
   const markedRef = useRef<string | null>(null);
   useEffect(() => {
     if (!current || !gameOver) return;
@@ -124,7 +126,6 @@ export default function QuordleGame({ mode }: QuordleGameProps) {
     markedRef.current = signature;
   }, [current, gameOver, mode, todayKey, sharedGuesses.length, markFinished]);
 
-  // Timer tick
   useEffect(() => {
     if (!current?.startedAt || current?.finishedAt) return;
     const id = window.setInterval(() => setNow(Date.now()), 1000);
@@ -198,106 +199,113 @@ export default function QuordleGame({ mode }: QuordleGameProps) {
     return idx === -1 ? null : idx + 1;
   });
 
-  if (!hydrated || !current) {
-    return (
-      <div
-        className="mx-auto flex h-[420px] w-full max-w-3xl animate-pulse items-center justify-center rounded-xl border border-border bg-muted/30"
-        aria-label="Loading Quordle"
-      >
-        <span className="text-sm text-muted-foreground">Loading Quordle…</span>
-      </div>
-    );
-  }
+  const guessCount = Math.min(
+    sharedGuesses.length + (gameOver ? 0 : 1),
+    QUORDLE_MAX_GUESSES,
+  );
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-4">
-      {/* Status bar */}
-      <div className="flex w-full items-center justify-between gap-4 rounded-lg border border-border bg-card/60 px-4 py-2 text-sm">
-        <div className="font-semibold text-foreground">
-          {mode === "daily" && puzzleNumber
-            ? `Daily Quordle #${puzzleNumber}`
-            : "Practice Quordle"}
-        </div>
-        <div className="flex items-center gap-3 text-xs text-muted-foreground">
-          <span>
-            Guess{" "}
-            <span className="font-semibold text-foreground">
-              {Math.min(sharedGuesses.length + (gameOver ? 0 : 1), QUORDLE_MAX_GUESSES)}
-            </span>{" "}
-            / {QUORDLE_MAX_GUESSES}
+    <div className="mx-auto flex w-full max-w-md flex-col items-center gap-3">
+      {/* Unified status bar */}
+      <div className="flex w-full items-center justify-between gap-2 border-b border-border pb-2">
+        <QuordleModeTabs mode={mode} onChange={onModeChange} />
+        <div className="flex items-center gap-3 text-[11px] text-muted-foreground sm:text-xs">
+          <span className="font-semibold text-foreground">
+            {mode === "daily" && puzzleNumber ? `#${puzzleNumber}` : "Random"}
           </span>
-          <span className="font-mono">⏱ {formatElapsed(elapsed)}</span>
+          <span>
+            {guessCount}/{QUORDLE_MAX_GUESSES}
+          </span>
+          <span className="font-mono">{formatElapsed(elapsed)}</span>
         </div>
+        <QuordleSettingsMenu />
       </div>
 
+      {/* Error toast */}
       {errorMsg && (
         <div
           role="status"
-          className="rounded-md bg-destructive px-3 py-1 text-xs font-medium text-destructive-foreground"
+          className="rounded-md bg-destructive px-2.5 py-1 text-xs font-medium text-destructive-foreground"
         >
           {errorMsg}
         </div>
       )}
 
-      {/* Boards: 2×2 on md+, 1×4 on mobile */}
-      <div className="grid w-full grid-cols-1 justify-items-center gap-3 sm:grid-cols-2">
-        {boards.map((b, i) => (
-          <WordleBoard
-            key={i}
-            rows={QUORDLE_MAX_GUESSES}
-            wordLength={QUORDLE_WORD_LENGTH}
-            guesses={sharedGuesses}
-            evaluations={b.evaluations}
-            currentGuess={b.status === "playing" ? currentGuess : ""}
-            status={b.status}
-            compact
-            shake={shake && b.status === "playing"}
-            dimmed={b.status !== "playing"}
-            colorBlind={colorBlind}
-            ariaLabel={`Quordle board ${i + 1}`}
-          />
-        ))}
-      </div>
-
-      {/* Game over summary */}
-      {gameOver && (
-        <div className="w-full rounded-xl border border-border bg-card/80 p-4 text-center">
-          <p className="mb-2 text-base font-semibold text-foreground">
-            {allWon ? "All four solved!" : "Out of guesses"}
-          </p>
-          {!allWon && (
-            <p className="mb-3 text-sm text-muted-foreground">
-              Answers: {answers.map((a) => a.toUpperCase()).join(" · ")}
-            </p>
-          )}
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
-            <QuordleShareButton
-              puzzleNumber={puzzleNumber}
-              mode={mode}
-              guessesPerBoard={guessesPerBoard}
-              guessLimit={QUORDLE_MAX_GUESSES}
-            />
-            {mode === "practice" && (
-              <button
-                type="button"
-                onClick={onNewPractice}
-                className="rounded-md border border-border bg-background px-4 py-2 text-sm font-semibold text-foreground transition hover:bg-muted"
-              >
-                New practice game
-              </button>
-            )}
-          </div>
+      {/* Loading skeleton while store is hydrating */}
+      {(!hydrated || !current) && (
+        <div
+          className="flex h-72 w-full animate-pulse items-center justify-center rounded-lg bg-muted/40"
+          aria-label="Loading Quordle"
+        >
+          <span className="text-xs text-muted-foreground">Loading…</span>
         </div>
       )}
 
-      {/* Keyboard */}
-      <WordleKeyboard
-        onKey={handleKey}
-        letterStates={aggregatedLetterStates}
-        disabled={gameOver}
-        colorBlind={colorBlind}
-        className="mt-1"
-      />
+      {hydrated && current && (
+        <>
+          {/* 2×2 board grid — always two columns */}
+          <div className="grid grid-cols-2 justify-items-center gap-x-2.5 gap-y-2 sm:gap-x-4 sm:gap-y-3">
+            {boards.map((b, i) => (
+              <WordleBoard
+                key={i}
+                rows={QUORDLE_MAX_GUESSES}
+                wordLength={QUORDLE_WORD_LENGTH}
+                guesses={sharedGuesses}
+                evaluations={b.evaluations}
+                currentGuess={b.status === "playing" ? currentGuess : ""}
+                status={b.status}
+                compact
+                shake={shake && b.status === "playing"}
+                dimmed={b.status !== "playing"}
+                colorBlind={colorBlind}
+                ariaLabel={`Quordle board ${i + 1}`}
+              />
+            ))}
+          </div>
+
+          {/* Game-over summary */}
+          {gameOver && (
+            <div className="w-full rounded-lg border border-border bg-card/70 p-3 text-center">
+              <p className="text-sm font-semibold text-foreground">
+                {allWon ? "All four solved!" : "Out of guesses"}
+              </p>
+              {!allWon && (
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Answers:{" "}
+                  <span className="font-mono text-foreground">
+                    {answers.map((a) => a.toUpperCase()).join(" · ")}
+                  </span>
+                </p>
+              )}
+              <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
+                <QuordleShareButton
+                  puzzleNumber={puzzleNumber}
+                  mode={mode}
+                  guessesPerBoard={guessesPerBoard}
+                  guessLimit={QUORDLE_MAX_GUESSES}
+                />
+                {mode === "practice" && (
+                  <button
+                    type="button"
+                    onClick={onNewPractice}
+                    className="rounded-md border border-border bg-background px-3 py-1.5 text-xs font-semibold text-foreground transition hover:bg-muted"
+                  >
+                    New game
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Keyboard */}
+          <WordleKeyboard
+            onKey={handleKey}
+            letterStates={aggregatedLetterStates}
+            disabled={gameOver}
+            colorBlind={colorBlind}
+          />
+        </>
+      )}
     </div>
   );
 }

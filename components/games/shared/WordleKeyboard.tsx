@@ -80,14 +80,14 @@ export default function WordleKeyboard({
   return (
     <div
       className={cn(
-        "mx-auto flex w-full max-w-md flex-col gap-1.5 select-none",
+        "mx-auto flex w-full max-w-sm flex-col gap-1 select-none",
         className,
       )}
       role="group"
       aria-label="Virtual keyboard"
     >
       {ROWS.map((row, rowIdx) => (
-        <div key={rowIdx} className="flex justify-center gap-1 sm:gap-1.5">
+        <div key={rowIdx} className="flex justify-center gap-1">
           {row.map((k) => {
             const isWide = k === "enter" || k === "backspace";
             const label =
@@ -101,11 +101,11 @@ export default function WordleKeyboard({
                 disabled={disabled}
                 aria-label={k === "backspace" ? "Backspace" : label}
                 className={cn(
-                  "rounded-md font-heading text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60",
-                  "h-12 sm:h-14",
+                  "rounded-md font-heading text-xs font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60",
+                  "h-10 sm:h-12",
                   isWide
-                    ? "flex-[1.5] px-2 text-xs sm:text-sm"
-                    : "flex-1 px-1",
+                    ? "flex-[1.6] px-1.5 text-[11px] sm:text-xs"
+                    : "flex-1 px-0.5 sm:text-sm",
                   keyClass(state, colorBlind),
                 )}
               >
