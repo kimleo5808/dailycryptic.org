@@ -206,7 +206,7 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
   );
 
   return (
-    <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-3 lg:max-w-5xl">
+    <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-3 lg:max-w-6xl">
       {/* Unified status bar */}
       <div className="flex w-full max-w-xl items-center justify-between gap-3 border-b border-border pb-2">
         <QuordleModeTabs mode={mode} onChange={onModeChange} />
@@ -245,14 +245,14 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
       {hydrated && current && (
         <>
           {/* 2×2 on mobile/tablet, 1×4 horizontal on desktop. Each board
-              is wrapped in its own card so the four are unmistakably
-              separate play areas, not one 20-column mega grid. */}
-          <div className="grid grid-cols-2 justify-items-center gap-x-5 gap-y-4 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0">
+              sits in its own elevated card with generous inter-board
+              spacing so the four units read as separate play areas. */}
+          <div className="grid grid-cols-2 justify-items-center gap-x-5 gap-y-4 lg:grid-cols-4 lg:gap-x-16 lg:gap-y-0">
             {boards.map((b, i) => (
               <div
                 key={i}
                 className={cn(
-                  "rounded-xl bg-[#f6f7f9] p-2.5 ring-1 ring-[#e3e5e8] dark:bg-[#1a1a1b] dark:ring-[#3a3a3c]",
+                  "rounded-xl bg-[#eef0f3] p-3 shadow-sm ring-1 ring-[#d7dae0] dark:bg-[#1d1d1f] dark:ring-[#3a3a3c] lg:p-4",
                   b.status === "won" &&
                     "ring-2 ring-[#6aaa64] dark:ring-[#538d4e]",
                   b.status === "lost" &&

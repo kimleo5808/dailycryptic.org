@@ -129,7 +129,7 @@ export default async function QuordlePage({ params }: { params: Params }) {
   const pageUrl = `${BASE_URL}${CANONICAL_PATH}`;
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="w-full py-6">
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: BASE_URL },
@@ -155,21 +155,24 @@ export default async function QuordlePage({ params }: { params: Params }) {
       />
       <JsonLd data={faqPageSchema(FAQ_ITEMS)} />
 
-      <header className="text-center">
-        <h1 className="font-heading text-xl font-bold text-foreground sm:text-2xl">
-          Play Quordle — Daily 4-Word Puzzle
-        </h1>
-        <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
-          Guess 4 five-letter words in 9 tries · new puzzle daily · unlimited practice
-        </p>
-      </header>
+      {/* Game region — full-width, breaks out of the 5xl content column */}
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <header className="text-center">
+          <h1 className="font-heading text-xl font-bold text-foreground sm:text-2xl">
+            Play Quordle — Daily 4-Word Puzzle
+          </h1>
+          <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
+            Guess 4 five-letter words in 9 tries · new puzzle daily · unlimited practice
+          </p>
+        </header>
 
-      {/* Above-the-fold game */}
-      <div className="mt-3">
-        <QuordleApp />
+        <div className="mt-3">
+          <QuordleApp />
+        </div>
       </div>
 
-      <div className="mt-10 space-y-8">
+      {/* SEO content — narrower reading column */}
+      <div className="mx-auto mt-10 w-full max-w-5xl space-y-8 px-4 sm:px-6 lg:px-8">
         <TableOfContents
           items={[
             { href: "#what-is-quordle", label: "What is Quordle?" },
