@@ -156,20 +156,16 @@ export default async function QuordlePage({ params }: { params: Params }) {
       <JsonLd data={faqPageSchema(FAQ_ITEMS)} />
 
       <header className="text-center">
-        <span className="text-xs font-medium uppercase tracking-wide text-primary">
-          Quordle
-        </span>
-        <h1 className="mt-1 font-heading text-2xl font-bold text-foreground sm:text-3xl">
+        <h1 className="font-heading text-xl font-bold text-foreground sm:text-2xl">
           Play Quordle — Daily 4-Word Puzzle
         </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Guess 4 five-letter words in 9 tries. New puzzle every day, plus
-          unlimited practice.
+        <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
+          Guess 4 five-letter words in 9 tries · new puzzle daily · unlimited practice
         </p>
       </header>
 
       {/* Above-the-fold game */}
-      <div className="mt-4">
+      <div className="mt-3">
         <QuordleApp />
       </div>
 

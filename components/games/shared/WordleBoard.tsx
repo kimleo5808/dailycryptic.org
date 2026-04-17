@@ -12,6 +12,11 @@ interface WordleBoardProps {
   status?: BoardStatus;
   /** Use smaller tiles for multi-board layouts (e.g. Quordle 2×2). */
   compact?: boolean;
+  /**
+   * Collapse future (non-active, non-submitted) rows into thin bars
+   * to reduce vertical footprint — matches merriam-webster Quordle layout.
+   */
+  stubEmptyRows?: boolean;
   /** Shake the active row (e.g. invalid guess). */
   shake?: boolean;
   /** Optional dim style for completed boards. */
@@ -35,13 +40,14 @@ function tileColor(state: LetterState, colorBlind: boolean): string {
     case "absent":
       return "bg-zinc-400 text-white dark:bg-zinc-700";
     default:
-      return "bg-zinc-100 text-foreground dark:bg-zinc-800/70";
+      return "bg-zinc-100 text-zinc-900 dark:bg-zinc-800/70 dark:text-zinc-100";
   }
 }
 
-const TILE_EMPTY = "bg-zinc-100 text-foreground dark:bg-zinc-800/70";
+const TILE_EMPTY =
+  "bg-zinc-100 text-zinc-900 dark:bg-zinc-800/70 dark:text-zinc-100";
 const TILE_FILLED =
-  "bg-background text-foreground ring-1 ring-inset ring-zinc-400 dark:ring-zinc-500";
+  "bg-background text-foreground ring-[1.5px] ring-inset ring-zinc-400 dark:ring-zinc-400";
 
 export default function WordleBoard({
   rows,
@@ -51,17 +57,19 @@ export default function WordleBoard({
   currentGuess = "",
   status = "playing",
   compact = false,
+  stubEmptyRows = false,
   shake = false,
   dimmed = false,
   colorBlind = false,
   className,
   ariaLabel,
 }: WordleBoardProps) {
-  // Quordle-optimized compact sizing: 24px on very small, 28px default, 32px md+
+  // Tile sizing: bigger by default, merriam-webster-like presence
   const tileSize = compact
-    ? "h-6 w-6 text-[0.7rem] sm:h-7 sm:w-7 sm:text-sm md:h-8 md:w-8 md:text-base"
-    : "h-11 w-11 text-lg sm:h-14 sm:w-14 sm:text-2xl";
-  const gap = compact ? "gap-[3px] sm:gap-1" : "gap-1.5";
+    ? "h-9 w-9 text-base sm:h-10 sm:w-10 sm:text-lg"
+    : "h-12 w-12 text-xl sm:h-14 sm:w-14 sm:text-2xl";
+  const stubWidth = compact ? "w-9 sm:w-10" : "w-12 sm:w-14";
+  const rowGap = "gap-[2px] sm:gap-[3px]";
   const activeRowIndex = guesses.length;
 
   return (
@@ -70,7 +78,7 @@ export default function WordleBoard({
       aria-label={ariaLabel ?? "Wordle board"}
       className={cn(
         "inline-flex flex-col",
-        gap,
+        rowGap,
         dimmed && "opacity-70",
         className,
       )}
@@ -79,6 +87,7 @@ export default function WordleBoard({
         const isSubmitted = rowIdx < guesses.length;
         const isActive =
           rowIdx === activeRowIndex && status === "playing";
+        const collapsed = stubEmptyRows && !isSubmitted && !isActive;
         const guess = isSubmitted
           ? guesses[rowIdx].toUpperCase()
           : isActive
@@ -86,13 +95,32 @@ export default function WordleBoard({
             : "";
         const evals = isSubmitted ? evaluations[rowIdx] : [];
 
+        if (collapsed) {
+          // Thin stub row: a single horizontal strip per cell
+          return (
+            <div role="row" key={rowIdx} className={cn("inline-flex", rowGap)}>
+              {Array.from({ length: wordLength }).map((__, colIdx) => (
+                <div
+                  role="gridcell"
+                  key={colIdx}
+                  aria-hidden="true"
+                  className={cn(
+                    "h-[6px] rounded-sm bg-zinc-200 dark:bg-zinc-800/60",
+                    stubWidth,
+                  )}
+                />
+              ))}
+            </div>
+          );
+        }
+
         return (
           <div
             role="row"
             key={rowIdx}
             className={cn(
               "inline-flex",
-              gap,
+              rowGap,
               isActive && shake && "animate-shake",
             )}
           >
