@@ -20,6 +20,7 @@ import {
   isValidGuess,
 } from "@/lib/quordle-data";
 import { useQuordleStore } from "@/stores/quordleStore";
+import { cn } from "@/lib/utils";
 import type { LetterState, QuordleMode } from "@/types/quordle";
 
 interface QuordleGameProps {
@@ -243,23 +244,35 @@ export default function QuordleGame({ mode, onModeChange }: QuordleGameProps) {
 
       {hydrated && current && (
         <>
-          {/* 2×2 on mobile/tablet, 1×4 horizontal on desktop — fills viewport */}
-          <div className="grid grid-cols-2 justify-items-center gap-x-4 gap-y-3 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-0">
+          {/* 2×2 on mobile/tablet, 1×4 horizontal on desktop. Each board
+              is wrapped in its own card so the four are unmistakably
+              separate play areas, not one 20-column mega grid. */}
+          <div className="grid grid-cols-2 justify-items-center gap-x-5 gap-y-4 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0">
             {boards.map((b, i) => (
-              <WordleBoard
+              <div
                 key={i}
-                rows={QUORDLE_MAX_GUESSES}
-                wordLength={QUORDLE_WORD_LENGTH}
-                guesses={sharedGuesses}
-                evaluations={b.evaluations}
-                currentGuess={b.status === "playing" ? currentGuess : ""}
-                status={b.status}
-                compact
-                shake={shake && b.status === "playing"}
-                dimmed={b.status !== "playing"}
-                colorBlind={colorBlind}
-                ariaLabel={`Quordle board ${i + 1}`}
-              />
+                className={cn(
+                  "rounded-xl bg-[#f6f7f9] p-2.5 ring-1 ring-[#e3e5e8] dark:bg-[#1a1a1b] dark:ring-[#3a3a3c]",
+                  b.status === "won" &&
+                    "ring-2 ring-[#6aaa64] dark:ring-[#538d4e]",
+                  b.status === "lost" &&
+                    "ring-2 ring-[#c04747] dark:ring-[#8b2f2f]",
+                )}
+              >
+                <WordleBoard
+                  rows={QUORDLE_MAX_GUESSES}
+                  wordLength={QUORDLE_WORD_LENGTH}
+                  guesses={sharedGuesses}
+                  evaluations={b.evaluations}
+                  currentGuess={b.status === "playing" ? currentGuess : ""}
+                  status={b.status}
+                  compact
+                  shake={shake && b.status === "playing"}
+                  dimmed={b.status !== "playing"}
+                  colorBlind={colorBlind}
+                  ariaLabel={`Quordle board ${i + 1}`}
+                />
+              </div>
             ))}
           </div>
 
