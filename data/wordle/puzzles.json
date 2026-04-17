@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-16T07:09:14.693Z",
+  "lastUpdated": "2026-04-17T07:09:17.725Z",
   "puzzles": [
+    {
+      "id": 1763,
+      "printDate": "2026-04-17",
+      "status": "published",
+      "solution": "YmVsbGU=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with B and has 2 vowels.",
+      "hint3": "B _ L _ E"
+    },
     {
       "id": 1762,
       "printDate": "2026-04-16",
