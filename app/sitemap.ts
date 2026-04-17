@@ -39,6 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/strands-hint-today',
     '/strands-hint',
     '/strands-game',
+    '/quordle',
     '/blog',
     '/share',
     '/about',
@@ -50,7 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer'
+    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer' || page === '/quordle'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
@@ -67,6 +68,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
               ? 0.95
               : page === '/strands-hint-today'
                 ? 0.95
+              : page === '/quordle'
+                ? 0.9
               : page === '/blog'
                 ? 0.85
                 : 0.8,

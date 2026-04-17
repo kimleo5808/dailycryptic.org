@@ -117,6 +117,8 @@ const config = {
         'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
         'pulse-soft': 'pulse-soft 2s ease-in-out infinite',
         'flip-digit': 'flip-digit 0.6s ease-in-out',
+        'shake': 'shake 0.45s cubic-bezier(.36,.07,.19,.97)',
+        'tile-flip': 'flip-digit 0.55s ease-in-out',
       }
     }
   },

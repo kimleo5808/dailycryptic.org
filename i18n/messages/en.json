@@ -76,6 +76,10 @@
           "title": "Games",
           "links": [
             {
+              "href": "/quordle",
+              "name": "Play Quordle"
+            },
+            {
               "href": "/connections-game",
               "name": "Play Connections"
             },

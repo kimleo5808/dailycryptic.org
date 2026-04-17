@@ -165,6 +165,48 @@ export function collectionPageSchema({
 }
 
 /* ------------------------------------------------------------------ */
+/*  VideoGame / WebApplication schema (for playable games)             */
+/* ------------------------------------------------------------------ */
+
+export function videoGameSchema({
+  name,
+  description,
+  url,
+  image,
+  genre,
+  applicationCategory = "Game",
+}: {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  genre?: string;
+  applicationCategory?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    name,
+    description,
+    url,
+    image: image || `${BASE_URL}/og.png`,
+    applicationCategory,
+    operatingSystem: "Any",
+    genre: genre || "Word puzzle",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "dailycryptic",
+      url: BASE_URL,
+    },
+  };
+}
+
+/* ------------------------------------------------------------------ */
 /*  ItemList schema                                                    */
 /* ------------------------------------------------------------------ */
 

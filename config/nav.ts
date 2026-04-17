@@ -182,6 +182,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
         title: "Play Online",
         links: [
           {
+            name: "Play Quordle",
+            href: "/quordle",
+            description: "Guess 4 words in 9 tries — daily + practice",
+          },
+          {
             name: "Play Connections",
             href: "/connections-game",
             description: "Play today's puzzle online",
