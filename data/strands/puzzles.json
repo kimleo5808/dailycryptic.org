@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-19T06:58:13.755Z",
+  "lastUpdated": "2026-04-20T07:28:39.914Z",
   "puzzles": [
+    {
+      "id": 953,
+      "printDate": "2026-04-20",
+      "status": "published",
+      "clue": "Gloriously glaring!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBBIFQgQyBIIFQgSCBFIEwgSSBHIEggVA==",
+      "spangram": "Q0FUQ0hUSEVMSUdIVA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "R0xFQU0=",
+        "R0xJTU1FUg==",
+        "R0xJTlQ=",
+        "R0xJU1RFTg==",
+        "R0xJVFRFUg==",
+        "R0xPVw=="
+      ]
+    },
     {
       "id": 952,
       "printDate": "2026-04-19",
