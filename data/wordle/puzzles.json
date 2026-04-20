@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-19T06:56:45.877Z",
+  "lastUpdated": "2026-04-20T07:26:31.205Z",
   "puzzles": [
+    {
+      "id": 1766,
+      "printDate": "2026-04-20",
+      "status": "published",
+      "solution": "d2VhdmU=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with W and has 3 vowels.",
+      "hint3": "W _ A _ E"
+    },
     {
       "id": 1765,
       "printDate": "2026-04-19",
