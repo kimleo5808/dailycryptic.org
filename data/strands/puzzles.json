@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-04-20T07:28:39.914Z",
+  "lastUpdated": "2026-04-21T07:12:03.816Z",
   "puzzles": [
+    {
+      "id": 951,
+      "printDate": "2026-04-21",
+      "status": "published",
+      "clue": "Risky business",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RCBBIFIgRSBEIEUgViBJIEwgUw==",
+      "spangram": "REFSRURFVklMUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QURWRU5UVVJPVVM=",
+        "Qk9MRA==",
+        "Q09VUkFHRU9VUw==",
+        "R1VUU1k=",
+        "SU5UUkVQSUQ="
+      ]
+    },
     {
       "id": 953,
       "printDate": "2026-04-20",
