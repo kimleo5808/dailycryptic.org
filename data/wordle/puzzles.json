@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-22T07:11:05.258Z",
+  "lastUpdated": "2026-04-23T07:12:49.844Z",
   "puzzles": [
+    {
+      "id": 1769,
+      "printDate": "2026-04-23",
+      "status": "published",
+      "solution": "dHdlZXQ=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with T and has 2 vowels.",
+      "hint3": "T _ E _ T"
+    },
     {
       "id": 1768,
       "printDate": "2026-04-22",
