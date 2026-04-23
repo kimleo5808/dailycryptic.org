@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-22T07:11:41.723Z",
+  "lastUpdated": "2026-04-23T07:14:07.873Z",
   "puzzles": [
+    {
+      "id": 955,
+      "printDate": "2026-04-23",
+      "status": "published",
+      "clue": "Provinces of the pantheon",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RCBPIE0gQSBJIE4=",
+      "spangram": "RE9NQUlO",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 6,
+      "themeWords": [
+        "SEFSVkVTVA==",
+        "TE9WRQ==",
+        "TUFSUklBR0U=",
+        "VEhVTkRFUg==",
+        "VU5ERVJXT1JMRA==",
+        "V0lTRE9N"
+      ]
+    },
     {
       "id": 954,
       "printDate": "2026-04-22",
