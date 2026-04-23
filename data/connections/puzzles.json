@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-04-22T07:09:53.216Z",
+  "lastUpdated": "2026-04-23T07:12:20.290Z",
   "puzzles": [
+    {
+      "id": 1047,
+      "printDate": "2026-04-23",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Qk9SREVS",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "TkVJR0hCT1I=",
+            "VE9VQ0g=",
+            "U0tJUlQ=",
+            "RkxBTks="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgRklDVElPTg==",
+          "hint": "Think about different fiction",
+          "words": [
+            "U0NJRU5DRQ==",
+            "UFVMUA==",
+            "TElURVJBUlk=",
+            "SElTVE9SSUNBTA=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "V09SRFMgSU4gQSBQTEFORVRBUlkgTU5FTU9OSUM=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "TU9USEVS",
+            "TVk=",
+            "RURVQ0FURUQ=",
+            "VkVSWQ=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBGT1VSLUxFVFRFUiAnODBTIEJBTkRT",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "VE9UT1JP",
+            "V0hBTU1Z",
+            "QVNJQUdP",
+            "REVWT1RF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1046,
       "printDate": "2026-04-22",
