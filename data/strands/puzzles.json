@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-23T07:14:07.873Z",
+  "lastUpdated": "2026-04-24T07:18:10.576Z",
   "puzzles": [
+    {
+      "id": 956,
+      "printDate": "2026-04-24",
+      "status": "published",
+      "clue": "Hullabaloo",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBFIFQgUyBHIEUgVCBMIE8gVSBE",
+      "spangram": "TEVUU0dFVExPVUQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QkVMTE9X",
+        "Q0FURVJXQVVM",
+        "Q0xBTU9S",
+        "SE9MTEVS",
+        "U0hPVVQ=",
+        "V0hPT1A="
+      ]
+    },
     {
       "id": 955,
       "printDate": "2026-04-23",
