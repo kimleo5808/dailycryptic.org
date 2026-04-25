@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-04-24T07:18:10.576Z",
+  "lastUpdated": "2026-04-25T06:51:50.258Z",
   "puzzles": [
+    {
+      "id": 957,
+      "printDate": "2026-04-25",
+      "status": "published",
+      "clue": "On the shopping block",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBUIE8gUiBFIEYgUiBPIE4gVA==",
+      "spangram": "U1RPUkVGUk9OVA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Q09OVkVOSUVOQ0U=",
+        "Q09STkVS",
+        "RElTQ09VTlQ=",
+        "R1JPQ0VSWQ==",
+        "TElRVU9S"
+      ]
+    },
     {
       "id": 956,
       "printDate": "2026-04-24",
