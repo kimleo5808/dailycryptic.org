@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-04-25T06:48:52.239Z",
+  "lastUpdated": "2026-04-26T07:08:57.531Z",
   "puzzles": [
+    {
+      "id": 1050,
+      "printDate": "2026-04-26",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U1RJUFVMQVRJT04=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Q0FUQ0g=",
+            "U1RSSU5HUw==",
+            "RklORSBQUklOVA==",
+            "Q0FWRUFU"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "Vk9DQUwgQ0hBUkFDVEVSSVNUSUNT",
+          "hint": "Think about well-known people or characters",
+          "words": [
+            "UElUQ0g=",
+            "UkVHSVNURVI=",
+            "VE9ORQ==",
+            "UkFOR0U="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "Q0hBUkFDVEVSUyBJTiAiRElDSyBBTkQgSkFORSI=",
+          "hint": "Think about well-known people or characters",
+          "words": [
+            "U1BPVA==",
+            "TU9USEVS",
+            "SkFORQ==",
+            "RElDSw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "VEhJTkdTIFdJVEggRkFDRVM=",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "Q0xJRkY=",
+            "QlVJTERJTkc=",
+            "Q0xPQ0s=",
+            "UE9MWUhFRFJPTg=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1049,
       "printDate": "2026-04-25",
