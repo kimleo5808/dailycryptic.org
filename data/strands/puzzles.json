@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-25T06:51:50.258Z",
+  "lastUpdated": "2026-04-26T07:10:22.628Z",
   "puzzles": [
+    {
+      "id": 958,
+      "printDate": "2026-04-26",
+      "status": "published",
+      "clue": "Get into it",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBPIEMgSyBIIE8gUiBOIFM=",
+      "spangram": "TE9DS0hPUk5T",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QVJHVUU=",
+        "QklDS0VS",
+        "RElGRkVS",
+        "UVVBUlJFTA==",
+        "U1FVQUJCTEU=",
+        "V1JBTkdMRQ=="
+      ]
+    },
     {
       "id": 957,
       "printDate": "2026-04-25",
