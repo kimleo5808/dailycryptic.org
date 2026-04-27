@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-25T06:49:54.811Z",
+  "lastUpdated": "2026-04-27T07:44:01.062Z",
   "puzzles": [
+    {
+      "id": 1773,
+      "printDate": "2026-04-27",
+      "status": "published",
+      "solution": "ZWVyaWU=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with E and has 4 vowels.",
+      "hint3": "E _ R _ E"
+    },
     {
       "id": 1771,
       "printDate": "2026-04-25",
