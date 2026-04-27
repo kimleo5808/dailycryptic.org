@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-04-26T07:10:22.628Z",
+  "lastUpdated": "2026-04-27T07:54:03.704Z",
   "puzzles": [
+    {
+      "id": 900,
+      "printDate": "2026-04-27",
+      "status": "published",
+      "clue": "The ayes have it!",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RSBZIEUgTyBQIEUgTiBFIFIgUw==",
+      "spangram": "RVlFT1BFTkVSUw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "SUNJQ0xF",
+        "SUNPTg==",
+        "SURPTElaRQ==",
+        "SU9UQQ==",
+        "SVJPTklD",
+        "SVNMQU5E",
+        "SVZPUlk="
+      ]
+    },
     {
       "id": 958,
       "printDate": "2026-04-26",
