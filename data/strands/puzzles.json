@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-27T07:54:03.704Z",
+  "lastUpdated": "2026-04-28T07:54:05.181Z",
   "puzzles": [
+    {
+      "id": 959,
+      "printDate": "2026-04-28",
+      "status": "published",
+      "clue": "Attention, attention!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBJIEsgRSBBIEggQSBXIEs=",
+      "spangram": "TElLRUFIQVdL",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkVIT0xE",
+        "RVlFQkFMTA==",
+        "TU9OSVRPUg==",
+        "T0JTRVJWRQ==",
+        "V0FUQ0g=",
+        "V0lUTkVTUw=="
+      ]
+    },
     {
       "id": 900,
       "printDate": "2026-04-27",
