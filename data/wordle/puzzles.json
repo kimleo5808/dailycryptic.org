@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-04-29T07:37:45.302Z",
+  "lastUpdated": "2026-04-30T07:41:04.485Z",
   "puzzles": [
+    {
+      "id": 1776,
+      "printDate": "2026-04-30",
+      "status": "published",
+      "solution": "Y3JvY2s=",
+      "hint1": "This word has a sharp ending sound.",
+      "hint2": "The word starts with C and has 1 vowel.",
+      "hint3": "C _ O _ K"
+    },
     {
       "id": 1775,
       "printDate": "2026-04-29",
