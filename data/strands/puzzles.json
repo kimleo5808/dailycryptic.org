@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-04-30T07:42:38.207Z",
+  "lastUpdated": "2026-05-01T07:42:13.018Z",
   "puzzles": [
+    {
+      "id": 962,
+      "printDate": "2026-05-01",
+      "status": "published",
+      "clue": "I ❤️ Hawaii",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QSBMIE8gSCBBIFMgUCBJIFIgSSBU",
+      "spangram": "QUxPSEFTUElSSVQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SFVMQQ==",
+        "TFVBVQ==",
+        "TUFDQURBTUlB",
+        "UElORUFQUExF",
+        "UE9LRQ==",
+        "VUtVTEVMRQ=="
+      ]
+    },
     {
       "id": 961,
       "printDate": "2026-04-30",
