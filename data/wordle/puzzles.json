@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-05-01T07:40:33.066Z",
+  "lastUpdated": "2026-05-02T07:11:18.618Z",
   "puzzles": [
+    {
+      "id": 1778,
+      "printDate": "2026-05-02",
+      "status": "published",
+      "solution": "YnJpbmc=",
+      "hint1": "This word ends with a nasal sound.",
+      "hint2": "The word starts with B and has 1 vowel.",
+      "hint3": "B _ I _ G"
+    },
     {
       "id": 1777,
       "printDate": "2026-05-01",
