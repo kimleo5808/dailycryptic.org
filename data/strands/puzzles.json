@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-05-01T07:42:13.018Z",
+  "lastUpdated": "2026-05-02T07:12:16.849Z",
   "puzzles": [
+    {
+      "id": 963,
+      "printDate": "2026-05-02",
+      "status": "published",
+      "clue": "All the right moves",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TCBJIE4gRSBEIEEgTiBDIEU=",
+      "spangram": "TElORURBTkNF",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "Q09BU1RFUg==",
+        "S0lDSw==",
+        "UE9OWQ==",
+        "U0FJTE9S",
+        "U0NVRkY=",
+        "U0hVRkZMRQ==",
+        "V0laQVJE"
+      ]
+    },
     {
       "id": 962,
       "printDate": "2026-05-01",
