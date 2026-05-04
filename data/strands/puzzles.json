@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-03T07:29:32.113Z",
+  "lastUpdated": "2026-05-04T08:06:01.490Z",
   "puzzles": [
+    {
+      "id": 965,
+      "printDate": "2026-05-04",
+      "status": "published",
+      "clue": "May the forest be with you",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBSIEEgTiBDIEggTyBVIFQ=",
+      "spangram": "QlJBTkNIT1VU",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QVNQRU4=",
+        "QklSQ0g=",
+        "Q0VEQVI=",
+        "Q1lQUkVTUw==",
+        "RE9HV09PRA==",
+        "RVVDQUxZUFRVUw=="
+      ]
+    },
     {
       "id": 964,
       "printDate": "2026-05-03",
