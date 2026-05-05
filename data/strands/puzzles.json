@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-05-04T08:06:01.490Z",
+  "lastUpdated": "2026-05-05T07:31:51.237Z",
   "puzzles": [
+    {
+      "id": 966,
+      "printDate": "2026-05-05",
+      "status": "published",
+      "clue": "Get up!",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RCBJIEcgSSBUIEEgTCBDIEwgTyBDIEs=",
+      "spangram": "RElHSVRBTENMT0NL",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QUxBUk0=",
+        "REFURQ==",
+        "RElTUExBWQ==",
+        "UkFESU8=",
+        "U05PT1pF",
+        "VElNRQ==",
+        "VFVORVI="
+      ]
+    },
     {
       "id": 965,
       "printDate": "2026-05-04",
