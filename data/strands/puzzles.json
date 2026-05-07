@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-06T07:55:28.221Z",
+  "lastUpdated": "2026-05-07T08:03:41.005Z",
   "puzzles": [
+    {
+      "id": 968,
+      "printDate": "2026-05-07",
+      "status": "published",
+      "clue": "Go right ahead",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RyBJIFYgRSBUIEggRSBOIE8gRA==",
+      "spangram": "R0lWRVRIRU5PRA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QUxMT1c=",
+        "QVBQUk9WRQ==",
+        "QkxFU1M=",
+        "TElDRU5TRQ==",
+        "UEVSTUlU",
+        "U0FOQ1RJT04="
+      ]
+    },
     {
       "id": 967,
       "printDate": "2026-05-06",
