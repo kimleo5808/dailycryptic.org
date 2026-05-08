@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-07T08:03:41.005Z",
+  "lastUpdated": "2026-05-08T07:06:54.795Z",
   "puzzles": [
+    {
+      "id": 969,
+      "printDate": "2026-05-08",
+      "status": "published",
+      "clue": "Garden variety",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UiBVIE4gTyBGIFQgSCBFIE0gSSBMIEw=",
+      "spangram": "UlVOT0ZUSEVNSUxM",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QkFTSUM=",
+        "Q09NTU9O",
+        "T1JESU5BUlk=",
+        "UEVERVNUUklBTg==",
+        "UFJPU0FJQw=="
+      ]
+    },
     {
       "id": 968,
       "printDate": "2026-05-07",
