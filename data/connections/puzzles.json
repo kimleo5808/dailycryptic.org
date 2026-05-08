@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-05-07T08:02:01.085Z",
+  "lastUpdated": "2026-05-08T07:02:17.961Z",
   "puzzles": [
+    {
+      "id": 1062,
+      "printDate": "2026-05-08",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q0FOT09ETElORw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RklSU1QgQkFTRQ==",
+            "TUFLSU5HIE9VVA==",
+            "VE9OU0lMIEhPQ0tFWQ==",
+            "TkVDS0lORw=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "RklWRS1TSURFRCBUSElOR1M=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U0NIT09MIENST1NTSU5HIFNJR04=",
+            "SE9NRSBQTEFURQ==",
+            "VEhFIFBFTlRBR09O",
+            "SkVBTlMgQkFDSyBQT0NLRVQ="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VU5FWFBFQ1RFRCBQTEFDRVMgVE8gQkUgIk9VVCBPRiI=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "TEVGVCBGSUVMRA==",
+            "Tk9XSEVSRQ==",
+            "VEhFIEJMVUU=",
+            "VEhJTiBBSVI="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIENBTkRZIEJSQU5EUyBNSU5VUyAiUyI=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "TUVNRU5UTw==",
+            "UElUQ0hFUidTIE1PVU5E",
+            "RklMTSBORVJE",
+            "QlVSR0VSIEtJTkcgV0hPUFBFUg=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1061,
       "printDate": "2026-05-07",
