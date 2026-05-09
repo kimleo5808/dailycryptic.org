@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-08T07:06:54.795Z",
+  "lastUpdated": "2026-05-09T07:24:56.780Z",
   "puzzles": [
+    {
+      "id": 970,
+      "printDate": "2026-05-09",
+      "status": "published",
+      "clue": "Garden varieties",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBQIFIgSSBOIEcgViBFIEcgRyBJIEU=",
+      "spangram": "U1BSSU5HVkVHR0lF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QVJUSUNIT0tF",
+        "QVNQQVJBR1VT",
+        "TEVUVFVDRQ==",
+        "T05JT04=",
+        "UkFESVNI"
+      ]
+    },
     {
       "id": 969,
       "printDate": "2026-05-08",
