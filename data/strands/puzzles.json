@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-09T07:24:56.780Z",
+  "lastUpdated": "2026-05-10T07:39:29.812Z",
   "puzzles": [
+    {
+      "id": 972,
+      "printDate": "2026-05-10",
+      "status": "published",
+      "clue": "We all saw it",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBMIEUgQSBSIEMgVSBU",
+      "spangram": "Q0xFQVJDVVQ=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkxBVEFOVA==",
+        "QlJBWkVO",
+        "RkxBR1JBTlQ=",
+        "R0xBUklORw==",
+        "T0JWSU9VUw==",
+        "T1ZFUlQ="
+      ]
+    },
     {
       "id": 970,
       "printDate": "2026-05-09",
