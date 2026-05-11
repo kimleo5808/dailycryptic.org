@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-10T07:39:29.812Z",
+  "lastUpdated": "2026-05-11T08:42:23.275Z",
   "puzzles": [
+    {
+      "id": 973,
+      "printDate": "2026-05-11",
+      "status": "published",
+      "clue": "A nice medley",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TyBEIEQgUyBBIE4gRCBFIE4gRCBT",
+      "spangram": "T0REU0FOREVORFM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SE9ER0VQT0RHRQ==",
+        "SlVNQkxF",
+        "TUlTSE1BU0g=",
+        "UkFHQkFH",
+        "VkFSSUVUWQ=="
+      ]
+    },
     {
       "id": 972,
       "printDate": "2026-05-10",
