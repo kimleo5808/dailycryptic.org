@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-11T08:42:23.275Z",
+  "lastUpdated": "2026-05-12T08:09:18.048Z",
   "puzzles": [
+    {
+      "id": 974,
+      "printDate": "2026-05-12",
+      "status": "published",
+      "clue": "Quite the pair",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBBIE4gQyBZIFAgQSBOIFQgUw==",
+      "spangram": "RkFOQ1lQQU5UUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "R0FVQ0hP",
+        "SEFSRU0=",
+        "UEFMQVpaTw==",
+        "U0FJTE9S",
+        "VE9SRUFET1I=",
+        "VFVYRURP"
+      ]
+    },
     {
       "id": 973,
       "printDate": "2026-05-11",
