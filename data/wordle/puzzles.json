@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-05-11T08:40:51.627Z",
+  "lastUpdated": "2026-05-13T08:14:43.533Z",
   "puzzles": [
+    {
+      "id": 1789,
+      "printDate": "2026-05-13",
+      "status": "published",
+      "solution": "ZG93ZHk=",
+      "hint1": "Think of something that starts with a sturdy sound.",
+      "hint2": "The word starts with D and has 1 vowel.",
+      "hint3": "D _ W _ Y"
+    },
     {
       "id": 1787,
       "printDate": "2026-05-11",
