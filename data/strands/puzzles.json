@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-13T08:16:02.412Z",
+  "lastUpdated": "2026-05-14T08:09:23.545Z",
   "puzzles": [
+    {
+      "id": 976,
+      "printDate": "2026-05-14",
+      "status": "published",
+      "clue": "Men in tights",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UiBPIEIgSSBOIEggTyBPIEQ=",
+      "spangram": "Uk9CSU5IT09E",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QVJDSEVSWQ==",
+        "RElTR1VJU0U=",
+        "Rk9SRVNU",
+        "RlJJQVI=",
+        "T1VUTEFX",
+        "U0hFUklGRg=="
+      ]
+    },
     {
       "id": 975,
       "printDate": "2026-05-13",
