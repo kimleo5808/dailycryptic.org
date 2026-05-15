@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-14T08:09:23.545Z",
+  "lastUpdated": "2026-05-15T08:22:13.567Z",
   "puzzles": [
+    {
+      "id": 978,
+      "printDate": "2026-05-15",
+      "status": "published",
+      "clue": "Weaselly wascals",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBVIFMgVCBFIEwgSSBEIFM=",
+      "spangram": "TVVTVEVMSURT",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkFER0VS",
+        "RkVSUkVU",
+        "TUFSVEVO",
+        "T1RURVI=",
+        "UE9MRUNBVA==",
+        "V09MVkVSSU5F"
+      ]
+    },
     {
       "id": 976,
       "printDate": "2026-05-14",
