@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-05-14T08:06:51.498Z",
+  "lastUpdated": "2026-05-15T08:20:43.948Z",
   "puzzles": [
+    {
+      "id": 1791,
+      "printDate": "2026-05-15",
+      "status": "published",
+      "solution": "Y3JlZWQ=",
+      "hint1": "This word is in the past tense.",
+      "hint2": "The word starts with C and has 2 vowels.",
+      "hint3": "C _ E _ D"
+    },
     {
       "id": 1790,
       "printDate": "2026-05-14",
