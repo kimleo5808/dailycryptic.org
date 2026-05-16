@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-05-15T08:20:43.948Z",
+  "lastUpdated": "2026-05-16T07:29:12.733Z",
   "puzzles": [
+    {
+      "id": 1792,
+      "printDate": "2026-05-16",
+      "status": "published",
+      "solution": "bW92ZXI=",
+      "hint1": "This word could compare things or describe a person.",
+      "hint2": "The word starts with M and has 2 vowels.",
+      "hint3": "M _ V _ R"
+    },
     {
       "id": 1791,
       "printDate": "2026-05-15",
