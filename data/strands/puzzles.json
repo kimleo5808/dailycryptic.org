@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-15T08:22:13.567Z",
+  "lastUpdated": "2026-05-16T07:30:51.987Z",
   "puzzles": [
+    {
+      "id": 979,
+      "printDate": "2026-05-16",
+      "status": "published",
+      "clue": "Bon appétit!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBSIEUgTiBDIEggQiBBIEsgRSBSIFk=",
+      "spangram": "RlJFTkNIQkFLRVJZ",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q1JPSVNTQU5U",
+        "RUNMQUlS",
+        "TUFDQVJPTg==",
+        "TUVSSU5HVUU=",
+        "TU9VU1NF"
+      ]
+    },
     {
       "id": 978,
       "printDate": "2026-05-15",
