@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-17T07:56:35.154Z",
+  "lastUpdated": "2026-05-18T08:56:52.702Z",
   "puzzles": [
+    {
+      "id": 981,
+      "printDate": "2026-05-18",
+      "status": "published",
+      "clue": "The daily rind",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBJIFQgUiBVIFM=",
+      "spangram": "Q0lUUlVT",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 6,
+      "themeWords": [
+        "Q0xFTUVOVElORQ==",
+        "S1VNUVVBVA==",
+        "TElNRQ==",
+        "T1JBTkdF",
+        "UE9NRUxP",
+        "VEFOR0VSSU5F"
+      ]
+    },
     {
       "id": 980,
       "printDate": "2026-05-17",
