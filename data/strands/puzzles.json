@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-19T08:43:36.250Z",
+  "lastUpdated": "2026-05-20T08:40:41.416Z",
   "puzzles": [
+    {
+      "id": 983,
+      "printDate": "2026-05-20",
+      "status": "published",
+      "clue": "No rush",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBBIEsgRSBZIE8gVSBSIFQgSSBNIEU=",
+      "spangram": "VEFLRVlPVVJUSU1F",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q0FMTQ==",
+        "R0VOVExF",
+        "TEVJU1VSRUxZ",
+        "UExBQ0lE",
+        "UkVMQVhFRA==",
+        "U0xPVw=="
+      ]
+    },
     {
       "id": 982,
       "printDate": "2026-05-19",
