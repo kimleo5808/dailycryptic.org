@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-05-20T08:38:43.092Z",
+  "lastUpdated": "2026-05-21T08:44:53.099Z",
   "puzzles": [
+    {
+      "id": 1075,
+      "printDate": "2026-05-21",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgUElFUw==",
+          "hint": "Think about different pies",
+          "words": [
+            "Q0hFU1M=",
+            "UFVNUEtJTg==",
+            "UEVDQU4=",
+            "U0hPT0ZMWQ=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIEFTU09DSUFURUQgV0lUSCBCVVRUUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TU9PTg==",
+            "UEVBQ0g=",
+            "Q0FO",
+            "Q0FCT09TRQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEVOTklTIFNDT1JJTkcgVEVSTVM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TE9WRQ==",
+            "QURWQU5UQUdF",
+            "REVVQ0U=",
+            "Rk9SVFk="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "X19fIE1VU1RBUkQ=",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "SE9ORVk=",
+            "SE9U",
+            "WUVMTE9X",
+            "Q09MT05FTA=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1074,
       "printDate": "2026-05-20",
