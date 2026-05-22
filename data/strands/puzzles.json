@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-21T08:45:52.645Z",
+  "lastUpdated": "2026-05-22T08:36:53.240Z",
   "puzzles": [
+    {
+      "id": 985,
+      "printDate": "2026-05-22",
+      "status": "published",
+      "clue": "Put down your ruler",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBUIFMgQiBJIEc=",
+      "spangram": "SVRTQklH",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 6,
+      "themeWords": [
+        "QVNUUk9OT01JQw==",
+        "Qk9VTkRMRVNT",
+        "RVBJQw==",
+        "SU1NRU5TRQ==",
+        "VkFTVA==",
+        "V0hPUFBJTkc="
+      ]
+    },
     {
       "id": 984,
       "printDate": "2026-05-21",
