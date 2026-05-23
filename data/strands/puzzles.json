@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-22T08:36:53.240Z",
+  "lastUpdated": "2026-05-23T07:55:27.892Z",
   "puzzles": [
+    {
+      "id": 986,
+      "printDate": "2026-05-23",
+      "status": "published",
+      "clue": "Staying alive",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBVIFIgViBJIFYgQSBMIEkgUyBU",
+      "spangram": "U1VSVklWQUxJU1Q=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "RkxJTlQ=",
+        "SEFUQ0hFVA==",
+        "TUFDSEVURQ==",
+        "UEFSQUNPUkQ=",
+        "U0hPVkVM",
+        "VEFSUA=="
+      ]
+    },
     {
       "id": 985,
       "printDate": "2026-05-22",
