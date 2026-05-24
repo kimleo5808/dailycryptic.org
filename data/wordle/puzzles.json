@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-05-22T08:35:34.301Z",
+  "lastUpdated": "2026-05-24T08:02:34.814Z",
   "puzzles": [
+    {
+      "id": 1800,
+      "printDate": "2026-05-24",
+      "status": "published",
+      "solution": "bmllY2U=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with N and has 3 vowels.",
+      "hint3": "N _ E _ E"
+    },
     {
       "id": 1798,
       "printDate": "2026-05-22",
