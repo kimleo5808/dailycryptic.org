@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-05-23T07:55:27.892Z",
+  "lastUpdated": "2026-05-24T08:03:45.057Z",
   "puzzles": [
+    {
+      "id": 987,
+      "printDate": "2026-05-24",
+      "status": "published",
+      "clue": "Turn, turn, turn",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VCBSIFkgVCBPIFUgTiBXIEkgTiBE",
+      "spangram": "VFJZVE9VTldJTkQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Qk9CQklO",
+        "Q09JTA==",
+        "UkVFTA==",
+        "U0NST0xM",
+        "U1BJTkRMRQ==",
+        "U1BPT0w=",
+        "V0lOQ0g="
+      ]
+    },
     {
       "id": 986,
       "printDate": "2026-05-23",
