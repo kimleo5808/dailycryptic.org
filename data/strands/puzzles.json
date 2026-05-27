@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-26T08:49:49.811Z",
+  "lastUpdated": "2026-05-27T08:52:35.962Z",
   "puzzles": [
+    {
+      "id": 991,
+      "printDate": "2026-05-27",
+      "status": "published",
+      "clue": "Ketchup or mustard?",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBPIFQgRCBJIEcgRyBJIFQgWSBEIE8gRw==",
+      "spangram": "SE9URElHR0lUWURPRw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QkFOR0VS",
+        "QlJBVA==",
+        "Rk9PVExPTkc=",
+        "RlJBTktGVVJURVI=",
+        "V0VFTklF"
+      ]
+    },
     {
       "id": 988,
       "printDate": "2026-05-26",
