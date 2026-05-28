@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-27T08:52:35.962Z",
+  "lastUpdated": "2026-05-28T08:59:37.553Z",
   "puzzles": [
+    {
+      "id": 992,
+      "printDate": "2026-05-28",
+      "status": "published",
+      "clue": "Talking scents",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBSIEEgRyBSIEEgTiBDIEU=",
+      "spangram": "RlJBR1JBTkNF",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkVSR0FNT1Q=",
+        "SkFTTUlORQ==",
+        "TVVTSw==",
+        "TkVST0xJ",
+        "UEVBUg==",
+        "U0FOREFMV09PRA=="
+      ]
+    },
     {
       "id": 991,
       "printDate": "2026-05-27",
