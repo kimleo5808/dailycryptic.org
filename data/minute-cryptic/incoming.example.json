@@ -1,0 +1,15 @@
+[
+  {
+    "clue": "Warning from LATER oddly mixed (5)",
+    "answer": "ALERT",
+    "clueType": "anagram",
+    "difficulty": "easy",
+    "hintLevels": [
+      "Think of a common warning word.",
+      "This clue uses an anagram.",
+      "Rearrange the letters in LATER.",
+      "Starts with A."
+    ],
+    "explanation": "LATER mixed gives ALERT."
+  }
+]

@@ -29,6 +29,8 @@ function sortAscByDate(a: MinuteCrypticPuzzle, b: MinuteCrypticPuzzle) {
 let _allDesc: MinuteCrypticPuzzle[] | null = null;
 let _publicSource: MinuteCrypticPuzzle[] | null = null;
 let _archiveDesc: MinuteCrypticPuzzle[] | null = null;
+/* Unlimited practice library: all non-draft puzzles, not gated by date. */
+let _unlimitedDesc: MinuteCrypticPuzzle[] | null = null;
 
 function init() {
   if (_allDesc) return;
@@ -58,6 +60,7 @@ function init() {
   _publicSource =
     publishedPuzzles.length > 0 ? publishedPuzzles : sortedPuzzles;
   _allDesc = [..._publicSource].reverse();
+  _unlimitedDesc = [...sortedPuzzles.filter((p) => p.status !== "draft")].reverse();
   _archiveDesc =
     ARCHIVE_VISIBLE_COUNT && ARCHIVE_VISIBLE_COUNT > 0
       ? _allDesc.slice(0, ARCHIVE_VISIBLE_COUNT)
@@ -75,6 +78,10 @@ function getPublicSource(): MinuteCrypticPuzzle[] {
 function getArchiveDesc(): MinuteCrypticPuzzle[] {
   init();
   return _archiveDesc!;
+}
+function getUnlimitedSource(): MinuteCrypticPuzzle[] {
+  init();
+  return _unlimitedDesc!;
 }
 
 export const getMinuteCrypticByDate = cache(
@@ -160,7 +167,7 @@ export type UnlimitedPuzzle = Pick<
 
 export const getAllPuzzlesForUnlimited = cache(
   async (): Promise<UnlimitedPuzzle[]> =>
-    getAllDesc().map((p) => ({
+    getUnlimitedSource().map((p) => ({
       id: p.id,
       clue: p.clue,
       answer: p.answer,

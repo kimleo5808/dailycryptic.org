@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "validate:minute-cryptic": "node scripts/validate-minute-cryptic.mjs",
+    "add:minute-cryptic": "node scripts/add-minute-cryptic-puzzles.mjs",
     "fix": "pnpm i fix-react2shell-next@latest && npx fix-react2shell-next",
     "update:next": "pnpm i next@latest react@latest react-dom@latest @next/env@latest @next/bundle-analyzer@latest @types/react@latest @types/react-dom@latest",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
