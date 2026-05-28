@@ -7,9 +7,7 @@ initOpenNextCloudflareForDev();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized:
-      process.env.NEXT_PUBLIC_OPTIMIZED_IMAGES &&
-      process.env.NEXT_PUBLIC_OPTIMIZED_IMAGES === "false",
+    unoptimized: process.env.NEXT_PUBLIC_OPTIMIZED_IMAGES !== "true",
     remotePatterns: [
       ...(process.env.R2_PUBLIC_URL
         ? [
