@@ -92,7 +92,7 @@ export default async function MinuteCrypticUnlimitedPage() {
       <JsonLd data={faqPageSchema(UNLIMITED_FAQ_ITEMS)} />
 
       {/* Hero game section */}
-      <section className="w-full bg-[#b8d8fa] py-6 sm:py-8 lg:min-h-[calc(100svh-64px)] lg:py-4">
+      <section className="w-full bg-[#b8d8fa] pt-10 pb-6 sm:pt-12 sm:pb-8 lg:min-h-[calc(100svh-64px)] lg:pt-16 lg:pb-4">
         <div className="mx-auto flex h-full w-full max-w-5xl flex-col px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-heading text-4xl font-bold text-slate-900 sm:text-5xl">

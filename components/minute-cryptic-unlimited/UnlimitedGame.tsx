@@ -259,7 +259,7 @@ export default function UnlimitedGame({
     <section className="flex flex-col items-center">
       {/* Stats bar */}
       <div className="mb-4 flex items-center gap-6 text-sm font-medium text-slate-700">
-        <span>Solved: {stats.totalSolved} / {puzzles.length}</span>
+        <span>Solved: {stats.totalSolved}</span>
         <span>Streak: {stats.currentStreak}</span>
         <span>Best: {stats.bestStreak}</span>
       </div>
