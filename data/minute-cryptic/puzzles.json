@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T09:19:36.138Z",
+  "lastUpdated": "2026-05-28T09:28:04.943Z",
   "puzzles": [
     {
       "id": 1,
@@ -3808,6 +3808,516 @@
         "U3RhcnRzIHdpdGggRS4="
       ],
       "explanation": "QkVBQ0ggd2l0aG91dCBpdHMgaGVhZCBCIGdpdmVzIEVBQ0guIERlZmluaXRpb246IGFwaWVjZS4="
+    },
+    {
+      "id": 225,
+      "printDate": "2026-09-27",
+      "publishDate": "2026-09-27",
+      "status": "scheduled",
+      "clue": "Carer from RUNES jumbled (5)",
+      "answer": "TlVSU0U=",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc29tZW9uZSB3aG8gY2FyZXMgZm9yIHBhdGllbnRzLg==",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIGluIFJVTkVTLg==",
+        "U3RhcnRzIHdpdGggTi4="
+      ],
+      "explanation": "UlVORVMganVtYmxlZCAoYW5hZ3JhbSkgZ2l2ZXMgTlVSU0UuIERlZmluaXRpb246IGEgY2FyZXIu"
+    },
+    {
+      "id": 226,
+      "printDate": "2026-09-28",
+      "publishDate": "2026-09-28",
+      "status": "scheduled",
+      "clue": "Basic food when petals scatter (6)",
+      "answer": "U1RBUExF",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBiYXNpYywgZXZlcnlkYXkgZm9vZHN0dWZmLg==",
+        "QW5hZ3JhbSDigJQgJ3NjYXR0ZXInIGlzIHRoZSBpbmRpY2F0b3Iu",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFBFVEFMUy4=",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "UEVUQUxTIHNjYXR0ZXIgKGFuYWdyYW0pIGdpdmVzIFNUQVBMRS4gRGVmaW5pdGlvbjogYSBiYXNpYyBmb29kLg=="
+    },
+    {
+      "id": 227,
+      "printDate": "2026-09-29",
+      "publishDate": "2026-09-29",
+      "status": "scheduled",
+      "clue": "Sportspeople when parsley is tossed (7)",
+      "answer": "UExBWUVSUw==",
+      "clueType": "anagram",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgcGVvcGxlIHRha2luZyBwYXJ0IGluIGEgc3BvcnQgb3IgZ2FtZS4=",
+        "QW5hZ3JhbSDigJQgJ3Rvc3NlZCcgc2lnbmFscyBpdC4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFBBUlNMRVku",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "UEFSU0xFWSB0b3NzZWQgKGFuYWdyYW0pIGdpdmVzIFBMQVlFUlMuIERlZmluaXRpb246IHNwb3J0c3Blb3BsZS4="
+    },
+    {
+      "id": 228,
+      "printDate": "2026-09-30",
+      "publishDate": "2026-09-30",
+      "status": "scheduled",
+      "clue": "Instructor from cheater reformed (7)",
+      "answer": "VEVBQ0hFUg==",
+      "clueType": "anagram",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc29tZW9uZSB3aG8gaW5zdHJ1Y3RzIGEgY2xhc3Mu",
+        "QW5hZ3JhbSDigJQgJ3JlZm9ybWVkJyBpcyB0aGUgaW5kaWNhdG9yLg==",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIENIRUFURVIu",
+        "U3RhcnRzIHdpdGggVC4="
+      ],
+      "explanation": "Q0hFQVRFUiByZWZvcm1lZCAoYW5hZ3JhbSkgZ2l2ZXMgVEVBQ0hFUi4gRGVmaW5pdGlvbjogYW4gaW5zdHJ1Y3Rvci4="
+    },
+    {
+      "id": 229,
+      "printDate": "2026-10-01",
+      "publishDate": "2026-10-01",
+      "status": "scheduled",
+      "clue": "Brewing vessel: tea then pot (6)",
+      "answer": "VEVBUE9U",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2Ygd2hhdCB5b3UgYnJldyBhbmQgcG91ciB0ZWEgZnJvbS4=",
+        "QnVpbGQgaXQgZnJvbSB0d28gcGFydHMgcmVhZCBpbiBvcmRlci4=",
+        "VEVBIGZvbGxvd2VkIGJ5IFBPVC4=",
+        "U3RhcnRzIHdpdGggVC4="
+      ],
+      "explanation": "VEVBICsgUE9UIGdpdmVzIFRFQVBPVC4gRGVmaW5pdGlvbjogYSBicmV3aW5nIHZlc3NlbC4="
+    },
+    {
+      "id": 230,
+      "printDate": "2026-10-02",
+      "publishDate": "2026-10-02",
+      "status": "scheduled",
+      "clue": "Bandit: not in, plus the rule (6)",
+      "answer": "T1VUTEFX",
+      "clueType": "charade",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBiYW5kaXQgYmV5b25kIHRoZSByZWFjaCBvZiB0aGUgbGF3Lg==",
+        "Sm9pbiB0d28gcGFydHMgdG9nZXRoZXIu",
+        "QSB3b3JkIGZvciAnbm90IGluJyAoT1VUKSB0aGVuIGEgd29yZCBmb3IgYSBydWxlIChMQVcpLg==",
+        "U3RhcnRzIHdpdGggTy4="
+      ],
+      "explanation": "T1VUICsgTEFXIGdpdmVzIE9VVExBVy4gRGVmaW5pdGlvbjogYSBiYW5kaXQu"
+    },
+    {
+      "id": 231,
+      "printDate": "2026-10-03",
+      "publishDate": "2026-10-03",
+      "status": "scheduled",
+      "clue": "Meeting leader: seat then chap (8)",
+      "answer": "Q0hBSVJNQU4=",
+      "clueType": "charade",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIHBlcnNvbiB3aG8gbGVhZHMgYSBtZWV0aW5nLg==",
+        "Sm9pbiB0d28gcGFydHMgaW4gb3JkZXIu",
+        "QSB3b3JkIGZvciBhIHNlYXQgKENIQUlSKSB0aGVuIGEgd29yZCBmb3IgYSBjaGFwIChNQU4pLg==",
+        "U3RhcnRzIHdpdGggQy4="
+      ],
+      "explanation": "Q0hBSVIgKyBNQU4gZ2l2ZXMgQ0hBSVJNQU4uIERlZmluaXRpb246IGEgbWVldGluZyBsZWFkZXIu"
+    },
+    {
+      "id": 232,
+      "printDate": "2026-10-04",
+      "publishDate": "2026-10-04",
+      "status": "scheduled",
+      "clue": "Hunting weapon: SPAR around energy (5)",
+      "answer": "U1BFQVI=",
+      "clueType": "container",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBwb2ludGVkIHRocm93aW5nIHdlYXBvbi4=",
+        "Q29udGFpbmVyIGNsdWUg4oCUIGEgbGV0dGVyIGdvZXMgaW5zaWRlIGEgd29yZC4=",
+        "UHV0IEUgKGVuZXJneSkgaW5zaWRlIFNQQVIu",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "U1BBUiBhcm91bmQgRSBnaXZlcyBTUEVBUi4gRGVmaW5pdGlvbjogYSBodW50aW5nIHdlYXBvbi4="
+    },
+    {
+      "id": 233,
+      "printDate": "2026-10-05",
+      "publishDate": "2026-10-05",
+      "status": "scheduled",
+      "clue": "Moan: gran holding nothing (5)",
+      "answer": "R1JPQU4=",
+      "clueType": "container",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBsb3cgbW9hbiBvZiBjb21wbGFpbnQu",
+        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBzaXRzIGluc2lkZSBhIHdvcmQu",
+        "UHV0IE8gKG5vdGhpbmcpIGluc2lkZSBHUkFOLg==",
+        "U3RhcnRzIHdpdGggRy4="
+      ],
+      "explanation": "R1JBTiBob2xkaW5nIE8gKG5vdGhpbmcpIGdpdmVzIEdST0FOLiBEZWZpbml0aW9uOiBhIG1vYW4u"
+    },
+    {
+      "id": 234,
+      "printDate": "2026-10-06",
+      "publishDate": "2026-10-06",
+      "status": "scheduled",
+      "clue": "Bone support: split taking in new (6)",
+      "answer": "U1BMSU5U",
+      "clueType": "container",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSByaWdpZCBzdXBwb3J0IGZvciBhIGJyb2tlbiBib25lLg==",
+        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBpcyB0YWtlbiBpbnNpZGUgYSB3b3JkLg==",
+        "UHV0IE4gKG5ldykgaW5zaWRlIFNQTElULg==",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "U1BMSVQgdGFraW5nIGluIE4gZ2l2ZXMgU1BMSU5ULiBEZWZpbml0aW9uOiBhIGJvbmUgc3VwcG9ydC4="
+    },
+    {
+      "id": 235,
+      "printDate": "2026-10-07",
+      "publishDate": "2026-10-07",
+      "status": "scheduled",
+      "clue": "Sea motion and a hand greeting (4)",
+      "answer": "V0FWRQ==",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIHRoZSByaXNlIGFuZCByb2xsIG9mIHRoZSBzZWEu",
+        "VGhlIG90aGVyIGlzIGEgZ3JlZXRpbmcgbWFkZSB3aXRoIHRoZSBoYW5kLg==",
+        "U3RhcnRzIHdpdGggVy4="
+      ],
+      "explanation": "V0FWRSBtZWFucyBib3RoIGEgc2VhIG1vdGlvbiBhbmQgYSBoYW5kIGdyZWV0aW5nLg=="
+    },
+    {
+      "id": 236,
+      "printDate": "2026-10-08",
+      "publishDate": "2026-10-08",
+      "status": "scheduled",
+      "clue": "Elephant's nose and a large case (5)",
+      "answer": "VFJVTks=",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VHdvIGRlZmluaXRpb25zIHBvaW50IHRvIG9uZSB3b3JkLg==",
+        "T25lIGlzIGFuIGVsZXBoYW50J3MgbG9uZyBub3NlLg==",
+        "VGhlIG90aGVyIGlzIGEgbGFyZ2UgdHJhdmVsbGluZyBjYXNlLg==",
+        "U3RhcnRzIHdpdGggVC4="
+      ],
+      "explanation": "VFJVTksgbWVhbnMgYm90aCBhbiBlbGVwaGFudCdzIG5vc2UgYW5kIGEgbGFyZ2UgY2FzZS4="
+    },
+    {
+      "id": 237,
+      "printDate": "2026-10-09",
+      "publishDate": "2026-10-09",
+      "status": "scheduled",
+      "clue": "Period of time, or to write out letters (5)",
+      "answer": "U1BFTEw=",
+      "clueType": "double-definition",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VHdvIG1lYW5pbmdzIGZvciBvbmUgd29yZC4=",
+        "T25lIG1lYW5zIGEgc3RyZXRjaCBvciBwZXJpb2Qgb2YgdGltZS4=",
+        "VGhlIG90aGVyIG1lYW5zIHRvIHdyaXRlIGEgd29yZCBsZXR0ZXIgYnkgbGV0dGVyLg==",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "U1BFTEwgbWVhbnMgYm90aCBhIHBlcmlvZCBvZiB0aW1lIGFuZCB0byB3cml0ZSBvdXQgbGV0dGVycy4="
+    },
+    {
+      "id": 238,
+      "printDate": "2026-10-10",
+      "publishDate": "2026-10-10",
+      "status": "scheduled",
+      "clue": "Waterway hidden in African Alps (5)",
+      "answer": "Q0FOQUw=",
+      "clueType": "hidden-word",
+      "difficulty": "easy",
+      "hintLevels": [
+        "QSBtYW4tbWFkZSB3YXRlcndheSBpcyBjb25jZWFsZWQu",
+        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSBnYXAgYmV0d2VlbiB3b3Jkcy4=",
+        "Rm91bmQgaW4gJ0FmcmlDQU4gQUxwcycu",
+        "U3RhcnRzIHdpdGggQy4="
+      ],
+      "explanation": "SGlkZGVuIGluICdBZnJpQ0FOIEFMcHMnIGlzIENBTkFMLiBEZWZpbml0aW9uOiBhIHdhdGVyd2F5Lg=="
+    },
+    {
+      "id": 239,
+      "printDate": "2026-10-11",
+      "publishDate": "2026-10-11",
+      "status": "scheduled",
+      "clue": "Harm hidden in Adam aged badly (6)",
+      "answer": "REFNQUdF",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "QSB3b3JkIGZvciBoYXJtIGlzIGNvbmNlYWxlZC4=",
+        "SGlkZGVuIHdvcmQg4oCUIHNjYW4gYWNyb3NzIHRoZSBib3VuZGFyeS4=",
+        "Rm91bmQgaW4gJ2FEQU0gQUdFZCcu",
+        "U3RhcnRzIHdpdGggRC4="
+      ],
+      "explanation": "SGlkZGVuIGluICdhREFNIEFHRWQnIGlzIERBTUFHRS4gRGVmaW5pdGlvbjogaGFybS4="
+    },
+    {
+      "id": 240,
+      "printDate": "2026-10-12",
+      "publishDate": "2026-10-12",
+      "status": "scheduled",
+      "clue": "Cowardly, hidden in micra vents (6)",
+      "answer": "Q1JBVkVO",
+      "clueType": "hidden-word",
+      "difficulty": "hard",
+      "hintLevels": [
+        "QSB3b3JkIG1lYW5pbmcgY293YXJkbHkgaXMgY29uY2VhbGVkLg==",
+        "SGlkZGVuIHdvcmQgc3Bhbm5pbmcgdGhlIHBocmFzZS4=",
+        "Rm91bmQgaW4gJ21pQ1JBIFZFTnRzJy4=",
+        "U3RhcnRzIHdpdGggQy4="
+      ],
+      "explanation": "SGlkZGVuIGluICdtaUNSQSBWRU50cycgaXMgQ1JBVkVOLiBEZWZpbml0aW9uOiBjb3dhcmRseS4="
+    },
+    {
+      "id": 241,
+      "printDate": "2026-10-13",
+      "publishDate": "2026-10-13",
+      "status": "scheduled",
+      "clue": "Wading bird hidden in the Ronaldo poster (5)",
+      "answer": "SEVST04=",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "QSBsb25nLWxlZ2dlZCB3YWRpbmcgYmlyZCBpcyBjb25jZWFsZWQu",
+        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSB3b3Jkcy4=",
+        "Rm91bmQgaW4gJ3RIRSBST05hbGRvJy4=",
+        "U3RhcnRzIHdpdGggSC4="
+      ],
+      "explanation": "SGlkZGVuIGluICd0SEUgUk9OYWxkbycgaXMgSEVST04uIERlZmluaXRpb246IGEgd2FkaW5nIGJpcmQu"
+    },
+    {
+      "id": 242,
+      "printDate": "2026-10-14",
+      "publishDate": "2026-10-14",
+      "status": "scheduled",
+      "clue": "Friends from SLAP turned round (4)",
+      "answer": "UEFMUw==",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBjbG9zZSBmcmllbmRzLg==",
+        "J1R1cm5lZCByb3VuZCcgc2lnbmFscyBhIHJldmVyc2FsLg==",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBpbiBTTEFQLg==",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "U0xBUCB0dXJuZWQgcm91bmQgKHJldmVyc2VkKSBnaXZlcyBQQUxTLiBEZWZpbml0aW9uOiBmcmllbmRzLg=="
+    },
+    {
+      "id": 243,
+      "printDate": "2026-10-15",
+      "publishDate": "2026-10-15",
+      "status": "scheduled",
+      "clue": "Sliding storage when reward is sent back (6)",
+      "answer": "RFJBV0VS",
+      "clueType": "reversal",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBzbGlkaW5nIGNvbXBhcnRtZW50IGluIGEgZGVzay4=",
+        "UmV2ZXJzYWwg4oCUICdzZW50IGJhY2snIGlzIHRoZSBpbmRpY2F0b3Iu",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBSRVdBUkQu",
+        "U3RhcnRzIHdpdGggRC4="
+      ],
+      "explanation": "UkVXQVJEIHNlbnQgYmFjayAocmV2ZXJzZWQpIGdpdmVzIERSQVdFUi4gRGVmaW5pdGlvbjogc2xpZGluZyBzdG9yYWdlLg=="
+    },
+    {
+      "id": 244,
+      "printDate": "2026-10-16",
+      "publishDate": "2026-10-16",
+      "status": "scheduled",
+      "clue": "Jeans fabric when mined is turned back (5)",
+      "answer": "REVOSU0=",
+      "clueType": "reversal",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIGZhYnJpYyBqZWFucyBhcmUgbWFkZSBmcm9tLg==",
+        "UmV2ZXJzYWwg4oCUICd0dXJuZWQgYmFjaycgc2lnbmFscyBpdC4=",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBpbiBNSU5FRC4=",
+        "U3RhcnRzIHdpdGggRC4="
+      ],
+      "explanation": "TUlORUQgdHVybmVkIGJhY2sgKHJldmVyc2VkKSBnaXZlcyBERU5JTS4gRGVmaW5pdGlvbjogamVhbnMgZmFicmljLg=="
+    },
+    {
+      "id": 245,
+      "printDate": "2026-10-17",
+      "publishDate": "2026-10-17",
+      "status": "scheduled",
+      "clue": "Fiend when lived is reversed (5)",
+      "answer": "REVWSUw=",
+      "clueType": "reversal",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBhIGZpZW5kIG9yIGRlbW9uLg==",
+        "UmV2ZXJzYWwg4oCUICdyZXZlcnNlZCcgaXMgdGhlIGluZGljYXRvci4=",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBMSVZFRC4=",
+        "U3RhcnRzIHdpdGggRC4="
+      ],
+      "explanation": "TElWRUQgcmV2ZXJzZWQgZ2l2ZXMgREVWSUwuIERlZmluaXRpb246IGEgZmllbmQu"
+    },
+    {
+      "id": 246,
+      "printDate": "2026-10-18",
+      "publishDate": "2026-10-18",
+      "status": "scheduled",
+      "clue": "Buzzing insect we hear is 'to exist' (3)",
+      "answer": "QkVF",
+      "clueType": "homophone",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgYW4gaW5zZWN0IHRoYXQgbWFrZXMgaG9uZXku",
+        "J1dlIGhlYXInIHNpZ25hbHMgYSBob21vcGhvbmUu",
+        "U291bmRzIGxpa2UgQkUgKHRvIGV4aXN0KS4=",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "QkVFIHNvdW5kcyBsaWtlIEJFLiBEZWZpbml0aW9uOiBhIGJ1enppbmcgaW5zZWN0Lg=="
+    },
+    {
+      "id": 247,
+      "printDate": "2026-10-19",
+      "publishDate": "2026-10-19",
+      "status": "scheduled",
+      "clue": "Flatfish we hear is a location (6)",
+      "answer": "UExBSUNF",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBmbGF0IHNlYSBmaXNoLg==",
+        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicgc2lnbmFscyBpdC4=",
+        "U291bmRzIGxpa2UgUExBQ0UgKGEgbG9jYXRpb24pLg==",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "UExBSUNFIHNvdW5kcyBsaWtlIFBMQUNFLiBEZWZpbml0aW9uOiBhIGZsYXRmaXNoLg=="
+    },
+    {
+      "id": 248,
+      "printDate": "2026-10-20",
+      "publishDate": "2026-10-20",
+      "status": "scheduled",
+      "clue": "Estimated, sounding like a visitor (7)",
+      "answer": "R1VFU1NFRA==",
+      "clueType": "homophone",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgZXN0aW1hdGVkIG9yIHN1cHBvc2VkLg==",
+        "SG9tb3Bob25lIOKAlCAnc291bmRpbmcgbGlrZScu",
+        "U291bmRzIGxpa2UgR1VFU1QgKGEgdmlzaXRvciku",
+        "U3RhcnRzIHdpdGggRy4="
+      ],
+      "explanation": "R1VFU1NFRCBzb3VuZHMgbGlrZSBHVUVTVC4gRGVmaW5pdGlvbjogZXN0aW1hdGVkLg=="
+    },
+    {
+      "id": 249,
+      "printDate": "2026-10-21",
+      "publishDate": "2026-10-21",
+      "status": "scheduled",
+      "clue": "Tree branch that sounds like a forward bend (5)",
+      "answer": "Qk9VR0g=",
+      "clueType": "homophone",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBtYWluIGJyYW5jaCBvZiBhIHRyZWUu",
+        "SG9tb3Bob25lIOKAlCAnc291bmRzIGxpa2UnLg==",
+        "U291bmRzIGxpa2UgQk9XIChhIGZvcndhcmQgYmVuZCku",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "Qk9VR0ggc291bmRzIGxpa2UgQk9XLiBEZWZpbml0aW9uOiBhIHRyZWUgYnJhbmNoLg=="
+    },
+    {
+      "id": 250,
+      "printDate": "2026-10-22",
+      "publishDate": "2026-10-22",
+      "status": "scheduled",
+      "clue": "Grain when price loses its head (4)",
+      "answer": "UklDRQ==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBzdGFwbGUgZ3JhaW4gc2VydmVkIHdpdGggY3Vycnku",
+        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
+        "VGFrZSBQIG9mZiBQUklDRS4=",
+        "U3RhcnRzIHdpdGggUi4="
+      ],
+      "explanation": "UFJJQ0Ugd2l0aG91dCBpdHMgaGVhZCBQIGdpdmVzIFJJQ0UuIERlZmluaXRpb246IGEgZ3JhaW4u"
+    },
+    {
+      "id": 251,
+      "printDate": "2026-10-23",
+      "publishDate": "2026-10-23",
+      "status": "scheduled",
+      "clue": "Sweetheart when clover loses its head (5)",
+      "answer": "TE9WRVI=",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBhIHN3ZWV0aGVhcnQu",
+        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "UmVtb3ZlIEMgZnJvbSBDTE9WRVIu",
+        "U3RhcnRzIHdpdGggTC4="
+      ],
+      "explanation": "Q0xPVkVSIHdpdGhvdXQgaXRzIGhlYWQgQyBnaXZlcyBMT1ZFUi4gRGVmaW5pdGlvbjogYSBzd2VldGhlYXJ0Lg=="
+    },
+    {
+      "id": 252,
+      "printDate": "2026-10-24",
+      "publishDate": "2026-10-24",
+      "status": "scheduled",
+      "clue": "Corrosion when trust loses its head (4)",
+      "answer": "UlVTVA==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIHJlZGRpc2ggY29ycm9zaW9uIG9uIG9sZCBpcm9uLg==",
+        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
+        "VGFrZSBUIG9mZiBUUlVTVC4=",
+        "U3RhcnRzIHdpdGggUi4="
+      ],
+      "explanation": "VFJVU1Qgd2l0aG91dCBpdHMgaGVhZCBUIGdpdmVzIFJVU1QuIERlZmluaXRpb246IGNvcnJvc2lvbi4="
+    },
+    {
+      "id": 253,
+      "printDate": "2026-10-25",
+      "publishDate": "2026-10-25",
+      "status": "scheduled",
+      "clue": "Fury when ranger loses its head (5)",
+      "answer": "QU5HRVI=",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBmdXJ5IG9yIHJhZ2Uu",
+        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "UmVtb3ZlIFIgZnJvbSBSQU5HRVIu",
+        "U3RhcnRzIHdpdGggQS4="
+      ],
+      "explanation": "UkFOR0VSIHdpdGhvdXQgaXRzIGhlYWQgUiBnaXZlcyBBTkdFUi4gRGVmaW5pdGlvbjogZnVyeS4="
+    },
+    {
+      "id": 254,
+      "printDate": "2026-10-26",
+      "publishDate": "2026-10-26",
+      "status": "scheduled",
+      "clue": "Stroll when ramble loses its head (5)",
+      "answer": "QU1CTEU=",
+      "clueType": "deletion",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdG8gc3Ryb2xsIHNsb3dseS4=",
+        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
+        "VGFrZSBSIG9mZiBSQU1CTEUu",
+        "U3RhcnRzIHdpdGggQS4="
+      ],
+      "explanation": "UkFNQkxFIHdpdGhvdXQgaXRzIGhlYWQgUiBnaXZlcyBBTUJMRS4gRGVmaW5pdGlvbjogdG8gc3Ryb2xsLg=="
     }
   ]
 }
