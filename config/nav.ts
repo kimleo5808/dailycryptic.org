@@ -72,6 +72,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             description: "Signal words for each clue type",
           },
           {
+            name: "Misleading Words",
+            href: "/cryptic-misleading-words",
+            description: "Why flower means river, and more",
+          },
+          {
             name: "How to Solve",
             href: "/how-to-play-minute-cryptic",
             description: "Step-by-step solving method",

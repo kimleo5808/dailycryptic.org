@@ -420,6 +420,16 @@ export default async function CrypticCrosswordForBeginnersPage({
             by asking what each clue segment is actually doing — definition,
             indicator, fodder, or linking word.
           </BodyText>
+          <BodyText>
+            Some everyday words are misleading by design. Learn the classic{" "}
+            <Link
+              href="/cryptic-misleading-words"
+              className="text-primary underline"
+            >
+              cryptic misleading words
+            </Link>{" "}
+            — like flower meaning river — so the same traps stop catching you.
+          </BodyText>
         </ContentSection>
 
         <ExamplePuzzleGrid

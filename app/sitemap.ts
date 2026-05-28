@@ -22,6 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/cryptic-clue-types/container',
     '/cryptic-clue-types/double-definition',
     '/cryptic-indicators',
+    '/cryptic-misleading-words',
     '/minute-cryptic-today',
     '/how-to-play-minute-cryptic',
     '/minute-cryptic-faq',
