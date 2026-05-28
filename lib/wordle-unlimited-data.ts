@@ -12,15 +12,48 @@ export type WordLength = (typeof WORD_LENGTHS)[number];
 export const DEFAULT_WORD_LENGTH: WordLength = 5;
 export const MAX_GUESSES = 6;
 
+/** Curated common-word answer pools (deduped), one per length. */
 const POOLS: Record<number, readonly string[]> = Object.fromEntries(
   WORD_LENGTHS.map((len) => [
     len,
-    (WORD_LISTS[len] ?? []).map((w) => w.toUpperCase()),
+    [...new Set((WORD_LISTS[len] ?? []).map((w) => w.toUpperCase()))],
   ]),
 );
 const POOL_SETS: Record<number, ReadonlySet<string>> = Object.fromEntries(
   WORD_LENGTHS.map((len) => [len, new Set(POOLS[len])]),
 );
+
+/**
+ * Lazily-loaded, larger valid-guess dictionaries (one chunk per length).
+ * Decoupled from the answer pool so players can enter any real word, not
+ * just the curated answers. Cached after first load.
+ */
+const guessSetCache = new Map<WordLength, Set<string>>();
+
+export async function loadGuessSet(length: WordLength): Promise<Set<string>> {
+  const cached = guessSetCache.get(length);
+  if (cached) return cached;
+  let words = "";
+  switch (length) {
+    case 4:
+      words = (await import("@/data/wordle-guesses/len4")).WORDS;
+      break;
+    case 5:
+      words = (await import("@/data/wordle-guesses/len5")).WORDS;
+      break;
+    case 6:
+      words = (await import("@/data/wordle-guesses/len6")).WORDS;
+      break;
+    case 7:
+      words = (await import("@/data/wordle-guesses/len7")).WORDS;
+      break;
+  }
+  const set = new Set(words ? words.split(" ") : []);
+  // Guarantee every answer is itself an accepted guess.
+  for (const a of POOLS[length]) set.add(a);
+  guessSetCache.set(length, set);
+  return set;
+}
 
 export function isWordLength(n: number): n is WordLength {
   return (WORD_LENGTHS as readonly number[]).includes(n);

@@ -18,6 +18,7 @@ import {
   getRandomAnswer,
   getUtcDateKey,
   isValidGuess,
+  loadGuessSet,
 } from "@/lib/wordle-unlimited-data";
 import { useWordleUnlimitedStore } from "@/stores/wordleUnlimitedStore";
 import { cn } from "@/lib/utils";
@@ -75,12 +76,25 @@ export default function WordleUnlimitedGame() {
   const [currentGuess, setCurrentGuess] = useState("");
   const [shake, setShake] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [guessSet, setGuessSet] = useState<Set<string> | null>(null);
 
   const todayKey = useMemo(() => getUtcDateKey(), []);
 
   useEffect(() => {
     hydrate();
   }, [hydrate]);
+
+  // Lazily load the larger valid-guess dictionary for the active length.
+  useEffect(() => {
+    let active = true;
+    setGuessSet(null);
+    loadGuessSet(length).then((set) => {
+      if (active) setGuessSet(set);
+    });
+    return () => {
+      active = false;
+    };
+  }, [length]);
 
   // Reset the in-progress typed guess whenever the active board changes.
   useEffect(() => {
@@ -152,7 +166,10 @@ export default function WordleUnlimitedGame() {
           triggerShake("Not enough letters");
           return;
         }
-        if (!isValidGuess(currentGuess, length)) {
+        const validWord = guessSet
+          ? guessSet.has(currentGuess.toUpperCase())
+          : isValidGuess(currentGuess, length);
+        if (!validWord) {
           triggerShake("Not in word list");
           return;
         }
@@ -189,6 +206,7 @@ export default function WordleUnlimitedGame() {
       hardMode,
       guesses,
       board.evaluations,
+      guessSet,
       mode,
       todayKey,
       addGuess,
