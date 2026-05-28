@@ -24,31 +24,25 @@ const POOL_SETS: Record<number, ReadonlySet<string>> = Object.fromEntries(
 );
 
 /**
- * Lazily-loaded, larger valid-guess dictionaries (one chunk per length).
- * Decoupled from the answer pool so players can enter any real word, not
- * just the curated answers. Cached after first load.
+ * Lazily-loaded, larger valid-guess dictionaries served as static files
+ * (public/wordle-guesses/lenN.txt). Kept out of the JS bundle so they do
+ * not count toward the Cloudflare Worker size limit. Fetched once per
+ * length and cached; on failure the curated answer pool is used as a
+ * fallback so the game still accepts at least the common words.
  */
 const guessSetCache = new Map<WordLength, Set<string>>();
 
 export async function loadGuessSet(length: WordLength): Promise<Set<string>> {
   const cached = guessSetCache.get(length);
   if (cached) return cached;
-  let words = "";
-  switch (length) {
-    case 4:
-      words = (await import("@/data/wordle-guesses/len4")).WORDS;
-      break;
-    case 5:
-      words = (await import("@/data/wordle-guesses/len5")).WORDS;
-      break;
-    case 6:
-      words = (await import("@/data/wordle-guesses/len6")).WORDS;
-      break;
-    case 7:
-      words = (await import("@/data/wordle-guesses/len7")).WORDS;
-      break;
+  let set: Set<string>;
+  try {
+    const res = await fetch(`/wordle-guesses/len${length}.txt`);
+    const text = res.ok ? await res.text() : "";
+    set = new Set(text.split(/\s+/).filter(Boolean));
+  } catch {
+    set = new Set();
   }
-  const set = new Set(words ? words.split(" ") : []);
   // Guarantee every answer is itself an accepted guess.
   for (const a of POOLS[length]) set.add(a);
   guessSetCache.set(length, set);
