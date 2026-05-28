@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T10:00:17.183Z",
+  "lastUpdated": "2026-05-28T10:02:19.538Z",
   "puzzles": [
     {
       "id": 1,
@@ -5848,6 +5848,516 @@
         "U3RhcnRzIHdpdGggRy4="
       ],
       "explanation": "R1JBVkVMIHdpdGhvdXQgaXRzIHRhaWwgTCBnaXZlcyBHUkFWRS4gRGVmaW5pdGlvbjogc29sZW1uLg=="
+    },
+    {
+      "id": 345,
+      "printDate": "2027-01-25",
+      "publishDate": "2027-01-25",
+      "status": "scheduled",
+      "clue": "Roof tile from LEAST mixed (5)",
+      "answer": "U0xBVEU=",
+      "clueType": "anagram",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBncmV5IHJvb2ZpbmcgdGlsZS4=",
+        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIGluIExFQVNULg==",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "TEVBU1QgbWl4ZWQgKGFuYWdyYW0pIGdpdmVzIFNMQVRFLiBEZWZpbml0aW9uOiBhIHJvb2YgdGlsZS4="
+    },
+    {
+      "id": 346,
+      "printDate": "2027-01-26",
+      "publishDate": "2027-01-26",
+      "status": "scheduled",
+      "clue": "Boxes from REACTS mixed (6)",
+      "answer": "Q1JBVEVT",
+      "clueType": "anagram",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2Ygd29vZGVuIGJveGVzIGZvciBzaGlwcGluZy4=",
+        "QW5hZ3JhbSDigJQgJ21peGVkJyBpcyB0aGUgaW5kaWNhdG9yLg==",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFJFQUNUUy4=",
+        "U3RhcnRzIHdpdGggQy4="
+      ],
+      "explanation": "UkVBQ1RTIG1peGVkIChhbmFncmFtKSBnaXZlcyBDUkFURVMuIERlZmluaXRpb246IGJveGVzLg=="
+    },
+    {
+      "id": 347,
+      "printDate": "2027-01-27",
+      "publishDate": "2027-01-27",
+      "status": "scheduled",
+      "clue": "Army officer from ENLARGE jumbled (7)",
+      "answer": "R0VORVJBTA==",
+      "clueType": "anagram",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBzZW5pb3IgYXJteSBvZmZpY2VyLg==",
+        "QW5hZ3JhbSDigJQgJ2p1bWJsZWQnIHNpZ25hbHMgaXQu",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIEVOTEFSR0Uu",
+        "U3RhcnRzIHdpdGggRy4="
+      ],
+      "explanation": "RU5MQVJHRSBqdW1ibGVkIChhbmFncmFtKSBnaXZlcyBHRU5FUkFMLiBEZWZpbml0aW9uOiBhbiBhcm15IG9mZmljZXIu"
+    },
+    {
+      "id": 348,
+      "printDate": "2027-01-28",
+      "publishDate": "2027-01-28",
+      "status": "scheduled",
+      "clue": "Bike levers from LAPSED stirred (6)",
+      "answer": "UEVEQUxT",
+      "clueType": "anagram",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIGxldmVycyB5b3UgcHVzaCB3aXRoIHlvdXIgZmVldCBvbiBhIGJpa2Uu",
+        "QW5hZ3JhbSDigJQgJ3N0aXJyZWQnIGlzIHRoZSBpbmRpY2F0b3Iu",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIExBUFNFRC4=",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "TEFQU0VEIHN0aXJyZWQgKGFuYWdyYW0pIGdpdmVzIFBFREFMUy4gRGVmaW5pdGlvbjogYmlrZSBsZXZlcnMu"
+    },
+    {
+      "id": 349,
+      "printDate": "2027-01-29",
+      "publishDate": "2027-01-29",
+      "status": "scheduled",
+      "clue": "Sleep hour: cot then period (7)",
+      "answer": "QkVEVElNRQ==",
+      "clueType": "charade",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIGhvdXIgeW91IGdvIHRvIHNsZWVwLg==",
+        "QnVpbGQgaXQgZnJvbSB0d28gcGFydHMgcmVhZCBpbiBvcmRlci4=",
+        "QSB3b3JkIGZvciBhIGNvdCAoQkVEKSB0aGVuIGEgd29yZCBmb3IgYSBwZXJpb2QgKFRJTUUpLg==",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "QkVEICsgVElNRSBnaXZlcyBCRURUSU1FLiBEZWZpbml0aW9uOiB0aGUgc2xlZXAgaG91ci4="
+    },
+    {
+      "id": 350,
+      "printDate": "2027-01-30",
+      "publishDate": "2027-01-30",
+      "status": "scheduled",
+      "clue": "Reject: not in then thrown (7)",
+      "answer": "T1VUQ0FTVA==",
+      "clueType": "charade",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc29tZW9uZSByZWplY3RlZCBieSBzb2NpZXR5Lg==",
+        "Sm9pbiB0d28gcGFydHMgdG9nZXRoZXIu",
+        "QSB3b3JkIGZvciAnbm90IGluJyAoT1VUKSB0aGVuIGEgd29yZCBmb3IgdGhyb3duIChDQVNUKS4=",
+        "U3RhcnRzIHdpdGggTy4="
+      ],
+      "explanation": "T1VUICsgQ0FTVCBnaXZlcyBPVVRDQVNULiBEZWZpbml0aW9uOiBhIHJlamVjdC4="
+    },
+    {
+      "id": 351,
+      "printDate": "2027-01-31",
+      "publishDate": "2027-01-31",
+      "status": "scheduled",
+      "clue": "Neck injury: beat then strike (8)",
+      "answer": "V0hJUExBU0g=",
+      "clueType": "charade",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBuZWNrIGluanVyeSBmcm9tIGEgc3VkZGVuIGpvbHQu",
+        "Sm9pbiB0d28gcGFydHMgaW4gb3JkZXIu",
+        "QSB3b3JkIGZvciB0byBiZWF0IChXSElQKSB0aGVuIGEgd29yZCBmb3IgYSBzdHJpa2UgKExBU0gpLg==",
+        "U3RhcnRzIHdpdGggVy4="
+      ],
+      "explanation": "V0hJUCArIExBU0ggZ2l2ZXMgV0hJUExBU0guIERlZmluaXRpb246IGEgbmVjayBpbmp1cnku"
+    },
+    {
+      "id": 352,
+      "printDate": "2027-02-01",
+      "publishDate": "2027-02-01",
+      "status": "scheduled",
+      "clue": "Mix: bend around line (5)",
+      "answer": "QkxFTkQ=",
+      "clueType": "container",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdG8gbWl4IHRvZ2V0aGVyLg==",
+        "Q29udGFpbmVyIGNsdWUg4oCUIGEgbGV0dGVyIGdvZXMgaW5zaWRlIGEgd29yZC4=",
+        "UHV0IEwgKGxpbmUpIGluc2lkZSBCRU5ELg==",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "QkVORCBhcm91bmQgTCBnaXZlcyBCTEVORC4gRGVmaW5pdGlvbjogdG8gbWl4Lg=="
+    },
+    {
+      "id": 353,
+      "printDate": "2027-02-02",
+      "publishDate": "2027-02-02",
+      "status": "scheduled",
+      "clue": "Pick a string: puck around line (5)",
+      "answer": "UExVQ0s=",
+      "clueType": "container",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdG8gcGljayBhdCBhIGd1aXRhciBzdHJpbmcu",
+        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBzaXRzIGluc2lkZSBhIHdvcmQu",
+        "UHV0IEwgKGxpbmUpIGluc2lkZSBQVUNLLg==",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "UFVDSyBhcm91bmQgTCBnaXZlcyBQTFVDSy4gRGVmaW5pdGlvbjogdG8gcGljayBhIHN0cmluZy4="
+    },
+    {
+      "id": 354,
+      "printDate": "2027-02-03",
+      "publishDate": "2027-02-03",
+      "status": "scheduled",
+      "clue": "Feeding container: tough taking in resistance (6)",
+      "answer": "VFJPVUdI",
+      "clueType": "container",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBsb25nIGNvbnRhaW5lciBhbmltYWxzIGZlZWQgZnJvbS4=",
+        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBpcyB0YWtlbiBpbnNpZGUgYSB3b3JkLg==",
+        "UHV0IFIgKHJlc2lzdGFuY2UpIGluc2lkZSBUT1VHSC4=",
+        "U3RhcnRzIHdpdGggVC4="
+      ],
+      "explanation": "VE9VR0ggdGFraW5nIGluIFIgZ2l2ZXMgVFJPVUdILiBEZWZpbml0aW9uOiBhIGZlZWRpbmcgY29udGFpbmVyLg=="
+    },
+    {
+      "id": 355,
+      "printDate": "2027-02-04",
+      "publishDate": "2027-02-04",
+      "status": "scheduled",
+      "clue": "Writing tool, or an animal enclosure (3)",
+      "answer": "UEVO",
+      "clueType": "double-definition",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
+        "T25lIGlzIGEgdG9vbCBmb3Igd3JpdGluZyBpbiBpbmsu",
+        "VGhlIG90aGVyIGlzIGEgc21hbGwgZW5jbG9zdXJlIGZvciBhbmltYWxzLg==",
+        "U3RhcnRzIHdpdGggUC4="
+      ],
+      "explanation": "UEVOIG1lYW5zIGJvdGggYSB3cml0aW5nIHRvb2wgYW5kIGFuIGFuaW1hbCBlbmNsb3N1cmUu"
+    },
+    {
+      "id": 356,
+      "printDate": "2027-02-05",
+      "publishDate": "2027-02-05",
+      "status": "scheduled",
+      "clue": "Quick, or to go without food (4)",
+      "answer": "RkFTVA==",
+      "clueType": "double-definition",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VHdvIGRlZmluaXRpb25zIHBvaW50IHRvIG9uZSB3b3JkLg==",
+        "T25lIG1lYW5zIHF1aWNrIG9yIHNwZWVkeS4=",
+        "VGhlIG90aGVyIG1lYW5zIHRvIGFic3RhaW4gZnJvbSBmb29kLg==",
+        "U3RhcnRzIHdpdGggRi4="
+      ],
+      "explanation": "RkFTVCBtZWFucyBib3RoIHF1aWNrIGFuZCB0byBnbyB3aXRob3V0IGZvb2Qu"
+    },
+    {
+      "id": 357,
+      "printDate": "2027-02-06",
+      "publishDate": "2027-02-06",
+      "status": "scheduled",
+      "clue": "Place of worship, or the side of the forehead (6)",
+      "answer": "VEVNUExF",
+      "clueType": "double-definition",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VHdvIG1lYW5pbmdzIGZvciBvbmUgd29yZC4=",
+        "T25lIGlzIGEgYnVpbGRpbmcgZm9yIHdvcnNoaXAu",
+        "VGhlIG90aGVyIGlzIHRoZSBmbGF0IHNpZGUgb2YgdGhlIGZvcmVoZWFkLg==",
+        "U3RhcnRzIHdpdGggVC4="
+      ],
+      "explanation": "VEVNUExFIG1lYW5zIGJvdGggYSBwbGFjZSBvZiB3b3JzaGlwIGFuZCBwYXJ0IG9mIHRoZSBoZWFkLg=="
+    },
+    {
+      "id": 358,
+      "printDate": "2027-02-07",
+      "publishDate": "2027-02-07",
+      "status": "scheduled",
+      "clue": "Sports venue hidden in clear enamel (5)",
+      "answer": "QVJFTkE=",
+      "clueType": "hidden-word",
+      "difficulty": "easy",
+      "hintLevels": [
+        "QSBsYXJnZSBzcG9ydHMgdmVudWUgaXMgY29uY2VhbGVkLg==",
+        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSBnYXAgYmV0d2VlbiB3b3Jkcy4=",
+        "Rm91bmQgaW4gJ2NsZUFSIEVOQW1lbCcu",
+        "U3RhcnRzIHdpdGggQS4="
+      ],
+      "explanation": "SGlkZGVuIGluICdjbGVBUiBFTkFtZWwnIGlzIEFSRU5BLiBEZWZpbml0aW9uOiBhIHNwb3J0cyB2ZW51ZS4="
+    },
+    {
+      "id": 359,
+      "printDate": "2027-02-08",
+      "publishDate": "2027-02-08",
+      "status": "scheduled",
+      "clue": "Ship's weight hidden in mean chore (6)",
+      "answer": "QU5DSE9S",
+      "clueType": "hidden-word",
+      "difficulty": "hard",
+      "hintLevels": [
+        "QSBoZWF2eSB3ZWlnaHQgdGhhdCBob2xkcyBhIHNoaXAgaXMgY29uY2VhbGVkLg==",
+        "SGlkZGVuIHdvcmQg4oCUIHNjYW4gYWNyb3NzIHRoZSBib3VuZGFyeS4=",
+        "Rm91bmQgaW4gJ21lQU4gQ0hPUmUnLg==",
+        "U3RhcnRzIHdpdGggQS4="
+      ],
+      "explanation": "SGlkZGVuIGluICdtZUFOIENIT1JlJyBpcyBBTkNIT1IuIERlZmluaXRpb246IGEgc2hpcCdzIHdlaWdodC4="
+    },
+    {
+      "id": 360,
+      "printDate": "2027-02-09",
+      "publishDate": "2027-02-09",
+      "status": "scheduled",
+      "clue": "River animal hidden in robot termite (5)",
+      "answer": "T1RURVI=",
+      "clueType": "hidden-word",
+      "difficulty": "medium",
+      "hintLevels": [
+        "QSBwbGF5ZnVsIHJpdmVyIG1hbW1hbCBpcyBjb25jZWFsZWQu",
+        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSB3b3Jkcy4=",
+        "Rm91bmQgaW4gJ3JvYk9UIFRFUm1pdGUnLg==",
+        "U3RhcnRzIHdpdGggTy4="
+      ],
+      "explanation": "SGlkZGVuIGluICdyb2JPVCBURVJtaXRlJyBpcyBPVFRFUi4gRGVmaW5pdGlvbjogYSByaXZlciBhbmltYWwu"
+    },
+    {
+      "id": 361,
+      "printDate": "2027-02-10",
+      "publishDate": "2027-02-10",
+      "status": "scheduled",
+      "clue": "Signal fire hidden in tube a cone (6)",
+      "answer": "QkVBQ09O",
+      "clueType": "hidden-word",
+      "difficulty": "hard",
+      "hintLevels": [
+        "QSBzaWduYWwgZmlyZSBvciBndWlkaW5nIGxpZ2h0IGlzIGNvbmNlYWxlZC4=",
+        "SGlkZGVuIHdvcmQgc3Bhbm5pbmcgdGhlIHBocmFzZS4=",
+        "Rm91bmQgaW4gJ3R1QkUgQSBDT05lJy4=",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "SGlkZGVuIGluICd0dUJFIEEgQ09OZScgaXMgQkVBQ09OLiBEZWZpbml0aW9uOiBhIHNpZ25hbCBmaXJlLg=="
+    },
+    {
+      "id": 362,
+      "printDate": "2027-02-11",
+      "publishDate": "2027-02-11",
+      "status": "scheduled",
+      "clue": "Insect from TANG turned round (4)",
+      "answer": "R05BVA==",
+      "clueType": "reversal",
+      "difficulty": "easy",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB0aW55IGJpdGluZyBpbnNlY3Qu",
+        "J1R1cm5lZCByb3VuZCcgc2lnbmFscyBhIHJldmVyc2FsLg==",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBpbiBUQU5HLg==",
+        "U3RhcnRzIHdpdGggRy4="
+      ],
+      "explanation": "VEFORyB0dXJuZWQgcm91bmQgKHJldmVyc2VkKSBnaXZlcyBHTkFULiBEZWZpbml0aW9uOiBhbiBpbnNlY3Qu"
+    },
+    {
+      "id": 363,
+      "printDate": "2027-02-12",
+      "publishDate": "2027-02-12",
+      "status": "scheduled",
+      "clue": "Stride when pets are sent back (4)",
+      "answer": "U1RFUA==",
+      "clueType": "reversal",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSBzaW5nbGUgc3RyaWRlLg==",
+        "UmV2ZXJzYWwg4oCUICdzZW50IGJhY2snIGlzIHRoZSBpbmRpY2F0b3Iu",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBQRVRTLg==",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "UEVUUyBzZW50IGJhY2sgKHJldmVyc2VkKSBnaXZlcyBTVEVQLiBEZWZpbml0aW9uOiBhIHN0cmlkZS4="
+    },
+    {
+      "id": 364,
+      "printDate": "2027-02-13",
+      "publishDate": "2027-02-13",
+      "status": "scheduled",
+      "clue": "Circles when spool is reversed (5)",
+      "answer": "TE9PUFM=",
+      "clueType": "reversal",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgY2lyY3VsYXIgc2hhcGVzIG9yIGNvaWxzLg==",
+        "UmV2ZXJzYWwg4oCUICdyZXZlcnNlZCcgc2lnbmFscyBpdC4=",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBTUE9PTC4=",
+        "U3RhcnRzIHdpdGggTC4="
+      ],
+      "explanation": "U1BPT0wgcmV2ZXJzZWQgZ2l2ZXMgTE9PUFMuIERlZmluaXRpb246IGNpcmNsZXMu"
+    },
+    {
+      "id": 365,
+      "printDate": "2027-02-14",
+      "publishDate": "2027-02-14",
+      "status": "scheduled",
+      "clue": "Fibber when rail is turned back (4)",
+      "answer": "TElBUg==",
+      "clueType": "reversal",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc29tZW9uZSB3aG8gdGVsbHMgdW50cnV0aHMu",
+        "UmV2ZXJzYWwg4oCUICd0dXJuZWQgYmFjaycgaXMgdGhlIGluZGljYXRvci4=",
+        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBSQUlMLg==",
+        "U3RhcnRzIHdpdGggTC4="
+      ],
+      "explanation": "UkFJTCB0dXJuZWQgYmFjayAocmV2ZXJzZWQpIGdpdmVzIExJQVIuIERlZmluaXRpb246IGEgZmliYmVyLg=="
+    },
+    {
+      "id": 366,
+      "printDate": "2027-02-15",
+      "publishDate": "2027-02-15",
+      "status": "scheduled",
+      "clue": "Boat cloth we hear is a bargain event (4)",
+      "answer": "U0FJTA==",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIGNsb3RoIHRoYXQgY2F0Y2hlcyB3aW5kIG9uIGEgYm9hdC4=",
+        "J1dlIGhlYXInIHNpZ25hbHMgYSBob21vcGhvbmUu",
+        "U291bmRzIGxpa2UgU0FMRSAoYSBiYXJnYWluIGV2ZW50KS4=",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "U0FJTCBzb3VuZHMgbGlrZSBTQUxFLiBEZWZpbml0aW9uOiBib2F0IGNsb3RoLg=="
+    },
+    {
+      "id": 367,
+      "printDate": "2027-02-16",
+      "publishDate": "2027-02-16",
+      "status": "scheduled",
+      "clue": "Work dough, sounding like 'require' (5)",
+      "answer": "S05FQUQ=",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2Ygd29ya2luZyBkb3VnaCB3aXRoIHlvdXIgaGFuZHMu",
+        "SG9tb3Bob25lIOKAlCAnc291bmRpbmcgbGlrZScu",
+        "U291bmRzIGxpa2UgTkVFRCAodG8gcmVxdWlyZSku",
+        "U3RhcnRzIHdpdGggSy4="
+      ],
+      "explanation": "S05FQUQgc291bmRzIGxpa2UgTkVFRC4gRGVmaW5pdGlvbjogdG8gd29yayBkb3VnaC4="
+    },
+    {
+      "id": 368,
+      "printDate": "2027-02-17",
+      "publishDate": "2027-02-17",
+      "status": "scheduled",
+      "clue": "Inheritor we hear is the atmosphere (4)",
+      "answer": "SEVJUg==",
+      "clueType": "homophone",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc29tZW9uZSB3aG8gaW5oZXJpdHMu",
+        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicgc2lnbmFscyBpdC4=",
+        "U291bmRzIGxpa2UgQUlSICh0aGUgYXRtb3NwaGVyZSku",
+        "U3RhcnRzIHdpdGggSC4="
+      ],
+      "explanation": "SEVJUiBzb3VuZHMgbGlrZSBBSVIuIERlZmluaXRpb246IGFuIGluaGVyaXRvci4="
+    },
+    {
+      "id": 369,
+      "printDate": "2027-02-18",
+      "publishDate": "2027-02-18",
+      "status": "scheduled",
+      "clue": "Nobleman that sounds like infertile (5)",
+      "answer": "QkFST04=",
+      "clueType": "homophone",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSByYW5rIG9mIG5vYmxlbWFuLg==",
+        "SG9tb3Bob25lIOKAlCAnc291bmRzIGxpa2UnLg==",
+        "U291bmRzIGxpa2UgQkFSUkVOIChpbmZlcnRpbGUpLg==",
+        "U3RhcnRzIHdpdGggQi4="
+      ],
+      "explanation": "QkFST04gc291bmRzIGxpa2UgQkFSUkVOLiBEZWZpbml0aW9uOiBhIG5vYmxlbWFuLg=="
+    },
+    {
+      "id": 370,
+      "printDate": "2027-02-19",
+      "publishDate": "2027-02-19",
+      "status": "scheduled",
+      "clue": "Capable when table loses its head (4)",
+      "answer": "QUJMRQ==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgY2FwYWJsZS4=",
+        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
+        "VGFrZSBUIG9mZiBUQUJMRS4=",
+        "U3RhcnRzIHdpdGggQS4="
+      ],
+      "explanation": "VEFCTEUgd2l0aG91dCBpdHMgaGVhZCBUIGdpdmVzIEFCTEUuIERlZmluaXRpb246IGNhcGFibGUu"
+    },
+    {
+      "id": 371,
+      "printDate": "2027-02-20",
+      "publishDate": "2027-02-20",
+      "status": "scheduled",
+      "clue": "Tardy when plate loses its head (4)",
+      "answer": "TEFURQ==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdGFyZHku",
+        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "UmVtb3ZlIFAgZnJvbSBQTEFURS4=",
+        "U3RhcnRzIHdpdGggTC4="
+      ],
+      "explanation": "UExBVEUgd2l0aG91dCBpdHMgaGVhZCBQIGdpdmVzIExBVEUuIERlZmluaXRpb246IHRhcmR5Lg=="
+    },
+    {
+      "id": 372,
+      "printDate": "2027-02-21",
+      "publishDate": "2027-02-21",
+      "status": "scheduled",
+      "clue": "Single units when bones loses its head (4)",
+      "answer": "T05FUw==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2Ygc2luZ2xlIHVuaXRzIG9yIHRoZSBudW1iZXIgMXMu",
+        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
+        "VGFrZSBCIG9mZiBCT05FUy4=",
+        "U3RhcnRzIHdpdGggTy4="
+      ],
+      "explanation": "Qk9ORVMgd2l0aG91dCBpdHMgaGVhZCBCIGdpdmVzIE9ORVMuIERlZmluaXRpb246IHNpbmdsZSB1bml0cy4="
+    },
+    {
+      "id": 373,
+      "printDate": "2027-02-22",
+      "publishDate": "2027-02-22",
+      "status": "scheduled",
+      "clue": "Speed when crate loses its head (4)",
+      "answer": "UkFURQ==",
+      "clueType": "deletion",
+      "difficulty": "medium",
+      "hintLevels": [
+        "VGhpbmsgb2YgYSB3b3JkIGZvciBzcGVlZCBvciBhIGZpeGVkIGNoYXJnZS4=",
+        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "UmVtb3ZlIEMgZnJvbSBDUkFURS4=",
+        "U3RhcnRzIHdpdGggUi4="
+      ],
+      "explanation": "Q1JBVEUgd2l0aG91dCBpdHMgaGVhZCBDIGdpdmVzIFJBVEUuIERlZmluaXRpb246IHNwZWVkLg=="
+    },
+    {
+      "id": 374,
+      "printDate": "2027-02-23",
+      "publishDate": "2027-02-23",
+      "status": "scheduled",
+      "clue": "Backbone when spinet loses its tail (5)",
+      "answer": "U1BJTkU=",
+      "clueType": "deletion",
+      "difficulty": "hard",
+      "hintLevels": [
+        "VGhpbmsgb2YgdGhlIGJhY2tib25lLg==",
+        "J0xvc2VzIGl0cyB0YWlsJyBtZWFucyByZW1vdmUgdGhlIGxhc3QgbGV0dGVyLg==",
+        "VGFrZSB0aGUgVCBvZmYgU1BJTkVULCBhIHNtYWxsIHBpYW5vLg==",
+        "U3RhcnRzIHdpdGggUy4="
+      ],
+      "explanation": "U1BJTkVUIHdpdGhvdXQgaXRzIHRhaWwgVCBnaXZlcyBTUElORS4gRGVmaW5pdGlvbjogdGhlIGJhY2tib25lLg=="
     }
   ]
 }
