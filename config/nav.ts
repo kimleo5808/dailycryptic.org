@@ -187,6 +187,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
         title: "Play Online",
         links: [
           {
+            name: "Wordle Unlimited",
+            href: "/wordle-unlimited",
+            description: "Play endless Wordle — 4 to 7 letters, no daily limit",
+          },
+          {
             name: "Play Quordle",
             href: "/quordle",
             description: "Guess 4 words in 9 tries — daily + practice",

@@ -415,6 +415,12 @@ export default async function WordleAnswerTodayPage({
         <RelatedLinks
           links={[
             {
+              href: "/wordle-unlimited",
+              title: "Play Wordle Unlimited",
+              description:
+                "Done with today's puzzle? Play endless Wordle — 4 to 7 letters, no daily limit.",
+            },
+            {
               href: "/connections-hint-today",
               title: "Connections hints",
               description:
@@ -425,12 +431,6 @@ export default async function WordleAnswerTodayPage({
               title: "Strands hints",
               description:
                 "Today's hints, spangram, and answers for the NYT Strands puzzle.",
-            },
-            {
-              href: "/minute-cryptic-today",
-              title: "Daily cryptic clue",
-              description:
-                "Solve a one-clue cryptic crossword with progressive hints.",
             },
           ]}
         />

@@ -95,14 +95,14 @@ export default async function WordleArchivePage({
               description: "Hints and answer for today's puzzle.",
             },
             {
+              href: "/wordle-unlimited",
+              title: "Play Wordle Unlimited",
+              description: "Play endless Wordle — 4 to 7 letters, no daily limit.",
+            },
+            {
               href: "/connections-hint-today",
               title: "Connections hints",
               description: "Today's NYT Connections hints and answers.",
-            },
-            {
-              href: "/strands-hint-today",
-              title: "Strands hints",
-              description: "Today's NYT Strands hints and answers.",
             },
           ]}
         />
