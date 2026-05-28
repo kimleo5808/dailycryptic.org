@@ -1,6 +1,6 @@
-# CLAUDE-quordle.md — Quordle Game & SEO Hub
+# Quordle Game & SEO Hub — Requirements
 
-> Scope isolated requirements doc for the Quordle feature. The root `CLAUDE.md` covers the NYT Connections feature; this file covers Quordle only. Keep them in sync when cross-cutting changes (nav, sitemap, footer) land.
+> Scope-isolated requirements doc for the Quordle feature. Connections requirements live in [connections-requirements.md](connections-requirements.md); this file covers Quordle only. Keep them in sync when cross-cutting changes (nav, sitemap, footer) land.
 
 ## Project Overview
 

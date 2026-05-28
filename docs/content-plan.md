@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document translates the approved roadmap in [AGENTS.md](/F:/网站/游戏网站/dailycryptic.org/AGENTS.md) into a page-by-page content production brief.
+This document translates the approved roadmap in [cryptic-content-requirements.md](cryptic-content-requirements.md) into a page-by-page content production brief.
 
 Use this file when:
 
