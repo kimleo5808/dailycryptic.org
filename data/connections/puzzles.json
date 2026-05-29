@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-05-28T08:57:00.997Z",
+  "lastUpdated": "2026-05-29T08:53:57.828Z",
   "puzzles": [
+    {
+      "id": 1083,
+      "printDate": "2026-05-29",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "T0NFQU5T",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVRMQU5USUM=",
+            "UEFDSUZJQw==",
+            "U09VVEhFUk4=",
+            "QVJDVElD"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U09VUkNFUyBPRiBESVNUSU5DVElWRSBTTUVMTFM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Qk8=",
+            "QU1NT05JQQ==",
+            "V0VUIERPRw==",
+            "RFVSSUFO"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "S0lORFMgT0YgUk9PTVMgSU4gQSBNQU5TSU9O",
+          "hint": "Think about different rooms in a mansion",
+          "words": [
+            "UE9XREVS",
+            "UkVBRElORw==",
+            "QklMTElBUkQ=",
+            "RFJBV0lORw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "V0hBVCAiUEEiIE1JR0hUIFJFRkVSIFRP",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RkFUSEVS",
+            "UEVOTlNZTFZBTklB",
+            "UFJPVEFDVElOSVVN",
+            "UFVCTElDIEFERFJFU1M="
+          ]
+        }
+      ]
+    },
     {
       "id": 1082,
       "printDate": "2026-05-28",
