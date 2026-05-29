@@ -94,6 +94,17 @@
           ]
         },
         {
+          "title": "More Puzzles",
+          "links": [
+            {
+              "href": "https://minutecryptic.org/",
+              "name": "MinuteCryptic",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ]
+        },
+        {
           "title": "About",
           "links": [
             {
