@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-05-29T08:56:10.315Z",
+  "lastUpdated": "2026-05-30T08:03:10.259Z",
   "puzzles": [
+    {
+      "id": 994,
+      "printDate": "2026-05-30",
+      "status": "published",
+      "clue": "We'll be there",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RyBPIE8gRCBGIFIgSSBFIE4gRCBT",
+      "spangram": "R09PREZSSUVORFM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q0FSSU5H",
+        "SEVMUEZVTA==",
+        "TE9ZQUw=",
+        "UkVMSUFCTEU=",
+        "VFJVU1RXT1JUSFk="
+      ]
+    },
     {
       "id": 993,
       "printDate": "2026-05-29",
