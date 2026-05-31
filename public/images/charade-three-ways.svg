@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="470" rx="20" fill="url(#cbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="56" fill="#ffffff" font-size="28" font-weight="800">Three ways a charade clues each piece</text>
+  <text x="44" y="86" fill="#94a3b8" font-size="17" font-weight="500">Each part can be an abbreviation, a synonym, or a word given outright.</text>
+
+  <!-- ROW 1: abbreviation — S + TART = START -->
+  <g transform="translate(0,128)">
+    <rect x="44" y="6" width="150" height="40" rx="20" fill="#243358"/>
+    <text x="119" y="32" fill="#c7d2fe" font-size="16" font-weight="800" text-anchor="middle">ABBREVIATION</text>
+    <rect x="236" y="0" width="64" height="54" rx="12" fill="url(#t)"/>
+    <text x="268" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">S</text>
+    <text x="268" y="76" fill="#7c89b8" font-size="14" text-anchor="middle">small</text>
+    <text x="320" y="36" fill="#6b7aa8" font-size="28" font-weight="800" text-anchor="middle">+</text>
+    <rect x="352" y="0" width="120" height="54" rx="12" fill="url(#t)"/>
+    <text x="412" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">TART</text>
+    <text x="496" y="36" fill="#6b7aa8" font-size="26" font-weight="800" text-anchor="middle">=</text>
+    <rect x="532" y="0" width="170" height="54" rx="12" fill="#1e2a4a" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="617" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">START</text>
+  </g>
+
+  <!-- ROW 2: synonym — HAND + SOME = HANDSOME -->
+  <g transform="translate(0,250)">
+    <rect x="44" y="6" width="150" height="40" rx="20" fill="#243358"/>
+    <text x="119" y="32" fill="#c7d2fe" font-size="16" font-weight="800" text-anchor="middle">SYNONYM</text>
+    <rect x="236" y="0" width="110" height="54" rx="12" fill="url(#t)"/>
+    <text x="291" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">HAND</text>
+    <text x="291" y="76" fill="#7c89b8" font-size="14" text-anchor="middle">give</text>
+    <text x="366" y="36" fill="#6b7aa8" font-size="28" font-weight="800" text-anchor="middle">+</text>
+    <rect x="398" y="0" width="120" height="54" rx="12" fill="url(#t)"/>
+    <text x="458" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">SOME</text>
+    <text x="458" y="76" fill="#7c89b8" font-size="14" text-anchor="middle">a few</text>
+    <text x="542" y="36" fill="#6b7aa8" font-size="26" font-weight="800" text-anchor="middle">=</text>
+    <rect x="578" y="0" width="240" height="54" rx="12" fill="#1e2a4a" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="698" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">HANDSOME</text>
+  </g>
+
+  <!-- ROW 3: literal — SUN + SET = SUNSET -->
+  <g transform="translate(0,372)">
+    <rect x="44" y="6" width="150" height="40" rx="20" fill="#243358"/>
+    <text x="119" y="32" fill="#c7d2fe" font-size="16" font-weight="800" text-anchor="middle">LITERAL</text>
+    <rect x="236" y="0" width="96" height="54" rx="12" fill="url(#t)"/>
+    <text x="284" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">SUN</text>
+    <text x="352" y="36" fill="#6b7aa8" font-size="28" font-weight="800" text-anchor="middle">+</text>
+    <rect x="384" y="0" width="96" height="54" rx="12" fill="url(#t)"/>
+    <text x="432" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">SET</text>
+    <text x="504" y="36" fill="#6b7aa8" font-size="26" font-weight="800" text-anchor="middle">=</text>
+    <rect x="540" y="0" width="200" height="54" rx="12" fill="#1e2a4a" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="640" y="37" fill="#ffffff" font-size="26" font-weight="800" text-anchor="middle">SUNSET</text>
+  </g>
+</svg>
