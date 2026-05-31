@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#indigo)"/>
+
+  <!-- decorative crossword grid (top-right) -->
+  <g transform="translate(836,74)" opacity="0.92">
+    <!-- row 1 -->
+    <rect x="0"   y="0"   width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <rect x="74"  y="0"   width="68" height="68" rx="6" fill="#6366f1"/>
+    <rect x="148" y="0"   width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <rect x="222" y="0"   width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <!-- row 2 -->
+    <rect x="0"   y="74"  width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <rect x="74"  y="74"  width="68" height="68" rx="6" fill="#243358"/>
+    <rect x="148" y="74"  width="68" height="68" rx="6" fill="#243358"/>
+    <rect x="222" y="74"  width="68" height="68" rx="6" fill="#6366f1"/>
+    <!-- row 3 -->
+    <rect x="0"   y="148" width="68" height="68" rx="6" fill="#6366f1"/>
+    <rect x="74"  y="148" width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <rect x="148" y="148" width="68" height="68" rx="6" fill="#1e2a4a"/>
+    <rect x="222" y="148" width="68" height="68" rx="6" fill="#243358"/>
+    <!-- letters -->
+    <g fill="#ffffff" font-size="38" font-weight="700" text-anchor="middle">
+      <text x="108" y="46">C</text>
+      <text x="256" y="120">L</text>
+      <text x="34"  y="194">U</text>
+    </g>
+    <g fill="#c7d2fe" font-size="38" font-weight="700" text-anchor="middle">
+      <text x="34"  y="46">5</text>
+      <text x="182" y="194">E</text>
+    </g>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="80" y="118" fill="#818cf8" font-size="22" font-weight="700" letter-spacing="3">DATA STUDY · DAILYCRYPTIC</text>
+
+  <!-- headline -->
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="216" font-size="74">We Analysed 5,712</text>
+    <text x="78" y="300" font-size="74">Cryptic Clues</text>
+  </g>
+
+  <!-- subhead -->
+  <text x="80" y="352" fill="#cbd5e1" font-size="28" font-weight="500">Where the definition hides — and which wordplay wins.</text>
+
+  <!-- headline finding: definition position split bar -->
+  <text x="80" y="430" fill="#94a3b8" font-size="20" font-weight="700" letter-spacing="1">DEFINITION POSITION ACROSS 5,712 CLUES</text>
+  <g transform="translate(80,448)">
+    <rect x="0" y="0" width="1040" height="58" rx="12" fill="#1e293b"/>
+    <!-- 53.7% start -->
+    <rect x="0" y="0" width="558" height="58" rx="12" fill="url(#indigo)"/>
+    <rect x="540" y="0" width="20" height="58" fill="#6366f1"/>
+    <text x="28" y="37" fill="#ffffff" font-size="24" font-weight="800">At the start · 53.7%</text>
+    <text x="1012" y="37" fill="#cbd5e1" font-size="24" font-weight="800" text-anchor="end">At the end · 45.7%</text>
+  </g>
+
+  <!-- device chips -->
+  <g transform="translate(80,548)" font-size="22" font-weight="700">
+    <rect x="0" y="0" width="232" height="46" rx="23" fill="#243358"/>
+    <text x="116" y="30" fill="#c7d2fe" text-anchor="middle">Charade · 39.7%</text>
+    <rect x="248" y="0" width="232" height="46" rx="23" fill="#243358"/>
+    <text x="364" y="30" fill="#c7d2fe" text-anchor="middle">Anagram · 19.9%</text>
+    <rect x="496" y="0" width="276" height="46" rx="23" fill="#243358"/>
+    <text x="634" y="30" fill="#c7d2fe" text-anchor="middle">Avg length · 7.2 letters</text>
+  </g>
+</svg>

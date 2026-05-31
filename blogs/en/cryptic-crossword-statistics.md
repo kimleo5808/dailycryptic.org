@@ -4,7 +4,7 @@ description: "We analysed 5,712 real cryptic crossword clues from one Financial 
 slug: /cryptic-crossword-statistics
 date: "2026-05-31"
 tags: "Cryptic Crosswords, Data Study, Solving Tips"
-image: ""
+image: /images/cryptic-statistics-cover.svg
 visible: published
 pin: true
 ---
