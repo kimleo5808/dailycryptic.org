@@ -13,6 +13,7 @@ import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import {
   getWordlePuzzleByDate,
+  getRawWordlePuzzleByDate,
   getAdjacentWordlePuzzles,
   getAllWordlePuzzles,
 } from "@/lib/wordle-data";
@@ -114,15 +115,8 @@ export default async function WordleDatePage({
     year: "numeric",
   });
 
-  // Read raw puzzle for encoded solution (fs to avoid bundling into Worker)
-  const { readFileSync } = await import("fs");
-  const { join } = await import("path");
-  const rawData = JSON.parse(
-    readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
-  );
-  const rawPuzzle = (rawData.puzzles as { printDate: string; solution: string }[]).find(
-    (p) => p.printDate === date
-  );
+  // Raw puzzle holds the encoded solution; bundled JSON works in the Worker.
+  const rawPuzzle = await getRawWordlePuzzleByDate(date);
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
