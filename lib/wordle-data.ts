@@ -1,5 +1,4 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import puzzlesJson from "@/data/wordle/puzzles.json";
 import type {
   WordleDataFile,
   WordlePuzzle,
@@ -28,9 +27,7 @@ let _decoded: DecodedWordlePuzzle[] | null = null;
 
 function getRawPublished(): WordlePuzzle[] {
   if (!_raw) {
-    const rawData = JSON.parse(
-      readFileSync(join(process.cwd(), "data", "wordle", "puzzles.json"), "utf8")
-    ) as WordleDataFile;
+    const rawData = puzzlesJson as unknown as WordleDataFile;
     const today = new Date().toISOString().split("T")[0];
     _raw = rawData.puzzles
       .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
@@ -67,6 +64,11 @@ export const getRawTodaysWordlePuzzle = cache(
     const r = getRawPublished();
     return r.length > 0 ? r[0] : undefined;
   }
+);
+
+export const getRawWordlePuzzleByDate = cache(
+  async (date: string): Promise<WordlePuzzle | undefined> =>
+    getRawPublished().find((p) => p.printDate === date)
 );
 
 export const getRecentWordlePuzzles = cache(

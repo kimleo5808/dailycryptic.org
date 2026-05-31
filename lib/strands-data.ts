@@ -1,5 +1,5 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import puzzlesJson from "@/data/strands/puzzles.json";
+import boardsJson from "@/data/strands/boards.json";
 import type {
   StrandsDataFile,
   StrandsPuzzle,
@@ -33,9 +33,7 @@ let _decoded: DecodedStrandsPuzzle[] | null = null;
 
 function getRawPublished(): StrandsPuzzle[] {
   if (!_raw) {
-    const rawData = JSON.parse(
-      readFileSync(join(process.cwd(), "data", "strands", "puzzles.json"), "utf8")
-    ) as StrandsDataFile;
+    const rawData = puzzlesJson as unknown as StrandsDataFile;
     const today = new Date().toISOString().split("T")[0];
     _raw = rawData.puzzles
       .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
@@ -125,9 +123,7 @@ export const getAdjacentStrandsPuzzles = cache(
 );
 
 function loadBoards(): StrandsBoardsFile {
-  return JSON.parse(
-    readFileSync(join(process.cwd(), "data", "strands", "boards.json"), "utf8")
-  );
+  return boardsJson as unknown as StrandsBoardsFile;
 }
 
 export const getStrandsBoardByDate = cache(

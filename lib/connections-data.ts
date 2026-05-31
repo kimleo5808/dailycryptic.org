@@ -1,5 +1,4 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import puzzlesJson from "@/data/connections/puzzles.json";
 import type {
   ConnectionsDataFile,
   ConnectionsPuzzle,
@@ -39,9 +38,7 @@ let _decoded: DecodedConnectionsPuzzle[] | null = null;
 
 function getRawPublished(): ConnectionsPuzzle[] {
   if (!_raw) {
-    const rawData = JSON.parse(
-      readFileSync(join(process.cwd(), "data", "connections", "puzzles.json"), "utf8")
-    ) as ConnectionsDataFile;
+    const rawData = puzzlesJson as unknown as ConnectionsDataFile;
     const today = new Date().toISOString().split("T")[0];
     _raw = rawData.puzzles
       .filter((p) => (p.status === "scheduled" ? p.printDate <= today : true))
