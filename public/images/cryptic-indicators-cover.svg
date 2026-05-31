@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#bar)"/>
+
+  <!-- crossword grid motif, top-right -->
+  <g transform="translate(980,70)" opacity="0.9">
+    <rect x="0"   y="0"  width="58" height="58" rx="6" fill="#6366f1"/>
+    <rect x="63"  y="0"  width="58" height="58" rx="6" fill="#1e2a4a"/>
+    <rect x="126" y="0"  width="58" height="58" rx="6" fill="#1e2a4a"/>
+    <rect x="0"   y="63" width="58" height="58" rx="6" fill="#1e2a4a"/>
+    <rect x="63"  y="63" width="58" height="58" rx="6" fill="#243358"/>
+    <rect x="126" y="63" width="58" height="58" rx="6" fill="#6366f1"/>
+    <g fill="#ffffff" font-size="32" font-weight="700" text-anchor="middle">
+      <text x="29" y="40">I</text>
+      <text x="155" y="103">N</text>
+    </g>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">DATA STUDY · DAILYCRYPTIC</text>
+
+  <!-- headline -->
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="180" font-size="62">The Words That Give</text>
+    <text x="78" y="248" font-size="62">Cryptic Clues Away</text>
+  </g>
+  <text x="80" y="296" fill="#cbd5e1" font-size="26" font-weight="500">15,735 indicators, ranked by how often they appear in 500,000+ clues.</text>
+
+  <!-- ranked bars: top signal word for each wordplay device -->
+  <g transform="translate(80,338)" font-weight="700">
+    <!-- row template: label (x0..220), track+bar (x230..1050), count at bar end -->
+    <!-- scale: max 2310 -> 760px ; 0.329 px per count -->
+    <!-- in · insertion 2310 -->
+    <g transform="translate(0,0)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">in <tspan fill="#7c89b8" font-size="16" font-weight="600">insertion</tspan></text>
+      <rect x="232" y="2" width="760" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="760" height="26" rx="6" fill="url(#bar)"/>
+      <text x="1004" y="22" fill="#c7d2fe" font-size="18">2,310</text>
+    </g>
+    <!-- about · container 1897 (ambiguity highlight) -->
+    <g transform="translate(0,40)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">about <tspan fill="#7c89b8" font-size="16" font-weight="600">container</tspan></text>
+      <rect x="232" y="2" width="624" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="624" height="26" rx="6" fill="url(#bar)"/>
+      <text x="868" y="22" fill="#c7d2fe" font-size="18">1,897</text>
+      <text x="936" y="22" fill="#fbbf24" font-size="16" font-weight="700">⚑ 3 tricks in 1 word</text>
+    </g>
+    <!-- out · anagram 886 -->
+    <g transform="translate(0,80)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">out <tspan fill="#7c89b8" font-size="16" font-weight="600">anagram</tspan></text>
+      <rect x="232" y="2" width="292" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="292" height="26" rx="6" fill="url(#bar)"/>
+      <text x="536" y="22" fill="#c7d2fe" font-size="18">886</text>
+    </g>
+    <!-- back · reversal 842 -->
+    <g transform="translate(0,120)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">back <tspan fill="#7c89b8" font-size="16" font-weight="600">reversal</tspan></text>
+      <rect x="232" y="2" width="277" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="277" height="26" rx="6" fill="url(#bar)"/>
+      <text x="521" y="22" fill="#c7d2fe" font-size="18">842</text>
+    </g>
+    <!-- reportedly · homophone 589 -->
+    <g transform="translate(0,160)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">reportedly <tspan fill="#7c89b8" font-size="16" font-weight="600">homophone</tspan></text>
+      <rect x="232" y="2" width="194" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="194" height="26" rx="6" fill="url(#bar)"/>
+      <text x="438" y="22" fill="#c7d2fe" font-size="18">589</text>
+    </g>
+    <!-- some · hidden 356 -->
+    <g transform="translate(0,200)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">some <tspan fill="#7c89b8" font-size="16" font-weight="600">hidden</tspan></text>
+      <rect x="232" y="2" width="117" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="117" height="26" rx="6" fill="url(#bar)"/>
+      <text x="361" y="22" fill="#c7d2fe" font-size="18">356</text>
+    </g>
+    <!-- regularly · alternation 264 -->
+    <g transform="translate(0,240)">
+      <text x="0" y="20" fill="#ffffff" font-size="21">regularly <tspan fill="#7c89b8" font-size="16" font-weight="600">alternation</tspan></text>
+      <rect x="232" y="2" width="87" height="26" rx="6" fill="#1e293b"/>
+      <rect x="232" y="2" width="87" height="26" rx="6" fill="url(#bar)"/>
+      <text x="331" y="22" fill="#c7d2fe" font-size="18">264</text>
+    </g>
+  </g>
+</svg>
