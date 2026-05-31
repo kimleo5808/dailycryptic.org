@@ -1,0 +1,1171 @@
+{
+  "_comment": "Plaintext source for per-clue structured analysis. Author here in plain English, then run `node scripts/apply-minute-cryptic-analysis.mjs` to base64-encode and merge into puzzles.json. Keyed by puzzle id.",
+  "analyses": [
+    {
+      "id": 1,
+      "definition": "The definition is \"Warning\" at the start of the clue. The answer ALERT is a noun meaning a warning or signal to stay watchful.",
+      "device": "This is an anagram. The indicator is \"mixed\" — it tells you to rearrange the letters of the fodder word LATER.",
+      "steps": [
+        "Take the fodder: LATER (5 letters: L, A, T, E, R).",
+        "\"mixed\" signals an anagram, so reorder those five letters.",
+        "Rearranged, L-A-T-E-R becomes A-L-E-R-T — ALERT."
+      ],
+      "note": "Don't be thrown by \"oddly\": it colours the surface reading (\"oddly mixed\") but isn't a second instruction. The one operative signal is \"mixed\", and the letter count (5) matches LATER exactly — a quick check that you have the right fodder."
+    },
+    {
+      "id": 2,
+      "definition": "The definition is \"Quiet\". SILENT means making or having no sound.",
+      "device": "This is an anagram, signalled by \"mixed\". The fodder is LISTEN, which has the same six letters as the answer.",
+      "steps": [
+        "Take the fodder: LISTEN (L, I, S, T, E, N).",
+        "\"mixed\" tells you to rearrange those six letters.",
+        "They reorder to spell SILENT."
+      ],
+      "note": "LISTEN and SILENT are a classic anagram pair — same letters, opposite ideas. Spotting a six-letter word sitting in the clue beside an anagram word like \"mixed\" is your cue to test it as fodder."
+    },
+    {
+      "id": 3,
+      "definition": "The definition is \"Plot\" — a garden plot, a patch of cultivated ground.",
+      "device": "This is an anagram of DANGER. The indicator is \"turned around\", here meaning the letters are shuffled.",
+      "steps": [
+        "Take the fodder: DANGER (D, A, N, G, E, R).",
+        "Rearrange the six letters.",
+        "They spell GARDEN."
+      ],
+      "note": "\"turned around\" can look like a reversal cue, but DANGER reversed is REGNAD — not a word. The letters instead rearrange to GARDEN, so treat \"turned around\" as an anagram signal here."
+    },
+    {
+      "id": 4,
+      "definition": "The definition is \"Paid back\" at the front. REPAID means paid back or reimbursed.",
+      "device": "This is an anagram. The indicator is \"altered\", which tells you to rearrange the fodder DIAPER.",
+      "steps": [
+        "Take the fodder: DIAPER (6 letters: D, I, A, P, E, R).",
+        "\"altered\" signals an anagram of those letters.",
+        "Reordered, DIAPER becomes REPAID."
+      ],
+      "note": "\"after ... is altered\" reads smoothly as a sentence, but only \"altered\" does cryptic work — \"after\" is surface glue. Confirm the fodder by length: DIAPER and REPAID are both six letters drawn from the same set."
+    },
+    {
+      "id": 5,
+      "definition": "The definition is \"Step\". To TREAD is to step or walk.",
+      "device": "This is a charade — you build the answer from parts placed in sequence. \"with T in front\" tells you where one part goes.",
+      "steps": [
+        "Start with the word given in the clue: READ.",
+        "\"T in front\" places the letter T before it.",
+        "T + READ joins to spell TREAD."
+      ],
+      "note": "Charade clues assemble pieces in reading order. \"in front\" is a position marker — it fixes T at the start rather than the end, which is what separates TREAD from a wrong build like READT."
+    },
+    {
+      "id": 6,
+      "definition": "The definition is \"Sketch\". An OUTLINE is a rough sketch or summary.",
+      "device": "This is a charade. The clue hands you the two parts directly: OUT + LINE.",
+      "steps": [
+        "Take the first part: OUT.",
+        "Add the second part: LINE.",
+        "OUT + LINE runs together as OUTLINE (3 + 4 = 7)."
+      ],
+      "note": "When a clue spells out \"X + Y\", the charade is doing the joining for you. The only checks left are order (OUT before LINE) and that the total length matches the (7) enumeration."
+    },
+    {
+      "id": 7,
+      "definition": "The definition is \"Core\" — the central or most important part. HEART carries that sense.",
+      "device": "This is an anagram, flagged by \"scrambled\". The fodder is EARTH.",
+      "steps": [
+        "Take the fodder: EARTH (E, A, R, T, H).",
+        "\"scrambled\" tells you to rearrange the five letters.",
+        "They spell HEART."
+      ],
+      "note": "EARTH and HEART share all five letters. \"Core\" defines by meaning, not by spelling — so look past the literal earth/heart link and trust the anagram mechanics."
+    },
+    {
+      "id": 8,
+      "definition": "The definition is \"Respond\". To REACT is to respond to something.",
+      "device": "This is an anagram. The indicator \"mixed\" acts on the fodder CRATE.",
+      "steps": [
+        "Take the fodder: CRATE (C, R, A, T, E).",
+        "Rearrange the five letters.",
+        "They spell REACT."
+      ],
+      "note": "CRATE, REACT, CATER and TRACE are all anagrams of one another. When several common words share a letter set, the definition (\"Respond\") is what pins down which one is wanted."
+    },
+    {
+      "id": 9,
+      "definition": "The definition is \"Dark period\". NIGHT is the dark part of the day.",
+      "device": "This is an anagram of THING, signalled by \"twisted\".",
+      "steps": [
+        "Take the fodder: THING (T, H, I, N, G).",
+        "\"twisted\" tells you to rearrange the five letters.",
+        "They spell NIGHT."
+      ],
+      "note": "The colon after \"Dark period\" cleanly separates the definition from the wordplay — a common layout. Everything before it defines; everything after it (THING twisted) builds."
+    },
+    {
+      "id": 10,
+      "definition": "The definition is \"Extra item\". A SPARE is something kept in reserve.",
+      "device": "This is an anagram. The indicator is \"mixed\" and the fodder is SPEAR.",
+      "steps": [
+        "Take the fodder: SPEAR (S, P, E, A, R).",
+        "Rearrange the five letters.",
+        "They spell SPARE."
+      ],
+      "note": "SPEAR and SPARE differ only by swapping two letters, so the anagram is gentle. The length (5) and the shared letters confirm you have the right fodder before you commit."
+    },
+    {
+      "id": 11,
+      "definition": "The definition is \"Post\". AIRMAIL is post carried by aircraft.",
+      "device": "This is a charade with the parts given outright: AIR + MAIL.",
+      "steps": [
+        "Take the first part: AIR.",
+        "Add the second part: MAIL.",
+        "AIR + MAIL spells AIRMAIL (3 + 4 = 7)."
+      ],
+      "note": "\"Post\" and \"AIR + MAIL\" both circle the same idea, which makes the surface read naturally. Trust the \"+\": it is telling you exactly how the answer is assembled."
+    },
+    {
+      "id": 12,
+      "definition": "The definition is \"Evening close\". SUNSET is the close of the day.",
+      "device": "This is a charade. The clue supplies the parts: SUN + SET.",
+      "steps": [
+        "Take the first part: SUN.",
+        "Add the second part: SET.",
+        "SUN + SET joins as SUNSET (3 + 3 = 6)."
+      ],
+      "note": "Both pieces relate to the surface meaning (the sun setting), which is good clue craft. The cryptic work is simply joining the two named words in order."
+    },
+    {
+      "id": 13,
+      "definition": "The definition is \"Night-bright\". Something MOONLIT is lit by the moon — bright at night.",
+      "device": "This is a charade, and the clue spells the recipe out: MOON + LIT, joined in order.",
+      "steps": [
+        "Take the first part: MOON (4 letters).",
+        "Add the second part: LIT (3 letters).",
+        "MOON + LIT runs together as MOONLIT (4 + 3 = 7)."
+      ],
+      "note": "When a clue hands you the parts with a literal \"+\", the charade does the assembling for you. The only check is order and length — MOON before LIT, totalling the seven letters the enumeration promises."
+    },
+    {
+      "id": 14,
+      "definition": "The definition is \"Free leaflet\". A HANDOUT is something given away, like a leaflet.",
+      "device": "This is a charade built from the stated parts: HAND + OUT.",
+      "steps": [
+        "Take the first part: HAND.",
+        "Add the second part: OUT.",
+        "HAND + OUT spells HANDOUT (4 + 3 = 7)."
+      ],
+      "note": "Note how \"hand out\" as a phrase already means to distribute — the surface and the wordplay point the same way, which is why charades like this read so smoothly."
+    },
+    {
+      "id": 15,
+      "definition": "The definition is \"Outer garment\". An OVERCOAT is a coat worn over other clothes.",
+      "device": "This is a charade. The two parts are given: OVER + COAT.",
+      "steps": [
+        "Take the first part: OVER.",
+        "Add the second part: COAT.",
+        "OVER + COAT spells OVERCOAT (4 + 4 = 8)."
+      ],
+      "note": "The parts even describe the thing — a coat worn over you. When a charade's pieces double as a near-definition, the (8) enumeration is your final confirmation."
+    },
+    {
+      "id": 16,
+      "definition": "The definition is \"Border\". A FRAME is the border around a picture or window.",
+      "device": "This is a container clue. The indicator \"holding\" means one piece wraps around another — FAME holds the letter R.",
+      "steps": [
+        "Take the outer word: FAME.",
+        "\"holding R\" drops R inside it.",
+        "Insert R after the F: F + R + AME spells FRAME."
+      ],
+      "note": "With container clues the work is finding where the inner letter lands. \"holding\" tells you R is enclosed, and testing the gap after the first letter gives the only reading that makes a real word — FRAME."
+    },
+    {
+      "id": 17,
+      "definition": "The definition is \"Small wood\". A GROVE is a small group of trees.",
+      "device": "This is a container/insertion clue. \"ROVE holding G\" places the letter G with the word ROVE.",
+      "steps": [
+        "Take the word ROVE.",
+        "Add G as the clue directs (\"holding G\").",
+        "G leads ROVE to spell GROVE (1 + 4 = 5)."
+      ],
+      "note": "Here the inserted G settles at the front, so the build reads G + ROVE. Always test the candidate against the (5) enumeration and the definition \"small wood\" to confirm the placement."
+    },
+    {
+      "id": 18,
+      "definition": "Both halves are definitions. \"Leap\" defines SPRING (to spring is to leap) and \"season\" defines SPRING (the time of year).",
+      "device": "This is a double definition — there is no wordplay to unpick. The word \"and\" simply links two separate meanings of the same answer.",
+      "steps": [
+        "Read \"Leap\" as a definition: SPRING means to jump.",
+        "Read \"season\" as a definition: SPRING is a season.",
+        "One six-letter word satisfies both — SPRING."
+      ],
+      "note": "Double definitions feel odd at first because nothing is spelled out letter by letter. The trick is to find a single word that wears two hats; the (6) enumeration confirms the fit."
+    },
+    {
+      "id": 19,
+      "definition": "Two definitions point to one word: \"Throw\" (to pitch a ball) and \"musical tone\" (the pitch of a note).",
+      "device": "This is a double definition. There is no anagram or hidden trick — just two meanings of PITCH side by side.",
+      "steps": [
+        "Read \"Throw\": to PITCH is to throw.",
+        "Read \"musical tone\": PITCH is how high or low a note sounds.",
+        "The shared answer is PITCH."
+      ],
+      "note": "\"or\" between the two senses is a typical double-definition link. When neither half looks like wordplay, ask which single word can mean both — that is the whole puzzle."
+    },
+    {
+      "id": 20,
+      "definition": "Two definitions: \"Intelligent\" and \"piercing\". Both describe SHARP.",
+      "device": "This is a double definition. SHARP means clever (intelligent) and also keen-edged or piercing.",
+      "steps": [
+        "Read \"Intelligent\": a SHARP mind is a clever one.",
+        "Read \"piercing\": a SHARP point pierces.",
+        "One word, SHARP, covers both."
+      ],
+      "note": "Adjective double definitions are common — look for a word with both a figurative sense (clever) and a literal one (keen-edged). The (5) length narrows the field."
+    },
+    {
+      "id": 21,
+      "definition": "The definition is \"farm building\". A BARN is a farm building.",
+      "device": "This is an insertion clue. \"Ban with R inserted\" puts the letter R inside the word BAN.",
+      "steps": [
+        "Take BAN.",
+        "Insert R as directed.",
+        "B + AR + N — that is, BA(R)N — spells BARN (4)."
+      ],
+      "note": "\"inserted\" is the container signal. The only question is where R goes; slotting it before the final N gives the one real word, BARN."
+    },
+    {
+      "id": 22,
+      "definition": "The definition is \"Aircraft\". A PLANE is an aircraft.",
+      "device": "This is a container clue. \"PANE containing L\" puts the letter L inside PANE.",
+      "steps": [
+        "Take the outer word: PANE.",
+        "\"containing L\" drops L inside.",
+        "Place L after the P: P(L)ANE spells PLANE (5)."
+      ],
+      "note": "\"containing\" marks PANE as the shell and L as the filling. Test the insertion point against the (5) enumeration — only L after the first letter yields a word."
+    },
+    {
+      "id": 23,
+      "definition": "The definition is \"Snare\". A TRAP is a snare for catching animals.",
+      "device": "This is a container clue. \"TAP around R\" wraps the word TAP around the letter R.",
+      "steps": [
+        "Take TAP.",
+        "\"around R\" puts R inside it.",
+        "T + R + AP — TRAP (4)."
+      ],
+      "note": "\"around\" is the container indicator pointing the other way: TAP is on the outside, R on the inside. Either phrasing (\"holding\", \"around\", \"containing\") means the same enclosure."
+    },
+    {
+      "id": 24,
+      "definition": "The definition is \"Defeat\". To BEAT someone is to defeat them.",
+      "device": "This is a container clue. \"BAT holding E\" places the letter E inside BAT.",
+      "steps": [
+        "Take the outer word: BAT.",
+        "\"holding E\" drops E inside.",
+        "B + E + AT spells BEAT (4)."
+      ],
+      "note": "Short container clues hinge on a single insertion point. With BAT and E, slotting E after the B is the only split that makes a word — BEAT."
+    },
+    {
+      "id": 25,
+      "definition": "The definition is \"Coast\". The SHORE is the coast where land meets sea.",
+      "device": "This is a container clue. \"SHOE holding R\" inserts the letter R into SHOE.",
+      "steps": [
+        "Take the outer word: SHOE.",
+        "\"holding R\" drops R inside.",
+        "Place R after SHO: SHO(R)E spells SHORE (5)."
+      ],
+      "note": "Here R lands near the end rather than the start, so test more than one gap. SHO + R + E is the split that produces the real word matching \"coast\"."
+    },
+    {
+      "id": 26,
+      "definition": "Two definitions: \"Dog's cry\" (a bark) and \"tree covering\" (bark). Both are BARK.",
+      "device": "This is a double definition. BARK is the noise a dog makes and the outer layer of a tree.",
+      "steps": [
+        "Read \"Dog's cry\": a dog gives a BARK.",
+        "Read \"tree covering\": BARK covers a tree trunk.",
+        "One word, BARK, fits both."
+      ],
+      "note": "Double definitions often pair an everyday sense with a more concrete one. The two meanings of BARK are unrelated in origin, which is exactly what makes the clue satisfying."
+    },
+    {
+      "id": 27,
+      "definition": "Two definitions: \"Close tightly\" (to seal) and \"sea mammal\" (a seal). Both are SEAL.",
+      "device": "This is a double definition. To SEAL is to fasten shut; a SEAL is also a marine animal.",
+      "steps": [
+        "Read \"Close tightly\": to SEAL an envelope.",
+        "Read \"sea mammal\": a SEAL on the rocks.",
+        "The shared answer is SEAL."
+      ],
+      "note": "Verb-then-noun double definitions are very common. Try reading the first sense as an action and the second as a thing — SEAL switches comfortably between the two."
+    },
+    {
+      "id": 28,
+      "definition": "Two definitions: \"Contest\" (a match) and \"pair up\" (to match). Both give MATCH.",
+      "device": "This is a double definition. A MATCH is a contest, and to MATCH is to pair things together.",
+      "steps": [
+        "Read \"Contest\": a boxing MATCH.",
+        "Read \"pair up\": to MATCH socks.",
+        "One word, MATCH, covers both."
+      ],
+      "note": "Ignore the third meaning (a match you strike) — it is a decoy your mind may offer. The clue only needs the two senses it actually gives: contest and pair up."
+    },
+    {
+      "id": 29,
+      "definition": "Two definitions: \"Alphabet character\" (a letter) and \"posted message\" (a letter). Both are LETTER.",
+      "device": "This is a double definition. A LETTER is a symbol like A or B, and also a written message sent by post.",
+      "steps": [
+        "Read \"Alphabet character\": the LETTER A.",
+        "Read \"posted message\": a LETTER in the mail.",
+        "The shared answer is LETTER."
+      ],
+      "note": "Same spelling, two everyday meanings — the hallmark of a double definition. The (6) enumeration rules out shorter candidates and confirms LETTER."
+    },
+    {
+      "id": 30,
+      "definition": "Two definitions: \"Association\" (a club) and \"heavy stick\" (a club). Both are CLUB.",
+      "device": "This is a double definition. A CLUB is a society you join and also a blunt weapon.",
+      "steps": [
+        "Read \"Association\": a tennis CLUB.",
+        "Read \"heavy stick\": swung a CLUB.",
+        "One word, CLUB, fits both."
+      ],
+      "note": "The two senses sit far apart in meaning, which is the fun of it. With only four letters and two clear definitions, CLUB is quickly confirmed."
+    },
+    {
+      "id": 31,
+      "definition": "Two definitions: \"Heavenly being\" (an angel) and \"startup investor\" (an angel investor). Both are ANGEL.",
+      "device": "This is a double definition. ANGEL is a celestial figure and, in finance, an early backer of a company.",
+      "steps": [
+        "Read \"Heavenly being\": an ANGEL with wings.",
+        "Read \"startup investor\": an ANGEL funds a new venture.",
+        "The shared answer is ANGEL."
+      ],
+      "note": "The modern \"investor\" sense is the harder half. Double definitions often lean on a specialist meaning — keep a mental list of words that have picked up business or tech senses."
+    },
+    {
+      "id": 32,
+      "definition": "Two definitions: \"Praise\" (to credit someone) and \"trust for later payment\" (credit). Both are CREDIT.",
+      "device": "This is a double definition. To CREDIT is to acknowledge or praise; CREDIT is also buying now and paying later.",
+      "steps": [
+        "Read \"Praise\": we CREDIT her with the idea.",
+        "Read \"trust for later payment\": bought on CREDIT.",
+        "One word, CREDIT, covers both."
+      ],
+      "note": "Both senses share a root (giving someone their due), so they feel related — a softer double definition than pairs like CLUB. The (6) length seals it."
+    },
+    {
+      "id": 33,
+      "definition": "Two definitions: \"Supporter\" and \"close companion\". Both describe a FRIEND.",
+      "device": "This is a double definition. A FRIEND supports you and is also someone you are close to.",
+      "steps": [
+        "Read \"Supporter\": a FRIEND backs you up.",
+        "Read \"close companion\": an old FRIEND.",
+        "The shared answer is FRIEND."
+      ],
+      "note": "When two definitions are near-synonyms, the clue is gentle but still needs a single word that fits both naturally — FRIEND does, in six letters."
+    },
+    {
+      "id": 34,
+      "definition": "The definition is \"Hear\". To LISTEN is to hear attentively.",
+      "device": "This is an anagram, signalled by \"rearranged\", working on the fodder SILENT.",
+      "steps": [
+        "Take the fodder: SILENT (S, I, L, E, N, T).",
+        "\"rearranged\" tells you to reorder the six letters.",
+        "They spell LISTEN."
+      ],
+      "note": "This is the mirror of puzzle #2 — SILENT and LISTEN swap roles as fodder and answer. Recognising recurring anagram pairs speeds up future solves."
+    },
+    {
+      "id": 35,
+      "definition": "The definition is \"Shape\". A TRIANGLE is a three-sided shape.",
+      "device": "This is an anagram of INTEGRAL, signalled by \"mixed\". Both words share the same eight letters.",
+      "steps": [
+        "Take the fodder: INTEGRAL (I, N, T, E, G, R, A, L).",
+        "Rearrange the eight letters.",
+        "They spell TRIANGLE."
+      ],
+      "note": "Longer fodder makes the anagram harder to see at a glance. Counting letters (8) and checking they match between INTEGRAL and TRIANGLE is the reliable way to confirm."
+    },
+    {
+      "id": 36,
+      "definition": "The definition is \"Maker\". A CREATOR is one who makes or creates.",
+      "device": "This is an anagram. The indicator \"reorganized\" acts on the fodder REACTOR.",
+      "steps": [
+        "Take the fodder: REACTOR (R, E, A, C, T, O, R).",
+        "Reorder the seven letters.",
+        "They spell CREATOR."
+      ],
+      "note": "REACTOR and CREATOR share all seven letters, including the two R's. With repeated letters, double-check that the counts match — two R's in, two R's out."
+    },
+    {
+      "id": 37,
+      "definition": "The definition is \"Flight hub\". An AIRPORT is where flights depart and arrive.",
+      "device": "This is a charade. The parts are given: AIR + PORT.",
+      "steps": [
+        "Take the first part: AIR.",
+        "Add the second part: PORT.",
+        "AIR + PORT spells AIRPORT (3 + 4 = 7)."
+      ],
+      "note": "A \"port\" is a place ships arrive, so AIR + PORT neatly evokes an air-travel hub. The wordplay and the definition reinforce each other."
+    },
+    {
+      "id": 38,
+      "definition": "The definition is \"Arc of colours\". A RAINBOW is an arc of colour in the sky.",
+      "device": "This is a charade. The clue gives the parts: RAIN + BOW.",
+      "steps": [
+        "Take the first part: RAIN.",
+        "Add the second part: BOW.",
+        "RAIN + BOW spells RAINBOW (4 + 3 = 7)."
+      ],
+      "note": "Both parts hint at the answer — rain and a bow-shaped arc. The only cryptic step is joining them in the stated order to total seven letters."
+    },
+    {
+      "id": 39,
+      "definition": "The definition is \"Morning meal\". BREAKFAST is the first meal of the day.",
+      "device": "This is a charade with the parts supplied: BREAK + FAST.",
+      "steps": [
+        "Take the first part: BREAK.",
+        "Add the second part: FAST.",
+        "BREAK + FAST spells BREAKFAST (5 + 4 = 9)."
+      ],
+      "note": "There is a hidden logic — breakfast literally breaks the overnight fast. Charades often reward you with that kind of etymological wink once the parts click."
+    },
+    {
+      "id": 40,
+      "definition": "The definition is \"Dawn\". DAYBREAK is the first light of morning.",
+      "device": "This is a charade. The parts are given outright: DAY + BREAK.",
+      "steps": [
+        "Take the first part: DAY.",
+        "Add the second part: BREAK.",
+        "DAY + BREAK spells DAYBREAK (3 + 5 = 8)."
+      ],
+      "note": "\"Break\" appears as a part here and in #39, but the answers differ entirely — proof that the surrounding piece, not the shared word, decides the solution."
+    },
+    {
+      "id": 41,
+      "definition": "The definition is \"Editorial office\". A NEWSROOM is where news is produced.",
+      "device": "This is a charade. The clue names the parts: NEWS + ROOM.",
+      "steps": [
+        "Take the first part: NEWS.",
+        "Add the second part: ROOM.",
+        "NEWS + ROOM spells NEWSROOM (4 + 4 = 8)."
+      ],
+      "note": "Compound-word charades like this are the friendliest kind: the answer is just the two named pieces written as one. Confirm with the (8) enumeration."
+    },
+    {
+      "id": 42,
+      "definition": "The definition is \"Support\". A BRACKET is a support fixed to a wall.",
+      "device": "This is a container clue. \"BET holding RACK\" places RACK inside BET.",
+      "steps": [
+        "Take the outer word: BET.",
+        "\"holding RACK\" drops RACK inside.",
+        "Split BET and insert RACK: B + RACK + ET spells BRACKET (7)."
+      ],
+      "note": "Here the inserted piece is a whole word (RACK), not a single letter. The container shell BET breaks after B and resumes with ET, wrapping RACK in the middle."
+    },
+    {
+      "id": 43,
+      "definition": "The definition is \"Neckwear\". A SCARF is worn around the neck.",
+      "device": "This is a charade. The parts are SCAR + F.",
+      "steps": [
+        "Take the first part: SCAR.",
+        "Add the letter: F.",
+        "SCAR + F spells SCARF (4 + 1 = 5)."
+      ],
+      "note": "Single-letter charades just tack a letter onto a word. SCAR plus a trailing F gives the neckwear — short, but it still rewards spotting the SCAR inside the answer."
+    },
+    {
+      "id": 44,
+      "definition": "The definition is \"World\". A PLANET is a world orbiting a star.",
+      "device": "This is a charade. The parts are PLANE + T.",
+      "steps": [
+        "Take the first part: PLANE.",
+        "Add the letter: T.",
+        "PLANE + T spells PLANET (5 + 1 = 6)."
+      ],
+      "note": "Watch how PLANE (an aircraft, as in #22) becomes part of a different answer here. The same string is reused across clue types — context decides its role."
+    },
+    {
+      "id": 45,
+      "definition": "The definition is \"Vapour\". STEAM is the vapour from boiling water.",
+      "device": "This is an anagram of MEATS, signalled by \"cooked\".",
+      "steps": [
+        "Take the fodder: MEATS (M, E, A, T, S).",
+        "\"cooked\" tells you to rearrange the five letters.",
+        "They spell STEAM."
+      ],
+      "note": "\"cooked\" is a tasty anagram indicator that fits the surface (cooking meats). Many anagram cues are verbs of disturbance — cooked, mixed, scrambled, twisted, altered."
+    },
+    {
+      "id": 46,
+      "definition": "The definition is \"Flash\". A SPARK is a flash of light or electricity.",
+      "device": "This is a charade. \"with S in front\" puts the letter S before the word PARK.",
+      "steps": [
+        "Start with PARK.",
+        "\"S in front\" adds S at the start.",
+        "S + PARK spells SPARK (1 + 4 = 5)."
+      ],
+      "note": "\"in front\" fixes S at the beginning. Compare with #5 (TREAD), where a letter also led the word — the position word is what tells you front versus back."
+    },
+    {
+      "id": 47,
+      "definition": "Two definitions: \"Spy\" (a mole) and \"burrowing animal\" (a mole). Both are MOLE.",
+      "device": "This is a double definition. A MOLE is a secret agent planted inside an organisation, and also a small digging mammal.",
+      "steps": [
+        "Read \"Spy\": a MOLE inside the agency.",
+        "Read \"burrowing animal\": a MOLE in the garden.",
+        "One word, MOLE, fits both."
+      ],
+      "note": "The spy sense actually grew out of the animal one — a hidden burrower. Double definitions like this feel clever precisely because the meanings are quietly linked."
+    },
+    {
+      "id": 48,
+      "definition": "Two definitions: \"Machine for lifting\" (a crane) and \"tall bird\" (a crane). Both are CRANE.",
+      "device": "This is a double definition. A CRANE lifts heavy loads on a building site, and is also a long-legged wading bird.",
+      "steps": [
+        "Read \"Machine for lifting\": the CRANE on site.",
+        "Read \"tall bird\": a CRANE by the water.",
+        "The shared answer is CRANE."
+      ],
+      "note": "The machine was named after the bird's long neck. Spotting that the two senses share a shape (tall, reaching) is a nice confirmation you have the right word."
+    },
+    {
+      "id": 49,
+      "definition": "Two definitions: \"Observe\" (to watch) and \"timepiece\" (a watch). Both give WATCH.",
+      "device": "This is a double definition. To WATCH is to observe; a WATCH is worn on the wrist.",
+      "steps": [
+        "Read \"Observe\": WATCH the road.",
+        "Read \"timepiece\": check your WATCH.",
+        "One word, WATCH, covers both."
+      ],
+      "note": "A clean verb/noun double definition. When the first word is an action and the second is an object, look for a single word that does both jobs."
+    },
+    {
+      "id": 50,
+      "definition": "Two definitions: \"Fruit\" (a date) and \"appointment day\" (a date). Both are DATE.",
+      "device": "This is a double definition. A DATE is a sweet fruit and also a planned meeting or calendar day.",
+      "steps": [
+        "Read \"Fruit\": a sticky DATE.",
+        "Read \"appointment day\": a dinner DATE.",
+        "The shared answer is DATE."
+      ],
+      "note": "Four letters, two very different senses — quick to solve once you stop expecting wordplay. \"or\" is your signal that two plain definitions are in play."
+    },
+    {
+      "id": 51,
+      "definition": "The definition is \"Wordy\". Something VERBOSE uses too many words.",
+      "device": "This is an anagram, flagged by \"scrambled\", working on the fodder OBSERVE.",
+      "steps": [
+        "Take the fodder: OBSERVE (O, B, S, E, R, V, E).",
+        "Rearrange the seven letters.",
+        "They spell VERBOSE."
+      ],
+      "note": "OBSERVE and VERBOSE share two E's; with repeated letters, confirm the counts match. The definition \"wordy\" is unrelated to observing, so trust the anagram, not the surface."
+    },
+    {
+      "id": 52,
+      "definition": "The definition is \"Changed\". ALTERED means modified or changed.",
+      "device": "This is an anagram. The indicator \"upset\" acts on the fodder RELATED.",
+      "steps": [
+        "Take the fodder: RELATED (R, E, L, A, T, E, D).",
+        "\"upset\" tells you to rearrange the seven letters.",
+        "They spell ALTERED."
+      ],
+      "note": "Notice the clue is almost self-describing: \"altered\" is both the answer and what anagrams do. The actual indicator is \"upset\" — don't mistake the definition for the cue."
+    },
+    {
+      "id": 53,
+      "definition": "The definition is \"Fraud\". A CHEATER commits fraud or deception.",
+      "device": "This is an anagram of TEACHER, signalled by \"in confusion\".",
+      "steps": [
+        "Take the fodder: TEACHER (T, E, A, C, H, E, R).",
+        "Rearrange the seven letters.",
+        "They spell CHEATER."
+      ],
+      "note": "There is a sly surface joke — turning a TEACHER into a CHEATER. Both have two E's, so match the letter counts to be sure the anagram is exact."
+    },
+    {
+      "id": 54,
+      "definition": "The definition is \"Accounts\" — stories or reports. STORIES are accounts of events.",
+      "device": "This is an anagram. The indicator \"turns wild\" works on the fodder RIOTERS.",
+      "steps": [
+        "Take the fodder: RIOTERS (R, I, O, T, E, R, S).",
+        "Rearrange the seven letters.",
+        "They spell STORIES."
+      ],
+      "note": "\"turns wild\" suits the surface (rioters running wild) while signalling the anagram. RIOTERS and STORIES both carry two R's — check the counts to confirm."
+    },
+    {
+      "id": 55,
+      "definition": "The definition is \"Recover\". To REGAIN is to get something back.",
+      "device": "This is a charade. The parts are given: RE + GAIN.",
+      "steps": [
+        "Take the first part: RE.",
+        "Add the second part: GAIN.",
+        "RE + GAIN spells REGAIN (2 + 4 = 6)."
+      ],
+      "note": "The prefix RE- (again) plus GAIN literally builds the meaning \"gain again\" — recover. Short leading particles like RE, IN or UP are common charade pieces."
+    },
+    {
+      "id": 56,
+      "definition": "The definition is \"Writing pad\". A NOTEPAD is a pad of paper for notes.",
+      "device": "This is a charade. The clue names the parts: NOTE + PAD.",
+      "steps": [
+        "Take the first part: NOTE.",
+        "Add the second part: PAD.",
+        "NOTE + PAD spells NOTEPAD (4 + 3 = 7)."
+      ],
+      "note": "Both pieces describe the object, so the surface and the build agree. Confirm the join with the (7) enumeration and you are done."
+    },
+    {
+      "id": 57,
+      "definition": "The definition is \"Carrier\". An AIRLINE is a company that carries passengers by air.",
+      "device": "This is a charade. The parts are AIR + LINE.",
+      "steps": [
+        "Take the first part: AIR.",
+        "Add the second part: LINE.",
+        "AIR + LINE spells AIRLINE (3 + 4 = 7)."
+      ],
+      "note": "AIR shows up in several charades (AIRMAIL, AIRPORT, AIRLINE). The partner word is what changes the answer — here LINE, in the sense of a transport line."
+    },
+    {
+      "id": 58,
+      "definition": "The definition is \"Plant\". A SUNFLOWER is a tall flowering plant.",
+      "device": "This is a charade. The clue gives the parts: SUN + FLOWER.",
+      "steps": [
+        "Take the first part: SUN.",
+        "Add the second part: FLOWER.",
+        "SUN + FLOWER spells SUNFLOWER (3 + 6 = 9)."
+      ],
+      "note": "The name even describes the plant that turns toward the sun. When a compound word is also its own description, the charade almost solves itself."
+    },
+    {
+      "id": 59,
+      "definition": "The definition is \"Sea creature\". A STARFISH is a star-shaped marine animal.",
+      "device": "This is a charade. The parts are STAR + FISH.",
+      "steps": [
+        "Take the first part: STAR.",
+        "Add the second part: FISH.",
+        "STAR + FISH spells STARFISH (4 + 4 = 8)."
+      ],
+      "note": "STAR is a frequent charade piece (see STARLIGHT, STARBOARD). Pair it with the right partner — here FISH — and check the total against the (8) enumeration."
+    },
+    {
+      "id": 60,
+      "definition": "The definition is \"Shore border\". A COASTLINE is the outline of a coast.",
+      "device": "This is a charade. The clue names the parts: COAST + LINE.",
+      "steps": [
+        "Take the first part: COAST.",
+        "Add the second part: LINE.",
+        "COAST + LINE spells COASTLINE (5 + 4 = 9)."
+      ],
+      "note": "LINE is doing charade duty again (as in AIRLINE, HEADLINE). The leading word sets the meaning; LINE just completes the compound."
+    },
+    {
+      "id": 61,
+      "definition": "The definition is \"Reference mark\". A FOOTNOTE is a note at the foot of a page.",
+      "device": "This is a charade. The parts are FOOT + NOTE.",
+      "steps": [
+        "Take the first part: FOOT.",
+        "Add the second part: NOTE.",
+        "FOOT + NOTE spells FOOTNOTE (4 + 4 = 8)."
+      ],
+      "note": "The build mirrors the meaning — a note at the foot. NOTE also appeared in NOTEPAD (#56); the partner word, FOOT, gives this one its sense."
+    },
+    {
+      "id": 62,
+      "definition": "The definition is \"Night glow\". MOONLIGHT is the light of the moon at night.",
+      "device": "This is a charade. The clue supplies the parts: MOON + LIGHT.",
+      "steps": [
+        "Take the first part: MOON.",
+        "Add the second part: LIGHT.",
+        "MOON + LIGHT spells MOONLIGHT (4 + 5 = 9)."
+      ],
+      "note": "MOON anchors a small family of charades (MOONLIT, MOONBEAM, MOONRISE, MOONLIGHT). Read the second part carefully — it is what distinguishes them."
+    },
+    {
+      "id": 63,
+      "definition": "The definition is \"Begin\". To START is to begin.",
+      "device": "This is a charade. \"TART follows S\" places TART after the letter S.",
+      "steps": [
+        "Take the letter S.",
+        "\"TART follows S\" puts TART after it.",
+        "S + TART spells START (1 + 4 = 5)."
+      ],
+      "note": "\"follows\" sets the order: the thing that follows comes second. So S leads and TART trails — S + TART, not TART + S."
+    },
+    {
+      "id": 64,
+      "definition": "The definition is \"Gaze\". To STARE is to gaze fixedly.",
+      "device": "This is an anagram of TEARS, signalled by \"mixed\".",
+      "steps": [
+        "Take the fodder: TEARS (T, E, A, R, S).",
+        "Rearrange the five letters.",
+        "They spell STARE."
+      ],
+      "note": "TEARS, STARE, RATES and TARES are all anagrams of one another. The definition \"gaze\" is what selects STARE from that family."
+    },
+    {
+      "id": 65,
+      "definition": "The definition is \"Frighten\". To SCARE is to frighten.",
+      "device": "This is a charade. The parts are S + CARE.",
+      "steps": [
+        "Take the letter S.",
+        "Add the word CARE.",
+        "S + CARE spells SCARE (1 + 4 = 5)."
+      ],
+      "note": "A single leading letter plus a word. Note CARE reappears as the answer in #85 — the same string plays different roles depending on the clue."
+    },
+    {
+      "id": 66,
+      "definition": "The definition is \"Bleak\". STARK means bare, bleak or harsh.",
+      "device": "This is a charade. The parts are STAR + K.",
+      "steps": [
+        "Take the first part: STAR.",
+        "Add the letter: K.",
+        "STAR + K spells STARK (4 + 1 = 5)."
+      ],
+      "note": "STAR plus a trailing K. Compare with the STAR + word charades (#59, #81) — here the add-on is just a single letter, giving a shorter answer."
+    },
+    {
+      "id": 67,
+      "definition": "Two definitions: \"Student\" (a pupil) and \"center of an eye\" (the pupil). Both are PUPIL.",
+      "device": "This is a double definition. A PUPIL is a learner, and also the dark opening at the centre of the eye.",
+      "steps": [
+        "Read \"Student\": a school PUPIL.",
+        "Read \"center of an eye\": the PUPIL widens in the dark.",
+        "The shared answer is PUPIL."
+      ],
+      "note": "Both senses trace back to a word for a small thing — including the tiny reflection seen in someone's eye. A neat link hiding behind an everyday word."
+    },
+    {
+      "id": 68,
+      "definition": "Two definitions: \"Flying mammal\" (a bat) and \"strike\" (to bat). Both give BAT.",
+      "device": "This is a double definition. A BAT is a nocturnal flying mammal, and to BAT is to hit, as in cricket or baseball.",
+      "steps": [
+        "Read \"Flying mammal\": a BAT at dusk.",
+        "Read \"strike\": BAT the ball.",
+        "One word, BAT, covers both."
+      ],
+      "note": "Just three letters, so the (3) enumeration alone nearly gives it away. BAT was also a container shell in #24 — the same letters, a different job."
+    },
+    {
+      "id": 69,
+      "definition": "Two definitions: \"Tie\" (a drawn game) and \"sketch\" (to draw). Both are DRAW.",
+      "device": "This is a double definition. A DRAW is a tied result; to DRAW is to make a sketch.",
+      "steps": [
+        "Read \"Tie\": the match ended in a DRAW.",
+        "Read \"sketch\": DRAW a picture.",
+        "The shared answer is DRAW."
+      ],
+      "note": "A noun sense (a tie) beside a verb sense (to sketch). When the two definitions belong to different parts of speech, that contrast is itself a hint they are a double definition."
+    },
+    {
+      "id": 70,
+      "definition": "Two definitions: \"Correct\" (right) and \"entitlement\" (a right). Both give RIGHT.",
+      "device": "This is a double definition. RIGHT means correct, and a RIGHT is something you are entitled to.",
+      "steps": [
+        "Read \"Correct\": the RIGHT answer.",
+        "Read \"entitlement\": your legal RIGHT.",
+        "One word, RIGHT, fits both."
+      ],
+      "note": "Both senses share the idea of what is proper or due. The (5) enumeration and the two clean definitions confirm RIGHT without any letter-level work."
+    },
+    {
+      "id": 71,
+      "definition": "The definition is \"Box\". A CRATE is a wooden box for shipping goods.",
+      "device": "This is an anagram of REACT, signalled by \"mixed\".",
+      "steps": [
+        "Take the fodder: REACT (R, E, A, C, T).",
+        "Rearrange the five letters.",
+        "They spell CRATE."
+      ],
+      "note": "This reverses #8, where CRATE was the fodder and REACT the answer. The same five-letter set keeps recurring — REACT, CRATE, CATER, TRACE — so the definition is decisive."
+    },
+    {
+      "id": 72,
+      "definition": "The definition is \"Resin\". RESIN is a sticky substance from plants.",
+      "device": "This is an anagram. The indicator \"mixed\" works on the fodder RINSE.",
+      "steps": [
+        "Take the fodder: RINSE (R, I, N, S, E).",
+        "Rearrange the five letters.",
+        "They spell RESIN."
+      ],
+      "note": "RINSE and RESIN use the same five letters. A near-miss like this — where the answer looks almost like the fodder — is a quick sign you have the anagram right."
+    },
+    {
+      "id": 73,
+      "definition": "The definition is \"Provide food\". To CATER is to provide food for an event.",
+      "device": "This is an anagram of CRATE, signalled by \"mixed\".",
+      "steps": [
+        "Take the fodder: CRATE (C, R, A, T, E).",
+        "Rearrange the five letters.",
+        "They spell CATER."
+      ],
+      "note": "Same letters as #8 and #71 again — REACT, CRATE, CATER all live in one anagram family. \"Provide food\" is the tag that singles out CATER this time."
+    },
+    {
+      "id": 74,
+      "definition": "The definition is \"Service member\". An AIRMAN serves in an air force.",
+      "device": "This is a charade. The parts are AIR + MAN.",
+      "steps": [
+        "Take the first part: AIR.",
+        "Add the second part: MAN.",
+        "AIR + MAN spells AIRMAN (3 + 3 = 6)."
+      ],
+      "note": "Another AIR-led charade. Lining up the AIR family (AIRMAIL, AIRPORT, AIRLINE, AIRMAN) shows how one common piece supports many answers."
+    },
+    {
+      "id": 75,
+      "definition": "The definition is \"Store for readers\". A BOOKSHOP sells books.",
+      "device": "This is a charade. The clue names the parts: BOOK + SHOP.",
+      "steps": [
+        "Take the first part: BOOK.",
+        "Add the second part: SHOP.",
+        "BOOK + SHOP spells BOOKSHOP (4 + 4 = 8)."
+      ],
+      "note": "A straightforward compound charade — the two named words written as one. The (8) enumeration is the only check you need."
+    },
+    {
+      "id": 76,
+      "definition": "The definition is \"Title line\". A HEADLINE is the title at the top of a news story.",
+      "device": "This is a charade. The parts are HEAD + LINE.",
+      "steps": [
+        "Take the first part: HEAD.",
+        "Add the second part: LINE.",
+        "HEAD + LINE spells HEADLINE (4 + 4 = 8)."
+      ],
+      "note": "HEAD (top) + LINE neatly describes a line at the head of a page. LINE is a recurring partner — the leading word is what gives each answer its meaning."
+    },
+    {
+      "id": 77,
+      "definition": "The definition is \"Coastal area\". The SEASIDE is the area beside the sea.",
+      "device": "This is a charade. The clue gives the parts: SEA + SIDE.",
+      "steps": [
+        "Take the first part: SEA.",
+        "Add the second part: SIDE.",
+        "SEA + SIDE spells SEASIDE (3 + 4 = 7)."
+      ],
+      "note": "Both pieces describe the place — the side by the sea. When a charade's parts also define the answer, you get confirmation for free."
+    },
+    {
+      "id": 78,
+      "definition": "The definition is \"Night ray\". A MOONBEAM is a ray of moonlight.",
+      "device": "This is a charade. The parts are MOON + BEAM.",
+      "steps": [
+        "Take the first part: MOON.",
+        "Add the second part: BEAM.",
+        "MOON + BEAM spells MOONBEAM (4 + 4 = 8)."
+      ],
+      "note": "Another member of the MOON family. The partner word BEAM (a ray) sets this answer apart from MOONLIGHT, MOONLIT and MOONRISE."
+    },
+    {
+      "id": 79,
+      "definition": "The definition is \"Greeting\". A HANDSHAKE is a greeting made by clasping hands.",
+      "device": "This is a charade. The clue names the parts: HAND + SHAKE.",
+      "steps": [
+        "Take the first part: HAND.",
+        "Add the second part: SHAKE.",
+        "HAND + SHAKE spells HANDSHAKE (4 + 5 = 9)."
+      ],
+      "note": "The build describes the action — shaking hands. HAND also appears in HANDOUT (#14); pairing it with SHAKE produces this greeting."
+    },
+    {
+      "id": 80,
+      "definition": "The definition is \"Emergency support\". A LIFELINE is something that provides vital help.",
+      "device": "This is a charade. The parts are LIFE + LINE.",
+      "steps": [
+        "Take the first part: LIFE.",
+        "Add the second part: LINE.",
+        "LIFE + LINE spells LIFELINE (4 + 4 = 8)."
+      ],
+      "note": "LINE closes out yet another charade. The metaphor — a line that saves a life — matches the definition \"emergency support\" exactly."
+    },
+    {
+      "id": 81,
+      "definition": "The definition is \"Night glow\". STARLIGHT is the light given by the stars.",
+      "device": "This is a charade. The clue supplies the parts: STAR + LIGHT.",
+      "steps": [
+        "Take the first part: STAR.",
+        "Add the second part: LIGHT.",
+        "STAR + LIGHT spells STARLIGHT (4 + 5 = 9)."
+      ],
+      "note": "Compare with MOONLIGHT (#62): same LIGHT ending, different source. The first part — STAR versus MOON — is what changes the answer."
+    },
+    {
+      "id": 82,
+      "definition": "The definition is \"Entrance mat\". A DOORMAT lies at a doorway for wiping feet.",
+      "device": "This is a charade. The parts are DOOR + MAT.",
+      "steps": [
+        "Take the first part: DOOR.",
+        "Add the second part: MAT.",
+        "DOOR + MAT spells DOORMAT (4 + 3 = 7)."
+      ],
+      "note": "A literal compound — a mat at the door. The two named pieces written together give the answer, confirmed by the (7) enumeration."
+    },
+    {
+      "id": 83,
+      "definition": "The definition is \"Drinking vessel\". A TEACUP is a cup for drinking tea.",
+      "device": "This is a charade. The clue names the parts: TEA + CUP.",
+      "steps": [
+        "Take the first part: TEA.",
+        "Add the second part: CUP.",
+        "TEA + CUP spells TEACUP (3 + 3 = 6)."
+      ],
+      "note": "TEA leads a small family (TEACUP, TEAHOUSE). The partner word — CUP here — pins the meaning. Both pieces relate to the surface, which reads naturally."
+    },
+    {
+      "id": 84,
+      "definition": "The definition is \"Play area\". A SANDPIT is a box of sand where children play.",
+      "device": "This is a charade. The parts are SAND + PIT.",
+      "steps": [
+        "Take the first part: SAND.",
+        "Add the second part: PIT.",
+        "SAND + PIT spells SANDPIT (4 + 3 = 7)."
+      ],
+      "note": "A pit of sand — the parts describe the thing. Charades like this are the most beginner-friendly: no insertion, no anagram, just two named words joined."
+    },
+    {
+      "id": 85,
+      "definition": "The definition is \"Concern\". To CARE is to feel concern.",
+      "device": "This is an anagram of RACE, signalled by \"mixed\".",
+      "steps": [
+        "Take the fodder: RACE (R, A, C, E).",
+        "Rearrange the four letters.",
+        "They spell CARE."
+      ],
+      "note": "RACE, CARE and ACRE share the same four letters. CARE also appeared as a charade part in SCARE (#65) — the same string, reused in a new role."
+    },
+    {
+      "id": 86,
+      "definition": "The definition is \"Gem\". A PEARL is a gem formed inside an oyster.",
+      "device": "This is a container clue. \"PEAL holding R\" inserts the letter R into PEAL.",
+      "steps": [
+        "Take the outer word: PEAL.",
+        "\"holding R\" drops R inside.",
+        "Place R before the final L: PEA(R)L spells PEARL (5)."
+      ],
+      "note": "PEAL and PEARL differ by a single inserted R. The container indicator \"holding\" tells you R is tucked inside — testing the gap before L gives the gem."
+    },
+    {
+      "id": 87,
+      "definition": "The definition is \"Craft\" — small boats. BOATS are watercraft.",
+      "device": "This is a charade. \"with B in front\" places the letter B before OATS.",
+      "steps": [
+        "Start with OATS.",
+        "\"B in front\" adds B at the start.",
+        "B + OATS spells BOATS (1 + 4 = 5)."
+      ],
+      "note": "\"in front\" fixes B at the beginning, as in SPARK (#46). \"Craft\" is the plural sense here (boats), matched by the plural OATS — a small consistency worth noticing."
+    },
+    {
+      "id": 88,
+      "definition": "Two definitions: \"Illumination\" (light) and \"not heavy\" (light). Both are LIGHT.",
+      "device": "This is a double definition. LIGHT is brightness, and also means low in weight.",
+      "steps": [
+        "Read \"Illumination\": turn on the LIGHT.",
+        "Read \"not heavy\": a LIGHT bag.",
+        "One word, LIGHT, covers both."
+      ],
+      "note": "LIGHT was a charade ending in #62 and #81; here it stands alone with two meanings. The same word shifts from building block to full answer depending on the clue."
+    },
+    {
+      "id": 89,
+      "definition": "Two definitions: \"Fastener\" (a bolt) and \"run suddenly\" (to bolt). Both give BOLT.",
+      "device": "This is a double definition. A BOLT is a metal fastener; to BOLT is to dash away suddenly.",
+      "steps": [
+        "Read \"Fastener\": slide the BOLT across.",
+        "Read \"run suddenly\": the horse BOLTed.",
+        "The shared answer is BOLT."
+      ],
+      "note": "A noun (the fastener) beside a verb (to dash). That part-of-speech contrast is a recurring tell that you are looking at a double definition rather than wordplay."
+    },
+    {
+      "id": 90,
+      "definition": "Two definitions: \"Dossier\" (a file) and \"rasping tool\" (a file). Both are FILE.",
+      "device": "This is a double definition. A FILE is a folder of documents, and also a tool for smoothing or shaping.",
+      "steps": [
+        "Read \"Dossier\": open the FILE.",
+        "Read \"rasping tool\": a metal FILE.",
+        "One word, FILE, fits both."
+      ],
+      "note": "The two senses are unrelated, which is what makes the clue pleasing. Four letters and a clear \"or\" make FILE quick to confirm."
+    },
+    {
+      "id": 91,
+      "definition": "Two definitions: \"Bright weather\" (sunshine) and \"cheerful mood\" (sunshine). Both are SUNSHINE.",
+      "device": "This is a double definition. SUNSHINE is literal sunlight, and figuratively a happy, warm disposition.",
+      "steps": [
+        "Read \"Bright weather\": a day of SUNSHINE.",
+        "Read \"cheerful mood\": she's pure SUNSHINE.",
+        "The shared answer is SUNSHINE."
+      ],
+      "note": "The figurative sense (a cheerful person) grows naturally from the literal one. Longer double definitions like this (8 letters) reward checking that both readings feel idiomatic."
+    },
+    {
+      "id": 92,
+      "definition": "The definition is \"Briny liquid\". SEAWATER is the salty water of the sea.",
+      "device": "This is an anagram, signalled by \"mixed\", working on the combined fodder AWE + TEARS.",
+      "steps": [
+        "Gather the fodder: AWE + TEARS = the eight letters A, W, E, T, E, A, R, S.",
+        "\"mixed\" tells you to rearrange them all.",
+        "They spell SEAWATER."
+      ],
+      "note": "The fodder is split across two words (AWE and TEARS) before being mixed — a step up in difficulty. Count carefully: 3 + 5 = 8 letters, matching SEAWATER, with two A's and two E's on each side."
+    },
+    {
+      "id": 93,
+      "definition": "The definition is \"Night ascent\". MOONRISE is the rising of the moon.",
+      "device": "This is a charade. The clue names the parts: MOON + RISE.",
+      "steps": [
+        "Take the first part: MOON.",
+        "Add the second part: RISE.",
+        "MOON + RISE spells MOONRISE (4 + 4 = 8)."
+      ],
+      "note": "The last of the MOON family in this archive (with MOONLIT, MOONBEAM, MOONLIGHT). RISE — an ascent — is the partner that matches \"night ascent\"."
+    },
+    {
+      "id": 94,
+      "definition": "The definition is \"Famous feature\". A LANDMARK is a notable feature of a place.",
+      "device": "This is a charade. The parts are LAND + MARK.",
+      "steps": [
+        "Take the first part: LAND.",
+        "Add the second part: MARK.",
+        "LAND + MARK spells LANDMARK (4 + 4 = 8)."
+      ],
+      "note": "A mark on the land — the build echoes the meaning. Two named four-letter words joined give the eight-letter answer."
+    },
+    {
+      "id": 95,
+      "definition": "The definition is \"Cafe\". A TEAHOUSE is a cafe serving tea.",
+      "device": "This is a charade. The clue gives the parts: TEA + HOUSE.",
+      "steps": [
+        "Take the first part: TEA.",
+        "Add the second part: HOUSE.",
+        "TEA + HOUSE spells TEAHOUSE (3 + 5 = 8)."
+      ],
+      "note": "TEA pairs with HOUSE here, with CUP in #83. The same lead word builds different answers — always read the second part to know which one is wanted."
+    },
+    {
+      "id": 96,
+      "definition": "The definition is \"Skill\". A TALENT is a natural skill or ability.",
+      "device": "This is an anagram of LATENT, signalled by \"mixed\".",
+      "steps": [
+        "Take the fodder: LATENT (L, A, T, E, N, T).",
+        "Rearrange the six letters.",
+        "They spell TALENT."
+      ],
+      "note": "LATENT and TALENT share all six letters, including two T's — check the counts. There's a quiet wit too: a latent gift is a hidden talent."
+    },
+    {
+      "id": 97,
+      "definition": "The definition is \"Meal\". A REPAST is a meal.",
+      "device": "This is an anagram. The indicator \"mixed\" works on the fodder PASTER.",
+      "steps": [
+        "Take the fodder: PASTER (P, A, S, T, E, R).",
+        "Rearrange the six letters.",
+        "They spell REPAST."
+      ],
+      "note": "\"Repast\" is a slightly old-fashioned word for a meal, so trust the wordplay even if the answer is unfamiliar. PASTER and REPAST share the same six letters."
+    },
+    {
+      "id": 98,
+      "definition": "The definition is \"Ship side\". STARBOARD is the right-hand side of a ship.",
+      "device": "This is a charade. The clue names the parts: STAR + BOARD.",
+      "steps": [
+        "Take the first part: STAR.",
+        "Add the second part: BOARD.",
+        "STAR + BOARD spells STARBOARD (4 + 5 = 9)."
+      ],
+      "note": "The nautical word has nothing to do with stars — the charade just borrows the STAR string. Don't let the surface sense mislead you; follow the build."
+    },
+    {
+      "id": 99,
+      "definition": "The definition is \"Dish\". A PLATE is a flat dish.",
+      "device": "This is a container clue. \"LATE holding P\" places the letter P with the word LATE.",
+      "steps": [
+        "Take the word LATE.",
+        "Add P as the clue directs.",
+        "P leads LATE to spell PLATE (1 + 4 = 5)."
+      ],
+      "note": "As with GROVE (#17), the added letter settles at the front: P + LATE. Test the candidate against \"dish\" and the (5) enumeration to confirm the placement."
+    },
+    {
+      "id": 100,
+      "definition": "Two definitions: \"Leader\" (a ruler) and \"measuring tool\" (a ruler). Both are RULER.",
+      "device": "This is a double definition. A RULER governs a country, and is also a straight strip for measuring and drawing lines.",
+      "steps": [
+        "Read \"Leader\": a country's RULER.",
+        "Read \"measuring tool\": a 30 cm RULER.",
+        "One word, RULER, fits both."
+      ],
+      "note": "Both senses come from the idea of one who rules or sets a standard. A clean five-letter double definition — confirm with the enumeration and you are done."
+    },
+    {
+      "id": 101,
+      "definition": "The definition is \"an expert\". A MASTER is one who has expert command of a skill.",
+      "device": "This is an anagram. The indicator is \"Turbulent\", acting on the fodder STREAM.",
+      "steps": [
+        "Take the fodder: STREAM (S, T, R, E, A, M).",
+        "\"Turbulent\" signals an anagram of the six letters.",
+        "They spell MASTER."
+      ],
+      "note": "\"Turbulent STREAM\" reads as a vivid image while doubling as the anagram cue — the indicator describes a disturbed river. STREAM and MASTER share the same six letters."
+    },
+    {
+      "id": 102,
+      "definition": "The definition is \"Fairy\". A SPRITE is a small fairy or elf.",
+      "device": "This is an anagram. The indicator \"torn\" works on the fodder STRIPE.",
+      "steps": [
+        "Take the fodder: STRIPE (S, T, R, I, P, E).",
+        "\"torn\" tells you to rearrange the six letters.",
+        "They spell SPRITE."
+      ],
+      "note": "\"emerges from torn STRIPE\" hides the mechanics in a sentence — \"torn\" is the operative anagram word, while \"emerges from\" links definition to wordplay. STRIPE and SPRITE share all six letters."
+    },
+    {
+      "id": 103,
+      "definition": "The definition is \"the particular\" — a DETAIL is a particular point or item.",
+      "device": "This is an anagram. The indicator \"erratically\" works on the fodder TAILED.",
+      "steps": [
+        "Take the fodder: TAILED (T, A, I, L, E, D).",
+        "\"erratically\" signals you to rearrange the six letters.",
+        "They spell DETAIL."
+      ],
+      "note": "\"note the particular\" is the definition phrase (note = pay attention to), and \"TAILED erratically\" is the wordplay. TAILED and DETAIL are an exact anagram pair — six letters each."
+    },
+    {
+      "id": 104,
+      "definition": "The definition is \"floor covering\". A CARPET covers a floor.",
+      "device": "This is a charade where each part is clued by a synonym, not spelled out: CAR (vehicle) + PET (animal).",
+      "steps": [
+        "\"Vehicle\" gives CAR.",
+        "\"animal\" gives PET.",
+        "CAR + PET spells CARPET (3 + 3 = 6)."
+      ],
+      "note": "Unlike the literal charades earlier, here you must first translate each clue word into its part — \"vehicle\" to CAR, \"animal\" to PET. \"carrying\" links them in order."
+    },
+    {
+      "id": 105,
+      "definition": "The definition is \"attractive\". Someone HANDSOME is good-looking or attractive.",
+      "device": "This is a charade with synonym parts: HAND (give) + SOME (a few).",
+      "steps": [
+        "\"Give\" gives HAND (as in to hand over).",
+        "\"a few\" gives SOME.",
+        "HAND + SOME spells HANDSOME (4 + 4 = 8)."
+      ],
+      "note": "The dash in \"Give a few - that's attractive\" separates wordplay from definition. Each piece is defined, not written out: HAND for give, SOME for a few."
+    },
+    {
+      "id": 106,
+      "definition": "The definition is \"jewellery\". An EARRING is a piece of jewellery worn on the ear.",
+      "device": "This is a charade with synonym parts: EAR (listen) + RING (call).",
+      "steps": [
+        "\"Listen\" gives EAR.",
+        "\"call\" gives RING (as in to ring someone).",
+        "EAR + RING spells EARRING (3 + 4 = 7)."
+      ],
+      "note": "\"Listen to the call\" cleverly clues both parts at once — EAR (listen) and RING (a phone call). The surface hides the join; translating each word reveals the build."
+    }
+  ]
+}

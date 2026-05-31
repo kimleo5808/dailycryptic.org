@@ -16,6 +16,14 @@ function decodePuzzle(puzzle: MinuteCrypticPuzzle): MinuteCrypticPuzzle {
     answer: fromBase64(puzzle.answer),
     explanation: fromBase64(puzzle.explanation),
     hintLevels: puzzle.hintLevels.map(fromBase64) as [string, string, string, string],
+    analysis: puzzle.analysis
+      ? {
+          definition: fromBase64(puzzle.analysis.definition),
+          device: fromBase64(puzzle.analysis.device),
+          steps: puzzle.analysis.steps.map(fromBase64),
+          note: fromBase64(puzzle.analysis.note),
+        }
+      : undefined,
   };
 }
 

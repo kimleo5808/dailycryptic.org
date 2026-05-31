@@ -168,20 +168,45 @@ export default async function DailyPuzzlePage({
         <p className="mt-2 text-base font-semibold text-foreground">
           Answer: {puzzle.answer}
         </p>
-        <h3 className="mt-5 font-heading text-base font-bold text-foreground">
-          Why this answer fits
-        </h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          {puzzle.explanation}
-        </p>
-        <h3 className="mt-5 font-heading text-base font-bold text-foreground">
-          Hint strategy for this clue
-        </h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Use one hint level at a time. Start with direction, then mechanism,
-          then structure. Only reveal deeper help if your current parse still
-          fails both definition and wordplay checks.
-        </p>
+        {puzzle.analysis ? (
+          <>
+            <h3 className="mt-6 font-heading text-base font-bold text-foreground">
+              Definition
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {puzzle.analysis.definition}
+            </p>
+            <h3 className="mt-5 font-heading text-base font-bold text-foreground">
+              How the wordplay works
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {puzzle.analysis.device}
+            </p>
+            <h3 className="mt-5 font-heading text-base font-bold text-foreground">
+              Step by step
+            </h3>
+            <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm leading-relaxed text-muted-foreground">
+              {puzzle.analysis.steps.map((step, i) => (
+                <li key={i}>{step}</li>
+              ))}
+            </ol>
+            <h3 className="mt-5 font-heading text-base font-bold text-foreground">
+              Solver&apos;s note
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {puzzle.analysis.note}
+            </p>
+          </>
+        ) : (
+          <>
+            <h3 className="mt-5 font-heading text-base font-bold text-foreground">
+              Why this answer fits
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {puzzle.explanation}
+            </p>
+          </>
+        )}
       </section>
 
       <section className="mx-auto mt-8 max-w-4xl rounded-2xl border border-border bg-card p-6">
