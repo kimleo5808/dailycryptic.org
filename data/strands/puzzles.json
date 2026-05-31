@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-05-30T08:03:10.259Z",
+  "lastUpdated": "2026-05-31T08:27:26.855Z",
   "puzzles": [
+    {
+      "id": 995,
+      "printDate": "2026-05-31",
+      "status": "published",
+      "clue": "Places to go",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBPIFUgUiBJIFMgTQ==",
+      "spangram": "VE9VUklTTQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "QkVBQ0g=",
+        "Q0FTVExF",
+        "TUFSS0VU",
+        "TU9OVU1FTlQ=",
+        "TVVTRVVN",
+        "UkVTVEFVUkFOVA=="
+      ]
+    },
     {
       "id": 994,
       "printDate": "2026-05-30",
