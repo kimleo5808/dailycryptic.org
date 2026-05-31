@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-05-30T08:00:27.009Z",
+  "lastUpdated": "2026-05-31T08:24:07.569Z",
   "puzzles": [
+    {
+      "id": 1085,
+      "printDate": "2026-05-31",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "VEhJTkdTIFRIQVQgQVJFIFlFTExPVw==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "QlVUVEVS",
+            "UlVCQkVSIERVQ0s=",
+            "U0NIT09MIEJVUw==",
+            "UElLQUNIVQ=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "QklMTElBUkRTIFRFUk1T",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "QlJFQUs=",
+            "UE9DS0VU",
+            "UkFDSw==",
+            "Q1VF"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U0xBTkcgRk9SIEEgU0FJTE9S",
+          "hint": "Think figuratively, not literally",
+          "words": [
+            "U0FMVA==",
+            "SkFDSw==",
+            "VEFS",
+            "U0VBIERPRw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "S0lORFMgT0YgV09PRCBQTFVTICJTIg==",
+          "hint": "Think about different wood plus \"s\"",
+          "words": [
+            "U1RFQUs=",
+            "U09BSw==",
+            "U1BJTkU=",
+            "U0FTSA=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1084,
       "printDate": "2026-05-30",
