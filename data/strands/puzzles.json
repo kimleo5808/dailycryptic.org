@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-01T10:38:29.670Z",
+  "lastUpdated": "2026-06-02T09:49:30.196Z",
   "puzzles": [
+    {
+      "id": 997,
+      "printDate": "2026-06-02",
+      "status": "published",
+      "clue": "Caught in the Net",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RSBYIFQgUiBFIE0gRSBMIFkgTyBOIEwgSSBOIEU=",
+      "spangram": "RVhUUkVNRUxZT05MSU5F",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "Q09NTUVOVA==",
+        "RkVFRA==",
+        "TUVNRQ==",
+        "UE9TVA==",
+        "UkVFTA==",
+        "U1RPUlk=",
+        "VFJFTkQ="
+      ]
+    },
     {
       "id": 1005,
       "printDate": "2026-06-01",
