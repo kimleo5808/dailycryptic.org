@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-02T09:47:06.219Z",
+  "lastUpdated": "2026-06-03T10:17:04.098Z",
   "puzzles": [
+    {
+      "id": 1810,
+      "printDate": "2026-06-03",
+      "status": "published",
+      "solution": "bm90Y2g=",
+      "hint1": "This word starts with a nasal consonant.",
+      "hint2": "The word starts with N and has 1 vowel.",
+      "hint3": "N _ T _ H"
+    },
     {
       "id": 1809,
       "printDate": "2026-06-02",
