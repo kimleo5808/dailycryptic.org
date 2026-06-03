@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-02T09:45:04.812Z",
+  "lastUpdated": "2026-06-03T10:15:51.423Z",
   "puzzles": [
+    {
+      "id": 1088,
+      "printDate": "2026-06-03",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgUklDRQ==",
+          "hint": "Think about different rice",
+          "words": [
+            "SkFTTUlORQ==",
+            "U1RJQ0tZ",
+            "QlJPV04=",
+            "U1VTSEk="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "R1VNTVkgQkVBUiBERVNDUklQVE9SUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Q09MT1JGVUw=",
+            "R1VNTVk=",
+            "U1VHQVJZ",
+            "VVJTSU5F"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U0FWT1JZIFNUVUZGRUQgUEFTVFJJRVM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "UEFTVFk=",
+            "U0FNT1NB",
+            "RkFUQVlFUg==",
+            "RU1QQU5BREE="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RElTTkVZIFBSSU5DRVNTRVMgTUlOVVMgTEFTVCBMRVRURVI=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "UkFZ",
+            "QkVMTA==",
+            "QVJJRQ==",
+            "TU9BTg=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1087,
       "printDate": "2026-06-02",
