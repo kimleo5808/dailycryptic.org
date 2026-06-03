@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-02T09:49:30.196Z",
+  "lastUpdated": "2026-06-03T10:21:32.121Z",
   "puzzles": [
+    {
+      "id": 999,
+      "printDate": "2026-06-03",
+      "status": "published",
+      "clue": "By any other name ...",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "UiBPIFMgRSBHIEEgUiBEIEUgTg==",
+      "spangram": "Uk9TRUdBUkRFTg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QlJJQVI=",
+        "REFNQVNL",
+        "SEVER0U=",
+        "UFJBSVJJRQ==",
+        "V0hJVEU=",
+        "V0lMRA==",
+        "WUVMTE9X"
+      ]
+    },
     {
       "id": 997,
       "printDate": "2026-06-02",
