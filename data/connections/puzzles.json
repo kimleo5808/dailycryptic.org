@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-03T10:15:51.423Z",
+  "lastUpdated": "2026-06-04T09:07:42.148Z",
   "puzzles": [
+    {
+      "id": 1089,
+      "printDate": "2026-06-04",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UEFJTlRJTkcgTUVESUE=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "T0lM",
+            "VEVNUEVSQQ==",
+            "R09VQUNIRQ==",
+            "QUNSWUxJQw=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "RVNQUklU",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "VklORUdBUg==",
+            "UEFOQUNIRQ==",
+            "VkVSVkU=",
+            "R1VTVE8="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U1RBUlRTIE9GIENMQVNTSUMgSElQLUhPUCBHUk9VUFM=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UFVCTElD",
+            "U0FMVA==",
+            "UlVO",
+            "QkVBU1RJRQ=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "R0hPU1QgX19f",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "V1JJVEVS",
+            "UEVQUEVS",
+            "S0lUQ0hFTg==",
+            "VE9XTg=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1088,
       "printDate": "2026-06-03",
