@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-03T10:21:32.121Z",
+  "lastUpdated": "2026-06-04T09:12:52.200Z",
   "puzzles": [
+    {
+      "id": 1000,
+      "printDate": "2026-06-04",
+      "status": "published",
+      "clue": "Smooth moves",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UCBPIEUgVCBSIFkgSSBOIE0gTyBUIEkgTyBO",
+      "spangram": "UE9FVFJZSU5NT1RJT04=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "QVBMT01C",
+        "Q09NUE9TVVJF",
+        "RUFTRQ==",
+        "R1JBQ0U=",
+        "UE9JU0U=",
+        "U1RZTEU="
+      ]
+    },
     {
       "id": 999,
       "printDate": "2026-06-03",
