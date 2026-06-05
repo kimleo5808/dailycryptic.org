@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-04T09:12:52.200Z",
+  "lastUpdated": "2026-06-05T08:56:00.908Z",
   "puzzles": [
+    {
+      "id": 1006,
+      "printDate": "2026-06-05",
+      "status": "published",
+      "clue": "You wanna go?",
+      "hint": "Consider the broader category these words fall under",
+      "theme": "RiBJIEcgSCBUIEkgTiBHIFcgTyBSIEQgUw==",
+      "spangram": "RklHSFRJTkdXT1JEUw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QlJBV0w=",
+        "Q0xBU0g=",
+        "TUVMRUU=",
+        "U0NSQVA=",
+        "U0NVRkZMRQ==",
+        "U0tJUk1JU0g="
+      ]
+    },
     {
       "id": 1000,
       "printDate": "2026-06-04",
