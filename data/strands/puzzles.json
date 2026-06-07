@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-06T08:06:30.233Z",
+  "lastUpdated": "2026-06-07T08:36:30.799Z",
   "puzzles": [
+    {
+      "id": 1003,
+      "printDate": "2026-06-07",
+      "status": "published",
+      "clue": "Herpetology 101",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBPIEwgRCBCIEwgTyBPIEQgRSBE",
+      "spangram": "Q09MREJMT09ERUQ=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QlVMTEZST0c=",
+        "Q0hBTUVMRU9O",
+        "Q1JPQ09ESUxF",
+        "U05BS0U=",
+        "VFVSVExF"
+      ]
+    },
     {
       "id": 1002,
       "printDate": "2026-06-06",
