@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-07T08:33:35.249Z",
+  "lastUpdated": "2026-06-08T10:00:35.912Z",
   "puzzles": [
+    {
+      "id": 1815,
+      "printDate": "2026-06-08",
+      "status": "published",
+      "solution": "bWFmaWE=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with M and has 3 vowels.",
+      "hint3": "M _ F _ A"
+    },
     {
       "id": 1814,
       "printDate": "2026-06-07",
