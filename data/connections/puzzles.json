@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-07T08:32:25.391Z",
+  "lastUpdated": "2026-06-08T09:59:14.270Z",
   "puzzles": [
+    {
+      "id": 1093,
+      "printDate": "2026-06-08",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "TEFOREZPUk1TIEJZIFdBVEVS",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "SVNMQU5E",
+            "REVMVEE=",
+            "UEVOSU5TVUxB",
+            "SVNUSE1VUw=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U0xBTkcgRk9SIEhFQUQ=",
+          "hint": "Think figuratively, not literally",
+          "words": [
+            "Q09DT05VVA==",
+            "UEFURQ==",
+            "TUVMT04=",
+            "RE9NRQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIFRIQVQgQ0FOIEJFIFNQSUtFRA==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "TU9IQVdL",
+            "UFVOQ0g=",
+            "Vk9MTEVZQkFMTA==",
+            "U0VBIFVSQ0hJTg=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "IlRIRSBfX18gTUFOIiBNT1ZJRVM=",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "SU5WSVNJQkxF",
+            "RUxFUEhBTlQ=",
+            "T01FR0E=",
+            "UlVOTklORw=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1092,
       "printDate": "2026-06-07",
