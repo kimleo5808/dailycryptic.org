@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-07T08:36:30.799Z",
+  "lastUpdated": "2026-06-08T10:06:02.230Z",
   "puzzles": [
+    {
+      "id": 1004,
+      "printDate": "2026-06-08",
+      "status": "published",
+      "clue": "Play time",
+      "hint": "These are all related to athletics or competition",
+      "theme": "RyBBIE0gRSBOIEkgRyBIIFQ=",
+      "spangram": "R0FNRU5JR0hU",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "Qk9BUkRT",
+        "Q0FSRFM=",
+        "Q0hJUFM=",
+        "RElDRQ==",
+        "U1BJTk5FUlM=",
+        "VElMRVM=",
+        "VE9LRU5T"
+      ]
+    },
     {
       "id": 1003,
       "printDate": "2026-06-07",
