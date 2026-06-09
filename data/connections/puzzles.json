@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-08T09:59:14.270Z",
+  "lastUpdated": "2026-06-09T08:44:13.195Z",
   "puzzles": [
+    {
+      "id": 1094,
+      "printDate": "2026-06-09",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U1lNQk9MUyBPRiBJTk5PQ0VOQ0U=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "QU5HRUw=",
+            "RE9WRQ==",
+            "TEFNQg==",
+            "QkFCRQ=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIFlPVSdSRSBOT1QgU1VQUE9TRUQgVE8gUkVWRUFM",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "U1VSUFJJU0U=",
+            "U0VDUkVU",
+            "UEFTU1dPUkQ=",
+            "U1BPSUxFUg=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIFJFUFJFU0VOVEVEIElOIFNVUEVSU0NSSVBU",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVNURVJJU0s=",
+            "VFJBREVNQVJL",
+            "REVHUkVF",
+            "RVhQT05FTlQ="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U0xBTkcgRk9SIE1VU0lDQUwgSU5TVFJVTUVOVFM=",
+          "hint": "Think figuratively, not literally",
+          "words": [
+            "QVhF",
+            "Qk9ORQ==",
+            "S0VZUw==",
+            "U0tJTlM="
+          ]
+        }
+      ]
+    },
     {
       "id": 1093,
       "printDate": "2026-06-08",
