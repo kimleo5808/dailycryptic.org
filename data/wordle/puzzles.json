@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-08T10:00:35.912Z",
+  "lastUpdated": "2026-06-09T08:45:07.372Z",
   "puzzles": [
+    {
+      "id": 1816,
+      "printDate": "2026-06-09",
+      "status": "published",
+      "solution": "d2hhcmY=",
+      "hint1": "This word starts with a rounded sound.",
+      "hint2": "The word starts with W and has 1 vowel.",
+      "hint3": "W _ A _ F"
+    },
     {
       "id": 1815,
       "printDate": "2026-06-08",
