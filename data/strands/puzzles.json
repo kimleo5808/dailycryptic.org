@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-09T08:46:51.750Z",
+  "lastUpdated": "2026-06-10T09:04:50.256Z",
   "puzzles": [
+    {
+      "id": 1007,
+      "printDate": "2026-06-10",
+      "status": "published",
+      "clue": "Something just clicked",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RCBPIFcgTiBMIE8gQSBE",
+      "spangram": "RE9XTkxPQUQ=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QVBQTElDQVRJT04=",
+        "RE9DVU1FTlQ=",
+        "RklMRQ==",
+        "UEhPVE8=",
+        "U09GVFdBUkU=",
+        "U09ORw=="
+      ]
+    },
     {
       "id": 1014,
       "printDate": "2026-06-09",
