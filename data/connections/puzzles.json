@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-09T08:44:13.195Z",
+  "lastUpdated": "2026-06-10T09:02:46.364Z",
   "puzzles": [
+    {
+      "id": 1095,
+      "printDate": "2026-06-10",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "VEVDSE5JUVVF",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RkFTSElPTg==",
+            "TUVUSE9E",
+            "V0FZ",
+            "TUFOTkVS"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "R1JPU1MgVEhJTkdTIFRIQVQgRk9STSBPTiBXRVQgU1VSRkFDRVM=",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "RklMTQ==",
+            "U0tJTg==",
+            "Q1JVU1Q=",
+            "U0NVTQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "UEFSVFMgT0YgQSBUSEVBVEVS",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "U1RBR0U=",
+            "V0lOR1M=",
+            "UElU",
+            "Q0FUV0FMSw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "Q09VTlRFRCBJTiBET0NVTUVOVCBXT1JEIENPVU5UUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "UEFHRQ==",
+            "Q0hBUkFDVEVS",
+            "V09SRA==",
+            "TElORQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1094,
       "printDate": "2026-06-09",
