@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-10T09:03:39.065Z",
+  "lastUpdated": "2026-06-11T09:49:16.344Z",
   "puzzles": [
+    {
+      "id": 1818,
+      "printDate": "2026-06-11",
+      "status": "published",
+      "solution": "dGVzdHk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with T and has 1 vowel.",
+      "hint3": "T _ S _ Y"
+    },
     {
       "id": 1817,
       "printDate": "2026-06-10",
