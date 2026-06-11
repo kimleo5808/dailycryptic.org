@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-10T09:04:50.256Z",
+  "lastUpdated": "2026-06-11T09:50:56.736Z",
   "puzzles": [
+    {
+      "id": 1012,
+      "printDate": "2026-06-11",
+      "status": "published",
+      "clue": "Oozing",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "UiBIIFkgTSBFIFQgSSBNIEU=",
+      "spangram": "UkhZTUVUSU1F",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkxVRVM=",
+        "QlJFV1M=",
+        "Q0hPT1NF",
+        "Q1JVSVNF",
+        "RlVTRQ==",
+        "U0NITU9PWkU=",
+        "U0hPRVM="
+      ]
+    },
     {
       "id": 1007,
       "printDate": "2026-06-10",
