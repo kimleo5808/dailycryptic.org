@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-11T09:48:31.025Z",
+  "lastUpdated": "2026-06-12T09:39:58.146Z",
   "puzzles": [
+    {
+      "id": 1097,
+      "printDate": "2026-06-12",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U1RBUlRJTkcgV0lUSCBJTkNBTlRBVElPTlM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "Q1VSU0UgV09SRA==",
+            "U1BFTEwgQ0hFQ0tFUg==",
+            "Q0hBUk0gQlJBQ0VMRVQ=",
+            "SEVYIEtFWQ=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U1RBUlRJTkcgV0lUSCBBTklNQUwgR1JPVVAgTkFNRVM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "U0NIT09MIERBWVM=",
+            "UEFDSyBSQVQ=",
+            "TVVSREVSIE1ZU1RFUlk=",
+            "UFJJREUgUk9DSw=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U1RBUlRJTkcgV0lUSCBTWU5PTllNUyBGT1IgIlJFUEVBVCI=",
+          "hint": "These words share a similar meaning",
+          "words": [
+            "UVVPVEUgVU5RVU9URQ==",
+            "Q09QWSBFRElUT1I=",
+            "TUlSUk9SIFNFTEZJRQ==",
+            "RUNITyBQQVJL"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBQQVJUUyBPRiBBIFJJVkVS",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "QkVEIEhFQUQ=",
+            "QkFOSyBURUxMRVI=",
+            "TU9VVEggR1VBUkQ=",
+            "REVMVEEgQUlSTElORVM="
+          ]
+        }
+      ]
+    },
     {
       "id": 1096,
       "printDate": "2026-06-11",
