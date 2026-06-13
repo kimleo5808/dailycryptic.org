@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-12T09:40:52.962Z",
+  "lastUpdated": "2026-06-13T08:35:18.977Z",
   "puzzles": [
+    {
+      "id": 1820,
+      "printDate": "2026-06-13",
+      "status": "published",
+      "solution": "cXVlbGw=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with Q and has 2 vowels.",
+      "hint3": "Q _ E _ L"
+    },
     {
       "id": 1819,
       "printDate": "2026-06-12",
