@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-13T08:38:04.849Z",
+  "lastUpdated": "2026-06-14T08:53:54.167Z",
   "puzzles": [
+    {
+      "id": 1010,
+      "printDate": "2026-06-14",
+      "status": "published",
+      "clue": "Peer group",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TiBPIEIgSSBMIEkgVCBZ",
+      "spangram": "Tk9CSUxJVFk=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkFST04=",
+        "RFVDSEVTUw==",
+        "RUFSTA==",
+        "TEFEWQ==",
+        "TE9SRA==",
+        "TUFSUVVFU1M=",
+        "VklTQ09VTlQ="
+      ]
+    },
     {
       "id": 1009,
       "printDate": "2026-06-13",
