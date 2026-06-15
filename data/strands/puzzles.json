@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-14T08:53:54.167Z",
+  "lastUpdated": "2026-06-15T11:30:23.115Z",
   "puzzles": [
+    {
+      "id": 1013,
+      "printDate": "2026-06-15",
+      "status": "published",
+      "clue": "Moving mountains",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "WSBPIFUgViBFIEcgTyBUIFQgSCBJIFM=",
+      "spangram": "WU9VVkVHT1RUSElT",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q09OUVVFUg==",
+        "T1ZFUkNPTUU=",
+        "UVVBU0g=",
+        "U1VSTU9VTlQ=",
+        "VkFOUVVJU0g="
+      ]
+    },
     {
       "id": 1010,
       "printDate": "2026-06-14",
