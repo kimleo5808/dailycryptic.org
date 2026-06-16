@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-15T11:30:23.115Z",
+  "lastUpdated": "2026-06-16T10:26:44.261Z",
   "puzzles": [
+    {
+      "id": 1008,
+      "printDate": "2026-06-16",
+      "status": "published",
+      "clue": "For here or to go?",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VyBIIEEgVCBTIEYgTyBSIEwgVSBOIEMgSA==",
+      "spangram": "V0hBVFNGT1JMVU5DSA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "R1lSTw==",
+        "UkFNRU4=",
+        "U0FMQUQ=",
+        "U0FORFdJQ0g=",
+        "U09VUA==",
+        "VEFDT1M=",
+        "V1JBUA=="
+      ]
+    },
     {
       "id": 1013,
       "printDate": "2026-06-15",
