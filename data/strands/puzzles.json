@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-17T10:15:17.611Z",
+  "lastUpdated": "2026-06-18T09:55:38.911Z",
   "puzzles": [
+    {
+      "id": 1015,
+      "printDate": "2026-06-18",
+      "status": "published",
+      "clue": "Beneath the waves",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "QyBPIFIgQSBMIFIgRSBFIEY=",
+      "spangram": "Q09SQUxSRUVG",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QUxHQUU=",
+        "Q1JBQg==",
+        "RklTSA==",
+        "UExBTktUT04=",
+        "U0VBV0VFRA==",
+        "U0hBUks=",
+        "VVJDSElO"
+      ]
+    },
     {
       "id": 1021,
       "printDate": "2026-06-17",
