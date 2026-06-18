@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-17T10:12:24.669Z",
+  "lastUpdated": "2026-06-18T09:51:36.419Z",
   "puzzles": [
+    {
+      "id": 1825,
+      "printDate": "2026-06-18",
+      "status": "published",
+      "solution": "ZW50cnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with E and has 1 vowel.",
+      "hint3": "E _ T _ Y"
+    },
     {
       "id": 1824,
       "printDate": "2026-06-17",
