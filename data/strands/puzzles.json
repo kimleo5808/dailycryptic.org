@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-18T09:55:38.911Z",
+  "lastUpdated": "2026-06-19T10:01:37.954Z",
   "puzzles": [
+    {
+      "id": 1016,
+      "printDate": "2026-06-19",
+      "status": "published",
+      "clue": "Look to the West",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "QyBPIFcgUCBPIEsgRSBT",
+      "spangram": "Q09XUE9LRVM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkFOREFOQQ==",
+        "Qk9PVFM=",
+        "Q0hBUFM=",
+        "SkVBTlM=",
+        "U0FERExF",
+        "U1BVUlM=",
+        "U1RFVFNPTg=="
+      ]
+    },
     {
       "id": 1015,
       "printDate": "2026-06-18",
