@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-06-18T09:50:13.649Z",
+  "lastUpdated": "2026-06-19T09:56:28.666Z",
   "puzzles": [
+    {
+      "id": 1104,
+      "printDate": "2026-06-19",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "VU1BTUktUklDSCBGT09EUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U09ZIFNBVUNF",
+            "VkVHRU1JVEU=",
+            "TUlTTyBQQVNURQ==",
+            "UEFSTUVTQU4="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIEEgQkVHSU5ORVIgTUlHSFQgTEVBUk4gT04gVEhFIFBJQU5P",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Q0hPUFNUSUNLUw==",
+            "SEVBUlQgQU5EIFNPVUw=",
+            "VEhFIEVOVEVSVEFJTkVS",
+            "RsOcUiBFTElTRQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U1RBUlRJTkcgV0lUSCBNQUdBWklORVM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "VElNRSBNQUNISU5F",
+            "U1BJTkRFUkVMTEE=",
+            "Rk9SVFVORSBDT09LSUU=",
+            "UEVPUExFIFBFUlNPTg=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIFNZTk9OWU1TIEZPUiAiQUdHUkVHQVRFIg==",
+          "hint": "These words share a similar meaning",
+          "words": [
+            "VEVFVE9UQUw=",
+            "RElNIFNVTQ==",
+            "VklTQ09VTlQ=",
+            "Q09JTkNJREVOVEFMTFk="
+          ]
+        }
+      ]
+    },
     {
       "id": 1103,
       "printDate": "2026-06-18",
