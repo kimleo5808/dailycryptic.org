@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-19T10:01:37.954Z",
+  "lastUpdated": "2026-06-20T08:33:05.585Z",
   "puzzles": [
+    {
+      "id": 1046,
+      "printDate": "2026-06-20",
+      "status": "published",
+      "clue": "Knicks knack",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RyBBIFIgRCBFIE4gUCBBIFIgVCBZ",
+      "spangram": "R0FSREVOUEFSVFk=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q0hBTlQ=",
+        "Q09VUlRTSURF",
+        "SlVNQk9UUk9O",
+        "TUFSUVVFRQ==",
+        "UkFGVEVSUw=="
+      ]
+    },
     {
       "id": 1016,
       "printDate": "2026-06-19",
