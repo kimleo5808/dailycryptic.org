@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-20T08:33:05.585Z",
+  "lastUpdated": "2026-06-21T09:08:44.885Z",
   "puzzles": [
+    {
+      "id": 1018,
+      "printDate": "2026-06-21",
+      "status": "published",
+      "clue": "That's included!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBPIFQgRSBMIEEgTSBFIE4gSSBUIEkgRSBT",
+      "spangram": "SE9URUxBTUVOSVRJRVM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "QlJFQUtGQVNU",
+        "RlJJREdF",
+        "SU5URVJORVQ=",
+        "TEFVTkRSWQ==",
+        "U0FGRQ=="
+      ]
+    },
     {
       "id": 1046,
       "printDate": "2026-06-20",
