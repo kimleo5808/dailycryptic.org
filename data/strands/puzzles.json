@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-21T09:08:44.885Z",
+  "lastUpdated": "2026-06-22T11:15:03.502Z",
   "puzzles": [
+    {
+      "id": 1019,
+      "printDate": "2026-06-22",
+      "status": "published",
+      "clue": "Heebie-jeebies",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RyBPIE8gUyBFIEIgVSBNIFAgUw==",
+      "spangram": "R09PU0VCVU1QUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QlVUVEVSRkxJRVM=",
+        "Q1JFRVBT",
+        "SklUVEVSUw==",
+        "U0hJVkVSUw==",
+        "V0lMTElFUw=="
+      ]
+    },
     {
       "id": 1018,
       "printDate": "2026-06-21",
