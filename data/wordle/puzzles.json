@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-22T11:11:42.957Z",
+  "lastUpdated": "2026-06-23T08:41:32.700Z",
   "puzzles": [
+    {
+      "id": 1830,
+      "printDate": "2026-06-23",
+      "status": "published",
+      "solution": "Y3Vycnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with C and has 1 vowel.",
+      "hint3": "C _ R _ Y"
+    },
     {
       "id": 1829,
       "printDate": "2026-06-22",
