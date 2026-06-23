@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-06-22T11:15:03.502Z",
+  "lastUpdated": "2026-06-23T08:43:13.731Z",
   "puzzles": [
+    {
+      "id": 1020,
+      "printDate": "2026-06-23",
+      "status": "published",
+      "clue": "A whole new world",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TSBJIE4gRSBDIFIgQSBGIFQ=",
+      "spangram": "TUlORUNSQUZU",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QVJNT1I=",
+        "QkxPQ0s=",
+        "QlVJTERJTkc=",
+        "Rk9PRA==",
+        "UE9SVEFM",
+        "U1RPUkFHRQ==",
+        "VE9PTA=="
+      ]
+    },
     {
       "id": 1019,
       "printDate": "2026-06-22",
