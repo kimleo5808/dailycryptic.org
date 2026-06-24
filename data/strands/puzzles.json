@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-23T08:43:13.731Z",
+  "lastUpdated": "2026-06-24T08:39:29.797Z",
   "puzzles": [
+    {
+      "id": 1022,
+      "printDate": "2026-06-24",
+      "status": "published",
+      "clue": "Just chill",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBFIFYgRSBSIEEgRyBFIEMgTyBPIEwgRSBSIFM=",
+      "spangram": "QkVWRVJBR0VDT09MRVJT",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "QkVFUg==",
+        "SlVJQ0U=",
+        "S09NQlVDSEE=",
+        "U0VMVFpFUg==",
+        "U09EQQ==",
+        "V0FURVI="
+      ]
+    },
     {
       "id": 1020,
       "printDate": "2026-06-23",
