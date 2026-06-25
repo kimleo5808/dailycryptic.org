@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-06-24T08:39:29.797Z",
+  "lastUpdated": "2026-06-25T08:35:38.696Z",
   "puzzles": [
+    {
+      "id": 1023,
+      "printDate": "2026-06-25",
+      "status": "published",
+      "clue": "Just relax",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBQIEEgVCBSIEUgQSBUIE0gRSBOIFQ=",
+      "spangram": "U1BBVFJFQVRNRU5U",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QUNVUFVOQ1RVUkU=",
+        "QVJPTUFUSEVSQVBZ",
+        "RkFDSUFM",
+        "TUFTU0FHRQ=="
+      ]
+    },
     {
       "id": 1022,
       "printDate": "2026-06-24",
