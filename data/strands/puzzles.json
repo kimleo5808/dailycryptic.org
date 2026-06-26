@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-25T08:35:38.696Z",
+  "lastUpdated": "2026-06-26T08:39:07.030Z",
   "puzzles": [
+    {
+      "id": 1024,
+      "printDate": "2026-06-26",
+      "status": "published",
+      "clue": "\"I'll gobble you up!\"",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBJIEwgTCBZIEcgTyBBIFQgUyBHIFIgVSBGIEY=",
+      "spangram": "QklMTFlHT0FUU0dSVUZG",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "QlJJREdF",
+        "QlJPVEhFUlM=",
+        "SE9STlM=",
+        "UEFTUw==",
+        "VEhSRUU=",
+        "VFJPTEw="
+      ]
+    },
     {
       "id": 1023,
       "printDate": "2026-06-25",
