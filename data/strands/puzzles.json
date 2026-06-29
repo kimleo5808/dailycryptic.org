@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-06-28T08:32:25.402Z",
+  "lastUpdated": "2026-06-29T10:09:09.803Z",
   "puzzles": [
+    {
+      "id": 1026,
+      "printDate": "2026-06-29",
+      "status": "published",
+      "clue": "The mark of a good composer",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBVIFMgSSBDIEEgTCBTIFQgQSBGIEY=",
+      "spangram": "TVVTSUNBTFNUQUZG",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QUNDSURFTlRBTA==",
+        "QlJBQ0tFVA==",
+        "Q0xFRg==",
+        "TUVBU1VSRQ==",
+        "Tk9URQ==",
+        "UkVTVA=="
+      ]
+    },
     {
       "id": 996,
       "printDate": "2026-06-28",
