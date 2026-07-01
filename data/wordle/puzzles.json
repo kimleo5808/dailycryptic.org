@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-06-30T08:40:39.854Z",
+  "lastUpdated": "2026-07-01T08:58:08.764Z",
   "puzzles": [
+    {
+      "id": 1838,
+      "printDate": "2026-07-01",
+      "status": "published",
+      "solution": "ZGVtdXI=",
+      "hint1": "Think of something that starts with a sturdy sound.",
+      "hint2": "The word starts with D and has 2 vowels.",
+      "hint3": "D _ M _ R"
+    },
     {
       "id": 1837,
       "printDate": "2026-06-30",
