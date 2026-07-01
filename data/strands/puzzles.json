@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-06-30T08:41:59.046Z",
+  "lastUpdated": "2026-07-01T08:59:32.545Z",
   "puzzles": [
+    {
+      "id": 1028,
+      "printDate": "2026-07-01",
+      "status": "published",
+      "clue": "Not a red herring",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBFIEwgTCBUIEEgTCBFIFMgSSBHIE4=",
+      "spangram": "VEVMTFRBTEVTSUdO",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q0xVRQ==",
+        "RVZJREVOQ0U=",
+        "SElOVA==",
+        "SU5ESUNBVElPTg==",
+        "SU5USU1BVElPTg=="
+      ]
+    },
     {
       "id": 1027,
       "printDate": "2026-06-30",
