@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-01T08:59:32.545Z",
+  "lastUpdated": "2026-07-02T08:28:57.280Z",
   "puzzles": [
+    {
+      "id": 1029,
+      "printDate": "2026-07-02",
+      "status": "published",
+      "clue": "Added flavor",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RyBFIFQgUyBBIFUgQyBZ",
+      "spangram": "R0VUU0FVQ1k=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkVDSEFNRUw=",
+        "TUFSSU5BUkE=",
+        "U1JJUkFDSEE=",
+        "VEVSSVlBS0k=",
+        "VFpBVFpJS0k="
+      ]
+    },
     {
       "id": 1028,
       "printDate": "2026-07-01",
