@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-02T08:28:57.280Z",
+  "lastUpdated": "2026-07-03T08:35:29.934Z",
   "puzzles": [
+    {
+      "id": 1030,
+      "printDate": "2026-07-03",
+      "status": "published",
+      "clue": "It's like talking to a brick wall",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TiBPIFQgQiBVIEQgRyBJIE4gRw==",
+      "spangram": "Tk9UQlVER0lORw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "RklSTQ==",
+        "SEVBRFNUUk9ORw==",
+        "T0JTVElOQVRF",
+        "U1RVQkJPUk4=",
+        "V0lMTEZVTA=="
+      ]
+    },
     {
       "id": 1029,
       "printDate": "2026-07-02",
