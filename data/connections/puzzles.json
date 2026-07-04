@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-07-03T08:31:16.033Z",
+  "lastUpdated": "2026-07-04T08:07:39.522Z",
   "puzzles": [
+    {
+      "id": 1119,
+      "printDate": "2026-07-04",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UEVSU0lTVA==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "TElOR0VS",
+            "TEFTVA==",
+            "U1RBWQ==",
+            "Q09OVElOVUU="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgUE9FTVM=",
+          "hint": "Think about different poems",
+          "words": [
+            "RVBJQw==",
+            "T0RF",
+            "QkFMTEFE",
+            "VklMTEFORUxMRQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VFJPUElDQUwgRFJJTktT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Wk9NQklF",
+            "U0NPUlBJT04=",
+            "SFVSUklDQU5F",
+            "UEFJTktJTExFUg=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1dFRVQgX19f",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "U1BPVA==",
+            "RFJFQU1T",
+            "UEVB",
+            "Tk9USElOR1M="
+          ]
+        }
+      ]
+    },
     {
       "id": 1118,
       "printDate": "2026-07-03",
