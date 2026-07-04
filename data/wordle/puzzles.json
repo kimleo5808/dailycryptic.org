@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-03T08:32:29.201Z",
+  "lastUpdated": "2026-07-04T08:09:11.552Z",
   "puzzles": [
+    {
+      "id": 1841,
+      "printDate": "2026-07-04",
+      "status": "published",
+      "solution": "cGl6emE=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with P and has 2 vowels.",
+      "hint3": "P _ Z _ A"
+    },
     {
       "id": 1840,
       "printDate": "2026-07-03",
