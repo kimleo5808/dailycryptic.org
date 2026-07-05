@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-04T08:11:28.015Z",
+  "lastUpdated": "2026-07-05T08:26:45.456Z",
   "puzzles": [
+    {
+      "id": 1031,
+      "printDate": "2026-07-05",
+      "status": "published",
+      "clue": "Barking up the right tree",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBVIE4gVCBJIE4gRyBCIFIgRSBFIEQgUw==",
+      "spangram": "SFVOVElOR0JSRUVEUw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "SE9VTkQ=",
+        "UE9JTlRFUg==",
+        "UkVUUklFVkVS",
+        "U1BBTklFTA==",
+        "VEVSUklFUg=="
+      ]
+    },
     {
       "id": 998,
       "printDate": "2026-07-04",
