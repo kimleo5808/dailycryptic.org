@@ -208,6 +208,21 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           },
         ],
       },
+      {
+        title: "NYT Letter Boxed",
+        links: [
+          {
+            name: "Letter Boxed Answers",
+            href: "/letter-boxed-answers-today",
+            description: "Today's hints and the two-word solution",
+          },
+          {
+            name: "Letter Boxed Archive",
+            href: "/letter-boxed-answers",
+            description: "Browse past puzzles and answers",
+          },
+        ],
+      },
     ],
   },
   {
