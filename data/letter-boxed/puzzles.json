@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-07T04:30:27.369Z",
+  "lastUpdated": "2026-07-07T10:40:09.739Z",
   "puzzles": [
+    {
+      "id": 2772,
+      "printDate": "2026-07-07",
+      "status": "published",
+      "sides": [
+        "IOY",
+        "KPR",
+        "NEG",
+        "VHD"
+      ],
+      "solution": "WyJHSU5LR08iLCJPVkVSSFlQRUQiXQ=="
+    },
     {
       "id": 2771,
       "printDate": "2026-07-06",
