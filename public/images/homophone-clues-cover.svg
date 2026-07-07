@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#tile)"/>
+
+  <!-- sound-wave motif, top-right -->
+  <g transform="translate(1010,74)" fill="none" stroke="#6366f1" stroke-width="7" stroke-linecap="round" opacity="0.9">
+    <circle cx="12" cy="52" r="12" fill="#6366f1" stroke="none"/>
+    <path d="M40 30 A34 34 0 0 1 40 74"/>
+    <path d="M64 14 A56 56 0 0 1 64 90" stroke="#818cf8"/>
+    <path d="M88 0 A78 78 0 0 1 88 104" stroke="#4f5bd5"/>
+  </g>
+
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">SOLVING GUIDE · DAILYCRYPTIC</text>
+
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="184" font-size="66">Homophone Clues:</text>
+    <text x="78" y="258" font-size="66">Solving by Ear</text>
+  </g>
+  <text x="80" y="308" fill="#cbd5e1" font-size="26" font-weight="500">When a clue says &#8220;we hear&#8221;, the wordplay <tspan font-style="italic">sounds</tspan> like the answer — not spelled like it.</text>
+
+  <!-- BARE sounds like BEAR -->
+  <g transform="translate(80,392)">
+    <!-- BARE (what you hear) -->
+    <rect x="0" y="0" width="220" height="118" rx="16" fill="url(#tile)"/>
+    <text x="110" y="76" fill="#ffffff" font-size="52" font-weight="800" text-anchor="middle">BARE</text>
+    <text x="110" y="150" fill="#94a3b8" font-size="22" font-weight="600" text-anchor="middle">&#8220;uncovered&#8221;</text>
+
+    <!-- sounds-like connector -->
+    <g transform="translate(262,20)" fill="none" stroke="#6b7aa8" stroke-width="5" stroke-linecap="round">
+      <path d="M6 39 A22 22 0 0 1 6 79"/>
+      <path d="M26 27 A36 36 0 0 1 26 91"/>
+    </g>
+    <text x="300" y="150" fill="#6b7aa8" font-size="19" font-weight="700" text-anchor="middle">sounds like</text>
+
+    <!-- BEAR (the answer) -->
+    <rect x="360" y="0" width="360" height="118" rx="16" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="540" y="76" fill="#ffffff" font-size="52" font-weight="800" text-anchor="middle">BEAR</text>
+    <text x="540" y="150" fill="#a5b4fc" font-size="22" font-weight="700" text-anchor="middle">&#8220;animal&#8221; — the answer</text>
+  </g>
+</svg>

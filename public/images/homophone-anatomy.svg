@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+    <linearGradient id="ht" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="470" rx="20" fill="url(#hbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="56" fill="#ffffff" font-size="28" font-weight="800">Anatomy of a homophone clue</text>
+  <text x="44" y="86" fill="#94a3b8" font-size="17" font-weight="500">The wordplay gives a word that <tspan font-style="italic">sounds</tspan> like the answer.</text>
+
+  <!-- The clue, colour-coded -->
+  <g font-size="40" font-weight="800" transform="translate(0,170)">
+    <text x="44" y="0">
+      <tspan fill="#34d399">Animal</tspan><tspan fill="#cbd5e1"> is </tspan><tspan fill="#818cf8">naked</tspan><tspan fill="#cbd5e1">, </tspan><tspan fill="#fbbf24">we hear</tspan><tspan fill="#64748b"> (4)</tspan>
+    </text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(0,214)" font-size="16" font-weight="700">
+    <circle cx="52" cy="16" r="7" fill="#34d399"/>
+    <text x="68" y="21" fill="#cbd5e1">definition</text>
+    <circle cx="210" cy="16" r="7" fill="#818cf8"/>
+    <text x="226" y="21" fill="#cbd5e1">soundalike word</text>
+    <circle cx="430" cy="16" r="7" fill="#fbbf24"/>
+    <text x="446" y="21" fill="#cbd5e1">homophone indicator</text>
+  </g>
+
+  <!-- resolution: BARE sounds like BEAR -->
+  <g transform="translate(0,300)">
+    <rect x="44" y="0" width="200" height="96" rx="14" fill="url(#ht)"/>
+    <text x="144" y="52" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle">BARE</text>
+    <text x="144" y="126" fill="#94a3b8" font-size="17" font-weight="600" text-anchor="middle">say &#8220;naked&#8221;</text>
+
+    <g transform="translate(280,26)" fill="none" stroke="#6b7aa8" stroke-width="5" stroke-linecap="round">
+      <path d="M6 22 A20 20 0 0 1 6 62"/>
+      <path d="M26 10 A34 34 0 0 1 26 74"/>
+    </g>
+    <text x="316" y="126" fill="#6b7aa8" font-size="16" font-weight="700" text-anchor="middle">sounds like</text>
+
+    <rect x="392" y="0" width="360" height="96" rx="14" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="572" y="52" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle">BEAR</text>
+    <text x="572" y="126" fill="#a5b4fc" font-size="17" font-weight="700" text-anchor="middle">&#8220;animal&#8221; — the answer</text>
+  </g>
+</svg>
