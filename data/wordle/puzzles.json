@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-06T09:34:33.405Z",
+  "lastUpdated": "2026-07-07T08:48:08.207Z",
   "puzzles": [
+    {
+      "id": 1844,
+      "printDate": "2026-07-07",
+      "status": "published",
+      "solution": "c2xpbmc=",
+      "hint1": "This word ends with a nasal sound.",
+      "hint2": "The word starts with S and has 1 vowel.",
+      "hint3": "S _ I _ G"
+    },
     {
       "id": 1843,
       "printDate": "2026-07-06",
