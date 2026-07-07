@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="vbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+    <linearGradient id="vt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="470" rx="20" fill="url(#vbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="54" fill="#ffffff" font-size="28" font-weight="800">One answer, several voices</text>
+  <text x="44" y="84" fill="#94a3b8" font-size="17" font-weight="500">Three setters clue the same word — </text>
+  <text x="322" y="84" fill="#a5b4fc" font-size="17" font-weight="800">STAR</text>
+  <text x="374" y="84" fill="#94a3b8" font-size="17" font-weight="500"> — three different ways.</text>
+
+  <!-- row 1: anagram style -->
+  <g transform="translate(44,116)">
+    <rect x="0" y="0" width="912" height="98" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.5"/>
+    <rect x="20" y="30" width="150" height="38" rx="19" fill="#243358"/>
+    <text x="95" y="55" fill="#c7d2fe" font-size="14" font-weight="800" text-anchor="middle">ANAGRAM FAN</text>
+    <text x="196" y="46" fill="#e5e9f7" font-size="22" font-weight="700">&#8220;Rats scattered to become famous (4)&#8221;</text>
+    <text x="196" y="76" fill="#7c89b8" font-size="15" font-weight="600">RATS anagrammed = STAR · &#8220;famous&#8221; is the definition</text>
+  </g>
+
+  <!-- row 2: hidden-word style -->
+  <g transform="translate(44,226)">
+    <rect x="0" y="0" width="912" height="98" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.5"/>
+    <rect x="20" y="30" width="150" height="38" rx="19" fill="#243358"/>
+    <text x="95" y="55" fill="#c7d2fe" font-size="14" font-weight="800" text-anchor="middle">HIDDEN-WORD</text>
+    <text x="196" y="46" fill="#e5e9f7" font-size="22" font-weight="700">&#8220;Celebrity hiding in Costa Rica (4)&#8221;</text>
+    <text x="196" y="76" fill="#7c89b8" font-size="15" font-weight="600">co</text>
+    <text x="216" y="76" fill="#fbbf24" font-size="15" font-weight="800">STA R</text>
+    <text x="258" y="76" fill="#7c89b8" font-size="15" font-weight="600">ica · &#8220;celebrity&#8221; is the definition</text>
+  </g>
+
+  <!-- row 3: double-def style -->
+  <g transform="translate(44,336)">
+    <rect x="0" y="0" width="912" height="98" rx="14" fill="#17223f" stroke="#4f5bd5" stroke-width="1.5"/>
+    <rect x="20" y="30" width="150" height="38" rx="19" fill="#2b3a63"/>
+    <text x="95" y="55" fill="#c7d2fe" font-size="14" font-weight="800" text-anchor="middle">MINIMALIST</text>
+    <text x="196" y="46" fill="#e5e9f7" font-size="22" font-weight="700">&#8220;Leading actor; twinkles at night (4)&#8221;</text>
+    <text x="196" y="76" fill="#7c89b8" font-size="15" font-weight="600">Double definition — two meanings of STAR, no indicator</text>
+  </g>
+</svg>
