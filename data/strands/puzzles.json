@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-06T09:36:04.076Z",
+  "lastUpdated": "2026-07-07T08:50:09.769Z",
   "puzzles": [
+    {
+      "id": 1034,
+      "printDate": "2026-07-07",
+      "status": "published",
+      "clue": "Hitching a ride",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBHIEUgVCBBIFIgTyBVIE4gRA==",
+      "spangram": "SUdFVEFST1VORA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QlVHR1k=",
+        "Q0FSUklBR0U=",
+        "Q0FSVA==",
+        "U0xFSUdI",
+        "U1RBR0VDT0FDSA==",
+        "V0FHT04="
+      ]
+    },
     {
       "id": 1033,
       "printDate": "2026-07-06",
