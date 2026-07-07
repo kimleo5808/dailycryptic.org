@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#tile)"/>
+
+  <!-- PDF/paper motif, top-right -->
+  <g transform="translate(1010,64)">
+    <rect x="0" y="0" width="96" height="118" rx="8" fill="#f5f7fa"/>
+    <path d="M70 0 L96 26 L70 26 Z" fill="#c7d0e0"/>
+    <rect x="0" y="70" width="96" height="30" rx="4" fill="#6366f1"/>
+    <text x="48" y="91" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">PDF</text>
+  </g>
+
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">SOLVING GUIDE · DAILYCRYPTIC</text>
+
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="184" font-size="66">Cryptics on Paper:</text>
+    <text x="78" y="258" font-size="66">How to Print Them Well</text>
+  </g>
+  <text x="80" y="308" fill="#cbd5e1" font-size="26" font-weight="500">Many solvers still reach for pen and paper. Here&#8217;s how to get any puzzle print-ready.</text>
+
+  <!-- paper sheet with mini grid + pen -->
+  <g transform="translate(80,360)">
+    <rect x="0" y="0" width="220" height="170" rx="10" fill="#f5f7fa" transform="rotate(-4 110 85)"/>
+    <g transform="rotate(-4 110 85)" fill="none" stroke="#334066" stroke-width="2">
+      <rect x="34" y="30" width="152" height="112"/>
+      <line x1="34" y1="58" x2="186" y2="58"/><line x1="34" y1="86" x2="186" y2="86"/><line x1="34" y1="114" x2="186" y2="114"/>
+      <line x1="72" y1="30" x2="72" y2="142"/><line x1="110" y1="30" x2="110" y2="142"/><line x1="148" y1="30" x2="148" y2="142"/>
+    </g>
+    <g transform="rotate(-4 110 85)" fill="#1e2a4a">
+      <rect x="34" y="30" width="38" height="28"/><rect x="148" y="86" width="38" height="28"/>
+    </g>
+
+    <!-- pen -->
+    <g transform="translate(250,26) rotate(32)">
+      <rect x="0" y="0" width="26" height="150" rx="6" fill="url(#tile)"/>
+      <path d="M0 150 L13 178 L26 150 Z" fill="#e5e9f7"/>
+      <path d="M9 168 L13 178 L17 168 Z" fill="#1e2a4a"/>
+      <rect x="0" y="0" width="26" height="26" rx="6" fill="#4f5bd5"/>
+    </g>
+
+    <text x="470" y="70" fill="#c7d2fe" font-size="24" font-weight="700">Fewer distractions.</text>
+    <text x="470" y="106" fill="#c7d2fe" font-size="24" font-weight="700">Room to scribble.</text>
+    <text x="470" y="142" fill="#7c89b8" font-size="20" font-weight="500">The margin is your workspace.</text>
+  </g>
+</svg>

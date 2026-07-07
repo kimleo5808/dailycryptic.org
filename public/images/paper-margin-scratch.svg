@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="440" rx="20" fill="url(#mbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="54" fill="#ffffff" font-size="28" font-weight="800">Use the margin as scratch space</text>
+  <text x="44" y="84" fill="#94a3b8" font-size="17" font-weight="500">Writing the letters out by hand is half the battle with anagrams.</text>
+
+  <!-- paper card -->
+  <rect x="44" y="112" width="912" height="292" rx="14" fill="#f5f7fa"/>
+  <rect x="44" y="112" width="10" height="292" rx="5" fill="#e0446b" opacity="0.5"/>
+
+  <text x="96" y="168" fill="#1f2937" font-size="26" font-weight="800">&#8220;Garden ruined? That&#8217;s a risk (6)&#8221;</text>
+  <text x="96" y="200" fill="#6b7280" font-size="16" font-weight="600">&#8220;ruined&#8221; = anagram indicator&#160;&#160;·&#160;&#160;&#8220;risk&#8221; = definition</text>
+
+  <!-- scattered fodder letters (handwritten scratch) -->
+  <g font-size="30" font-weight="800" fill="#4f5bd5">
+    <text x="120" y="286" transform="rotate(-12 120 286)">G</text>
+    <text x="188" y="300" transform="rotate(8 188 300)">A</text>
+    <text x="250" y="280" transform="rotate(-6 250 280)">R</text>
+    <text x="312" y="304" transform="rotate(14 312 304)">D</text>
+    <text x="372" y="284" transform="rotate(-10 372 284)">E</text>
+    <text x="430" y="300" transform="rotate(6 430 300)">N</text>
+  </g>
+  <text x="120" y="330" fill="#9aa3b2" font-size="15" font-weight="600">the six letters, jumbled</text>
+
+  <!-- arrow -->
+  <g transform="translate(500,270)" stroke="#9aa3b2" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="0" y1="10" x2="52" y2="10"/>
+    <path d="M40 0 L54 10 L40 20"/>
+  </g>
+
+  <!-- rearranged answer -->
+  <g transform="translate(576,244)">
+    <rect x="0" y="0" width="330" height="56" rx="10" fill="none" stroke="#4f5bd5" stroke-width="2.5"/>
+    <text x="165" y="38" fill="#1f2937" font-size="32" font-weight="800" text-anchor="middle" letter-spacing="6">DANGER</text>
+    <text x="0" y="86" fill="#6b7280" font-size="15" font-weight="600">rearrange to the answer</text>
+  </g>
+</svg>
