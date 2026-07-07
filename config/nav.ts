@@ -178,6 +178,21 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           },
         ],
       },
+      {
+        title: "NYT Spelling Bee",
+        links: [
+          {
+            name: "Spelling Bee Answers",
+            href: "/spelling-bee-answers-today",
+            description: "Today's hints, pangram and full word list",
+          },
+          {
+            name: "Spelling Bee Archive",
+            href: "/spelling-bee-answers",
+            description: "Browse past puzzles and answers",
+          },
+        ],
+      },
     ],
   },
   {
