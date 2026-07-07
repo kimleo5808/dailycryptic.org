@@ -123,7 +123,7 @@ About 7 letters on average, with 6 letters being the single most common length. 
 
 ## Sources and method
 
-- **Dataset:** Wordplay dataset of cryptic clues with human-written breakdowns — [github.com/mdda/cryptic-wordplay](https://github.com/mdda/cryptic-wordplay) (the cleaned "teacow"/*Financial Times* sample, 5,712 clues). A broader, unlabelled corpus of 500,000+ clues is maintained at [cryptics.georgeho.org](https://cryptics.georgeho.org/).
+- **Dataset:** an open, publicly available dataset of cryptic clues with human-written breakdowns — a cleaned *Financial Times* sample of 5,712 clues.
 - **Method:** definition position and answer length were read directly from the markup; wordplay devices were detected from notation and indicator words, with anagrams and charades counted reliably and rarer devices reported as lower bounds.
 - **Scope:** a single *Financial Times* setter over ~6 years. Treat the figures as one expert's style, not a universal average.
 

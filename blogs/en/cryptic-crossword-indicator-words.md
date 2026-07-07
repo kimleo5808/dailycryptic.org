@@ -196,7 +196,7 @@ Any word that points to hearing or speaking: "reportedly" (589 clues), "we hear"
 
 ## Sources and method
 
-- **Dataset:** George Ho's open dataset of cryptic crossword clues — [cryptics.georgeho.org](https://cryptics.georgeho.org/) — including its derived "indicators" table (15,735 rows labelled by wordplay type). The corpus spans 500,000+ clues from British publications.
+- **Dataset:** an open, publicly available dataset of cryptic crossword clues, including its derived "indicators" table (15,735 rows labelled by wordplay type). The corpus spans 500,000+ clues from British publications.
 - **Method:** each indicator was ranked by the number of clues it appears in. Top entries are robust; rare entries (counts under ~20) are indicative only, as indicators were extracted by pattern-matching.
 
 *Analysis by the dailycryptic.org team. Spotted an error? [Tell us](/contact) and we will recheck.*
