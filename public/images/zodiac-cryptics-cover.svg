@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#tile)"/>
+
+  <!-- little constellation, top-right -->
+  <g fill="#818cf8">
+    <circle cx="1020" cy="86" r="4"/><circle cx="1064" cy="70" r="5"/><circle cx="1104" cy="104" r="3"/>
+    <circle cx="1088" cy="150" r="4"/><circle cx="1040" cy="140" r="3"/>
+    <g stroke="#3a4a78" stroke-width="1.5">
+      <line x1="1020" y1="86" x2="1064" y2="70"/><line x1="1064" y1="70" x2="1104" y2="104"/>
+      <line x1="1104" y1="104" x2="1088" y2="150"/><line x1="1088" y1="150" x2="1040" y2="140"/>
+      <line x1="1040" y1="140" x2="1020" y2="86"/>
+    </g>
+  </g>
+
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">SOLVING GUIDE · DAILYCRYPTIC</text>
+
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="184" font-size="64">Star Signs in Cryptics:</text>
+    <text x="78" y="256" font-size="64">The Zodiac Words to Know</text>
+  </g>
+  <text x="80" y="306" fill="#cbd5e1" font-size="26" font-weight="500">&#8220;The Ram&#8221;, &#8220;the Scales&#8221;, &#8220;the Archer&#8221; — the zodiac hides a dozen synonyms setters use to mislead you.</text>
+
+  <!-- the Ram = ARIES -->
+  <g transform="translate(80,392)">
+    <rect x="0" y="0" width="260" height="118" rx="16" fill="url(#tile)"/>
+    <text x="130" y="60" fill="#ffffff" font-size="34" font-weight="800" text-anchor="middle">&#8220;the Ram&#8221;</text>
+    <text x="130" y="96" fill="#dfe3f7" font-size="20" font-weight="600" text-anchor="middle">clue surface</text>
+
+    <text x="320" y="66" fill="#6b7aa8" font-size="40" font-weight="800" text-anchor="middle">=</text>
+
+    <rect x="360" y="0" width="300" height="118" rx="16" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="510" y="60" fill="#ffffff" font-size="44" font-weight="800" text-anchor="middle" letter-spacing="4">ARIES</text>
+    <text x="510" y="96" fill="#a5b4fc" font-size="20" font-weight="700" text-anchor="middle">the answer</text>
+  </g>
+</svg>
