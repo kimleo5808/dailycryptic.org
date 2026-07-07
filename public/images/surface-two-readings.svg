@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+    <linearGradient id="st" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="500" rx="20" fill="url(#sbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="54" fill="#ffffff" font-size="28" font-weight="800">One clue, two readings</text>
+  <text x="44" y="84" fill="#94a3b8" font-size="17" font-weight="500">The same words mean one thing on the surface and another underneath.</text>
+
+  <!-- the clue -->
+  <rect x="44" y="108" width="912" height="64" rx="12" fill="#141d3a" stroke="#2a3a63" stroke-width="1.5"/>
+  <text x="500" y="149" fill="#e5e9f7" font-size="30" font-weight="800" text-anchor="middle">&#8220;Silent, surprisingly, and attentive (6)&#8221;</text>
+
+  <!-- surface reading -->
+  <g transform="translate(44,200)">
+    <rect x="0" y="0" width="440" height="256" rx="16" fill="#17223f" stroke="#334066" stroke-width="1.5"/>
+    <text x="24" y="44" fill="#fbbf24" font-size="20" font-weight="800">THE SURFACE</text>
+    <text x="24" y="72" fill="#94a3b8" font-size="15" font-weight="600">what the sentence seems to say</text>
+    <circle cx="60" cy="140" r="30" fill="#243358"/>
+    <circle cx="60" cy="128" r="11" fill="#c7d2fe"/>
+    <path d="M40 168 Q60 148 80 168 L80 176 L40 176 Z" fill="#c7d2fe"/>
+    <text x="110" y="132" fill="#e5e9f7" font-size="19" font-weight="700">A quiet, watchful</text>
+    <text x="110" y="160" fill="#e5e9f7" font-size="19" font-weight="700">person — a picture.</text>
+    <text x="24" y="222" fill="#7c89b8" font-size="15" font-style="italic">Convincing… and a distraction.</text>
+  </g>
+
+  <!-- cryptic reading -->
+  <g transform="translate(516,200)">
+    <rect x="0" y="0" width="440" height="256" rx="16" fill="#17223f" stroke="#4f5bd5" stroke-width="1.5"/>
+    <text x="24" y="44" fill="#818cf8" font-size="20" font-weight="800">THE CRYPTIC READING</text>
+    <text x="24" y="72" fill="#94a3b8" font-size="15" font-weight="600">the wordplay hidden underneath</text>
+
+    <rect x="24" y="100" width="150" height="52" rx="10" fill="url(#st)"/>
+    <text x="99" y="134" fill="#ffffff" font-size="24" font-weight="800" text-anchor="middle">SILENT</text>
+    <text x="196" y="133" fill="#6b7aa8" font-size="26" font-weight="800" text-anchor="middle">&#8635;</text>
+    <rect x="228" y="100" width="150" height="52" rx="10" fill="#1e2a4a" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="303" y="134" fill="#ffffff" font-size="24" font-weight="800" text-anchor="middle">LISTEN</text>
+
+    <text x="24" y="196" fill="#cbd5e1" font-size="16" font-weight="600">&#8220;surprisingly&#8221; = anagram</text>
+    <text x="24" y="222" fill="#cbd5e1" font-size="16" font-weight="600">&#8220;attentive&#8221; = definition of LISTEN</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#tile)"/>
+
+  <!-- picture-frame motif, top-right -->
+  <g transform="translate(1004,66)" opacity="0.9">
+    <rect x="0" y="0" width="120" height="104" rx="10" fill="none" stroke="#6366f1" stroke-width="4" stroke-dasharray="9 8"/>
+    <circle cx="38" cy="40" r="15" fill="#818cf8"/>
+    <path d="M14 92 L52 54 L74 76 L92 58 L106 72 L106 92 Z" fill="#4f5bd5"/>
+  </g>
+
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">SOLVING GUIDE · DAILYCRYPTIC</text>
+
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="184" font-size="66">Surface Reading:</text>
+    <text x="78" y="258" font-size="66">The Picture a Clue Paints</text>
+  </g>
+  <text x="80" y="308" fill="#cbd5e1" font-size="26" font-weight="500">Every cryptic clue tells a little story on the surface — and hides the real answer underneath.</text>
+
+  <!-- SILENT rearranged to LISTEN -->
+  <g transform="translate(80,392)">
+    <rect x="0" y="0" width="240" height="118" rx="16" fill="url(#tile)"/>
+    <text x="120" y="76" fill="#ffffff" font-size="50" font-weight="800" text-anchor="middle">SILENT</text>
+    <text x="120" y="150" fill="#94a3b8" font-size="22" font-weight="600" text-anchor="middle">the surface word</text>
+
+    <text x="300" y="66" fill="#6b7aa8" font-size="30" font-weight="800" text-anchor="middle">&#8635;</text>
+    <text x="300" y="150" fill="#6b7aa8" font-size="18" font-weight="700" text-anchor="middle">rearranged</text>
+
+    <rect x="360" y="0" width="380" height="118" rx="16" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="550" y="76" fill="#ffffff" font-size="50" font-weight="800" text-anchor="middle">LISTEN</text>
+    <text x="550" y="150" fill="#a5b4fc" font-size="22" font-weight="700" text-anchor="middle">&#8220;attentive&#8221; — the answer</text>
+  </g>
+</svg>
