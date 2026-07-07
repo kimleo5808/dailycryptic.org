@@ -1,0 +1,54 @@
+name: Update Pips Puzzle
+
+on:
+  schedule:
+    # Run at 07:35 UTC daily (3:35 AM ET, shortly after the NYT reset)
+    - cron: "35 7 * * *"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch today's puzzle
+        id: fetch
+        run: node scripts/fetch-pips.mjs
+        continue-on-error: true
+
+      - name: Retry after 30 minutes if failed
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "First attempt failed. Waiting 30 minutes..."
+          sleep 1800
+          node scripts/fetch-pips.mjs
+        continue-on-error: true
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/pips/puzzles.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/pips/puzzles.json
+          DATE=$(date -u +"%Y-%m-%d")
+          git commit -m "data: update pips puzzle for ${DATE}"
+          git push

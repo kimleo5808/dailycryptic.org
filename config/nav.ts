@@ -193,6 +193,21 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           },
         ],
       },
+      {
+        title: "NYT Pips",
+        links: [
+          {
+            name: "Pips Answers",
+            href: "/pips-answers-today",
+            description: "Today's hints and solutions — Easy, Medium, Hard",
+          },
+          {
+            name: "Pips Archive",
+            href: "/pips-answers",
+            description: "Browse past puzzles and solutions",
+          },
+        ],
+      },
     ],
   },
   {

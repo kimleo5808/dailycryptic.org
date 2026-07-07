@@ -3,6 +3,7 @@ import { getAllMinuteCryptics } from '@/lib/minute-cryptic-data'
 import { getAllConnectionsPuzzles } from '@/lib/connections-data'
 import { getAllStrandsPuzzles } from '@/lib/strands-data'
 import { getAllSpellingBeePuzzles } from '@/lib/spelling-bee-data'
+import { getAllPipsPuzzles } from '@/lib/pips-data'
 import { getAllWordlePuzzles } from '@/lib/wordle-data'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
@@ -44,6 +45,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/strands-game',
     '/spelling-bee-answers-today',
     '/spelling-bee-answers',
+    '/pips-answers-today',
+    '/pips-answers',
     '/quordle',
     '/blog',
     '/share',
@@ -56,7 +59,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer' || page === '/spelling-bee-answers-today' || page === '/spelling-bee-answers' || page === '/quordle'
+    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer' || page === '/spelling-bee-answers-today' || page === '/spelling-bee-answers' || page === '/pips-answers-today' || page === '/pips-answers' || page === '/quordle'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
@@ -74,6 +77,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
               : page === '/strands-hint-today'
                 ? 0.95
               : page === '/spelling-bee-answers-today'
+                ? 0.95
+              : page === '/pips-answers-today'
                 ? 0.95
               : page === '/quordle'
                 ? 0.9
@@ -118,6 +123,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
+  // Pips answer pages
+  const allPips = await getAllPipsPuzzles()
+  const pipsPages = allPips.map(puzzle => ({
+    url: `${siteUrl}/pips-answers/${puzzle.printDate}`,
+    lastModified: new Date(puzzle.printDate),
+    changeFrequency: 'monthly' as ChangeFrequency,
+    priority: 0.6,
+  }))
+
   // Wordle answer pages
   const allWordle = await getAllWordlePuzzles()
   const wordlePages = allWordle.map(puzzle => ({
@@ -151,6 +165,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...connectionsPages,
     ...strandsPages,
     ...spellingBeePages,
+    ...pipsPages,
     ...wordlePages,
     ...postPages,
   ]
