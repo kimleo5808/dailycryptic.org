@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-07-07T08:50:09.769Z",
+  "lastUpdated": "2026-07-08T07:54:52.684Z",
   "puzzles": [
+    {
+      "id": 1035,
+      "printDate": "2026-07-08",
+      "status": "published",
+      "clue": "Here comes trouble",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBJIFQgVCBMIEUgRCBFIFYgSSBM",
+      "spangram": "TElUVExFREVWSUw=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SEVMTElPTg==",
+        "UkFQU0NBTExJT04=",
+        "U0NBTVA=",
+        "V0hJUFBFUlNOQVBQRVI="
+      ]
+    },
     {
       "id": 1034,
       "printDate": "2026-07-07",
