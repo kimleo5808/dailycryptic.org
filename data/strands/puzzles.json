@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-08T07:54:52.684Z",
+  "lastUpdated": "2026-07-09T08:51:33.671Z",
   "puzzles": [
+    {
+      "id": 1036,
+      "printDate": "2026-07-09",
+      "status": "published",
+      "clue": "On the lips",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "SyBJIFMgUyBBIE4gRCBNIEEgSyBFIFUgUA==",
+      "spangram": "S0lTU0FORE1BS0VVUA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QkFMTQ==",
+        "R0xPU1M=",
+        "TElORVI=",
+        "UExVTVBFUg==",
+        "U1RBSU4=",
+        "U1RJQ0s=",
+        "VElOVA=="
+      ]
+    },
     {
       "id": 1035,
       "printDate": "2026-07-08",
