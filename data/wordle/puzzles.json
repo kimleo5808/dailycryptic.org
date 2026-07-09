@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-08T07:52:30.913Z",
+  "lastUpdated": "2026-07-09T08:49:40.065Z",
   "puzzles": [
+    {
+      "id": 1846,
+      "printDate": "2026-07-09",
+      "status": "published",
+      "solution": "YW1lbmQ=",
+      "hint1": "Think of a word that starts from the beginning of the alphabet.",
+      "hint2": "The word starts with A and has 2 vowels.",
+      "hint3": "A _ E _ D"
+    },
     {
       "id": 1845,
       "printDate": "2026-07-08",
