@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-07-08T07:43:15.039Z",
+  "lastUpdated": "2026-07-10T08:46:29.879Z",
   "puzzles": [
+    {
+      "id": 1125,
+      "printDate": "2026-07-10",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U01BUlRQSE9ORSBTRVRUSU5HUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RE8gTk9UIERJU1RVUkI=",
+            "QUlSUExBTkUgTU9ERQ==",
+            "SE9UU1BPVA==",
+            "TE9DQVRJT04gU0VSVklDRVM="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "REVTU0VSVCBNRU5VIERFU0NSSVBUT1JT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RlJFU0gtQkFLRUQ=",
+            "w4AgTEEgTU9ERQ==",
+            "REVDQURFTlQ=",
+            "TU9MVEVO"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "JzgwUyBTWU5USC1QT1AgQkFORFM=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "REVQRUNIRSBNT0RF",
+            "RVJBU1VSRQ==",
+            "TkVXIE9SREVS",
+            "UEVUIFNIT1AgQk9ZUw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBCQVNFQkFMTCBDQUxMUw==",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "T1VUS0FTVA==",
+            "QkFMTCBHT1dO",
+            "U1RSSUtFIEEgUE9TRQ==",
+            "U0FGRSBNT0RF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1123,
       "printDate": "2026-07-08",
