@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-08T09:58:32.561Z",
+  "lastUpdated": "2026-07-10T10:37:56.994Z",
   "puzzles": [
+    {
+      "id": 2775,
+      "printDate": "2026-07-10",
+      "status": "published",
+      "sides": [
+        "UOC",
+        "GER",
+        "YAL",
+        "JIN"
+      ],
+      "solution": "WyJKVUlDWSIsIllFQVJMT05HIl0="
+    },
     {
       "id": 2773,
       "printDate": "2026-07-08",
