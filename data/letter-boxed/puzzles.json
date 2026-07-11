@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-10T10:37:56.994Z",
+  "lastUpdated": "2026-07-11T09:09:55.904Z",
   "puzzles": [
+    {
+      "id": 2776,
+      "printDate": "2026-07-11",
+      "status": "published",
+      "sides": [
+        "MNR",
+        "LUC",
+        "ATO",
+        "PFK"
+      ],
+      "solution": "WyJNQU5VRkFDVFVSQUwiLCJMT0NLVVAiXQ=="
+    },
     {
       "id": 2775,
       "printDate": "2026-07-10",
