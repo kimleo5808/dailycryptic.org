@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-07-10T08:49:04.138Z",
+  "lastUpdated": "2026-07-11T07:24:51.712Z",
   "puzzles": [
+    {
+      "id": 1038,
+      "printDate": "2026-07-11",
+      "status": "published",
+      "clue": "Fishy fare",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "QyBBIFMgUyBFIFIgTyBMIEU=",
+      "spangram": "Q0FTU0VST0xF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "Q0hFRVNF",
+        "TUlMSw==",
+        "Tk9PRExFUw==",
+        "UEVBUw==",
+        "UEVQUEVS",
+        "U0FMVA==",
+        "U09VUA==",
+        "VFVOQQ=="
+      ]
+    },
     {
       "id": 1037,
       "printDate": "2026-07-10",
