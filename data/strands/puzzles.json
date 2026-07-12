@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-11T07:24:51.712Z",
+  "lastUpdated": "2026-07-12T07:41:03.460Z",
   "puzzles": [
+    {
+      "id": 1054,
+      "printDate": "2026-07-12",
+      "status": "published",
+      "clue": "In the Big Apple",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RSBNIFAgSSBSIEUgUyBUIEEgVCBF",
+      "spangram": "RU1QSVJFU1RBVEU=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QkFHRUw=",
+        "Qk9ERUdB",
+        "Qk9ST1VHSA==",
+        "REVMSQ==",
+        "U1RPT1A=",
+        "U1VCV0FZ",
+        "VEFYSQ=="
+      ]
+    },
     {
       "id": 1038,
       "printDate": "2026-07-11",
