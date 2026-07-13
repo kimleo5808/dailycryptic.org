@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-07-12T07:38:59.882Z",
+  "lastUpdated": "2026-07-13T08:29:55.750Z",
   "puzzles": [
+    {
+      "id": 1128,
+      "printDate": "2026-07-13",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "SU5URVJST0dBVEU=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UVVFU1RJT04=",
+            "R1JJTEw=",
+            "UFVNUA==",
+            "RVhBTUlORQ=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIFdJVEggSEFORExFUw==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "VU1CUkVMTEE=",
+            "QlVDS0VU",
+            "TVVH",
+            "RFJBV0VS"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RklDVElPTkFMIENBVFM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "U0FMRU0=",
+            "UFVTUw==",
+            "RklHQVJP",
+            "VE9N"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBTTU9PQ0hFUw==",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "S0lTU0VS",
+            "U01BQ0tET1dO",
+            "QlVTU0lO",
+            "UEVDS0lTSA=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1127,
       "printDate": "2026-07-12",
