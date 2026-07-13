@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-12T09:29:38.142Z",
+  "lastUpdated": "2026-07-13T10:42:25.066Z",
   "puzzles": [
+    {
+      "id": 2778,
+      "printDate": "2026-07-13",
+      "status": "published",
+      "sides": [
+        "AEI",
+        "DKL",
+        "TUZ",
+        "PNC"
+      ],
+      "solution": "WyJDQVBJVEFMSVpFRCIsIkRVTksiXQ=="
+    },
     {
       "id": 2777,
       "printDate": "2026-07-12",
