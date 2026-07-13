@@ -222,10 +222,9 @@ export default async function HomeComponent() {
             cryptic solving approachable while preserving real clue mechanics.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you searched for minute cryptic, minute cryptic hints, or minute
-            cryptic answer today, or daily cryptic clue today, this homepage is
-            built to cover all three needs: play now, learn the method, and
-            verify with confidence.
+            Whether you are here for a quick answer check or a full unaided
+            solve, this homepage is built to cover three needs: play now, learn
+            the method, and verify with confidence.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             You do not need a full crossword grid to build cryptic skill. A
@@ -257,10 +256,8 @@ export default async function HomeComponent() {
             educational.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you came from searches such as minute cryptic today or minute
-            cryptic clues today, or daily cryptic puzzle today, this page gives
-            you a clean solve-first flow: attempt, hint, check, then
-            explanation.
+            However you arrived, this page gives you a clean solve-first flow:
+            attempt, hint, check, then explanation.
           </p>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
@@ -356,9 +353,9 @@ export default async function HomeComponent() {
             Minute Cryptic Answer Today and No-Spoiler Solving
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Search demand for minute cryptic answer today is real. Some users
-            need quick verification, while others want full solve-first
-            experience. Our structure supports both paths.
+            Some players just need quick verification of today&apos;s answer,
+            while others want the full solve-first experience. Our structure
+            supports both paths.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             We recommend a no-spoiler sequence: attempt first, open one hint,
@@ -398,9 +395,9 @@ export default async function HomeComponent() {
             explanations, and note one recurring mistake.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Users searching minute cryptic archive, past minute cryptics, or
-            minute cryptic crossword often want continuity. Date-based archive
-            access provides exactly that.
+            If you want continuity — catching up on missed dates or replaying
+            older clues in order — date-based archive access provides exactly
+            that.
           </p>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
@@ -501,10 +498,8 @@ export default async function HomeComponent() {
             explanations.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you searched minute cryptic, daily cryptic, minutecryptic,
-            cryptic minute, or minute cryptic crossword, you are likely looking
-            for a place that helps you both solve and improve. That is the
-            model of this site.
+            If you are looking for a place that helps you both solve and
+            improve, that is the model of this site.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Start with today&apos;s clue, use hints only when needed, and review
