@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "packageManager": "pnpm@10.12.4",
   "engines": {
-    "node": "20.x"
+    "node": ">=20"
   },
   "scripts": {
     "build": "next build",
