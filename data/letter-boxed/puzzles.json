@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-13T10:42:25.066Z",
+  "lastUpdated": "2026-07-14T09:29:14.904Z",
   "puzzles": [
+    {
+      "id": 2779,
+      "printDate": "2026-07-14",
+      "status": "published",
+      "sides": [
+        "IVN",
+        "RFE",
+        "LGT",
+        "CHA"
+      ],
+      "solution": "WyJWRUhJQ0xFIiwiRU5HUkFGVCJd"
+    },
     {
       "id": 2778,
       "printDate": "2026-07-13",
