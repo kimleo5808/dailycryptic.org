@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-13T08:33:35.012Z",
+  "lastUpdated": "2026-07-14T07:25:37.466Z",
   "puzzles": [
+    {
+      "id": 1040,
+      "printDate": "2026-07-14",
+      "status": "published",
+      "clue": "Make yourself comfortable",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBBIFYgRSBBIFMgRSBBIFQ=",
+      "spangram": "SEFWRUFTRUFU",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkVBTkJBRw==",
+        "Q0hBSVI=",
+        "T1RUT01BTg==",
+        "UkVDTElORVI=",
+        "Uk9DS0VS",
+        "VEhST05F"
+      ]
+    },
     {
       "id": 1039,
       "printDate": "2026-07-13",
