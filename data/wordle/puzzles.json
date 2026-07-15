@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-14T07:23:48.386Z",
+  "lastUpdated": "2026-07-15T07:27:12.112Z",
   "puzzles": [
+    {
+      "id": 1852,
+      "printDate": "2026-07-15",
+      "status": "published",
+      "solution": "cHNoYXc=",
+      "hint1": "This word begins with a popping sound.",
+      "hint2": "The word starts with P and has 1 vowel.",
+      "hint3": "P _ H _ W"
+    },
     {
       "id": 1851,
       "printDate": "2026-07-14",
