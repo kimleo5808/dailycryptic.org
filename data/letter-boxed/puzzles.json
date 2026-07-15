@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-14T09:29:14.904Z",
+  "lastUpdated": "2026-07-15T09:32:26.956Z",
   "puzzles": [
+    {
+      "id": 2780,
+      "printDate": "2026-07-15",
+      "status": "published",
+      "sides": [
+        "KUC",
+        "RTA",
+        "QNH",
+        "IYG"
+      ],
+      "solution": "WyJRVUlSS1kiLCJZQUNIVElORyJd"
+    },
     {
       "id": 2779,
       "printDate": "2026-07-14",
