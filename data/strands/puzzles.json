@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-07-14T07:25:37.466Z",
+  "lastUpdated": "2026-07-15T07:29:16.135Z",
   "puzzles": [
+    {
+      "id": 1041,
+      "printDate": "2026-07-15",
+      "status": "published",
+      "clue": "Rose-colored glasses",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UCBJIEUgSSBOIFQgSCBFIFMgSyBZ",
+      "spangram": "UElFSU5USEVTS1k=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SURFQUxJU1RJQw==",
+        "SU1QUkFDVElDQUw=",
+        "UVVJWE9USUM=",
+        "Uk9NQU5USUM="
+      ]
+    },
     {
       "id": 1040,
       "printDate": "2026-07-14",
