@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-15T09:32:26.956Z",
+  "lastUpdated": "2026-07-16T09:37:18.832Z",
   "puzzles": [
+    {
+      "id": 2781,
+      "printDate": "2026-07-16",
+      "status": "published",
+      "sides": [
+        "KIH",
+        "CUO",
+        "BNY",
+        "TSM"
+      ],
+      "solution": "WyJTWU1CSU9USUMiLCJDSFVOSyJd"
+    },
     {
       "id": 2780,
       "printDate": "2026-07-15",
