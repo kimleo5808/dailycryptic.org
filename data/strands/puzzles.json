@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-15T07:29:16.135Z",
+  "lastUpdated": "2026-07-16T07:36:20.501Z",
   "puzzles": [
+    {
+      "id": 1053,
+      "printDate": "2026-07-16",
+      "status": "published",
+      "clue": "\"Rerouting ...\"",
+      "hint": "Imagine things you might encounter on a challenging path",
+      "theme": "QyBIIEEgTiBHIEUgQyBPIFUgUiBTIEU=",
+      "spangram": "Q0hBTkdFQ09VUlNF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "REVWSUFURQ==",
+        "UElWT1Q=",
+        "U1dFUlZF",
+        "VEFDSw==",
+        "VFVSTg==",
+        "VkVFUg==",
+        "WklHWkFH"
+      ]
+    },
     {
       "id": 1041,
       "printDate": "2026-07-15",
