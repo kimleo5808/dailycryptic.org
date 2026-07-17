@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-07-16T07:36:20.501Z",
+  "lastUpdated": "2026-07-17T07:33:19.212Z",
   "puzzles": [
+    {
+      "id": 1044,
+      "printDate": "2026-07-17",
+      "status": "published",
+      "clue": "Categorically speaking",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBSIEkgViBJIEEgTCBQIFUgUiBTIFUgSSBU",
+      "spangram": "VFJJVklBTFBVUlNVSVQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "RU5URVJUQUlOTUVOVA==",
+        "R0VPR1JBUEhZ",
+        "TkFUVVJF",
+        "U1BPUlRT"
+      ]
+    },
     {
       "id": 1053,
       "printDate": "2026-07-16",
