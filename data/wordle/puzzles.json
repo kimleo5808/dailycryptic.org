@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-16T07:34:33.300Z",
+  "lastUpdated": "2026-07-17T07:31:54.810Z",
   "puzzles": [
+    {
+      "id": 1854,
+      "printDate": "2026-07-17",
+      "status": "published",
+      "solution": "bGVnYWw=",
+      "hint1": "This word starts with a liquid consonant.",
+      "hint2": "The word starts with L and has 2 vowels.",
+      "hint3": "L _ G _ L"
+    },
     {
       "id": 1853,
       "printDate": "2026-07-16",
