@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-16T09:37:18.832Z",
+  "lastUpdated": "2026-07-17T09:29:59.259Z",
   "puzzles": [
+    {
+      "id": 2782,
+      "printDate": "2026-07-17",
+      "status": "published",
+      "sides": [
+        "WGO",
+        "IDN",
+        "TRV",
+        "EHL"
+      ],
+      "solution": "WyJPVkVSV1JJVEUiLCJFTkxJR0hURU5FRCJd"
+    },
     {
       "id": 2781,
       "printDate": "2026-07-16",
