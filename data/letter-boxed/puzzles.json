@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-17T09:29:59.259Z",
+  "lastUpdated": "2026-07-18T09:10:26.566Z",
   "puzzles": [
+    {
+      "id": 2783,
+      "printDate": "2026-07-18",
+      "status": "published",
+      "sides": [
+        "WOR",
+        "JIL",
+        "YNK",
+        "EHA"
+      ],
+      "solution": "WyJKQVlXQUxLRVIiLCJSSElOTyJd"
+    },
     {
       "id": 2782,
       "printDate": "2026-07-17",
