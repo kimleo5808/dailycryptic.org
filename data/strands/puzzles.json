@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-18T07:14:41.393Z",
+  "lastUpdated": "2026-07-19T07:39:48.056Z",
   "puzzles": [
+    {
+      "id": 1045,
+      "printDate": "2026-07-19",
+      "status": "published",
+      "clue": "Big talk",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBVIFAgRSBSIFMgSSBaIEUgSSBU",
+      "spangram": "U1VQRVJTSVpFSVQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QkVIRU1PVEg=",
+        "Q09MT1NTVVM=",
+        "R0lBTlQ=",
+        "TEVWSUFUSEFO",
+        "TUFNTU9USA=="
+      ]
+    },
     {
       "id": 1042,
       "printDate": "2026-07-18",
