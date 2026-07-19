@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-18T09:10:26.566Z",
+  "lastUpdated": "2026-07-19T09:31:40.917Z",
   "puzzles": [
+    {
+      "id": 2784,
+      "printDate": "2026-07-19",
+      "status": "published",
+      "sides": [
+        "URB",
+        "OAE",
+        "JXS",
+        "ICP"
+      ],
+      "solution": "WyJCSUpPVVgiLCJYRVJJU0NBUEUiXQ=="
+    },
     {
       "id": 2783,
       "printDate": "2026-07-18",
