@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-19T09:31:40.917Z",
+  "lastUpdated": "2026-07-20T10:29:20.223Z",
   "puzzles": [
+    {
+      "id": 2785,
+      "printDate": "2026-07-20",
+      "status": "published",
+      "sides": [
+        "PEG",
+        "ULM",
+        "OIR",
+        "CNW"
+      ],
+      "solution": "WyJVUENPTUlORyIsIkdMT1dFUiJd"
+    },
     {
       "id": 2784,
       "printDate": "2026-07-19",
