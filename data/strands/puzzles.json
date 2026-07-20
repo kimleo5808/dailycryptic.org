@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-19T07:39:48.056Z",
+  "lastUpdated": "2026-07-20T08:25:14.049Z",
   "puzzles": [
+    {
+      "id": 1017,
+      "printDate": "2026-07-20",
+      "status": "published",
+      "clue": "Small talk",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBUIFMgWSBCIEkgVCBTIFk=",
+      "spangram": "SVRTWUJJVFNZ",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "TElUVExF",
+        "TUlDUk9TQ09QSUM=",
+        "TUlOSUFUVVJF",
+        "TUlOVVNDVUxF",
+        "VElOWQ=="
+      ]
+    },
     {
       "id": 1045,
       "printDate": "2026-07-19",
