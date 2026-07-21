@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-20T10:29:20.223Z",
+  "lastUpdated": "2026-07-21T10:07:32.810Z",
   "puzzles": [
+    {
+      "id": 2786,
+      "printDate": "2026-07-21",
+      "status": "published",
+      "sides": [
+        "WRK",
+        "UNC",
+        "IQS",
+        "FAD"
+      ],
+      "solution": "WyJRVUlDS1NBTkQiLCJEV0FSRiJd"
+    },
     {
       "id": 2785,
       "printDate": "2026-07-20",
