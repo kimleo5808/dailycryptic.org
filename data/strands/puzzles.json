@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-20T08:25:14.049Z",
+  "lastUpdated": "2026-07-21T07:55:06.442Z",
   "puzzles": [
+    {
+      "id": 1047,
+      "printDate": "2026-07-21",
+      "status": "published",
+      "clue": "Write there",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBUIEEgVCBJIE8gTiBFIFIgWQ==",
+      "spangram": "U1RBVElPTkVSWQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Q0FSRA==",
+        "RU5WRUxPUEU=",
+        "RklMRQ==",
+        "TEVUVEVSSEVBRA==",
+        "Tk9URVBBRA==",
+        "U0hFRVQ="
+      ]
+    },
     {
       "id": 1017,
       "printDate": "2026-07-20",
