@@ -14,6 +14,7 @@
 
 export type PipsRegionType =
   | "equals"
+  | "unequal"
   | "sum"
   | "greater"
   | "less"

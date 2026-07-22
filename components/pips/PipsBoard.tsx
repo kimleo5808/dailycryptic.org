@@ -7,6 +7,8 @@ function regionBadge(region: PipsRegion): string {
   switch (region.type) {
     case "equals":
       return "=";
+    case "unequal":
+      return "≠";
     case "sum":
       return `${region.target}`;
     case "greater":

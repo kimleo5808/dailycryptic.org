@@ -9,7 +9,7 @@ import {
   TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import ConnectionsHintCard from "@/components/connections/ConnectionsHintCard";
-import ConnectionsAnswerReveal from "@/components/connections/ConnectionsAnswerReveal";
+import ConnectionsAnswerBoard from "@/components/connections/ConnectionsAnswerBoard";
 import ConnectionsPuzzleCard from "@/components/connections/ConnectionsPuzzleCard";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -183,8 +183,8 @@ export default async function ConnectionsHintTodayPage({
           ))}
         </div>
 
-        {/* Answer reveal */}
-        <ConnectionsAnswerReveal groups={puzzle.groups} />
+        {/* Answer reveal — server-rendered and crawlable */}
+        <ConnectionsAnswerBoard groups={puzzle.groups} puzzleId={puzzle.id} />
 
         {/* Disclaimer */}
         <p className="text-center text-xs text-muted-foreground">

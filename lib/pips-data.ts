@@ -163,6 +163,8 @@ export function describeRegion(region: PipsRegion): string {
   switch (region.type) {
     case "equals":
       return "all cells equal";
+    case "unequal":
+      return "all cells different";
     case "sum":
       return `sum to ${region.target}`;
     case "greater":
@@ -181,6 +183,8 @@ export function regionBadge(region: PipsRegion): string {
   switch (region.type) {
     case "equals":
       return "=";
+    case "unequal":
+      return "≠";
     case "sum":
       return `${region.target}`;
     case "greater":

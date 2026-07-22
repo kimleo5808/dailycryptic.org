@@ -1,20 +1,69 @@
-import { ContentHero } from "@/components/minute-cryptic-content/ContentBlocks";
+import {
+  BodyText,
+  ContentHero,
+  ContentSection,
+  SimpleFaq,
+} from "@/components/minute-cryptic-content/ContentBlocks";
 import PipsTierView from "@/components/pips/PipsTierView";
+import PipsAnswerBoard from "@/components/pips/PipsAnswerBoard";
+import PipsPuzzleCard from "@/components/pips/PipsPuzzleCard";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
-import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  faqPageSchema,
+  JsonLd,
+} from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import {
   getPipsPuzzleByDate,
   getAllPipsPuzzles,
   getAdjacentPipsPuzzles,
+  getRecentPipsPuzzles,
   buildStrategyHint,
 } from "@/lib/pips-data";
+import type { PipsDecodedPuzzle, PipsDecodedTier } from "@/types/pips";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type Params = Promise<{ locale: string; date: string }>;
+
+/** Count of regions that carry an actual constraint (i.e. not "empty"). */
+function constrainedRegions(tier: PipsDecodedTier): number {
+  return tier.regions.filter((r) => r.type !== "empty").length;
+}
+
+/** Per-puzzle FAQ — answers pull in facts derived from this date's tiers. */
+function buildFaq(puzzle: PipsDecodedPuzzle, dateLabel: string) {
+  const { easy, medium, hard } = puzzle.tiers;
+  const totalDominoes =
+    easy.dominoes.length + medium.dominoes.length + hard.dominoes.length;
+
+  return [
+    {
+      question: `How do you solve the ${dateLabel} Pips puzzle?`,
+      answer: `Each Pips board on ${dateLabel} is a domino-placement logic puzzle: fit every domino so all region rules hold. Start with the "equal" and tightest sum regions — they lock values fastest — then work outward to the unconstrained cells. The Easy tier has ${easy.dominoes.length} dominoes across ${constrainedRegions(
+        easy
+      )} constrained regions, and the Hard tier has ${hard.dominoes.length}. Open the answer board above for the full solved layout.`,
+    },
+    {
+      question: `How many dominoes are in the ${dateLabel} Pips puzzle?`,
+      answer: `Across all three tiers there are ${totalDominoes} dominoes to place — ${easy.dominoes.length} on Easy, ${medium.dominoes.length} on Medium and ${hard.dominoes.length} on Hard. Each tier is an independent board with its own set of tiles and region constraints.`,
+    },
+    {
+      question: `What is the difference between the Easy, Medium and Hard Pips tiers?`,
+      answer: `They are three separate puzzles that grow in size and constraint density. On ${dateLabel} the Easy board spans ${easy.rows}×${easy.cols} with ${constrainedRegions(
+        easy
+      )} constrained regions, Medium spans ${medium.rows}×${medium.cols} with ${constrainedRegions(
+        medium
+      )}, and Hard spans ${hard.rows}×${hard.cols} with ${constrainedRegions(
+        hard
+      )}. Larger boards and more overlapping rules make the Hard tier the toughest to place cleanly.`,
+    },
+  ];
+}
 
 export async function generateMetadata({
   params,
@@ -70,6 +119,9 @@ export default async function PipsAnswersDatePage({
   }
 
   const { prev, next } = await getAdjacentPipsPuzzles(date);
+  const recentPuzzles = (await getRecentPipsPuzzles(6)).filter(
+    (p) => p.printDate !== date
+  );
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -77,12 +129,40 @@ export default async function PipsAnswersDatePage({
     day: "numeric",
     year: "numeric",
   });
+  const shortDate = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 
   const tierEntries = [
-    { key: "easy" as const, label: "Easy", tier: puzzle.tiers.easy, strategyHint: buildStrategyHint(puzzle.tiers.easy) },
-    { key: "medium" as const, label: "Medium", tier: puzzle.tiers.medium, strategyHint: buildStrategyHint(puzzle.tiers.medium) },
-    { key: "hard" as const, label: "Hard", tier: puzzle.tiers.hard, strategyHint: buildStrategyHint(puzzle.tiers.hard) },
+    {
+      key: "easy" as const,
+      label: "Easy",
+      tier: puzzle.tiers.easy,
+      strategyHint: buildStrategyHint(puzzle.tiers.easy),
+    },
+    {
+      key: "medium" as const,
+      label: "Medium",
+      tier: puzzle.tiers.medium,
+      strategyHint: buildStrategyHint(puzzle.tiers.medium),
+    },
+    {
+      key: "hard" as const,
+      label: "Hard",
+      tier: puzzle.tiers.hard,
+      strategyHint: buildStrategyHint(puzzle.tiers.hard),
+    },
   ];
+
+  const answerTiers = tierEntries.map(({ key, label, tier }) => ({
+    key,
+    label,
+    tier,
+  }));
+
+  const faqItems = buildFaq(puzzle, shortDate);
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
@@ -93,6 +173,16 @@ export default async function PipsAnswersDatePage({
           { name: dateLabel, url: `${BASE_URL}/pips-answers/${date}` },
         ])}
       />
+      <JsonLd
+        data={articleSchema({
+          title: `NYT Pips Answers — ${dateLabel}`,
+          description: `Hints and full solutions for the NYT Pips puzzle on ${dateLabel}, across Easy, Medium and Hard.`,
+          url: `${BASE_URL}/pips-answers/${date}`,
+          datePublished: puzzle.printDate,
+          dateModified: puzzle.printDate,
+        })}
+      />
+      <JsonLd data={faqPageSchema(faqItems)} />
 
       <ContentHero
         eyebrow="Pips"
@@ -101,7 +191,42 @@ export default async function PipsAnswersDatePage({
       />
 
       <div className="mt-8 space-y-8">
+        {/* Per-puzzle intro — unique to this date */}
+        <ContentSection title={`About the ${shortDate} Pips puzzle`}>
+          <BodyText>
+            The NYT Pips puzzle for {dateLabel} comes in three independent tiers
+            — Easy, Medium and Hard. Each tier hands you a set of domino tiles
+            and a board split into regions with rules such as &ldquo;all cells
+            equal&rdquo;, a target sum, or a greater-than / less-than limit. You
+            win a tier by placing every domino so that all of its region rules
+            hold at once.
+          </BodyText>
+          <BodyText>
+            On this date the Easy board spans {puzzle.tiers.easy.rows}&times;
+            {puzzle.tiers.easy.cols} with{" "}
+            {puzzle.tiers.easy.dominoes.length} dominoes across{" "}
+            {constrainedRegions(puzzle.tiers.easy)} constrained regions, the
+            Medium board spans {puzzle.tiers.medium.rows}&times;
+            {puzzle.tiers.medium.cols} with{" "}
+            {puzzle.tiers.medium.dominoes.length} dominoes, and the Hard board
+            spans {puzzle.tiers.hard.rows}&times;{puzzle.tiers.hard.cols} with{" "}
+            {puzzle.tiers.hard.dominoes.length} dominoes over{" "}
+            {constrainedRegions(puzzle.tiers.hard)} constrained regions. Read a
+            spoiler-free strategy for each tier below, then open the answer board
+            when you want the full solved layout.
+          </BodyText>
+        </ContentSection>
+
+        {/* Interactive tier view (client) */}
         <PipsTierView tiers={tierEntries} />
+
+        {/* Server-rendered, crawlable answer board (all three tiers) */}
+        <PipsAnswerBoard tiers={answerTiers} printDate={date} />
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`${shortDate} Pips FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         <p className="text-center text-xs text-muted-foreground">
           This site is not affiliated with The New York Times. Pips is a
@@ -136,6 +261,25 @@ export default async function PipsAnswersDatePage({
             <span />
           )}
         </div>
+
+        {/* Recent Pips puzzles — internal links */}
+        {recentPuzzles.length > 0 && (
+          <ContentSection title="More Recent Pips Puzzles">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {recentPuzzles.slice(0, 6).map((p) => (
+                <PipsPuzzleCard key={p.printDate} puzzle={p} />
+              ))}
+            </div>
+            <div className="mt-4 text-center">
+              <Link
+                href="/pips-answers"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background px-5 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:bg-primary/5 hover:text-foreground"
+              >
+                Browse the full Pips archive →
+              </Link>
+            </div>
+          </ContentSection>
+        )}
 
         <div className="flex flex-wrap justify-center gap-3">
           <Link
