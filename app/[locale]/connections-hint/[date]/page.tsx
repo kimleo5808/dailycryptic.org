@@ -176,29 +176,6 @@ export default async function ConnectionsHintDatePage({
       />
 
       <div className="mt-8 space-y-8">
-        {/* Per-puzzle intro — unique to this date */}
-        <ContentSection title={`About Connections #${puzzle.id}`}>
-          <BodyText>
-            The NYT Connections puzzle for {dateLabel} is puzzle #{puzzle.id}. As
-            always, the board holds 16 words that split into four hidden groups
-            of four — ranked from the easiest yellow group up to the toughest
-            purple one. You get four mistakes before the game ends.
-          </BodyText>
-          <BodyText>
-            Below you&apos;ll find a progressive hint for each color group. Start
-            with the yellow hint, work your way down, and only open the full
-            answer board when you want to confirm the exact words. New to the
-            game? Read our full{" "}
-            <Link
-              href="/connections-hint-today"
-              className="text-primary underline underline-offset-2 hover:text-primary/80"
-            >
-              Connections how-to-play guide and strategy tips
-            </Link>
-            .
-          </BodyText>
-        </ContentSection>
-
         {/* Progressive hints */}
         <div className="space-y-3">
           {orderedGroups(puzzle).map((group) => (
@@ -214,11 +191,6 @@ export default async function ConnectionsHintDatePage({
 
         {/* Server-rendered, crawlable answer board */}
         <ConnectionsAnswerBoard groups={puzzle.groups} puzzleId={puzzle.id} />
-
-        {/* Per-puzzle FAQ */}
-        <ContentSection title={`Connections #${puzzle.id} FAQ`}>
-          <SimpleFaq items={faqItems} />
-        </ContentSection>
 
         {/* Disclaimer */}
         <p className="text-center text-xs text-muted-foreground">
@@ -274,6 +246,35 @@ export default async function ConnectionsHintDatePage({
             </div>
           </ContentSection>
         )}
+
+        {/* ── SEO content below the core answers ───────────────────────── */}
+
+        {/* Per-puzzle intro — unique to this date */}
+        <ContentSection title={`About Connections #${puzzle.id}`}>
+          <BodyText>
+            The NYT Connections puzzle for {dateLabel} is puzzle #{puzzle.id}. As
+            always, the board holds 16 words that split into four hidden groups
+            of four — ranked from the easiest yellow group up to the toughest
+            purple one. You get four mistakes before the game ends.
+          </BodyText>
+          <BodyText>
+            Use the progressive hint for each color group above, and only open
+            the full answer board when you want to confirm the exact words. New
+            to the game? Read our full{" "}
+            <Link
+              href="/connections-hint-today"
+              className="text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              Connections how-to-play guide and strategy tips
+            </Link>
+            .
+          </BodyText>
+        </ContentSection>
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`Connections #${puzzle.id} FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-3">

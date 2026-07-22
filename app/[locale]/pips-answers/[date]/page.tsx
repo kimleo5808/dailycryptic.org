@@ -191,42 +191,11 @@ export default async function PipsAnswersDatePage({
       />
 
       <div className="mt-8 space-y-8">
-        {/* Per-puzzle intro — unique to this date */}
-        <ContentSection title={`About the ${shortDate} Pips puzzle`}>
-          <BodyText>
-            The NYT Pips puzzle for {dateLabel} comes in three independent tiers
-            — Easy, Medium and Hard. Each tier hands you a set of domino tiles
-            and a board split into regions with rules such as &ldquo;all cells
-            equal&rdquo;, a target sum, or a greater-than / less-than limit. You
-            win a tier by placing every domino so that all of its region rules
-            hold at once.
-          </BodyText>
-          <BodyText>
-            On this date the Easy board spans {puzzle.tiers.easy.rows}&times;
-            {puzzle.tiers.easy.cols} with{" "}
-            {puzzle.tiers.easy.dominoes.length} dominoes across{" "}
-            {constrainedRegions(puzzle.tiers.easy)} constrained regions, the
-            Medium board spans {puzzle.tiers.medium.rows}&times;
-            {puzzle.tiers.medium.cols} with{" "}
-            {puzzle.tiers.medium.dominoes.length} dominoes, and the Hard board
-            spans {puzzle.tiers.hard.rows}&times;{puzzle.tiers.hard.cols} with{" "}
-            {puzzle.tiers.hard.dominoes.length} dominoes over{" "}
-            {constrainedRegions(puzzle.tiers.hard)} constrained regions. Read a
-            spoiler-free strategy for each tier below, then open the answer board
-            when you want the full solved layout.
-          </BodyText>
-        </ContentSection>
-
         {/* Interactive tier view (client) */}
         <PipsTierView tiers={tierEntries} />
 
         {/* Server-rendered, crawlable answer board (all three tiers) */}
         <PipsAnswerBoard tiers={answerTiers} printDate={date} />
-
-        {/* Per-puzzle FAQ */}
-        <ContentSection title={`${shortDate} Pips FAQ`}>
-          <SimpleFaq items={faqItems} />
-        </ContentSection>
 
         <p className="text-center text-xs text-muted-foreground">
           This site is not affiliated with The New York Times. Pips is a
@@ -280,6 +249,39 @@ export default async function PipsAnswersDatePage({
             </div>
           </ContentSection>
         )}
+
+        {/* ── SEO content below the core answers ───────────────────────── */}
+
+        {/* Per-puzzle intro — unique to this date */}
+        <ContentSection title={`About the ${shortDate} Pips puzzle`}>
+          <BodyText>
+            The NYT Pips puzzle for {dateLabel} comes in three independent tiers
+            — Easy, Medium and Hard. Each tier hands you a set of domino tiles
+            and a board split into regions with rules such as &ldquo;all cells
+            equal&rdquo;, a target sum, or a greater-than / less-than limit. You
+            win a tier by placing every domino so that all of its region rules
+            hold at once.
+          </BodyText>
+          <BodyText>
+            On this date the Easy board spans {puzzle.tiers.easy.rows}&times;
+            {puzzle.tiers.easy.cols} with{" "}
+            {puzzle.tiers.easy.dominoes.length} dominoes across{" "}
+            {constrainedRegions(puzzle.tiers.easy)} constrained regions, the
+            Medium board spans {puzzle.tiers.medium.rows}&times;
+            {puzzle.tiers.medium.cols} with{" "}
+            {puzzle.tiers.medium.dominoes.length} dominoes, and the Hard board
+            spans {puzzle.tiers.hard.rows}&times;{puzzle.tiers.hard.cols} with{" "}
+            {puzzle.tiers.hard.dominoes.length} dominoes over{" "}
+            {constrainedRegions(puzzle.tiers.hard)} constrained regions. Read a
+            spoiler-free strategy for each tier below, then open the answer board
+            when you want the full solved layout.
+          </BodyText>
+        </ContentSection>
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`${shortDate} Pips FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         <div className="flex flex-wrap justify-center gap-3">
           <Link

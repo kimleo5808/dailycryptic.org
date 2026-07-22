@@ -157,32 +157,6 @@ export default async function StrandsHintDatePage({
       />
 
       <div className="mt-8 space-y-8">
-        {/* Per-puzzle intro — unique to this date */}
-        <ContentSection title={`About Strands #${puzzle.id}`}>
-          <BodyText>
-            The NYT Strands puzzle for {dateLabel} is Strands #{puzzle.id}, and
-            the theme clue reads “{puzzle.clue}”. As with every Strands board,
-            you&apos;re looking for {wordCount} answers in all —{" "}
-            {puzzle.themeWords.length} theme words plus one spangram, a{" "}
-            {puzzle.spangramLetterCount}-letter word that runs{" "}
-            {puzzle.spangramDirection}ly and touches two opposite sides of the
-            grid.
-          </BodyText>
-          <BodyText>
-            Start with the theme card below for a gentle nudge, use the spangram
-            hints when you&apos;re stuck on the long connector, and only open the
-            answer board once you want every word confirmed. New to the game?
-            Our{" "}
-            <Link
-              href="/strands-hint-today"
-              className="text-primary underline underline-offset-2 hover:text-primary/80"
-            >
-              Strands how-to-play guide and daily hints
-            </Link>{" "}
-            walk through the strategy.
-          </BodyText>
-        </ContentSection>
-
         {/* Progressive hints (interactive) */}
         <div className="space-y-3">
           <StrandsThemeCard
@@ -212,11 +186,6 @@ export default async function StrandsHintDatePage({
           spangramLetterCount={puzzle.spangramLetterCount}
           themeWords={puzzle.themeWords}
         />
-
-        {/* Per-puzzle FAQ */}
-        <ContentSection title={`Strands #${puzzle.id} FAQ`}>
-          <SimpleFaq items={faqItems} />
-        </ContentSection>
 
         {/* Disclaimer */}
         <p className="text-center text-xs text-muted-foreground">
@@ -272,6 +241,39 @@ export default async function StrandsHintDatePage({
             </div>
           </ContentSection>
         )}
+
+        {/* ── SEO content below the core answers ───────────────────────── */}
+
+        {/* Per-puzzle intro — unique to this date */}
+        <ContentSection title={`About Strands #${puzzle.id}`}>
+          <BodyText>
+            The NYT Strands puzzle for {dateLabel} is Strands #{puzzle.id}, and
+            the theme clue reads “{puzzle.clue}”. As with every Strands board,
+            you&apos;re looking for {wordCount} answers in all —{" "}
+            {puzzle.themeWords.length} theme words plus one spangram, a{" "}
+            {puzzle.spangramLetterCount}-letter word that runs{" "}
+            {puzzle.spangramDirection}ly and touches two opposite sides of the
+            grid.
+          </BodyText>
+          <BodyText>
+            Start with the theme card below for a gentle nudge, use the spangram
+            hints when you&apos;re stuck on the long connector, and only open the
+            answer board once you want every word confirmed. New to the game?
+            Our{" "}
+            <Link
+              href="/strands-hint-today"
+              className="text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              Strands how-to-play guide and daily hints
+            </Link>{" "}
+            walk through the strategy.
+          </BodyText>
+        </ContentSection>
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`Strands #${puzzle.id} FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         {/* Links */}
         <div className="flex flex-wrap justify-center gap-3">

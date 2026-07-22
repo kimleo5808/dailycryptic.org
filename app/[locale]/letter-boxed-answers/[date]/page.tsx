@@ -170,33 +170,6 @@ export default async function LetterBoxedAnswersDatePage({
       />
 
       <div className="mt-8 space-y-8">
-        {/* Per-puzzle intro — unique to this date, no answer spoiler */}
-        <ContentSection title={`About the ${shortDate} Letter Boxed`}>
-          <BodyText>
-            The New York Times Letter Boxed box for {dateLabel} carries twelve
-            letters, three on each of its four sides:{" "}
-            {puzzle.sides.join(", ")}. Your job is to chain words around the
-            square using every letter at least once, with consecutive letters
-            always coming from different sides and each new word starting on the
-            last letter of the one before it.
-          </BodyText>
-          <BodyText>
-            The official solution for this box uses {wordCount} word
-            {wordCount === 1 ? "" : "s"} of {wordLengths.join(" and ")} letters.
-            Start with the spoiler-free hints below — how many words, how long
-            each one is, and which letters they begin on — and only open the
-            answer board when you want to see the exact words. New to the game?
-            Our{" "}
-            <Link
-              href="/letter-boxed-answers-today"
-              className="text-primary underline underline-offset-2 hover:text-primary/80"
-            >
-              Letter Boxed how-to-play guide
-            </Link>{" "}
-            walks through the rules and strategy.
-          </BodyText>
-        </ContentSection>
-
         {/* Interactive box + progressive hints (client) */}
         <LetterBoxedPlay
           sides={puzzle.sides}
@@ -210,11 +183,6 @@ export default async function LetterBoxedAnswersDatePage({
           wordLengths={wordLengths}
           dateLabel={shortDate}
         />
-
-        {/* Per-puzzle FAQ */}
-        <ContentSection title={`${shortDate} Letter Boxed FAQ`}>
-          <SimpleFaq items={faqItems} />
-        </ContentSection>
 
         <p className="text-center text-xs text-muted-foreground">
           This site is not affiliated with The New York Times. Letter Boxed is a
@@ -268,6 +236,40 @@ export default async function LetterBoxedAnswersDatePage({
             </div>
           </ContentSection>
         )}
+
+        {/* ── SEO content below the core answers ───────────────────────── */}
+
+        {/* Per-puzzle intro — unique to this date, no answer spoiler */}
+        <ContentSection title={`About the ${shortDate} Letter Boxed`}>
+          <BodyText>
+            The New York Times Letter Boxed box for {dateLabel} carries twelve
+            letters, three on each of its four sides:{" "}
+            {puzzle.sides.join(", ")}. Your job is to chain words around the
+            square using every letter at least once, with consecutive letters
+            always coming from different sides and each new word starting on the
+            last letter of the one before it.
+          </BodyText>
+          <BodyText>
+            The official solution for this box uses {wordCount} word
+            {wordCount === 1 ? "" : "s"} of {wordLengths.join(" and ")} letters.
+            Start with the spoiler-free hints below — how many words, how long
+            each one is, and which letters they begin on — and only open the
+            answer board when you want to see the exact words. New to the game?
+            Our{" "}
+            <Link
+              href="/letter-boxed-answers-today"
+              className="text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              Letter Boxed how-to-play guide
+            </Link>{" "}
+            walks through the rules and strategy.
+          </BodyText>
+        </ContentSection>
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`${shortDate} Letter Boxed FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         <div className="flex flex-wrap justify-center gap-3">
           <Link

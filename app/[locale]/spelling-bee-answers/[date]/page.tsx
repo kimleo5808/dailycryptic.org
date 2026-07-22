@@ -179,33 +179,6 @@ export default async function SpellingBeeAnswersDatePage({
       />
 
       <div className="mt-8 space-y-8">
-        {/* Per-puzzle intro — unique to this date */}
-        <ContentSection title={`About the ${shortDate} Spelling Bee`}>
-          <BodyText>
-            The NYT Spelling Bee for {dateLabel} is built from the seven letters{" "}
-            {lettersLabel}, with {centerLabel} in the center of the hive — every
-            valid word must use that central letter. This grid hides{" "}
-            {puzzle.stats.wordCount} accepted words in total, including{" "}
-            {puzzle.stats.pangramCount} pangram
-            {puzzle.stats.pangramCount === 1 ? "" : "s"} that use all seven
-            letters at once.
-          </BodyText>
-          <BodyText>
-            Start with the spoiler-free hint ladder below — first-letter counts,
-            two-letter starts and word lengths — and only open the full answer
-            board when you want to confirm the exact words. Reaching the Genius
-            rank takes {puzzle.stats.geniusScore} points, while a perfect Queen
-            Bee run is worth {puzzle.stats.maxScore}. New here? See our{" "}
-            <Link
-              href="/spelling-bee-answers-today"
-              className="text-primary underline underline-offset-2 hover:text-primary/80"
-            >
-              guide to today&apos;s Spelling Bee
-            </Link>
-            .
-          </BodyText>
-        </ContentSection>
-
         {/* Honeycomb */}
         <div className="rounded-2xl border border-border bg-gradient-to-b from-[hsl(var(--cta))]/[0.06] to-transparent p-6 text-center">
           <SpellingBeeHive
@@ -252,11 +225,6 @@ export default async function SpellingBeeAnswersDatePage({
           {/* Interactive reveal — kept as a UX alternative */}
           <SpellingBeeAnswers answers={puzzle.answers} pangrams={puzzle.pangrams} />
         </section>
-
-        {/* Per-puzzle FAQ */}
-        <ContentSection title={`${shortDate} Spelling Bee FAQ`}>
-          <SimpleFaq items={faqItems} />
-        </ContentSection>
 
         <p className="text-center text-xs text-muted-foreground">
           This site is not affiliated with The New York Times. Spelling Bee is a
@@ -311,6 +279,40 @@ export default async function SpellingBeeAnswersDatePage({
             </div>
           </ContentSection>
         )}
+
+        {/* ── SEO content below the core answers ───────────────────────── */}
+
+        {/* Per-puzzle intro — unique to this date */}
+        <ContentSection title={`About the ${shortDate} Spelling Bee`}>
+          <BodyText>
+            The NYT Spelling Bee for {dateLabel} is built from the seven letters{" "}
+            {lettersLabel}, with {centerLabel} in the center of the hive — every
+            valid word must use that central letter. This grid hides{" "}
+            {puzzle.stats.wordCount} accepted words in total, including{" "}
+            {puzzle.stats.pangramCount} pangram
+            {puzzle.stats.pangramCount === 1 ? "" : "s"} that use all seven
+            letters at once.
+          </BodyText>
+          <BodyText>
+            Start with the spoiler-free hint ladder below — first-letter counts,
+            two-letter starts and word lengths — and only open the full answer
+            board when you want to confirm the exact words. Reaching the Genius
+            rank takes {puzzle.stats.geniusScore} points, while a perfect Queen
+            Bee run is worth {puzzle.stats.maxScore}. New here? See our{" "}
+            <Link
+              href="/spelling-bee-answers-today"
+              className="text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              guide to today&apos;s Spelling Bee
+            </Link>
+            .
+          </BodyText>
+        </ContentSection>
+
+        {/* Per-puzzle FAQ */}
+        <ContentSection title={`${shortDate} Spelling Bee FAQ`}>
+          <SimpleFaq items={faqItems} />
+        </ContentSection>
 
         <div className="flex flex-wrap justify-center gap-3">
           <Link
