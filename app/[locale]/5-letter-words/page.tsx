@@ -5,7 +5,6 @@ import {
   RelatedLinks,
   SimpleFaq,
   SubHeading,
-  TableOfContents,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import LetterIndexGrid from "@/components/word-lists/LetterIndexGrid";
 import { BASE_URL } from "@/config/site";
@@ -108,19 +107,42 @@ export default async function FiveLetterWordsHub({
       />
 
       <div className="mt-8 space-y-8">
-        <TableOfContents
-          items={[
-            { href: "#how-many", label: "How many 5-letter words are there?" },
-            { href: "#use-for-wordle", label: "How to use these lists for Wordle" },
-            { href: "#starting", label: "Browse by starting letter" },
-            { href: "#ending", label: "Browse by ending letter" },
-            { href: "#middle", label: "Browse by middle letter" },
-            { href: "#containing", label: "Browse by contained letter" },
-            { href: "#best-starters", label: "Best starting words" },
-            { href: "#common-letters", label: "Most common letters" },
-            { href: "#faq", label: "FAQ" },
-          ]}
-        />
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Pick the letter you already know to see every matching five-letter
+          word, common words first — ideal for cracking today&apos;s Wordle.
+        </p>
+
+        <ContentSection title="Browse 5-Letter Words by Starting Letter" id="starting">
+          <BodyText>
+            Choose the letter your word begins with. Each page lists every
+            five-letter word starting with that letter, common words first.
+          </BodyText>
+          <LetterIndexGrid mode="starting-with" />
+        </ContentSection>
+
+        <ContentSection title="Browse 5-Letter Words by Ending Letter" id="ending">
+          <BodyText>
+            Confirmed the last letter? These lists are usually shorter, so a known
+            final letter narrows the answer quickly.
+          </BodyText>
+          <LetterIndexGrid mode="ending-in" />
+        </ContentSection>
+
+        <ContentSection title="Browse 5-Letter Words by Middle Letter" id="middle">
+          <BodyText>
+            A green letter in the third position is one of Wordle&apos;s most
+            useful clues. Pick the middle letter to see every word built around it.
+          </BodyText>
+          <LetterIndexGrid mode="middle" />
+        </ContentSection>
+
+        <ContentSection title="Browse 5-Letter Words Containing a Letter" id="containing">
+          <BodyText>
+            Have a yellow tile? These lists collect every five-letter word that
+            contains the letter anywhere, so you can find a spot for it.
+          </BodyText>
+          <LetterIndexGrid mode="with" />
+        </ContentSection>
 
         <ContentSection title="How Many 5-Letter Words Are There?" id="how-many">
           <BodyText>
@@ -175,38 +197,6 @@ export default async function FiveLetterWordsHub({
             </Link>
             , which filters all of these words live.
           </BodyText>
-        </ContentSection>
-
-        <ContentSection title="Browse 5-Letter Words by Starting Letter" id="starting">
-          <BodyText>
-            Choose the letter your word begins with. Each page lists every
-            five-letter word starting with that letter, common words first.
-          </BodyText>
-          <LetterIndexGrid mode="starting-with" />
-        </ContentSection>
-
-        <ContentSection title="Browse 5-Letter Words by Ending Letter" id="ending">
-          <BodyText>
-            Confirmed the last letter? These lists are usually shorter, so a known
-            final letter narrows the answer quickly.
-          </BodyText>
-          <LetterIndexGrid mode="ending-in" />
-        </ContentSection>
-
-        <ContentSection title="Browse 5-Letter Words by Middle Letter" id="middle">
-          <BodyText>
-            A green letter in the third position is one of Wordle&apos;s most
-            useful clues. Pick the middle letter to see every word built around it.
-          </BodyText>
-          <LetterIndexGrid mode="middle" />
-        </ContentSection>
-
-        <ContentSection title="Browse 5-Letter Words Containing a Letter" id="containing">
-          <BodyText>
-            Have a yellow tile? These lists collect every five-letter word that
-            contains the letter anywhere, so you can find a spot for it.
-          </BodyText>
-          <LetterIndexGrid mode="with" />
         </ContentSection>
 
         <ContentSection title="Best 5-Letter Words to Start Wordle" id="best-starters">

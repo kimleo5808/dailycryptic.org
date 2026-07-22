@@ -143,7 +143,7 @@ export function spokePhrase(mode: Mode, letter: string): string {
   }
 }
 
-const CAP_ALL = 400; // rows rendered in the "All" table (common/defined first)
+const CAP_ALL = 150; // rows rendered in the "All" table (common/defined first)
 
 export interface SpokeData {
   mode: Mode;

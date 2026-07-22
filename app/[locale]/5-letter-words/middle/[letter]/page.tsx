@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: Params }) {
   return <FiveLetterSpoke mode={MODE} letter={letter} />;
 }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const out: { locale: string; letter: string }[] = [];
