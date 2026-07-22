@@ -212,6 +212,30 @@ const nextConfig = {
           destination: "/en/wordle-answer/:date",
         },
         {
+          source: "/spelling-bee-answers/:date",
+          destination: "/en/spelling-bee-answers/:date",
+        },
+        {
+          source: "/pips-answers/:date",
+          destination: "/en/pips-answers/:date",
+        },
+        {
+          source: "/letter-boxed-answers/:date",
+          destination: "/en/letter-boxed-answers/:date",
+        },
+        {
+          source: "/cryptic-clue-types/:type",
+          destination: "/en/cryptic-clue-types/:type",
+        },
+        {
+          source: "/5-letter-words/:mode",
+          destination: "/en/5-letter-words/:mode",
+        },
+        {
+          source: "/5-letter-words/:mode/:letter",
+          destination: "/en/5-letter-words/:mode/:letter",
+        },
+        {
           source: "/blog/:slug",
           destination: "/en/blog/:slug",
         },
