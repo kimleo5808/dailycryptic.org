@@ -151,6 +151,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/wordle-solver",
             description: "Find every word that fits your clues",
           },
+          {
+            name: "5-Letter Words",
+            href: "/5-letter-words",
+            description: "Word lists by starting, ending & middle letter",
+          },
         ],
       },
       {

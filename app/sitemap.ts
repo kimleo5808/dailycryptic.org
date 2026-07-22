@@ -6,6 +6,7 @@ import { getAllSpellingBeePuzzles } from '@/lib/spelling-bee-data'
 import { getAllPipsPuzzles } from '@/lib/pips-data'
 import { getAllLetterBoxedPuzzles } from '@/lib/letter-boxed-data'
 import { getAllWordlePuzzles } from '@/lib/wordle-data'
+import { MODES, LETTERS } from '@/lib/word-lists-data'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
 import { MetadataRoute } from 'next'
@@ -41,6 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/wordle-answer-today',
     '/wordle-answer',
     '/wordle-solver',
+    '/5-letter-words',
     '/wordle-unlimited',
     '/strands-hint-today',
     '/strands-hint',
@@ -174,8 +176,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     })
 
+  // 5-letter word-list spoke pages (4 modes × 26 letters)
+  const wordListPages = MODES.flatMap(mode =>
+    LETTERS.map(letter => ({
+      url: `${siteUrl}/5-letter-words/${mode}/${letter.toLowerCase()}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as ChangeFrequency,
+      priority: 0.5,
+    }))
+  )
+
   return [
     ...pages,
+    ...wordListPages,
     ...puzzlePages,
     ...connectionsPages,
     ...strandsPages,
