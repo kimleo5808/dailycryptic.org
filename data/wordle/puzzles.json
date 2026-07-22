@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-21T07:53:28.233Z",
+  "lastUpdated": "2026-07-22T07:53:15.474Z",
   "puzzles": [
+    {
+      "id": 1859,
+      "printDate": "2026-07-22",
+      "status": "published",
+      "solution": "bG9ycnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with L and has 1 vowel.",
+      "hint3": "L _ R _ Y"
+    },
     {
       "id": 1858,
       "printDate": "2026-07-21",
