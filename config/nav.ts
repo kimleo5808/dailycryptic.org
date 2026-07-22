@@ -42,11 +42,6 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             description: "Browse past clues by date or difficulty",
           },
           {
-            name: "Unlimited",
-            href: "/minute-cryptic-unlimited",
-            description: "Practice with unlimited clues",
-          },
-          {
             name: "Daily Solutions",
             href: "/daily-solution",
             description: "Answer breakdowns for every clue",
@@ -163,25 +158,10 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
           },
         ],
       },
-      {
-        title: "Play",
-        links: [
-          {
-            name: "Wordle Unlimited",
-            href: "/wordle-unlimited",
-            description: "Play endless Wordle — 4 to 7 letters, no daily limit",
-          },
-          {
-            name: "Play Quordle",
-            href: "/quordle",
-            description: "Guess 4 words in 9 tries — daily + practice",
-          },
-        ],
-      },
     ],
   },
   {
-    label: "NYT Games",
+    label: "NYT Hints",
     sections: [
       {
         title: "Connections",
@@ -195,11 +175,6 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Connections Archive",
             href: "/connections-hint",
             description: "Browse past puzzles",
-          },
-          {
-            name: "Play Connections",
-            href: "/connections-game",
-            description: "Play today's puzzle online",
           },
         ],
       },
@@ -215,11 +190,6 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Strands Archive",
             href: "/strands-hint",
             description: "Browse past puzzles",
-          },
-          {
-            name: "Play Strands",
-            href: "/strands-game",
-            description: "Find hidden words in the letter grid",
           },
         ],
       },
@@ -265,6 +235,41 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Letter Boxed Archive",
             href: "/letter-boxed-answers",
             description: "Browse past puzzles and answers",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Games",
+    sections: [
+      {
+        title: "Play Online",
+        links: [
+          {
+            name: "Wordle Unlimited",
+            href: "/wordle-unlimited",
+            description: "Play endless Wordle — 4 to 7 letters, no daily limit",
+          },
+          {
+            name: "Play Quordle",
+            href: "/quordle",
+            description: "Guess 4 words in 9 tries — daily + practice",
+          },
+          {
+            name: "Play Connections",
+            href: "/connections-game",
+            description: "Play today's Connections puzzle online",
+          },
+          {
+            name: "Play Strands",
+            href: "/strands-game",
+            description: "Find hidden words in the letter grid",
+          },
+          {
+            name: "Unlimited Cryptic",
+            href: "/minute-cryptic-unlimited",
+            description: "Practice with unlimited cryptic clues",
           },
         ],
       },
