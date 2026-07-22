@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-21T10:07:32.810Z",
+  "lastUpdated": "2026-07-22T10:06:05.827Z",
   "puzzles": [
+    {
+      "id": 2787,
+      "printDate": "2026-07-22",
+      "status": "published",
+      "sides": [
+        "FTX",
+        "COR",
+        "GNI",
+        "PEU"
+      ],
+      "solution": "WyJDRU5UUklGVUdFIiwiRVhQTyJd"
+    },
     {
       "id": 2786,
       "printDate": "2026-07-21",
