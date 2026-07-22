@@ -40,68 +40,102 @@
             {
               "href": "/anagram-solver",
               "name": "Anagram Solver"
+            },
+            {
+              "href": "/minute-cryptic-unlimited",
+              "name": "Unlimited Cryptic"
             }
           ]
         },
         {
-          "title": "Hints",
+          "title": "Wordle",
           "links": [
             {
               "href": "/wordle-answer-today",
               "name": "Wordle Hints"
             },
             {
-              "href": "/connections-hint-today",
-              "name": "Connections Hints"
-            },
-            {
-              "href": "/strands-hint-today",
-              "name": "Strands Hints"
-            },
-            {
-              "href": "/spelling-bee-answers-today",
-              "name": "Spelling Bee Answers"
-            },
-            {
-              "href": "/pips-answers-today",
-              "name": "Pips Answers"
-            },
-            {
-              "href": "/letter-boxed-answers-today",
-              "name": "Letter Boxed Answers"
-            },
-            {
               "href": "/wordle-answer",
               "name": "Wordle Archive"
+            },
+            {
+              "href": "/wordle-solver",
+              "name": "Wordle Solver"
+            },
+            {
+              "href": "/5-letter-words",
+              "name": "5-Letter Words"
+            },
+            {
+              "href": "/wordle-unlimited",
+              "name": "Wordle Unlimited"
+            },
+            {
+              "href": "/quordle",
+              "name": "Play Quordle"
+            }
+          ]
+        },
+        {
+          "title": "Connections",
+          "links": [
+            {
+              "href": "/connections-hint-today",
+              "name": "Connections Hints"
             },
             {
               "href": "/connections-hint",
               "name": "Connections Archive"
             },
             {
-              "href": "/strands-hint",
-              "name": "Strands Archive"
+              "href": "/connections-game",
+              "name": "Play Connections"
             }
           ]
         },
         {
-          "title": "Games",
+          "title": "Strands",
           "links": [
             {
-              "href": "/quordle",
-              "name": "Play Quordle"
+              "href": "/strands-hint-today",
+              "name": "Strands Hints"
             },
             {
-              "href": "/connections-game",
-              "name": "Play Connections"
+              "href": "/strands-hint",
+              "name": "Strands Archive"
             },
             {
               "href": "/strands-game",
               "name": "Play Strands"
+            }
+          ]
+        },
+        {
+          "title": "More NYT",
+          "links": [
+            {
+              "href": "/spelling-bee-answers-today",
+              "name": "Spelling Bee Answers"
             },
             {
-              "href": "/minute-cryptic-unlimited",
-              "name": "Unlimited Cryptic"
+              "href": "/spelling-bee-answers",
+              "name": "Spelling Bee Archive"
+            },
+            {
+              "href": "/pips-answers-today",
+              "name": "Pips Answers"
+            },
+            {
+              "href": "/pips-answers",
+              "name": "Pips Archive"
+            },
+            {
+              "href": "/letter-boxed-answers-today",
+              "name": "Letter Boxed Answers"
+            },
+            {
+              "href": "/letter-boxed-answers",
+              "name": "Letter Boxed Archive"
             }
           ]
         },

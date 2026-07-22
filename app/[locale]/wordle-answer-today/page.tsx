@@ -9,6 +9,7 @@ import {
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import WordleHintCard from "@/components/wordle/WordleHintCard";
 import WordleAnswerReveal from "@/components/wordle/WordleAnswerReveal";
+import WordleToolsCard from "@/components/wordle/WordleToolsCard";
 import WordlePuzzleCard from "@/components/wordle/WordlePuzzleCard";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -166,6 +167,9 @@ export default async function WordleAnswerTodayPage({
 
         {/* Answer */}
         <WordleAnswerReveal encodedSolution={rawPuzzle.solution} />
+
+        {/* Solver / word-list funnel */}
+        <WordleToolsCard firstLetter={puzzle.solution[0]} />
 
         {/* Disclaimer */}
         <p className="text-center text-xs text-muted-foreground">

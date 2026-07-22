@@ -425,6 +425,12 @@ export default async function WordleSolverPage({
         <RelatedLinks
           links={[
             {
+              href: "/5-letter-words",
+              title: "5-Letter Word Lists",
+              description:
+                "Browse every 5-letter word by starting, ending or middle letter.",
+            },
+            {
               href: "/wordle-answer-today",
               title: "Today's Wordle answer",
               description: "Progressive hints and the answer for today's puzzle.",
@@ -433,11 +439,6 @@ export default async function WordleSolverPage({
               href: "/wordle-unlimited",
               title: "Wordle Unlimited",
               description: "Play endless Wordle from 4 to 7 letters, no daily cap.",
-            },
-            {
-              href: "/quordle",
-              title: "Play Quordle",
-              description: "Guess four words at once in nine tries.",
             },
           ]}
         />

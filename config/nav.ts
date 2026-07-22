@@ -131,13 +131,13 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
     ],
   },
   {
-    label: "Hints",
+    label: "Wordle",
     sections: [
       {
-        title: "NYT Wordle",
+        title: "Hints & Answers",
         links: [
           {
-            name: "Wordle Hints",
+            name: "Today's Wordle Answer",
             href: "/wordle-answer-today",
             description: "Today's hints and answer",
           },
@@ -146,6 +146,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/wordle-answer",
             description: "Browse past answers",
           },
+        ],
+      },
+      {
+        title: "Solve",
+        links: [
           {
             name: "Wordle Solver",
             href: "/wordle-solver",
@@ -159,7 +164,27 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
         ],
       },
       {
-        title: "NYT Connections",
+        title: "Play",
+        links: [
+          {
+            name: "Wordle Unlimited",
+            href: "/wordle-unlimited",
+            description: "Play endless Wordle — 4 to 7 letters, no daily limit",
+          },
+          {
+            name: "Play Quordle",
+            href: "/quordle",
+            description: "Guess 4 words in 9 tries — daily + practice",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "NYT Games",
+    sections: [
+      {
+        title: "Connections",
         links: [
           {
             name: "Connections Hints",
@@ -171,10 +196,15 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/connections-hint",
             description: "Browse past puzzles",
           },
+          {
+            name: "Play Connections",
+            href: "/connections-game",
+            description: "Play today's puzzle online",
+          },
         ],
       },
       {
-        title: "NYT Strands",
+        title: "Strands",
         links: [
           {
             name: "Strands Hints",
@@ -186,10 +216,15 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/strands-hint",
             description: "Browse past puzzles",
           },
+          {
+            name: "Play Strands",
+            href: "/strands-game",
+            description: "Find hidden words in the letter grid",
+          },
         ],
       },
       {
-        title: "NYT Spelling Bee",
+        title: "Spelling Bee",
         links: [
           {
             name: "Spelling Bee Answers",
@@ -204,7 +239,7 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
         ],
       },
       {
-        title: "NYT Pips",
+        title: "Pips",
         links: [
           {
             name: "Pips Answers",
@@ -219,7 +254,7 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
         ],
       },
       {
-        title: "NYT Letter Boxed",
+        title: "Letter Boxed",
         links: [
           {
             name: "Letter Boxed Answers",
@@ -230,41 +265,6 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             name: "Letter Boxed Archive",
             href: "/letter-boxed-answers",
             description: "Browse past puzzles and answers",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "Games",
-    sections: [
-      {
-        title: "Play Online",
-        links: [
-          {
-            name: "Wordle Unlimited",
-            href: "/wordle-unlimited",
-            description: "Play endless Wordle — 4 to 7 letters, no daily limit",
-          },
-          {
-            name: "Play Quordle",
-            href: "/quordle",
-            description: "Guess 4 words in 9 tries — daily + practice",
-          },
-          {
-            name: "Play Connections",
-            href: "/connections-game",
-            description: "Play today's puzzle online",
-          },
-          {
-            name: "Play Strands",
-            href: "/strands-game",
-            description: "Find hidden words in the letter grid",
-          },
-          {
-            name: "Unlimited Cryptic",
-            href: "/minute-cryptic-unlimited",
-            description: "Practice with unlimited clues",
           },
         ],
       },
