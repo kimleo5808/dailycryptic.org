@@ -40,6 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/connections-game',
     '/wordle-answer-today',
     '/wordle-answer',
+    '/wordle-solver',
     '/wordle-unlimited',
     '/strands-hint-today',
     '/strands-hint',

@@ -146,6 +146,11 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
             href: "/wordle-answer",
             description: "Browse past answers",
           },
+          {
+            name: "Wordle Solver",
+            href: "/wordle-solver",
+            description: "Find every word that fits your clues",
+          },
         ],
       },
       {
