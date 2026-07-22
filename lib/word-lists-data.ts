@@ -58,49 +58,63 @@ export function glossOf(word: string): string | undefined {
   return GLOSS[word];
 }
 
-// ── Precomputed indexes ──────────────────────────────────────────────────────
+// ── Lazily-built indexes ─────────────────────────────────────────────────────
 
 type Index = Record<string, string[]>;
 const emptyIndex = (): Index =>
   Object.fromEntries(LETTERS.map((l) => [l, [] as string[]]));
 
-const IDX: Record<Mode, Index> = {
-  "starting-with": emptyIndex(),
-  "ending-in": emptyIndex(),
-  with: emptyIndex(),
-  middle: emptyIndex(),
-};
-
-for (const word of ALL) {
-  IDX["starting-with"][word[0]]?.push(word);
-  IDX["ending-in"][word[4]]?.push(word);
-  IDX["middle"][word[2]]?.push(word);
-  const seen = new Set<string>();
-  for (const ch of word) {
-    if (!seen.has(ch)) {
-      seen.add(ch);
-      IDX["with"][ch]?.push(word);
-    }
-  }
-}
-
-// Sort each bucket "common first, then defined, then alphabetical" so the most
-// useful words surface at the top of every list.
+// Rank words "common first, then defined, then alphabetical" for list ordering.
 function rank(word: string): number {
   if (COMMON_SET.has(word)) return 0;
   if (GLOSS[word]) return 1;
   return 2;
 }
-for (const mode of MODES) {
-  for (const l of LETTERS) {
-    IDX[mode][l].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+
+/*
+ * The index is built on first access rather than at module top level. On
+ * Cloudflare Workers the global scope has a strict startup-time budget, and
+ * indexing 8k+ words (plus sorting) at import time can exceed it and make the
+ * whole worker fail to initialise — which 500s every SSR route. Building lazily
+ * keeps startup instant and memoises for the isolate's lifetime. Plain string
+ * comparison is used instead of the far slower localeCompare.
+ */
+let _idx: Record<Mode, Index> | null = null;
+function getIdx(): Record<Mode, Index> {
+  if (_idx) return _idx;
+  const idx: Record<Mode, Index> = {
+    "starting-with": emptyIndex(),
+    "ending-in": emptyIndex(),
+    with: emptyIndex(),
+    middle: emptyIndex(),
+  };
+  for (const word of ALL) {
+    idx["starting-with"][word[0]]?.push(word);
+    idx["ending-in"][word[4]]?.push(word);
+    idx["middle"][word[2]]?.push(word);
+    const seen = new Set<string>();
+    for (const ch of word) {
+      if (!seen.has(ch)) {
+        seen.add(ch);
+        idx["with"][ch]?.push(word);
+      }
+    }
   }
+  for (const mode of MODES) {
+    for (const l of LETTERS) {
+      idx[mode][l].sort(
+        (a, b) => rank(a) - rank(b) || (a < b ? -1 : a > b ? 1 : 0)
+      );
+    }
+  }
+  _idx = idx;
+  return idx;
 }
 
 // ── Public helpers ───────────────────────────────────────────────────────────
 
 export function countFor(mode: Mode, letter: string): number {
-  return IDX[mode][letter.toUpperCase()]?.length ?? 0;
+  return getIdx()[mode][letter.toUpperCase()]?.length ?? 0;
 }
 
 function toEntry(word: string): WordEntry {
@@ -164,7 +178,7 @@ export interface SpokeData {
 export function getSpokeData(mode: Mode, letterRaw: string): SpokeData | null {
   const letter = letterRaw.toUpperCase();
   if (!LETTERS.includes(letter)) return null;
-  const words = IDX[mode][letter];
+  const words = getIdx()[mode][letter];
   if (!words || words.length === 0) return null;
 
   const commonWords = words.filter((w) => COMMON_SET.has(w));
