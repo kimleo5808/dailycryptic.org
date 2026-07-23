@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-22T07:53:15.474Z",
+  "lastUpdated": "2026-07-23T07:55:18.743Z",
   "puzzles": [
+    {
+      "id": 1860,
+      "printDate": "2026-07-23",
+      "status": "published",
+      "solution": "b3JiaXQ=",
+      "hint1": "Think carefully about today's five-letter word.",
+      "hint2": "The word starts with O and has 2 vowels.",
+      "hint3": "O _ B _ T"
+    },
     {
       "id": 1859,
       "printDate": "2026-07-22",
