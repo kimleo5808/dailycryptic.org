@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-22T07:54:55.687Z",
+  "lastUpdated": "2026-07-23T07:57:09.639Z",
   "puzzles": [
+    {
+      "id": 989,
+      "printDate": "2026-07-23",
+      "status": "published",
+      "clue": "Hail to the chief petty officer",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TiBBIFYgWSBSIEEgTiBLIFM=",
+      "spangram": "TkFWWVJBTktT",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QURNSVJBTA==",
+        "Q09NTUFOREVS",
+        "RU5TSUdO",
+        "TElFVVRFTkFOVA==",
+        "UkVDUlVJVA=="
+      ]
+    },
     {
       "id": 1049,
       "printDate": "2026-07-22",
