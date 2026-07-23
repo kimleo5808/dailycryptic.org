@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-22T10:06:05.827Z",
+  "lastUpdated": "2026-07-23T10:03:42.271Z",
   "puzzles": [
+    {
+      "id": 2788,
+      "printDate": "2026-07-23",
+      "status": "published",
+      "sides": [
+        "ELR",
+        "SPI",
+        "AOZ",
+        "TUJ"
+      ],
+      "solution": "WyJKT0xUIiwiVFJBUEVaSVVTIl0="
+    },
     {
       "id": 2787,
       "printDate": "2026-07-22",
