@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-23T10:03:42.271Z",
+  "lastUpdated": "2026-07-24T09:59:29.907Z",
   "puzzles": [
+    {
+      "id": 2789,
+      "printDate": "2026-07-24",
+      "status": "published",
+      "sides": [
+        "APD",
+        "RCE",
+        "LMU",
+        "BOK"
+      ],
+      "solution": "WyJDT1VQTEUiLCJFTUJBUktFRCJd"
+    },
     {
       "id": 2788,
       "printDate": "2026-07-23",
