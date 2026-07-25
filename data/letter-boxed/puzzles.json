@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-24T09:59:29.907Z",
+  "lastUpdated": "2026-07-25T09:20:37.166Z",
   "puzzles": [
+    {
+      "id": 2790,
+      "printDate": "2026-07-25",
+      "status": "published",
+      "sides": [
+        "NGV",
+        "ATO",
+        "ISL",
+        "YHU"
+      ],
+      "solution": "WyJWSU5ZQVNBIiwiQUxUSE9VR0giXQ=="
+    },
     {
       "id": 2789,
       "printDate": "2026-07-24",
