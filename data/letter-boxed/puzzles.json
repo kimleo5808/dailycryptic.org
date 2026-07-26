@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-25T09:20:37.166Z",
+  "lastUpdated": "2026-07-26T09:37:32.852Z",
   "puzzles": [
+    {
+      "id": 2791,
+      "printDate": "2026-07-26",
+      "status": "published",
+      "sides": [
+        "ELA",
+        "BGW",
+        "YIR",
+        "COF"
+      ],
+      "solution": "WyJMT0dJQyIsIkNZQkVSV0FSRkFSRSJd"
+    },
     {
       "id": 2790,
       "printDate": "2026-07-25",
