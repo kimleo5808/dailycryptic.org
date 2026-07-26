@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-25T07:31:05.624Z",
+  "lastUpdated": "2026-07-26T07:53:54.273Z",
   "puzzles": [
+    {
+      "id": 1863,
+      "printDate": "2026-07-26",
+      "status": "published",
+      "solution": "Z3JhcGU=",
+      "hint1": "This word starts with a letter that can be hard or soft.",
+      "hint2": "The word starts with G and has 2 vowels.",
+      "hint3": "G _ A _ E"
+    },
     {
       "id": 1862,
       "printDate": "2026-07-25",
