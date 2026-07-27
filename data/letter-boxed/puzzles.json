@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-26T09:37:32.852Z",
+  "lastUpdated": "2026-07-27T10:55:57.044Z",
   "puzzles": [
+    {
+      "id": 2792,
+      "printDate": "2026-07-27",
+      "status": "published",
+      "sides": [
+        "IHP",
+        "RMG",
+        "TEN",
+        "FOY"
+      ],
+      "solution": "WyJGUkVJR0hUIiwiVE9QT05ZTSJd"
+    },
     {
       "id": 2791,
       "printDate": "2026-07-26",
