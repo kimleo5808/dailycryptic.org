@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-26T07:55:17.647Z",
+  "lastUpdated": "2026-07-27T08:55:22.356Z",
   "puzzles": [
+    {
+      "id": 1052,
+      "printDate": "2026-07-27",
+      "status": "published",
+      "clue": "Let the journey begin",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBSIEEgSSBOIFMgVCBBIFQgSSBPIE4=",
+      "spangram": "VFJBSU5TVEFUSU9O",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QkVOQ0g=",
+        "Q09VTlRFUg==",
+        "S0lPU0s=",
+        "UExBVEZPUk0=",
+        "VElDS0VU",
+        "VFJBQ0s="
+      ]
+    },
     {
       "id": 1051,
       "printDate": "2026-07-26",
