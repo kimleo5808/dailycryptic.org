@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-26T07:53:54.273Z",
+  "lastUpdated": "2026-07-27T08:52:33.762Z",
   "puzzles": [
+    {
+      "id": 1864,
+      "printDate": "2026-07-27",
+      "status": "published",
+      "solution": "cG9zZXI=",
+      "hint1": "This word could compare things or describe a person.",
+      "hint2": "The word starts with P and has 2 vowels.",
+      "hint3": "P _ S _ R"
+    },
     {
       "id": 1863,
       "printDate": "2026-07-26",
