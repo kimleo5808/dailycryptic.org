@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-27T08:55:22.356Z",
+  "lastUpdated": "2026-07-28T08:00:19.676Z",
   "puzzles": [
+    {
+      "id": 1055,
+      "printDate": "2026-07-28",
+      "status": "published",
+      "clue": "Leave nothing out",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBUIFMgQSBMIEwgVCBIIEUgUiBF",
+      "spangram": "SVRTQUxMVEhFUkU=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q09NUExFVEU=",
+        "RU5USVJF",
+        "RlVMTA==",
+        "VE9UQUw=",
+        "VU5ESVZJREVE",
+        "V0hPTEU="
+      ]
+    },
     {
       "id": 1052,
       "printDate": "2026-07-27",
