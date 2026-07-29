@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-28T10:14:02.121Z",
+  "lastUpdated": "2026-07-29T10:16:33.972Z",
   "puzzles": [
+    {
+      "id": 2794,
+      "printDate": "2026-07-29",
+      "status": "published",
+      "sides": [
+        "UNL",
+        "QDZ",
+        "AIP",
+        "RGY"
+      ],
+      "solution": "WyJRVUFEUlVQTElORyIsIkdBVVpZIl0="
+    },
     {
       "id": 2793,
       "printDate": "2026-07-28",
