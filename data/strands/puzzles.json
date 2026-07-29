@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-28T08:00:19.676Z",
+  "lastUpdated": "2026-07-29T08:05:42.376Z",
   "puzzles": [
+    {
+      "id": 1056,
+      "printDate": "2026-07-29",
+      "status": "published",
+      "clue": "A made man",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBBIEIgUiBJIEMgQSBUIEUgRA==",
+      "spangram": "RkFCUklDQVRFRA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "RE9MTA==",
+        "RFVNTVk=",
+        "RklHVVJJTkU=",
+        "TUFOTkVRVUlO",
+        "UFVQUEVU",
+        "U1RBVFVF"
+      ]
+    },
     {
       "id": 1055,
       "printDate": "2026-07-28",
