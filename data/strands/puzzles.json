@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-29T08:05:42.376Z",
+  "lastUpdated": "2026-07-30T07:54:43.659Z",
   "puzzles": [
+    {
+      "id": 1057,
+      "printDate": "2026-07-30",
+      "status": "published",
+      "clue": "Trade names",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "QSBSIFQgSSBTIEEgTiBT",
+      "spangram": "QVJUSVNBTlM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "Q09PUEVS",
+        "Sk9JTkVS",
+        "TUFTT04=",
+        "UE9UVEVS",
+        "U01JVEg=",
+        "VEFOTkVS",
+        "V0VBVkVS"
+      ]
+    },
     {
       "id": 1056,
       "printDate": "2026-07-29",
