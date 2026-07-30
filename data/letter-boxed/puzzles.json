@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-29T10:16:33.972Z",
+  "lastUpdated": "2026-07-30T10:02:23.086Z",
   "puzzles": [
+    {
+      "id": 2796,
+      "printDate": "2026-07-30",
+      "status": "published",
+      "sides": [
+        "TBJ",
+        "ARE",
+        "MUS",
+        "NCP"
+      ],
+      "solution": "WyJTUFJVQ0UiLCJFTkpBTUJNRU5UIl0="
+    },
     {
       "id": 2794,
       "printDate": "2026-07-29",
