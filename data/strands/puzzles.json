@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-07-30T07:54:43.659Z",
+  "lastUpdated": "2026-07-31T08:16:51.880Z",
   "puzzles": [
+    {
+      "id": 1058,
+      "printDate": "2026-07-31",
+      "status": "published",
+      "clue": "Summer sign",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBFIE8gVCBIIEUgTCBJIE8gTg==",
+      "spangram": "TEVPVEhFTElPTg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Qk9MRA==",
+        "Qk9TU1k=",
+        "Q0hBUk1JTkc=",
+        "RFJBTUFUSUM=",
+        "R0VORVJPVVM=",
+        "TE9ZQUw="
+      ]
+    },
     {
       "id": 1057,
       "printDate": "2026-07-30",
