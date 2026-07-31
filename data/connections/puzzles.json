@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-07-30T07:44:00.504Z",
+  "lastUpdated": "2026-07-31T08:13:42.924Z",
   "puzzles": [
+    {
+      "id": 1146,
+      "printDate": "2026-07-31",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q09OU1RSVUNU",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TU9MRA==",
+            "RkFTSElPTg==",
+            "TU9ERUw=",
+            "U0hBUEU="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U1VQRVIgTUFSSU8gRklHVVJFUw==",
+          "hint": "Think about well-known people or characters",
+          "words": [
+            "UFJJTkNFU1M=",
+            "TVVTSFJPT00=",
+            "RElOT1NBVVI=",
+            "UExVTUJFUg=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RlJVSVRTIFBMVVMgU1RBUlRJTkcgTEVUVEVS",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "U1BFQVI=",
+            "REFQUExF",
+            "U0xJTUU=",
+            "SkRBVEU="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBNRVJSSU1FTlRT",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "Sk9ZU1RJQ0s=",
+            "RlVOR1VT",
+            "Q0hFRVJJT1M=",
+            "R0xFRUs="
+          ]
+        }
+      ]
+    },
     {
       "id": 1145,
       "printDate": "2026-07-30",
