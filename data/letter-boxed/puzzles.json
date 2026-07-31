@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-30T10:02:23.086Z",
+  "lastUpdated": "2026-07-31T10:13:49.293Z",
   "puzzles": [
+    {
+      "id": 2795,
+      "printDate": "2026-07-31",
+      "status": "published",
+      "sides": [
+        "LWI",
+        "EON",
+        "RDP",
+        "VAT"
+      ],
+      "solution": "WyJQTEFJVEVEIiwiRE9XTlJJVkVSIl0="
+    },
     {
       "id": 2796,
       "printDate": "2026-07-30",
