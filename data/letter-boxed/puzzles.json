@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-07-31T10:13:49.293Z",
+  "lastUpdated": "2026-08-01T09:34:44.122Z",
   "puzzles": [
+    {
+      "id": 2797,
+      "printDate": "2026-08-01",
+      "status": "published",
+      "sides": [
+        "HGN",
+        "MLI",
+        "AEU",
+        "OZT"
+      ],
+      "solution": "WyJBTU9VTlQiLCJUSEVPTE9HSVpFIl0="
+    },
     {
       "id": 2795,
       "printDate": "2026-07-31",
