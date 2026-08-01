@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-07-31T08:14:32.593Z",
+  "lastUpdated": "2026-08-01T07:40:39.250Z",
   "puzzles": [
+    {
+      "id": 1869,
+      "printDate": "2026-08-01",
+      "status": "published",
+      "solution": "c2x1c2g=",
+      "hint1": "This word ends with a hushing sound.",
+      "hint2": "The word starts with S and has 1 vowel.",
+      "hint3": "S _ U _ H"
+    },
     {
       "id": 1868,
       "printDate": "2026-07-31",
