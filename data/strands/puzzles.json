@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-01T07:41:54.782Z",
+  "lastUpdated": "2026-08-02T07:49:56.847Z",
   "puzzles": [
+    {
+      "id": 1060,
+      "printDate": "2026-08-02",
+      "status": "published",
+      "clue": "Eyes on the prize",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QSBJIE0gSCBJIEcgSA==",
+      "spangram": "QUlNSElHSA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "QU1CSVRJT04=",
+        "R09BTA==",
+        "SU5URU5USU9O",
+        "T0JKRUNUSVZF",
+        "UExBTg==",
+        "UFVSUE9TRQ=="
+      ]
+    },
     {
       "id": 1059,
       "printDate": "2026-08-01",
