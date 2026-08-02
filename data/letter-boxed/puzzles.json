@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-01T09:34:44.122Z",
+  "lastUpdated": "2026-08-02T09:36:50.786Z",
   "puzzles": [
+    {
+      "id": 2798,
+      "printDate": "2026-08-02",
+      "status": "published",
+      "sides": [
+        "AKY",
+        "LED",
+        "ONF",
+        "MBS"
+      ],
+      "solution": "WyJGTEFOS1MiLCJTT01FQk9EWSJd"
+    },
     {
       "id": 2797,
       "printDate": "2026-08-01",
