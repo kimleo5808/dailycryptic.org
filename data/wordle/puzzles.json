@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-02T07:43:00.124Z",
+  "lastUpdated": "2026-08-03T08:45:47.479Z",
   "puzzles": [
+    {
+      "id": 1871,
+      "printDate": "2026-08-03",
+      "status": "published",
+      "solution": "cmVwbHk=",
+      "hint1": "This word is likely an adverb or describes a manner.",
+      "hint2": "The word starts with R and has 1 vowel.",
+      "hint3": "R _ P _ Y"
+    },
     {
       "id": 1870,
       "printDate": "2026-08-02",
