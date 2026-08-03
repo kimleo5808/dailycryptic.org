@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-02T09:36:50.786Z",
+  "lastUpdated": "2026-08-03T10:57:06.374Z",
   "puzzles": [
+    {
+      "id": 2799,
+      "printDate": "2026-08-03",
+      "status": "published",
+      "sides": [
+        "BLC",
+        "HYN",
+        "EFO",
+        "MUX"
+      ],
+      "solution": "WyJIT05FWUNPTUIiLCJCT1hGVUwiXQ=="
+    },
     {
       "id": 2798,
       "printDate": "2026-08-02",
