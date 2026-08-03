@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-02T07:49:56.847Z",
+  "lastUpdated": "2026-08-03T08:47:59.188Z",
   "puzzles": [
+    {
+      "id": 1061,
+      "printDate": "2026-08-03",
+      "status": "published",
+      "clue": "There's nothing like it",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TyBOIEUgTyBGIEEgSyBJIE4gRA==",
+      "spangram": "T05FT0ZBS0lORA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "RVhDTFVTSVZF",
+        "T05MWQ==",
+        "U0lOR1VMQVI=",
+        "U09MRQ==",
+        "U1BFQ0lBTA==",
+        "VU5JUVVF"
+      ]
+    },
     {
       "id": 1060,
       "printDate": "2026-08-02",
