@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-03T08:45:47.479Z",
+  "lastUpdated": "2026-08-04T07:58:59.303Z",
   "puzzles": [
+    {
+      "id": 1872,
+      "printDate": "2026-08-04",
+      "status": "published",
+      "solution": "bW90aWY=",
+      "hint1": "This word begins with a humming sound.",
+      "hint2": "The word starts with M and has 2 vowels.",
+      "hint3": "M _ T _ F"
+    },
     {
       "id": 1871,
       "printDate": "2026-08-03",
