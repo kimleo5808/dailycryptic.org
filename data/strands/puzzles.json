@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-03T08:47:59.188Z",
+  "lastUpdated": "2026-08-04T08:02:04.607Z",
   "puzzles": [
+    {
+      "id": 1062,
+      "printDate": "2026-08-04",
+      "status": "published",
+      "clue": "Staying healthy",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UCBIIEEgUiBNIEEgQyBZ",
+      "spangram": "UEhBUk1BQ1k=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "Q09OU1VMVA==",
+        "Q09VTlRFUg==",
+        "SU1NVU5JWkFUSU9O",
+        "TUVESUNJTkU=",
+        "UkVGSUxM"
+      ]
+    },
     {
       "id": 1061,
       "printDate": "2026-08-03",
