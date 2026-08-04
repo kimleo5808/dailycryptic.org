@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-03T10:57:06.374Z",
+  "lastUpdated": "2026-08-04T10:17:15.490Z",
   "puzzles": [
+    {
+      "id": 2800,
+      "printDate": "2026-08-04",
+      "status": "published",
+      "sides": [
+        "MLO",
+        "UPB",
+        "IKS",
+        "HCA"
+      ],
+      "solution": "WyJBTVBISUJJT1VTIiwiU0xJQ0siXQ=="
+    },
     {
       "id": 2799,
       "printDate": "2026-08-03",
