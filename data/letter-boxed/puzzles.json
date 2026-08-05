@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-04T10:17:15.490Z",
+  "lastUpdated": "2026-08-05T10:15:06.336Z",
   "puzzles": [
+    {
+      "id": 2801,
+      "printDate": "2026-08-05",
+      "status": "published",
+      "sides": [
+        "EAT",
+        "ING",
+        "COF",
+        "LUV"
+      ],
+      "solution": "WyJHRU5VRkxFQ1RJT04iLCJOQUlWRSJd"
+    },
     {
       "id": 2800,
       "printDate": "2026-08-04",
