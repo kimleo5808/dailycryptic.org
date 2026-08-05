@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-04T08:02:04.607Z",
+  "lastUpdated": "2026-08-05T08:02:53.585Z",
   "puzzles": [
+    {
+      "id": 1063,
+      "printDate": "2026-08-05",
+      "status": "published",
+      "clue": "All things considered",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBSIEEgSSBOIFMgVCBPIFIgTSBJIE4gRw==",
+      "spangram": "QlJBSU5TVE9STUlORw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q09OQ0VQVA==",
+        "SURFQQ==",
+        "Tk9USU9O",
+        "T1BJTklPTg==",
+        "UExBTg==",
+        "VEhPVUdIVA=="
+      ]
+    },
     {
       "id": 1062,
       "printDate": "2026-08-04",
