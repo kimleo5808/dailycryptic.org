@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-05T10:15:06.336Z",
+  "lastUpdated": "2026-08-06T10:16:23.616Z",
   "puzzles": [
+    {
+      "id": 2802,
+      "printDate": "2026-08-06",
+      "status": "published",
+      "sides": [
+        "TSW",
+        "NMC",
+        "EOH",
+        "FIA"
+      ],
+      "solution": "WyJPRlRFTlRJTUVTIiwiU0NIV0EiXQ=="
+    },
     {
       "id": 2801,
       "printDate": "2026-08-05",
