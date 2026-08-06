@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-05T08:02:53.585Z",
+  "lastUpdated": "2026-08-06T08:01:30.419Z",
   "puzzles": [
+    {
+      "id": 1064,
+      "printDate": "2026-08-06",
+      "status": "published",
+      "clue": "Blossoming forth",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBMIE8gVyBFIFIgSSBOIEcgVCBSIEUgRQ==",
+      "spangram": "RkxPV0VSSU5HVFJFRQ==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q0hFUlJZ",
+        "RE9HV09PRA==",
+        "SEFXVEhPUk4=",
+        "TUFHTk9MSUE=",
+        "UkVEQlVE"
+      ]
+    },
     {
       "id": 1063,
       "printDate": "2026-08-05",
