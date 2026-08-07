@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-06T10:16:23.616Z",
+  "lastUpdated": "2026-08-07T08:38:07.410Z",
   "puzzles": [
+    {
+      "id": 2803,
+      "printDate": "2026-08-07",
+      "status": "published",
+      "sides": [
+        "LDE",
+        "JXT",
+        "UNG",
+        "MAY"
+      ],
+      "solution": "WyJKVURHTUVOVEFMIiwiTEFYTFkiXQ=="
+    },
     {
       "id": 2802,
       "printDate": "2026-08-06",
