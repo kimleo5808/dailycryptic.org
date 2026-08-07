@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-08-06T08:01:30.419Z",
+  "lastUpdated": "2026-08-07T06:48:55.850Z",
   "puzzles": [
+    {
+      "id": 1065,
+      "printDate": "2026-08-07",
+      "status": "published",
+      "clue": "Struggling to find the words",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VyBIIEEgVCBDIEggQSBNIEEgQyBBIEwgTCBJIFQ=",
+      "spangram": "V0hBVENIQU1BQ0FMTElU",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "RElOR1VT",
+        "RE9PSElDS0VZ",
+        "R0laTU8=",
+        "VEhJTkdBTUFKSUdHWQ=="
+      ]
+    },
     {
       "id": 1064,
       "printDate": "2026-08-06",
