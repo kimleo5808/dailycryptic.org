@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-07T06:48:55.850Z",
+  "lastUpdated": "2026-08-08T06:08:01.894Z",
   "puzzles": [
+    {
+      "id": 1066,
+      "printDate": "2026-08-08",
+      "status": "published",
+      "clue": "It has its ups and downs",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UiBPIEwgTCBFIFIgQyBPIEEgUyBUIEUgUg==",
+      "spangram": "Uk9MTEVSQ09BU1RFUg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q09SS1NDUkVX",
+        "Q1VUQkFDSw==",
+        "RFJPUA==",
+        "TE9PUA==",
+        "VFJBQ0s=",
+        "VFVOTkVM"
+      ]
+    },
     {
       "id": 1065,
       "printDate": "2026-08-07",
