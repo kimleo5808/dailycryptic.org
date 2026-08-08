@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-07T08:38:07.410Z",
+  "lastUpdated": "2026-08-08T08:20:17.053Z",
   "puzzles": [
+    {
+      "id": 2804,
+      "printDate": "2026-08-08",
+      "status": "published",
+      "sides": [
+        "VNC",
+        "PIO",
+        "YGT",
+        "HEZ"
+      ],
+      "solution": "WyJWRVRDSCIsIkhZUE5PVElaSU5HIl0="
+    },
     {
       "id": 2803,
       "printDate": "2026-08-07",
