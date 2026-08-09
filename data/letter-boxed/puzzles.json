@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-08T08:20:17.053Z",
+  "lastUpdated": "2026-08-09T08:21:09.382Z",
   "puzzles": [
+    {
+      "id": 2805,
+      "printDate": "2026-08-09",
+      "status": "published",
+      "sides": [
+        "NEC",
+        "TBY",
+        "IUR",
+        "FAL"
+      ],
+      "solution": "WyJCRUFUSUZJQyIsIkNVTElOQVJZIl0="
+    },
     {
       "id": 2804,
       "printDate": "2026-08-08",
