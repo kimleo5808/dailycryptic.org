@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-09T06:09:44.499Z",
+  "lastUpdated": "2026-08-10T06:51:59.766Z",
   "puzzles": [
+    {
+      "id": 1068,
+      "printDate": "2026-08-10",
+      "status": "published",
+      "clue": "Back it up",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UCBSIE8gTyBGIFAgTyBTIEkgVCBJIFYgRQ==",
+      "spangram": "UFJPT0ZQT1NJVElWRQ==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "REFUQQ==",
+        "RkFDVFM=",
+        "RklHVVJFUw==",
+        "U1BFQ0lGSUNT",
+        "U1RBVElTVElDUw=="
+      ]
+    },
     {
       "id": 1067,
       "printDate": "2026-08-09",
