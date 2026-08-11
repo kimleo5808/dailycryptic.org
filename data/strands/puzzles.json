@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-10T06:51:59.766Z",
+  "lastUpdated": "2026-08-11T06:28:27.441Z",
   "puzzles": [
+    {
+      "id": 1069,
+      "printDate": "2026-08-11",
+      "status": "published",
+      "clue": "Fresh from the market",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBVIE0gTSBFIFIgSCBBIFIgViBFIFMgVA==",
+      "spangram": "U1VNTUVSSEFSVkVTVA==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q0FSUk9U",
+        "Q09STg==",
+        "TUVMT04=",
+        "UEVQUEVS",
+        "VE9NQVRP",
+        "WlVDQ0hJTkk="
+      ]
+    },
     {
       "id": 1068,
       "printDate": "2026-08-10",
