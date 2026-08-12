@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-11T06:11:44.888Z",
+  "lastUpdated": "2026-08-12T06:50:29.418Z",
   "puzzles": [
+    {
+      "id": 1158,
+      "printDate": "2026-08-12",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "SE9MRCBPTlRPLCBBUyBBIEZFRUxJTkc=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "SEFSQk9S",
+            "TlVSU0U=",
+            "Rk9TVEVS",
+            "TUFJTlRBSU4="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgRlJPR1M=",
+          "hint": "Think about different frogs",
+          "words": [
+            "VFJFRQ==",
+            "R1JFRU4=",
+            "QlVMTA==",
+            "UE9JU09OIERBUlQ="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "TkJDIFNJVENPTSBTVVJOQU1FUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TEVNT04=",
+            "QklORw==",
+            "U0NPVFQ=",
+            "QkVORVM="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBBRkZJUk1BVElWRSBSRVNQT05TRVM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "RklORSBQUklOVA==",
+            "R1JFQVQgV0hJVEU=",
+            "R09PREJZRQ==",
+            "T0tBWUFNQQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1157,
       "printDate": "2026-08-11",
