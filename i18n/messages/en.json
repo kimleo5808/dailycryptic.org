@@ -140,6 +140,35 @@
           ]
         },
         {
+          "title": "LinkedIn Games",
+          "links": [
+            {
+              "href": "/linkedin-games-answers",
+              "name": "All LinkedIn Answers"
+            },
+            {
+              "href": "/linkedin-queens-answer",
+              "name": "Queens Answer"
+            },
+            {
+              "href": "/linkedin-zip-answer",
+              "name": "Zip Answer"
+            },
+            {
+              "href": "/linkedin-tango-answer",
+              "name": "Tango Answer"
+            },
+            {
+              "href": "/linkedin-pinpoint-answer",
+              "name": "Pinpoint Answer"
+            },
+            {
+              "href": "/linkedin-crossclimb-answer",
+              "name": "Crossclimb Answer"
+            }
+          ]
+        },
+        {
           "title": "More Puzzles",
           "links": [
             {

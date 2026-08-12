@@ -240,6 +240,26 @@ const nextConfig = {
           destination: "/en/blog/:slug",
         },
         {
+          source: "/linkedin-queens-answer/:date",
+          destination: "/en/linkedin-queens-answer/:date",
+        },
+        {
+          source: "/linkedin-zip-answer/:date",
+          destination: "/en/linkedin-zip-answer/:date",
+        },
+        {
+          source: "/linkedin-tango-answer/:date",
+          destination: "/en/linkedin-tango-answer/:date",
+        },
+        {
+          source: "/linkedin-pinpoint-answer/:date",
+          destination: "/en/linkedin-pinpoint-answer/:date",
+        },
+        {
+          source: "/linkedin-crossclimb-answer/:date",
+          destination: "/en/linkedin-crossclimb-answer/:date",
+        },
+        {
           source:
             "/:path((?!en(?:/|$)|api(?:/|$)|_next(?:/|$)|_vercel(?:/|$)|.*\\..*).*)",
           destination: "/en/:path",

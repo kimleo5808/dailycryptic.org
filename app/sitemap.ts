@@ -7,6 +7,8 @@ import { getAllPipsPuzzles } from '@/lib/pips-data'
 import { getAllLetterBoxedPuzzles } from '@/lib/letter-boxed-data'
 import { getAllWordlePuzzles } from '@/lib/wordle-data'
 import { MODES, LETTERS } from '@/lib/word-lists-data'
+import { getAllLinkedInDates } from '@/lib/linkedin-data'
+import { LINKEDIN_GAMES } from '@/config/linkedin-games'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
 import { MetadataRoute } from 'next'
@@ -54,6 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/letter-boxed-answers-today',
     '/letter-boxed-answers',
     '/quordle',
+    '/linkedin-games-answers',
+    ...LINKEDIN_GAMES.map(game => `/${game.slug}`),
     '/blog',
     '/share',
     '/about',
@@ -62,16 +66,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/terms-of-service',
   ]
 
+  // LinkedIn cluster pages refresh daily like the other "today" routes.
+  const linkedinDailyPages = new Set([
+    '/linkedin-games-answers',
+    ...LINKEDIN_GAMES.map(game => `/${game.slug}`),
+  ])
+
   const pages = staticPages.map(page => ({
     url: `${siteUrl}${page}`,
     lastModified: new Date(),
-    changeFrequency: (page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer' || page === '/spelling-bee-answers-today' || page === '/spelling-bee-answers' || page === '/pips-answers-today' || page === '/pips-answers' || page === '/letter-boxed-answers-today' || page === '/letter-boxed-answers' || page === '/quordle'
+    changeFrequency: (linkedinDailyPages.has(page) || page === '' || page === '/minute-cryptic-today' || page === '/daily-cryptic' || page === '/connections-hint-today' || page === '/connections-hint' || page === '/strands-hint-today' || page === '/strands-hint' || page === '/wordle-answer-today' || page === '/wordle-answer' || page === '/spelling-bee-answers-today' || page === '/spelling-bee-answers' || page === '/pips-answers-today' || page === '/pips-answers' || page === '/letter-boxed-answers-today' || page === '/letter-boxed-answers' || page === '/quordle'
       ? 'daily'
       : page === '/blog'
         ? 'weekly'
         : 'weekly') as ChangeFrequency,
     priority: page === ''
       ? 1.0
+      : linkedinDailyPages.has(page)
+        ? 0.95
       : page === '/daily-cryptic'
         ? 0.95
         : page === '/minute-cryptic-today'
@@ -186,9 +198,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   )
 
+  // LinkedIn game archive pages (one per game per covered date)
+  const linkedinArchivePages = (
+    await Promise.all(
+      LINKEDIN_GAMES.map(async game => {
+        const dates = await getAllLinkedInDates(game.key)
+        return dates.map(date => ({
+          url: `${siteUrl}/${game.slug}/${date}`,
+          lastModified: new Date(date),
+          changeFrequency: 'monthly' as ChangeFrequency,
+          priority: 0.6,
+        }))
+      })
+    )
+  ).flat()
+
   return [
     ...pages,
     ...wordListPages,
+    ...linkedinArchivePages,
     ...puzzlePages,
     ...connectionsPages,
     ...strandsPages,

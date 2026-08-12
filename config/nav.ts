@@ -241,6 +241,46 @@ export const NAV_DROPDOWNS: NavDropdownConfig[] = [
     ],
   },
   {
+    label: "LinkedIn",
+    sections: [
+      {
+        title: "LinkedIn Games",
+        links: [
+          {
+            name: "All LinkedIn Answers",
+            href: "/linkedin-games-answers",
+            description: "Every LinkedIn game solved today, in one place",
+          },
+          {
+            name: "Queens Answer",
+            href: "/linkedin-queens-answer",
+            description: "Today's crown placement, hints first",
+          },
+          {
+            name: "Zip Answer",
+            href: "/linkedin-zip-answer",
+            description: "Today's full numbered path",
+          },
+          {
+            name: "Tango Answer",
+            href: "/linkedin-tango-answer",
+            description: "Today's sun and moon grid solved",
+          },
+          {
+            name: "Pinpoint Answer",
+            href: "/linkedin-pinpoint-answer",
+            description: "Today's category, clue by clue",
+          },
+          {
+            name: "Crossclimb Answer",
+            href: "/linkedin-crossclimb-answer",
+            description: "Every clue plus the finished ladder",
+          },
+        ],
+      },
+    ],
+  },
+  {
     label: "Games",
     sections: [
       {
