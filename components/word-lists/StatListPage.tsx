@@ -27,7 +27,8 @@ export default function StatListPage({ slug }: { slug: string }) {
 
   const { def } = data;
   const path = `/5-letter-words/${def.slug}`;
-  const siblings = STAT_LISTS.filter((l) => l.slug !== def.slug).slice(0, 6);
+  // Link to every sibling: 14 links keeps the whole cluster one hop apart.
+  const siblings = STAT_LISTS.filter((l) => l.slug !== def.slug);
 
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">

@@ -67,6 +67,18 @@
               "name": "5-Letter Words"
             },
             {
+              "href": "/5-letter-words/no-vowels",
+              "name": "Words With No Vowels"
+            },
+            {
+              "href": "/5-letter-words/double-letters",
+              "name": "Words With Double Letters"
+            },
+            {
+              "href": "/5-letter-words/no-repeating-letters",
+              "name": "No Repeating Letters"
+            },
+            {
               "href": "/wordle-unlimited",
               "name": "Wordle Unlimited"
             },

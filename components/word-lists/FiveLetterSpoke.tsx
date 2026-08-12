@@ -22,6 +22,7 @@ import {
   spokeHeading,
   type Mode,
 } from "@/lib/word-lists-data";
+import { STAT_LISTS } from "@/lib/word-stat-lists";
 
 const MODE_CROSS_LABEL: Record<Mode, string> = {
   "starting-with": "starting with",
@@ -43,6 +44,14 @@ export default function FiveLetterSpoke({
   const L = data.letter;
   const path = `/5-letter-words/${mode}/${L.toLowerCase()}`;
   const otherModes = MODES.filter((m) => m !== mode);
+
+  /* Rotate which pattern lists this spoke links to, keyed off the letter, so
+     every list is reachable from a fair share of the 104 spokes rather than
+     the first eight collecting all the internal links. */
+  const offset = L.charCodeAt(0) % STAT_LISTS.length;
+  const patternLists = Array.from({ length: 8 }, (_, i) =>
+    STAT_LISTS[(offset + i) % STAT_LISTS.length]
+  );
 
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
@@ -160,6 +169,25 @@ export default function FiveLetterSpoke({
             </Link>
           ))}
         </div>
+
+        {/* Cross-index: change the constraint shape */}
+        <ContentSection title="Browse by Pattern Instead">
+          <BodyText>
+            If the clue you hold is a shape rather than a letter — no vowels
+            left, a letter that repeats, a Q with no U — these lists cover it.
+          </BodyText>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {patternLists.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/5-letter-words/${s.slug}`}
+                className="rounded-lg border border-border bg-background px-4 py-2.5 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
+              >
+                {s.title}
+              </Link>
+            ))}
+          </div>
+        </ContentSection>
 
         {/* Up-links to tools / daily */}
         <div className="flex flex-wrap justify-center gap-3">
