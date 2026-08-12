@@ -35,6 +35,33 @@ function parseEnumLength(clue) {
   return m ? Number.parseInt(m[1], 10) : null;
 }
 
+function clueLetters(clue) {
+  return normalizedAnswer(String(clue).replace(/\(\d+\)\s*$/, ""));
+}
+
+function sortedLetters(value) {
+  return normalizedAnswer(value).split("").sort().join("");
+}
+
+/* An anagram clue must contain its fodder verbatim: some contiguous run of
+   clue words whose letters are exactly the answer's letters. */
+function hasAnagramFodder(clue, answer) {
+  const target = sortedLetters(answer);
+  const words = String(clue)
+    .replace(/\(\d+\)\s*$/, "")
+    .split(/\s+/)
+    .filter(Boolean);
+  for (let i = 0; i < words.length; i += 1) {
+    let acc = "";
+    for (let j = i; j < words.length; j += 1) {
+      acc += normalizedAnswer(words[j]);
+      if (acc.length === target.length && sortedLetters(acc) === target) return true;
+      if (acc.length > target.length) break;
+    }
+  }
+  return false;
+}
+
 const errors = [];
 const warnings = [];
 
@@ -157,6 +184,30 @@ for (let i = 0; i < puzzles.length; i += 1) {
     if (answerLen !== enumLen) {
       errors.push(
         `${label} enumeration mismatch: clue(${enumLen}) vs answer(${answerLen})`
+      );
+    }
+  }
+
+  /* Mechanical soundness checks per clue type */
+  if (p.clueType === "hidden-word" && typeof p.clue === "string" && typeof p.answer === "string") {
+    if (!clueLetters(p.clue).includes(normalizedAnswer(p.answer))) {
+      errors.push(
+        `${label} hidden-word: answer "${p.answer}" is not concealed contiguously in the clue.`
+      );
+    }
+  }
+  if (p.clueType === "anagram" && typeof p.clue === "string" && typeof p.answer === "string") {
+    if (!hasAnagramFodder(p.clue, p.answer)) {
+      errors.push(
+        `${label} anagram: no contiguous clue words have exactly the letters of "${p.answer}".`
+      );
+    }
+  }
+  if (Array.isArray(p.hintLevels) && typeof p.answer === "string") {
+    const m = String(p.hintLevels[3] ?? "").match(/^Starts with ['"]?([A-Za-z])/);
+    if (m && m[1].toUpperCase() !== normalizedAnswer(p.answer)[0]) {
+      errors.push(
+        `${label} hintLevels[3] says "Starts with ${m[1]}" but answer is "${p.answer}".`
       );
     }
   }

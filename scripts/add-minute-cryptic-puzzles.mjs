@@ -39,6 +39,23 @@ const parseEnumLength = (clue) => {
   const m = String(clue).match(/\((\d+)\)\s*$/);
   return m ? Number.parseInt(m[1], 10) : null;
 };
+const clueLetters = (clue) => normalizedAnswer(String(clue).replace(/\(\d+\)\s*$/, ""));
+const sortedLetters = (v) => normalizedAnswer(v).split("").sort().join("");
+/* An anagram clue must contain its fodder verbatim: some contiguous run of
+   clue words whose letters are exactly the answer's letters. */
+const hasAnagramFodder = (clue, answer) => {
+  const target = sortedLetters(answer);
+  const words = String(clue).replace(/\(\d+\)\s*$/, "").split(/\s+/).filter(Boolean);
+  for (let i = 0; i < words.length; i += 1) {
+    let acc = "";
+    for (let j = i; j < words.length; j += 1) {
+      acc += normalizedAnswer(words[j]);
+      if (acc.length === target.length && sortedLetters(acc) === target) return true;
+      if (acc.length > target.length) break;
+    }
+  }
+  return false;
+};
 
 function addDays(dateStr, days) {
   const d = new Date(`${dateStr}T00:00:00Z`);
@@ -109,6 +126,19 @@ incoming.forEach((p, i) => {
     if (existingAnswers.has(key)) errors.push(`${at}.answer "${p.answer}" already exists in puzzles.json.`);
     if (batchAnswers.has(key)) errors.push(`${at}.answer "${p.answer}" is duplicated within this batch.`);
     batchAnswers.add(key);
+
+    if (p.clueType === "hidden-word" && !clueLetters(p.clue).includes(key)) {
+      errors.push(`${at} hidden-word: answer "${p.answer}" is not concealed contiguously in the clue.`);
+    }
+    if (p.clueType === "anagram" && !hasAnagramFodder(p.clue, p.answer)) {
+      errors.push(`${at} anagram: no contiguous clue words have exactly the letters of "${p.answer}".`);
+    }
+    if (Array.isArray(p.hintLevels)) {
+      const m = String(p.hintLevels[3] ?? "").match(/^Starts with ['"]?([A-Za-z])/);
+      if (m && m[1].toUpperCase() !== key[0]) {
+        errors.push(`${at}.hintLevels[3] says "Starts with ${m[1]}" but answer is "${p.answer}".`);
+      }
+    }
   }
 });
 if (errors.length) die(`Batch rejected with ${errors.length} error(s):`, errors);
