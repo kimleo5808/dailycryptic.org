@@ -8,6 +8,7 @@ import { getAllLetterBoxedPuzzles } from '@/lib/letter-boxed-data'
 import { getAllWordlePuzzles } from '@/lib/wordle-data'
 import { MODES, LETTERS } from '@/lib/word-lists-data'
 import { getAllLinkedInDates } from '@/lib/linkedin-data'
+import { STAT_LIST_SLUGS } from '@/lib/word-stat-lists'
 import { LINKEDIN_GAMES } from '@/config/linkedin-games'
 import { getPosts } from '@/lib/getBlogs'
 import { DEFAULT_LOCALE } from '@/i18n/routing'
@@ -198,6 +199,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   )
 
+  // 5-letter pattern list pages (no vowels, double letters, Q without U, …)
+  const statListPages = STAT_LIST_SLUGS.map(slug => ({
+    url: `${siteUrl}/5-letter-words/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as ChangeFrequency,
+    priority: 0.6,
+  }))
+
   // LinkedIn game archive pages (one per game per covered date)
   const linkedinArchivePages = (
     await Promise.all(
@@ -216,6 +225,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...pages,
     ...wordListPages,
+    ...statListPages,
     ...linkedinArchivePages,
     ...puzzlePages,
     ...connectionsPages,

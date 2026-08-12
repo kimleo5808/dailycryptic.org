@@ -17,6 +17,7 @@ import {
 } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { getBestStarters, totalWordCount } from "@/lib/word-lists-data";
+import { STAT_LISTS } from "@/lib/word-stat-lists";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -142,6 +143,26 @@ export default async function FiveLetterWordsHub({
             contains the letter anywhere, so you can find a spot for it.
           </BodyText>
           <LetterIndexGrid mode="with" />
+        </ContentSection>
+
+        <ContentSection title="Browse 5-Letter Words by Pattern" id="patterns">
+          <BodyText>
+            Sometimes the clue you hold is a shape rather than a letter: no
+            vowels left, a letter that clearly repeats, or a Q with no U in
+            sight. These lists collect every five-letter word matching each
+            pattern.
+          </BodyText>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {STAT_LISTS.map((list) => (
+              <Link
+                key={list.slug}
+                href={`/5-letter-words/${list.slug}`}
+                className="rounded-lg border border-border bg-background px-4 py-2.5 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
+              >
+                {list.title}
+              </Link>
+            ))}
+          </div>
         </ContentSection>
 
         <ContentSection title="How Many 5-Letter Words Are There?" id="how-many">
