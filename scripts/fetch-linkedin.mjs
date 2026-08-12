@@ -160,24 +160,86 @@ function parseTango(text) {
   return { rows: filled };
 }
 
+const WORD_NUM = {
+  one: 1, two: 2, three: 3, four: 4, five: 5,
+  six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+};
+const MOVE_DIR = {
+  up: [-1, 0], upwards: [-1, 0], upward: [-1, 0],
+  down: [1, 0], downwards: [1, 0], downward: [1, 0],
+  left: [0, -1], right: [0, 1],
+};
+
 /**
- * Zip: prose directions are too loose to trust; only accept an explicit
- * coordinate list for the numbered waypoints.
+ * Zip: walk the prose move directions ("move one block downwards, then one
+ * block to the left to reach 2") from an arbitrary origin, then normalise.
+ *
+ * This is self-verifying: a real Zip path covers every cell of a square grid
+ * exactly once, so a misparse essentially never yields N distinct cells
+ * filling an exact N×N box. Anything that fails that test is discarded.
  */
 function parseZip(text) {
-  const waypoints = [];
-  const re = /(\d+)\s*(?:is\s*(?:at|in)|:)\s*row\s*(\d+)\s*(?:,|-)?\s*col(?:umn)?\s*(\d+)/gi;
-  let m;
-  while ((m = re.exec(text)) !== null) {
-    const num = Number(m[1]);
-    const row = Number(m[2]);
-    const col = Number(m[3]);
-    if (waypoints.some((w) => w.num === num)) continue;
-    waypoints.push({ num, row, col });
+  const lines = text
+    .split("\n")
+    .map((l) => l.trim())
+    .filter((l) => /to reach\s+\d+/i.test(l));
+  if (lines.length < 3) return null;
+
+  const legs = [];
+  for (const line of lines) {
+    const target = Number(line.match(/to reach\s+(\d+)/i)[1]);
+    const moves = [];
+    const re =
+      /(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s+blocks?\s+(?:to the\s+)?(up\w*|down\w*|left|right)/gi;
+    let m;
+    while ((m = re.exec(line)) !== null) {
+      const raw = m[1].toLowerCase();
+      const n = WORD_NUM[raw] ?? Number(raw);
+      const d = MOVE_DIR[m[2].toLowerCase()];
+      if (!n || !d || n > 20) return null;
+      for (let k = 0; k < n; k += 1) moves.push(d);
+    }
+    if (moves.length === 0) return null;
+    legs.push({ target, moves });
   }
-  if (waypoints.length < 3) return null;
-  const size = Math.max(...waypoints.map((w) => Math.max(w.row, w.col)));
-  return { size, waypoints, path: null };
+
+  let r = 0;
+  let c = 0;
+  const path = [[r, c]];
+  const waypoints = [{ num: 1, row: r, col: c }];
+  for (const leg of legs) {
+    for (const [dr, dc] of leg.moves) {
+      r += dr;
+      c += dc;
+      path.push([r, c]);
+    }
+    waypoints.push({ num: leg.target, row: r, col: c });
+  }
+
+  const minR = Math.min(...path.map((p) => p[0]));
+  const minC = Math.min(...path.map((p) => p[1]));
+  const norm = path.map(([pr, pc]) => [pr - minR + 1, pc - minC + 1]);
+  const rows = Math.max(...norm.map((p) => p[0]));
+  const cols = Math.max(...norm.map((p) => p[1]));
+
+  if (rows !== cols) return null;
+  if (new Set(norm.map((p) => p.join(","))).size !== norm.length) return null;
+  if (norm.length !== rows * cols) return null;
+
+  // Waypoint numbers must run 1..n in order.
+  for (let i = 0; i < waypoints.length; i += 1) {
+    if (waypoints[i].num !== i + 1) return null;
+  }
+
+  return {
+    size: rows,
+    waypoints: waypoints.map((w) => ({
+      num: w.num,
+      row: w.row - minR + 1,
+      col: w.col - minC + 1,
+    })),
+    path: norm,
+  };
 }
 
 /** Pinpoint: five clues then a category line. */
@@ -277,7 +339,12 @@ function crossclimbValid(c) {
 const PARSERS = {
   queens: { parse: parseQueens, valid: queensValid, key: (v) => JSON.stringify(v.queens) },
   tango: { parse: parseTango, valid: tangoValid, key: (v) => v.rows.join("|") },
-  zip: { parse: parseZip, valid: () => true, key: (v) => JSON.stringify(v.waypoints) },
+  zip: {
+    parse: parseZip,
+    // parseZip only returns a board that already covers an exact N×N grid.
+    valid: (v) => v.path !== null && v.path.length === v.size * v.size,
+    key: (v) => JSON.stringify(v.waypoints),
+  },
   pinpoint: {
     parse: parsePinpoint,
     valid: (v) => v.clues.length >= 4 && v.answer.length > 2,

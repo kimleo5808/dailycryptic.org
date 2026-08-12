@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T13:02:10.183Z",
+  "lastUpdated": "2026-08-12T13:13:25.621Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -46,6 +46,15 @@
           "RXZlcnkgcnVuZyBpcyBhIGZvdXItbGV0dGVyIHdvcmQsIGFuZCB0aGUgbGFkZGVyIHN0YXJ0cyB3aXRoIGEgd29yZCBtZWFuaW5nIHRhbGwu",
           "TW92ZSBvbmUgbGV0dGVyIGF0IGEgdGltZTogdGhlIHNlY29uZCBydW5nIHN3YXBzIHRoZSBsYXN0IGxldHRlciBvZiB0aGUgZmlyc3Qu",
           "VGhlIHRvcCBhbmQgYm90dG9tIHdvcmRzIHRvZ2V0aGVyIG1ha2UgYSB0d28td29yZCBwaHJhc2UgZm9yIHJldHVybmluZyBhIHBob25lIG1lc3NhZ2Uu"
+        ]
+      },
+      "zip": {
+        "size": 6,
+        "solution": "eyJ3YXlwb2ludHMiOlt7Im51bSI6MSwicm93Ijo1LCJjb2wiOjJ9LHsibnVtIjoyLCJyb3ciOjYsImNvbCI6MX0seyJudW0iOjMsInJvdyI6MSwiY29sIjo2fSx7Im51bSI6NCwicm93IjoyLCJjb2wiOjV9LHsibnVtIjo1LCJyb3ciOjIsImNvbCI6NH0seyJudW0iOjYsInJvdyI6MywiY29sIjo1fSx7Im51bSI6Nywicm93Ijo1LCJjb2wiOjR9LHsibnVtIjo4LCJyb3ciOjUsImNvbCI6NX0seyJudW0iOjksInJvdyI6NSwiY29sIjozfSx7Im51bSI6MTAsInJvdyI6NCwiY29sIjoyfSx7Im51bSI6MTEsInJvdyI6MiwiY29sIjozfSx7Im51bSI6MTIsInJvdyI6MiwiY29sIjoyfV0sInBhdGgiOltbNSwyXSxbNiwyXSxbNiwxXSxbNSwxXSxbNCwxXSxbMywxXSxbMiwxXSxbMSwxXSxbMSwyXSxbMSwzXSxbMSw0XSxbMSw1XSxbMSw2XSxbMiw2XSxbMiw1XSxbMiw0XSxbMyw0XSxbMyw1XSxbMyw2XSxbNCw2XSxbNCw1XSxbNCw0XSxbNSw0XSxbNSw1XSxbNSw2XSxbNiw2XSxbNiw1XSxbNiw0XSxbNiwzXSxbNSwzXSxbNCwzXSxbNCwyXSxbMywyXSxbMywzXSxbMiwzXSxbMiwyXV19",
+        "hints": [
+          "QmVnaW4gYXQgbnVtYmVyIDEgYW5kIGxvb2sgZm9yIHRoZSBmb3JjZWQgZmlyc3QgbW92ZS4=",
+          "RXZlcnkgY2VsbCBtdXN0IGJlIHVzZWQgZXhhY3RseSBvbmNlLCBzbyBhdm9pZCBsZWF2aW5nIHBvY2tldHMu",
+          "V29yayBiYWNrd2FyZHMgZnJvbSB0aGUgaGlnaGVzdCBudW1iZXIgdG8gbWVldCBpbiB0aGUgbWlkZGxlLg=="
         ]
       }
     }
