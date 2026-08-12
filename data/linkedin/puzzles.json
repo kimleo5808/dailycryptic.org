@@ -1,4 +1,53 @@
 {
-  "lastUpdated": "2026-08-12T00:00:00.000Z",
-  "days": []
+  "lastUpdated": "2026-08-12T13:02:10.183Z",
+  "days": [
+    {
+      "date": "2026-08-12",
+      "queens": {
+        "size": 8,
+        "solution": "W3sicm93IjoxLCJjb2wiOjIsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6MiwiY29sIjo1LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjMsImNvbCI6OCwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo0LCJjb2wiOjYsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6NSwiY29sIjozLCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjYsImNvbCI6MSwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo3LCJjb2wiOjQsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6OCwiY29sIjo3LCJjb2xvciI6ImFtYmVyIn1d",
+        "hints": [
+          "U3RhcnQgd2l0aCB0aGUgc21hbGxlc3QgY29sb3VyIHJlZ2lvbiDigJQgaXQgZm9yY2VzIGEgY3Jvd24gZmFzdGVzdC4=",
+          "UmVtZW1iZXIgY3Jvd25zIG1heSBuZXZlciB0b3VjaCwgbm90IGV2ZW4gZGlhZ29uYWxseS4=",
+          "T25lIHJvdyBzdGlsbCBoYXMgb25seSBhIHNpbmdsZSBzcXVhcmUgbGVmdCBvcGVuLg=="
+        ]
+      },
+      "tango": {
+        "solution": "WyJNU1NNU00iLCJNTVNTTVMiLCJTTU1TTVMiLCJTU01NU00iLCJNU1NNTVMiLCJTTU1TU00iXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      },
+      "pinpoint": {
+        "puzzleNumber": 834,
+        "clues": [
+          "RWxlY3RyaWMgY3VycmVudA==",
+          "UGVyc29uYWwgcHJvbm91bg==",
+          "U3F1YXJlIHJvb3Qgb2YgLTE=",
+          "SW9kaW5l",
+          "Um9tYW4gbnVtZXJhbCBmb3IgMQ=="
+        ],
+        "answer": "RGlmZmVyZW50IG1lYW5pbmdzIG9mIHRoZSBsZXR0ZXIgSQ==",
+        "hints": [
+          "RXZlcnkgY2x1ZSBwb2ludHMgYXQgdGhlIHNhbWUgc2luZ2xlIGxldHRlciwgc2VlbiB0aHJvdWdoIGEgZGlmZmVyZW50IGxlbnMu",
+          "VGhpbmsgc3ltYm9scyByYXRoZXIgdGhhbiB0b3BpY3Mg4oCUIHBoeXNpY3MsIGdyYW1tYXIsIG1hdGhzLCBjaGVtaXN0cnkgYW5kIFJvbWUgYWxsIHVzZSBpdC4=",
+          "VGhlIGNhdGVnb3J5IGlzIGFib3V0IG9uZSBsZXR0ZXIgb2YgdGhlIGFscGhhYmV0IGFuZCB0aGUgbWFueSB0aGluZ3MgaXQgc3RhbmRzIGZvci4="
+        ]
+      },
+      "crossclimb": {
+        "puzzleNumber": 834,
+        "rungs": "W3siY2x1ZSI6IkhhdmluZyBhYm92ZS1hdmVyYWdlIGhlaWdodCIsImFuc3dlciI6IlRBTEwifSx7ImNsdWUiOiJTb21ldGhpbmcgSGFucyBDaHJpc3RpYW4gQW5kZXJzZW4gd3JvdGUiLCJhbnN3ZXIiOiJUQUxFIn0seyJjbHVlIjoiQnVuZGxlIG9mIHN0cmF3IG9yIGhheSIsImFuc3dlciI6IkJBTEUifSx7ImNsdWUiOiJTb21ldGhpbmcgdXNlZCB0byBuZXV0cmFsaXplIGFuIGFjaWQiLCJhbnN3ZXIiOiJCQVNFIn0seyJjbHVlIjoiTG9sbCBpbiB0aGUgc3VuIiwiYW5zd2VyIjoiQkFTSyJ9XQ==",
+        "order": "WyJUQUxMIiwiVEFMRSIsIkJBTEUiLCJCQVNFIiwiQkFTSyJd",
+        "top": "Q0FMTA==",
+        "bottom": "QkFDSw==",
+        "hints": [
+          "RXZlcnkgcnVuZyBpcyBhIGZvdXItbGV0dGVyIHdvcmQsIGFuZCB0aGUgbGFkZGVyIHN0YXJ0cyB3aXRoIGEgd29yZCBtZWFuaW5nIHRhbGwu",
+          "TW92ZSBvbmUgbGV0dGVyIGF0IGEgdGltZTogdGhlIHNlY29uZCBydW5nIHN3YXBzIHRoZSBsYXN0IGxldHRlciBvZiB0aGUgZmlyc3Qu",
+          "VGhlIHRvcCBhbmQgYm90dG9tIHdvcmRzIHRvZ2V0aGVyIG1ha2UgYSB0d28td29yZCBwaHJhc2UgZm9yIHJldHVybmluZyBhIHBob25lIG1lc3NhZ2Uu"
+        ]
+      }
+    }
+  ]
 }

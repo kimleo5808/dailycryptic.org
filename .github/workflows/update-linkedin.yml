@@ -1,0 +1,65 @@
+name: Update LinkedIn Games Answers
+
+on:
+  schedule:
+    # 08:10 UTC daily — community answer sites have published by then.
+    - cron: "10 8 * * *"
+    # Second pass in case the morning run found nothing parseable.
+    - cron: "10 14 * * *"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # The fetcher writes only games that parse AND pass mechanical validation
+      # (Queens adjacency, Tango row/column balance, Crossclimb ladder steps).
+      # Games it cannot resolve are skipped rather than guessed.
+      - name: Fetch today's answers
+        id: fetch
+        run: node scripts/fetch-linkedin.mjs
+        continue-on-error: true
+
+      - name: Retry after 30 minutes if failed
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "First attempt failed. Waiting 30 minutes..."
+          sleep 1800
+          node scripts/fetch-linkedin.mjs
+        continue-on-error: true
+
+      # Merges per game into the existing day, so a partial fetch never wipes
+      # games already stored for that date.
+      - name: Ingest into the puzzle library
+        run: node scripts/add-linkedin-day.mjs
+        continue-on-error: true
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/linkedin/puzzles.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/linkedin/puzzles.json data/linkedin/incoming.json
+          DATE=$(date -u +"%Y-%m-%d")
+          git commit -m "data: update linkedin games answers for ${DATE}"
+          git push

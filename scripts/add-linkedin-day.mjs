@@ -288,7 +288,9 @@ for (const day of incoming) {
     data.days.push(encoded);
     added += 1;
   } else {
-    data.days[idx] = encoded;
+    // Merge per game, never whole-day replace: a fetch that only resolved two
+    // games must not wipe the others already stored for that date.
+    data.days[idx] = { ...data.days[idx], ...encoded };
     replaced += 1;
   }
 }
