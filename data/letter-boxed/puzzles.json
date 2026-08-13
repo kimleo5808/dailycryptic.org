@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-12T08:50:33.028Z",
+  "lastUpdated": "2026-08-13T08:53:42.506Z",
   "puzzles": [
+    {
+      "id": 2809,
+      "printDate": "2026-08-13",
+      "status": "published",
+      "sides": [
+        "LSH",
+        "CXA",
+        "OZN",
+        "PYE"
+      ],
+      "solution": "WyJQU1lDSE9BTkFMWVpFIiwiRVhFQyJd"
+    },
     {
       "id": 2808,
       "printDate": "2026-08-12",
