@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-12T06:51:40.040Z",
+  "lastUpdated": "2026-08-13T06:54:22.688Z",
   "puzzles": [
+    {
+      "id": 1881,
+      "printDate": "2026-08-13",
+      "status": "published",
+      "solution": "Y3Jhc2g=",
+      "hint1": "This word ends with a hushing sound.",
+      "hint2": "The word starts with C and has 1 vowel.",
+      "hint3": "C _ A _ H"
+    },
     {
       "id": 1880,
       "printDate": "2026-08-12",
