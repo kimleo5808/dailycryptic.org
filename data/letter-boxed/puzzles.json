@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-13T08:53:42.506Z",
+  "lastUpdated": "2026-08-14T08:47:34.790Z",
   "puzzles": [
+    {
+      "id": 2810,
+      "printDate": "2026-08-14",
+      "status": "published",
+      "sides": [
+        "KSZ",
+        "LMB",
+        "COU",
+        "ATG"
+      ],
+      "solution": "WyJHT0JTTUFDSyIsIktMVVRaIl0="
+    },
     {
       "id": 2809,
       "printDate": "2026-08-13",
