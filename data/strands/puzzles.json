@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-08-14T06:55:00.460Z",
+  "lastUpdated": "2026-08-15T05:52:20.450Z",
   "puzzles": [
+    {
+      "id": 1073,
+      "printDate": "2026-08-15",
+      "status": "published",
+      "clue": "Sacred space",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "SSBOIEMgSCBVIFIgQyBI",
+      "spangram": "SU5DSFVSQ0g=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QUxUQVI=",
+        "QklCTEU=",
+        "Q0FORExFUw==",
+        "SFlNTkFM",
+        "TEVDVEVSTg==",
+        "UEVXUw==",
+        "UFVMUElU"
+      ]
+    },
     {
       "id": 1077,
       "printDate": "2026-08-14",
