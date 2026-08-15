@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-14T08:47:34.790Z",
+  "lastUpdated": "2026-08-15T07:57:58.957Z",
   "puzzles": [
+    {
+      "id": 2811,
+      "printDate": "2026-08-15",
+      "status": "published",
+      "sides": [
+        "VUP",
+        "RMF",
+        "AON",
+        "GEI"
+      ],
+      "solution": "WyJGT1VSIiwiUkVWQU1QSU5HIl0="
+    },
     {
       "id": 2810,
       "printDate": "2026-08-14",
