@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-15T05:52:20.450Z",
+  "lastUpdated": "2026-08-16T05:55:04.156Z",
   "puzzles": [
+    {
+      "id": 1074,
+      "printDate": "2026-08-16",
+      "status": "published",
+      "clue": "Learn by doing",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SiBPIEIgVCBSIEEgSSBOIEkgTiBH",
+      "spangram": "Sk9CVFJBSU5JTkc=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QVBQUkVOVElDRQ==",
+        "RElTQ0lQTEU=",
+        "SU5URVJO",
+        "TUVOVEVF",
+        "UFJPVEVHRQ=="
+      ]
+    },
     {
       "id": 1073,
       "printDate": "2026-08-15",
