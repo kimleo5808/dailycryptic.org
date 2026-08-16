@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-15T07:57:58.957Z",
+  "lastUpdated": "2026-08-16T07:58:23.502Z",
   "puzzles": [
+    {
+      "id": 2812,
+      "printDate": "2026-08-16",
+      "status": "published",
+      "sides": [
+        "EVB",
+        "ALU",
+        "JTN",
+        "DSO"
+      ],
+      "solution": "WyJOT1ZBIiwiQURKVVNUQUJMRSJd"
+    },
     {
       "id": 2811,
       "printDate": "2026-08-15",
