@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15T14:32:23.724Z",
+  "lastUpdated": "2026-08-16T08:45:08.438Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -129,6 +129,26 @@
       },
       "tango": {
         "solution": "WyJNTVNTTVMiLCJTTVNNTVMiLCJTU01NU00iLCJNU01TU00iLCJTTVNNTVMiLCJNU01TU00iXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "zip": {
+        "size": 8,
+        "solution": "eyJ3YXlwb2ludHMiOlt7Im51bSI6MSwicm93Ijo4LCJjb2wiOjV9LHsibnVtIjoyLCJyb3ciOjcsImNvbCI6Mn0seyJudW0iOjMsInJvdyI6NSwiY29sIjoxfSx7Im51bSI6NCwicm93IjoxLCJjb2wiOjR9LHsibnVtIjo1LCJyb3ciOjMsImNvbCI6NX0seyJudW0iOjYsInJvdyI6NCwiY29sIjo4fSx7Im51bSI6Nywicm93IjoyLCJjb2wiOjJ9LHsibnVtIjo4LCJyb3ciOjQsImNvbCI6M30seyJudW0iOjksInJvdyI6MiwiY29sIjo3fSx7Im51bSI6MTAsInJvdyI6NSwiY29sIjo2fSx7Im51bSI6MTEsInJvdyI6NiwiY29sIjo0fSx7Im51bSI6MTIsInJvdyI6NywiY29sIjo3fV0sInBhdGgiOltbOCw1XSxbOCw0XSxbOCwzXSxbOCwyXSxbOCwxXSxbNywxXSxbNywyXSxbNiwyXSxbNiwxXSxbNSwxXSxbNCwxXSxbMywxXSxbMiwxXSxbMSwxXSxbMSwyXSxbMSwzXSxbMSw0XSxbMiw0XSxbMyw0XSxbMyw1XSxbMiw1XSxbMSw1XSxbMSw2XSxbMSw3XSxbMSw4XSxbMiw4XSxbMyw4XSxbNCw4XSxbNSw4XSxbNiw4XSxbNyw4XSxbOCw4XSxbOCw3XSxbOCw2XSxbNyw2XSxbNyw1XSxbNyw0XSxbNywzXSxbNiwzXSxbNSwzXSxbNSwyXSxbNCwyXSxbMywyXSxbMiwyXSxbMiwzXSxbMywzXSxbNCwzXSxbNCw0XSxbNCw1XSxbNCw2XSxbMyw2XSxbMiw2XSxbMiw3XSxbMyw3XSxbNCw3XSxbNSw3XSxbNSw2XSxbNSw1XSxbNSw0XSxbNiw0XSxbNiw1XSxbNiw2XSxbNiw3XSxbNyw3XV19",
+        "hints": [
+          "QmVnaW4gYXQgbnVtYmVyIDEgYW5kIGxvb2sgZm9yIHRoZSBmb3JjZWQgZmlyc3QgbW92ZS4=",
+          "RXZlcnkgY2VsbCBtdXN0IGJlIHVzZWQgZXhhY3RseSBvbmNlLCBzbyBhdm9pZCBsZWF2aW5nIHBvY2tldHMu",
+          "V29yayBiYWNrd2FyZHMgZnJvbSB0aGUgaGlnaGVzdCBudW1iZXIgdG8gbWVldCBpbiB0aGUgbWlkZGxlLg=="
+        ]
+      },
+      "tango": {
+        "solution": "WyJTU01NU00iLCJTTU1TTVMiLCJNTVNNU1MiLCJTU01TTU0iLCJNU1NNU00iLCJNTVNTTVMiXQ==",
         "hints": [
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
