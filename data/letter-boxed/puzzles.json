@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-16T07:58:23.502Z",
+  "lastUpdated": "2026-08-17T08:23:16.193Z",
   "puzzles": [
+    {
+      "id": 2813,
+      "printDate": "2026-08-17",
+      "status": "published",
+      "sides": [
+        "RYU",
+        "ENL",
+        "BIT",
+        "MOK"
+      ],
+      "solution": "WyJCVUxLSUVSIiwiUkVUUk9OWU0iXQ=="
+    },
     {
       "id": 2812,
       "printDate": "2026-08-16",
