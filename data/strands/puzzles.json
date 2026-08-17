@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-08-16T05:55:04.156Z",
+  "lastUpdated": "2026-08-17T06:01:25.650Z",
   "puzzles": [
+    {
+      "id": 1075,
+      "printDate": "2026-08-17",
+      "status": "published",
+      "clue": "On a bender",
+      "hint": "Think about a particular part of the body",
+      "theme": "QiBPIEQgWSBKIE8gSSBOIFQgUw==",
+      "spangram": "Qk9EWUpPSU5UUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QU5LTEU=",
+        "RUxCT1c=",
+        "S05FRQ==",
+        "S05VQ0tMRQ==",
+        "TkVDSw==",
+        "U0hPVUxERVI=",
+        "V1JJU1Q="
+      ]
+    },
     {
       "id": 1074,
       "printDate": "2026-08-16",
