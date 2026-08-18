@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-17T05:57:06.092Z",
+  "lastUpdated": "2026-08-18T05:51:43.487Z",
   "puzzles": [
+    {
+      "id": 1164,
+      "printDate": "2026-08-18",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U0VFTiBBVCBBIE1PVklFIFBSRU1JRVJF",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UkVEIENBUlBFVA==",
+            "VkVMVkVUIFJPUEU=",
+            "TElNT1VTSU5F",
+            "UEFQQVJBWlpJ"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "UEpT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UFJJVkFURSBKRVQ=",
+            "UFJBQ1RJQ0FMIEpPS0U=",
+            "UEVUUk9MRVVNIEpFTExZ",
+            "UE9FVElDIEpVU1RJQ0U="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIFRIQVQgQVJFIE9SQU5HRQ==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "QkFTS0VUQkFMTA==",
+            "U1dFRVQgUE9UQVRP",
+            "VFJBRkZJQyBDT05F",
+            "T1JBTkdVVEFO"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "VEhJTkdTIFRIQVQgQVJFIEdSSVRUWQ==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "RklMTSBOT0lS",
+            "U0FORFBBUEVS",
+            "RkxZRVJTIE1BU0NPVA==",
+            "Q09XQk9ZIENPRkZFRQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1163,
       "printDate": "2026-08-17",
