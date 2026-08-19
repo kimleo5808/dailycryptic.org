@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-18T05:53:01.261Z",
+  "lastUpdated": "2026-08-19T05:54:19.160Z",
   "puzzles": [
+    {
+      "id": 1887,
+      "printDate": "2026-08-19",
+      "status": "published",
+      "solution": "Z3JpbGw=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with G and has 1 vowel.",
+      "hint3": "G _ I _ L"
+    },
     {
       "id": 1886,
       "printDate": "2026-08-18",
