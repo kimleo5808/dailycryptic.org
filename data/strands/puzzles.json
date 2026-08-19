@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-18T05:55:43.171Z",
+  "lastUpdated": "2026-08-19T05:56:58.574Z",
   "puzzles": [
+    {
+      "id": 1090,
+      "printDate": "2026-08-19",
+      "status": "published",
+      "clue": "For better or wurst",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBPIFAgRCBPIEcgUw==",
+      "spangram": "VE9QRE9HUw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "Q0hFRVNF",
+        "S0VUQ0hVUA==",
+        "TVVTVEFSRA==",
+        "T05JT04=",
+        "UkVMSVNI",
+        "U0FVRVJLUkFVVA=="
+      ]
+    },
     {
       "id": 1076,
       "printDate": "2026-08-18",
