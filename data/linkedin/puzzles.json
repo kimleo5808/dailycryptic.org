@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T14:44:04.932Z",
+  "lastUpdated": "2026-08-19T08:52:07.732Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -207,6 +207,35 @@
       },
       "tango": {
         "solution": "WyJTTVNTTU0iLCJNTVNNU1MiLCJTU01NU00iLCJTTU1TTVMiLCJNU1NNU00iLCJNU01TTVMiXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-08-19",
+      "queens": {
+        "size": 8,
+        "solution": "W3sicm93IjoxLCJjb2wiOjIsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6MiwiY29sIjo3LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjMsImNvbCI6MSwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo0LCJjb2wiOjYsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6NSwiY29sIjo0LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjYsImNvbCI6OCwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo3LCJjb2wiOjMsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6OCwiY29sIjo1LCJjb2xvciI6ImFtYmVyIn1d",
+        "hints": [
+          "U3RhcnQgd2l0aCB0aGUgc21hbGxlc3QgY29sb3VyIHJlZ2lvbiDigJQgaXQgZm9yY2VzIGEgY3Jvd24gZmFzdGVzdC4=",
+          "UmVtZW1iZXIgY3Jvd25zIG1heSBuZXZlciB0b3VjaCwgbm90IGV2ZW4gZGlhZ29uYWxseS4=",
+          "T25lIHJvdyBzdGlsbCBoYXMgb25seSBhIHNpbmdsZSBzcXVhcmUgbGVmdCBvcGVuLg=="
+        ]
+      },
+      "zip": {
+        "size": 7,
+        "solution": "eyJ3YXlwb2ludHMiOlt7Im51bSI6MSwicm93IjoyLCJjb2wiOjJ9LHsibnVtIjoyLCJyb3ciOjYsImNvbCI6Mn0seyJudW0iOjMsInJvdyI6NywiY29sIjozfSx7Im51bSI6NCwicm93IjoxLCJjb2wiOjN9LHsibnVtIjo1LCJyb3ciOjcsImNvbCI6NX0seyJudW0iOjYsInJvdyI6MSwiY29sIjo1fSx7Im51bSI6Nywicm93Ijo2LCJjb2wiOjZ9LHsibnVtIjo4LCJyb3ciOjIsImNvbCI6Nn1dLCJwYXRoIjpbWzIsMl0sWzIsM10sWzMsM10sWzMsMl0sWzQsMl0sWzQsM10sWzUsM10sWzUsMl0sWzYsMl0sWzYsM10sWzcsM10sWzcsMl0sWzcsMV0sWzYsMV0sWzUsMV0sWzQsMV0sWzMsMV0sWzIsMV0sWzEsMV0sWzEsMl0sWzEsM10sWzEsNF0sWzIsNF0sWzMsNF0sWzQsNF0sWzUsNF0sWzYsNF0sWzcsNF0sWzcsNV0sWzcsNl0sWzcsN10sWzYsN10sWzUsN10sWzQsN10sWzMsN10sWzIsN10sWzEsN10sWzEsNl0sWzEsNV0sWzIsNV0sWzMsNV0sWzQsNV0sWzUsNV0sWzYsNV0sWzYsNl0sWzUsNl0sWzQsNl0sWzMsNl0sWzIsNl1dfQ==",
+        "hints": [
+          "QmVnaW4gYXQgbnVtYmVyIDEgYW5kIGxvb2sgZm9yIHRoZSBmb3JjZWQgZmlyc3QgbW92ZS4=",
+          "RXZlcnkgY2VsbCBtdXN0IGJlIHVzZWQgZXhhY3RseSBvbmNlLCBzbyBhdm9pZCBsZWF2aW5nIHBvY2tldHMu",
+          "V29yayBiYWNrd2FyZHMgZnJvbSB0aGUgaGlnaGVzdCBudW1iZXIgdG8gbWVldCBpbiB0aGUgbWlkZGxlLg=="
+        ]
+      },
+      "tango": {
+        "solution": "WyJNU1NNU00iLCJTTU1TTVMiLCJNTVNTTVMiLCJTU01NU00iLCJTTVNNTVMiLCJNU01TU00iXQ==",
         "hints": [
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
