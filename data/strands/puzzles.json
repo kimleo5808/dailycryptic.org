@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-08-19T05:56:58.574Z",
+  "lastUpdated": "2026-08-20T05:57:32.764Z",
   "puzzles": [
+    {
+      "id": 1078,
+      "printDate": "2026-08-20",
+      "status": "published",
+      "clue": "Split superlatives",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "WSBPIFUgUiBFIFQgSCBF",
+      "spangram": "WU9VUkVUSEU=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkVFUw==",
+        "QkVTVA==",
+        "Q0FUUw==",
+        "R09MRA==",
+        "S05FRVM=",
+        "UEFKQU1BUw==",
+        "U1RBTkRBUkQ=",
+        "VkVSWQ=="
+      ]
+    },
     {
       "id": 1090,
       "printDate": "2026-08-19",
