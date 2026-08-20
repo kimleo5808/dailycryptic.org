@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-19T05:53:05.881Z",
+  "lastUpdated": "2026-08-20T05:53:24.055Z",
   "puzzles": [
+    {
+      "id": 1166,
+      "printDate": "2026-08-20",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgUElaWkE=",
+          "hint": "Think about different pizza",
+          "words": [
+            "SEFXQUlJQU4=",
+            "V0hJVEU=",
+            "RElBVk9MQQ==",
+            "TUVBVCBMT1ZFUlM="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgTlVNQkVSUw==",
+          "hint": "Think about different numbers",
+          "words": [
+            "VEVMRVBIT05F",
+            "U0VSSUFM",
+            "QVRPTUlD",
+            "U09DSUFMIFNFQ1VSSVRZ"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U0lNSUxBUkxZIFNIQVBFRCBUWVBPR1JBUEhJQ0FMIE1BUktT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVBPU1RST1BIRQ==",
+            "T0tJTkE=",
+            "Q09NTUE=",
+            "Q0VESUxMQQ=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBDSElORVNFIFpPRElBQyBBTklNQUxT",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "T1hGT1JE",
+            "UkFUQ0hFVA==",
+            "UElHTUVOVA==",
+            "RFJBR09ORkxZ"
+          ]
+        }
+      ]
+    },
     {
       "id": 1165,
       "printDate": "2026-08-19",
