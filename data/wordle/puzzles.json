@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-19T05:54:19.160Z",
+  "lastUpdated": "2026-08-20T05:54:53.853Z",
   "puzzles": [
+    {
+      "id": 1888,
+      "printDate": "2026-08-20",
+      "status": "published",
+      "solution": "bXVya3k=",
+      "hint1": "This word begins with a humming sound.",
+      "hint2": "The word starts with M and has 1 vowel.",
+      "hint3": "M _ R _ Y"
+    },
     {
       "id": 1887,
       "printDate": "2026-08-19",
