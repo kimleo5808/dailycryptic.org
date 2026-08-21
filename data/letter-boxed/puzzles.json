@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-20T08:17:09.441Z",
+  "lastUpdated": "2026-08-21T08:18:54.714Z",
   "puzzles": [
+    {
+      "id": 2817,
+      "printDate": "2026-08-21",
+      "status": "published",
+      "sides": [
+        "ELG",
+        "RUV",
+        "OIN",
+        "FBA"
+      ],
+      "solution": "WyJGT1JHSVZFTiIsIk5FQlVMQSJd"
+    },
     {
       "id": 2816,
       "printDate": "2026-08-20",
