@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-21T05:54:35.611Z",
+  "lastUpdated": "2026-08-22T05:50:10.604Z",
   "puzzles": [
+    {
+      "id": 1168,
+      "printDate": "2026-08-22",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q0FSUEVOVFJZIFRPT0xT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "SEFNTUVS",
+            "UExBTkU=",
+            "U0FX",
+            "Q0hJU0VM"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgTUVMT04=",
+          "hint": "Think about different melon",
+          "words": [
+            "QklUVEVS",
+            "V0lOVEVS",
+            "TVVTSw==",
+            "V0FURVI="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "R0FSREVOIEhPU0UgU0VUVElOR1M=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Q09ORQ==",
+            "SkVU",
+            "TUlTVA==",
+            "U0hPV0VS"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "X19fIEdJUkxTIE9GIFBPUCBDVUxUVVJF",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "U1BJQ0U=",
+            "TUVBTg==",
+            "R09MREVO",
+            "R0lMTU9SRQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1167,
       "printDate": "2026-08-21",
