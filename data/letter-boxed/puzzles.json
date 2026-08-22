@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-21T08:18:54.714Z",
+  "lastUpdated": "2026-08-22T07:58:54.118Z",
   "puzzles": [
+    {
+      "id": 2819,
+      "printDate": "2026-08-22",
+      "status": "published",
+      "sides": [
+        "EIY",
+        "TLX",
+        "GMC",
+        "ZAO"
+      ],
+      "solution": "WyJaWUdPVEUiLCJFWENMQUlNIl0="
+    },
     {
       "id": 2817,
       "printDate": "2026-08-21",
