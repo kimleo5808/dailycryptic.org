@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-22T05:54:30.961Z",
+  "lastUpdated": "2026-08-23T05:56:14.462Z",
   "puzzles": [
+    {
+      "id": 1092,
+      "printDate": "2026-08-23",
+      "status": "published",
+      "clue": "An epic journey",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEUgTyBEIFkgUyBTIEUgWQ==",
+      "spangram": "VEhFT0RZU1NFWQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Q1lDTE9QUw==",
+        "S0lORw==",
+        "U0hJUA==",
+        "U0lSRU5T",
+        "U1VJVE9SUw==",
+        "VU5ERVJXT1JMRA=="
+      ]
+    },
     {
       "id": 1079,
       "printDate": "2026-08-22",
