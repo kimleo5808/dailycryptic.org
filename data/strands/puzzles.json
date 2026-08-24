@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-23T05:56:14.462Z",
+  "lastUpdated": "2026-08-24T06:04:25.207Z",
   "puzzles": [
+    {
+      "id": 1097,
+      "printDate": "2026-08-24",
+      "status": "published",
+      "clue": "You can't eat just one",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBPIE8gSyBJIEUgSiBBIFI=",
+      "spangram": "Q09PS0lFSkFS",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "TUFDQVJPT04=",
+        "U05BUA==",
+        "U05JQ0tFUkRPT0RMRQ==",
+        "U05PV0JBTEw=",
+        "U1BSSVRa"
+      ]
+    },
     {
       "id": 1092,
       "printDate": "2026-08-23",
