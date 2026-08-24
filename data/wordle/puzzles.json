@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-08-23T05:53:02.550Z",
+  "lastUpdated": "2026-08-24T06:01:30.220Z",
   "puzzles": [
+    {
+      "id": 1892,
+      "printDate": "2026-08-24",
+      "status": "published",
+      "solution": "cnVubnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with R and has 1 vowel.",
+      "hint3": "R _ N _ Y"
+    },
     {
       "id": 1891,
       "printDate": "2026-08-23",
