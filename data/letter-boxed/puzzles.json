@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-23T07:59:34.079Z",
+  "lastUpdated": "2026-08-24T08:24:56.576Z",
   "puzzles": [
+    {
+      "id": 2820,
+      "printDate": "2026-08-24",
+      "status": "published",
+      "sides": [
+        "TNR",
+        "AIO",
+        "GKJ",
+        "SCZ"
+      ],
+      "solution": "WyJKT0NLUyIsIlNUQVJHQVpJTkciXQ=="
+    },
     {
       "id": 2818,
       "printDate": "2026-08-23",
