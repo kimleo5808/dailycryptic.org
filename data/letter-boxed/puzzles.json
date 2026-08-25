@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-24T08:24:56.576Z",
+  "lastUpdated": "2026-08-25T08:21:19.981Z",
   "puzzles": [
+    {
+      "id": 2822,
+      "printDate": "2026-08-25",
+      "status": "published",
+      "sides": [
+        "ICY",
+        "AEO",
+        "RLS",
+        "NWP"
+      ],
+      "solution": "WyJXSU4iLCJOQVJDT0xFUFNZIl0="
+    },
     {
       "id": 2820,
       "printDate": "2026-08-24",
