@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-25T08:21:19.981Z",
+  "lastUpdated": "2026-08-26T08:22:17.558Z",
   "puzzles": [
+    {
+      "id": 2823,
+      "printDate": "2026-08-26",
+      "status": "published",
+      "sides": [
+        "INT",
+        "BAY",
+        "RUC",
+        "VOH"
+      ],
+      "solution": "WyJWSUJSQU5DWSIsIllPVVRIIl0="
+    },
     {
       "id": 2822,
       "printDate": "2026-08-25",
