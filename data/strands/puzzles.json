@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-26T06:00:48.438Z",
+  "lastUpdated": "2026-08-27T16:39:55.787Z",
   "puzzles": [
+    {
+      "id": 1094,
+      "printDate": "2026-08-27",
+      "status": "published",
+      "clue": "Spiraling definitions",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VyBIIEEgVCBBIFQgVyBJIFMgVA==",
+      "spangram": "V0hBVEFUV0lTVA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "REFOQ0U=",
+        "RElTVE9SVElPTg==",
+        "SEFJUlNUWUxF",
+        "U1BSQUlO",
+        "U1VSUFJJU0U="
+      ]
+    },
     {
       "id": 1093,
       "printDate": "2026-08-26",
