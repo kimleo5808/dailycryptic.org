@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-27T16:39:55.787Z",
+  "lastUpdated": "2026-08-28T17:39:30.300Z",
   "puzzles": [
+    {
+      "id": 1081,
+      "printDate": "2026-08-28",
+      "status": "published",
+      "clue": "On this day in 1963",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBIIEEgViBFIEEgRCBSIEUgQSBN",
+      "spangram": "SUhBVkVBRFJFQU0=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QlJPVEhFUkhPT0Q=",
+        "RlJFRURPTQ==",
+        "SE9QRQ==",
+        "SlVTVElDRQ==",
+        "VE9HRVRIRVI="
+      ]
+    },
     {
       "id": 1094,
       "printDate": "2026-08-27",
