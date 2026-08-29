@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-28T17:31:55.580Z",
+  "lastUpdated": "2026-08-29T11:42:54.578Z",
   "puzzles": [
+    {
+      "id": 1175,
+      "printDate": "2026-08-29",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "VU5ERVIgVEhFIEhPT0QgT0YgQSBDQVI=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QkFUVEVSWQ==",
+            "RU5HSU5F",
+            "UkFESUFUT1I=",
+            "QUxURVJOQVRPUg=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgU0FMQUQ=",
+          "hint": "Think about different salad",
+          "words": [
+            "R1JFRUs=",
+            "SE9VU0U=",
+            "V0VER0U=",
+            "Q0hPUFBFRA=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "S0VZQk9BUkQgS0VZUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RVNDQVBF",
+            "U1BBQ0U=",
+            "Q09OVFJPTA==",
+            "U0hJRlQ="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBGSUdVUkVTIEZST00gR1JFRUsgTVlUSA==",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "SFlEUkFOVA==",
+            "VFJJVE9ORQ==",
+            "QVQgTEFTVA==",
+            "SEVSQUxE"
+          ]
+        }
+      ]
+    },
     {
       "id": 1174,
       "printDate": "2026-08-28",
