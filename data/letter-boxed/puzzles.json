@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-28T19:35:03.110Z",
+  "lastUpdated": "2026-08-29T13:21:14.166Z",
   "puzzles": [
+    {
+      "id": 2825,
+      "printDate": "2026-08-29",
+      "status": "published",
+      "sides": [
+        "YOE",
+        "LAG",
+        "NUI",
+        "VTQ"
+      ],
+      "solution": "WyJRVUFJTCIsIkxPTkdFVklUWSJd"
+    },
     {
       "id": 2824,
       "printDate": "2026-08-28",
