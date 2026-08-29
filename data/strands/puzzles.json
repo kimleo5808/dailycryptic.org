@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-08-28T17:39:30.300Z",
+  "lastUpdated": "2026-08-29T11:45:20.663Z",
   "puzzles": [
+    {
+      "id": 1095,
+      "printDate": "2026-08-29",
+      "status": "published",
+      "clue": "Now we're cooking!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBPIFUgTiBEIFMgVCBBIFMgVCBZ",
+      "spangram": "U09VTkRTVEFTVFk=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QlVCQkxF",
+        "Q1JBQ0tMRQ==",
+        "R1VSR0xF",
+        "SElTUw==",
+        "U0laWkxF",
+        "U1BMQVRURVI="
+      ]
+    },
     {
       "id": 1081,
       "printDate": "2026-08-28",
