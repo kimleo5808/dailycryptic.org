@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-29T11:45:20.663Z",
+  "lastUpdated": "2026-08-30T10:37:28.426Z",
   "puzzles": [
+    {
+      "id": 1096,
+      "printDate": "2026-08-30",
+      "status": "published",
+      "clue": "Hardly eager",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBEIFIgQSBUIEggRSBSIE4gTyBU",
+      "spangram": "SURSQVRIRVJOT1Q=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QVZFUlNF",
+        "SEVTSVRBTlQ=",
+        "TE9BVEg=",
+        "UkVMVUNUQU5U",
+        "VU5XSUxMSU5H"
+      ]
+    },
     {
       "id": 1095,
       "printDate": "2026-08-29",
