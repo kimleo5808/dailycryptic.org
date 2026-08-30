@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-29T13:21:14.166Z",
+  "lastUpdated": "2026-08-30T13:16:40.982Z",
   "puzzles": [
+    {
+      "id": 2826,
+      "printDate": "2026-08-30",
+      "status": "published",
+      "sides": [
+        "TGA",
+        "HUP",
+        "EKO",
+        "FRL"
+      ],
+      "solution": "WyJQT0xLQSIsIkFGVEVSVEhPVUdIVCJd"
+    },
     {
       "id": 2825,
       "printDate": "2026-08-29",
