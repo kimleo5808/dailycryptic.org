@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-30T13:16:40.982Z",
+  "lastUpdated": "2026-08-31T15:25:51.932Z",
   "puzzles": [
+    {
+      "id": 2827,
+      "printDate": "2026-08-31",
+      "status": "published",
+      "sides": [
+        "ALI",
+        "RHM",
+        "WTU",
+        "EFP"
+      ],
+      "solution": "WyJXUkFUSEZVTCIsIkxVTVBJRVIiXQ=="
+    },
     {
       "id": 2826,
       "printDate": "2026-08-30",
