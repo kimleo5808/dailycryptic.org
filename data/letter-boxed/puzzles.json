@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-08-31T15:25:51.932Z",
+  "lastUpdated": "2026-09-01T12:44:10.936Z",
   "puzzles": [
+    {
+      "id": 2828,
+      "printDate": "2026-09-01",
+      "status": "published",
+      "sides": [
+        "EHM",
+        "ULI",
+        "JYC",
+        "NTA"
+      ],
+      "solution": "WyJKRUpVTlVNIiwiTVlUSElDQUwiXQ=="
+    },
     {
       "id": 2827,
       "printDate": "2026-08-31",
