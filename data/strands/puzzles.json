@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-08-31T11:46:06.828Z",
+  "lastUpdated": "2026-09-01T10:21:49.317Z",
   "puzzles": [
+    {
+      "id": 1099,
+      "printDate": "2026-09-01",
+      "status": "published",
+      "clue": "Called by your calling",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VyBPIFIgSyBJIE4gRyBUIEkgVCBMIEU=",
+      "spangram": "V09SS0lOR1RJVExF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "REVURUNUSVZF",
+        "RE9DVE9S",
+        "T0ZGSUNFUg==",
+        "UFJPRkVTU09S",
+        "UkFCQkk="
+      ]
+    },
     {
       "id": 1098,
       "printDate": "2026-08-31",
