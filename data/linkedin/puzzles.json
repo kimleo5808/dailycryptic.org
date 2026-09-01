@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T19:57:35.959Z",
+  "lastUpdated": "2026-09-01T13:28:20.617Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -537,6 +537,26 @@
       },
       "tango": {
         "solution": "WyJTU01TTU0iLCJNTVNNU1MiLCJTTVNTTU0iLCJNU01NU1MiLCJNU1NNTVMiLCJTTU1TU00iXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "queens": {
+        "size": 7,
+        "solution": "W3sicm93IjoxLCJjb2wiOjEsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6MiwiY29sIjozLCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjMsImNvbCI6NSwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo0LCJjb2wiOjIsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6NSwiY29sIjo2LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjYsImNvbCI6NCwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo3LCJjb2wiOjcsImNvbG9yIjoiYW1iZXIifV0=",
+        "hints": [
+          "U3RhcnQgd2l0aCB0aGUgc21hbGxlc3QgY29sb3VyIHJlZ2lvbiDigJQgaXQgZm9yY2VzIGEgY3Jvd24gZmFzdGVzdC4=",
+          "UmVtZW1iZXIgY3Jvd25zIG1heSBuZXZlciB0b3VjaCwgbm90IGV2ZW4gZGlhZ29uYWxseS4=",
+          "T25lIHJvdyBzdGlsbCBoYXMgb25seSBhIHNpbmdsZSBzcXVhcmUgbGVmdCBvcGVuLg=="
+        ]
+      },
+      "tango": {
+        "solution": "WyJNU01TTVMiLCJNU1NNU00iLCJTTVNTTU0iLCJNU01NU1MiLCJTTU1TU00iLCJTTVNNTVMiXQ==",
         "hints": [
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
