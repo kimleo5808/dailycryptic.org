@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-01T10:21:49.317Z",
+  "lastUpdated": "2026-09-02T09:50:08.878Z",
   "puzzles": [
+    {
+      "id": 1100,
+      "printDate": "2026-09-02",
+      "status": "published",
+      "clue": "All will be revealed",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBPIE0gRSBUIE8gTCBJIEcgSCBU",
+      "spangram": "Q09NRVRPTElHSFQ=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QVJJU0U=",
+        "RU1FUkdF",
+        "TUFOSUZFU1Q=",
+        "TUFURVJJQUxJWkU=",
+        "U1VSRkFDRQ=="
+      ]
+    },
     {
       "id": 1099,
       "printDate": "2026-09-01",
