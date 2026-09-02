@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-01T12:44:10.936Z",
+  "lastUpdated": "2026-09-02T12:16:47.430Z",
   "puzzles": [
+    {
+      "id": 2829,
+      "printDate": "2026-09-02",
+      "status": "published",
+      "sides": [
+        "SDT",
+        "IHP",
+        "AYX",
+        "OCN"
+      ],
+      "solution": "WyJQU1lDSE8iLCJPWElEQU5UIl0="
+    },
     {
       "id": 2828,
       "printDate": "2026-09-01",
