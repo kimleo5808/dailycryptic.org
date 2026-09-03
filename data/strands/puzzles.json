@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-09-02T09:50:08.878Z",
+  "lastUpdated": "2026-09-03T10:01:40.674Z",
   "puzzles": [
+    {
+      "id": 1101,
+      "printDate": "2026-09-03",
+      "status": "published",
+      "clue": "Hike!",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RiBPIE8gVCBCIEEgTCBM",
+      "spangram": "Rk9PVEJBTEw=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "RE9XTg==",
+        "S0lDSw==",
+        "UEFTUw==",
+        "UExBWQ==",
+        "UlVTSA==",
+        "U1RBRElVTQ==",
+        "VEFDS0xF",
+        "VVBSSUdIVA=="
+      ]
+    },
     {
       "id": 1100,
       "printDate": "2026-09-02",
