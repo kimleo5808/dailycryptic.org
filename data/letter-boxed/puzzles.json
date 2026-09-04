@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-03T12:14:42.993Z",
+  "lastUpdated": "2026-09-04T12:15:34.734Z",
   "puzzles": [
+    {
+      "id": 2831,
+      "printDate": "2026-09-04",
+      "status": "published",
+      "sides": [
+        "HNC",
+        "IGB",
+        "TVO",
+        "EAM"
+      ],
+      "solution": "WyJDQVRBQ09NQiIsIkJFSEFWSU5HIl0="
+    },
     {
       "id": 2830,
       "printDate": "2026-09-03",
