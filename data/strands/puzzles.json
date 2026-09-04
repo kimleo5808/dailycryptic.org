@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-03T10:01:40.674Z",
+  "lastUpdated": "2026-09-04T09:52:22.952Z",
   "puzzles": [
+    {
+      "id": 1102,
+      "printDate": "2026-09-04",
+      "status": "published",
+      "clue": "To the rescue",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBFIFIgTyBFIFM=",
+      "spangram": "SEVST0VT",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 6,
+      "themeWords": [
+        "QlJBVkU=",
+        "Q09VUkFHRU9VUw==",
+        "RkVBUkxFU1M=",
+        "SU5UUkVQSUQ=",
+        "TElPTkhFQVJURUQ="
+      ]
+    },
     {
       "id": 1101,
       "printDate": "2026-09-03",
