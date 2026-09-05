@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-04T12:15:34.734Z",
+  "lastUpdated": "2026-09-05T11:23:07.066Z",
   "puzzles": [
+    {
+      "id": 2832,
+      "printDate": "2026-09-05",
+      "status": "published",
+      "sides": [
+        "LZJ",
+        "TEO",
+        "ARI",
+        "SNW"
+      ],
+      "solution": "WyJKT1dMUyIsIlNBTklUSVpFUiJd"
+    },
     {
       "id": 2831,
       "printDate": "2026-09-04",
