@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-05T11:23:07.066Z",
+  "lastUpdated": "2026-09-06T11:44:40.015Z",
   "puzzles": [
+    {
+      "id": 2833,
+      "printDate": "2026-09-06",
+      "status": "published",
+      "sides": [
+        "ELO",
+        "CIN",
+        "FUT",
+        "KRA"
+      ],
+      "solution": "WyJDT1VOVEVSRkVJVCIsIlRBTEsiXQ=="
+    },
     {
       "id": 2832,
       "printDate": "2026-09-05",
