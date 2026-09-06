@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-05T09:11:45.500Z",
+  "lastUpdated": "2026-09-06T09:34:06.019Z",
   "puzzles": [
+    {
+      "id": 1905,
+      "printDate": "2026-09-06",
+      "status": "published",
+      "solution": "YmVpZ2U=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with B and has 3 vowels.",
+      "hint3": "B _ I _ E"
+    },
     {
       "id": 1904,
       "printDate": "2026-09-05",
