@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-05T09:14:53.745Z",
+  "lastUpdated": "2026-09-06T09:36:21.808Z",
   "puzzles": [
+    {
+      "id": 1104,
+      "printDate": "2026-09-06",
+      "status": "published",
+      "clue": "I've seen better",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TiBPIFQgSCBJIE4gRyBTIFAgRSBDIEkgQSBM",
+      "spangram": "Tk9USElOR1NQRUNJQUw=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "QURFUVVBVEU=",
+        "QUxSSUdIVA==",
+        "QVZFUkFHRQ==",
+        "TUVESU9DUkU=",
+        "T0tBWQ=="
+      ]
+    },
     {
       "id": 1103,
       "printDate": "2026-09-05",
