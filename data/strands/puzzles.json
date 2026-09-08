@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-07T10:39:23.917Z",
+  "lastUpdated": "2026-09-08T10:00:09.842Z",
   "puzzles": [
+    {
+      "id": 1107,
+      "printDate": "2026-09-08",
+      "status": "published",
+      "clue": "It's elementary!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBBIEMgSyBUIE8gUyBDIEggTyBPIEw=",
+      "spangram": "QkFDS1RPU0NIT09M",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q1VCQlk=",
+        "REVTSw==",
+        "RUFTRUw=",
+        "R0xPQkU=",
+        "TUFSS0VSUw==",
+        "V0hJVEVCT0FSRA=="
+      ]
+    },
     {
       "id": 1105,
       "printDate": "2026-09-07",
