@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-08T10:00:09.842Z",
+  "lastUpdated": "2026-09-09T10:02:24.391Z",
   "puzzles": [
+    {
+      "id": 1108,
+      "printDate": "2026-09-09",
+      "status": "published",
+      "clue": "Over and out(side)",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBVIE4gQSBOIEQgUyBIIEEgRCBF",
+      "spangram": "U1VOQU5EU0hBREU=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QVJCT1I=",
+        "Qk9XRVI=",
+        "Q0FOT1BZ",
+        "R0FaRUJP",
+        "UEFWSUxJT04=",
+        "UEVSR09MQQ=="
+      ]
+    },
     {
       "id": 1107,
       "printDate": "2026-09-08",
