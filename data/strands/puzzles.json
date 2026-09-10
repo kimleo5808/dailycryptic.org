@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-09T10:02:24.391Z",
+  "lastUpdated": "2026-09-10T09:58:34.254Z",
   "puzzles": [
+    {
+      "id": 1109,
+      "printDate": "2026-09-10",
+      "status": "published",
+      "clue": "Victory lap",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VyBFIEggQSBWIEUgQSBXIEkgTiBOIEUgUg==",
+      "spangram": "V0VIQVZFQVdJTk5FUg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "Q1JPV04=",
+        "TEFVUkVMUw==",
+        "TUVEQUw=",
+        "UEVOTkFOVA==",
+        "UFJJWkU=",
+        "VFJPUEhZ"
+      ]
+    },
     {
       "id": 1108,
       "printDate": "2026-09-09",
