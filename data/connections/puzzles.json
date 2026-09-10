@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-09T09:56:16.859Z",
+  "lastUpdated": "2026-09-10T09:53:42.711Z",
   "puzzles": [
+    {
+      "id": 1187,
+      "printDate": "2026-09-10",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q0hFTUlDQUwgRUxFTUVOVFM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TEVBRA==",
+            "QUNUSU5JVU0=",
+            "U1VMRlVS",
+            "S1JZUFRPTg=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "V0hBVCBZT1UgTUlHSFQgU0VFIFNUSUNLSU5HIE9VVCBPRiBBIFdJTkRPVw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Q0FUSU8=",
+            "Q0xPVEhFU0xJTkU=",
+            "QUlSIENPTkRJVElPTkVS",
+            "RkxPV0VSIEJPWA=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "QlJVQ0UgU1BSSU5HU1RFRU4gQ0xBU1NJQ1M=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVRMQU5USUMgQ0lUWQ==",
+            "QkFETEFORFM=",
+            "VEhVTkRFUiBST0FE",
+            "Qk9STiBUTyBSVU4="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIFNZTk9OWU1TIEZPUiAiSEFQUEVOSU5HIE5PVyI=",
+          "hint": "These words share a similar meaning",
+          "words": [
+            "QUxURVJOQVRJTkcgQ1VSUkVOVA==",
+            "UkVQUkVTRU5U",
+            "QURVTFQgQ09OVEVNUE9SQVJZ",
+            "U0VYVEFOVA=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1186,
       "printDate": "2026-09-09",
