@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-10T09:53:42.711Z",
+  "lastUpdated": "2026-09-11T09:52:11.427Z",
   "puzzles": [
+    {
+      "id": 1188,
+      "printDate": "2026-09-11",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UEVPUExFIEhJUkVEIEZPUiBBTiBFVkVOVA==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UExBTk5FUg==",
+            "QkFORA==",
+            "UEhPVE9HUkFQSEVS",
+            "RkxPUklTVA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "SU5URVJOQUxJWkU=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UFJPQ0VTUw==",
+            "RElHRVNU",
+            "QUJTT1JC",
+            "VEFLRSBJTg=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "V0FZUyBUTyBQUkFDVElDRSBTRUxGLUNBUkU=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Sk9VUk5BTA==",
+            "RVhFUkNJU0U=",
+            "VU5QTFVH",
+            "TUVESVRBVEU="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "VEhJTkdTIFRIQVQgQVJFIFBVU0hFRCBNRVRBUEhPUklDQUxMWQ==",
+          "hint": "Think figuratively, not literally",
+          "words": [
+            "TFVDSw==",
+            "RU5WRUxPUEU=",
+            "QUdFTkRB",
+            "TElNSVRT"
+          ]
+        }
+      ]
+    },
     {
       "id": 1187,
       "printDate": "2026-09-10",
