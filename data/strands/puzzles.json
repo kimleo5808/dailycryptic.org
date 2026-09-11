@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-10T09:58:34.254Z",
+  "lastUpdated": "2026-09-11T09:56:40.277Z",
   "puzzles": [
+    {
+      "id": 1111,
+      "printDate": "2026-09-11",
+      "status": "published",
+      "clue": "Harbor view",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TyBOIFQgSCBFIFcgQSBUIEUgUiBGIFIgTyBOIFQ=",
+      "spangram": "T05USEVXQVRFUkZST05U",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "QkFSR0U=",
+        "QlJJREdF",
+        "RE9DSw==",
+        "TElHSFRIT1VTRQ==",
+        "UElFUg==",
+        "U0hJUA=="
+      ]
+    },
     {
       "id": 1109,
       "printDate": "2026-09-10",
