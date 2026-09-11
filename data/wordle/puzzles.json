@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-10T09:55:33.314Z",
+  "lastUpdated": "2026-09-11T09:53:07.790Z",
   "puzzles": [
+    {
+      "id": 1910,
+      "printDate": "2026-09-11",
+      "status": "published",
+      "solution": "YXN0ZXI=",
+      "hint1": "This word could compare things or describe a person.",
+      "hint2": "The word starts with A and has 2 vowels.",
+      "hint3": "A _ T _ R"
+    },
     {
       "id": 1909,
       "printDate": "2026-09-10",
