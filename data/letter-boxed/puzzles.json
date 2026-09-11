@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-10T12:22:03.534Z",
+  "lastUpdated": "2026-09-11T12:20:40.233Z",
   "puzzles": [
+    {
+      "id": 2838,
+      "printDate": "2026-09-11",
+      "status": "published",
+      "sides": [
+        "ECG",
+        "HNS",
+        "UKB",
+        "YLO"
+      ],
+      "solution": "WyJCT1VHSCIsIkhPTkVZU1VDS0xFIl0="
+    },
     {
       "id": 2837,
       "printDate": "2026-09-10",
