@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-11T12:20:40.233Z",
+  "lastUpdated": "2026-09-12T11:42:52.261Z",
   "puzzles": [
+    {
+      "id": 2839,
+      "printDate": "2026-09-12",
+      "status": "published",
+      "sides": [
+        "FET",
+        "LIH",
+        "ORS",
+        "BWZ"
+      ],
+      "solution": "WyJCTE9XRklTSCIsIkhFUlRaIl0="
+    },
     {
       "id": 2838,
       "printDate": "2026-09-11",
