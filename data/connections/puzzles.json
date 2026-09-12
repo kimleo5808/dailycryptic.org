@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-11T09:52:11.427Z",
+  "lastUpdated": "2026-09-12T09:28:24.345Z",
   "puzzles": [
+    {
+      "id": 1189,
+      "printDate": "2026-09-12",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "V0FZUyBUTyBQRVJTT05BTElaRSBBIENBUg==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QlVNUEVSIFNUSUNLRVI=",
+            "VkFOSVRZIFBMQVRF",
+            "RlVaWlkgRElDRQ==",
+            "SE9PRCBPUk5BTUVOVA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "UEVPUExFIElOIEFOIE9OTElORSBGT1JVTQ==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UE9TVEVS",
+            "VFJPTEw=",
+            "U1BBTU1FUg==",
+            "TFVSS0VS"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIFRIQVQgQkxJTks=",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "VFVSTiBTSUdOQUw=",
+            "Q1VSU09S",
+            "U01PS0UgREVURUNUT1I=",
+            "RVlFTElEUw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "X19fIEFMRVJU",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "V0VBVEhFUg==",
+            "U1BPSUxFUg==",
+            "TkVSRA==",
+            "UkVE"
+          ]
+        }
+      ]
+    },
     {
       "id": 1188,
       "printDate": "2026-09-11",
