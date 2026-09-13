@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-12T09:29:07.851Z",
+  "lastUpdated": "2026-09-13T10:26:06.763Z",
   "puzzles": [
+    {
+      "id": 1912,
+      "printDate": "2026-09-13",
+      "status": "published",
+      "solution": "Zm9jdXM=",
+      "hint1": "This word begins with a breathy consonant.",
+      "hint2": "The word starts with F and has 2 vowels.",
+      "hint3": "F _ C _ S"
+    },
     {
       "id": 1911,
       "printDate": "2026-09-12",
