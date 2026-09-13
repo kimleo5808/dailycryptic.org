@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-12T11:42:52.261Z",
+  "lastUpdated": "2026-09-13T12:50:30.826Z",
   "puzzles": [
+    {
+      "id": 2840,
+      "printDate": "2026-09-13",
+      "status": "published",
+      "sides": [
+        "PWE",
+        "LTA",
+        "IDN",
+        "FGU"
+      ],
+      "solution": "WyJVUExJRlQiLCJUV0FOR0VEIl0="
+    },
     {
       "id": 2839,
       "printDate": "2026-09-12",
