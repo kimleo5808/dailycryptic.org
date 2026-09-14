@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-13T12:50:30.826Z",
+  "lastUpdated": "2026-09-14T14:24:16.249Z",
   "puzzles": [
+    {
+      "id": 2841,
+      "printDate": "2026-09-14",
+      "status": "published",
+      "sides": [
+        "DVL",
+        "ERI",
+        "ONB",
+        "CMA"
+      ],
+      "solution": "WyJDT1JET1ZBTiIsIk5JTUJMRSJd"
+    },
     {
       "id": 2840,
       "printDate": "2026-09-13",
