@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-13T10:31:46.978Z",
+  "lastUpdated": "2026-09-14T10:54:48.742Z",
   "puzzles": [
+    {
+      "id": 1113,
+      "printDate": "2026-09-14",
+      "status": "published",
+      "clue": "OH MY GOSH!!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEEgVCBTIFMgSCBPIEMgSyBJIE4gRw==",
+      "spangram": "VEhBVFNTSE9DS0lORw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "RVhDTEFJTQ==",
+        "RlJFRVpF",
+        "R0FTUA==",
+        "UkVDT0lM",
+        "U0hVRERFUg==",
+        "U1RBUlQ="
+      ]
+    },
     {
       "id": 1110,
       "printDate": "2026-09-13",
