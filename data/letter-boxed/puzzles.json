@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-14T14:24:16.249Z",
+  "lastUpdated": "2026-09-15T12:52:56.158Z",
   "puzzles": [
+    {
+      "id": 2842,
+      "printDate": "2026-09-15",
+      "status": "published",
+      "sides": [
+        "JUM",
+        "SHN",
+        "IQY",
+        "KGR"
+      ],
+      "solution": "WyJISUdISklOS1MiLCJTUVVJUk1ZIl0="
+    },
     {
       "id": 2841,
       "printDate": "2026-09-14",
