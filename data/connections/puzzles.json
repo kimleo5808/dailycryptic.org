@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-14T10:49:39.613Z",
+  "lastUpdated": "2026-09-15T10:13:58.154Z",
   "puzzles": [
+    {
+      "id": 1192,
+      "printDate": "2026-09-15",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "SU5TVFJVQ1Q=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Q09BQ0g=",
+            "RElSRUNU",
+            "VFJBSU4=",
+            "R1VJREU="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "UEFSVFMgT0YgQSBXSElTVExJTkcgS0VUVExF",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "V0hJU1RMRQ==",
+            "SEFORExF",
+            "TElE",
+            "U1BPVVQ="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VU5ERVJDT1ZFUiBPUEVSQVRJVkU=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "UExBTlQ=",
+            "U0xFRVBFUg==",
+            "QVNTRVQ=",
+            "TU9MRQ=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "VEhJTkdTIFRIQVQgQVBQRUFSIEFUIFRIRSBFTkQ=",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "REVTU0VSVA==",
+            "Q0FCT09TRQ==",
+            "REVDRU1CRVI=",
+            "RVBJTE9HVUU="
+          ]
+        }
+      ]
+    },
     {
       "id": 1191,
       "printDate": "2026-09-14",
