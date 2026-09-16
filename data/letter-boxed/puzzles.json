@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-15T12:52:56.158Z",
+  "lastUpdated": "2026-09-16T12:49:33.833Z",
   "puzzles": [
+    {
+      "id": 2843,
+      "printDate": "2026-09-16",
+      "status": "published",
+      "sides": [
+        "TIL",
+        "FGE",
+        "ANO",
+        "RZW"
+      ],
+      "solution": "WyJGUkFURVJOSVpJTkciLCJHTE9XIl0="
+    },
     {
       "id": 2842,
       "printDate": "2026-09-15",
