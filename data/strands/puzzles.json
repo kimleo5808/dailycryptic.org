@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-16T10:14:22.158Z",
+  "lastUpdated": "2026-09-17T10:19:23.368Z",
   "puzzles": [
+    {
+      "id": 1117,
+      "printDate": "2026-09-17",
+      "status": "published",
+      "clue": "A little comic relief",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEUgRiBVIE4gTiBZIFAgQSBHIEUgUw==",
+      "spangram": "VEhFRlVOTllQQUdFUw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QkxPTkRJRQ==",
+        "TVVUVFM=",
+        "UEVBTlVUUw==",
+        "UElDS0xFUw==",
+        "WklQUFk=",
+        "WklUUw=="
+      ]
+    },
     {
       "id": 1116,
       "printDate": "2026-09-16",
