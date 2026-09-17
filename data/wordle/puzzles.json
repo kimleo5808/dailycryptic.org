@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-16T10:08:51.673Z",
+  "lastUpdated": "2026-09-17T10:12:48.638Z",
   "puzzles": [
+    {
+      "id": 1916,
+      "printDate": "2026-09-17",
+      "status": "published",
+      "solution": "dGhldGE=",
+      "hint1": "This word begins with a sharp tap sound.",
+      "hint2": "The word starts with T and has 2 vowels.",
+      "hint3": "T _ E _ A"
+    },
     {
       "id": 1915,
       "printDate": "2026-09-16",
