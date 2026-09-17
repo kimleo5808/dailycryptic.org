@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-16T12:49:33.833Z",
+  "lastUpdated": "2026-09-17T12:46:44.182Z",
   "puzzles": [
+    {
+      "id": 2844,
+      "printDate": "2026-09-17",
+      "status": "published",
+      "sides": [
+        "SYJ",
+        "RCM",
+        "AEB",
+        "LIO"
+      ],
+      "solution": "WyJFTU9KSSIsIklSQVNDSUJMWSJd"
+    },
     {
       "id": 2843,
       "printDate": "2026-09-16",
