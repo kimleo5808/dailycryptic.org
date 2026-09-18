@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-17T12:46:44.182Z",
+  "lastUpdated": "2026-09-18T12:22:27.311Z",
   "puzzles": [
+    {
+      "id": 2845,
+      "printDate": "2026-09-18",
+      "status": "published",
+      "sides": [
+        "OED",
+        "KTB",
+        "CPA",
+        "NUI"
+      ],
+      "solution": "WyJLTk9DS0FCT1VUIiwiVEVQSUQiXQ=="
+    },
     {
       "id": 2844,
       "printDate": "2026-09-17",
