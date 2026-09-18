@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-17T10:19:23.368Z",
+  "lastUpdated": "2026-09-18T09:59:33.190Z",
   "puzzles": [
+    {
+      "id": 1118,
+      "printDate": "2026-09-18",
+      "status": "published",
+      "clue": "Shake on it",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TCBFIFQgUyBNIEEgSyBFIEEgRCBFIEEgTA==",
+      "spangram": "TEVUU01BS0VBREVBTA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QUdSRUVNRU5U",
+        "Q09OVFJBQ1Q=",
+        "Q09WRU5BTlQ=",
+        "UEFDVA==",
+        "VFJFQVRZ"
+      ]
+    },
     {
       "id": 1117,
       "printDate": "2026-09-17",
