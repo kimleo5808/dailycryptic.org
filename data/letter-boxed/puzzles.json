@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-18T12:22:27.311Z",
+  "lastUpdated": "2026-09-19T12:03:10.952Z",
   "puzzles": [
+    {
+      "id": 2846,
+      "printDate": "2026-09-19",
+      "status": "published",
+      "sides": [
+        "IWK",
+        "VTO",
+        "RNS",
+        "UAY"
+      ],
+      "solution": "WyJWSVJUVU9VUyIsIlNXQU5LWSJd"
+    },
     {
       "id": 2845,
       "printDate": "2026-09-18",
