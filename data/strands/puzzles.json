@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-18T09:59:33.190Z",
+  "lastUpdated": "2026-09-19T09:41:05.821Z",
   "puzzles": [
+    {
+      "id": 1119,
+      "printDate": "2026-09-19",
+      "status": "published",
+      "clue": "Shiver me timbers!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBBIEwgSyBMIEkgSyBFIEEgUCBJIFIgQSBUIEU=",
+      "spangram": "VEFMS0xJS0VBUElSQVRF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "QVJSUg==",
+        "QVZBU1Q=",
+        "SEVBUlRJRVM=",
+        "TUFURVk=",
+        "U0FWVlk=",
+        "WU9IT0hP"
+      ]
+    },
     {
       "id": 1118,
       "printDate": "2026-09-18",
