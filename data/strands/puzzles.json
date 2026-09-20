@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-09-19T09:41:05.821Z",
+  "lastUpdated": "2026-09-20T10:00:36.418Z",
   "puzzles": [
+    {
+      "id": 1120,
+      "printDate": "2026-09-20",
+      "status": "published",
+      "clue": "Putting on airs",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RyBSIEEgTiBEIEkgTyBTIEkgVCBZ",
+      "spangram": "R1JBTkRJT1NJVFk=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QkxVU1RFUg==",
+        "Qk9BU1Q=",
+        "QlJBRw==",
+        "RkxFWA==",
+        "R0xPQVQ=",
+        "UE9TVFVSRQ==",
+        "U1RSVVQ="
+      ]
+    },
     {
       "id": 1119,
       "printDate": "2026-09-19",
