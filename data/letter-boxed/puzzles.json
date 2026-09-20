@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-19T12:03:10.952Z",
+  "lastUpdated": "2026-09-20T12:36:57.369Z",
   "puzzles": [
+    {
+      "id": 2847,
+      "printDate": "2026-09-20",
+      "status": "published",
+      "sides": [
+        "OIS",
+        "EPM",
+        "LRH",
+        "FTW"
+      ],
+      "solution": "WyJISU1TRUxGIiwiRkxPV0VSUE9UIl0="
+    },
     {
       "id": 2846,
       "printDate": "2026-09-19",
