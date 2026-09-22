@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-09-21T10:59:51.786Z",
+  "lastUpdated": "2026-09-22T10:14:15.275Z",
   "puzzles": [
+    {
+      "id": 1123,
+      "printDate": "2026-09-22",
+      "status": "published",
+      "clue": "Day and night shift",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBBIEwgTCBFIFEgVSBJIE4gTyBY",
+      "spangram": "RkFMTEVRVUlOT1g=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q0hBTkdFT1ZFUg==",
+        "UFJPR1JFU1NJT04=",
+        "U1dJVENI",
+        "VFJBTlNJVElPTg=="
+      ]
+    },
     {
       "id": 1121,
       "printDate": "2026-09-21",
