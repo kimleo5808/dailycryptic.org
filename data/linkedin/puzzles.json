@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T19:18:25.328Z",
+  "lastUpdated": "2026-09-22T13:22:50.861Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -832,6 +832,18 @@
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
           "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-09-22",
+      "queens": {
+        "size": 8,
+        "solution": "W3sicm93IjoxLCJjb2wiOjgsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6MiwiY29sIjo2LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjMsImNvbCI6NCwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo0LCJjb2wiOjcsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6NSwiY29sIjoyLCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjYsImNvbCI6NSwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo3LCJjb2wiOjMsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6OCwiY29sIjoxLCJjb2xvciI6ImFtYmVyIn1d",
+        "hints": [
+          "U3RhcnQgd2l0aCB0aGUgc21hbGxlc3QgY29sb3VyIHJlZ2lvbiDigJQgaXQgZm9yY2VzIGEgY3Jvd24gZmFzdGVzdC4=",
+          "UmVtZW1iZXIgY3Jvd25zIG1heSBuZXZlciB0b3VjaCwgbm90IGV2ZW4gZGlhZ29uYWxseS4=",
+          "T25lIHJvdyBzdGlsbCBoYXMgb25seSBhIHNpbmdsZSBzcXVhcmUgbGVmdCBvcGVuLg=="
         ]
       }
     }
