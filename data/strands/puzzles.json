@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-22T10:14:15.275Z",
+  "lastUpdated": "2026-09-23T10:13:43.575Z",
   "puzzles": [
+    {
+      "id": 1124,
+      "printDate": "2026-09-23",
+      "status": "published",
+      "clue": "Practically paleolithic",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEEgVCBTIE8gTCBEIE4gRSBXIFM=",
+      "spangram": "VEhBVFNPTERORVdT",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QU5DSUVOVA==",
+        "QVJDSEFJQw==",
+        "QllHT05F",
+        "UFJJTUVWQUw=",
+        "VElNRVdPUk4="
+      ]
+    },
     {
       "id": 1123,
       "printDate": "2026-09-22",
