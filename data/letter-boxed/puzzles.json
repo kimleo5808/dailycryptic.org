@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-23T12:59:45.515Z",
+  "lastUpdated": "2026-09-24T12:53:32.350Z",
   "puzzles": [
+    {
+      "id": 2851,
+      "printDate": "2026-09-24",
+      "status": "published",
+      "sides": [
+        "LCT",
+        "ODS",
+        "BRE",
+        "AKY"
+      ],
+      "solution": "WyJMQUJPUiIsIlJPQ0tTVEVBRFkiXQ=="
+    },
     {
       "id": 2850,
       "printDate": "2026-09-23",
