@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-09-23T10:13:43.575Z",
+  "lastUpdated": "2026-09-24T10:24:14.324Z",
   "puzzles": [
+    {
+      "id": 1122,
+      "printDate": "2026-09-24",
+      "status": "published",
+      "clue": "Just outside your door",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBBIEMgSyBZIEEgUiBE",
+      "spangram": "QkFDS1lBUkQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "Rk9SVA==",
+        "UE9PTA==",
+        "U0FOREJPWA==",
+        "U1dJTkdT",
+        "VFJBTVBPTElORQ==",
+        "VFJFRUhPVVNF"
+      ]
+    },
     {
       "id": 1124,
       "printDate": "2026-09-23",
