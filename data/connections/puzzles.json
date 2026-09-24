@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-23T10:10:03.458Z",
+  "lastUpdated": "2026-09-24T10:16:03.721Z",
   "puzzles": [
+    {
+      "id": 1201,
+      "printDate": "2026-09-24",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UEFSVFMgT0YgQSBWQU1QSVJFIENPU1RVTUU=",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "RkFDRSBQQUlOVA==",
+            "Q0FQRQ==",
+            "RkFOR1M=",
+            "RkFLRSBCTE9PRA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIFdJVEggU1BSSU5HL1M=",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "UE9HTyBTVElDSw==",
+            "Qk9CQkxFSEVBRA==",
+            "VFJBTVBPTElORQ==",
+            "U05BS0VTIElOIEEgQ0FO"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RkVBVFVSSU5HIFBPSU5USU5H",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Rk9BTSBGSU5HRVI=",
+            "VU5DTEUgU0FN",
+            "Q1JFQVRJT04gT0YgQURBTQ==",
+            "SSdNIFdJVEggU1RVUElEIFNISVJU"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "QU5BR1JBTVM=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "VEhFIEJFQVI=",
+            "QkVFUiBIQVQ=",
+            "QlJFQVRIRQ==",
+            "SEVSQiBURUE="
+          ]
+        }
+      ]
+    },
     {
       "id": 1200,
       "printDate": "2026-09-23",
