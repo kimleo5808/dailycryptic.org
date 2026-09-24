@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-23T10:11:09.425Z",
+  "lastUpdated": "2026-09-24T10:18:35.906Z",
   "puzzles": [
+    {
+      "id": 1923,
+      "printDate": "2026-09-24",
+      "status": "published",
+      "solution": "bWVzc3k=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with M and has 1 vowel.",
+      "hint3": "M _ S _ Y"
+    },
     {
       "id": 1922,
       "printDate": "2026-09-23",
