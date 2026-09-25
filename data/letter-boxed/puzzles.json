@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-24T12:53:32.350Z",
+  "lastUpdated": "2026-09-25T12:57:39.972Z",
   "puzzles": [
+    {
+      "id": 2852,
+      "printDate": "2026-09-25",
+      "status": "published",
+      "sides": [
+        "PRT",
+        "EHL",
+        "YMC",
+        "ZSA"
+      ],
+      "solution": "WyJaRVBIWVJTIiwiU0NITUFMVFoiXQ=="
+    },
     {
       "id": 2851,
       "printDate": "2026-09-24",
