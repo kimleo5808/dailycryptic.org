@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-24T10:24:14.324Z",
+  "lastUpdated": "2026-09-25T10:27:09.360Z",
   "puzzles": [
+    {
+      "id": 1125,
+      "printDate": "2026-09-25",
+      "status": "published",
+      "clue": "1✖️1, etc ... ",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBRIFUgQSBSIEUgTiBVIE0gQiBFIFI=",
+      "spangram": "U1FVQVJFTlVNQkVS",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "RUlHSFRZT05F",
+        "Rk9VUg==",
+        "TklORQ==",
+        "VEhJUlRZU0lY",
+        "VFdFTlRZRklWRQ=="
+      ]
+    },
     {
       "id": 1122,
       "printDate": "2026-09-24",
