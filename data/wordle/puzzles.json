@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-25T10:21:31.749Z",
+  "lastUpdated": "2026-09-26T10:02:29.849Z",
   "puzzles": [
+    {
+      "id": 1925,
+      "printDate": "2026-09-26",
+      "status": "published",
+      "solution": "ZWxlZ3k=",
+      "hint1": "Think carefully about today's five-letter word.",
+      "hint2": "The word starts with E and has 2 vowels.",
+      "hint3": "E _ E _ Y"
+    },
     {
       "id": 1924,
       "printDate": "2026-09-25",
