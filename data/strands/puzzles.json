@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-09-25T10:27:09.360Z",
+  "lastUpdated": "2026-09-26T10:07:25.151Z",
   "puzzles": [
+    {
+      "id": 1126,
+      "printDate": "2026-09-26",
+      "status": "published",
+      "clue": "A breath of fresh air",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RyBFIE4gVCBMIEUgVyBJIE4gRA==",
+      "spangram": "R0VOVExFV0lORA==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QlJFRVpF",
+        "Q1VSUkVOVA==",
+        "RkxVUlJZ",
+        "R1VTVA==",
+        "UFVGRg==",
+        "V0hJRkY=",
+        "WkVQSFlS"
+      ]
+    },
     {
       "id": 1125,
       "printDate": "2026-09-25",
