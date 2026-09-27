@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-26T10:07:25.151Z",
+  "lastUpdated": "2026-09-27T10:40:46.557Z",
   "puzzles": [
+    {
+      "id": 1127,
+      "printDate": "2026-09-27",
+      "status": "published",
+      "clue": "It's skin deep",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBFIEEgVSBUIFkgQyBBIFIgRQ==",
+      "spangram": "QkVBVVRZQ0FSRQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Q0xFQU5TRVI=",
+        "TU9JU1RVUklaRVI=",
+        "U0VSVU0=",
+        "U1VOU0NSRUVO",
+        "VE9ORVI="
+      ]
+    },
     {
       "id": 1126,
       "printDate": "2026-09-26",
