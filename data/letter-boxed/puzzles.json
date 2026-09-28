@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-27T13:17:28.468Z",
+  "lastUpdated": "2026-09-28T15:56:48.433Z",
   "puzzles": [
+    {
+      "id": 2855,
+      "printDate": "2026-09-28",
+      "status": "published",
+      "sides": [
+        "LIS",
+        "HTR",
+        "AUM",
+        "CBN"
+      ],
+      "solution": "WyJDSEFSTEFUQU4iLCJOSU1CVVMiXQ=="
+    },
     {
       "id": 2854,
       "printDate": "2026-09-27",
