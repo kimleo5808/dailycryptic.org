@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-09-27T10:40:46.557Z",
+  "lastUpdated": "2026-09-28T11:54:49.718Z",
   "puzzles": [
+    {
+      "id": 1128,
+      "printDate": "2026-09-28",
+      "status": "published",
+      "clue": "A form of art",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "UyBDIFUgTCBQIFQgVSBSIEU=",
+      "spangram": "U0NVTFBUVVJF",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QlJPTlpF",
+        "Q0xBWQ==",
+        "R0xBU1M=",
+        "TUFSQkxF",
+        "U09BUFNUT05F",
+        "U1RFRUw=",
+        "V09PRA=="
+      ]
+    },
     {
       "id": 1127,
       "printDate": "2026-09-27",
