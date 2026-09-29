@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-28T15:56:48.433Z",
+  "lastUpdated": "2026-09-29T14:20:28.716Z",
   "puzzles": [
+    {
+      "id": 2856,
+      "printDate": "2026-09-29",
+      "status": "published",
+      "sides": [
+        "AHT",
+        "ECQ",
+        "NIU",
+        "BWY"
+      ],
+      "solution": "WyJCQU5RVUVUIiwiVFdJVENIWSJd"
+    },
     {
       "id": 2855,
       "printDate": "2026-09-28",
