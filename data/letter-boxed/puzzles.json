@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-09-29T14:20:28.716Z",
+  "lastUpdated": "2026-09-30T14:13:39.398Z",
   "puzzles": [
+    {
+      "id": 2857,
+      "printDate": "2026-09-30",
+      "status": "published",
+      "sides": [
+        "RXT",
+        "VAI",
+        "OCP",
+        "ENL"
+      ],
+      "solution": "WyJDTE9WRSIsIkVYUElSQVRJT04iXQ=="
+    },
     {
       "id": 2856,
       "printDate": "2026-09-29",
