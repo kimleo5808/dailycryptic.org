@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-09-29T11:30:05.318Z",
+  "lastUpdated": "2026-09-30T11:18:38.158Z",
   "puzzles": [
+    {
+      "id": 1131,
+      "printDate": "2026-09-30",
+      "status": "published",
+      "clue": "An instrumental destination",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TSBVIFMgSSBDIFMgVCBPIFIgRQ==",
+      "spangram": "TVVTSUNTVE9SRQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QU1QTElGSUVS",
+        "Q0FQTw==",
+        "RFJVTVM=",
+        "R1VJVEFS",
+        "UElBTk8=",
+        "UElDSw==",
+        "U1lOVEg="
+      ]
+    },
     {
       "id": 1129,
       "printDate": "2026-09-29",
