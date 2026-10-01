@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-09-30T11:16:01.382Z",
+  "lastUpdated": "2026-10-01T11:43:26.839Z",
   "puzzles": [
+    {
+      "id": 1930,
+      "printDate": "2026-10-01",
+      "status": "published",
+      "solution": "cml0enk=",
+      "hint1": "This word begins with a rolling sound.",
+      "hint2": "The word starts with R and has 1 vowel.",
+      "hint3": "R _ T _ Y"
+    },
     {
       "id": 1929,
       "printDate": "2026-09-30",
