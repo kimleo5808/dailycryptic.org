@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-30T11:18:38.158Z",
+  "lastUpdated": "2026-10-01T11:45:31.140Z",
   "puzzles": [
+    {
+      "id": 1132,
+      "printDate": "2026-10-01",
+      "status": "published",
+      "clue": "Things fall apart",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBFIFkgTyBOIEQgUiBFIFAgQSBJIFI=",
+      "spangram": "QkVZT05EUkVQQUlS",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QlJFQUs=",
+        "Q09MTEFQU0U=",
+        "Q1JVTUJMRQ==",
+        "RElTU09MVkU=",
+        "RlJBR01FTlQ="
+      ]
+    },
     {
       "id": 1131,
       "printDate": "2026-09-30",
