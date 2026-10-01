@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-09-30T14:03:00.905Z",
+  "lastUpdated": "2026-10-01T14:39:51.435Z",
   "puzzles": [
+    {
+      "id": 20201,
+      "printDate": "2026-10-01",
+      "status": "published",
+      "centerLetter": "h",
+      "outerLetters": [
+        "d",
+        "e",
+        "m",
+        "n",
+        "o",
+        "y"
+      ],
+      "answers": [
+        "aG9uZXltb29uZWQ=",
+        "aGVlZA==",
+        "aGVlZGVk",
+        "aGVtZQ==",
+        "aGVtbWVk",
+        "aG9lZA==",
+        "aG9tZQ==",
+        "aG9tZWQ=",
+        "aG9tZXk=",
+        "aG9tb255bQ==",
+        "aG9tb255bXk=",
+        "aG9uZQ==",
+        "aG9uZWQ=",
+        "aG9uZXk=",
+        "aG9uZXllZA==",
+        "aG9uZXltb29u",
+        "aG9vZA==",
+        "aG9vZGVk",
+        "aG9vZG9v",
+        "aG9vZXk=",
+        "aHltZW4=",
+        "aHltbg==",
+        "eW9vaG9v"
+      ],
+      "pangrams": [
+        "aG9uZXltb29uZWQ="
+      ]
+    },
     {
       "id": 14897,
       "printDate": "2026-09-30",
