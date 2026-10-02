@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-01T11:43:26.839Z",
+  "lastUpdated": "2026-10-02T11:13:16.941Z",
   "puzzles": [
+    {
+      "id": 1931,
+      "printDate": "2026-10-02",
+      "status": "published",
+      "solution": "dXN1cnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with U and has 2 vowels.",
+      "hint3": "U _ U _ Y"
+    },
     {
       "id": 1930,
       "printDate": "2026-10-01",
