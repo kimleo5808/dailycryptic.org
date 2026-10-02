@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-01T14:45:39.884Z",
+  "lastUpdated": "2026-10-02T14:07:26.955Z",
   "puzzles": [
+    {
+      "id": 2859,
+      "printDate": "2026-10-02",
+      "status": "published",
+      "sides": [
+        "BTK",
+        "LNR",
+        "AEO",
+        "JIX"
+      ],
+      "solution": "WyJKQUlMQlJPS0VOIiwiTkVYVCJd"
+    },
     {
       "id": 2858,
       "printDate": "2026-10-01",
