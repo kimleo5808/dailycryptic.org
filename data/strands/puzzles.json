@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-01T11:45:31.140Z",
+  "lastUpdated": "2026-10-02T11:16:03.345Z",
   "puzzles": [
+    {
+      "id": 1133,
+      "printDate": "2026-10-02",
+      "status": "published",
+      "clue": "On the sly ...",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBOIEUgQSBLIEkgTiBHIEEgUiBPIFUgTiBE",
+      "spangram": "U05FQUtJTkdBUk9VTkQ=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "Q09WRVJU",
+        "REVWSU9VUw==",
+        "RlVSVElWRQ==",
+        "U0hJRlRZ",
+        "U1RFQUxUSFk="
+      ]
+    },
     {
       "id": 1132,
       "printDate": "2026-10-01",
