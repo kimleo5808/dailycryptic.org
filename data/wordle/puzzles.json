@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-02T11:13:16.941Z",
+  "lastUpdated": "2026-10-03T10:30:39.018Z",
   "puzzles": [
+    {
+      "id": 1932,
+      "printDate": "2026-10-03",
+      "status": "published",
+      "solution": "cGVldmU=",
+      "hint1": "This word is vowel-heavy — think about open, flowing sounds.",
+      "hint2": "The word starts with P and has 3 vowels.",
+      "hint3": "P _ E _ E"
+    },
     {
       "id": 1931,
       "printDate": "2026-10-02",
