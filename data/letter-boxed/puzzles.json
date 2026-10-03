@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-02T14:07:26.955Z",
+  "lastUpdated": "2026-10-03T12:44:11.163Z",
   "puzzles": [
+    {
+      "id": 2860,
+      "printDate": "2026-10-03",
+      "status": "published",
+      "sides": [
+        "LHY",
+        "MIE",
+        "RUT",
+        "WAP"
+      ],
+      "solution": "WyJXSEVSRVdJVEhBTCIsIkxVTVBZIl0="
+    },
     {
       "id": 2859,
       "printDate": "2026-10-02",
