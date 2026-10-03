@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-02T11:16:03.345Z",
+  "lastUpdated": "2026-10-03T10:32:38.283Z",
   "puzzles": [
+    {
+      "id": 1134,
+      "printDate": "2026-10-03",
+      "status": "published",
+      "clue": "A figment of your imagination",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VyBJIEwgTCBPIFQgSCBFIFcgSSBTIFA=",
+      "spangram": "V0lMTE9USEVXSVNQ",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q0hJTUVSQQ==",
+        "SUxMVVNJT04=",
+        "TUlSQUdF",
+        "UEhBTlRBU00=",
+        "U1BFQ1RFUg=="
+      ]
+    },
     {
       "id": 1133,
       "printDate": "2026-10-02",
