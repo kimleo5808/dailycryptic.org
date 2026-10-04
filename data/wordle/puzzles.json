@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-03T10:30:39.018Z",
+  "lastUpdated": "2026-10-04T11:11:54.318Z",
   "puzzles": [
+    {
+      "id": 1933,
+      "printDate": "2026-10-04",
+      "status": "published",
+      "solution": "c2hhY2s=",
+      "hint1": "This word has a sharp ending sound.",
+      "hint2": "The word starts with S and has 1 vowel.",
+      "hint3": "S _ A _ K"
+    },
     {
       "id": 1932,
       "printDate": "2026-10-03",
