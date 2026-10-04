@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-03T10:32:38.283Z",
+  "lastUpdated": "2026-10-04T11:14:29.063Z",
   "puzzles": [
+    {
+      "id": 1135,
+      "printDate": "2026-10-04",
+      "status": "published",
+      "clue": "Grab your tokens",
+      "hint": "These are all related to athletics or competition",
+      "theme": "QSBSIEMgQSBEIEUgRyBBIE0gRSBT",
+      "spangram": "QVJDQURFR0FNRVM=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QVNURVJPSURT",
+        "Q0VOVElQRURF",
+        "RlJPR0dFUg==",
+        "UE9ORw==",
+        "U0NSQU1CTEU="
+      ]
+    },
     {
       "id": 1134,
       "printDate": "2026-10-03",
