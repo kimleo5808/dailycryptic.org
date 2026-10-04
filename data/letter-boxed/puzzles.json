@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-03T12:44:11.163Z",
+  "lastUpdated": "2026-10-04T13:27:36.150Z",
   "puzzles": [
+    {
+      "id": 2861,
+      "printDate": "2026-10-04",
+      "status": "published",
+      "sides": [
+        "CLK",
+        "OUA",
+        "ZEQ",
+        "NSY"
+      ],
+      "solution": "WyJDQUxaT05FUyIsIlNRVUVBS1kiXQ=="
+    },
     {
       "id": 2860,
       "printDate": "2026-10-03",
