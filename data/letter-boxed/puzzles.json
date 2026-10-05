@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-04T13:27:36.150Z",
+  "lastUpdated": "2026-10-05T16:22:22.921Z",
   "puzzles": [
+    {
+      "id": 2862,
+      "printDate": "2026-10-05",
+      "status": "published",
+      "sides": [
+        "DOT",
+        "RGU",
+        "ILN",
+        "FEC"
+      ],
+      "solution": "WyJGUklER0UiLCJFTE9DVVRJT04iXQ=="
+    },
     {
       "id": 2861,
       "printDate": "2026-10-04",
