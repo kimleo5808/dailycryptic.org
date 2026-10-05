@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-04T11:14:29.063Z",
+  "lastUpdated": "2026-10-05T12:31:56.659Z",
   "puzzles": [
+    {
+      "id": 1136,
+      "printDate": "2026-10-05",
+      "status": "published",
+      "clue": "Oh well, too bad, such a shame ",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBBIEQgVCBSIE8gTSBCIE8gTiBF",
+      "spangram": "U0FEVFJPTUJPTkU=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QUxBUw==",
+        "Qk9PSE9P",
+        "QlVNTUVS",
+        "U09SUlk=",
+        "U1VDS1M=",
+        "VU5GT1JUVU5BVEU="
+      ]
+    },
     {
       "id": 1135,
       "printDate": "2026-10-04",
