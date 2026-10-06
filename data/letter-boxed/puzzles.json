@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-05T16:22:22.921Z",
+  "lastUpdated": "2026-10-06T14:27:15.663Z",
   "puzzles": [
+    {
+      "id": 2863,
+      "printDate": "2026-10-06",
+      "status": "published",
+      "sides": [
+        "FTM",
+        "RGX",
+        "AIO",
+        "VLS"
+      ],
+      "solution": "WyJWQVJJRk9STSIsIk1JWE9MT0dJU1QiXQ=="
+    },
     {
       "id": 2862,
       "printDate": "2026-10-05",
