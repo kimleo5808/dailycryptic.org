@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-05T12:31:56.659Z",
+  "lastUpdated": "2026-10-06T12:10:32.177Z",
   "puzzles": [
+    {
+      "id": 1138,
+      "printDate": "2026-10-06",
+      "status": "published",
+      "clue": "Changing course",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEUgTyBMIEQgUyBXIEkgVCBDIEggRSBSIE8gTw==",
+      "spangram": "VEhFT0xEU1dJVENIRVJPTw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 16,
+      "themeWords": [
+        "QkFDS1BFREFM",
+        "RkxJUA==",
+        "T1ZFUlRVUk4=",
+        "UkVWRVJTRQ==",
+        "VU5ETw=="
+      ]
+    },
     {
       "id": 1136,
       "printDate": "2026-10-05",
