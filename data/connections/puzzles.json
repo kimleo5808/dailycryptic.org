@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-05T12:25:57.574Z",
+  "lastUpdated": "2026-10-06T12:07:27.681Z",
   "puzzles": [
+    {
+      "id": 1213,
+      "printDate": "2026-10-06",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "RklOQU5DSUFMIEZJUk1TLCBGT1IgU0hPUlQ=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QkVSS1NISVJF",
+            "TUVSUklMTA==",
+            "Q0lUSQ==",
+            "R09MRE1BTg=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgQ0hBSVJT",
+          "hint": "Think about different chairs",
+          "words": [
+            "QURJUk9OREFDSw==",
+            "V0lORFNPUg==",
+            "V0lOR0JBQ0s=",
+            "RUFNRVM="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "X19fIElOTiBIT1RFTFM=",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "SE9MSURBWQ==",
+            "Q09NRk9SVA==",
+            "SEFNUFRPTg==",
+            "REFZUw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIFRBTEVOVFM=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "S05JQ0tLTkFDSw==",
+            "Q0FUU0tJTEw=",
+            "U1RBQklMSVRZ",
+            "UElBTk9GT1JURQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1212,
       "printDate": "2026-10-05",
