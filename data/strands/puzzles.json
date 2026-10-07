@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-06T12:10:32.177Z",
+  "lastUpdated": "2026-10-07T11:56:26.720Z",
   "puzzles": [
+    {
+      "id": 1032,
+      "printDate": "2026-10-07",
+      "status": "published",
+      "clue": "Color for the cure",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBJIEMgSyBMIEUgRCBQIEkgTiBL",
+      "spangram": "VElDS0xFRFBJTks=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QkFSQklF",
+        "QlVCQkxFR1VN",
+        "RkxBTUlOR08=",
+        "UVVBUlRa",
+        "U0hPQ0tJTkc="
+      ]
+    },
     {
       "id": 1138,
       "printDate": "2026-10-06",
