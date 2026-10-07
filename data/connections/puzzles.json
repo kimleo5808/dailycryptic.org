@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-06T12:07:27.681Z",
+  "lastUpdated": "2026-10-07T11:52:57.811Z",
   "puzzles": [
+    {
+      "id": 1214,
+      "printDate": "2026-10-07",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U0FWRSBGT1IgTEFURVI=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U1FVSVJSRUw=",
+            "QkFOSw==",
+            "U1RPUkU=",
+            "U1RBU0g="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgQlVOUw==",
+          "hint": "Think about different buns",
+          "words": [
+            "Q0lOTkFNT04=",
+            "SE9UIERPRw==",
+            "U1RJQ0tZ",
+            "SEFNQlVSR0VS"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "R1JFRUsgTlVNRVJJQ0FMIFBSRUZJWEVT",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "VFJJREVOVA==",
+            "TU9OT0xPR1VF",
+            "RElDSE9UT01Z",
+            "VEVUUkFDWUNMSU5F"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "QkVTVCBfX18gVE9OWSBBV0FSRFM=",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "TVVTSUNBTA==",
+            "UExBWQ==",
+            "Q0hPUkVPR1JBUEhZ",
+            "T1JDSEVTVFJBVElPTlM="
+          ]
+        }
+      ]
+    },
     {
       "id": 1213,
       "printDate": "2026-10-06",
