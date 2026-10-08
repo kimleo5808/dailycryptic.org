@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-07T14:44:17.004Z",
+  "lastUpdated": "2026-10-08T14:56:04.339Z",
   "puzzles": [
+    {
+      "id": 2864,
+      "printDate": "2026-10-08",
+      "status": "published",
+      "sides": [
+        "ZRQ",
+        "IGY",
+        "ANK",
+        "TUL"
+      ],
+      "solution": "WyJUWkFUWklLSSIsIklOUVVJUklOR0xZIl0="
+    },
     {
       "id": 2865,
       "printDate": "2026-10-07",
