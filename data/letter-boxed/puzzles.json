@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-08T14:56:04.339Z",
+  "lastUpdated": "2026-10-09T14:39:46.512Z",
   "puzzles": [
+    {
+      "id": 2866,
+      "printDate": "2026-10-09",
+      "status": "published",
+      "sides": [
+        "WDN",
+        "YGT",
+        "KUI",
+        "SRA"
+      ],
+      "solution": "WyJTS1lXUklUSU5HIiwiR0FVRFkiXQ=="
+    },
     {
       "id": 2864,
       "printDate": "2026-10-08",
