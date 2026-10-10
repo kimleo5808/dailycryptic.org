@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-09T14:39:46.512Z",
+  "lastUpdated": "2026-10-10T13:57:53.248Z",
   "puzzles": [
+    {
+      "id": 2867,
+      "printDate": "2026-10-10",
+      "status": "published",
+      "sides": [
+        "TLN",
+        "XIA",
+        "EDP",
+        "CKR"
+      ],
+      "solution": "WyJFWFBMSUNJVCIsIlRBTktBUkQiXQ=="
+    },
     {
       "id": 2866,
       "printDate": "2026-10-09",
