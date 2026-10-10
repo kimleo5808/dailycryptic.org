@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-09T12:00:25.616Z",
+  "lastUpdated": "2026-10-10T11:17:06.581Z",
   "puzzles": [
+    {
+      "id": 1939,
+      "printDate": "2026-10-10",
+      "status": "published",
+      "solution": "YnVtcHk=",
+      "hint1": "This word begins with a bold consonant.",
+      "hint2": "The word starts with B and has 1 vowel.",
+      "hint3": "B _ M _ Y"
+    },
     {
       "id": 1938,
       "printDate": "2026-10-09",
