@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-10T11:17:06.581Z",
+  "lastUpdated": "2026-10-11T11:30:25.859Z",
   "puzzles": [
+    {
+      "id": 1940,
+      "printDate": "2026-10-11",
+      "status": "published",
+      "solution": "dW5jYXA=",
+      "hint1": "This word starts with a vowel — less common in Wordle.",
+      "hint2": "The word starts with U and has 2 vowels.",
+      "hint3": "U _ C _ P"
+    },
     {
       "id": 1939,
       "printDate": "2026-10-10",
