@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-11T11:32:16.939Z",
+  "lastUpdated": "2026-10-12T13:25:33.838Z",
   "puzzles": [
+    {
+      "id": 1140,
+      "printDate": "2026-10-12",
+      "status": "published",
+      "clue": "In a manner of speaking",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBVIFIgTiBPIEYgUCBIIFIgQSBTIEU=",
+      "spangram": "VFVSTk9GUEhSQVNF",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "RElBTEVDVA==",
+        "SkFSR09O",
+        "TElOR08=",
+        "UEFSTEFOQ0U=",
+        "VkVSTkFDVUxBUg=="
+      ]
+    },
     {
       "id": 1146,
       "printDate": "2026-10-11",
