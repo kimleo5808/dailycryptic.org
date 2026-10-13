@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-12T13:25:33.838Z",
+  "lastUpdated": "2026-10-13T12:53:31.449Z",
   "puzzles": [
+    {
+      "id": 1147,
+      "printDate": "2026-10-13",
+      "status": "published",
+      "clue": "Well, this is awkward",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBSIEkgTiBHIEUgVyBPIFIgVCBIIFk=",
+      "spangram": "Q1JJTkdFV09SVEhZ",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QVBQQUxM",
+        "Q0hBR1JJTg==",
+        "RU1CQVJSQVNT",
+        "TU9SVElGWQ==",
+        "Tk9OUExVUw=="
+      ]
+    },
     {
       "id": 1140,
       "printDate": "2026-10-12",
