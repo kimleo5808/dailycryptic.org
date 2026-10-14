@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-13T12:53:31.449Z",
+  "lastUpdated": "2026-10-14T10:29:28.048Z",
   "puzzles": [
+    {
+      "id": 1143,
+      "printDate": "2026-10-14",
+      "status": "published",
+      "clue": "Folk & fairy tale twosomes",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TyBOIEMgRSBVIFAgTyBOIEEgVCBJIE0gRQ==",
+      "spangram": "T05DRVVQT05BVElNRQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QkVBU1Q=",
+        "QkVBVVRZ",
+        "RlJPRw==",
+        "SEFSRQ==",
+        "UFJJTkNFU1M=",
+        "VE9SVE9JU0U="
+      ]
+    },
     {
       "id": 1147,
       "printDate": "2026-10-13",
