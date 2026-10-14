@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-13T15:16:02.604Z",
+  "lastUpdated": "2026-10-14T13:04:28.782Z",
   "puzzles": [
+    {
+      "id": 2871,
+      "printDate": "2026-10-14",
+      "status": "published",
+      "sides": [
+        "RLW",
+        "UNA",
+        "KEP",
+        "TCO"
+      ],
+      "solution": "WyJXT1JLVVAiLCJQTEFDRU5UQSJd"
+    },
     {
       "id": 2870,
       "printDate": "2026-10-13",
