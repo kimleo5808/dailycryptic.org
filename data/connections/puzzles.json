@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-13T12:49:22.496Z",
+  "lastUpdated": "2026-10-14T10:23:09.176Z",
   "puzzles": [
+    {
+      "id": 1221,
+      "printDate": "2026-10-14",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "SElOVA==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U1VHR0VTVElPTg==",
+            "RkxJQ0tFUg==",
+            "VFJBQ0U=",
+            "V0hJRkY="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEVOTklTIFNIT1RT",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "U0VSVkU=",
+            "U01BU0g=",
+            "U0xJQ0U=",
+            "Vk9MTEVZ"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "U1VQRVJIRVJPRVMsIFdJVEggIlRIRSI=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "VEhJTkc=",
+            "RkxBU0g=",
+            "SFVMSw==",
+            "UFVOSVNIRVI="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCAiRkVFLCBGSSwgRk8sIEZVTSI=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "RkVFRA==",
+            "RklFUlk=",
+            "Rk9NRU5U",
+            "RlVNQkxF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1220,
       "printDate": "2026-10-13",
