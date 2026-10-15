@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-14T13:04:28.782Z",
+  "lastUpdated": "2026-10-15T12:51:19.262Z",
   "puzzles": [
+    {
+      "id": 2872,
+      "printDate": "2026-10-15",
+      "status": "published",
+      "sides": [
+        "FST",
+        "IEU",
+        "OHK",
+        "VCR"
+      ],
+      "solution": "WyJWT0NJRkVST1VTIiwiU0tFVENIIl0="
+    },
     {
       "id": 2871,
       "printDate": "2026-10-14",
