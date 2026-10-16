@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-15T12:51:19.262Z",
+  "lastUpdated": "2026-10-16T12:43:09.636Z",
   "puzzles": [
+    {
+      "id": 2874,
+      "printDate": "2026-10-16",
+      "status": "published",
+      "sides": [
+        "FAH",
+        "UXI",
+        "ONG",
+        "MDR"
+      ],
+      "solution": "WyJGT1hIT1VORCIsIkRJQUdSQU0iXQ=="
+    },
     {
       "id": 2872,
       "printDate": "2026-10-15",
