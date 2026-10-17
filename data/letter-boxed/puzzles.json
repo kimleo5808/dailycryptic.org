@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-16T12:43:09.636Z",
+  "lastUpdated": "2026-10-17T11:44:41.762Z",
   "puzzles": [
+    {
+      "id": 2873,
+      "printDate": "2026-10-17",
+      "status": "published",
+      "sides": [
+        "BYT",
+        "ALR",
+        "GNM",
+        "POE"
+      ],
+      "solution": "WyJQUk9CQVRFIiwiRU5UT01PTE9HWSJd"
+    },
     {
       "id": 2874,
       "printDate": "2026-10-16",
