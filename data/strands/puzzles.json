@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-17T09:36:18.605Z",
+  "lastUpdated": "2026-10-18T09:48:32.737Z",
   "puzzles": [
+    {
+      "id": 1152,
+      "printDate": "2026-10-18",
+      "status": "published",
+      "clue": "Fast fashion",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UiBVIE4gTiBJIE4gRyBHIEUgQSBS",
+      "spangram": "UlVOTklOR0dFQVI=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SEVBRFBIT05FUw==",
+        "U05FQUtFUlM=",
+        "U1VOR0xBU1NFUw==",
+        "VkVTVA==",
+        "V0FUQ0g="
+      ]
+    },
     {
       "id": 1151,
       "printDate": "2026-10-17",
