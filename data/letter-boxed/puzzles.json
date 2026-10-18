@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-17T11:44:41.762Z",
+  "lastUpdated": "2026-10-18T12:10:56.672Z",
   "puzzles": [
+    {
+      "id": 2875,
+      "printDate": "2026-10-18",
+      "status": "published",
+      "sides": [
+        "NKL",
+        "IOE",
+        "WRA",
+        "TCH"
+      ],
+      "solution": "WyJIT1JOVEFJTCIsIkxBQ0VXT1JLIl0="
+    },
     {
       "id": 2873,
       "printDate": "2026-10-17",
