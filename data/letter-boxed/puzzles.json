@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-18T12:10:56.672Z",
+  "lastUpdated": "2026-10-19T14:57:40.727Z",
   "puzzles": [
+    {
+      "id": 2876,
+      "printDate": "2026-10-19",
+      "status": "published",
+      "sides": [
+        "MEI",
+        "NOT",
+        "GXA",
+        "JSR"
+      ],
+      "solution": "WyJKSU5HT0lTTSIsIk1BVFJJWEVTIl0="
+    },
     {
       "id": 2875,
       "printDate": "2026-10-18",
