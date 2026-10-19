@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-10-18T09:48:32.737Z",
+  "lastUpdated": "2026-10-19T11:07:04.033Z",
   "puzzles": [
+    {
+      "id": 1153,
+      "printDate": "2026-10-19",
+      "status": "published",
+      "clue": "It's all Greek to me",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TSBZIFQgSCBPIEwgTyBHIEkgQyBBIEw=",
+      "spangram": "TVlUSE9MT0dJQ0FM",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "REVJVFk=",
+        "RFJZQUQ=",
+        "RkFURVM=",
+        "RlVSSUVT",
+        "TVVTRVM=",
+        "TllNUEg=",
+        "U0FUWVI="
+      ]
+    },
     {
       "id": 1152,
       "printDate": "2026-10-18",
