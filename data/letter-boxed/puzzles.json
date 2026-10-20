@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-19T14:57:40.727Z",
+  "lastUpdated": "2026-10-20T12:57:47.965Z",
   "puzzles": [
+    {
+      "id": 2877,
+      "printDate": "2026-10-20",
+      "status": "published",
+      "sides": [
+        "IHR",
+        "VTU",
+        "ACO",
+        "NYP"
+      ],
+      "solution": "WyJWSUNVTkEiLCJBVFJPUEhZIl0="
+    },
     {
       "id": 2876,
       "printDate": "2026-10-19",
