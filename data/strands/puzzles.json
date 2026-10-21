@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-20T10:19:54.067Z",
+  "lastUpdated": "2026-10-21T10:29:25.668Z",
   "puzzles": [
+    {
+      "id": 1155,
+      "printDate": "2026-10-21",
+      "status": "published",
+      "clue": "On a higher level",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SSBOIFQgSCBFIEEgVCBUIEkgQw==",
+      "spangram": "SU5USEVBVFRJQw==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "Qk9YRVM=",
+        "REVDT1JBVElPTlM=",
+        "TFVHR0FHRQ==",
+        "VFJVTktT",
+        "WUVBUkJPT0tT"
+      ]
+    },
     {
       "id": 1154,
       "printDate": "2026-10-20",
