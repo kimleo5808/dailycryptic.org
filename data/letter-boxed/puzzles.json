@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-20T12:57:47.965Z",
+  "lastUpdated": "2026-10-21T13:12:36.123Z",
   "puzzles": [
+    {
+      "id": 2878,
+      "printDate": "2026-10-21",
+      "status": "published",
+      "sides": [
+        "SCQ",
+        "DTO",
+        "ERI",
+        "UVN"
+      ],
+      "solution": "WyJUVVJRVU9JU0UiLCJFVklOQ0VEIl0="
+    },
     {
       "id": 2877,
       "printDate": "2026-10-20",
