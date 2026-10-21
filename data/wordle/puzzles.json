@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-20T10:14:55.724Z",
+  "lastUpdated": "2026-10-21T10:24:39.978Z",
   "puzzles": [
+    {
+      "id": 1950,
+      "printDate": "2026-10-21",
+      "status": "published",
+      "solution": "cGVubnk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with P and has 1 vowel.",
+      "hint3": "P _ N _ Y"
+    },
     {
       "id": 1949,
       "printDate": "2026-10-20",
