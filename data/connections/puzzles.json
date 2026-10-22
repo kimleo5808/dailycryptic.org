@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-21T10:23:08.775Z",
+  "lastUpdated": "2026-10-22T10:21:22.751Z",
   "puzzles": [
+    {
+      "id": 1229,
+      "printDate": "2026-10-22",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UEFSVFMgVE8gQkUgR1JBU1BFRA==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "R1JJUA==",
+            "SEFORExF",
+            "S05PQg==",
+            "SElMVA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgU0NVTFBUVVJFUw==",
+          "hint": "Think about different sculptures",
+          "words": [
+            "TU9CSUxF",
+            "UkVMSUVG",
+            "QlVTVA==",
+            "U1RBVFVF"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "QU1FUklDQU4gRk9PVEJBTEwgUE9TSVRJT05T",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U0FGRVRZ",
+            "RU5E",
+            "VEFDS0xF",
+            "R1VBUkQ="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRTIE9GIEJFRERJTkc=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Q09NRk9SVA==",
+            "QkxBTks=",
+            "UElMTA==",
+            "U0hF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1228,
       "printDate": "2026-10-21",
