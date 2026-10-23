@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-22T10:30:13.231Z",
+  "lastUpdated": "2026-10-23T10:25:03.866Z",
   "puzzles": [
+    {
+      "id": 1158,
+      "printDate": "2026-10-23",
+      "status": "published",
+      "clue": "None of your beeswax!",
+      "hint": "Think about a particular part of the body",
+      "theme": "QiBVIFMgWSBCIE8gRCBZ",
+      "spangram": "QlVTWUJPRFk=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "RUFWRVNEUk9QUElORw==",
+        "SU5RVUlTSVRJVkU=",
+        "Tk9TWQ==",
+        "UFJZSU5H",
+        "U05PT1BZ"
+      ]
+    },
     {
       "id": 1163,
       "printDate": "2026-10-22",
