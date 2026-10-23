@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-22T13:11:09.344Z",
+  "lastUpdated": "2026-10-23T12:51:26.164Z",
   "puzzles": [
+    {
+      "id": 2879,
+      "printDate": "2026-10-23",
+      "status": "published",
+      "sides": [
+        "ARC",
+        "IGT",
+        "ZEH",
+        "BUN"
+      ],
+      "solution": "WyJDSEFURUFVIiwiVVJCQU5JWklORyJd"
+    },
     {
       "id": 2880,
       "printDate": "2026-10-22",
