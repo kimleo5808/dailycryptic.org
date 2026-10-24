@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-23T10:17:13.543Z",
+  "lastUpdated": "2026-10-24T09:39:13.262Z",
   "puzzles": [
+    {
+      "id": 1231,
+      "printDate": "2026-10-24",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgU1RSSVBT",
+          "hint": "Think about different strips",
+          "words": [
+            "Q09NSUM=",
+            "QkFDT04=",
+            "RklMTQ==",
+            "TcOWQklVUw=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIE9OIFNUSUNLUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U1BBUktMRVI=",
+            "UE9QU0lDTEU=",
+            "SE9CQlkgSE9SU0U=",
+            "UElOV0hFRUw="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "T05MSU5FIEFEIEZPUk1BVFM=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UE9QLVVQ",
+            "QkFOTkVS",
+            "SU5URVJTVElUSUFM",
+            "T1ZFUkxBWQ=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "X19fIEJBUg==",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "U0FMQUQ=",
+            "Q0FORFk=",
+            "U1BBQ0U=",
+            "U1BPUlRT"
+          ]
+        }
+      ]
+    },
     {
       "id": 1230,
       "printDate": "2026-10-23",
