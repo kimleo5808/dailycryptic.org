@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-10-23T10:25:03.866Z",
+  "lastUpdated": "2026-10-24T09:44:14.738Z",
   "puzzles": [
+    {
+      "id": 1159,
+      "printDate": "2026-10-24",
+      "status": "published",
+      "clue": "Re-fresh-ing",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TCBBIFUgTiBEIFIgWSBEIEEgWQ==",
+      "spangram": "TEFVTkRSWURBWQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 10,
+      "themeWords": [
+        "QkFTS0VU",
+        "REVURVJHRU5U",
+        "RFJZRVI=",
+        "SVJPTg==",
+        "UkFDSw==",
+        "U0lOSw==",
+        "V0FTSEVS"
+      ]
+    },
     {
       "id": 1158,
       "printDate": "2026-10-23",
