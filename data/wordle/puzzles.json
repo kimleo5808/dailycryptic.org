@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-23T10:20:43.831Z",
+  "lastUpdated": "2026-10-24T09:41:58.158Z",
   "puzzles": [
+    {
+      "id": 1953,
+      "printDate": "2026-10-24",
+      "status": "published",
+      "solution": "aG9sZXk=",
+      "hint1": "This word begins with an aspirated sound.",
+      "hint2": "The word starts with H and has 2 vowels.",
+      "hint3": "H _ L _ Y"
+    },
     {
       "id": 1952,
       "printDate": "2026-10-23",
