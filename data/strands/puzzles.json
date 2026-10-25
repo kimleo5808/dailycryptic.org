@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-10-24T09:44:14.738Z",
+  "lastUpdated": "2026-10-25T10:03:28.487Z",
   "puzzles": [
+    {
+      "id": 1160,
+      "printDate": "2026-10-25",
+      "status": "published",
+      "clue": "Something to build on",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBPIFUgTiBEIEEgVCBJIE8gTiBT",
+      "spangram": "Rk9VTkRBVElPTlM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "RlJBTUVXT1JL",
+        "U0NBRkZPTERJTkc=",
+        "U0tFTEVUT04=",
+        "U1RSVUNUVVJF"
+      ]
+    },
     {
       "id": 1159,
       "printDate": "2026-10-24",
