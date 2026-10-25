@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-24T12:13:02.592Z",
+  "lastUpdated": "2026-10-25T12:45:24.035Z",
   "puzzles": [
+    {
+      "id": 2882,
+      "printDate": "2026-10-25",
+      "status": "published",
+      "sides": [
+        "DAK",
+        "NTR",
+        "LEB",
+        "IWC"
+      ],
+      "solution": "WyJDUkFCV0FMS0VEIiwiREVUQUlOIl0="
+    },
     {
       "id": 2881,
       "printDate": "2026-10-24",
