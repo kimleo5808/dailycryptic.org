@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-24T09:41:58.158Z",
+  "lastUpdated": "2026-10-25T09:58:44.968Z",
   "puzzles": [
+    {
+      "id": 1954,
+      "printDate": "2026-10-25",
+      "status": "published",
+      "solution": "ZHJlc3M=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with D and has 1 vowel.",
+      "hint3": "D _ E _ S"
+    },
     {
       "id": 1953,
       "printDate": "2026-10-24",
