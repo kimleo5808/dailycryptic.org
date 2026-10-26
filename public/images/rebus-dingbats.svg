@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" rx="20" fill="url(#dbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="52" fill="#ffffff" font-size="28" font-weight="800">Six dingbats and the clue device behind each</text>
+  <text x="44" y="82" fill="#94a3b8" font-size="17" font-weight="500">Where a word sits on the page does the same job as a cryptic indicator.</text>
+
+  <!-- row 1 -->
+  <g transform="translate(44,108)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <g fill="#e5e9f7" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="3">
+      <text x="144" y="64">MAN</text>
+      <text x="144" y="108">BOARD</text>
+    </g>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">man overboard</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;over&#8221; = placed on top</text>
+  </g>
+  <g transform="translate(356,108)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <text x="144" y="90" fill="#e5e9f7" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="3">MIL<tspan fill="#818cf8">1</tspan>LION</text>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">one in a million</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;in&#8221; = container</text>
+  </g>
+  <g transform="translate(668,108)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <text x="144" y="90" fill="#e5e9f7" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="3">ECNALG</text>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">backward glance</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;back&#8221; = reversal</text>
+  </g>
+
+  <!-- row 2 -->
+  <g transform="translate(44,352)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <text x="144" y="90" fill="#e5e9f7" font-size="30" font-weight="800" text-anchor="middle" letter-spacing="2">DEATH LIFE</text>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">life after death</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;after&#8221; = word order</text>
+  </g>
+  <g transform="translate(356,352)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <g stroke="#818cf8" stroke-width="2.5">
+      <line x1="44" y1="50" x2="244" y2="50"/>
+      <line x1="44" y1="110" x2="244" y2="110"/>
+    </g>
+    <text x="144" y="92" fill="#e5e9f7" font-size="30" font-weight="800" text-anchor="middle" letter-spacing="3">READING</text>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">reading between the lines</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;between&#8221; = insertion</text>
+  </g>
+  <g transform="translate(668,352)">
+    <rect width="288" height="220" rx="14" fill="#17223f" stroke="#334066" stroke-width="1.2"/>
+    <g fill="#e5e9f7" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="3">
+      <text x="144" y="64">STAND</text>
+      <text x="144" y="108">I</text>
+    </g>
+    <text x="144" y="162" fill="#ffffff" font-size="19" font-weight="800" text-anchor="middle">I understand</text>
+    <text x="144" y="192" fill="#a5b4fc" font-size="15" font-weight="700" text-anchor="middle">&#8220;under&#8221; = placed below</text>
+  </g>
+</svg>
