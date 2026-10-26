@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-25T09:58:44.968Z",
+  "lastUpdated": "2026-10-26T11:21:11.201Z",
   "puzzles": [
+    {
+      "id": 1955,
+      "printDate": "2026-10-26",
+      "status": "published",
+      "solution": "Z2Vla3k=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with G and has 2 vowels.",
+      "hint3": "G _ E _ Y"
+    },
     {
       "id": 1954,
       "printDate": "2026-10-25",
