@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1226"/>
+      <stop offset="1" stop-color="#161f3c"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="8" fill="url(#tile)"/>
+
+  <!-- little open book, top-right -->
+  <g transform="translate(980,58)">
+    <path d="M0,12 Q36,0 72,12 L72,82 Q36,70 0,82 Z" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <path d="M72,12 Q108,0 144,12 L144,82 Q108,70 72,82 Z" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <g stroke="#3a4a78" stroke-width="2">
+      <line x1="12" y1="30" x2="60" y2="26"/><line x1="12" y1="44" x2="60" y2="40"/><line x1="12" y1="58" x2="48" y2="55"/>
+      <line x1="84" y1="26" x2="132" y2="30"/><line x1="84" y1="40" x2="132" y2="44"/><line x1="84" y1="54" x2="120" y2="57"/>
+    </g>
+  </g>
+
+  <text x="80" y="100" fill="#818cf8" font-size="21" font-weight="700" letter-spacing="3">SOLVING GUIDE · DAILYCRYPTIC</text>
+
+  <g fill="#ffffff" font-weight="800">
+    <text x="78" y="184" font-size="64">Story Words in Cryptics:</text>
+    <text x="78" y="256" font-size="64">Tales, Novels &amp; Characters</text>
+  </g>
+  <text x="80" y="306" fill="#cbd5e1" font-size="26" font-weight="500">A story is a TALE, a novel means NEW, and the writer is usually ME.</text>
+
+  <!-- story = TALE -->
+  <g transform="translate(80,392)">
+    <rect x="0" y="0" width="220" height="118" rx="16" fill="url(#tile)"/>
+    <text x="110" y="60" fill="#ffffff" font-size="34" font-weight="800" text-anchor="middle">&#8220;story&#8221;</text>
+    <text x="110" y="96" fill="#dfe3f7" font-size="20" font-weight="600" text-anchor="middle">clue surface</text>
+
+    <text x="255" y="66" fill="#6b7aa8" font-size="40" font-weight="800" text-anchor="middle">=</text>
+
+    <rect x="290" y="0" width="180" height="118" rx="16" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="380" y="60" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle" letter-spacing="2">TALE</text>
+    <text x="380" y="96" fill="#a5b4fc" font-size="20" font-weight="700" text-anchor="middle">or a LIE</text>
+  </g>
+
+  <!-- novel = NEW -->
+  <g transform="translate(620,392)">
+    <rect x="0" y="0" width="220" height="118" rx="16" fill="url(#tile)"/>
+    <text x="110" y="60" fill="#ffffff" font-size="34" font-weight="800" text-anchor="middle">&#8220;novel&#8221;</text>
+    <text x="110" y="96" fill="#dfe3f7" font-size="20" font-weight="600" text-anchor="middle">clue surface</text>
+
+    <text x="255" y="66" fill="#6b7aa8" font-size="40" font-weight="800" text-anchor="middle">=</text>
+
+    <rect x="290" y="0" width="180" height="118" rx="16" fill="#1e2a4a" stroke="#818cf8" stroke-width="2"/>
+    <text x="380" y="60" fill="#ffffff" font-size="40" font-weight="800" text-anchor="middle" letter-spacing="2">NEW</text>
+    <text x="380" y="96" fill="#a5b4fc" font-size="20" font-weight="700" text-anchor="middle">or an anagram</text>
+  </g>
+</svg>
