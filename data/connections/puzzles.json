@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-25T09:57:17.685Z",
+  "lastUpdated": "2026-10-26T11:19:42.587Z",
   "puzzles": [
+    {
+      "id": 1233,
+      "printDate": "2026-10-26",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UkVTUE9OU0VTIFRPICJIT1cgQVJFIFlPVT8i",
+          "hint": "Imagine your physical or emotional response",
+          "words": [
+            "Q0hJTExJTkc=",
+            "TUFOQUdJTkc=",
+            "U0FNRSBPTEQ=",
+            "Tk9UIEJBRA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgTUFUUw==",
+          "hint": "Think about different mats",
+          "words": [
+            "V0VMQ09NRQ==",
+            "WU9HQQ==",
+            "UFJBWUVS",
+            "V1JFU1RMSU5H"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "QUtDIERPRyBCUkVFRCBHUk9VUFM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "VE9Z",
+            "U1BPUlRJTkc=",
+            "SE9VTkQ=",
+            "SEVSRElORw=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "SE9SUk9SIE1PVklFUyBXSVRIIExBU1QgTEVUVEVSIENIQU5HRUQ=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "SEFMTE9XRUVL",
+            "SkFXTg==",
+            "UFNZQ0hT",
+            "SE9TVEVE"
+          ]
+        }
+      ]
+    },
     {
       "id": 1232,
       "printDate": "2026-10-25",
