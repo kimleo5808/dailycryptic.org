@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1730"/>
+      <stop offset="1" stop-color="#1a2342"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="520" rx="20" fill="url(#mbg)"/>
+  <rect x="0" y="0" width="1000" height="6" rx="3" fill="#6366f1"/>
+
+  <text x="44" y="52" fill="#ffffff" font-size="28" font-weight="800">Musical shorthand in cryptic clues</text>
+  <text x="44" y="82" fill="#94a3b8" font-size="17" font-weight="500">The clue word, where it comes from, and the letters it usually stands for.</text>
+
+  <g font-weight="700">
+    <!-- column 1 -->
+    <g transform="translate(44,108)">
+      <g transform="translate(0,0)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">soft</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">piano</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">P</text></g>
+      <g transform="translate(0,64)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">very soft</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">pianissimo</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">PP</text></g>
+      <g transform="translate(0,128)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">loud</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">forte</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">F</text></g>
+      <g transform="translate(0,192)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">very loud</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">fortissimo</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">FF</text></g>
+      <g transform="translate(0,256)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">note</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">letter name</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">A&#8211;G</text></g>
+      <g transform="translate(0,320)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">note</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">tonic sol-fa</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">DOH, TE</text></g>
+    </g>
+    <!-- column 2 -->
+    <g transform="translate(516,108)">
+      <g transform="translate(0,0)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">record</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">album, single</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">LP, EP</text></g>
+      <g transform="translate(0,64)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">tune</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">melody</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">AIR</text></g>
+      <g transform="translate(0,128)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">song</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">old ballad</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">LAY</text></g>
+      <g transform="translate(0,192)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">singer</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">voice part</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">ALTO</text></g>
+      <g transform="translate(0,256)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">composer</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">Thomas Arne</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">ARNE</text></g>
+      <g transform="translate(0,320)"><rect width="440" height="56" rx="10" fill="#17223f" stroke="#334066" stroke-width="1.2"/><text x="18" y="35" fill="#a5b4fc" font-size="19">instrument</text><text x="150" y="35" fill="#94a3b8" font-size="16" font-weight="500">woodwind</text><text x="330" y="35" fill="#e5e9f7" font-size="19" font-weight="800">OBOE</text></g>
+    </g>
+  </g>
+</svg>
