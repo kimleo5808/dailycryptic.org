@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-25T12:45:24.035Z",
+  "lastUpdated": "2026-10-26T14:33:19.014Z",
   "puzzles": [
+    {
+      "id": 2883,
+      "printDate": "2026-10-26",
+      "status": "published",
+      "sides": [
+        "CTJ",
+        "ONU",
+        "HLA",
+        "GIQ"
+      ],
+      "solution": "WyJRVUlMVElORyIsIkdPQ0hVSkFORyJd"
+    },
     {
       "id": 2882,
       "printDate": "2026-10-25",
