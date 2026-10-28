@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-27T10:49:24.469Z",
+  "lastUpdated": "2026-10-28T11:31:06.799Z",
   "puzzles": [
+    {
+      "id": 1157,
+      "printDate": "2026-10-28",
+      "status": "published",
+      "clue": "Comedy club",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "RiBVIE4gTiBZIEIgVSBTIEkgTiBFIFMgUw==",
+      "spangram": "RlVOTllCVVNJTkVTUw==",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "QlVSTEVTUVVF",
+        "RkFSQ0U=",
+        "SU1QUk9W",
+        "U0tFVENI",
+        "U0xBUFNUSUNL"
+      ]
+    },
     {
       "id": 1174,
       "printDate": "2026-10-27",
