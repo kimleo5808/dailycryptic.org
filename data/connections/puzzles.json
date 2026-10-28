@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-27T10:44:00.292Z",
+  "lastUpdated": "2026-10-28T11:27:51.725Z",
   "puzzles": [
+    {
+      "id": 1235,
+      "printDate": "2026-10-28",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Uk9NQU5USUMgTElLSU5H",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVRUUkFDVElPTg==",
+            "Q1JVU0g=",
+            "SU5URVJFU1Q=",
+            "RkVFTElOR1M="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "Q09NUE9ORU5UUyBPRiBBTiBFTUFJTA==",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "U1VCSkVDVA==",
+            "QVRUQUNITUVOVA==",
+            "Qk9EWQ==",
+            "U0lHTkFUVVJF"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "TkFTQSBNQVJTIFJPVkVSUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Q1VSSU9TSVRZ",
+            "U1BJUklU",
+            "T1BQT1JUVU5JVFk=",
+            "UEVSU0VWRVJBTkNF"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "SE9NT1BIT05FUyBPRiBQQVRIUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Uk9VVA==",
+            "Q09BUlNF",
+            "V0VJR0g=",
+            "Uk9ERQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1234,
       "printDate": "2026-10-27",
