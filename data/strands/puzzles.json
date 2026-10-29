@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-10-28T11:31:06.799Z",
+  "lastUpdated": "2026-10-29T11:40:48.023Z",
   "puzzles": [
+    {
+      "id": 1164,
+      "printDate": "2026-10-29",
+      "status": "published",
+      "clue": "Double, double toil and trouble",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "QyBBIFUgTCBEIFIgTyBO",
+      "spangram": "Q0FVTERST04=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "QkxPT0Q=",
+        "QlVCQkxF",
+        "RklSRQ==",
+        "TElaQVJE",
+        "TkVXVA==",
+        "U05BS0U=",
+        "VE9OR1VF",
+        "V09STQ=="
+      ]
+    },
     {
       "id": 1157,
       "printDate": "2026-10-28",
