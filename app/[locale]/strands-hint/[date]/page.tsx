@@ -9,6 +9,7 @@ import StrandsSpangramReveal from "@/components/strands/StrandsSpangramReveal";
 import StrandsWordList from "@/components/strands/StrandsWordList";
 import StrandsAnswerBoard from "@/components/strands/StrandsAnswerBoard";
 import StrandsPuzzleCard from "@/components/strands/StrandsPuzzleCard";
+import StrandsBreakdown from "@/components/strands/StrandsBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
@@ -122,6 +123,7 @@ export default async function StrandsHintDatePage({
   const recentPuzzles = (await getRecentStrandsPuzzles(7)).filter(
     (p) => p.printDate !== date
   );
+  const archive = await getAllStrandsPuzzles();
 
   const dateLabel = longDate(date);
   const faqItems = buildFaq(puzzle, shortDate(date));
@@ -269,6 +271,9 @@ export default async function StrandsHintDatePage({
             walk through the strategy.
           </BodyText>
         </ContentSection>
+
+        {/* Archive comparison: spangram, theme set, returning words */}
+        <StrandsBreakdown puzzle={puzzle} archive={archive} />
 
         {/* Per-puzzle FAQ */}
         <ContentSection title={`Strands #${puzzle.id} FAQ`}>

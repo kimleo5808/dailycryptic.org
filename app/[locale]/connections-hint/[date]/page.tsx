@@ -7,6 +7,7 @@ import {
 import ConnectionsHintCard from "@/components/connections/ConnectionsHintCard";
 import ConnectionsAnswerBoard from "@/components/connections/ConnectionsAnswerBoard";
 import ConnectionsPuzzleCard from "@/components/connections/ConnectionsPuzzleCard";
+import ConnectionsBreakdown from "@/components/connections/ConnectionsBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
@@ -137,6 +138,7 @@ export default async function ConnectionsHintDatePage({
   const recentPuzzles = (await getRecentConnectionsPuzzles(6)).filter(
     (p) => p.printDate !== date
   );
+  const archive = await getAllConnectionsPuzzles();
 
   const dateLabel = longDate(date);
   const shortDate = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
@@ -270,6 +272,9 @@ export default async function ConnectionsHintDatePage({
             .
           </BodyText>
         </ContentSection>
+
+        {/* Archive cross-references: returning words, familiar tricks */}
+        <ConnectionsBreakdown puzzle={puzzle} archive={archive} />
 
         {/* Per-puzzle FAQ */}
         <ContentSection title={`Connections #${puzzle.id} FAQ`}>
