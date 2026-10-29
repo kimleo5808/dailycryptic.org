@@ -10,8 +10,9 @@ declare global {
 
 /**
  * In-content responsive AdSense unit. Renders nothing unless an AdSense client
- * ID and a real slot ID are configured — placeholder slots ("0000000000") would
- * otherwise show an empty labelled box. Reserves a minimum height to limit
+ * ID and a real slot ID are configured — placeholder slots ("0000000000",
+ * "0000000001", …) would otherwise show an empty labelled box. Real AdSense
+ * slot IDs never start with a run of zeros. Reserves a minimum height to limit
  * layout shift (CLS).
  */
 export function AdSlot({
@@ -22,7 +23,7 @@ export function AdSlot({
   className?: string;
 }) {
   const client = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
-  const enabled = Boolean(client) && !/^0+$/.test(slot);
+  const enabled = Boolean(client) && !/^0{5}/.test(slot);
 
   useEffect(() => {
     if (!enabled) return;
