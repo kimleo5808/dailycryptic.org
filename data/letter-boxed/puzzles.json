@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-28T14:29:56.396Z",
+  "lastUpdated": "2026-10-29T14:38:35.098Z",
   "puzzles": [
+    {
+      "id": 2886,
+      "printDate": "2026-10-29",
+      "status": "published",
+      "sides": [
+        "YHK",
+        "ADE",
+        "TIO",
+        "WRM"
+      ],
+      "solution": "WyJIT01FV09SSyIsIktBVFlESUQiXQ=="
+    },
     {
       "id": 2885,
       "printDate": "2026-10-28",
