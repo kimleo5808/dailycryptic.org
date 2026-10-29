@@ -47,7 +47,7 @@
 |---|---|---|
 | Minute cryptic 线索库 | 1,004 道，带题型、难度、4 级提示和完整解析 | 缩写使用频率、题型×难度分布、出题检查清单 |
 | 线索打磨记录 | 2026-10 改写了 747 道排队题（git 历史可查） | 出题常见错误（第一手经验） |
-| Connections 存档 | 659 期、2,636 组（2024-12 → 2026-10） | 紫色组陷阱研究：60% 的紫色组用了文字陷阱 |
+| Connections 存档 | 660 期、2,640 组（2024-12 → 2026-10） | 紫色组研究：77% 的紫色组是文字游戏 |
 | Strands 存档 | 372 期 | 横纵向和长度分布 |
 | Spelling Bee 存档 | 116 期 | 样本偏小，排在后面 |
 
@@ -87,10 +87,10 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 
 | # | Slug | 标题（H1） | 模板 | 主关键词 | 意图 | 优先级 | 难度估计 |
 |---|---|---|---|---|---|---|---|
-| 1 | `cryptic-crossword-abbreviations` | Cryptic Crossword Abbreviations: The Complete List (With Real Clues) | Pillar（参考） | cryptic crossword abbreviations | 信息 | **P0** | 中：Wikipedia 和 Dummies 在前，但页面老、没有例题 |
-| 2 | `cryptic-crossword-glossary` | Cryptic Crossword Glossary: 60 Terms Every Solver Should Know | Pillar（参考） | cryptic crossword terms | 信息 | **P0** | 低 |
-| 3 | `how-to-write-a-cryptic-clue` | How to Write a Cryptic Clue: A Setter's Checklist With Real Edits | Techniques + 案例 | how to write a cryptic clue | 信息 | **P0** | 低：SERP 几乎全是垃圾页 |
-| 4 | `nyt-connections-purple-category` | We Analysed 659 Connections Puzzles: How the Purple Group Works | 数据研究 | connections purple category | 信息 | **P0** | 低到中 |
+| 1 | `cryptic-crossword-abbreviations` | Cryptic Crossword Abbreviations: The Complete List | Pillar（参考） | cryptic crossword abbreviations | 信息 | **P0** | 中：Wikipedia 和 Dummies 在前，但页面老、没有例题 |
+| 2 | `cryptic-crossword-glossary` | Cryptic Crossword Glossary: 63 Terms Explained | Pillar（参考） | cryptic crossword terms | 信息 | **P0** | 低 |
+| 3 | `how-to-write-a-cryptic-clue` | How to Write a Cryptic Clue: A Setter's Checklist | Techniques + 案例 | how to write a cryptic clue | 信息 | **P0** | 低：SERP 几乎全是垃圾页 |
+| 4 | `nyt-connections-purple-category` | Connections Purple Category: 660 Puzzles Analysed | 数据研究 | connections purple category | 信息 | **P0** | 低到中 |
 | 5 | `minute-cryptic-tips` | Minute Cryptic Tips: 15 Ways to Solve Faster | Techniques | minute cryptic tips | 信息 | P1 | 低：和站内主流量同主题 |
 | 6 | `and-lit-clues` | &lit Clues and Cryptic Definitions, Explained | Pillar（小型） | &lit clue | 信息 | P1 | 低 |
 | 7 | `cryptic-vs-regular-crossword` | Cryptic vs Regular Crosswords: 9 Differences That Matter | VS | cryptic vs regular crossword | 信息 | P1 | 中 |
@@ -120,7 +120,7 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 
 ### #2 Cryptic Crossword Glossary
 
-- **Meta title**：Cryptic Crossword Glossary: 60 Terms Explained
+- **Meta title**：Cryptic Crossword Glossary: 63 Terms Explained
 - **Meta description**：Fodder, surface, &lit, par, link words, definition by example — 60 cryptic crossword terms explained in plain English, each with a real clue.
 - **独有资产**：每个术语配一道站内**已发布**线索作为例子，再加一张"线索解剖图"。按 GEO 要求，每条定义 ≤ 50 词、能单独被引用。
 - **H2 骨架**：How to use this glossary → Anatomy of a clue（图） → A–Z 术语（按首字母分 H3 组） → Punctuation that matters（? ! 和破折号） → Terms by clue type（表） → FAQ
@@ -138,10 +138,10 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 
 ### #4 NYT Connections Purple Category (data study)
 
-- **Meta title**：How the Connections Purple Group Works (659 Puzzles)
-- **Meta description**：We sorted all 2,636 groups from 659 NYT Connections puzzles. Six in ten purple groups use a word trick — here are the patterns and how to spot them.
+- **Meta title**：Connections Purple Category: 660 Puzzles Analysed
+- **Meta description**：We sorted all 2,640 groups from 660 NYT Connections puzzles. Three in four purple groups are wordplay. Here are the six tricks and how to spot each one.
 - **独有资产（原创数据）**：
-  - 紫色组陷阱分布：填空 27%、词首词尾 19%、改字母 6%、同音 6%、普通分类 40%。
+  - 紫色组构成（细化分类器）：填空 31%、词首词尾 21%、增删改字母 10%、同音 7%，纯词义和共同属性合计 23%。
   - 各颜色组对比，以及最常复用的词（BALL 14 次、TIME/RING 各 12 次）。
   - 方法说明框：数据来源、分类规则和局限。
 - **H2 骨架**：Key findings → How we did this → Purple by the numbers（图） → Trick 1 fill-in-the-blank … Trick 6 → Why yellow is almost never a trick → The red herrings: most reused words → A 4-step purple-hunting routine → FAQ
@@ -216,3 +216,16 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 - GSC：新文章的曝光和点击、`/blog/` 目录的总曝光，以及被内链的指南页排名是否上升。
 - 新文章的收录速度（提交 sitemap 后 1–2 周）。
 - AI 引用：每月手动查一次 ChatGPT 和 Perplexity，看"cryptic crossword abbreviations"、"connections purple category"等问题是否引用本站。
+
+---
+
+## 11. 进度
+
+| 日期 | 文章 | 词数 | 配图 |
+|---|---|---|---|
+| 2026-10-29 | #1 `cryptic-crossword-abbreviations` | 3,502 | 封面 + 4 |
+| 2026-10-29 | #4 `nyt-connections-purple-category` | 2,853 | 封面 + 5 |
+| 2026-10-29 | #2 `cryptic-crossword-glossary` | 3,435 | 封面 + 3 |
+| 2026-10-29 | #3 `how-to-write-a-cryptic-clue` | 2,684 | 封面 + 3 |
+
+同日上线的模板改进：作者署名、发布和更新日期、阅读时长、H2 目录、Article schema 的作者和更新日期、og:image 双斜杠修复、sitemap 补上 4 个题型页、站内链接不再新开标签页。
