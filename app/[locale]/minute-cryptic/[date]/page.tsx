@@ -455,6 +455,11 @@ export default async function DailyPuzzlePage({
   );
 }
 
+// Every published date is pre-rendered below. Puzzle data is read with fs at
+// build time and is not in the Worker bundle, so an unknown date must 404 at
+// the routing layer instead of rendering on demand (which 500s).
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const allPuzzles = await getAllMinuteCryptics();
   const params: { locale: string; date: string }[] = [];

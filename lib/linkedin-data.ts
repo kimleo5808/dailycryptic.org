@@ -1,5 +1,4 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import puzzlesJson from "@/data/linkedin/puzzles.json";
 import type {
   DecodedCrossclimb,
   DecodedLinkedInDay,
@@ -72,14 +71,13 @@ function decodeDay(day: LinkedInDay): DecodedLinkedInDay {
   return out;
 }
 
-/* Lazy-load: no fs work at module import time (crashes the Worker). */
+/* JSON is bundled (not read with fs) so on-demand renders work in the Worker;
+   decoding stays lazy. */
 let _daysDesc: DecodedLinkedInDay[] | null = null;
 
 function getPublished(): DecodedLinkedInDay[] {
   if (!_daysDesc) {
-    const raw = JSON.parse(
-      readFileSync(join(process.cwd(), "data", "linkedin", "puzzles.json"), "utf8")
-    ) as LinkedInDataFile;
+    const raw = puzzlesJson as unknown as LinkedInDataFile;
     const today = new Date().toISOString().split("T")[0];
     _daysDesc = raw.days
       .filter((d) => d.date <= today)

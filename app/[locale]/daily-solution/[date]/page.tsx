@@ -260,6 +260,10 @@ export default async function DailySolutionPage({
   );
 }
 
+// Same as /minute-cryptic/[date]: all dates are pre-rendered and the data is
+// not in the Worker bundle, so unknown dates 404 at the routing layer.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const puzzles = await getAllMinuteCryptics();
   const params: { locale: string; date: string }[] = [];
