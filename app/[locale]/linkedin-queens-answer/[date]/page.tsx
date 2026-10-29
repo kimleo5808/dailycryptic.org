@@ -6,6 +6,7 @@ import {
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import ArchiveStrip from "@/components/linkedin/ArchiveStrip";
 import GameSolution from "@/components/linkedin/GameSolution";
+import BoardBreakdown from "@/components/linkedin/BoardBreakdown";
 import { LINKEDIN_GAME_BY_KEY, LINKEDIN_HUB_PATH } from "@/config/linkedin-games";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -19,6 +20,7 @@ import { constructMetadata } from "@/lib/metadata";
 import {
   getAdjacentLinkedInDays,
   getAllLinkedInDates,
+  getAllLinkedInDays,
   getLinkedInDayByDate,
   getRecentLinkedInDays,
 } from "@/lib/linkedin-data";
@@ -106,6 +108,7 @@ export default async function LinkedInQueensAnswerDatePage({
   }
 
   const { prev, next } = await getAdjacentLinkedInDays("queens", date);
+  const archive = await getAllLinkedInDays("queens");
   const recent = (await getRecentLinkedInDays("queens", 8)).filter(
     (d) => d.date !== date
   );
@@ -229,6 +232,9 @@ export default async function LinkedInQueensAnswerDatePage({
             structure.
           </BodyText>
         </ContentSection>
+
+        {/* Board-specific facts from the stored solution */}
+        <BoardBreakdown game="queens" day={day} archive={archive} />
 
         {recent.length > 0 ? (
           <ContentSection title="More Queens answers">

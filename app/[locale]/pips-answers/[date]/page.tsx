@@ -7,6 +7,7 @@ import {
 import PipsTierView from "@/components/pips/PipsTierView";
 import PipsAnswerBoard from "@/components/pips/PipsAnswerBoard";
 import PipsPuzzleCard from "@/components/pips/PipsPuzzleCard";
+import PipsBreakdown from "@/components/pips/PipsBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
@@ -122,6 +123,7 @@ export default async function PipsAnswersDatePage({
   const recentPuzzles = (await getRecentPipsPuzzles(6)).filter(
     (p) => p.printDate !== date
   );
+  const archive = await getAllPipsPuzzles();
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -277,6 +279,9 @@ export default async function PipsAnswersDatePage({
             when you want the full solved layout.
           </BodyText>
         </ContentSection>
+
+        {/* Archive comparison: domino counts, doubles, rule mix */}
+        <PipsBreakdown puzzle={puzzle} archive={archive} />
 
         {/* Per-puzzle FAQ */}
         <ContentSection title={`${shortDate} Pips FAQ`}>

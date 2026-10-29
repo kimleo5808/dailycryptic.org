@@ -118,6 +118,12 @@ export const getAllLinkedInDates = cache(
       .map((d) => d.date)
 );
 
+/** Every published day that has data for a given game, newest first. */
+export const getAllLinkedInDays = cache(
+  async (game: LinkedInGameKey): Promise<DecodedLinkedInDay[]> =>
+    getPublished().filter((d) => d[game] !== undefined)
+);
+
 export const getAdjacentLinkedInDays = cache(
   async (
     game: LinkedInGameKey,

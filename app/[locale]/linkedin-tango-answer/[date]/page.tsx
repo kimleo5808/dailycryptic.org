@@ -5,6 +5,7 @@ import {
   SimpleFaq,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import GameSolution from "@/components/linkedin/GameSolution";
+import BoardBreakdown from "@/components/linkedin/BoardBreakdown";
 import { LINKEDIN_GAME_BY_KEY, LINKEDIN_HUB_PATH } from "@/config/linkedin-games";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -18,6 +19,7 @@ import { constructMetadata } from "@/lib/metadata";
 import {
   getAdjacentLinkedInDays,
   getAllLinkedInDates,
+  getAllLinkedInDays,
   getLinkedInDayByDate,
 } from "@/lib/linkedin-data";
 import { Metadata } from "next";
@@ -93,6 +95,7 @@ export default async function LinkedInTangoAnswerDatePage({
   }
 
   const { prev, next } = await getAdjacentLinkedInDays("tango", date);
+  const archive = await getAllLinkedInDays("tango");
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -217,6 +220,9 @@ export default async function LinkedInTangoAnswerDatePage({
             that no longer affect your streak.
           </BodyText>
         </ContentSection>
+
+        {/* Board-specific facts from the stored solution */}
+        <BoardBreakdown game="tango" day={day} archive={archive} />
 
         <ContentSection title="FAQ">
           <SimpleFaq items={faqItems} />

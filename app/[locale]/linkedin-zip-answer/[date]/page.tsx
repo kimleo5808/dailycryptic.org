@@ -5,6 +5,7 @@ import {
   SimpleFaq,
 } from "@/components/minute-cryptic-content/ContentBlocks";
 import GameSolution from "@/components/linkedin/GameSolution";
+import BoardBreakdown from "@/components/linkedin/BoardBreakdown";
 import { LINKEDIN_GAME_BY_KEY, LINKEDIN_HUB_PATH } from "@/config/linkedin-games";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
@@ -18,6 +19,7 @@ import { constructMetadata } from "@/lib/metadata";
 import {
   getAdjacentLinkedInDays,
   getAllLinkedInDates,
+  getAllLinkedInDays,
   getLinkedInDayByDate,
 } from "@/lib/linkedin-data";
 import { Metadata } from "next";
@@ -105,6 +107,7 @@ export default async function LinkedInZipAnswerDatePage({
   }
 
   const { prev, next } = await getAdjacentLinkedInDays("zip", date);
+  const archive = await getAllLinkedInDays("zip");
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -218,6 +221,9 @@ export default async function LinkedInZipAnswerDatePage({
             separates a fast finish from a long one.
           </BodyText>
         </ContentSection>
+
+        {/* Board-specific facts from the stored solution */}
+        <BoardBreakdown game="zip" day={day} archive={archive} />
 
         <ContentSection title={`${shortDate} Zip FAQ`}>
           <SimpleFaq items={faqItems} />
