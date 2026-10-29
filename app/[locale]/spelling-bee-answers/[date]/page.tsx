@@ -10,6 +10,7 @@ import SpellingBeeHintLadder from "@/components/spelling-bee/SpellingBeeHintLadd
 import SpellingBeeAnswers from "@/components/spelling-bee/SpellingBeeAnswers";
 import SpellingBeeAnswerBoard from "@/components/spelling-bee/SpellingBeeAnswerBoard";
 import SpellingBeePuzzleCard from "@/components/spelling-bee/SpellingBeePuzzleCard";
+import SpellingBeeBreakdown from "@/components/spelling-bee/SpellingBeeBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
@@ -125,6 +126,7 @@ export default async function SpellingBeeAnswersDatePage({
   const recentPuzzles = (await getRecentSpellingBeePuzzles(6)).filter(
     (p) => p.printDate !== date
   );
+  const archive = await getAllSpellingBeePuzzles();
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -308,6 +310,9 @@ export default async function SpellingBeeAnswersDatePage({
             .
           </BodyText>
         </ContentSection>
+
+        {/* Archive comparison: hive size, standout, new and regular words */}
+        <SpellingBeeBreakdown puzzle={puzzle} archive={archive} />
 
         {/* Per-puzzle FAQ */}
         <ContentSection title={`${shortDate} Spelling Bee FAQ`}>

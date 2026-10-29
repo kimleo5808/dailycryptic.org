@@ -7,6 +7,7 @@ import {
 import LetterBoxedPlay from "@/components/letter-boxed/LetterBoxedPlay";
 import LetterBoxedAnswerBoard from "@/components/letter-boxed/LetterBoxedAnswerBoard";
 import LetterBoxedPuzzleCard from "@/components/letter-boxed/LetterBoxedPuzzleCard";
+import LetterBoxedBreakdown from "@/components/letter-boxed/LetterBoxedBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import {
@@ -123,6 +124,7 @@ export default async function LetterBoxedAnswersDatePage({
   const recentPuzzles = (await getRecentLetterBoxedPuzzles(7)).filter(
     (p) => p.printDate !== date
   );
+  const archive = await getAllLetterBoxedPuzzles();
 
   const dateLabel = new Date(date + "T12:00:00Z").toLocaleDateString("en-US", {
     weekday: "long",
@@ -265,6 +267,9 @@ export default async function LetterBoxedAnswersDatePage({
             walks through the rules and strategy.
           </BodyText>
         </ContentSection>
+
+        {/* Box-specific data: coverage, opening words, archive comparison */}
+        <LetterBoxedBreakdown puzzle={puzzle} archive={archive} />
 
         {/* Per-puzzle FAQ */}
         <ContentSection title={`${shortDate} Letter Boxed FAQ`}>
