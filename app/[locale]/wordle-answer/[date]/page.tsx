@@ -8,6 +8,7 @@ import {
 import WordleHintCard from "@/components/wordle/WordleHintCard";
 import WordleAnswerReveal from "@/components/wordle/WordleAnswerReveal";
 import WordleToolsCard from "@/components/wordle/WordleToolsCard";
+import WordleAnswerBreakdown from "@/components/wordle/WordleAnswerBreakdown";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
@@ -227,6 +228,9 @@ export default async function WordleDatePage({
             </>
           );
         })()}
+
+        {/* Answer-specific data: meaning, opener results, lookalikes */}
+        <WordleAnswerBreakdown solution={puzzle.solution} />
 
         {/* Nav */}
         <div className="flex items-center justify-between text-sm">
