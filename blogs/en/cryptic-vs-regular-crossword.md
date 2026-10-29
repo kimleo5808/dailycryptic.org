@@ -127,7 +127,7 @@ People who have never tried a cryptic often avoid them for reasons that are not 
 
 ### "You need to be a genius"
 
-Cryptic clues follow a small set of rules, and there are only about eight main devices to learn. Most solvers become comfortable within a few weeks of regular practice. Speed and confidence come from familiarity, not brilliance.
+Cryptic clues follow a small set of rules, and there are only about eight main devices to learn. With regular practice, many solvers become comfortable within a few weeks. Speed and confidence come from familiarity, not brilliance.
 
 ### "You need to know Latin and British slang"
 

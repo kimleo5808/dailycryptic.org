@@ -232,6 +232,9 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 | 2026-10-29 | #7 `cryptic-vs-regular-crossword` | 2,587 | 封面 + 2 |
 | 2026-10-29 | #8 `get-better-at-cryptic-crosswords` | 2,578 | 封面 + 3 |
 | 2026-10-29 | #9 `strands-spangram-patterns` | 2,540 | 封面 + 3 |
+| 2026-10-29 | #11 `spelling-bee-statistics` | 2,528 | 封面 + 3 |
+| 2026-10-29 | #10 `games-like-minute-cryptic` | 2,538 | 封面 + 2 |
+| 2026-10-29 | #12 `history-of-cryptic-crosswords` | 2,553 | 封面 + 2 |
 
 同日上线的模板改进：作者署名、发布和更新日期、阅读时长、H2 目录、Article schema 的作者和更新日期、og:image 双斜杠修复、sitemap 补上 4 个题型页、站内链接不再新开标签页。
 
@@ -256,3 +259,10 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 - `/daily-solution`（含 257 个日期页）同样不在 sitemap，但它和 `/minute-cryptic/[date]` 内容重叠，暂不加入，留待讨论。
 
 **以后选题前的检查**：用 `ls app/[locale]` 列出全部路由，而不是只看 sitemap；逐个比对标题和 H2。
+
+## 13. 事实核查原则（P2 起执行）
+
+- 史实先联网核实；有出入或只有单一来源的细节写成“据报道”或不写具体年份（例如 Times Quick Cryptic 的创刊年份未能核实，文中不写）。
+- 不写编造的第一手经历：本站的每日提示是脚本生成的，不能写成“我们每天都玩”。
+- 没有数据支撑的群体断言（“most solvers…”）改成留有余地的表述。
+- 外部产品只写名称，不加外链。

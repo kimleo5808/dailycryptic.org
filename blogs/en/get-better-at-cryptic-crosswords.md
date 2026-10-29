@@ -9,7 +9,7 @@ visible: published
 pin: false
 ---
 
-Most people who give up on cryptic crosswords do not give up because they are bad at them. They give up because they practise at random: a whole newspaper grid one day, nothing for a week, then a clue that seems impossible and a decision that cryptics "are not for them".
+Many people who give up on cryptic crosswords are not bad at them. They have simply practised at random: a whole newspaper grid one day, nothing for a week, then a clue that seems impossible and a decision that cryptics "are not for them".
 
 Getting better is mostly a matter of order. Learn the devices one at a time, practise each on clues that are easy enough to finish, and add difficulty only when the basics are automatic. This plan does exactly that in **30 days of about 15 minutes each**.
 
@@ -136,7 +136,7 @@ Day 20 may seem out of place in a solving plan, but writing even one clue change
 
 ### Using the definition drill well
 
-For each clue on Day 15, cover the explanation and write down the word or words you think are the definition. Then check. Most beginners discover a bias: they always choose the first word. In our library, the definition sat at the start of 52% of single-definition clues and at the end of 48%, so an always-first habit is wrong almost half the time.
+For each clue on Day 15, cover the explanation and write down the word or words you think are the definition. Then check. A common beginner's bias is to always choose the first word. In our library, the definition sat at the start of 52% of single-definition clues and at the end of 48%, so an always-first habit is wrong almost half the time.
 
 ### Using the indicator drill well
 
@@ -175,7 +175,7 @@ The finale measures how far you have come.
 - **Day 29: mock test.** Pick 10 random clues from our [unlimited minute cryptic](/minute-cryptic-unlimited) and solve them with no hints. Mark each one solved, partly solved or missed.
 - **Day 30: benchmark.** Solve today's clue, then 4 hard clues. Compare your notes with Day 1, when you were learning what a definition was.
 
-Most solvers are surprised by the comparison. Clues that looked like nonsense four weeks earlier now come apart into recognisable pieces, even when the answer still takes time.
+The comparison is often surprising. Clues that looked like nonsense four weeks earlier now come apart into recognisable pieces, even when the answer still takes time.
 
 ## How to Use Hints During the Plan
 
