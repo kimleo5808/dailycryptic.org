@@ -1,11 +1,12 @@
 import { Callout } from "@/components/mdx/Callout";
-import MDXComponents from "@/components/mdx/MDXComponents";
+import MDXComponents, { headingSlug } from "@/components/mdx/MDXComponents";
 import { BASE_URL } from "@/config/site";
 import { Locale, LOCALES } from "@/i18n/routing";
 import { getPosts } from "@/lib/getBlogs";
 import { articleSchema, breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import { constructMetadata } from "@/lib/metadata";
 import { BlogPost } from "@/types/blog";
+import dayjs from "dayjs";
 import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote-client/rsc";
 import { notFound } from "next/navigation";
@@ -21,6 +22,31 @@ type Params = Promise<{
   locale: string;
   slug: string;
 }>;
+
+const DEFAULT_AUTHOR = "Daily Cryptic Editors";
+const WORDS_PER_MINUTE = 230;
+
+/** H2 headings of a markdown post, as plain text, for the table of contents. */
+function tableOfContents(markdown: string): { id: string; text: string }[] {
+  return [...markdown.matchAll(/^## (.+)$/gm)].map((m) => {
+    const text = m[1]
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/[*_`]/g, "")
+      .trim();
+    return { id: headingSlug(text), text };
+  });
+}
+
+function readingMinutes(markdown: string): number {
+  const words = markdown
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .split(/\s+/)
+    .filter((w) => /[A-Za-z0-9]/.test(w)).length;
+  return Math.max(1, Math.round(words / WORDS_PER_MINUTE));
+}
+
+const isoDate = (d: unknown) => (d instanceof Date ? d.toISOString() : String(d));
 
 type MetadataProps = {
   params: Params;
@@ -66,6 +92,10 @@ export default async function BlogPage({ params }: { params: Params }) {
   }
 
   const slugClean = post.slug.replace(/^\//, "");
+  const author: string = post.metadata.author || DEFAULT_AUTHOR;
+  const updated = post.metadata.updated as unknown;
+  const toc = tableOfContents(post.content);
+  const minutes = readingMinutes(post.content);
 
   return (
     <div className="w-full md:w-3/5 px-2 md:px-12">
@@ -74,8 +104,13 @@ export default async function BlogPage({ params }: { params: Params }) {
           title: post.title,
           description: post.description || "",
           url: `${BASE_URL}/blog/${slugClean}`,
-          datePublished: post.date instanceof Date ? post.date.toISOString() : String(post.date),
-          image: post.image,
+          datePublished: isoDate(post.date),
+          dateModified: updated ? isoDate(updated) : undefined,
+          image: post.image
+            ? post.image.startsWith("http") ? post.image : `${BASE_URL}${post.image}`
+            : undefined,
+          authorName: author,
+          authorUrl: `${BASE_URL}/about`,
         })}
       />
       <JsonLd
@@ -86,6 +121,20 @@ export default async function BlogPage({ params }: { params: Params }) {
         ])}
       />
       <h1 className="break-words text-4xl font-bold mt-6 mb-4">{post.title}</h1>
+      <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
+        By{" "}
+        <a href="/about" className="font-medium text-slate-700 dark:text-slate-300 hover:underline">
+          {author}
+        </a>
+        {" · "}Published <time dateTime={isoDate(post.date)}>{dayjs(post.date).format("D MMMM YYYY")}</time>
+        {updated ? (
+          <>
+            {" · "}Updated <time dateTime={isoDate(updated)}>{dayjs(updated as string).format("D MMMM YYYY")}</time>
+          </>
+        ) : null}
+        {" · "}
+        {minutes} min read
+      </p>
       {post.image && (
         <img src={post.image} alt={`Cover image for ${post.title}`} className="rounded-sm w-full" />
       )}
@@ -106,6 +155,26 @@ export default async function BlogPage({ params }: { params: Params }) {
         <></>
       )}
       {post.description && <Callout>{post.description}</Callout>}
+      {toc.length >= 4 && (
+        <nav
+          aria-label="Table of contents"
+          className="my-8 rounded-lg border border-indigo-100 dark:border-indigo-900 bg-indigo-50/50 dark:bg-indigo-950/20 px-6 py-5"
+        >
+          <p className="mb-3 font-semibold text-slate-800 dark:text-slate-200">In this article</p>
+          <ol className="list-decimal pl-5 space-y-1.5 text-sm">
+            {toc.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 hover:underline"
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
       <MDXRemote
         source={post?.content || ""}
         components={MDXComponents}

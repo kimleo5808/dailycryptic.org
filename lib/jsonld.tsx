@@ -103,6 +103,8 @@ export function articleSchema({
   datePublished,
   dateModified,
   image,
+  authorName,
+  authorUrl,
 }: {
   title: string;
   description: string;
@@ -110,6 +112,8 @@ export function articleSchema({
   datePublished: string;
   dateModified?: string;
   image?: string;
+  authorName?: string;
+  authorUrl?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -122,8 +126,8 @@ export function articleSchema({
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
-      name: "dailycryptic",
-      url: BASE_URL,
+      name: authorName ?? "dailycryptic",
+      url: authorUrl ?? BASE_URL,
     },
     publisher: {
       "@type": "Organization",

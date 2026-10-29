@@ -9,9 +9,27 @@ interface HeadingProps {
   children: ReactNode;
 }
 
+/** Plain text of a React node tree (headings can contain emphasis, code, etc.). */
+export function nodeText(node: ReactNode): string {
+  if (node == null || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(nodeText).join("");
+  if (React.isValidElement<{ children?: ReactNode }>(node)) return nodeText(node.props.children);
+  return "";
+}
+
+/** URL-safe anchor id for a heading; the blog table of contents uses the same function. */
+export function headingSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 const Heading: React.FC<HeadingProps> = ({ level, className, children }) => {
   const HeadingTag = `h${level}` as keyof React.ElementType;
-  const headingId = children?.toString() ?? "";
+  const headingId = headingSlug(nodeText(children));
 
   return React.createElement(
     HeadingTag,
@@ -62,13 +80,16 @@ const MDXComponents: MDXComponentsProps = {
       {...props}
     />
   ),
-  a: (props) => (
-    <a
-      className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors underline underline-offset-4"
-      target="_blank"
-      {...props}
-    />
-  ),
+  a: (props) => {
+    const external = /^https?:\/\//.test(props.href ?? "");
+    return (
+      <a
+        className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors underline underline-offset-4"
+        {...(external ? { target: "_blank", rel: "noopener" } : {})}
+        {...props}
+      />
+    );
+  },
   ul: (props) => <ul className="list-disc pl-6 mt-0 mb-6" {...props} />,
   ol: (props) => <ol className="list-decimal pl-6 mt-0 mb-6" {...props} />,
   li: (props) => (
