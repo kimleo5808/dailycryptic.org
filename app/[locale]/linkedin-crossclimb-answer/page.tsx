@@ -158,7 +158,7 @@ export default async function LinkedInCrossclimbAnswerPage({
           <GameSolution game="crossclimb" day={day} dateLabel={dateLabel} />
         ) : (
           <p className="rounded-2xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-            Today&apos;s Crossclimb ladder is being solved and verified. Check
+            Today&apos;s Crossclimb ladder is being verified. Check
             back shortly.
           </p>
         )}
@@ -267,8 +267,8 @@ export default async function LinkedInCrossclimbAnswerPage({
           id="method"
         >
           <BodyText>
-            The sequence below is the one we use when preparing the daily
-            Crossclimb answer for this page. It works because it never asks you
+            The sequence below holds up on any daily Crossclimb ladder,
+            today&apos;s included. It works because it never asks you
             to hold the whole puzzle in your head at once — each step narrows the
             board enough that the next becomes easy.
           </BodyText>

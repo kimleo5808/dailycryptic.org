@@ -630,30 +630,31 @@ export default async function HomeComponent() {
           </p>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-            Content Architecture and User Intent Coverage
+            A Worked Example From the Puzzle Archive
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            A strong puzzle homepage should satisfy multiple search intents in
-            one session. Navigation intent wants immediate play. Informational
-            intent wants method guidance. Verification intent wants reliable
-            answer flow. Archive intent wants historical continuity. This daily
-            cryptic page is structured around that model so users do not need
-            to bounce between unrelated pages to complete a single task.
+            Here is how one clue comes apart, using a hard anagram from our
+            archive: &ldquo;Players from carthorse running loose (9)&rdquo;.
+            Start by looking for the definition at either end. &ldquo;Players&rdquo;
+            could mean athletes, actors or musicians, so keep all three in mind
+            for now. Next, find the instruction. &ldquo;Running loose&rdquo;
+            suggests letters breaking free and being rearranged, which marks it
+            as an anagram indicator.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Internal links are placed to support clear next actions: play now,
-            learn method, review FAQ, and browse past dates. This improves both
-            user clarity and crawl clarity. Search systems reward pages that
-            resolve intent directly, not pages that only announce branding.
-            Actionable structure is therefore part of SEO quality, not separate
-            from it.
+            The fodder sits right beside it: CARTHORSE, nine letters, exactly
+            matching the enumeration. Rearranging C-A-R-T-H-O-R-S-E gives
+            ORCHESTRA, a body of musical players. Both halves now agree: the
+            wordplay uses every letter with nothing spare, and the definition
+            fits fairly once you read &ldquo;players&rdquo; as musicians rather
+            than sportspeople.
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            If you are evaluating performance, focus on behavior metrics that map
-            to genuine utility: depth of scroll through the guide section, click
-            rate into daily puzzle routes, archive entry views, and return rate
-            over seven days. Those signals are more meaningful than raw traffic
-            alone because they track whether users actually solve and learn.
+            That final check is the habit worth copying in every daily cryptic.
+            The surface sends you to a farmyard while the definition points to
+            a concert hall, and only testing both halves shows which reading
+            the setter intended. If one half needs a stretch, keep looking
+            before you check the puzzle.
           </p>
 
           <h2 className="mt-12 font-heading text-2xl font-bold text-foreground sm:text-3xl">

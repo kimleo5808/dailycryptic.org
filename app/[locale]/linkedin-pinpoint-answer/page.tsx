@@ -252,8 +252,8 @@ export default async function LinkedInPinpointAnswerPage({
             Most players improve at the Pinpoint puzzle not by knowing more
             facts but by reading the clue list differently. The four habits
             below are what separate a routine four-clue finish from a regular
-            two-clue one, and they are the same checks we run when preparing
-            each daily Pinpoint answer for this page.
+            two-clue one, and they apply to every daily Pinpoint puzzle,
+            today&apos;s included.
           </BodyText>
           <SubHeading>Look for the least literal connection</SubHeading>
           <BodyText>

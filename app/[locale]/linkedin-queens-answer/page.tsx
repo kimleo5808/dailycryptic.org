@@ -158,7 +158,7 @@ export default async function LinkedInQueensAnswerPage({
           <GameSolution game="queens" day={day} dateLabel={dateLabel} />
         ) : (
           <p className="rounded-2xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-            Today&apos;s Queens board is being solved and verified. Check back
+            Today&apos;s Queens board is being verified. Check back
             shortly.
           </p>
         )}
@@ -255,9 +255,8 @@ export default async function LinkedInQueensAnswerPage({
           <BodyText>
             Guessing works occasionally on small boards and fails reliably on
             large ones. The method below solves nearly every LinkedIn Queens
-            puzzle without ever placing a speculative crown, and it is the same
-            sequence we use when preparing the daily Queens solution for this
-            page.
+            puzzle without ever placing a speculative crown, and the same
+            sequence works on any daily Queens board, today&apos;s included.
           </BodyText>
           <SubHeading>Step 1 — find the forced regions</SubHeading>
           <BodyText>

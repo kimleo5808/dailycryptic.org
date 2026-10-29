@@ -6,7 +6,7 @@ import { getAllSpellingBeePuzzles } from '@/lib/spelling-bee-data'
 import { getAllPipsPuzzles } from '@/lib/pips-data'
 import { getAllLetterBoxedPuzzles } from '@/lib/letter-boxed-data'
 import { getAllWordlePuzzles } from '@/lib/wordle-data'
-import { MODES, LETTERS } from '@/lib/word-lists-data'
+import { MODES, LETTERS, countFor } from '@/lib/word-lists-data'
 import { getAllLinkedInDates } from '@/lib/linkedin-data'
 import { STAT_LIST_SLUGS } from '@/lib/word-stat-lists'
 import { LINKEDIN_GAMES } from '@/config/linkedin-games'
@@ -189,9 +189,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     })
 
-  // 5-letter word-list spoke pages (4 modes × 26 letters)
+  // 5-letter word-list spoke pages (4 modes × 26 letters). Skip letters with
+  // no words (e.g. ending in J) — those routes 404.
   const wordListPages = MODES.flatMap(mode =>
-    LETTERS.map(letter => ({
+    LETTERS.filter(letter => countFor(mode, letter) > 0).map(letter => ({
       url: `${siteUrl}/5-letter-words/${mode}/${letter.toLowerCase()}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as ChangeFrequency,

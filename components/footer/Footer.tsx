@@ -73,7 +73,7 @@ export default async function Footer() {
             })}
           </p>
           <p className="text-xs text-slate-600">
-            Independent puzzle site. dailycryptic publishes original minute cryptic clues.
+            Independent puzzle site. dailycryptic publishes original minute cryptic clues and is not affiliated with the Minute Cryptic app or book.
           </p>
         </div>
       </div>

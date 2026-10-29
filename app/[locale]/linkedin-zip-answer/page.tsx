@@ -34,7 +34,7 @@ const FAQ_ITEMS = [
   {
     question: "What is today's LinkedIn Zip answer?",
     answer:
-      "Today's LinkedIn Zip answer sits at the top of this page, held behind a reveal button so the board is never spoiled before you ask for it. Read the three graded hints first — they tell you where the path is forced without tracing it for you — then tap through to the complete numbered route. We solve and publish the Zip answer every morning, shortly after the fresh board goes live.",
+      "Today's LinkedIn Zip answer sits at the top of this page, held behind a reveal button so the board is never spoiled before you ask for it. Read the three graded hints first — they tell you where the path is forced without tracing it for you — then tap through to the complete numbered route. We publish the Zip answer every morning, shortly after the fresh board goes live.",
   },
   {
     question: "How do you play LinkedIn Zip?",
@@ -158,7 +158,7 @@ export default async function LinkedInZipAnswerPage({
           <GameSolution game="zip" day={day} dateLabel={dateLabel} />
         ) : (
           <p className="rounded-2xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-            Today&apos;s Zip board is being solved and verified. Check back
+            Today&apos;s Zip board is being verified. Check back
             shortly.
           </p>
         )}
@@ -261,9 +261,9 @@ export default async function LinkedInZipAnswerPage({
           <BodyText>
             Tracing hopeful routes and undoing them works on small boards and
             collapses on larger ones. The sequence below solves nearly every
-            LinkedIn Zip puzzle without a single speculative line, and it is the
-            same order of operations we use when preparing the daily Zip solution
-            for this page.
+            LinkedIn Zip puzzle without a single speculative line, and the same
+            order of operations works on any daily Zip board, today&apos;s
+            included.
           </BodyText>
           <SubHeading>Step 1 — settle the endpoints and corners</SubHeading>
           <BodyText>

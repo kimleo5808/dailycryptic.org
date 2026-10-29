@@ -158,7 +158,7 @@ export default async function LinkedInTangoAnswerPage({
           <GameSolution game="tango" day={day} dateLabel={dateLabel} />
         ) : (
           <p className="rounded-2xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
-            Today&apos;s Tango board is being solved and verified. Check back
+            Today&apos;s Tango board is being verified. Check back
             shortly.
           </p>
         )}
@@ -261,8 +261,8 @@ export default async function LinkedInTangoAnswerPage({
           <BodyText>
             Filling cells at random works on an easy grid and collapses on a hard
             one. The sequence below solves nearly every LinkedIn Tango puzzle
-            without a single guess, and it is the same order of operations we
-            follow when preparing the daily Tango solution for this page.
+            without a single guess, and the same order of operations works on
+            any daily Tango board, today&apos;s included.
           </BodyText>
           <SubHeading>Step 1 — resolve every pair first</SubHeading>
           <BodyText>
