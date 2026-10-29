@@ -5435,510 +5435,810 @@
       "printDate": "2026-10-30",
       "publishDate": "2026-10-30",
       "status": "scheduled",
-      "clue": "Stay behind when marine wanders (6)",
+      "clue": "Stay behind as marine wanders off (6)",
       "answer": "UkVNQUlO",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdG8gc3RheSBiZWhpbmQu",
-        "QW5hZ3JhbSDigJQgJ3dhbmRlcnMnIGlzIHRoZSBpbmRpY2F0b3Iu",
-        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIE1BUklORS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0OiBhIHBocmFzZSBtZWFuaW5nIG5vdCB0byBsZWF2ZS4=",
+        "QW5hZ3JhbSDigJQgJ3dhbmRlcnMgb2ZmJyB0ZWxscyB5b3UgdG8gbW92ZSBsZXR0ZXJzIGFyb3VuZC4=",
+        "UmVhcnJhbmdlIHRoZSBzaXggbGV0dGVycyBvZiBNQVJJTkUu",
         "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "TUFSSU5FIHdhbmRlcnMgKGFuYWdyYW0pIGdpdmVzIFJFTUFJTi4gRGVmaW5pdGlvbjogdG8gc3RheSBiZWhpbmQu"
+      "explanation": "TUFSSU5FIHdhbmRlcnMgb2ZmIChhbmFncmFtKSBnaXZlcyBSRU1BSU4uIERlZmluaXRpb246IHN0YXkgYmVoaW5kLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlN0YXkgYmVoaW5kIiBhdCB0aGUgc3RhcnQgb2YgdGhlIGNsdWUuIFRvIFJFTUFJTiBpcyB0byBzdGF5IHdoZXJlIHlvdSBhcmUgd2hpbGUgb3RoZXJzIGxlYXZlLg==",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiAid2FuZGVycyBvZmYiIGlzIHRoZSBpbmRpY2F0b3Ig4oCUIGxldHRlcnMgdGhhdCB3YW5kZXIgYXJlIGxldHRlcnMgdGhhdCBtb3ZlIOKAlCBhbmQgdGhlIGZvZGRlciBpcyBNQVJJTkUuICJhcyIgaXMgYSBsaW5rIHdvcmQu",
+        "steps": [
+          "VGFrZSB0aGUgZm9kZGVyOiBNQVJJTkUgKDYgbGV0dGVyczogTSwgQSwgUiwgSSwgTiwgRSku",
+          "IndhbmRlcnMgb2ZmIiBzaWduYWxzIGFuIGFuYWdyYW0sIHNvIHJlb3JkZXIgdGhvc2Ugc2l4IGxldHRlcnMu",
+          "UmVhcnJhbmdlZCwgTS1BLVItSS1OLUUgYmVjb21lcyBSLUUtTS1BLUktTiDigJQgUkVNQUlOLg=="
+        ],
+        "note": "VGhlIHN1cmZhY2UgcGljdHVyZXMgYSBzb2xkaWVyIGRyaWZ0aW5nIGF3YXkgZnJvbSBoaXMgcG9zdCwgd2hpY2ggcHVsbHMgeW91IHRvd2FyZHMgd29yZHMgbGlrZSBERVNFUlQuIFRoZSBsZXR0ZXIgY291bnQgbWF0Y2hpbmcgTUFSSU5FIGV4YWN0bHkgaXMgdGhlIHNpZ25hbCB0byB0cnkgYW4gYW5hZ3JhbSBpbnN0ZWFkLg=="
+      }
     },
     {
       "id": 259,
       "printDate": "2026-10-31",
       "publishDate": "2026-10-31",
       "status": "scheduled",
-      "clue": "Weekend day: sun then day (6)",
+      "clue": "Star and date for a day of rest (6)",
       "answer": "U1VOREFZ",
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgdGhlIGxhc3QgZGF5IG9mIHRoZSB3ZWVrLg==",
-        "QnVpbGQgaXQgZnJvbSB0d28gcGFydHMgcmVhZCBpbiBvcmRlci4=",
-        "U1VOIGZvbGxvd2VkIGJ5IERBWS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogdGhpbmsgb2YgdGhlIHdlZWtlbmQu",
+        "Q2hhcmFkZSDigJQgdHdvIHNob3J0IHdvcmRzIGpvaW5lZCB0b2dldGhlci4=",
+        "T3VyIG5lYXJlc3Qgc3RhciwgdGhlbiBhIHdvcmQgZm9yIGEgZGF0ZSBvbiB0aGUgY2FsZW5kYXIu",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U1VOICsgREFZIGdpdmVzIFNVTkRBWS4gRGVmaW5pdGlvbjogYSB3ZWVrZW5kIGRheS4="
+      "explanation": "U1VOIChzdGFyKSArIERBWSAoZGF0ZSkgZ2l2ZXMgU1VOREFZLiBEZWZpbml0aW9uOiBhIGRheSBvZiByZXN0Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgZGF5IG9mIHJlc3QiIGF0IHRoZSBlbmQuIFNVTkRBWSBpcyB0cmFkaXRpb25hbGx5IHRoZSBkYXkgb2YgcmVzdC4=",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGU6IHR3byBwaWVjZXMgcGxhY2VkIHNpZGUgYnkgc2lkZS4gIlN0YXIiIGdpdmVzIFNVTiBhbmQgImRhdGUiIGdpdmVzIERBWSwgd2l0aCAiYW5kIiBqb2luaW5nIHRoZW0gYW5kICJmb3IiIGxpbmtpbmcgdG8gdGhlIGRlZmluaXRpb24u",
+        "steps": [
+          "IlN0YXIiIOKAlCB0aGUgc3RhciB3ZSBrbm93IGJlc3QgaXMgdGhlIFNVTi4=",
+          "ImRhdGUiIOKAlCBhIGRhdGUgaXMgYSBwYXJ0aWN1bGFyIERBWSBvbiB0aGUgY2FsZW5kYXIu",
+          "U1VOICsgREFZID0gU1VOREFZLCB3aGljaCBtYXRjaGVzICJhIGRheSBvZiByZXN0Ii4="
+        ],
+        "note": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgYSBjZWxlYnJpdHkgZ29pbmcgb24gYSBkYXRlLCBidXQgaW4gY3J5cHRpYyBjbHVlcyAic3RhciIgdmVyeSBvZnRlbiBtZWFucyBTVU4uIFJlYWRpbmcgZWFjaCBub3VuIG9uIGl0cyBvd24sIHJhdGhlciB0aGFuIGFzIHBhcnQgb2YgdGhlIHN0b3J5LCBpcyB0aGUga2V5IGhhYml0IGhlcmUu"
+      }
     },
     {
       "id": 260,
       "printDate": "2026-11-01",
       "publishDate": "2026-11-01",
       "status": "scheduled",
-      "clue": "Interior: at home plus ground (6)",
+      "clue": "Fashionable country away from the coast (6)",
       "answer": "SU5MQU5E",
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYW4gYXJlYSBhd2F5IGZyb20gdGhlIGNvYXN0Lg==",
-        "Sm9pbiB0d28gcGFydHMgdG9nZXRoZXIu",
-        "QSB3b3JkIGZvciAnYXQgaG9tZScgKElOKSB0aGVuIGEgd29yZCBmb3IgZ3JvdW5kIChMQU5EKS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogdGhpbmsgb2Ygd2hlcmUgdGhlIHNlYSBpc24ndC4=",
+        "Q2hhcmFkZSDigJQgdHdvIHdvcmRzIHBsYWNlZCBzaWRlIGJ5IHNpZGUu",
+        "QSB0d28tbGV0dGVyIHdvcmQgZm9yIHRyZW5keSwgdGhlbiBhIGZvdXItbGV0dGVyIHdvcmQgZm9yIGEgbmF0aW9uLg==",
         "U3RhcnRzIHdpdGggSS4="
       ],
-      "explanation": "SU4gKyBMQU5EIGdpdmVzIElOTEFORC4gRGVmaW5pdGlvbjogaW50ZXJpb3IsIGF3YXkgZnJvbSB0aGUgc2VhLg=="
+      "explanation": "SU4gKGZhc2hpb25hYmxlKSArIExBTkQgKGNvdW50cnkpIGdpdmVzIElOTEFORC4gRGVmaW5pdGlvbjogYXdheSBmcm9tIHRoZSBjb2FzdC4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImF3YXkgZnJvbSB0aGUgY29hc3QiIGF0IHRoZSBlbmQuIElOTEFORCBkZXNjcmliZXMgdGhlIGludGVyaW9yIG9mIGEgY291bnRyeSwgZmFyIGZyb20gdGhlIHNlYS4=",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJGYXNoaW9uYWJsZSIgZ2l2ZXMgSU4gYW5kICJjb3VudHJ5IiBnaXZlcyBMQU5EOyB3cml0dGVuIG9uZSBhZnRlciB0aGUgb3RoZXIgdGhleSBtYWtlIHRoZSBhbnN3ZXIu",
+        "steps": [
+          "IkZhc2hpb25hYmxlIiDigJQgc29tZXRoaW5nIGluIGZhc2hpb24gaXMgSU4u",
+          "ImNvdW50cnkiIOKAlCBhbm90aGVyIHdvcmQgZm9yIGEgY291bnRyeSBvciBuYXRpb24gaXMgTEFORC4=",
+          "SU4gKyBMQU5EID0gSU5MQU5ELCBtZWFuaW5nIGF3YXkgZnJvbSB0aGUgY29hc3Qu"
+        ],
+        "note": "SU4gZm9yICJmYXNoaW9uYWJsZSIsICJwb3B1bGFyIiBvciAiYXQgaG9tZSIgaXMgb25lIG9mIHRoZSBjb21tb25lc3QgYnVpbGRpbmcgYmxvY2tzIGluIGNyeXB0aWNzLiBUaGUgc3VyZmFjZSByZWFkcyBsaWtlIGEgZGVzY3JpcHRpb24gb2YgYSB0cmVuZHkgcnVyYWwgYXJlYSwgd2hpY2ggaGlkZXMgdGhlIHNwbGl0IGJldHdlZW4gdGhlIHR3byBwYXJ0cy4="
+      }
     },
     {
       "id": 261,
       "printDate": "2026-11-02",
       "publishDate": "2026-11-02",
       "status": "scheduled",
-      "clue": "Fastener: cushion then fasten (7)",
+      "clue": "Flat to secure with a portable fastener (7)",
       "answer": "UEFETE9DSw==",
       "clueType": "charade",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBkZXRhY2hhYmxlIGxvY2sgb24gYSBjaGFpbiBvciBnYXRlLg==",
-        "Sm9pbiB0d28gcGFydHMgaW4gb3JkZXIu",
-        "QSB3b3JkIGZvciBhIGN1c2hpb24gKFBBRCkgdGhlbiBhIHdvcmQgbWVhbmluZyB0byBmYXN0ZW4gKExPQ0spLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogYSBsb2NrIHlvdSBjYW4gY2FycnkgYXJvdW5kLg==",
+        "Q2hhcmFkZSDigJQgdHdvIHdvcmRzIGpvaW5lZC4=",
+        "U2xhbmcgZm9yIGEgZmxhdCBvciBob21lLCB0aGVuIGEgd29yZCBtZWFuaW5nIHRvIHNlY3VyZS4=",
         "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "UEFEICsgTE9DSyBnaXZlcyBQQURMT0NLLiBEZWZpbml0aW9uOiBhIGZhc3RlbmVyLg=="
+      "explanation": "UEFEIChmbGF0KSArIExPQ0sgKHRvIHNlY3VyZSkgZ2l2ZXMgUEFETE9DSy4gRGVmaW5pdGlvbjogYSBwb3J0YWJsZSBmYXN0ZW5lci4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInBvcnRhYmxlIGZhc3RlbmVyIiBhdCB0aGUgZW5kLiBBIFBBRExPQ0sgaXMgYSBkZXRhY2hhYmxlIGxvY2sgd2l0aCBhIGhpbmdlZCBzaGFja2xlIHRoYXQgeW91IGNhbiBtb3ZlIGZyb20gZ2F0ZSB0byBnYXRlLg==",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJGbGF0IiBnaXZlcyBQQUQgKHNsYW5nIGZvciBhIGhvbWUpIGFuZCAidG8gc2VjdXJlIiBnaXZlcyBMT0NLOyAid2l0aCIgbGlua3MgdGhlIHdvcmRwbGF5IHRvIHRoZSBkZWZpbml0aW9uLg==",
+        "steps": [
+          "IkZsYXQiIOKAlCBpbmZvcm1hbCBzbGFuZyBmb3IgYSBmbGF0IG9yIGFwYXJ0bWVudCBpcyBQQUQu",
+          "InRvIHNlY3VyZSIg4oCUIHRvIGZhc3RlbiBhIGRvb3IgaXMgdG8gTE9DSyBpdC4=",
+          "UEFEICsgTE9DSyA9IFBBRExPQ0ssIGEgcG9ydGFibGUgZmFzdGVuZXIu"
+        ],
+        "note": "VGhlIGhhcmQgcGFydCBpcyByZWFkaW5nICJGbGF0IiBhcyBhIG5vdW4gbWVhbmluZyBob21lIHJhdGhlciB0aGFuIGFzIGFuIGFkamVjdGl2ZS4gV2hlbiBhIGNsdWUgb3BlbnMgd2l0aCBhbiBvcmRpbmFyeSB3b3JkIGxpa2UgImZsYXQiIG9yICJkaWdzIiwgY29uc2lkZXIgdGhlIHNsYW5nIGZvciBhIHBsYWNlIHRvIGxpdmUu"
+      }
     },
     {
       "id": 262,
       "printDate": "2026-11-03",
       "publishDate": "2026-11-03",
       "status": "scheduled",
-      "clue": "Gripping fastener: CLAP around middle (5)",
+      "clue": "Hold firmly: applaud round a thousand (5)",
       "answer": "Q0xBTVA=",
       "clueType": "container",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBkZXZpY2UgdGhhdCBncmlwcyB0aGluZ3MgdGlnaHRseS4=",
-        "Q29udGFpbmVyIGNsdWUg4oCUIGEgbGV0dGVyIGdvZXMgaW5zaWRlIGEgd29yZC4=",
-        "UHV0IE0gaW5zaWRlIENMQVAu",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0OiB0byBob2xkIHNvbWV0aGluZyB0aWdodGx5Lg==",
+        "Q29udGFpbmVyIOKAlCBvbmUgcGllY2UgZ29lcyBhcm91bmQgYW5vdGhlci4=",
+        "QSB3b3JkIGZvciBhcHBsYXVkIHBsYWNlZCBhcm91bmQgdGhlIFJvbWFuIG51bWVyYWwgZm9yIGEgdGhvdXNhbmQu",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "Q0xBUCBhcm91bmQgTSBnaXZlcyBDTEFNUC4gRGVmaW5pdGlvbjogYSBncmlwcGluZyBmYXN0ZW5lci4="
+      "explanation": "Q0xBUCAoYXBwbGF1ZCkgcm91bmQgTSAoYSB0aG91c2FuZCkgZ2l2ZXMgQ0xBTVAuIERlZmluaXRpb246IGhvbGQgZmlybWx5Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkhvbGQgZmlybWx5IiBhdCB0aGUgc3RhcnQuIFRvIENMQU1QIHNvbWV0aGluZyBpcyB0byBncmlwIGl0IHRpZ2h0bHkgaW4gcGxhY2Uu",
+        "device": "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLiAiYXBwbGF1ZCIgZ2l2ZXMgQ0xBUCwgImEgdGhvdXNhbmQiIGdpdmVzIE0gKHRoZSBSb21hbiBudW1lcmFsKSwgYW5kICJyb3VuZCIgdGVsbHMgeW91IENMQVAgd3JhcHMgYXJvdW5kIE0u",
+        "steps": [
+          "ImFwcGxhdWQiIOKAlCB0byBhcHBsYXVkIGlzIHRvIENMQVAu",
+          "ImEgdGhvdXNhbmQiIOKAlCBNIGlzIHRoZSBSb21hbiBudW1lcmFsIGZvciAxLDAwMC4=",
+          "UHV0IENMQVAgcm91bmQgTTogQ0xBICsgTSArIFAgPSBDTEFNUC4="
+        ],
+        "note": "TSBmb3IgYSB0aG91c2FuZCBpcyBvbmUgb2YgdGhlIHN0YW5kYXJkIGNyeXB0aWMgYWJicmV2aWF0aW9ucywgYWxvbmcgd2l0aCBDIGZvciBhIGh1bmRyZWQuIE9uY2UgeW91IGhhdmUgQ0xBUCwgbG9vayBmb3IgdGhlIHNwb3Qgd2hlcmUgYSBzaW5nbGUgZXh0cmEgbGV0dGVyIGNhbiBzbG90IGluIHRvIG1ha2UgYSB3b3JkLg=="
+      }
     },
     {
       "id": 263,
       "printDate": "2026-11-04",
       "publishDate": "2026-11-04",
       "status": "scheduled",
-      "clue": "Gap: beach taking in resistance (6)",
+      "clue": "Shore with resistance inside makes a gap (6)",
       "answer": "QlJFQUNI",
       "clueType": "container",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBnYXAgb3IgYnJlYWsgaW4gYSB3YWxsLg==",
-        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBzaXRzIGluc2lkZSBhIHdvcmQu",
-        "UHV0IFIgKHJlc2lzdGFuY2UpIGluc2lkZSBCRUFDSC4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogYW4gb3BlbmluZyBvciBicmVhay4=",
+        "Q29udGFpbmVyIOKAlCBhIGxldHRlciBnb2VzIGluc2lkZSBhIHdvcmQu",
+        "QSBzYW5keSBzaG9yZSB3aXRoIHRoZSBwaHlzaWNzIHN5bWJvbCBmb3IgcmVzaXN0YW5jZSBpbnNpZGUu",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "QkVBQ0ggdGFraW5nIGluIFIgZ2l2ZXMgQlJFQUNILiBEZWZpbml0aW9uOiBhIGdhcC4="
+      "explanation": "QkVBQ0ggKHNob3JlKSB3aXRoIFIgKHJlc2lzdGFuY2UpIGluc2lkZSBnaXZlcyBCUkVBQ0guIERlZmluaXRpb246IGEgZ2FwLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgZ2FwIiBhdCB0aGUgZW5kLiBBIEJSRUFDSCBpcyBhIGdhcCBvciBicmVhaywgYXMgaW4gYSBicmVhY2ggaW4gYSB3YWxsIG9yIGEgc2VhIGRlZmVuY2Uu",
+        "device": "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLiAiU2hvcmUiIGdpdmVzIEJFQUNILCAicmVzaXN0YW5jZSIgZ2l2ZXMgUiwgYW5kICJ3aXRoIC4uLiBpbnNpZGUiIHRlbGxzIHlvdSBSIGdvZXMgaW5zaWRlIEJFQUNILiAibWFrZXMiIGxpbmtzIHdvcmRwbGF5IHRvIGRlZmluaXRpb24u",
+        "steps": [
+          "IlNob3JlIiDigJQgYSBzYW5keSBzaG9yZSBpcyBhIEJFQUNILg==",
+          "InJlc2lzdGFuY2UiIOKAlCBpbiBwaHlzaWNzLCBSIGlzIHRoZSBzeW1ib2wgZm9yIHJlc2lzdGFuY2Uu",
+          "SW5zZXJ0IFIgYWZ0ZXIgdGhlIEI6IEIgKyBSICsgRUFDSCA9IEJSRUFDSC4="
+        ],
+        "note": "UiBmb3IgcmVzaXN0YW5jZSB0dXJucyB1cCBjb25zdGFudGx5IGluIGNyeXB0aWNzLiBUaGUgc3VyZmFjZSBoaW50cyBhdCBjb2FzdGFsIGVyb3Npb24sIHdoaWNoIGZpdHMgdGhlIGFuc3dlciBuZWF0bHkgYnV0IGRpc2d1aXNlcyB3aGVyZSB0aGUgZGVmaW5pdGlvbiBzdGFydHMu"
+      }
     },
     {
       "id": 264,
       "printDate": "2026-11-05",
       "publishDate": "2026-11-05",
       "status": "scheduled",
-      "clue": "Shore line: stand admitting resistance (6)",
+      "clue": "Leave stuck on shore? Stall admits resistance (6)",
       "answer": "U1RSQU5E",
       "clueType": "container",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIGZvciBhIHNob3JlIG9yIGJlYWNoLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0OiB0byBsZWF2ZSBzb21lb25lIHN0dWNrLCBwZXJoYXBzIG9uIGEgYmVhY2gu",
         "Q29udGFpbmVyIOKAlCBhIGxldHRlciBpcyBhZG1pdHRlZCBpbnNpZGUgYSB3b3JkLg==",
-        "UHV0IFIgKHJlc2lzdGFuY2UpIGluc2lkZSBTVEFORC4=",
+        "QSBtYXJrZXQgc3RhbGwgaXMgYSBfX19fOyBsZXQgUiBpbnNpZGUgaXQu",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U1RBTkQgYWRtaXR0aW5nIFIgZ2l2ZXMgU1RSQU5ELiBEZWZpbml0aW9uOiBhIHNob3JlLg=="
+      "explanation": "U1RBTkQgKHN0YWxsKSBhZG1pdHRpbmcgUiAocmVzaXN0YW5jZSkgZ2l2ZXMgU1RSQU5ELiBEZWZpbml0aW9uOiBsZWF2ZSBzdHVjayBvbiBzaG9yZS4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkxlYXZlIHN0dWNrIG9uIHNob3JlIiBhdCB0aGUgc3RhcnQuIFRvIFNUUkFORCBzb21lb25lIGlzIHRvIGxlYXZlIHRoZW0gc3R1Y2sg4oCUIG9yaWdpbmFsbHksIHRvIHJ1biBhIHNoaXAgYWdyb3VuZCBvbiB0aGUgc2hvcmUu",
+        "device": "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLiAiU3RhbGwiIGdpdmVzIFNUQU5ELCAicmVzaXN0YW5jZSIgZ2l2ZXMgUiwgYW5kICJhZG1pdHMiIHRlbGxzIHlvdSBTVEFORCB0YWtlcyBSIGluc2lkZSBpdC4=",
+        "steps": [
+          "IlN0YWxsIiDigJQgYSBtYXJrZXQgc3RhbGwgaXMgYWxzbyBjYWxsZWQgYSBTVEFORC4=",
+          "InJlc2lzdGFuY2UiIOKAlCBSLCB0aGUgcGh5c2ljcyBzeW1ib2wu",
+          "U1RBTkQgYWRtaXRzIFIgYWZ0ZXIgU1Q6IFNUICsgUiArIEFORCA9IFNUUkFORC4="
+        ],
+        "note": "IkFkbWl0cyIsICJ0YWtlcyBpbiIsICJob2xkcyIgYW5kICJzd2FsbG93cyIgYWxsIHBvaW50IHRvIGEgY29udGFpbmVyLiBUaGUgcXVlc3Rpb24gbWFyayBmbGFncyBhIHBsYXlmdWwgZGVmaW5pdGlvbjogU1RSQU5EIGlzIGFsc28gYW4gb2xkIHdvcmQgZm9yIHRoZSBzaG9yZSBpdHNlbGYu"
+      }
     },
     {
       "id": 265,
       "printDate": "2026-11-06",
       "publishDate": "2026-11-06",
       "status": "scheduled",
-      "clue": "Dish, or to send down a cricket ball (4)",
+      "clue": "Deliver a dish (4)",
       "answer": "Qk9XTA==",
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9ucy4=",
-        "T25lIGlzIGEgcm91bmRlZCBkaXNoLg==",
-        "VGhlIG90aGVyIG1lYW5zIHRvIGRlbGl2ZXIgYSBjcmlja2V0IGJhbGwu",
+        "VHdvIGRlZmluaXRpb25zIHNpZGUgYnkgc2lkZSwgZWFjaCBnaXZpbmcgdGhlIHNhbWUgd29yZC4=",
+        "RG91YmxlIGRlZmluaXRpb24g4oCUIHRoZXJlIGlzIG5vIHdvcmRwbGF5IHRvIHVucGljay4=",
+        "VGhpbmsgY3JpY2tldCBmb3IgdGhlIGZpcnN0IHdvcmQgYW5kIGNyb2NrZXJ5IGZvciB0aGUgc2Vjb25kLg==",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "Qk9XTCBtZWFucyBib3RoIGEgZGlzaCBhbmQgdG8gYm93bCBhIGNyaWNrZXQgYmFsbC4="
+      "explanation": "Qk9XTCBtZWFucyB0byBkZWxpdmVyIChhIGJhbGwsIGluIGNyaWNrZXQpIGFuZCBhIGRpc2gu",
+      "analysis": {
+        "definition": "VGhlcmUgYXJlIHR3byBkZWZpbml0aW9uczogIkRlbGl2ZXIiIGFuZCAiYSBkaXNoIi4gQm90aCBhcmUgQk9XTC4=",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLiBUaGUgY2x1ZSBpcyBzaW1wbHkgdHdvIG1lYW5pbmdzIG9mIHRoZSBzYW1lIHdvcmQgcGxhY2VkIHRvZ2V0aGVyLCB3aXRoIG5vIGluZGljYXRvcnMgb3IgZm9kZGVyLg==",
+        "steps": [
+          "IkRlbGl2ZXIiIOKAlCBpbiBjcmlja2V0IHRoZSBib3dsZXIgZGVsaXZlcnMgdGhlIGJhbGw6IHRvIEJPV0wu",
+          "ImEgZGlzaCIg4oCUIGEgZGVlcCByb3VuZCBkaXNoIGlzIGEgQk9XTC4=",
+          "Qm90aCByZWFkaW5ncyBnaXZlIEJPV0wgKDQgbGV0dGVycyku"
+        ],
+        "note": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhIGZvb2QgZGVsaXZlcnksIHdoaWNoIGlzIHRoZSBtaXNkaXJlY3Rpb246ICJkZWxpdmVyIiBoZXJlIGlzIGEgc3BvcnRpbmcgdGVybS4gSW4gc2hvcnQgY2x1ZXMgd2l0aCBubyBvYnZpb3VzIGluZGljYXRvciwgdGVzdCB3aGV0aGVyIGVhY2ggaGFsZiBkZWZpbmVzIHRoZSBzYW1lIHdvcmQu"
+      }
     },
     {
       "id": 266,
       "printDate": "2026-11-07",
       "publishDate": "2026-11-07",
       "status": "scheduled",
-      "clue": "To hit, or to stop work in protest (6)",
+      "clue": "Hit walk-out (6)",
       "answer": "U1RSSUtF",
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "VHdvIGRlZmluaXRpb25zIHBvaW50IHRvIG9uZSB3b3JkLg==",
-        "T25lIG1lYW5zIHRvIGhpdCBzb21ldGhpbmcu",
-        "VGhlIG90aGVyIG1lYW5zIHdvcmtlcnMgc3RvcHBpbmcgd29yayBpbiBwcm90ZXN0Lg==",
+        "VHdvIGRlZmluaXRpb25zLCBvbmUgYWZ0ZXIgdGhlIG90aGVyLg==",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "T25lIG1lYW5pbmcgaXMgdG8gaGl0OyB0aGUgb3RoZXIgaXMgd2hhdCB3b3JrZXJzIGRvIHdoZW4gdGhleSBkb3duIHRvb2xzLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U1RSSUtFIG1lYW5zIGJvdGggdG8gaGl0IGFuZCB0byBzdG9wIHdvcmsgaW4gcHJvdGVzdC4="
+      "explanation": "U1RSSUtFIG1lYW5zIHRvIGhpdCBhbmQgYSB3YWxrLW91dCBieSB3b3JrZXJzLg==",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiSGl0IiBhbmQgIndhbGstb3V0Ii4gQm90aCBhcmUgU1RSSUtFLg==",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLiAiSGl0IiBpcyB0aGUgdmVyYiBTVFJJS0U7ICJ3YWxrLW91dCIgaXMgdGhlIG5vdW4gU1RSSUtFLCBhIHN0b3BwYWdlIG9mIHdvcmsgaW4gcHJvdGVzdC4=",
+        "steps": [
+          "IkhpdCIg4oCUIHRvIGhpdCBpcyB0byBTVFJJS0Uu",
+          "IndhbGstb3V0IiDigJQgYSB3YWxrLW91dCBieSB3b3JrZXJzIGlzIGEgU1RSSUtFLg==",
+          "Qm90aCByZWFkaW5ncyBnaXZlIFNUUklLRS4="
+        ],
+        "note": "VGhlIHN1cmZhY2Ugc3VnZ2VzdHMgYSBoaXQgc2hvdywgc28gIkhpdCIgbG9va3MgbGlrZSBhbiBhZGplY3RpdmUuIFNldHRlcnMgbG92ZSB3b3JkcyB0aGF0IGNoYW5nZSBwYXJ0IG9mIHNwZWVjaCBiZXR3ZWVuIHRoZSBzdXJmYWNlIHJlYWRpbmcgYW5kIHRoZSBzb2x1dGlvbi4="
+      }
     },
     {
       "id": 267,
       "printDate": "2026-11-08",
       "publishDate": "2026-11-08",
       "status": "scheduled",
-      "clue": "The only fish, or the bottom of a shoe (4)",
+      "clue": "Only fish (4)",
       "answer": "U09MRQ==",
       "clueType": "double-definition",
       "difficulty": "hard",
       "hintLevels": [
-        "VHdvIG1lYW5pbmdzIGZvciBvbmUgd29yZC4=",
-        "T25lIGlzIGEgZmxhdGZpc2ggKGFuZCBtZWFucyAndGhlIG9ubHknKS4=",
-        "VGhlIG90aGVyIGlzIHRoZSB1bmRlcnNpZGUgb2YgYSBzaG9lLg==",
+        "VGhlIGNsdWUgaXMgdHdvIGRlZmluaXRpb25zIG9mIHRoZSBzYW1lIGZvdXItbGV0dGVyIHdvcmQu",
+        "RG91YmxlIGRlZmluaXRpb24g4oCUIGRvbid0IHJlYWQgJ09ubHknIGFzIGEgZmlsbGVyIHdvcmQu",
+        "QSB3b3JkIG1lYW5pbmcgc2luZ2xlIG9yIGV4Y2x1c2l2ZSwgd2hpY2ggaXMgYWxzbyBhIGZsYXRmaXNoLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U09MRSBtZWFucyBhIGZsYXRmaXNoLydvbmx5JyBhbmQgdGhlIGJvdHRvbSBvZiBhIHNob2Uu"
+      "explanation": "U09MRSBtZWFucyBvbmx5IChhcyBpbiBzb2xlIHN1cnZpdm9yKSBhbmQgYSBmbGF0ZmlzaC4=",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiT25seSIgYW5kICJmaXNoIi4gU09MRSBtZWFucyBvbmx5IG9yIHNpbmdsZSAodGhlIHNvbGUgc3Vydml2b3IpLCBhbmQgYSBzb2xlIGlzIGEgZmxhdGZpc2gu",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLiBUaGUgdHdvLXdvcmQgY2x1ZSBsb29rcyBsaWtlIGEgcGhyYXNlIG1lYW5pbmcgImp1c3QgZmlzaCIsIGJ1dCBlYWNoIHdvcmQgaXMgYSBzZXBhcmF0ZSBkZWZpbml0aW9uIG9mIFNPTEUu",
+        "steps": [
+          "Ik9ubHkiIOKAlCBzaW5nbGUsIGV4Y2x1c2l2ZTogU09MRSwgYXMgaW4gInNvbGUgb3duZXIiLg==",
+          "ImZpc2giIOKAlCB0aGUgc29sZSBpcyBhIGZsYXRmaXNoLCBhcyBpbiBEb3ZlciBzb2xlLg==",
+          "Qm90aCByZWFkaW5ncyBnaXZlIFNPTEUu"
+        ],
+        "note": "VmVyeSBzaG9ydCBjbHVlcyBhcmUgb2Z0ZW4gZG91YmxlIGRlZmluaXRpb25zLiBIZXJlIHRoZSBuYXR1cmFsIHJlYWRpbmcgKCJub3RoaW5nIGJ1dCBmaXNoIikgaXMgdGhlIG1pc2RpcmVjdGlvbjsgc3BsaXQgdGhlIGNsdWUgaW50byBpdHMgdHdvIHdvcmRzIGFuZCBkZWZpbmUgZWFjaCBvbmUu"
+      }
     },
     {
       "id": 268,
       "printDate": "2026-11-09",
       "publishDate": "2026-11-09",
       "status": "scheduled",
-      "clue": "Hidden truth in those Cretan ruins (6)",
+      "clue": "Confidential information in those Cretan ruins (6)",
       "answer": "U0VDUkVU",
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "QSB3b3JkIGZvciBzb21ldGhpbmcga2VwdCBoaWRkZW4gaXMgY29uY2VhbGVkLg==",
-        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSBnYXAgYmV0d2VlbiB3b3Jkcy4=",
-        "Rm91bmQgaW4gJ3Rob1NFIENSRVRhbicu",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0OiBzb21ldGhpbmcga2VwdCBwcml2YXRlLg==",
+        "SGlkZGVuIHdvcmQg4oCUICdpbicgdGVsbHMgeW91IHRoZSBhbnN3ZXIgaXMgaW5zaWRlIHRoZSBjbHVlLg==",
+        "TG9vayBhY3Jvc3MgdGhlIHdvcmRzICd0aG9zZSBDcmV0YW4nLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SGlkZGVuIGluICd0aG9TRSBDUkVUYW4nIGlzIFNFQ1JFVC4gRGVmaW5pdGlvbjogYSBoaWRkZW4gdHJ1dGgu"
+      "explanation": "SGlkZGVuIGluICd0aG9TRSBDUkVUYW4nIGlzIFNFQ1JFVC4gRGVmaW5pdGlvbjogY29uZmlkZW50aWFsIGluZm9ybWF0aW9uLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkNvbmZpZGVudGlhbCBpbmZvcm1hdGlvbiIgYXQgdGhlIHN0YXJ0LiBBIFNFQ1JFVCBpcyBzb21ldGhpbmcga2VwdCBwcml2YXRlIGZyb20gb3RoZXJzLg==",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiaW4iIHRlbGxzIHlvdSB0aGUgYW5zd2VyIGlzIHdyaXR0ZW4gaW5zaWRlIHRoZSBjbHVlLCBydW5uaW5nIGFjcm9zcyAidGhvc2UgQ3JldGFuIi4=",
+        "steps": [
+          "ImluIiBzaWduYWxzIHRoYXQgdGhlIGFuc3dlciBpcyBoaWRkZW4gaW4gdGhlIGZvbGxvd2luZyB3b3Jkcy4=",
+          "V3JpdGUgb3V0ICJ0aG9zZSBDcmV0YW4iIHdpdGhvdXQgdGhlIHNwYWNlOiBUSE9TRUNSRVRBTi4=",
+          "SW5zaWRlIGl0IHNpdHMgUy1FLUMtUi1FLVQ6IHRob1NFIENSRVRhbiDigJQgU0VDUkVULg=="
+        ],
+        "note": "InJ1aW5zIiBvbmx5IGNvbXBsZXRlcyB0aGUgcGljdHVyZSBvZiBhbiBhcmNoYWVvbG9naWNhbCBzaXRlOyBpdCBwbGF5cyBubyBwYXJ0IGluIHRoZSB3b3JkcGxheS4gSGlkZGVuIHdvcmRzIG9mdGVuIHN0cmFkZGxlIGEgd29yZCBicmVhaywgc28gYWx3YXlzIHJlYWQgdGhlIGxldHRlcnMgYWNyb3NzIHRoZSBnYXAu"
+      }
     },
     {
       "id": 269,
       "printDate": "2026-11-10",
       "publishDate": "2026-11-10",
       "status": "scheduled",
-      "clue": "Mother or father hidden in top a rental (6)",
+      "clue": "Mother, perhaps, found in spa rental (6)",
       "answer": "UEFSRU5U",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "QSB3b3JkIGZvciBhIG1vdGhlciBvciBmYXRoZXIgaXMgY29uY2VhbGVkLg==",
-        "SGlkZGVuIHdvcmQg4oCUIHNjYW4gYWNyb3NzIHRoZSBib3VuZGFyeS4=",
-        "Rm91bmQgaW4gJ3RvUCBBIFJFTlRhbCcu",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0IOKAlCAncGVyaGFwcycgbWVhbnMgaXQgaXMgb25lIGV4YW1wbGUgb2YgdGhlIGFuc3dlci4=",
+        "SGlkZGVuIHdvcmQ6ICdmb3VuZCBpbicgcG9pbnRzIGluc2lkZSB0aGUgY2x1ZS4=",
+        "TG9vayBhY3Jvc3MgJ3NwYSByZW50YWwnLg==",
         "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "SGlkZGVuIGluICd0b1AgQSBSRU5UYWwnIGlzIFBBUkVOVC4gRGVmaW5pdGlvbjogYSBtb3RoZXIgb3IgZmF0aGVyLg=="
+      "explanation": "SGlkZGVuIGluICdzUEEgUkVOVGFsJyBpcyBQQVJFTlQuIERlZmluaXRpb246IG1vdGhlciwgcGVyaGFwcy4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIk1vdGhlciwgcGVyaGFwcyIgYXQgdGhlIHN0YXJ0LiBBIG1vdGhlciBpcyBvbmUga2luZCBvZiBQQVJFTlQ7ICJwZXJoYXBzIiB0ZWxscyB5b3UgdGhlIGRlZmluaXRpb24gaXMgYW4gZXhhbXBsZSByYXRoZXIgdGhhbiBhIHN5bm9ueW0u",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiZm91bmQgaW4iIHRlbGxzIHlvdSB0aGUgYW5zd2VyIGlzIGNvbmNlYWxlZCBpbiB0aGUgbGV0dGVycyBvZiAic3BhIHJlbnRhbCIu",
+        "steps": [
+          "ImZvdW5kIGluIiBzaWduYWxzIGEgaGlkZGVuIHdvcmQu",
+          "UnVuICJzcGEgcmVudGFsIiB0b2dldGhlcjogU1BBUkVOVEFMLg==",
+          "SW5zaWRlIGl0OiBzUEEgUkVOVGFsIOKAlCBQQVJFTlQu"
+        ],
+        "note": "RGVmaW5pdGlvbiBieSBleGFtcGxlICgiTW90aGVyLCBwZXJoYXBzIiwgIlJvdmVyLCBzYXkiKSBpcyBhIGNsYXNzaWMgZGV2aWNlLiBJZiBhIGRlZmluaXRpb24gc2VlbXMgb2RkbHkgc3BlY2lmaWMsIGxvb2sgZm9yIGEgcXVhbGlmaWVyIGxpa2UgInBlcmhhcHMiIG9yICJzYXkiIHRoYXQgd2lkZW5zIGl0Lg=="
+      }
     },
     {
       "id": 270,
       "printDate": "2026-11-11",
       "publishDate": "2026-11-11",
       "status": "scheduled",
-      "clue": "Red gem hidden in sugar nets (6)",
+      "clue": "Stone kept in hangar network (6)",
       "answer": "R0FSTkVU",
       "clueType": "hidden-word",
       "difficulty": "hard",
       "hintLevels": [
-        "QSBkZWVwLXJlZCBnZW1zdG9uZSBpcyBjb25jZWFsZWQu",
-        "SGlkZGVuIHdvcmQgc3Bhbm5pbmcgdGhlIHBocmFzZS4=",
-        "Rm91bmQgaW4gJ3N1R0FSIE5FVHMnLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQg4oCUIHRoaW5rIHByZWNpb3VzIHJhdGhlciB0aGFuIHBlYmJsZS4=",
+        "SGlkZGVuIHdvcmQ6ICdrZXB0IGluJyB0ZWxscyB5b3Ugd2hlcmUgdG8gbG9vay4=",
+        "UmVhZCBhY3Jvc3MgJ2hhbmdhciBuZXR3b3JrJy4=",
         "U3RhcnRzIHdpdGggRy4="
       ],
-      "explanation": "SGlkZGVuIGluICdzdUdBUiBORVRzJyBpcyBHQVJORVQuIERlZmluaXRpb246IGEgcmVkIGdlbS4="
+      "explanation": "SGlkZGVuIGluICdoYW5HQVIgTkVUd29yaycgaXMgR0FSTkVULiBEZWZpbml0aW9uOiBzdG9uZSAoYSBnZW1zdG9uZSku",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlN0b25lIiBhdCB0aGUgc3RhcnQuIEEgR0FSTkVUIGlzIGEgZGVlcC1yZWQgZ2Vtc3RvbmUu",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAia2VwdCBpbiIgdGVsbHMgeW91IHRoZSBhbnN3ZXIgaXMgc3RvcmVkIGluc2lkZSAiaGFuZ2FyIG5ldHdvcmsiLg==",
+        "steps": [
+          "ImtlcHQgaW4iIHNpZ25hbHMgYSBoaWRkZW4gd29yZC4=",
+          "UnVuIHRoZSBsZXR0ZXJzIHRvZ2V0aGVyOiBIQU5HQVJORVRXT1JLLg==",
+          "SW5zaWRlOiBoYW5HQVIgTkVUd29yayDigJQgR0FSTkVULg=="
+        ],
+        "note": "IlN0b25lIiBjb3VsZCBiZSBhIHBlYmJsZSwgYSB3ZWlnaHQgb2YgMTQgcG91bmRzIG9yIGEgZnJ1aXQgcGl0OyBoZXJlIGl0IGlzIGEgZ2Vtc3RvbmUuIFRoZSBhbnN3ZXIgc3RyYWRkbGVzIHRoZSBnYXAgYmV0d2VlbiB0aGUgdHdvIHdvcmRzLCB3aGljaCBpcyB3aGF0IG1ha2VzIGl0IGhhcmQgdG8gc2VlLg=="
+      }
     },
     {
       "id": 271,
       "printDate": "2026-11-12",
       "publishDate": "2026-11-12",
       "status": "scheduled",
-      "clue": "Strained, hidden in often seen (5)",
+      "clue": "Some kitten seems nervous (5)",
       "answer": "VEVOU0U=",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "QSB3b3JkIG1lYW5pbmcgc3RyYWluZWQgb3IgdGlnaHQgaXMgY29uY2VhbGVkLg==",
-        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSB3b3Jkcy4=",
-        "Rm91bmQgaW4gJ29mVEVOIFNFZW4nLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGxhc3Qgd29yZC4=",
+        "SGlkZGVuIHdvcmQg4oCUICdTb21lJyBtZWFucyBwYXJ0IG9mIHRoZSBsZXR0ZXJzIHRoYXQgZm9sbG93Lg==",
+        "TG9vayBhY3Jvc3MgJ2tpdHRlbiBzZWVtcycu",
         "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "SGlkZGVuIGluICdvZlRFTiBTRWVuJyBpcyBURU5TRS4gRGVmaW5pdGlvbjogc3RyYWluZWQu"
+      "explanation": "SGlkZGVuIGluICdraXRURU4gU0VlbXMnIGlzIFRFTlNFLiBEZWZpbml0aW9uOiBuZXJ2b3VzLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIm5lcnZvdXMiIGF0IHRoZSBlbmQuIFRFTlNFIG1lYW5zIGFueGlvdXMgb3Igb24gZWRnZS4=",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiU29tZSIgdGVsbHMgeW91IHRvIHRha2Ugc29tZSBvZiB0aGUgbGV0dGVycyB0aGF0IGZvbGxvdzogdGhlIGFuc3dlciBpcyBpbnNpZGUgImtpdHRlbiBzZWVtcyIu",
+        "steps": [
+          "IlNvbWUiIHNpZ25hbHMgdGhhdCBvbmx5IHBhcnQgb2YgdGhlIG5leHQgd29yZHMgaXMgbmVlZGVkLg==",
+          "UnVuIHRoZSBsZXR0ZXJzIHRvZ2V0aGVyOiBLSVRURU5TRUVNUy4=",
+          "SW5zaWRlOiBraXRURU4gU0VlbXMg4oCUIFRFTlNFLg=="
+        ],
+        "note": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhIHNlbnRlbmNlIGFib3V0IGEgY2F0LCBzbyAiU29tZSIgbG9va3MgbGlrZSBhbiBvcmRpbmFyeSB3b3JkLiBXaGVuIGEgY2x1ZSBvcGVucyB3aXRoICJzb21lIiwgInBhcnQgb2YiIG9yICJpbiIsIGNoZWNrIHRoZSBuZXh0IGZldyB3b3JkcyBmb3IgYSBoaWRkZW4gYW5zd2VyIGZpcnN0Lg=="
+      }
     },
     {
       "id": 272,
       "printDate": "2026-11-13",
       "publishDate": "2026-11-13",
       "status": "scheduled",
-      "clue": "Piece from TRAP turned round (4)",
+      "clue": "Piece of snare brought back (4)",
       "answer": "UEFSVA==",
       "clueType": "reversal",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIGZvciBhIHBpZWNlIG9yIHBvcnRpb24u",
-        "J1R1cm5lZCByb3VuZCcgc2lnbmFscyBhIHJldmVyc2FsLg==",
-        "UmV2ZXJzZSB0aGUgbGV0dGVycyBpbiBUUkFQLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "UmV2ZXJzYWwg4oCUICdicm91Z2h0IGJhY2snIG1lYW5zIHdyaXRlIGEgd29yZCBiYWNrd2FyZHMu",
+        "QSBzbmFyZSBpcyBhIF9fX187IHJldmVyc2UgaXQu",
         "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "VFJBUCB0dXJuZWQgcm91bmQgKHJldmVyc2VkKSBnaXZlcyBQQVJULiBEZWZpbml0aW9uOiBhIHBpZWNlLg=="
+      "explanation": "VFJBUCAoc25hcmUpIGJyb3VnaHQgYmFjayAocmV2ZXJzZWQpIGdpdmVzIFBBUlQuIERlZmluaXRpb246IHBpZWNlLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlBpZWNlIiBhdCB0aGUgc3RhcnQuIEEgUEFSVCBpcyBhIHBpZWNlIG9yIHBvcnRpb24gb2Ygc29tZXRoaW5nLg==",
+        "device": "VGhpcyBpcyBhIHJldmVyc2FsLiAic25hcmUiIGdpdmVzIFRSQVAsIGFuZCAiYnJvdWdodCBiYWNrIiB0ZWxscyB5b3UgdG8gcmVhZCBpdCBiYWNrd2FyZHM7ICJvZiIgbGlua3MgdGhlIHR3byBoYWx2ZXMu",
+        "steps": [
+          "InNuYXJlIiDigJQgYSBzbmFyZSBpcyBhIFRSQVAu",
+          "ImJyb3VnaHQgYmFjayIg4oCUIHdyaXRlIFRSQVAgaW4gcmV2ZXJzZS4=",
+          "VC1SLUEtUCByZXZlcnNlZCBpcyBQLUEtUi1UIOKAlCBQQVJULg=="
+        ],
+        "note": "IkJyb3VnaHQgYmFjayIsICJyZXR1cm5lZCIgYW5kICJzZW50IHVwIiBhcmUgY29tbW9uIHJldmVyc2FsIGluZGljYXRvcnMuIFNob3J0IHdvcmRzIGxpa2UgVFJBUC9QQVJULCBTVE9QL1BPVFMgYW5kIFdBUi9SQVcgYXJlIGZhdm91cml0ZXMgYmVjYXVzZSBib3RoIGRpcmVjdGlvbnMgYXJlIHJlYWwgd29yZHMu"
+      }
     },
     {
       "id": 273,
       "printDate": "2026-11-14",
       "publishDate": "2026-11-14",
       "status": "scheduled",
-      "clue": "Band when parts are sent back (5)",
+      "clue": "Pieces returned for a belt (5)",
       "answer": "U1RSQVA=",
       "clueType": "reversal",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBiYW5kIG9mIGxlYXRoZXIgb3IgZmFicmljLg==",
-        "UmV2ZXJzYWwg4oCUICdzZW50IGJhY2snIGlzIHRoZSBpbmRpY2F0b3Iu",
-        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBQQVJUUy4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "UmV2ZXJzYWwg4oCUICdyZXR1cm5lZCcgbWVhbnMgcmVhZCBiYWNrd2FyZHMu",
+        "QW5vdGhlciB3b3JkIGZvciBwaWVjZXMsIHdyaXR0ZW4gYmFja3dhcmRzLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "UEFSVFMgc2VudCBiYWNrIChyZXZlcnNlZCkgZ2l2ZXMgU1RSQVAuIERlZmluaXRpb246IGEgYmFuZC4="
+      "explanation": "UEFSVFMgKHBpZWNlcykgcmV0dXJuZWQgKHJldmVyc2VkKSBnaXZlcyBTVFJBUC4gRGVmaW5pdGlvbjogYSBiZWx0Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgYmVsdCIgYXQgdGhlIGVuZC4gQSBTVFJBUCBpcyBhIHN0cmlwIG9mIGxlYXRoZXIgb3IgZmFicmljLCBsaWtlIGEgYmVsdC4=",
+        "device": "VGhpcyBpcyBhIHJldmVyc2FsLiAiUGllY2VzIiBnaXZlcyBQQVJUUyBhbmQgInJldHVybmVkIiB0ZWxscyB5b3UgdG8gcmV2ZXJzZSBpdDsgImZvciIgbGlua3Mgd29yZHBsYXkgdG8gZGVmaW5pdGlvbi4=",
+        "steps": [
+          "IlBpZWNlcyIg4oCUIFBBUlRTLg==",
+          "InJldHVybmVkIiDigJQgcmV2ZXJzZSB0aGUgd29yZC4=",
+          "UC1BLVItVC1TIGJhY2t3YXJkcyBpcyBTLVQtUi1BLVAg4oCUIFNUUkFQLg=="
+        ],
+        "note": "UGx1cmFscyBlbmRpbmcgaW4gUyBvZnRlbiByZXZlcnNlIGludG8gd29yZHMgc3RhcnRpbmcgd2l0aCBTOiBQQVJUUy9TVFJBUCwgU1RPUFMvU1BPVFMsIFJFV0FSRC9EUkFXRVIuIElmIHlvdSBzZWUgYSBwbHVyYWwgbmV4dCB0byBhIHJldmVyc2FsIGluZGljYXRvciwgdHJ5IGl0IGJhY2t3YXJkcy4="
+      }
     },
     {
       "id": 274,
       "printDate": "2026-11-15",
       "publishDate": "2026-11-15",
       "status": "scheduled",
-      "clue": "Period when emit is reversed (4)",
+      "clue": "Give off in return for a while (4)",
       "answer": "VElNRQ==",
       "clueType": "reversal",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIGZvciBhIHBlcmlvZCBvciBkdXJhdGlvbi4=",
-        "UmV2ZXJzYWwg4oCUICdyZXZlcnNlZCcgc2lnbmFscyBpdC4=",
-        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBFTUlULg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogYSBwZXJpb2Qu",
+        "UmV2ZXJzYWwg4oCUICdpbiByZXR1cm4nLg==",
+        "QSB3b3JkIGZvciAnZ2l2ZSBvZmYnIChhcyBhIGxhbXAgZ2l2ZXMgb2ZmIGxpZ2h0KSwgYmFja3dhcmRzLg==",
         "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "RU1JVCByZXZlcnNlZCBnaXZlcyBUSU1FLiBEZWZpbml0aW9uOiBhIHBlcmlvZC4="
+      "explanation": "RU1JVCAoZ2l2ZSBvZmYpIGluIHJldHVybiAocmV2ZXJzZWQpIGdpdmVzIFRJTUUuIERlZmluaXRpb246IGEgd2hpbGUu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgd2hpbGUiIGF0IHRoZSBlbmQuIFRJTUUgY2FuIG1lYW4gYSBwZXJpb2Qgb3IgYSB3aGlsZSAoImZvciBhIHRpbWUiKS4=",
+        "device": "VGhpcyBpcyBhIHJldmVyc2FsLiAiR2l2ZSBvZmYiIGdpdmVzIEVNSVQsICJpbiByZXR1cm4iIHJldmVyc2VzIGl0LCBhbmQgImZvciIgbGlua3MgdG8gdGhlIGRlZmluaXRpb24u",
+        "steps": [
+          "IkdpdmUgb2ZmIiDigJQgdG8gZ2l2ZSBvZmYgbGlnaHQgb3IgaGVhdCBpcyB0byBFTUlUIGl0Lg==",
+          "ImluIHJldHVybiIg4oCUIHJldmVyc2UgdGhlIGxldHRlcnMu",
+          "RS1NLUktVCBiYWNrd2FyZHMgaXMgVC1JLU0tRSDigJQgVElNRS4="
+        ],
+        "note": "IkluIHJldHVybiIgcmVhZHMgbmF0dXJhbGx5IGFzICJpbiBleGNoYW5nZSIsIHdoaWNoIGlzIHdoeSBpdCBtYWtlcyBhIHNuZWFreSByZXZlcnNhbCBpbmRpY2F0b3Iu"
+      }
     },
     {
       "id": 275,
       "printDate": "2026-11-16",
       "publishDate": "2026-11-16",
       "status": "scheduled",
-      "clue": "Dull when bard turns back (4)",
+      "clue": "Dull poet returning (4)",
       "answer": "RFJBQg==",
       "clueType": "reversal",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgZHVsbCBvciBjb2xvdXJsZXNzLg==",
-        "UmV2ZXJzYWwg4oCUICd0dXJucyBiYWNrJyBpcyB0aGUgaW5kaWNhdG9yLg==",
-        "UmV2ZXJzZSB0aGUgbGV0dGVycyBvZiBCQVJELg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "UmV2ZXJzYWwg4oCUICdyZXR1cm5pbmcnLg==",
+        "QSBwb2V0IChTaGFrZXNwZWFyZSBpcyB0aGUgbW9zdCBmYW1vdXMgb25lKSwgYmFja3dhcmRzLg==",
         "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "QkFSRCB0dXJucyBiYWNrIChyZXZlcnNlZCkgZ2l2ZXMgRFJBQi4gRGVmaW5pdGlvbjogZHVsbC4="
+      "explanation": "QkFSRCAocG9ldCkgcmV0dXJuaW5nIChyZXZlcnNlZCkgZ2l2ZXMgRFJBQi4gRGVmaW5pdGlvbjogZHVsbC4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkR1bGwiIGF0IHRoZSBzdGFydC4gRFJBQiBtZWFucyBkcmVhcnksIGxhY2tpbmcgY29sb3VyIG9yIGludGVyZXN0Lg==",
+        "device": "VGhpcyBpcyBhIHJldmVyc2FsLiAicG9ldCIgZ2l2ZXMgQkFSRCBhbmQgInJldHVybmluZyIgdGVsbHMgeW91IHRvIHJldmVyc2UgaXQu",
+        "steps": [
+          "InBvZXQiIOKAlCBhIHBvZXQgaXMgYSBCQVJEIChTaGFrZXNwZWFyZSBpcyB0aGUgQmFyZCku",
+          "InJldHVybmluZyIg4oCUIHdyaXRlIGl0IGJhY2t3YXJkcy4=",
+          "Qi1BLVItRCByZXZlcnNlZCBpcyBELVItQS1CIOKAlCBEUkFCLg=="
+        ],
+        "note": "QkFSRCBpcyB0aGUgY3J5cHRpYyBzZXR0ZXIncyBmYXZvdXJpdGUgcG9ldC4gVGhlIHN1cmZhY2Ugc291bmRzIGxpa2UgYSBjcml0aWNpc20gb2YgYSByZXR1cm5pbmcgd3JpdGVyLCBzbyAiRHVsbCIgbG9va3MgbGlrZSBhbiBhZGplY3RpdmUgZGVzY3JpYmluZyB0aGUgcG9ldCByYXRoZXIgdGhhbiBhIHNlcGFyYXRlIGRlZmluaXRpb24u"
+      }
     },
     {
       "id": 276,
       "printDate": "2026-11-17",
       "publishDate": "2026-11-17",
       "status": "scheduled",
-      "clue": "Oceans we hear are 'looks at' (4)",
+      "clue": "Waters, it's said, notices (4)",
       "answer": "U0VBUw==",
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgbGFyZ2UgYm9kaWVzIG9mIHNhbHQgd2F0ZXIu",
-        "J1dlIGhlYXInIHNpZ25hbHMgYSBob21vcGhvbmUu",
-        "U291bmRzIGxpa2UgU0VFUyAobG9va3MgYXQpLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SG9tb3Bob25lIOKAlCAnaXQncyBzYWlkJyBtZWFucyBzb3VuZHMgbGlrZS4=",
+        "QSB3b3JkIG1lYW5pbmcgJ25vdGljZXMnIHNvdW5kcyBsaWtlIGxhcmdlIGJvZGllcyBvZiBzYWx0IHdhdGVyLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U0VBUyBzb3VuZHMgbGlrZSBTRUVTLiBEZWZpbml0aW9uOiBvY2VhbnMu"
+      "explanation": "U0VBUyBzb3VuZHMgbGlrZSBTRUVTIChub3RpY2VzKS4gRGVmaW5pdGlvbjogd2F0ZXJzLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIldhdGVycyIgYXQgdGhlIHN0YXJ0LiBTRUFTIGFyZSBsYXJnZSBib2RpZXMgb2Ygc2FsdCB3YXRlci4=",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gIml0J3Mgc2FpZCIgdGVsbHMgeW91IHRoZSBhbnN3ZXIgc291bmRzIGxpa2UgYW5vdGhlciB3b3JkOiBTRUVTLCBtZWFuaW5nICJub3RpY2VzIi4=",
+        "steps": [
+          "Im5vdGljZXMiIOKAlCBTRUVTLg==",
+          "Iml0J3Mgc2FpZCIg4oCUIHNheSBpdCBhbG91ZC4=",
+          "U0VFUyBzb3VuZHMgbGlrZSBTRUFTLCB3aGljaCBtYXRjaGVzICJXYXRlcnMiLg=="
+        ],
+        "note": "VGhlIHN1cmZhY2UgcGljdHVyZXMgYSBwZXJzb24gY2FsbGVkIFdhdGVycyBub3RpY2luZyBzb21ldGhpbmcuIEEgY2FwaXRhbCBsZXR0ZXIgYXQgdGhlIHN0YXJ0IG9mIGEgY2x1ZSBpcyBubyBndWlkZSDigJQgIldhdGVycyIgaGVyZSBpcyBqdXN0IHRoZSBvcmRpbmFyeSBub3VuLg=="
+      }
     },
     {
       "id": 277,
       "printDate": "2026-11-18",
       "publishDate": "2026-11-18",
       "status": "scheduled",
-      "clue": "Corn we hear is a labyrinth (5)",
+      "clue": "Crop for a puzzle, by the sound of it (5)",
       "answer": "TUFJWkU=",
       "clueType": "homophone",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgY29ybiBvbiB0aGUgY29iLg==",
-        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicgc2lnbmFscyBpdC4=",
-        "U291bmRzIGxpa2UgTUFaRSAoYSBsYWJ5cmludGgpLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQ6IHNvbWV0aGluZyBmYXJtZXJzIGdyb3cu",
+        "SG9tb3Bob25lIOKAlCAnYnkgdGhlIHNvdW5kIG9mIGl0Jy4=",
+        "QSBwdXp6bGUgb2Ygd2luZGluZyBwYXRocyBzb3VuZHMgbGlrZSBhIGNlcmVhbCBjcm9wLg==",
         "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "TUFJWkUgc291bmRzIGxpa2UgTUFaRS4gRGVmaW5pdGlvbjogY29ybi4="
+      "explanation": "TUFJWkUgKGNyb3ApIHNvdW5kcyBsaWtlIE1BWkUgKHB1enpsZSku",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkNyb3AiIGF0IHRoZSBzdGFydC4gTUFJWkUgaXMgdGhlIGNlcmVhbCBjcm9wIGFsc28gY2FsbGVkIGNvcm4u",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gInB1enpsZSIgZ2l2ZXMgTUFaRSwgYW5kICJieSB0aGUgc291bmQgb2YgaXQiIHRlbGxzIHlvdSB0aGUgYW5zd2VyIGlzIGEgc291bmQtYWxpa2Uu",
+        "steps": [
+          "InB1enpsZSIg4oCUIGEgTUFaRSBpcyBhIHB1enpsZSBvZiB3aW5kaW5nIHBhdGhzLg==",
+          "ImJ5IHRoZSBzb3VuZCBvZiBpdCIg4oCUIGZpbmQgYSB3b3JkIHRoYXQgc291bmRzIHRoZSBzYW1lLg==",
+          "TUFaRSBzb3VuZHMgbGlrZSBNQUlaRSwgdGhlIGNyb3Au"
+        ],
+        "note": "RmFybWVycyByZWFsbHkgZG8gY3V0IG1hemVzIGludG8gbWFpemUgZmllbGRzIGV2ZXJ5IHN1bW1lciwgd2hpY2ggbWFrZXMgdGhlIHN1cmZhY2UgZmVlbCBhbG1vc3QgbGl0ZXJhbC4gV2l0aCBob21vcGhvbmVzLCBjaGVjayB3aGljaCBoYWxmIGlzIHRoZSBkZWZpbml0aW9uOiBoZXJlIHRoZSBhbnN3ZXIgaXMgdGhlIGNyb3AsIG5vdCB0aGUgcHV6emxlLg=="
+      }
     },
     {
       "id": 278,
       "printDate": "2026-11-19",
       "publishDate": "2026-11-19",
       "status": "scheduled",
-      "clue": "Breakfast food sounding like a TV series (6)",
+      "clue": "Breakfast food broadcast in instalments (6)",
       "answer": "Q0VSRUFM",
       "clueType": "homophone",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBicmVha2Zhc3QgZm9vZCBlYXRlbiB3aXRoIG1pbGsu",
-        "SG9tb3Bob25lIOKAlCAnc291bmRpbmcgbGlrZScu",
-        "U291bmRzIGxpa2UgU0VSSUFMIChhIFRWIHNlcmllcyku",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0OiBzb21ldGhpbmcgZWF0ZW4gaW4gdGhlIG1vcm5pbmcu",
+        "SG9tb3Bob25lIOKAlCAnYnJvYWRjYXN0JyBtZWFucyBzYWlkIGFsb3VkLg==",
+        "QSBzdG9yeSB0b2xkIGluIGluc3RhbG1lbnRzIGlzIGEgX19fXzsgaXQgc291bmRzIGxpa2UgdGhlIGFuc3dlci4=",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "Q0VSRUFMIHNvdW5kcyBsaWtlIFNFUklBTC4gRGVmaW5pdGlvbjogYSBicmVha2Zhc3QgZm9vZC4="
+      "explanation": "Q0VSRUFMIHNvdW5kcyBsaWtlIFNFUklBTCAoaW4gaW5zdGFsbWVudHMpLiBEZWZpbml0aW9uOiBicmVha2Zhc3QgZm9vZC4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkJyZWFrZmFzdCBmb29kIiBhdCB0aGUgc3RhcnQuIENFUkVBTCBpcyBncmFpbiBlYXRlbiBhdCBicmVha2Zhc3Qu",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gImluIGluc3RhbG1lbnRzIiBkZXNjcmliZXMgYSBTRVJJQUwsIGFuZCAiYnJvYWRjYXN0IiB0ZWxscyB5b3UgdG8gc2F5IGl0IG91dCBsb3VkLg==",
+        "steps": [
+          "ImluIGluc3RhbG1lbnRzIiDigJQgYSBzdG9yeSBwdWJsaXNoZWQgaW4gaW5zdGFsbWVudHMgaXMgYSBTRVJJQUwu",
+          "ImJyb2FkY2FzdCIg4oCUIHNheSBpdCBhbG91ZC4=",
+          "U0VSSUFMIHNvdW5kcyBsaWtlIENFUkVBTCwgdGhlIGJyZWFrZmFzdCBmb29kLg=="
+        ],
+        "note": "IkJyb2FkY2FzdCIsICJvbiBhaXIiIGFuZCAicmVwb3J0ZWRseSIgYXJlIGhvbW9waG9uZSBpbmRpY2F0b3JzIHRoYXQgYmxlbmQgaW50byBhIHN1cmZhY2UgYWJvdXQgdGVsZXZpc2lvbiBvciByYWRpby4gSGVyZSB0aGUgVFYgaW1hZ2UgbWFrZXMgInNlcmlhbCIgZmVlbCBsaWtlIHRoZSB0b3BpYyByYXRoZXIgdGhhbiB0aGUgd29yZHBsYXku"
+      }
     },
     {
       "id": 279,
       "printDate": "2026-11-20",
       "publishDate": "2026-11-20",
       "status": "scheduled",
-      "clue": "Royal seat that sounds like tossed (6)",
+      "clue": "Pitched, we hear, for the seat of power (6)",
       "answer": "VEhST05F",
       "clueType": "homophone",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgdGhlIHNlYXQgYSBtb25hcmNoIHNpdHMgb24u",
-        "SG9tb3Bob25lIOKAlCAnc291bmRzIGxpa2UnLg==",
-        "U291bmRzIGxpa2UgVEhST1dOICh0b3NzZWQpLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicu",
+        "QSB3b3JkIG1lYW5pbmcgJ3BpdGNoZWQnIG9yICdodXJsZWQnIHNvdW5kcyBsaWtlIGEgcm95YWwgY2hhaXIu",
         "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "VEhST05FIHNvdW5kcyBsaWtlIFRIUk9XTi4gRGVmaW5pdGlvbjogYSByb3lhbCBzZWF0Lg=="
+      "explanation": "VEhST05FIHNvdW5kcyBsaWtlIFRIUk9XTiAocGl0Y2hlZCkuIERlZmluaXRpb246IHRoZSBzZWF0IG9mIHBvd2VyLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInRoZSBzZWF0IG9mIHBvd2VyIiBhdCB0aGUgZW5kLiBBIFRIUk9ORSBpcyBhIG1vbmFyY2gncyBjZXJlbW9uaWFsIGNoYWlyIOKAlCBhbmQsIGZpZ3VyYXRpdmVseSwgcm95YWwgcG93ZXIgaXRzZWxmLg==",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gIlBpdGNoZWQiIGdpdmVzIFRIUk9XTiwgYW5kICJ3ZSBoZWFyIiB0ZWxscyB5b3UgdG8gc3dhcCBpdCBmb3IgYSB3b3JkIHRoYXQgc291bmRzIHRoZSBzYW1lLg==",
+        "steps": [
+          "IlBpdGNoZWQiIOKAlCBhIHBpdGNoZWQgYmFsbCBoYXMgYmVlbiBUSFJPV04u",
+          "IndlIGhlYXIiIOKAlCBmaW5kIGEgc291bmQtYWxpa2Uu",
+          "VEhST1dOIHNvdW5kcyBsaWtlIFRIUk9ORSwgdGhlIHNlYXQgb2YgcG93ZXIu"
+        ],
+        "note": "IlBpdGNoZWQiIGNvdWxkIGFsc28gc3VnZ2VzdCBhIHRlbnQgb3IgYSBzYWxlcyBwaXRjaDsgdHJ5aW5nIGEgZmV3IG1lYW5pbmdzIG9mIHRoZSBmaXJzdCB3b3JkIGlzIHBhcnQgb2YgdGhlIHNvbHZlLiAiZm9yIiBpcyBvbmx5IGEgbGluay4="
+      }
     },
     {
       "id": 280,
       "printDate": "2026-11-21",
       "publishDate": "2026-11-21",
       "status": "scheduled",
-      "clue": "Circular when ground loses its head (5)",
+      "clue": "Earth beheaded is circular (5)",
       "answer": "Uk9VTkQ=",
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgY2lyY3VsYXIu",
-        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
-        "VGFrZSBHIG9mZiBHUk9VTkQu",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGxhc3Qgd29yZC4=",
+        "RGVsZXRpb24g4oCUICdiZWhlYWRlZCcgbWVhbnMgcmVtb3ZlIHRoZSBmaXJzdCBsZXR0ZXIu",
+        "QSB3b3JkIGZvciBlYXJ0aCBvciBzb2lsLCBtaW51cyBpdHMgZmlyc3QgbGV0dGVyLg==",
         "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "R1JPVU5EIHdpdGhvdXQgaXRzIGhlYWQgRyBnaXZlcyBST1VORC4gRGVmaW5pdGlvbjogY2lyY3VsYXIu"
+      "explanation": "R1JPVU5EIChlYXJ0aCkgYmVoZWFkZWQgKGZpcnN0IGxldHRlciByZW1vdmVkKSBnaXZlcyBST1VORC4gRGVmaW5pdGlvbjogY2lyY3VsYXIu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImNpcmN1bGFyIiBhdCB0aGUgZW5kLiBST1VORCBtZWFucyBzaGFwZWQgbGlrZSBhIGNpcmNsZS4=",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiRWFydGgiIGdpdmVzIEdST1VORCwgYW5kICJiZWhlYWRlZCIgdGVsbHMgeW91IHRvIHJlbW92ZSBpdHMgZmlyc3QgbGV0dGVyLiAiaXMiIGxpbmtzIHRoZSBwYXJ0cy4=",
+        "steps": [
+          "IkVhcnRoIiDigJQgc29pbCBvciBlYXJ0aCBpcyBHUk9VTkQu",
+          "ImJlaGVhZGVkIiDigJQgY3V0IG9mZiB0aGUgZmlyc3QgbGV0dGVyLCBHLg==",
+          "R1JPVU5EIHdpdGhvdXQgRyBpcyBST1VORC4="
+        ],
+        "note": "IkVhcnRoIiBjb3VsZCBiZSB0aGUgcGxhbmV0LCBidXQgYSBkZWxldGlvbiBuZWVkcyBhIGxvbmdlciB3b3JkIHRvIHRyaW0uIEdST1VORCwgbWludXMgaXRzIGhlYWQsIGxlYXZlcyBhIGNvbW1vbiB3b3JkIHRoYXQgZml0cyB0aGUgZGVmaW5pdGlvbi4="
+      }
     },
     {
       "id": 281,
       "printDate": "2026-11-22",
       "publishDate": "2026-11-22",
       "status": "scheduled",
-      "clue": "Black bird when craven loses its head (5)",
+      "clue": "Headless and cowardly black bird (5)",
       "answer": "UkFWRU4=",
       "clueType": "deletion",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSBsYXJnZSBibGFjayBiaXJkLg==",
-        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
-        "UmVtb3ZlIEMgZnJvbSBDUkFWRU4u",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "RGVsZXRpb24g4oCUICdIZWFkbGVzcycgbWVhbnMgbG9zZSB0aGUgZmlyc3QgbGV0dGVyLg==",
+        "QSBsaXRlcmFyeSB3b3JkIGZvciBjb3dhcmRseSwgbWludXMgaXRzIGZpcnN0IGxldHRlci4=",
         "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "Q1JBVkVOIHdpdGhvdXQgaXRzIGhlYWQgQyBnaXZlcyBSQVZFTi4gRGVmaW5pdGlvbjogYSBibGFjayBiaXJkLg=="
+      "explanation": "Q1JBVkVOIChjb3dhcmRseSkgaGVhZGxlc3MgKGZpcnN0IGxldHRlciByZW1vdmVkKSBnaXZlcyBSQVZFTi4gRGVmaW5pdGlvbjogYmxhY2sgYmlyZC4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImJsYWNrIGJpcmQiIGF0IHRoZSBlbmQuIFRoZSBSQVZFTiBpcyBhIGxhcmdlIGJsYWNrIGJpcmQgb2YgdGhlIGNyb3cgZmFtaWx5Lg==",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiY293YXJkbHkiIGdpdmVzIENSQVZFTiwgYW5kICJIZWFkbGVzcyIgdGVsbHMgeW91IHRvIGRyb3AgaXRzIGZpcnN0IGxldHRlci4=",
+        "steps": [
+          "ImNvd2FyZGx5IiDigJQgQ1JBVkVOIG1lYW5zIGNvd2FyZGx5Lg==",
+          "IkhlYWRsZXNzIiDigJQgcmVtb3ZlIHRoZSBmaXJzdCBsZXR0ZXIsIEMu",
+          "Q1JBVkVOIHdpdGhvdXQgQyBpcyBSQVZFTi4="
+        ],
+        "note": "Tm90ZSAiYmxhY2sgYmlyZCIgYXMgdHdvIHdvcmRzOiBhIGJsYWNrYmlyZCBpcyBhIGRpZmZlcmVudCBzcGVjaWVzLCBhbmQgdGhlIGNsdWUgaXMgY2FyZWZ1bCB0byBhdm9pZCBpdC4gU3BhY2luZyBpbiBhIGRlZmluaXRpb24gY2FuIG1hdHRlci4="
+      }
     },
     {
       "id": 282,
       "printDate": "2026-11-23",
       "publishDate": "2026-11-23",
       "status": "scheduled",
-      "clue": "Our planet when hearth loses its head (5)",
+      "clue": "Beheaded fireplace becomes the world (5)",
       "answer": "RUFSVEg=",
       "clueType": "deletion",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgdGhlIHBsYW5ldCB3ZSBsaXZlIG9uLg==",
-        "J0xvc2VzIGl0cyBoZWFkJyBtZWFucyByZW1vdmUgdGhlIGZpcnN0IGxldHRlci4=",
-        "VGFrZSBIIG9mZiBIRUFSVEgu",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "RGVsZXRpb24g4oCUICdCZWhlYWRlZCcu",
+        "VGhlIGZsb29yIG9mIGEgZmlyZXBsYWNlLCBtaW51cyBpdHMgZmlyc3QgbGV0dGVyLg==",
         "U3RhcnRzIHdpdGggRS4="
       ],
-      "explanation": "SEVBUlRIIHdpdGhvdXQgaXRzIGhlYWQgSCBnaXZlcyBFQVJUSC4gRGVmaW5pdGlvbjogb3VyIHBsYW5ldC4="
+      "explanation": "SEVBUlRIIChmaXJlcGxhY2UpIGJlaGVhZGVkIGdpdmVzIEVBUlRILiBEZWZpbml0aW9uOiB0aGUgd29ybGQu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInRoZSB3b3JsZCIgYXQgdGhlIGVuZC4gRUFSVEggaXMgb3VyIHBsYW5ldCwgdGhlIHdvcmxkIHdlIGxpdmUgb24u",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiZmlyZXBsYWNlIiBnaXZlcyBIRUFSVEgsIGFuZCAiQmVoZWFkZWQiIHRlbGxzIHlvdSB0byByZW1vdmUgaXRzIGZpcnN0IGxldHRlcjsgImJlY29tZXMiIGxpbmtzIHdvcmRwbGF5IHRvIGRlZmluaXRpb24u",
+        "steps": [
+          "ImZpcmVwbGFjZSIg4oCUIHRoZSBmbG9vciBvZiBhIGZpcmVwbGFjZSBpcyB0aGUgSEVBUlRILg==",
+          "IkJlaGVhZGVkIiDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLCBILg==",
+          "SEVBUlRIIHdpdGhvdXQgSCBpcyBFQVJUSC4="
+        ],
+        "note": "SEVBUlRIIGNvbnRhaW5zIGJvdGggRUFSVEggYW5kIEhFQVJULCBzbyBzZXR0ZXJzIHVzZSBpdCBpbiBzZXZlcmFsIHdheXMuIEhlcmUgdGhlIGRlbGV0aW9uIGlzIGF0IHRoZSBmcm9udCwgbGVhdmluZyBFQVJUSC4="
+      }
     },
     {
       "id": 283,
       "printDate": "2026-11-24",
       "publishDate": "2026-11-24",
       "status": "scheduled",
-      "clue": "Cord when grope loses its head (4)",
+      "clue": "Headless fumble produces a line (4)",
       "answer": "Uk9QRQ==",
       "clueType": "deletion",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB0aGljayBjb3JkLg==",
-        "QmVoZWFkbWVudCDigJQgZHJvcCB0aGUgZmlyc3QgbGV0dGVyLg==",
-        "UmVtb3ZlIEcgZnJvbSBHUk9QRS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZDogdGhpbmsgb2YgYSBjb3JkLg==",
+        "RGVsZXRpb24g4oCUICdIZWFkbGVzcycu",
+        "QSB3b3JkIG1lYW5pbmcgdG8gZnVtYmxlIG9yIGZlZWwgYWJvdXQgYmxpbmRseSwgbWludXMgaXRzIGZpcnN0IGxldHRlci4=",
         "U3RhcnRzIHdpdGggUi4="
       ],
-      "explanation": "R1JPUEUgd2l0aG91dCBpdHMgaGVhZCBHIGdpdmVzIFJPUEUuIERlZmluaXRpb246IGEgY29yZC4="
+      "explanation": "R1JPUEUgKGZ1bWJsZSkgaGVhZGxlc3MgZ2l2ZXMgUk9QRS4gRGVmaW5pdGlvbjogYSBsaW5lLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgbGluZSIgYXQgdGhlIGVuZC4gT24gYSBzaGlwLCBhIFJPUEUgaXMgdXN1YWxseSBjYWxsZWQgYSBsaW5lLg==",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiZnVtYmxlIiBnaXZlcyBHUk9QRSwgYW5kICJIZWFkbGVzcyIgcmVtb3ZlcyBpdHMgZmlyc3QgbGV0dGVyOyAicHJvZHVjZXMiIGxpbmtzIHRvIHRoZSBkZWZpbml0aW9uLg==",
+        "steps": [
+          "ImZ1bWJsZSIg4oCUIHRvIGZ1bWJsZSBhYm91dCBibGluZGx5IGlzIHRvIEdST1BFLg==",
+          "IkhlYWRsZXNzIiDigJQgcmVtb3ZlIEcu",
+          "R1JPUEUgd2l0aG91dCBHIGlzIFJPUEUu"
+        ],
+        "note": "IkxpbmUiIGhhcyBtYW55IG1lYW5pbmdzIOKAlCBhIHF1ZXVlLCBhIHJvdyBvZiB0ZXh0LCBhIHJhaWx3YXkg4oCUIGJ1dCBzYWlsb3JzIHVzZSBpdCBmb3Igcm9wZSwgYW5kIHNldHRlcnMgYm9ycm93IHRoYXQgZnJlZWx5Lg=="
+      }
     },
     {
       "id": 284,
       "printDate": "2026-11-25",
       "publishDate": "2026-11-25",
       "status": "scheduled",
-      "clue": "Sharp jab: string drops its r (5)",
+      "clue": "Cord losing resistance gives a sharp pain (5)",
       "answer": "U1RJTkc=",
       "clueType": "deletion",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgdGhlIHNoYXJwIGphYiBmcm9tIGEgYmVlIG9yIG5ldHRsZS4=",
-        "QSBkZWxldGlvbiDigJQgcmVtb3ZlIGEgc2luZ2xlIGlubmVyIGxldHRlci4=",
-        "VGFrZSB0aGUgUiBvdXQgb2YgU1RSSU5HLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "RGVsZXRpb24g4oCUIG9uZSBsZXR0ZXIgaXMgbG9zdCBmcm9tIGluc2lkZSBhIHdvcmQu",
+        "QSB3b3JkIGZvciBjb3JkLCBtaW51cyBSICh0aGUgc3ltYm9sIGZvciByZXNpc3RhbmNlKS4=",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U1RSSU5HIHdpdGhvdXQgaXRzIFIgZ2l2ZXMgU1RJTkcuIERlZmluaXRpb246IGEgc2hhcnAgamFiLg=="
+      "explanation": "U1RSSU5HIChjb3JkKSBsb3NpbmcgUiAocmVzaXN0YW5jZSkgZ2l2ZXMgU1RJTkcuIERlZmluaXRpb246IGEgc2hhcnAgcGFpbi4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgc2hhcnAgcGFpbiIgYXQgdGhlIGVuZC4gQSBTVElORyBpcyBhIHNoYXJwLCBzbWFydGluZyBwYWluLCBsaWtlIGEgYmVlJ3Mu",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiQ29yZCIgZ2l2ZXMgU1RSSU5HLCAicmVzaXN0YW5jZSIgZ2l2ZXMgUiwgYW5kICJsb3NpbmciIHRlbGxzIHlvdSB0byB0YWtlIFIgb3V0OyAiZ2l2ZXMiIGxpbmtzIHRvIHRoZSBkZWZpbml0aW9uLg==",
+        "steps": [
+          "IkNvcmQiIOKAlCBhIHRoaW4gY29yZCBpcyBTVFJJTkcu",
+          "InJlc2lzdGFuY2UiIOKAlCBSLCB0aGUgcGh5c2ljcyBzeW1ib2wu",
+          "U1RSSU5HIGxvc2luZyBSOiBTVChSKUlORyBiZWNvbWVzIFNUSU5HLg=="
+        ],
+        "note": "VW5saWtlIGEgYmVoZWFkaW5nLCB0aGlzIGRlbGV0aW9uIGNvbWVzIGZyb20gdGhlIG1pZGRsZSBvZiB0aGUgd29yZCwgc28geW91IG5lZWQgdG8gaWRlbnRpZnkgZXhhY3RseSB3aGljaCBsZXR0ZXIgZ29lcy4gUiBmb3IgcmVzaXN0YW5jZSBpcyBvbmUgb2YgdGhlIG1vc3QgdXNlZnVsIGFiYnJldmlhdGlvbnMgdG8gbGVhcm4u"
+      }
     },
     {
       "id": 285,
       "printDate": "2026-11-26",
       "publishDate": "2026-11-26",
       "status": "scheduled",
-      "clue": "Pilfer from TALES mixed (5)",
+      "clue": "Take without asking, as tales get twisted (5)",
       "answer": "U1RFQUw=",
       "clueType": "anagram",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgdG8gcGlsZmVyLg==",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIGluIFRBTEVTLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0Lg==",
+        "QW5hZ3JhbSDigJQgJ2dldCB0d2lzdGVkJy4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFRBTEVTLg==",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "VEFMRVMgbWl4ZWQgKGFuYWdyYW0pIGdpdmVzIFNURUFMLiBEZWZpbml0aW9uOiB0byBwaWxmZXIu"
+      "explanation": "VEFMRVMgdHdpc3RlZCAoYW5hZ3JhbSkgZ2l2ZXMgU1RFQUwuIERlZmluaXRpb246IHRha2Ugd2l0aG91dCBhc2tpbmcu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlRha2Ugd2l0aG91dCBhc2tpbmciIGF0IHRoZSBzdGFydC4gVG8gU1RFQUwgaXMgdG8gdGFrZSBzb21ldGhpbmcgdGhhdCBpc24ndCB5b3Vycy4=",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIFRBTEVTIGFuZCAiZ2V0IHR3aXN0ZWQiIGlzIHRoZSBpbmRpY2F0b3I7ICJhcyIgbGlua3MgdGhlIHR3byBwYXJ0cy4=",
+        "steps": [
+          "Rm9kZGVyOiBUQUxFUyAoNSBsZXR0ZXJzOiBULCBBLCBMLCBFLCBTKS4=",
+          "ImdldCB0d2lzdGVkIiDigJQgcmVhcnJhbmdlIHRoZW0u",
+          "VC1BLUwtRS1TIHJlYXJyYW5nZWQgZ2l2ZXMgUy1ULUUtQS1MIOKAlCBTVEVBTC4="
+        ],
+        "note": "VEFMRVMsIFNMQVRFLCBMRUFTVCwgU1RBTEUgYW5kIFNURUFMIGFyZSBhbGwgYW5hZ3JhbXMgb2YgZWFjaCBvdGhlciDigJQgYSBmaXZlLWxldHRlciBmYW1pbHkgc2V0dGVycyByZXR1cm4gdG8gb2Z0ZW4uIFRoZSBzdXJmYWNlIGltYWdlIG9mIHR3aXN0ZWQgc3RvcmllcyBwb2ludHMgYXdheSBmcm9tIHRoZWZ0Lg=="
+      }
     },
     {
       "id": 286,
       "printDate": "2026-11-27",
       "publishDate": "2026-11-27",
       "status": "scheduled",
-      "clue": "Holy from CEDARS arranged (6)",
+      "clue": "Holy cedars blown about (6)",
       "answer": "U0FDUkVE",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYSB3b3JkIG1lYW5pbmcgaG9seS4=",
-        "QW5hZ3JhbSDigJQgJ2FycmFuZ2VkJyBzaWduYWxzIGl0Lg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "QW5hZ3JhbSDigJQgJ2Jsb3duIGFib3V0Jy4=",
         "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIENFREFSUy4=",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "Q0VEQVJTIGFycmFuZ2VkIChhbmFncmFtKSBnaXZlcyBTQUNSRUQuIERlZmluaXRpb246IGhvbHku"
+      "explanation": "Q0VEQVJTIGJsb3duIGFib3V0IChhbmFncmFtKSBnaXZlcyBTQUNSRUQuIERlZmluaXRpb246IGhvbHku",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkhvbHkiIGF0IHRoZSBzdGFydC4gU0FDUkVEIG1lYW5zIGhvbHkgb3IgZGVkaWNhdGVkIHRvIGEgZ29kLg==",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIENFREFSUyBhbmQgImJsb3duIGFib3V0IiBpcyB0aGUgaW5kaWNhdG9yLg==",
+        "steps": [
+          "Rm9kZGVyOiBDRURBUlMgKDYgbGV0dGVyczogQywgRSwgRCwgQSwgUiwgUyku",
+          "ImJsb3duIGFib3V0IiDigJQgcmVhcnJhbmdlIHRoZW0u",
+          "Qy1FLUQtQS1SLVMgcmVhcnJhbmdlZCBnaXZlcyBTLUEtQy1SLUUtRCDigJQgU0FDUkVELg=="
+        ],
+        "note": "VGhlIHN1cmZhY2UgZmVlbHMgYmlibGljYWwgKHRoZSBjZWRhcnMgb2YgTGViYW5vbiksIHNvICJIb2x5IiBzZWVtcyB0byBkZXNjcmliZSB0aGUgdHJlZXMuIENFREFSUyBpcyBhbHNvIGFuIGFuYWdyYW0gb2YgU0NBUkVEIGFuZCBDQURSRVMg4oCUIGEgdXNlZnVsIHNldCB0byByZW1lbWJlci4="
+      }
     },
     {
       "id": 287,
       "printDate": "2026-11-28",
       "publishDate": "2026-11-28",
       "status": "scheduled",
-      "clue": "Lawmaker from TREASON cooked (7)",
+      "clue": "Treason plotted by a lawmaker (7)",
       "answer": "U0VOQVRPUg==",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhpbmsgb2YgYW4gZWxlY3RlZCBsYXdtYWtlci4=",
-        "QW5hZ3JhbSDigJQgJ2Nvb2tlZCcgaXMgdGhlIGluZGljYXRvci4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "QW5hZ3JhbSDigJQgJ3Bsb3R0ZWQnIGRvZXNuJ3Qgb25seSBtZWFuIGNvbnNwaXJlZC4=",
         "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFRSRUFTT04u",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "VFJFQVNPTiBjb29rZWQgKGFuYWdyYW0pIGdpdmVzIFNFTkFUT1IuIERlZmluaXRpb246IGEgbGF3bWFrZXIu"
+      "explanation": "VFJFQVNPTiBwbG90dGVkIChhbmFncmFtKSBnaXZlcyBTRU5BVE9SLiBEZWZpbml0aW9uOiBhIGxhd21ha2VyLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgbGF3bWFrZXIiIGF0IHRoZSBlbmQuIEEgU0VOQVRPUiBpcyBhIG1lbWJlciBvZiBhIHNlbmF0ZSwgYSBsYXctbWFraW5nIGJvZHku",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIFRSRUFTT04gYW5kICJwbG90dGVkIiBpcyB0aGUgaW5kaWNhdG9yIOKAlCBsZXR0ZXJzIHRoYXQgYXJlIHBsb3R0ZWQgYXJlIGxhaWQgb3V0IGluIGEgbmV3IHBhdHRlcm4uICJieSIgbGlua3MgdG8gdGhlIGRlZmluaXRpb24u",
+        "steps": [
+          "Rm9kZGVyOiBUUkVBU09OICg3IGxldHRlcnM6IFQsIFIsIEUsIEEsIFMsIE8sIE4pLg==",
+          "InBsb3R0ZWQiIOKAlCByZWFycmFuZ2UgdGhlbS4=",
+          "VC1SLUUtQS1TLU8tTiByZWFycmFuZ2VkIGdpdmVzIFMtRS1OLUEtVC1PLVIg4oCUIFNFTkFUT1Iu"
+        ],
+        "note": "VGhlIHN1cmZhY2UgaXMgYSBwb2xpdGljYWwgc2NhbmRhbCwgYW5kICJwbG90dGVkIiBmaXRzIHRyZWFzb24gc28gbmF0dXJhbGx5IHRoYXQgaXQgYmFyZWx5IHJlZ2lzdGVycyBhcyBhbiBpbmRpY2F0b3IuIFRoYXQgZG91YmxlIGR1dHkgaXMgd2hhdCBtYWtlcyB0aGlzIG9uZSBoYXJkLg=="
+      }
     },
     {
       "id": 288,
