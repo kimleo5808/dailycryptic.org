@@ -1166,6 +1166,226 @@
         "EAR + RING spells EARRING (3 + 4 = 7)."
       ],
       "note": "\"Listen to the call\" cleverly clues both parts at once — EAR (listen) and RING (a phone call). The surface hides the join; translating each word reveals the build."
+    },
+    {
+      "id": 141,
+      "definition": "The definition is \"Menace\" at the start. A THREAT is a menace — something or someone likely to cause harm.",
+      "device": "This is a hidden word. \"seen in\" tells you the answer is concealed in the letters of \"smooth reattachment\".",
+      "steps": [
+        "\"seen in\" signals a hidden word.",
+        "Run the letters together: SMOOTHREATTACHMENT.",
+        "Inside: smooTH REATtachment — THREAT."
+      ],
+      "note": "The answer starts at the end of one word and runs into the next, splitting TH from REAT. Long words like \"reattachment\" are a gift to setters because they hide so many letter strings."
+    },
+    {
+      "id": 142,
+      "definition": "The definition is \"Nobleman\" at the start. An EARL is a British nobleman, ranking above a viscount.",
+      "device": "This is a hidden word. \"found in\" tells you the answer sits inside \"pearly\".",
+      "steps": [
+        "\"found in\" signals a hidden word.",
+        "Look inside the next word: PEARLY.",
+        "Inside: pEARLy — EARL."
+      ],
+      "note": "\"Pearly gates\" makes the surface heavenly, and \"gates\" plays no part in the wordplay. Here the answer is hidden inside a single word rather than across a gap."
+    },
+    {
+      "id": 143,
+      "definition": "The definition is \"Rogue\" at the start. A RASCAL is a rogue or mischievous person.",
+      "device": "This is a hidden word. \"found in\" tells you to look inside \"ultra scale\".",
+      "steps": [
+        "\"found in\" signals a hidden word.",
+        "Run the letters together: ULTRASCALE.",
+        "Inside: ultRA SCALe — RASCAL."
+      ],
+      "note": "\"Model\" finishes the surface (a scale model) but is not part of the hidden letters. Always check exactly where a hidden answer starts and stops."
+    },
+    {
+      "id": 144,
+      "definition": "The definition is \"Weapon\" at the start. A PISTOL is a small firearm.",
+      "device": "This is a hidden word. \"concealed in\" tells you the answer is inside \"epistolary\".",
+      "steps": [
+        "\"concealed in\" signals a hidden word.",
+        "Look inside EPISTOLARY (a novel told in letters).",
+        "Inside: ePISTOLary — PISTOL."
+      ],
+      "note": "An epistolary novel is written as a series of letters, which is a neat joke for a clue about hidden letters. The weapon is concealed in a single word."
+    },
+    {
+      "id": 145,
+      "definition": "The definition is \"Fruit\" at the start. A PEAR is a fruit.",
+      "device": "This is a hidden word. \"some\" tells you to take part of \"grape arbour\"; \"from\" links to the definition.",
+      "steps": [
+        "\"some\" signals a hidden word.",
+        "Run the letters together: GRAPEARBOUR.",
+        "Inside: graPE ARbour — PEAR."
+      ],
+      "note": "The surface names one fruit (grape) to hide another. When a clue mentions an obvious answer candidate, the real answer is often concealed right next to it."
+    },
+    {
+      "id": 149,
+      "definition": "The definition is \"a deity\" at the end. A GOD is a deity.",
+      "device": "This is a reversal. \"Dog\" is \"brought back\" — reversed — to give the answer; \"as\" is a link.",
+      "steps": [
+        "Start with DOG.",
+        "\"brought back\" — reverse it.",
+        "D-O-G backwards is G-O-D — GOD."
+      ],
+      "note": "DOG/GOD is one of the oldest reversals in puzzles. Here the fodder appears in the clue as it stands, so the only work is spotting the indicator."
+    },
+    {
+      "id": 150,
+      "definition": "The definition is \"Exist\" at the start. To LIVE is to exist.",
+      "device": "This is a reversal. \"evil\" is \"reflected\" — reversed — to give the answer; \"when\" is a link.",
+      "steps": [
+        "Start with EVIL.",
+        "\"reflected\" — as in a mirror, reverse it.",
+        "E-V-I-L backwards is L-I-V-E — LIVE."
+      ],
+      "note": "\"Reflected\" is a natural reversal indicator because a mirror flips what it shows. EVIL/LIVE is a pair worth remembering."
+    },
+    {
+      "id": 151,
+      "definition": "The definition is \"Compensation\" at the start. A REWARD is something given in return or as compensation.",
+      "device": "This is a reversal. \"coming back\" tells you to reverse \"drawer\"; \"from the\" links the parts.",
+      "steps": [
+        "Start with DRAWER.",
+        "\"coming back\" — reverse it.",
+        "D-R-A-W-E-R backwards is R-E-W-A-R-D — REWARD."
+      ],
+      "note": "The surface suggests money coming back out of a drawer. Six-letter reversals like DRAWER/REWARD are rare, so setters return to them again and again."
+    },
+    {
+      "id": 153,
+      "definition": "The definition is \"Meat\" at the start. STEAK is a thick slice of meat.",
+      "device": "This is a homophone. \"we hear\" tells you the answer sounds like \"stake\"; \"is\" links the parts.",
+      "steps": [
+        "Take the word given: STAKE.",
+        "\"we hear\" — find a word that sounds the same.",
+        "STAKE sounds like STEAK, which is meat."
+      ],
+      "note": "Here the sound-alike word appears directly in the clue, so the work is choosing the spelling that matches the definition."
+    },
+    {
+      "id": 154,
+      "definition": "The definition is \"to compose\" at the end. To WRITE is to compose a letter, song or story.",
+      "device": "This is a homophone. \"Correct\" gives RIGHT, and \"reportedly\" tells you to replace it with a word that sounds the same.",
+      "steps": [
+        "\"Correct\" — RIGHT.",
+        "\"reportedly\" — say it aloud.",
+        "RIGHT sounds like WRITE, meaning to compose."
+      ],
+      "note": "RIGHT has a whole family of sound-alikes — WRITE, RITE and WRIGHT — so check the definition to pick the correct spelling."
+    },
+    {
+      "id": 156,
+      "definition": "The definition is \"an animal\" at the end. A BEAR is a large animal.",
+      "device": "This is a homophone. \"reportedly\" tells you the answer sounds like \"Bare\"; \"is\" links the parts.",
+      "steps": [
+        "Take the word given: BARE.",
+        "\"reportedly\" — find a sound-alike.",
+        "BARE sounds like BEAR, an animal."
+      ],
+      "note": "BEAR is also a verb (to carry or to endure), so the definition has to say which sense is meant — here \"an animal\" settles it."
+    },
+    {
+      "id": 158,
+      "definition": "The definition is \"a plank\" at the end. A BOARD is a flat plank of wood.",
+      "device": "This is a homophone. \"by the sound of\" tells you the answer sounds like \"Bored\".",
+      "steps": [
+        "Take the word given: BORED.",
+        "\"by the sound of\" — find a sound-alike.",
+        "BORED sounds like BOARD, a plank."
+      ],
+      "note": "The surface reads as someone bored by a plank of wood. When the sound-alike word is printed in the clue, the definition tells you which spelling to choose."
+    },
+    {
+      "id": 159,
+      "definition": "The definition is \"Warmth\" at the start. HEAT is warmth.",
+      "device": "This is a deletion. \"wheat losing its head\" tells you to remove the first letter of WHEAT; \"from\" links the parts.",
+      "steps": [
+        "Start with WHEAT.",
+        "\"losing its head\" — remove W.",
+        "WHEAT without W is HEAT."
+      ],
+      "note": "Words that still make a real word after losing their first letter — WHEAT/HEAT, GROUND/ROUND, BEAGLE/EAGLE — are the raw material for beheadings."
+    },
+    {
+      "id": 166,
+      "definition": "The definition is \"Christmas decoration\" at the start. TINSEL is the glittering strip used to decorate Christmas trees.",
+      "device": "This is an anagram. The fodder is ENLIST and \"reorganised\" is the indicator; \"when ... is\" links the parts.",
+      "steps": [
+        "Fodder: ENLIST (6 letters: E, N, L, I, S, T).",
+        "\"reorganised\" — rearrange them.",
+        "E-N-L-I-S-T rearranged gives T-I-N-S-E-L — TINSEL."
+      ],
+      "note": "ENLIST, LISTEN, SILENT, INLETS and TINSEL all share the same six letters — one of the richest anagram families in English."
+    },
+    {
+      "id": 168,
+      "definition": "The definition is \"Naval soldier\" at the start. A MARINE is a soldier serving with a navy.",
+      "device": "This is an anagram. The fodder is AIRMEN and \"broken\" is the indicator; \"from\" links the parts.",
+      "steps": [
+        "Fodder: AIRMEN (6 letters: A, I, R, M, E, N).",
+        "\"broken\" — rearrange them.",
+        "A-I-R-M-E-N rearranged gives M-A-R-I-N-E — MARINE."
+      ],
+      "note": "The surface keeps everything military, so \"airmen\" looks like part of the story. MARINE, AIRMEN and REMAIN are anagrams of each other."
+    },
+    {
+      "id": 170,
+      "definition": "The definition is \"Renter\" at the start. A TENANT is someone who rents a property.",
+      "device": "This is a charade. \"ten\" is used as it stands, \"an insect\" gives ANT, and \"joined to\" puts them side by side.",
+      "steps": [
+        "\"ten\" — TEN.",
+        "\"an insect\" — ANT.",
+        "TEN + ANT = TENANT, a renter."
+      ],
+      "note": "ANT is the cryptic setter's favourite insect, along with BEE. When a clue mentions an insect, try the three-letter options first."
+    },
+    {
+      "id": 171,
+      "definition": "The definition is \"Hobby\" at the start. A PASTIME is a hobby.",
+      "device": "This is a charade. \"gone by\" gives PAST, followed by I and ME, used just as they stand.",
+      "steps": [
+        "\"gone by\" — PAST.",
+        "\"then I and me\" — add I and ME.",
+        "PAST + I + ME = PASTIME, a hobby."
+      ],
+      "note": "The answer is built from three pieces, two of them given literally. Splitting PASTIME as PAST-I-ME rather than PAS-TIME is the key insight."
+    },
+    {
+      "id": 173,
+      "definition": "The definition is \"Thin soup\" at the start. BROTH is a thin soup.",
+      "device": "This is a container clue. \"both\" is used as it stands, \"resistance\" gives R, and \"clutching\" tells you BOTH wraps around R.",
+      "steps": [
+        "\"both\" — BOTH.",
+        "\"resistance\" — R, the physics symbol.",
+        "BOTH clutching R after the B: B + R + OTH = BROTH."
+      ],
+      "note": "R for resistance is one of the most frequent single-letter abbreviations in cryptics, alongside N for new and L for learner."
+    },
+    {
+      "id": 174,
+      "definition": "The definition is \"Fast run\" at the start. A SPRINT is a short, fast run.",
+      "device": "This is a container clue. \"small spar\" gives SPRIT, \"new\" gives N, and \"around\" tells you SPRIT goes around N.",
+      "steps": [
+        "\"small spar\" — a SPRIT is a small spar on a sailing boat.",
+        "\"new\" — N.",
+        "SPRIT around N, before the final T: SPRI + N + T = SPRINT."
+      ],
+      "note": "SPRIT is an unusual word, which is why this clue is rated hard. N for new is a standard abbreviation, as in NT for New Testament."
+    },
+    {
+      "id": 175,
+      "definition": "Two definitions: \"Tree\" and \"part of the hand\". Both are PALM.",
+      "device": "This is a double definition. \"and\" joins two separate meanings of the same word.",
+      "steps": [
+        "\"Tree\" — a PALM tree.",
+        "\"part of the hand\" — the PALM.",
+        "Both readings give PALM."
+      ],
+      "note": "Double definitions joined by \"and\" are the gentlest form of the device. Harder versions drop the \"and\", so the two meanings run together as one phrase."
     }
   ]
 }
