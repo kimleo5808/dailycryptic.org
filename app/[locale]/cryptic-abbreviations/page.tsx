@@ -405,6 +405,12 @@ export default async function CrypticAbbreviationsPage({
               description:
                 "See the words that appear most frequently as cryptic crossword answers.",
             },
+            {
+              href: "/blog/cryptic-crossword-abbreviations",
+              title: "Why love is O",
+              description:
+                "Where the abbreviations come from, and which ones our 1,004 daily clues use most.",
+            },
           ]}
         />
       </div>

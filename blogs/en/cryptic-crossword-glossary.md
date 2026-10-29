@@ -1,17 +1,17 @@
 ---
-title: "Cryptic Crossword Glossary: 63 Terms Explained"
-description: "Fodder, surface, &lit, par, unches and lift-and-separate: 63 cryptic crossword terms in plain English, most with a real clue to show how they work."
+title: "Cryptic Crossword Jargon, Explained With Real Clues"
+description: "Fodder, surface, &lit, par and unches: 63 pieces of cryptic crossword jargon, grouped by what they describe and shown at work in real clues."
 slug: /cryptic-crossword-glossary
 date: "2026-10-29"
 tags: "Cryptic Crosswords, Reference, Glossary"
-image: /images/blog/cryptic-crossword-glossary/cover.jpg
+image: /images/blog/cryptic-crossword-glossary/cover-2.jpg
 visible: published
 pin: false
 ---
 
 Cryptic crosswords come with their own vocabulary. Solvers talk about fodder and anagrinds, setters argue about Ximenean rules, and forums are full of people asking what an "unch" is. None of it is hard, but nobody explains it all in one place.
 
-This glossary does. It covers **63 terms**, grouped by what they describe: the parts of a clue, the clue types, the signal words, punctuation, the grid, and the culture of setting and solving. Each definition is short enough to read in a few seconds, and most come with a real clue from our archive so you can see the term at work.
+This article explains that jargon by showing it at work. It covers **63 terms**, grouped by what they describe: the parts of a clue, the clue types, the signal words, punctuation, the grid, and the culture of setting and solving. Each definition is short enough to read in a few seconds, and most come with a real clue from our archive. If you prefer a straight alphabetical lookup, our A–Z [cryptic crossword glossary](/cryptic-glossary) is the quickest reference.
 
 **What is a cryptic crossword?** A cryptic crossword is a puzzle in which every clue works twice. One part of the clue is an ordinary definition of the answer. The rest is wordplay that builds the same answer another way, through anagrams, hidden words, sound-alikes and similar tricks.
 
@@ -70,7 +70,7 @@ A **definition by example**, often shortened to **DBE**, defines the answer thro
 
 ### Abbreviation
 
-An **abbreviation** is a conventional letter or short string that a clue word stands for, such as O for "love" or "nothing". In "Moan: gran holding nothing (5)", "nothing" gives O, and GRAN holding O gives **GROAN**. Our [complete list of cryptic crossword abbreviations](/blog/cryptic-crossword-abbreviations) covers the ones you will meet most often.
+An **abbreviation** is a conventional letter or short string that a clue word stands for, such as O for "love" or "nothing". In "Moan: gran holding nothing (5)", "nothing" gives O, and GRAN holding O gives **GROAN**. Our A–Z [abbreviations reference](/cryptic-abbreviations) lists them, and our article on [why love is O](/blog/cryptic-crossword-abbreviations) explains where they come from.
 
 ## Clue Types
 
@@ -346,6 +346,7 @@ Unches are unchecked letters: squares that belong to only one answer, so no cros
 ## Next Steps
 
 - Put the vocabulary to work on today's [daily minute cryptic](/minute-cryptic-today), then compare your reasoning with the explanation.
-- Learn the letters behind the words with our [list of cryptic crossword abbreviations](/blog/cryptic-crossword-abbreviations).
+- Look up letter codes in our [cryptic abbreviations reference](/cryptic-abbreviations), then read [why love is O](/blog/cryptic-crossword-abbreviations) for the stories behind them.
+- Prefer an alphabetical list? Use our A–Z [cryptic crossword glossary](/cryptic-glossary).
 - Build your indicator knowledge with our [cryptic crossword indicators](/cryptic-indicators) guide.
 - New to all of this? Start with our [cryptic crosswords for beginners](/cryptic-crossword-for-beginners) guide.

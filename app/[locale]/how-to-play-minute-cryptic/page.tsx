@@ -519,6 +519,12 @@ export default async function HowToPlayPage({ params }: { params: Params }) {
             >
               FAQ
             </Link>
+            <Link
+              href="/blog/minute-cryptic-tips"
+              className="rounded-xl border-2 border-white/30 px-6 py-2.5 text-sm font-bold text-white transition-all hover:bg-white/10"
+            >
+              15 Data-Backed Tips
+            </Link>
           </div>
         </section>
       </div>

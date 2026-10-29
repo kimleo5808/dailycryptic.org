@@ -1,10 +1,10 @@
 ---
-title: "Cryptic Crossword Abbreviations: The Complete List"
-description: "Every common cryptic crossword abbreviation in one place, from O for love to RE for engineers, sorted by theme with real clues showing each one at work."
+title: "Why Love Is O: How Cryptic Abbreviations Work"
+description: "Why does love mean O and a sailor AB? The stories behind cryptic crossword abbreviations, and data on which ones 1,004 daily clues use most."
 slug: /cryptic-crossword-abbreviations
 date: "2026-10-29"
 tags: "Cryptic Crosswords, Reference, Abbreviations"
-image: /images/blog/cryptic-crossword-abbreviations/cover.jpg
+image: /images/blog/cryptic-crossword-abbreviations/cover-2.jpg
 visible: published
 pin: false
 ---
@@ -13,7 +13,7 @@ Love is O. A sailor is AB. "About" can be C, CA or RE, and engineers are almost 
 
 **What is a cryptic crossword abbreviation?** A cryptic crossword abbreviation is a short string of letters, usually one or two, that a clue word stands for by convention. "Love" gives O (a zero score in tennis), "river" gives R, and "about" gives C (from *circa*). Setters use them to build answers piece by piece.
 
-This guide collects the abbreviations you will actually meet, sorted by theme so they are easier to remember. The tricky ones come with a worked clue. It also includes something most lists leave out: a count of which abbreviations turn up most often in our own library of **1,004 daily cryptic clues**.
+This article is about the *why*: where the abbreviations come from, which ones actually matter, and how to spot them in a clue. The tables are grouped by theme, with the story behind each tricky entry, and we counted which abbreviations turn up most often in our own library of **1,004 daily cryptic clues**. If you just need to look one up quickly, our A–Z [cryptic abbreviations reference](/cryptic-abbreviations) is the faster tool.
 
 **What you'll learn:**
 
@@ -471,6 +471,7 @@ The core is shared, because most setters follow the convention that an abbreviat
 
 Abbreviations are one of three vocabularies every cryptic solver builds. The other two are definitions and indicators. To keep going:
 
+- Keep our A–Z [cryptic abbreviations reference](/cryptic-abbreviations) open while you solve, for a quick lookup of any letter code.
 - Learn the words that tell you what to do in our guide to [cryptic crossword indicators](/cryptic-indicators), then test yourself with our [list of indicator words in action](/blog/cryptic-crossword-indicator-words).
 - See abbreviations doing their main job in [charade clues](/cryptic-clue-types/charade) and [container clues](/cryptic-clue-types/container), where single letters are glued on or tucked inside.
 - Watch out for the ordinary-looking words that hide a second meaning in our list of [misleading words in cryptic clues](/cryptic-misleading-words).

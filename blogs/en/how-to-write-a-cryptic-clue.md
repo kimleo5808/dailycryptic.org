@@ -43,7 +43,7 @@ The wordplay must build the answer letter for letter, using a recognised device:
 
 Each word is part of the definition, part of the wordplay, or a short link word between them. Words that are only there to make the surface sound nicer are called padding, and fair clues avoid them.
 
-These rules descend from the setter Afrit's famous injunction: **"You need not mean what you say, but you must say what you mean."** The surface may tell a misleading story. The cryptic reading must still be literally true. Our [cryptic crossword glossary](/blog/cryptic-crossword-glossary) explains the terms used throughout this guide.
+These rules descend from the setter Afrit's famous injunction: **"You need not mean what you say, but you must say what you mean."** The surface may tell a misleading story. The cryptic reading must still be literally true. Our guide to [cryptic crossword jargon](/blog/cryptic-crossword-glossary) explains the terms used throughout, with real clues.
 
 ## Step 1: Pick an Answer and Take It Apart
 
@@ -98,7 +98,7 @@ In each case the indicator does two jobs at once: it carries the surface story a
 
 ### Turning each piece into a clue word
 
-Each piece of the wordplay needs its own clue word. "Salt water" for SEA is fine, because the sea is salt water. "A boy" for SON is a long-established crossword convention. If you need single letters, our [list of cryptic crossword abbreviations](/blog/cryptic-crossword-abbreviations) shows which ones solvers will recognise.
+Each piece of the wordplay needs its own clue word. "Salt water" for SEA is fine, because the sea is salt water. "A boy" for SON is a long-established crossword convention. If you need single letters, our [cryptic abbreviations reference](/cryptic-abbreviations) shows which ones solvers will recognise.
 
 ## Step 4: Write a Surface That Tells a Story
 
@@ -263,5 +263,5 @@ A simple clue can take five minutes; a great one can take an hour or more. In ou
 
 - See finished clues in action: solve today's [daily minute cryptic](/minute-cryptic-today) and read the explanation afterwards.
 - Learn each device in depth with our [guide to cryptic clue types](/cryptic-clue-types).
-- Build your toolkit with [cryptic crossword indicators](/cryptic-indicators) and [cryptic crossword abbreviations](/blog/cryptic-crossword-abbreviations).
+- Build your toolkit with [cryptic crossword indicators](/cryptic-indicators) and [cryptic crossword abbreviations](/cryptic-abbreviations).
 - Want unlimited material to study? Our [unlimited minute cryptic](/minute-cryptic-unlimited) has hundreds of explained clues.

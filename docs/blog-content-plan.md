@@ -87,8 +87,8 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 
 | # | Slug | 标题（H1） | 模板 | 主关键词 | 意图 | 优先级 | 难度估计 |
 |---|---|---|---|---|---|---|---|
-| 1 | `cryptic-crossword-abbreviations` | Cryptic Crossword Abbreviations: The Complete List | Pillar（参考） | cryptic crossword abbreviations | 信息 | **P0** | 中：Wikipedia 和 Dummies 在前，但页面老、没有例题 |
-| 2 | `cryptic-crossword-glossary` | Cryptic Crossword Glossary: 63 Terms Explained | Pillar（参考） | cryptic crossword terms | 信息 | **P0** | 低 |
+| 1 | `cryptic-crossword-abbreviations` | Why Love Is O: How Cryptic Abbreviations Work（已改角度，见 §12） | Pillar（参考） | cryptic crossword abbreviations | 信息 | **P0** | 中：Wikipedia 和 Dummies 在前，但页面老、没有例题 |
+| 2 | `cryptic-crossword-glossary` | Cryptic Crossword Jargon, Explained With Real Clues（已改角度，见 §12） | Pillar（参考） | cryptic crossword terms | 信息 | **P0** | 低 |
 | 3 | `how-to-write-a-cryptic-clue` | How to Write a Cryptic Clue: A Setter's Checklist | Techniques + 案例 | how to write a cryptic clue | 信息 | **P0** | 低：SERP 几乎全是垃圾页 |
 | 4 | `nyt-connections-purple-category` | Connections Purple Category: 660 Puzzles Analysed | 数据研究 | connections purple category | 信息 | **P0** | 低到中 |
 | 5 | `minute-cryptic-tips` | Minute Cryptic Tips: 15 Ways to Solve Faster | Techniques | minute cryptic tips | 信息 | P1 | 低：和站内主流量同主题 |
@@ -227,5 +227,32 @@ Backlinko 建议用 `/hub/{topic}` 做主题枢纽。我们**不新建 hub 页**
 | 2026-10-29 | #4 `nyt-connections-purple-category` | 2,853 | 封面 + 5 |
 | 2026-10-29 | #2 `cryptic-crossword-glossary` | 3,435 | 封面 + 3 |
 | 2026-10-29 | #3 `how-to-write-a-cryptic-clue` | 2,684 | 封面 + 3 |
+| 2026-10-29 | #5 `minute-cryptic-tips` | 2,614 | 封面 + 3 |
+| 2026-10-29 | #6 `and-lit-clues` | 2,594 | 封面 + 3 |
+| 2026-10-29 | #7 `cryptic-vs-regular-crossword` | 2,587 | 封面 + 2 |
+| 2026-10-29 | #8 `get-better-at-cryptic-crosswords` | 2,578 | 封面 + 3 |
+| 2026-10-29 | #9 `strands-spangram-patterns` | 2,540 | 封面 + 3 |
 
 同日上线的模板改进：作者署名、发布和更新日期、阅读时长、H2 目录、Article schema 的作者和更新日期、og:image 双斜杠修复、sitemap 补上 4 个题型页、站内链接不再新开标签页。
+
+---
+
+## 12. 撞题处理记录（2026-10-29）
+
+**发现**：写 P1 时发现站内有 6 个已上线、可收录、但没进 sitemap 的页面，最初调研只对照了 sitemap，所以漏掉了其中两页：
+
+| 老页面 | 标题 | 与之撞题的博客 |
+|---|---|---|
+| `/cryptic-abbreviations` | Cryptic Crossword Abbreviations: The Complete Reference Guide | #1 缩写 |
+| `/cryptic-glossary` | Cryptic Crossword Glossary: Every Term Explained | #2 术语 |
+| `/how-to-play-minute-cryptic`（在 sitemap 内） | How to Solve Minute Cryptic - Complete Guide | #5 技巧（意图相近） |
+
+**决定（经用户确认）**：
+- #1、#2 保留，改为不同角度：缩写篇讲"来历 + 哪些最常用（数据）"，术语篇讲"行话按用途分组 + 真实例题"。老页面继续承担 A–Z 速查意图。
+- 速查意图的锚文本（"list of abbreviations"、"glossary"）全部改为指向老页面；指向博客的链接用新角度锚文本（"why love is O"、"cryptic crossword jargon"）。
+- 老页面的 RelatedLinks 各追加一条指向博客（只增不改）；`/how-to-play-minute-cryptic` 的按钮区追加"15 Data-Backed Tips"。
+- #5 照常单独发布，开头说明它是对攻略页的数据补充，并链回攻略页。
+- sitemap 补上 5 个漏掉的页面：`/cryptic-abbreviations`、`/cryptic-glossary`、`/common-crossword-answers`、`/cryptic-crossword-solver`、`/crossword-word-finder`。
+- `/daily-solution`（含 257 个日期页）同样不在 sitemap，但它和 `/minute-cryptic/[date]` 内容重叠，暂不加入，留待讨论。
+
+**以后选题前的检查**：用 `ls app/[locale]` 列出全部路由，而不是只看 sitemap；逐个比对标题和 H2。

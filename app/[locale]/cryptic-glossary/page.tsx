@@ -307,6 +307,12 @@ export default async function CrypticGlossaryPage({
               description:
                 "Start here if you are new to cryptic crosswords.",
             },
+            {
+              href: "/blog/cryptic-crossword-glossary",
+              title: "Jargon in real clues",
+              description:
+                "Solver terms grouped by what they describe, most shown at work in a real clue.",
+            },
           ]}
         />
       </div>
