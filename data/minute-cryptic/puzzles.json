@@ -16470,12 +16470,22 @@
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW5zaWRlIHRoZSBjbHVlIHRleHQu",
-        "TG9vayBhY3Jvc3MgdGhlIHdvcmQgYm91bmRhcmllcy4=",
-        "Rm91bmQgaW4gJ3B1YmxpQyBMQVdzdWl0JyDigJQgc3BhbiB0aG9zZSBsZXR0ZXJzLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SGlkZGVuIHdvcmQg4oCUICdjb25jZWFsZWQgaW4nLg==",
+        "UmVhZCBhY3Jvc3MgJ3B1YmxpYyBsYXdzdWl0Jy4=",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "SGlkZGVuIGluICdwdWJsaUMgTEFXc3VpdCcgaXMgQ0xBVy4gRGVmaW5pdGlvbjogYSB0YWxvbi4="
+      "explanation": "SGlkZGVuIGluICdwdWJsaUMgTEFXc3VpdCcgaXMgQ0xBVy4gRGVmaW5pdGlvbjogdGFsb24u",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlRhbG9uIiBhdCB0aGUgc3RhcnQuIEEgdGFsb24gaXMgYSBDTEFXLg==",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiY29uY2VhbGVkIGluIiB0ZWxscyB5b3UgdGhlIGFuc3dlciBpcyBpbnNpZGUgInB1YmxpYyBsYXdzdWl0Ii4=",
+        "steps": [
+          "ImNvbmNlYWxlZCBpbiIgc2lnbmFscyBhIGhpZGRlbiB3b3JkLg==",
+          "UnVuIHRoZSBsZXR0ZXJzIHRvZ2V0aGVyOiBQVUJMSUNMQVdTVUlULg==",
+          "SW5zaWRlOiBwdWJsaUMgTEFXc3VpdCDigJQgQ0xBVy4="
+        ],
+        "note": "TEFXIGlzIGEgd2hvbGUgd29yZCBpbnNpZGUgdGhlIGFuc3dlciwgYW5kIHRoZSBjb3VydHJvb20gc3VyZmFjZSBrZWVwcyB5b3VyIGF0dGVudGlvbiBvbiBpdCByYXRoZXIgdGhhbiBvbiB0aGUgQyBiZWZvcmUgaXQu"
+      }
     },
     {
       "id": 649,
@@ -16487,12 +16497,22 @@
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiUm90YXRlIi4=",
-        "VGhpcyBjbHVlIHVzZXMgYSBkZWxldGlvbiDigJQgZHJvcCBhIGxldHRlci4=",
-        "VGFrZSB0aGUgbGFzdCBsZXR0ZXIgb2ZmIFNQSU5FLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "RGVsZXRpb24g4oCUICdsb3NlcyBpdHMgdGFpbCcgbWVhbnMgZHJvcCB0aGUgbGFzdCBsZXR0ZXIu",
+        "UmVtb3ZlIHRoZSBsYXN0IGxldHRlciBvZiBTUElORS4=",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "U1BJTkUgbG9zZXMgaXRzIHRhaWwgKGZpbmFsIEUpIHRvIGdpdmUgU1BJTi4gRGVmaW5pdGlvbjogdG8gcm90YXRlLg=="
+      "explanation": "U1BJTkUgbG9zaW5nIGl0cyB0YWlsIGdpdmVzIFNQSU4uIERlZmluaXRpb246IHJvdGF0ZS4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlJvdGF0ZSIgYXQgdGhlIHN0YXJ0LiBUbyBTUElOIGlzIHRvIHJvdGF0ZS4=",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAic3BpbmUiIGlzIHVzZWQgYXMgaXQgc3RhbmRzLCBhbmQgImxvc2VzIGl0cyB0YWlsIiB0ZWxscyB5b3UgdG8gcmVtb3ZlIGl0cyBsYXN0IGxldHRlcjsgImFzIiBpcyBhIGxpbmsu",
+        "steps": [
+          "U3RhcnQgd2l0aCBTUElORS4=",
+          "Imxvc2VzIGl0cyB0YWlsIiDigJQgcmVtb3ZlIHRoZSBmaW5hbCBFLg==",
+          "U1BJTkUgd2l0aG91dCBFIGlzIFNQSU4u"
+        ],
+        "note": "QSBzcGluZSBsb3NpbmcgaXRzIHRhaWwgaXMgYW4gYW5hdG9taWNhbCBqb2tlLCBzaW5jZSB0aGUgdGFpbGJvbmUgc2l0cyBhdCB0aGUgZW5kIG9mIHRoZSBzcGluZS4="
+      }
     },
     {
       "id": 650,
@@ -16504,12 +16524,22 @@
       "clueType": "container",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYSBraXRjaGVuIGNvdmVyLg==",
-        "VGhpcyBjbHVlIHVzZXMgYSBjb250YWluZXIg4oCUIG9uZSB3b3JkIGluc2lkZSBhbm90aGVyLg==",
-        "UHV0IFBSTyAocHJvZmVzc2lvbmFsKSBpbnNpZGUgQU4gKGFydGljbGUpLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "Q29udGFpbmVyIOKAlCBvbmUgd29yZCBnb2VzIGFyb3VuZCBhbm90aGVyLg==",
+        "QSB0d28tbGV0dGVyIGFydGljbGUsIGFyb3VuZCBhIHNob3J0IHdvcmQgZm9yIGEgcHJvZmVzc2lvbmFsLg==",
         "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "Q29udGFpbmVyOiBBTiAoYXJ0aWNsZSkgYXJvdW5kIFBSTyAocHJvZmVzc2lvbmFsKSBnaXZlcyBBUFJPTi4gRGVmaW5pdGlvbjogYSBraXRjaGVuIGNvdmVyLg=="
+      "explanation": "QU4gKGFydGljbGUpIGFib3V0IFBSTyAocHJvZmVzc2lvbmFsKSBnaXZlcyBBUFJPTi4gRGVmaW5pdGlvbjoga2l0Y2hlbiBjb3Zlci4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImtpdGNoZW4gY292ZXIiIGF0IHRoZSBlbmQuIEFuIEFQUk9OIGNvdmVycyB5b3VyIGNsb3RoZXMgaW4gdGhlIGtpdGNoZW4u",
+        "device": "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLiAiQXJ0aWNsZSIgZ2l2ZXMgQU4sICJhIHByb2Zlc3Npb25hbCIgZ2l2ZXMgUFJPLCBhbmQgImFib3V0IiB0ZWxscyB5b3UgQU4gZ29lcyBhcm91bmQgUFJPLg==",
+        "steps": [
+          "IkFydGljbGUiIOKAlCBBTiAob3IgQSku",
+          "ImEgcHJvZmVzc2lvbmFsIiDigJQgYSBQUk8u",
+          "QU4gYXJvdW5kIFBSTzogQSArIFBSTyArIE4gPSBBUFJPTi4="
+        ],
+        "note": "VGhlIGdyYW1tYXRpY2FsIGFydGljbGVzIEEsIEFOIGFuZCBUSEUgYXJlIGZyZXF1ZW50IGJ1aWxkaW5nIGJsb2Nrcy4gIkFydGljbGUiIGNvdWxkIGFsc28gbWVhbiBhIG5ld3NwYXBlciBwaWVjZSwgd2hpY2ggaXMgdGhlIG1pc2RpcmVjdGlvbi4="
+      }
     },
     {
       "id": 651,
@@ -16521,12 +16551,22 @@
       "clueType": "homophone",
       "difficulty": "medium",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiQnJpZWYgc3RvcCIu",
-        "IldlIGhlYXIiIHNpZ25hbHMgYSBob21vcGhvbmUu",
-        "SXQgc291bmRzIGxpa2UgUEFXUy4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0Lg==",
+        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicu",
+        "QW4gYW5pbWFsJ3MgZmVldCBzb3VuZCBsaWtlIHRoZSBhbnN3ZXIu",
         "U3RhcnRzIHdpdGggUC4="
       ],
-      "explanation": "UEFVU0Ugc291bmRzIGxpa2UgUEFXUyAoYW5pbWFsIGZlZXQpLiBEZWZpbml0aW9uOiBhIGJyaWVmIHN0b3Au"
+      "explanation": "UEFVU0UgKGJyaWVmIHN0b3ApIHNvdW5kcyBsaWtlIFBBV1MgKGFuaW1hbCBmZWV0KS4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkJyaWVmIHN0b3AiIGF0IHRoZSBzdGFydC4gQSBQQVVTRSBpcyBhIGJyaWVmIHN0b3Au",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gImFuaW1hbCBmZWV0IiBnaXZlcyBQQVdTLCBhbmQgIndlIGhlYXIiIHRlbGxzIHlvdSB0aGUgYW5zd2VyIGlzIGEgc291bmQtYWxpa2U7ICJmb3IiIGlzIGEgbGluay4=",
+        "steps": [
+          "ImFuaW1hbCBmZWV0IiDigJQgUEFXUy4=",
+          "IndlIGhlYXIiIOKAlCBzYXkgaXQgYWxvdWQu",
+          "UEFXUyBzb3VuZHMgbGlrZSBQQVVTRSwgYSBicmllZiBzdG9wLg=="
+        ],
+        "note": "UEFXUyBhbmQgUEFVU0UgYXBwZWFyIHRoZSBvdGhlciB3YXkgcm91bmQgaW4gYW4gZWFybGllciBwdXp6bGUg4oCUIGNoZWNrIHdoaWNoIHNwZWxsaW5nIHRoZSBkZWZpbml0aW9uIGFza3MgZm9yLg=="
+      }
     },
     {
       "id": 652,
@@ -16538,12 +16578,22 @@
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "T25lIG1lYW5pbmcgY2hpcnBzIGF0IG5pZ2h0Lg==",
-        "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLg==",
-        "QSBjaGlycGluZyBpbnNlY3QsIG9yIHRoZSBzcG9ydCB3aXRoIHdpY2tldHMu",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAncGxheWluZyBhJy4=",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QSBjaGlycGluZyBpbnNlY3QsIGFuZCBhIGJhdC1hbmQtYmFsbCBzcG9ydC4=",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IGEgQ1JJQ0tFVCBpcyBhIGNoaXJwaW5nIGluc2VjdCwgYW5kIENSSUNLRVQgaXMgYSBiYXQtYW5kLWJhbGwgc3BvcnQu"
+      "explanation": "Q1JJQ0tFVCBtZWFucyBhbiBpbnNlY3QgYW5kIGEgYmF0LWFuZC1iYWxsIHNwb3J0Lg==",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiSW5zZWN0IiBhbmQgImJhdC1hbmQtYmFsbCBzcG9ydCIuIEEgQ1JJQ0tFVCBpcyBhIGNoaXJwaW5nIGluc2VjdCwgYW5kIGNyaWNrZXQgaXMgYSBiYXQtYW5kLWJhbGwgc3BvcnQu",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJwbGF5aW5nIGEiIGxpbmtpbmcgdGhlIHR3byBtZWFuaW5ncy4=",
+        "steps": [
+          "Ikluc2VjdCIg4oCUIGEgQ1JJQ0tFVC4=",
+          "ImJhdC1hbmQtYmFsbCBzcG9ydCIg4oCUIENSSUNLRVQu",
+          "Qm90aCByZWFkaW5ncyBnaXZlIENSSUNLRVQu"
+        ],
+        "note": "VGhlIHN1cmZhY2UgcGljdHVyZXMgYW4gaW5zZWN0IHBsYXlpbmcgY3JpY2tldCDigJQgdGhlIGtpbmQgb2YgY2FydG9vbiBpbWFnZSB0aGF0IG9mdGVuIHNpZ25hbHMgYSBkb3VibGUgZGVmaW5pdGlvbi4="
+      }
     },
     {
       "id": 653,
@@ -16555,12 +16605,22 @@
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "QSBib2dneSBoYWJpdGF0IGlzIGRlZmluZWQu",
-        "VGhpcyBpcyBhIGNoYXJhZGUg4oCUIHR3byBzaG9ydCB3b3JkcyBqb2luLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGxhc3Qgd29yZC4=",
+        "Q2hhcmFkZSDigJQgdHdvIHdvcmRzIGpvaW5lZC4=",
         "QSB3b3JkIGZvciBkYW1wLCB0aGVuIGEgd29yZCBmb3IgZ3JvdW5kLg==",
         "U3RhcnRzIHdpdGggVy4="
       ],
-      "explanation": "Q2hhcmFkZTogV0VUIChkYW1wKSArIExBTkQgKGdyb3VuZCkgPSBXRVRMQU5ELiBEZWZpbml0aW9uOiBhIG1hcnNoLg=="
+      "explanation": "V0VUIChkYW1wKSArIExBTkQgKGdyb3VuZCkgZ2l2ZXMgV0VUTEFORC4gRGVmaW5pdGlvbjogbWFyc2gu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgbWFyc2giIGF0IHRoZSBlbmQuIEEgV0VUTEFORCBpcyBhIG1hcnNoLg==",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJEYW1wIiBnaXZlcyBXRVQgYW5kICJncm91bmQiIGdpdmVzIExBTkQ7ICJmb3JtcyIgbGlua3MgdG8gdGhlIGRlZmluaXRpb24u",
+        "steps": [
+          "IkRhbXAiIOKAlCBXRVQu",
+          "Imdyb3VuZCIg4oCUIExBTkQu",
+          "V0VUICsgTEFORCA9IFdFVExBTkQsIGEgbWFyc2gu"
+        ],
+        "note": "VGhlIHdvcmRwbGF5IGRlc2NyaWJlcyB0aGUgYW5zd2VyIGFsbW9zdCBleGFjdGx5LCB3aGljaCBtYWtlcyB0aGlzIG9uZSBvZiB0aGUgZ2VudGxlciBjaGFyYWRlcy4="
+      }
     },
     {
       "id": 654,
@@ -16572,12 +16632,22 @@
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "Qm90aCBoYWx2ZXMgb2YgdGhlIGNsdWUgZGVmaW5lIHRoZSBzYW1lIHdvcmQu",
-        "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLg==",
-        "T25lIHNlbnNlIGlzIG1hdGhlbWF0aWNhbCwgdGhlIG90aGVyIGRlc2NyaWJlcyBjcnVlbHR5Lg==",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAnYW5kJy4=",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QSBtYXRoZW1hdGljYWwgYXZlcmFnZSwgYW5kIGEgd29yZCBmb3IgdW5raW5kLg==",
         "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IE1FQU4gaXMgYW4gYXZlcmFnZSwgYW5kIE1FQU4gaXMgdW5raW5kLg=="
+      "explanation": "TUVBTiBtZWFucyBhdmVyYWdlIGFuZCB1bmtpbmQu",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiQXZlcmFnZSIgYW5kICJ1bmtpbmQiLiBUaGUgTUVBTiBpcyBhbiBhdmVyYWdlLCBhbmQgbWVhbiBtZWFucyB1bmtpbmQu",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJhbmQiIGpvaW5pbmcgdHdvIG1lYW5pbmdzIG9mIE1FQU4u",
+        "steps": [
+          "IkF2ZXJhZ2UiIOKAlCB0aGUgTUVBTi4=",
+          "InVua2luZCIg4oCUIE1FQU4u",
+          "Qm90aCByZWFkaW5ncyBnaXZlIE1FQU4u"
+        ],
+        "note": "TUVBTiBhbHNvIG1lYW5zIHN0aW5neSBhbmQgdG8gaW50ZW5kLiBXaXRoIHNvIG1hbnkgc2Vuc2VzLCBzaG9ydCBjbHVlcyB1c2luZyBpdCBhcmUgbmVhcmx5IGFsd2F5cyBkb3VibGUgZGVmaW5pdGlvbnMu"
+      }
     },
     {
       "id": 655,
@@ -16589,12 +16659,22 @@
       "clueType": "charade",
       "difficulty": "hard",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYSBzd29yZC4=",
-        "VGhpcyBpcyBhIGNoYXJhZGUg4oCUIGpvaW4gdHdvIHdvcmRzLg==",
-        "VG8gc2xhc2ggKDMpIHBsdXMgYSBnaXJsICg0KS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "Q2hhcmFkZSDigJQgdHdvIHdvcmRzIGpvaW5lZC4=",
+        "QSB3b3JkIGZvciBzbGFzaCwgdGhlbiBhIHdvcmQgZm9yIGdpcmwu",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "Q1VUIChzbGFzaCkgKyBMQVNTIChnaXJsKSBnaXZlcyBDVVRMQVNTLiBEZWZpbml0aW9uOiBhIHN3b3JkLg=="
+      "explanation": "Q1VUIChzbGFzaCkgKyBMQVNTIChnaXJsKSBnaXZlcyBDVVRMQVNTLiBEZWZpbml0aW9uOiBhIHN3b3JkLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgc3dvcmQiIGF0IHRoZSBlbmQuIEEgQ1VUTEFTUyBpcyBhIHNob3J0IGN1cnZlZCBzd29yZC4=",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJTbGFzaCIgZ2l2ZXMgQ1VUIGFuZCAidGhlIGdpcmwiIGdpdmVzIExBU1M7ICJ3aXRoIiBsaW5rcyB0byB0aGUgZGVmaW5pdGlvbi4=",
+        "steps": [
+          "IlNsYXNoIiDigJQgQ1VULg==",
+          "InRoZSBnaXJsIiDigJQgYSBMQVNTLg==",
+          "Q1VUICsgTEFTUyA9IENVVExBU1MsIGEgc3dvcmQu"
+        ],
+        "note": "VGhlIHZpb2xlbnQgc3VyZmFjZSBpcyBwdXJlIG1pc2RpcmVjdGlvbjogdGhlIHdvcmRwbGF5IGp1c3Qgam9pbnMgdHdvIGV2ZXJ5ZGF5IHdvcmRzLiBMQVNTIGlzIGEgY29tbW9uIGNyeXB0aWMgZ2lybCwgYWxvbmdzaWRlIEdBTCBhbmQgTUlTUy4="
+      }
     },
     {
       "id": 656,
@@ -16606,12 +16686,22 @@
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYSBsaXR0bGUgb3JuYW1lbnQu",
-        "VGhpcyBjbHVlIHVzZXMgYSBkZWxldGlvbiDigJQgcmVtb3ZlIGEgbGV0dGVyLg==",
-        "VGFrZSBCUkVBRCBhbmQgcmVtb3ZlIFIgKHJpZ2h0KS4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "RGVsZXRpb24g4oCUIHJlbW92ZSBvbmUgbGV0dGVyLg==",
+        "VGFrZSB0aGUgYWJicmV2aWF0aW9uIGZvciByaWdodCBvdXQgb2YgQlJFQUQu",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "RGVsZXRpb246IEJSRUFEIHdpdGhvdXQgUiAocmlnaHQpIGdpdmVzIEJFQUQuIERlZmluaXRpb246IGEgbGl0dGxlIG9ybmFtZW50Lg=="
+      "explanation": "QlJFQUQgd2l0aG91dCBSIChyaWdodCkgZ2l2ZXMgQkVBRC4gRGVmaW5pdGlvbjogYSBsaXR0bGUgb3JuYW1lbnQu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgbGl0dGxlIG9ybmFtZW50IiBhdCB0aGUgZW5kLiBBIEJFQUQgaXMgYSBzbWFsbCBkZWNvcmF0aXZlIG9ybmFtZW50Lg==",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiQnJlYWQiIGlzIHVzZWQgYXMgaXQgc3RhbmRzLCBhbmQgIndpdGhvdXQgcmlnaHQiIHRlbGxzIHlvdSB0byByZW1vdmUgUi4=",
+        "steps": [
+          "U3RhcnQgd2l0aCBCUkVBRC4=",
+          "IndpdGhvdXQgcmlnaHQiIOKAlCByZW1vdmUgUi4=",
+          "QlJFQUQgd2l0aG91dCBSIGlzIEJFQUQu"
+        ],
+        "note": "VGhlIGxldHRlciByZW1vdmVkIGhlcmUgaXMgbmFtZWQgKFIgZm9yIHJpZ2h0KSByYXRoZXIgdGhhbiBnaXZlbiBieSBwb3NpdGlvbiwgc28gbG9vayBmb3IgYWJicmV2aWF0aW9ucyB3aGVuIGEgZGVsZXRpb24gZG9lc24ndCBzYXkgImhlYWQiIG9yICJ0YWlsIi4="
+      }
     },
     {
       "id": 657,
@@ -16623,12 +16713,22 @@
       "clueType": "double-definition",
       "difficulty": "hard",
       "hintLevels": [
-        "VHdvIG1lYW5pbmdzIOKAlCBvbmUgaXMgdG9pbC4=",
-        "VGhpcyBjbHVlIHVzZXMgYSBkb3VibGUgZGVmaW5pdGlvbi4=",
-        "SGFyZCB3b3JrOyBhbHNvIGEgc3VyZ2ljYWwgb3IgYm90YW5pY2FsIHRyYW5zcGxhbnQu",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAnZm9yIGEnLg==",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QnJpdGlzaCBzbGFuZyBmb3IgaGFyZCB3b3JrLCBhbmQgYSBwaWVjZSBvZiB0aXNzdWUgdHJhbnNwbGFudGVkIGluIHN1cmdlcnku",
         "U3RhcnRzIHdpdGggRy4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IEdSQUZUIGlzIGhhcmQgd29yayBhbmQgYWxzbyBhIHRyYW5zcGxhbnQu"
+      "explanation": "R1JBRlQgbWVhbnMgaGFyZCB3b3JrIGFuZCBhIHRyYW5zcGxhbnQu",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiSGFyZCB3b3JrIiBhbmQgInRyYW5zcGxhbnQiLiBHUkFGVCBpcyBCcml0aXNoIHNsYW5nIGZvciBoYXJkIHdvcmssIGFuZCBhIGdyYWZ0IGlzIHRyYW5zcGxhbnRlZCB0aXNzdWUu",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJmb3IgYSIgbGlua2luZyB0aGUgdHdvIG1lYW5pbmdzLg==",
+        "steps": [
+          "IkhhcmQgd29yayIg4oCUIEdSQUZULg==",
+          "InRyYW5zcGxhbnQiIOKAlCBhIHNraW4gR1JBRlQu",
+          "Qm90aCByZWFkaW5ncyBnaXZlIEdSQUZULg=="
+        ],
+        "note": "R1JBRlQgYWxzbyBtZWFucyBicmliZXJ5IGluIEFtZXJpY2FuIEVuZ2xpc2guIFRoZSBzdXJmYWNlIHJlYWRzIGFzIGEgc3VyZ2VvbidzIHRpcmluZyBzaGlmdC4="
+      }
     },
     {
       "id": 658,
@@ -16640,29 +16740,49 @@
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "T25lIG1lYW5pbmcgYXBwZWFycyBvbiBhIGJpbGwu",
-        "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLg==",
-        "QSBjb3N0IHlvdSBwYXksIG9yIGEgc3VkZGVuIHJ1c2ggYXQgdGhlIGVuZW15Lg==",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAnZm9yIGEnLg==",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QSBmZWUsIGFuZCB3aGF0IGEgY2F2YWxyeSBkb2VzIHdoZW4gaXQgcnVzaGVzIGZvcndhcmQu",
         "U3RhcnRzIHdpdGggQy4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IGEgQ0hBUkdFIGlzIGEgZmVlLCBhbmQgYSBDSEFSR0UgaXMgYSBjYXZhbHJ5IGF0dGFjay4="
+      "explanation": "Q0hBUkdFIG1lYW5zIGEgZmVlIGFuZCBhIGNhdmFscnkgYXR0YWNrLg==",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiRmVlIiBhbmQgImNhdmFscnkgYXR0YWNrIi4gQSBDSEFSR0UgaXMgYSBmZWUsIGFuZCBhIGNoYXJnZSBpcyBhIGhlYWRsb25nIGNhdmFscnkgYXR0YWNrLg==",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJmb3IgYSIgbGlua2luZyB0aGUgdHdvIG1lYW5pbmdzLg==",
+        "steps": [
+          "IkZlZSIg4oCUIGEgQ0hBUkdFLg==",
+          "ImNhdmFscnkgYXR0YWNrIiDigJQgYSBDSEFSR0Uu",
+          "Qm90aCByZWFkaW5ncyBnaXZlIENIQVJHRS4="
+        ],
+        "note": "Q0hBUkdFIGFsc28gbWVhbnMgZWxlY3RyaWNhbCBlbmVyZ3kgYW5kIGEgY3JpbWluYWwgYWNjdXNhdGlvbiDigJQgYSB3b3JkIHdpdGggcGxlbnR5IG9mIG1lYW5pbmdzIHRvIGNob29zZSBmcm9tLg=="
+      }
     },
     {
       "id": 659,
       "printDate": "2027-12-05",
       "publishDate": "2027-12-05",
       "status": "scheduled",
-      "clue": "SWEAT churned into rubbish (5)",
+      "clue": "Sweat churned into rubbish (5)",
       "answer": "V0FTVEU=",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAicnViYmlzaCIu",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIFNXRUFULg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGxhc3Qgd29yZC4=",
+        "QW5hZ3JhbSDigJQgJ2NodXJuZWQnLg==",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFNXRUFULg==",
         "U3RhcnRzIHdpdGggVy4="
       ],
-      "explanation": "U1dFQVQgY2h1cm5lZCBnaXZlcyBXQVNURS4gRGVmaW5pdGlvbjogcnViYmlzaC4="
+      "explanation": "U1dFQVQgY2h1cm5lZCAoYW5hZ3JhbSkgZ2l2ZXMgV0FTVEUuIERlZmluaXRpb246IHJ1YmJpc2gu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInJ1YmJpc2giIGF0IHRoZSBlbmQuIFdBU1RFIGlzIHJ1YmJpc2gu",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIFNXRUFUIGFuZCAiY2h1cm5lZCIgaXMgdGhlIGluZGljYXRvcjsgImludG8iIGlzIGEgbGluay4=",
+        "steps": [
+          "Rm9kZGVyOiBTV0VBVCAoNSBsZXR0ZXJzOiBTLCBXLCBFLCBBLCBUKS4=",
+          "ImNodXJuZWQiIOKAlCByZWFycmFuZ2UgdGhlbS4=",
+          "Uy1XLUUtQS1UIHJlYXJyYW5nZWQgZ2l2ZXMgVy1BLVMtVC1FIOKAlCBXQVNURS4="
+        ],
+        "note": "U1dFQVQgYW5kIFdBU1RFIHNoYXJlIHRoZSBzYW1lIGxldHRlcnMuIEhhcmQgd29yayB3YXN0ZWQgaXMgdGhlIGltYWdlIGJlaGluZCB0aGUgc3VyZmFjZS4="
+      }
     },
     {
       "id": 660,
@@ -16674,12 +16794,22 @@
       "clueType": "reversal",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYSBwaG9uZSBmYWNlLg==",
-        "VGhpcyBpcyBhIHJldmVyc2FsIOKAlCByZWFkIHNvbWV0aGluZyBiYWNrd2FyZHMu",
-        "UmV2ZXJzZSBMQUlELg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "UmV2ZXJzYWwg4oCUICdiYWNrJy4=",
+        "V3JpdGUgTEFJRCBiYWNrd2FyZHMu",
         "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "TEFJRCBiYWNrIChyZXZlcnNlZCkgZ2l2ZXMgRElBTC4gRGVmaW5pdGlvbjogYSBwaG9uZSBvciBjbG9jayBmYWNlLg=="
+      "explanation": "TEFJRCBiYWNrIChyZXZlcnNlZCkgZ2l2ZXMgRElBTC4gRGVmaW5pdGlvbjogdGhlIHBob25lIGZhY2Uu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInRoZSBwaG9uZSBmYWNlIiBhdCB0aGUgZW5kLiBUaGUgRElBTCBpcyB0aGUgZmFjZSBvZiBhbiBvbGQgdGVsZXBob25lLg==",
+        "device": "VGhpcyBpcyBhIHJldmVyc2FsLiAiTGFpZCIgaXMgdXNlZCBhcyBpdCBzdGFuZHMsIGFuZCAiYmFjayIgdGVsbHMgeW91IHRvIHJldmVyc2UgaXQ7ICJvbiIgaXMgYSBsaW5rLg==",
+        "steps": [
+          "U3RhcnQgd2l0aCBMQUlELg==",
+          "ImJhY2siIOKAlCByZXZlcnNlIGl0Lg==",
+          "TC1BLUktRCBiYWNrd2FyZHMgaXMgRC1JLUEtTCDigJQgRElBTC4="
+        ],
+        "note": "IkxhaWQgYmFjayIgaXMgYSBzZXQgcGhyYXNlIG1lYW5pbmcgcmVsYXhlZCwgc28gdGhlIGluZGljYXRvciBoaWRlcyBpbnNpZGUgaXQuIFNwbGl0dGluZyBzZXQgcGhyYXNlcyBpcyBhIGNsYXNzaWMgd2F5IGludG8gY3J5cHRpYyB3b3JkcGxheS4="
+      }
     },
     {
       "id": 661,
@@ -16691,12 +16821,22 @@
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgbmFrZWQu",
-        "VGhpcyBjbHVlIHVzZXMgYSBob21vcGhvbmUg4oCUICd3ZSBoZWFyJyBpcyB0aGUgc2lnbmFsLg==",
-        "SXQgc291bmRzIGxpa2UgYSBsYXJnZSBmdXJyeSBhbmltYWwu",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SG9tb3Bob25lIOKAlCAnd2UgaGVhcicu",
+        "QSBsYXJnZSBmdXJyeSBhbmltYWwgc291bmRzIGxpa2UgdGhlIGFuc3dlci4=",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "SG9tb3Bob25lOiBCQVJFIChuYWtlZCkgc291bmRzIGxpa2UgQkVBUiAoYW5pbWFsKS4gJ1dlIGhlYXInIHNpZ25hbHMgdGhlIGhvbW9waG9uZS4="
+      "explanation": "QkFSRSAobmFrZWQpIHNvdW5kcyBsaWtlIEJFQVIgKGFuaW1hbCku",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIk5ha2VkIiBhdCB0aGUgc3RhcnQuIEJBUkUgbWVhbnMgbmFrZWQu",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gImFuaW1hbCIgZ2l2ZXMgQkVBUiwgYW5kICJ3ZSBoZWFyIiB0ZWxscyB5b3UgdGhlIGFuc3dlciBpcyBhIHNvdW5kLWFsaWtlLg==",
+        "steps": [
+          "ImFuaW1hbCIg4oCUIGEgQkVBUi4=",
+          "IndlIGhlYXIiIOKAlCBzYXkgaXQgYWxvdWQu",
+          "QkVBUiBzb3VuZHMgbGlrZSBCQVJFLCBuYWtlZC4="
+        ],
+        "note": "VGhlIHNhbWUgcGFpciBhcHBlYXJzIHRoZSBvdGhlciB3YXkgcm91bmQgaW4gYW4gZWFybGllciBwdXp6bGUuIEhlcmUgdGhlIGFuc3dlciBpcyB0aGUgYWRqZWN0aXZlLCBzbyB0aGUgc3BlbGxpbmcgaXMgQkFSRS4="
+      }
     },
     {
       "id": 662,
@@ -16708,46 +16848,76 @@
       "clueType": "homophone",
       "difficulty": "easy",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYmVsb3ZlZC4=",
-        "VGhpcyBpcyBhIGhvbW9waG9uZSDigJQgbGlzdGVuIGZvciBpdC4=",
-        "SXQgc291bmRzIGV4YWN0bHkgbGlrZSBERUVSLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SG9tb3Bob25lIOKAlCAnc291bmRzIGxpa2UnLg==",
+        "QSB3b29kbGFuZCBhbmltYWwgd2l0aCBhbnRsZXJzIHNvdW5kcyBsaWtlIHRoZSBhbnN3ZXIu",
         "U3RhcnRzIHdpdGggRC4="
       ],
-      "explanation": "REVBUiAoYmVsb3ZlZCkgc291bmRzIGxpa2UgREVFUiAoYSB3b29kbGFuZCBhbmltYWwpLiBEZWZpbml0aW9uOiBiZWxvdmVkLg=="
+      "explanation": "REVBUiAoYmVsb3ZlZCkgc291bmRzIGxpa2UgREVFUiAod29vZGxhbmQgYW5pbWFsKS4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkJlbG92ZWQiIGF0IHRoZSBzdGFydC4gREVBUiBtZWFucyBiZWxvdmVkLg==",
+        "device": "VGhpcyBpcyBhIGhvbW9waG9uZS4gImEgd29vZGxhbmQgYW5pbWFsIiBnaXZlcyBERUVSLCBhbmQgInNvdW5kcyBsaWtlIiB0ZWxscyB5b3UgdGhlIGFuc3dlciBpcyBhIHNvdW5kLWFsaWtlLg==",
+        "steps": [
+          "ImEgd29vZGxhbmQgYW5pbWFsIiDigJQgYSBERUVSLg==",
+          "InNvdW5kcyBsaWtlIiDigJQgc2F5IGl0IGFsb3VkLg==",
+          "REVFUiBzb3VuZHMgbGlrZSBERUFSLCBiZWxvdmVkLg=="
+        ],
+        "note": "REVBUiBhbHNvIG1lYW5zIGV4cGVuc2l2ZSBpbiBCcml0aXNoIEVuZ2xpc2gsIHdoaWNoIGFuIGVhcmxpZXIgcHV6emxlIHVzZWQuIEhlcmUgdGhlIGFmZmVjdGlvbmF0ZSBzZW5zZSBpcyB0aGUgZGVmaW5pdGlvbi4="
+      }
     },
     {
       "id": 663,
       "printDate": "2027-12-09",
       "publishDate": "2027-12-09",
       "status": "scheduled",
-      "clue": "Hair at the front as FINGER twitches (6)",
+      "clue": "Hair at the front as finger twitches (6)",
       "answer": "RlJJTkdF",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiSGFpciBhdCB0aGUgZnJvbnQiLg==",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIEZJTkdFUi4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0Lg==",
+        "QW5hZ3JhbSDigJQgJ3R3aXRjaGVzJy4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIEZJTkdFUi4=",
         "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "RklOR0VSIHR3aXRjaGVzIChyZWFycmFuZ2VzKSB0byBnaXZlIEZSSU5HRS4gRGVmaW5pdGlvbjogaGFpciBhdCB0aGUgZnJvbnQu"
+      "explanation": "RklOR0VSIHR3aXRjaGVzIChhbmFncmFtKSBnaXZlcyBGUklOR0UuIERlZmluaXRpb246IGhhaXIgYXQgdGhlIGZyb250Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkhhaXIgYXQgdGhlIGZyb250IiBhdCB0aGUgc3RhcnQuIEEgRlJJTkdFIGlzIGhhaXIgY3V0IHRvIGhhbmcgb3ZlciB0aGUgZm9yZWhlYWQu",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIEZJTkdFUiBhbmQgInR3aXRjaGVzIiBpcyB0aGUgaW5kaWNhdG9yOyAiYXMiIGlzIGEgbGluay4=",
+        "steps": [
+          "Rm9kZGVyOiBGSU5HRVIgKDYgbGV0dGVyczogRiwgSSwgTiwgRywgRSwgUiku",
+          "InR3aXRjaGVzIiDigJQgcmVhcnJhbmdlIHRoZW0u",
+          "Ri1JLU4tRy1FLVIgcmVhcnJhbmdlZCBnaXZlcyBGLVItSS1OLUctRSDigJQgRlJJTkdFLg=="
+        ],
+        "note": "RklOR0VSIGFuZCBGUklOR0UgYXBwZWFyIHRoZSBvdGhlciB3YXkgcm91bmQgaW4gYW4gZWFybGllciBwdXp6bGUuIEEgZmluZ2VyIHR3aXRjaGluZyBhdCBhIGZyaW5nZSBpcyBhbiBhcHQgcGljdHVyZSBvZiBzb21lb25lIGZpZGRsaW5nIHdpdGggdGhlaXIgaGFpci4="
+      }
     },
     {
       "id": 664,
       "printDate": "2027-12-10",
       "publishDate": "2027-12-10",
       "status": "scheduled",
-      "clue": "Musical marks as STONE crumbles (5)",
+      "clue": "Musical marks as stone crumbles (5)",
       "answer": "Tk9URVM=",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiTXVzaWNhbCBtYXJrcyIu",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIFNUT05FLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIHN0YXJ0Lg==",
+        "QW5hZ3JhbSDigJQgJ2NydW1ibGVzJy4=",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFNUT05FLg==",
         "U3RhcnRzIHdpdGggTi4="
       ],
-      "explanation": "U1RPTkUgY3J1bWJsZXMgdG8gZ2l2ZSBOT1RFUy4gRGVmaW5pdGlvbjogbXVzaWNhbCBtYXJrcy4="
+      "explanation": "U1RPTkUgY3J1bWJsZXMgKGFuYWdyYW0pIGdpdmVzIE5PVEVTLiBEZWZpbml0aW9uOiBtdXNpY2FsIG1hcmtzLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIk11c2ljYWwgbWFya3MiIGF0IHRoZSBzdGFydC4gTk9URVMgYXJlIHRoZSBtYXJrcyB3cml0dGVuIG9uIGEgbXVzaWNhbCBzY29yZS4=",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIFNUT05FIGFuZCAiY3J1bWJsZXMiIGlzIHRoZSBpbmRpY2F0b3I7ICJhcyIgaXMgYSBsaW5rLg==",
+        "steps": [
+          "Rm9kZGVyOiBTVE9ORSAoNSBsZXR0ZXJzOiBTLCBULCBPLCBOLCBFKS4=",
+          "ImNydW1ibGVzIiDigJQgcmVhcnJhbmdlIHRoZW0u",
+          "Uy1ULU8tTi1FIHJlYXJyYW5nZWQgZ2l2ZXMgTi1PLVQtRS1TIOKAlCBOT1RFUy4="
+        ],
+        "note": "U1RPTkUgYWxzbyBnYXZlIFRPTkVTIGluIGFuIGVhcmxpZXIgcHV6emxlLiBDcnVtYmxpbmcgc3RvbmUgaXMgYSBuYXR1cmFsIGltYWdlLCBzbyAiY3J1bWJsZXMiIGRvZXMgbm90IGxvb2sgbGlrZSBhbiBpbnN0cnVjdGlvbi4="
+      }
     },
     {
       "id": 665,
@@ -16759,12 +16929,22 @@
       "clueType": "deletion",
       "difficulty": "easy",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAidmljdG9yeSIu",
-        "VGhpcyBpcyBhIGRlbGV0aW9uIOKAlCBkcm9wIGEgbGV0dGVyLg==",
-        "VGFrZSBXSU5FIGFuZCByZW1vdmUgaXRzIGZpbmFsIGxldHRlci4=",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "RGVsZXRpb24g4oCUICdsb3NpbmcgaXRzIGxhc3QnIG1lYW5zIGRyb3AgdGhlIGZpbmFsIGxldHRlci4=",
+        "UmVtb3ZlIHRoZSBsYXN0IGxldHRlciBvZiBXSU5FLg==",
         "U3RhcnRzIHdpdGggVy4="
       ],
-      "explanation": "RGVsZXRpb246IFdJTkUgbG9zaW5nIGl0cyBsYXN0IGxldHRlciBnaXZlcyBXSU4uIERlZmluaXRpb246IGEgdmljdG9yeS4="
+      "explanation": "V0lORSBsb3NpbmcgaXRzIGxhc3QgbGV0dGVyIGdpdmVzIFdJTi4gRGVmaW5pdGlvbjogYSB2aWN0b3J5Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgdmljdG9yeSIgYXQgdGhlIGVuZC4gQSBXSU4gaXMgYSB2aWN0b3J5Lg==",
+        "device": "VGhpcyBpcyBhIGRlbGV0aW9uLiAiV2luZSIgaXMgdXNlZCBhcyBpdCBzdGFuZHMsIGFuZCAibG9zaW5nIGl0cyBsYXN0IiB0ZWxscyB5b3UgdG8gcmVtb3ZlIGl0cyBmaW5hbCBsZXR0ZXI7ICJpcyIgaXMgYSBsaW5rLg==",
+        "steps": [
+          "U3RhcnQgd2l0aCBXSU5FLg==",
+          "Imxvc2luZyBpdHMgbGFzdCIg4oCUIHJlbW92ZSB0aGUgZmluYWwgRS4=",
+          "V0lORSB3aXRob3V0IEUgaXMgV0lOLg=="
+        ],
+        "note": "V2lubmVycyBjZWxlYnJhdGluZyB3aXRoIHdpbmUgaXMgdGhlIGhpZGRlbiBqb2tlLiAiSXRzIGxhc3QiIGlzIGEgY29tcGFjdCB3YXkgdG8gc2F5ICJpdHMgbGFzdCBsZXR0ZXIiLg=="
+      }
     },
     {
       "id": 666,
@@ -16776,12 +16956,22 @@
       "clueType": "hidden-word",
       "difficulty": "easy",
       "hintLevels": [
-        "QSBzaG9ydCBtb3JhbCBzdG9yeSBpcyBjb25jZWFsZWQu",
-        "VGhlIGFuc3dlciBpcyBoaWRpbmcgaW5zaWRlIG9uZSB3b3JkIG9mIHRoZSBjbHVlLg==",
-        "Rm91bmQgaW4gJ2FmRkFCTEUnLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SGlkZGVuIHdvcmQg4oCUICdmcm9tJy4=",
+        "TG9vayBpbnNpZGUgJ2FmZmFibGUnLg==",
         "U3RhcnRzIHdpdGggRi4="
       ],
-      "explanation": "SGlkZGVuIGluc2lkZSAnYWZGQUJMRScgaXMgRkFCTEUuIERlZmluaXRpb246IGEgc3Rvcnku"
+      "explanation": "SGlkZGVuIGluICdhZkZBQkxFJyBpcyBGQUJMRS4gRGVmaW5pdGlvbjogc3Rvcnku",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlN0b3J5IiBhdCB0aGUgc3RhcnQuIEEgRkFCTEUgaXMgYSBzaG9ydCBzdG9yeSwgb2Z0ZW4gd2l0aCBhIG1vcmFsLg==",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiZnJvbSIgdGVsbHMgeW91IHRvIHRha2UgdGhlIGFuc3dlciBvdXQgb2YgImFmZmFibGUiOyAibmFycmF0b3IiIGNvbXBsZXRlcyB0aGUgc3VyZmFjZS4=",
+        "steps": [
+          "ImZyb20iIHNpZ25hbHMgdGhhdCB0aGUgYW5zd2VyIGNvbWVzIGZyb20gaW5zaWRlIHRoZSBuZXh0IHdvcmQu",
+          "TG9vayBpbnNpZGUgQUZGQUJMRS4=",
+          "SW5zaWRlOiBhZkZBQkxFIOKAlCBGQUJMRS4="
+        ],
+        "note": "QW4gYWZmYWJsZSBuYXJyYXRvciB0ZWxsaW5nIGEgZmFibGUgaXMgYSBuZWF0bHkgc2VsZi1yZWZlcmVudGlhbCBzdXJmYWNlLiBGQUJMRSBpcyB0aGUgbGFzdCBmaXZlIGxldHRlcnMgb2YgQUZGQUJMRS4="
+      }
     },
     {
       "id": 667,
@@ -16793,12 +16983,22 @@
       "clueType": "container",
       "difficulty": "hard",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiU3Vic3RhbnRpYWwiLg==",
-        "VGhpcyBjbHVlIGlzIGEgY29udGFpbmVyIOKAlCBvbmUgd29yZCBzaXRzIGluc2lkZSBhbm90aGVyLg==",
-        "UHV0IEVBVCAoYSBiaXRlKSBpbnNpZGUgTVku",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "Q29udGFpbmVyIOKAlCBvbmUgd29yZCBnb2VzIGluc2lkZSBhbm90aGVyLg==",
+        "UHV0IGEgd29yZCBtZWFuaW5nIHRvIGhhdmUgYSBiaXRlICh0byBfX18pIGluc2lkZSBNWS4=",
         "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "TVkgY29uc3VtZXMgRUFUIChhIGJpdGUpOiBNLUVBVC1ZID0gTUVBVFkuIERlZmluaXRpb246IHN1YnN0YW50aWFsLg=="
+      "explanation": "TVkgY29uc3VtaW5nIEVBVCAoYml0ZSkgZ2l2ZXMgTShFQVQpWSA9IE1FQVRZLiBEZWZpbml0aW9uOiBzdWJzdGFudGlhbC4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIlN1YnN0YW50aWFsIiBhdCB0aGUgc3RhcnQuIE1FQVRZIG1lYW5zIHN1YnN0YW50aWFsLCBhcyBpbiBhIG1lYXR5IGRpc2N1c3Npb24u",
+        "device": "VGhpcyBpcyBhIGNvbnRhaW5lciBjbHVlLiAibXkiIGlzIHVzZWQgYXMgaXQgc3RhbmRzLCAiYSBiaXRlIiBnaXZlcyBFQVQsIGFuZCAiY29uc3VtaW5nIiB0ZWxscyB5b3UgTVkgZ29lcyBhcm91bmQgRUFULg==",
+        "steps": [
+          "Im15IiDigJQgTVku",
+          "ImEgYml0ZSIg4oCUIHRvIEVBVC4=",
+          "TVkgY29uc3VtaW5nIEVBVDogTSArIEVBVCArIFkgPSBNRUFUWS4="
+        ],
+        "note": "IkNvbnN1bWluZyIgZml0cyBib3RoIHRoZSBlYXRpbmcgc3VyZmFjZSBhbmQgdGhlIGNvbnRhaW5lciBpbnN0cnVjdGlvbiDigJQgYSBuZWF0IGRvdWJsZSBkdXR5IGZvciBhbiBpbmRpY2F0b3Iu"
+      }
     },
     {
       "id": 668,
@@ -16810,12 +17010,22 @@
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "QSBoYXBweSBmYWNlIGRvZXMgdGhpcy4=",
-        "VGhpcyBjbHVlIHVzZXMgYSBkb3VibGUgZGVmaW5pdGlvbi4=",
-        "T25lIG1lYW5pbmcgaXMgYSBicm9hZCBzbWlsZTsgdGhlIG90aGVyIGlzIGEgc3RydWN0dXJhbCBzdXBwb3J0Lg==",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAnYXQgdGhlJy4=",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QSB3b3JkIGZvciBhIGJyb2FkIHNtaWxlLCBhbmQgYSBoZWF2eSByb29mIHRpbWJlci4=",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IHRvIEJFQU0gaXMgdG8gc21pbGUgd2lkZWx5LCBhbmQgYSBCRUFNIGlzIGEgcm9vZiB0aW1iZXIu"
+      "explanation": "QkVBTSBtZWFucyB0byBzbWlsZSB3aWRlbHkgYW5kIGEgcm9vZiB0aW1iZXIu",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiU21pbGUgd2lkZWx5IiBhbmQgInJvb2YgdGltYmVyIi4gVG8gQkVBTSBpcyB0byBzbWlsZSB3aWRlbHksIGFuZCBhIGJlYW0gaXMgYSByb29mIHRpbWJlci4=",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJhdCB0aGUiIGxpbmtpbmcgdGhlIHR3byBtZWFuaW5ncy4=",
+        "steps": [
+          "IlNtaWxlIHdpZGVseSIg4oCUIHRvIEJFQU0u",
+          "InJvb2YgdGltYmVyIiDigJQgYSBCRUFNLg==",
+          "Qm90aCByZWFkaW5ncyBnaXZlIEJFQU0u"
+        ],
+        "note": "QkVBTSBpcyBhbHNvIGEgcmF5IG9mIGxpZ2h0IGFuZCB0aGUgd2lkdGggb2YgYSBzaGlwLiBJdHMgbWFueSBtZWFuaW5ncyBtYWtlIGl0IGEgcmVsaWFibGUgZG91YmxlLWRlZmluaXRpb24gYW5zd2VyLg=="
+      }
     },
     {
       "id": 669,
@@ -16827,63 +17037,103 @@
       "clueType": "charade",
       "difficulty": "easy",
       "hintLevels": [
-        "QSB0YWxsIHRvd2VyIHdpdGggdHVybmluZyBzYWlscyBpcyBkZWZpbmVkLg==",
-        "VGhpcyBpcyBhIGNoYXJhZGUg4oCUIGJ1aWxkIGl0IGZyb20gdHdvIHBhcnRzLg==",
-        "QSB3b3JkIGZvciBicmVlemUsIHRoZW4gYSB3b3JkIGZvciBhIGdyaW5kaW5nIHdvcmtzLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "Q2hhcmFkZSDigJQgdHdvIHdvcmRzIGpvaW5lZC4=",
+        "QSB3b3JkIGZvciBicmVlemUsIHRoZW4gYSB3b3JkIGZvciBhIGdyaW5kZXIu",
         "U3RhcnRzIHdpdGggVy4="
       ],
-      "explanation": "Q2hhcmFkZTogV0lORCAoYnJlZXplKSArIE1JTEwgKGdyaW5kZXIpID0gV0lORE1JTEwuIERlZmluaXRpb246IHRoZSBzYWlsLWFybWVkIHRvd2VyLg=="
+      "explanation": "V0lORCAoYnJlZXplKSArIE1JTEwgKGdyaW5kZXIpIGdpdmVzIFdJTkRNSUxMLiBEZWZpbml0aW9uOiB0aGUgc2FpbC1hcm1lZCB0b3dlci4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgInRoZSBzYWlsLWFybWVkIHRvd2VyIiBhdCB0aGUgZW5kLiBBIFdJTkRNSUxMIGlzIGEgdG93ZXIgd2l0aCBzYWlscy4=",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJCcmVlemUiIGdpdmVzIFdJTkQgYW5kICJhIGdyaW5kZXIiIGdpdmVzIE1JTEw7ICJ0aGVuIiBzZXRzIHRoZSBvcmRlciBhbmQgImZvciIgbGlua3MgdG8gdGhlIGRlZmluaXRpb24u",
+        "steps": [
+          "IkJyZWV6ZSIg4oCUIFdJTkQu",
+          "ImEgZ3JpbmRlciIg4oCUIGEgTUlMTC4=",
+          "V0lORCArIE1JTEwgPSBXSU5ETUlMTCwgdGhlIHNhaWwtYXJtZWQgdG93ZXIu"
+        ],
+        "note": "VGhlIHBhcnRzIGRlc2NyaWJlIGV4YWN0bHkgaG93IGEgd2luZG1pbGwgd29ya3Mg4oCUIHdpbmQgdHVybmluZyBhIG1pbGwg4oCUIHdoaWNoIG1ha2VzIHRoZSBjbHVlIGZlZWwgaW5ldml0YWJsZSBvbmNlIHNvbHZlZC4="
+      }
     },
     {
       "id": 670,
       "printDate": "2027-12-16",
       "publishDate": "2027-12-16",
       "status": "scheduled",
-      "clue": "Bustle when SLEUTH is disguised (6)",
+      "clue": "Bustle when sleuth is disguised (6)",
       "answer": "SFVTVExF",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiQnVzdGxlIi4=",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIFNMRVVUSC4=",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "QW5hZ3JhbSDigJQgJ2lzIGRpc2d1aXNlZCcu",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIFNMRVVUSC4=",
         "U3RhcnRzIHdpdGggSC4="
       ],
-      "explanation": "U0xFVVRIIGluIGRpc2d1aXNlIGJlY29tZXMgSFVTVExFLiBEZWZpbml0aW9uOiBidXN0bGUu"
+      "explanation": "U0xFVVRIIGlzIGRpc2d1aXNlZCAoYW5hZ3JhbSkgZ2l2ZXMgSFVTVExFLiBEZWZpbml0aW9uOiBidXN0bGUu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkJ1c3RsZSIgYXQgdGhlIHN0YXJ0LiBIVVNUTEUgaXMgYnVzdGxlIOKAlCBidXN5LCBlbmVyZ2V0aWMgYWN0aXZpdHku",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIFNMRVVUSCBhbmQgImlzIGRpc2d1aXNlZCIgaXMgdGhlIGluZGljYXRvcjsgIndoZW4iIGlzIGEgbGluay4=",
+        "steps": [
+          "Rm9kZGVyOiBTTEVVVEggKDYgbGV0dGVyczogUywgTCwgRSwgVSwgVCwgSCku",
+          "ImlzIGRpc2d1aXNlZCIg4oCUIHJlYXJyYW5nZSB0aGVtLg==",
+          "Uy1MLUUtVS1ULUggcmVhcnJhbmdlZCBnaXZlcyBILVUtUy1ULUwtRSDigJQgSFVTVExFLg=="
+        ],
+        "note": "RGV0ZWN0aXZlcyBmYW1vdXNseSBnbyBpbiBkaXNndWlzZSwgc28gdGhlIGluZGljYXRvciBiZWxvbmdzIHRvIHRoZSBzdG9yeS4gU0xFVVRIIGFuZCBIVVNUTEUgYXJlIGEgbmVhdCBhbmFncmFtIHBhaXIgd29ydGggcmVtZW1iZXJpbmcu"
+      }
     },
     {
       "id": 671,
       "printDate": "2027-12-17",
       "publishDate": "2027-12-17",
       "status": "scheduled",
-      "clue": "GABLE rebuilt as a bread ring (5)",
+      "clue": "Gable rebuilt as a bread ring (5)",
       "answer": "QkFHRUw=",
       "clueType": "anagram",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYSByaW5nLXNoYXBlZCBicmVhZC4=",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIEdBQkxFLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgYXQgdGhlIGVuZC4=",
+        "QW5hZ3JhbSDigJQgJ3JlYnVpbHQnLg==",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIEdBQkxFLg==",
         "U3RhcnRzIHdpdGggQi4="
       ],
-      "explanation": "R0FCTEUgcmVidWlsdCAocmVhcnJhbmdlZCkgZ2l2ZXMgQkFHRUwuIERlZmluaXRpb246IGEgYnJlYWQgcmluZy4="
+      "explanation": "R0FCTEUgcmVidWlsdCAoYW5hZ3JhbSkgZ2l2ZXMgQkFHRUwuIERlZmluaXRpb246IGEgYnJlYWQgcmluZy4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImEgYnJlYWQgcmluZyIgYXQgdGhlIGVuZC4gQSBCQUdFTCBpcyBhIHJpbmctc2hhcGVkIGJyZWFkIHJvbGwu",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIEdBQkxFIGFuZCAicmVidWlsdCIgaXMgdGhlIGluZGljYXRvcjsgImFzIiBpcyBhIGxpbmsu",
+        "steps": [
+          "Rm9kZGVyOiBHQUJMRSAoNSBsZXR0ZXJzOiBHLCBBLCBCLCBMLCBFKS4=",
+          "InJlYnVpbHQiIOKAlCByZWFycmFuZ2UgdGhlbS4=",
+          "Ry1BLUItTC1FIHJlYXJyYW5nZWQgZ2l2ZXMgQi1BLUctRS1MIOKAlCBCQUdFTC4="
+        ],
+        "note": "QSBnYWJsZSBpcyBwYXJ0IG9mIGEgYnVpbGRpbmcsIHNvICJyZWJ1aWx0IiByZWFkcyBhcyBjb25zdHJ1Y3Rpb24gd29yay4gQkFHRUwgYW5kIEdBQkxFIGFyZSBhIHN1cnByaXNpbmcgcGFpciB1bnRpbCB5b3Ugd3JpdGUgdGhlIGxldHRlcnMgb3V0Lg=="
+      }
     },
     {
       "id": 672,
       "printDate": "2027-12-18",
       "publishDate": "2027-12-18",
       "status": "scheduled",
-      "clue": "Instrument played as tourists visit around (5)",
+      "clue": "Instrument found as tourists visit around (5)",
       "answer": "U0lUQVI=",
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "QSBzdHJpbmdlZCBpbnN0cnVtZW50IGlzIGNvbmNlYWxlZC4=",
-        "SGlkZGVuIHdvcmQg4oCUIHJlYWQgYWNyb3NzIHRoZSB3b3Jkcy4=",
-        "Rm91bmQgaW4gInZpU0lUIEFSb3VuZCIu",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SGlkZGVuIHdvcmQg4oCUICdmb3VuZCcu",
+        "UmVhZCBhY3Jvc3MgJ3Zpc2l0IGFyb3VuZCcu",
         "U3RhcnRzIHdpdGggUy4="
       ],
-      "explanation": "SGlkZGVuIGluICJ2aVNJVCBBUm91bmQiIGlzIFNJVEFSLiBEZWZpbml0aW9uOiBhbiBpbnN0cnVtZW50Lg=="
+      "explanation": "SGlkZGVuIGluICd2aVNJVCBBUm91bmQnIGlzIFNJVEFSLiBEZWZpbml0aW9uOiBpbnN0cnVtZW50Lg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkluc3RydW1lbnQiIGF0IHRoZSBzdGFydC4gVGhlIFNJVEFSIGlzIGFuIEluZGlhbiBzdHJpbmdlZCBpbnN0cnVtZW50Lg==",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiZm91bmQiIHRlbGxzIHlvdSB0aGUgYW5zd2VyIGlzIGNvbmNlYWxlZCBpbiB0aGUgd29yZHMgdGhhdCBmb2xsb3csIGFjcm9zcyAidmlzaXQgYXJvdW5kIi4=",
+        "steps": [
+          "ImZvdW5kIiBzaWduYWxzIGEgaGlkZGVuIHdvcmQu",
+          "UnVuIHRoZSBsZXR0ZXJzIHRvZ2V0aGVyOiBWSVNJVEFST1VORC4=",
+          "SW5zaWRlOiB2aVNJVCBBUm91bmQg4oCUIFNJVEFSLg=="
+        ],
+        "note": "VG91cmlzdHMgaGVhcmluZyBhIHNpdGFyIG9uIHRoZWlyIHRyYXZlbHMgZ2l2ZXMgdGhlIHN1cmZhY2UgYSBob2xpZGF5IGZlZWwuIEV2ZXJ5IGhpZGRlbiB3b3JkIG5lZWRzIGFuIGluZGljYXRvciwgYW5kIGhlcmUgImZvdW5kIiBkb2VzIHRoZSBqb2Iu"
+      }
     },
     {
       "id": 673,
@@ -16895,29 +17145,49 @@
       "clueType": "double-definition",
       "difficulty": "medium",
       "hintLevels": [
-        "VHdvIG1lYW5pbmdzIOKAlCBvbmUgaXMgcGFpZCBvbiBhIHJvYWQu",
-        "VGhpcyBjbHVlIGlzIGEgZG91YmxlIGRlZmluaXRpb24u",
-        "VGhlIG90aGVyIG1lYW5pbmcgaXMgdGhlIHNsb3cgcmluZyBvZiBhIGJlbGwu",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAnYXMnLg==",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "QSBmZWUgZm9yIHVzaW5nIGEgcm9hZCwgYW5kIHRoZSBzbG93IHJpbmdpbmcgb2YgYSBiZWxsLg==",
         "U3RhcnRzIHdpdGggVC4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IFRPTEwgaXMgYSByb2FkIGNoYXJnZSBhbmQgdGhlIHNvdW5kIG9mIGEgYmVsbC4="
+      "explanation": "VE9MTCBtZWFucyBhIHJvYWQgY2hhcmdlIGFuZCB0aGUgc291bmQgb2YgYSBiZWxsLg==",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiUm9hZCBjaGFyZ2UiIGFuZCAidGhlIGdyZWF0IGJlbGwgc291bmRzIi4gQSBUT0xMIGlzIGEgcm9hZCBjaGFyZ2UsIGFuZCBhIGJlbGwgdG9sbHMgd2hlbiBpdCByaW5ncyBzbG93bHku",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLCB3aXRoICJhcyIgbGlua2luZyB0aGUgdHdvIG1lYW5pbmdzLg==",
+        "steps": [
+          "IlJvYWQgY2hhcmdlIiDigJQgYSBUT0xMLg==",
+          "InRoZSBncmVhdCBiZWxsIHNvdW5kcyIg4oCUIHRoZSBiZWxsIFRPTExTLg==",
+          "Qm90aCByZWFkaW5ncyBnaXZlIFRPTEwu"
+        ],
+        "note": "VE9MTCBhbHNvIG1lYW5zIGEgY29zdCBpbiBsaXZlcyBvciBkYW1hZ2UgKCJ0aGUgZGVhdGggdG9sbCIpLiBCZWxsIHZvY2FidWxhcnkgKFRPTEwsIFBFQUwsIEtORUxMKSBpcyBhIGdvb2Qgc291cmNlIG9mIHNlY29uZCBtZWFuaW5ncy4="
+      }
     },
     {
       "id": 674,
       "printDate": "2027-12-20",
       "publishDate": "2027-12-20",
       "status": "scheduled",
-      "clue": "Damp when one OMITS changes (5)",
+      "clue": "Damp when one omits changes (5)",
       "answer": "TU9JU1Q=",
       "clueType": "anagram",
       "difficulty": "hard",
       "hintLevels": [
-        "RGVmaW5pdGlvbiBpcyAiRGFtcCIu",
-        "VGhpcyBjbHVlIHVzZXMgYW4gYW5hZ3JhbS4=",
-        "UmVhcnJhbmdlIE9NSVRTLg==",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "QW5hZ3JhbSDigJQgJ2NoYW5nZXMnLg==",
+        "UmVhcnJhbmdlIHRoZSBsZXR0ZXJzIG9mIE9NSVRTLg==",
         "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "T01JVFMgY2hhbmdlcyB0byBnaXZlIE1PSVNULiBEZWZpbml0aW9uOiBkYW1wLg=="
+      "explanation": "T01JVFMgY2hhbmdlcyAoYW5hZ3JhbSkgZ2l2ZXMgTU9JU1QuIERlZmluaXRpb246IGRhbXAu",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkRhbXAiIGF0IHRoZSBzdGFydC4gTU9JU1QgbWVhbnMgZGFtcC4=",
+        "device": "VGhpcyBpcyBhbiBhbmFncmFtLiBUaGUgZm9kZGVyIGlzIE9NSVRTIGFuZCAiY2hhbmdlcyIgaXMgdGhlIGluZGljYXRvcjsgIndoZW4gb25lIiBpcyBhIGxpbmsu",
+        "steps": [
+          "Rm9kZGVyOiBPTUlUUyAoNSBsZXR0ZXJzOiBPLCBNLCBJLCBULCBTKS4=",
+          "ImNoYW5nZXMiIOKAlCByZWFycmFuZ2UgdGhlbS4=",
+          "Ty1NLUktVC1TIHJlYXJyYW5nZWQgZ2l2ZXMgTS1PLUktUy1UIOKAlCBNT0lTVC4="
+        ],
+        "note": "VGhlIHN1cmZhY2UgcmVhZHMgbGlrZSBhbiBlZGl0b3Igc2tpcHBpbmcgY29ycmVjdGlvbnMsIHNvICJjaGFuZ2VzIiBsb29rcyBsaWtlIGEgbm91bi4gSW4gdGhlIHdvcmRwbGF5IGl0IGlzIGEgdmVyYiB0ZWxsaW5nIHlvdSB0byByZWFycmFuZ2Uu"
+      }
     },
     {
       "id": 675,
@@ -16929,12 +17199,22 @@
       "clueType": "charade",
       "difficulty": "medium",
       "hintLevels": [
-        "VGhlIGRlZmluaXRpb24gaXMgYnVybmluZy4=",
-        "VGhpcyBjbHVlIGlzIGEgY2hhcmFkZSDigJQgYSBsZXR0ZXIgcGx1cyBhIHdvcmQu",
-        "VGhlIGxldHRlciBBLCB0aGVuIGEgbWFyayBjdXQgb24gYSB0cmFpbC4=",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGxhc3Qgd29yZC4=",
+        "Q2hhcmFkZSDigJQgQSBwbHVzIGEgd29yZC4=",
+        "QSBtYXJrIGN1dCBvbiBhIHRyZWUgdG8gc2hvdyBhIHRyYWlsLCBhZnRlciBBLg==",
         "U3RhcnRzIHdpdGggQS4="
       ],
-      "explanation": "Q2hhcmFkZTogQSArIEJMQVpFICh0cmFpbCBtYXJrZXIpID0gQUJMQVpFLiBEZWZpbml0aW9uOiBidXJuaW5nLg=="
+      "explanation": "QSArIEJMQVpFICh0cmFpbCBtYXJrZXIpIGdpdmVzIEFCTEFaRS4gRGVmaW5pdGlvbjogYnVybmluZy4=",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgImJ1cm5pbmciIGF0IHRoZSBlbmQuIEFCTEFaRSBtZWFucyBidXJuaW5nLg==",
+        "device": "VGhpcyBpcyBhIGNoYXJhZGUuICJBIiBpcyB1c2VkIGFzIGl0IHN0YW5kcyBhbmQgInRyYWlsIG1hcmtlciIgZ2l2ZXMgQkxBWkU7ICJsZWZ0IiBsaW5rcyB0byB0aGUgZGVmaW5pdGlvbi4=",
+        "steps": [
+          "IkEiIOKAlCBBLg==",
+          "InRyYWlsIG1hcmtlciIg4oCUIGEgQkxBWkUsIGEgbWFyayBjdXQgb24gYSB0cmVlIHRvIHNob3cgYSBwYXRoLg==",
+          "QSArIEJMQVpFID0gQUJMQVpFLCBidXJuaW5nLg=="
+        ],
+        "note": "QkxBWkUgdXN1YWxseSBtZWFucyBhIGZpcmUsIHNvIHRoZSB0cmFpbC1tYXJraW5nIHNlbnNlIGlzIHRoZSBzdXJwcmlzZS4gVGhlIHR3byBzZW5zZXMgb2YgQkxBWkUgbWFrZSB0aGUgc3VyZmFjZSBmZWVsIGxpa2UgYSBjYW1wZmlyZSBsZWZ0IGJ1cm5pbmcu"
+      }
     },
     {
       "id": 676,
@@ -16946,12 +17226,22 @@
       "clueType": "double-definition",
       "difficulty": "easy",
       "hintLevels": [
-        "Qm90aCBoYWx2ZXMgb2YgdGhlIGNsdWUgZGVmaW5lIHRoZSBzYW1lIHdvcmQu",
-        "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLg==",
-        "T25lIHNlbnNlIGlzIGFib3V0IGFpbSwgdGhlIG90aGVyIGEgZm9ybSBvZiBhZGRyZXNzLg==",
+        "VHdvIGRlZmluaXRpb25zIGpvaW5lZCBieSAndGhlJy4=",
+        "RG91YmxlIGRlZmluaXRpb24u",
+        "V2hhdCB5b3UgZG8gd2hlbiB5b3VyIHNob3QgZ29lcyB3aWRlLCBhbmQgYSBwb2xpdGUgd29yZCBmb3IgYSB5b3VuZyBsYWR5Lg==",
         "U3RhcnRzIHdpdGggTS4="
       ],
-      "explanation": "RG91YmxlIGRlZmluaXRpb246IHRvIE1JU1MgaXMgdG8gZmFpbCB0byBoaXQsIGFuZCBhIE1JU1MgaXMgYSB5b3VuZyBsYWR5Lg=="
+      "explanation": "TUlTUyBtZWFucyB0byBmYWlsIHRvIGhpdCBhbmQgYSB5b3VuZyBsYWR5Lg==",
+      "analysis": {
+        "definition": "VHdvIGRlZmluaXRpb25zOiAiRmFpbCB0byBoaXQiIGFuZCAieW91bmcgbGFkeSIuIFRvIE1JU1MgaXMgdG8gZmFpbCB0byBoaXQsIGFuZCBNaXNzIGlzIGEgdGl0bGUgZm9yIGEgeW91bmcgbGFkeS4=",
+        "device": "VGhpcyBpcyBhIGRvdWJsZSBkZWZpbml0aW9uLiBUaGUgc3VyZmFjZSByZWFkcyBhcyBhIG5lYXIgbWlzcywgd2hpY2ggaGlkZXMgdGhlIHNlY29uZCBtZWFuaW5nLg==",
+        "steps": [
+          "IkZhaWwgdG8gaGl0IiDigJQgdG8gTUlTUy4=",
+          "InlvdW5nIGxhZHkiIOKAlCBhIE1JU1Mu",
+          "Qm90aCByZWFkaW5ncyBnaXZlIE1JU1Mu"
+        ],
+        "note": "TUlTUyBhbHNvIG1lYW5zIHRvIGxvbmcgZm9yIHNvbWVvbmUgYWJzZW50LiBTaG9ydCB3b3JkcyB3aXRoIHRocmVlIG9yIG1vcmUgc2Vuc2VzIGFyZSB0aGUgYmFja2JvbmUgb2YgZG91YmxlLWRlZmluaXRpb24gY2x1ZXMu"
+      }
     },
     {
       "id": 677,
@@ -16963,12 +17253,22 @@
       "clueType": "hidden-word",
       "difficulty": "medium",
       "hintLevels": [
-        "QSBzdGl0Y2hlZCBiZWRjb3ZlciBpcyBjb25jZWFsZWQu",
-        "IkNvbmNlYWxlZCBpbiIgaXMgeW91ciBpbmRpY2F0b3Iu",
-        "Rm91bmQgaW4gJ3RyYW5RVUlMIFRvbmVzJy4=",
+        "VGhlIGRlZmluaXRpb24gaXMgdGhlIGZpcnN0IHdvcmQu",
+        "SGlkZGVuIHdvcmQg4oCUICdjb25jZWFsZWQgaW4nLg==",
+        "UmVhZCBhY3Jvc3MgJ3RyYW5xdWlsIHRvbmVzJy4=",
         "U3RhcnRzIHdpdGggUS4="
       ],
-      "explanation": "SGlkZGVuIGFjcm9zcyAndHJhblFVSUwgVG9uZXMnIGlzIFFVSUxULiBEZWZpbml0aW9uOiBhIGJlZGNvdmVyLg=="
+      "explanation": "SGlkZGVuIGluICd0cmFuUVVJTCBUb25lcycgaXMgUVVJTFQuIERlZmluaXRpb246IGJlZGNvdmVyLg==",
+      "analysis": {
+        "definition": "VGhlIGRlZmluaXRpb24gaXMgIkJlZGNvdmVyIiBhdCB0aGUgc3RhcnQuIEEgUVVJTFQgaXMgYSBiZWRjb3Zlci4=",
+        "device": "VGhpcyBpcyBhIGhpZGRlbiB3b3JkLiAiY29uY2VhbGVkIGluIiB0ZWxscyB5b3UgdGhlIGFuc3dlciBpcyBpbnNpZGUgInRyYW5xdWlsIHRvbmVzIi4=",
+        "steps": [
+          "ImNvbmNlYWxlZCBpbiIgc2lnbmFscyBhIGhpZGRlbiB3b3JkLg==",
+          "UnVuIHRoZSBsZXR0ZXJzIHRvZ2V0aGVyOiBUUkFOUVVJTFRPTkVTLg==",
+          "SW5zaWRlOiB0cmFuUVVJTCBUb25lcyDigJQgUVVJTFQu"
+        ],
+        "note": "USBpcyBhIHJhcmUgbGV0dGVyLCBzbyBhIGhpZGRlbiB3b3JkIHN0YXJ0aW5nIHdpdGggUSBpcyBlYXNpZXIgdG8gc3BvdCBvbmNlIHlvdSBsb29rIGZvciBpdC4gVGhlIGNhbG0gc3VyZmFjZSBzdWl0cyBhIGNvc3kgYmVkY292ZXIu"
+      }
     },
     {
       "id": 678,
