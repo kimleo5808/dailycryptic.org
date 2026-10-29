@@ -1168,6 +1168,248 @@
       "note": "\"Listen to the call\" cleverly clues both parts at once — EAR (listen) and RING (a phone call). The surface hides the join; translating each word reveals the build."
     },
     {
+      "id": 111,
+      "definition": "The definition is \"comfort\" at the end. RELIEF is comfort or ease after pain or worry.",
+      "device": "This is an anagram. The fodder is two words, REF and LIE, and \"about\" is the indicator.",
+      "steps": [
+        "Fodder: REF + LIE (6 letters: R, E, F, L, I, E).",
+        "\"about\" — rearrange them.",
+        "R-E-F-L-I-E rearranged gives R-E-L-I-E-F — RELIEF."
+      ],
+      "note": "Anagram fodder can span more than one word. When a single word is too short for the enumeration, try joining it to its neighbour."
+    },
+    {
+      "id": 112,
+      "definition": "The definition is \"Exaggeration\" at the start. A TALL TALE is an exaggerated story that is hard to believe.",
+      "device": "This is a charade. \"lofty\" gives TALL and \"account\" gives TALE; the colon separates definition from wordplay.",
+      "steps": [
+        "\"lofty\" — high: TALL.",
+        "\"account\" — a story: TALE.",
+        "TALL + TALE = TALL TALE (4,4), an exaggeration."
+      ],
+      "note": "The enumeration (4,4) tells you the answer is two words of four letters each, which narrows the search a lot. Always read the numbers before the words."
+    },
+    {
+      "id": 121,
+      "definition": "Two definitions: \"Record\" and \"sticky strip\". To TAPE something is to record it, and tape is a sticky strip.",
+      "device": "This is a double definition: two meanings of the same word with no other wordplay.",
+      "steps": [
+        "\"Record\" — to record a show is to TAPE it.",
+        "\"sticky strip\" — adhesive TAPE.",
+        "Both readings give TAPE."
+      ],
+      "note": "\"Record\" could be a noun (a vinyl disc) or a verb. Here the verb sense pairs with the sticky strip to give one answer."
+    },
+    {
+      "id": 122,
+      "definition": "Two definitions: \"Consider\" and \"raising anchor\". To WEIGH something up is to consider it, and to weigh anchor is to raise it.",
+      "device": "This is a double definition. The two halves describe different senses of WEIGH.",
+      "steps": [
+        "\"Consider\" — to WEIGH (up) the options.",
+        "\"raising anchor\" — sailors WEIGH anchor before setting off.",
+        "Both readings give WEIGH."
+      ],
+      "note": "The surface sounds like a captain making a decision, which ties the two meanings together neatly. Old nautical phrases are a rich source of second meanings."
+    },
+    {
+      "id": 123,
+      "definition": "Two definitions: \"Combine funds\" and \"swimming bath\". To POOL money is to combine it, and a swimming pool is a swimming bath.",
+      "device": "This is a double definition, with \"for the\" acting as a link between the two meanings.",
+      "steps": [
+        "\"Combine funds\" — to POOL resources.",
+        "\"swimming bath\" — a swimming POOL.",
+        "Both readings give POOL."
+      ],
+      "note": "The surface reads like a club raising money for a new pool, which joins the meanings into one story. Spot the link words and the two definitions separate cleanly."
+    },
+    {
+      "id": 124,
+      "definition": "Two definitions: \"Cut a film\" and \"correct copy\". To EDIT is both to cut and assemble film and to correct written text.",
+      "device": "This is a double definition. \"or\" joins two senses of the same verb.",
+      "steps": [
+        "\"Cut a film\" — film editors EDIT footage.",
+        "\"correct copy\" — copy editors EDIT text.",
+        "Both readings give EDIT."
+      ],
+      "note": "\"Copy\" here is a printing word for text, not a duplicate. Newspaper vocabulary (copy, proof, lead, stop press) appears often in cryptics."
+    },
+    {
+      "id": 125,
+      "definition": "Two definitions: \"Inform on\" and \"a store\". In British slang, to SHOP someone is to inform on them; a shop is a store.",
+      "device": "This is a double definition: the verb and the noun share one spelling.",
+      "steps": [
+        "\"Inform on\" — to SHOP someone to the police.",
+        "\"a store\" — a SHOP.",
+        "Both readings give SHOP."
+      ],
+      "note": "The surface sounds like reporting a shop to the authorities. Slang meanings (shop, grass, nick) are common second definitions in British cryptics."
+    },
+    {
+      "id": 126,
+      "definition": "Two definitions: \"Tilt the aircraft\" and \"river's edge\". A plane BANKS when it tilts into a turn, and a river bank is its edge.",
+      "device": "This is a double definition, with \"toward the\" linking the two meanings.",
+      "steps": [
+        "\"Tilt the aircraft\" — pilots BANK to turn.",
+        "\"river's edge\" — a river BANK.",
+        "Both readings give BANK."
+      ],
+      "note": "BANK has more meanings than most words — a lender, a slope, a row of switches, to rely on — so setters can pair it in many ways. The money sense is the obvious one, which is why the clue avoids it."
+    },
+    {
+      "id": 127,
+      "definition": "The definition is \"Entrance\" at the start. A DOOR is an entrance.",
+      "device": "This is a hidden word. \"in\" tells you the answer is concealed in the following words, running across \"condo or\".",
+      "steps": [
+        "\"in\" signals a hidden word.",
+        "Run the letters together: CONDOORFLAT.",
+        "Inside: conDO OR — DOOR."
+      ],
+      "note": "The surface reads like a property listing, and \"flat\" finishes the picture without contributing letters. Small words like \"or\" are easy to skip when scanning for a hidden answer."
+    },
+    {
+      "id": 128,
+      "definition": "Two definitions: \"Distant\" and \"controller\". REMOTE means far away, and a remote is a television controller.",
+      "device": "This is a double definition. The surface reads as one phrase — a boss who manages from afar.",
+      "steps": [
+        "\"Distant\" — far away: REMOTE.",
+        "\"controller\" — a TV REMOTE.",
+        "Both readings give REMOTE."
+      ],
+      "note": "Two-word double definitions often read as a single phrase. If a short clue seems to describe one thing, try reading each word as a separate definition."
+    },
+    {
+      "id": 129,
+      "definition": "Two definitions: \"Net\" and \"the Net\". A WEB is a net or mesh, and the Web is another name for the internet.",
+      "device": "This is a double definition, with \"on\" linking the two meanings.",
+      "steps": [
+        "\"Net\" — a spider's WEB is a net.",
+        "\"the Net\" — the internet, also called the WEB.",
+        "Both readings give WEB."
+      ],
+      "note": "The capital N signals the internet. Setters can use capitals to change a word's meaning, but they may also capitalise a word just to mislead you."
+    },
+    {
+      "id": 130,
+      "definition": "Two definitions: \"Secure\" and \"a curl\". To LOCK is to secure, and a lock is a curl of hair.",
+      "device": "This is a double definition: one verb and one noun sharing the spelling LOCK.",
+      "steps": [
+        "\"Secure\" — to fasten: LOCK.",
+        "\"a curl\" — a LOCK of hair.",
+        "Both readings give LOCK."
+      ],
+      "note": "The hairdressing surface makes \"secure\" sound like pinning a curl in place. LOCK also means a canal lock and a rugby position, so it is a setter's favourite."
+    },
+    {
+      "id": 131,
+      "definition": "Two definitions: \"Account\" and \"a beak\". A BILL is an account to be paid, and a bird's beak is its bill.",
+      "device": "This is a double definition, with \"for\" linking the two meanings.",
+      "steps": [
+        "\"Account\" — an invoice: a BILL.",
+        "\"a beak\" — a bird's BILL.",
+        "Both readings give BILL."
+      ],
+      "note": "\"Account for\" looks like a single verb meaning explain, which hides the split. Breaking a phrasal verb into its parts is a common way into a double definition."
+    },
+    {
+      "id": 132,
+      "definition": "Two definitions: \"Fold\" and \"line at the wicket\". A CREASE is a fold, and in cricket the crease is the line marked near each wicket.",
+      "device": "This is a double definition. \"Fold line\" looks like one phrase, but \"Fold\" is the first definition and \"line at the wicket\" the second.",
+      "steps": [
+        "\"Fold\" — a CREASE in fabric or paper.",
+        "\"line at the wicket\" — the batting CREASE.",
+        "Both readings give CREASE."
+      ],
+      "note": "Cricket supplies many second meanings: CREASE, OVER, DUCK, BAIL, SLIP. Even if you don't follow the game, these terms are worth learning for cryptics."
+    },
+    {
+      "id": 133,
+      "definition": "Two definitions: \"Dark red\" and \"drink\". WINE is a dark red colour, and wine is a drink.",
+      "device": "This is a double definition. The surface reads as a description of one drink, but \"Dark red\" is a definition in its own right.",
+      "steps": [
+        "\"Dark red\" — the colour WINE.",
+        "\"drink\" — WINE.",
+        "Both readings give WINE."
+      ],
+      "note": "Colour names borrowed from things — WINE, CLARET, PLUM, ROSE — make tidy double definitions because the surface treats the colour as an adjective."
+    },
+    {
+      "id": 134,
+      "definition": "Two definitions: \"Train\" and \"bus\". To COACH is to train, and a coach is a long-distance bus.",
+      "device": "This is a double definition. The surface suggests two kinds of transport, but \"Train\" is a verb.",
+      "steps": [
+        "\"Train\" — to teach or train: COACH.",
+        "\"bus\" — a COACH.",
+        "Both readings give COACH."
+      ],
+      "note": "The surface plants the idea of transport so firmly that \"Train\" looks like a noun. Always ask whether the first word could be a verb."
+    },
+    {
+      "id": 135,
+      "definition": "Two definitions: \"Halt\" and \"where the bus pulls in\". To STOP is to halt, and a bus stop is where the bus pulls in.",
+      "device": "This is a double definition. The second definition is a descriptive phrase rather than a single word.",
+      "steps": [
+        "\"Halt\" — STOP.",
+        "\"where the bus pulls in\" — a bus STOP.",
+        "Both readings give STOP."
+      ],
+      "note": "When a clue opens with a short command like \"Halt\", the rest of the clue often describes the same word in a different sense."
+    },
+    {
+      "id": 136,
+      "definition": "The definition is \"Thames, perhaps\" at the start. The Thames is a RIVER; \"perhaps\" marks it as an example.",
+      "device": "This is a hidden word. \"seen in\" tells you the answer is inside \"drivers\".",
+      "steps": [
+        "\"seen in\" signals a hidden word.",
+        "Look inside DRIVERS.",
+        "Inside: dRIVERs — RIVER."
+      ],
+      "note": "The surface pictures traffic along the Thames. Hidden words inside a single longer word are easy to miss because you read the word as a whole."
+    },
+    {
+      "id": 137,
+      "definition": "Two definitions: \"Climb\" and \"a set of notes\". To SCALE a wall is to climb it, and a musical scale is a set of notes.",
+      "device": "This is a double definition, one verb and one noun.",
+      "steps": [
+        "\"Climb\" — to SCALE a cliff.",
+        "\"a set of notes\" — a musical SCALE.",
+        "Both readings give SCALE."
+      ],
+      "note": "Musicians really do \"climb\" a scale, so the surface reads as one idea. SCALE also means a fish's plate, a weighing device and a size ratio."
+    },
+    {
+      "id": 138,
+      "definition": "The definition is \"Drink\" at the start. BEER is a drink.",
+      "device": "This is a hidden word. \"kept in\" tells you the answer is stored inside \"bee reserve\".",
+      "steps": [
+        "\"kept in\" signals a hidden word.",
+        "Run the letters together: BEERESERVE.",
+        "Inside: BEE Reserve — BEER."
+      ],
+      "note": "Here the hidden answer starts at the very beginning of the fodder, so most of it is in plain sight. Don't assume a hidden word must start in the middle of a word."
+    },
+    {
+      "id": 139,
+      "definition": "Two definitions: \"Assess\" and \"the person on the bench\". To JUDGE is to assess, and a judge sits on the bench in court.",
+      "device": "This is a double definition. The surface suggests sport — assessing a substitute on the bench — but the bench here is a court's.",
+      "steps": [
+        "\"Assess\" — to JUDGE.",
+        "\"the person on the bench\" — a JUDGE in court.",
+        "Both readings give JUDGE."
+      ],
+      "note": "\"The bench\" can be a sports bench, a workbench or the judiciary. When a clue mentions one, consider all of them before settling."
+    },
+    {
+      "id": 140,
+      "definition": "The definition is \"start\" at the end. To BEGIN is to start.",
+      "device": "This is a charade. \"Plead\" gives BEG and \"at home\" gives IN; \"to\" links the wordplay to the definition.",
+      "steps": [
+        "\"Plead\" — BEG.",
+        "\"at home\" — IN, as when you stay in.",
+        "BEG + IN = BEGIN, to start."
+      ],
+      "note": "IN for \"at home\" is one of the most useful pieces in cryptics. The surface pictures someone pleading to stay home, which hides the join completely."
+    },
+    {
       "id": 141,
       "definition": "The definition is \"Menace\" at the start. A THREAT is a menace — something or someone likely to cause harm.",
       "device": "This is a hidden word. \"seen in\" tells you the answer is concealed in the letters of \"smooth reattachment\".",
@@ -1221,6 +1463,28 @@
         "Inside: graPE ARbour — PEAR."
       ],
       "note": "The surface names one fruit (grape) to hide another. When a clue mentions an obvious answer candidate, the real answer is often concealed right next to it."
+    },
+    {
+      "id": 146,
+      "definition": "The definition is \"Scorch\" at the start. To CHAR something is to scorch or blacken it by burning.",
+      "device": "This is a hidden word. \"a bit of\" tells you the answer is part of \"peach arrangement\".",
+      "steps": [
+        "\"a bit of\" signals a hidden word.",
+        "Run the letters together: PEACHARRANGEMENT.",
+        "Inside: peaCH ARrangement — CHAR."
+      ],
+      "note": "CHAR is also a fish and an old word for tea, so it appears in many disguises. The dessert surface makes \"Scorch\" sound like a cooking instruction."
+    },
+    {
+      "id": 148,
+      "definition": "The definition is \"a cooking vessel\" at the end. A POT is a cooking vessel.",
+      "device": "This is a reversal. \"Lid\" gives TOP, and \"turned over\" tells you to reverse it.",
+      "steps": [
+        "\"Lid\" — a TOP.",
+        "\"turned over\" — reverse it.",
+        "T-O-P backwards is P-O-T — POT."
+      ],
+      "note": "The surface describes a lid being flipped onto a pot, so the reversal indicator reads as a kitchen action. TOP/POT is one of the classic three-letter reversals."
     },
     {
       "id": 149,
@@ -1278,6 +1542,17 @@
       "note": "RIGHT has a whole family of sound-alikes — WRITE, RITE and WRIGHT — so check the definition to pick the correct spelling."
     },
     {
+      "id": 155,
+      "definition": "The definition is \"a flower\" at the end. The ROSE is a flower.",
+      "device": "This is a homophone. \"Lines of seats\" gives ROWS, and \"we hear\" tells you to swap it for a sound-alike.",
+      "steps": [
+        "\"Lines of seats\" — ROWS, rhyming with nose.",
+        "\"we hear\" — say it aloud.",
+        "ROWS sounds like ROSE, a flower."
+      ],
+      "note": "ROWS has two pronunciations: lines (rhymes with \"nose\") and quarrels (rhymes with \"cows\"). Only the first sounds like ROSE, which is why the clue specifies lines of seats."
+    },
+    {
       "id": 156,
       "definition": "The definition is \"an animal\" at the end. A BEAR is a large animal.",
       "device": "This is a homophone. \"reportedly\" tells you the answer sounds like \"Bare\"; \"is\" links the parts.",
@@ -1287,6 +1562,17 @@
         "BARE sounds like BEAR, an animal."
       ],
       "note": "BEAR is also a verb (to carry or to endure), so the definition has to say which sense is meant — here \"an animal\" settles it."
+    },
+    {
+      "id": 157,
+      "definition": "The definition is \"Bread\" at the start. DOUGH is unbaked bread, and both words are also slang for money.",
+      "device": "This is a homophone. \"a female deer\" gives DOE, and \"we hear\" tells you the answer sounds the same; \"for\" is a link.",
+      "steps": [
+        "\"a female deer\" — a DOE.",
+        "\"we hear\" — say it aloud.",
+        "DOE sounds like DOUGH, which is bread."
+      ],
+      "note": "The surface pictures someone feeding bread to a deer. \"Bread\" works twice over here, since bread and dough are both slang for money."
     },
     {
       "id": 158,
@@ -1309,6 +1595,50 @@
         "WHEAT without W is HEAT."
       ],
       "note": "Words that still make a real word after losing their first letter — WHEAT/HEAT, GROUND/ROUND, BEAGLE/EAGLE — are the raw material for beheadings."
+    },
+    {
+      "id": 160,
+      "definition": "The definition is \"Weapon\" at the start. A SWORD is a bladed weapon.",
+      "device": "This is a hidden word. \"hidden in\" tells you the answer is inside \"password\".",
+      "steps": [
+        "\"hidden in\" signals a hidden word.",
+        "Look inside PASSWORD.",
+        "Inside: pasSWORD — SWORD."
+      ],
+      "note": "Compound words often hide an unexpected second word that crosses their natural split: PASS-WORD contains S-WORD. Read the letters, not the parts."
+    },
+    {
+      "id": 162,
+      "definition": "The definition is \"Breakfast fibre\" at the start. BRAN, the outer layer of grain, is a high-fibre breakfast food.",
+      "device": "This is a deletion. \"label\" gives BRAND, and \"almost\" tells you to remove its last letter.",
+      "steps": [
+        "\"label\" — a product's BRAND.",
+        "\"almost\" — drop the final letter, D.",
+        "BRAND without D is BRAN."
+      ],
+      "note": "\"Almost\", \"nearly\" and \"mostly\" usually mean remove the last letter. The cereal-box surface makes \"label\" feel like part of the packaging."
+    },
+    {
+      "id": 163,
+      "definition": "The definition is \"World\" at the start. The GLOBE is the world.",
+      "device": "This is a charade. \"good\" gives G and \"part of the ear\" gives LOBE; the colon separates definition from wordplay.",
+      "steps": [
+        "\"good\" — G, a standard abbreviation.",
+        "\"part of the ear\" — the LOBE.",
+        "G + LOBE = GLOBE, the world."
+      ],
+      "note": "G for good is common in cryptics, as in a school grade. The surface reads as \"good part of the ear\", so it takes a moment to split G from LOBE."
+    },
+    {
+      "id": 164,
+      "definition": "The definition is \"just\" at the end. FAIR means just or even-handed.",
+      "device": "This is a deletion. \"Holy man\" gives FAKIR, and \"heartless\" tells you to remove its middle letter; \"is\" links to the definition.",
+      "steps": [
+        "\"Holy man\" — a FAKIR is an ascetic holy man.",
+        "\"heartless\" — remove the middle letter of F-A-K-I-R, which is K.",
+        "FAKIR without K is FAIR."
+      ],
+      "note": "\"Heartless\" removes the centre of a word, so it works neatly on odd-length words like FAKIR, which have exactly one middle letter."
     },
     {
       "id": 166,
