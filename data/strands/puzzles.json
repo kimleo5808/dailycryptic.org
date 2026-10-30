@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-29T11:40:48.023Z",
+  "lastUpdated": "2026-10-30T11:32:23.112Z",
   "puzzles": [
+    {
+      "id": 1166,
+      "printDate": "2026-10-30",
+      "status": "published",
+      "clue": "All charged up",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UCBMIFUgRyBHIEUgRCBJIE4=",
+      "spangram": "UExVR0dFRElO",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "Q1VSUkVOVA==",
+        "RUxFQ1RSSUNJVFk=",
+        "RU5FUkdZ",
+        "SlVJQ0U=",
+        "UE9XRVI=",
+        "U1BBUks="
+      ]
+    },
     {
       "id": 1164,
       "printDate": "2026-10-29",
