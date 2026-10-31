@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-30T14:30:19.664Z",
+  "lastUpdated": "2026-10-31T13:53:02.294Z",
   "puzzles": [
+    {
+      "id": 2888,
+      "printDate": "2026-10-31",
+      "status": "published",
+      "sides": [
+        "UIN",
+        "ATX",
+        "EOM",
+        "BPY"
+      ],
+      "solution": "WyJCQVVYSVRFIiwiRVBPTllNIl0="
+    },
     {
       "id": 2887,
       "printDate": "2026-10-30",
