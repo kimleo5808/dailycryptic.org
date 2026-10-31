@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-10-30T11:32:23.112Z",
+  "lastUpdated": "2026-10-31T11:07:06.183Z",
   "puzzles": [
+    {
+      "id": 1167,
+      "printDate": "2026-10-31",
+      "status": "published",
+      "clue": "It's in the bag",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBSIEkgQyBLIE8gUiBUIFIgRSBBIFQ=",
+      "spangram": "VFJJQ0tPUlRSRUFU",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QVBQTEU=",
+        "Q0FORFk=",
+        "RkFOR1M=",
+        "UklORw==",
+        "U1RJQ0tFUg==",
+        "VE9PVEhCUlVTSA=="
+      ]
+    },
     {
       "id": 1166,
       "printDate": "2026-10-30",
