@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-10-31T11:01:04.471Z",
+  "lastUpdated": "2026-11-01T11:56:22.673Z",
   "puzzles": [
+    {
+      "id": 1961,
+      "printDate": "2026-11-01",
+      "status": "published",
+      "solution": "dmlwZXI=",
+      "hint1": "This word could compare things or describe a person.",
+      "hint2": "The word starts with V and has 2 vowels.",
+      "hint3": "V _ P _ R"
+    },
     {
       "id": 1960,
       "printDate": "2026-10-31",
