@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-10-31T13:53:02.294Z",
+  "lastUpdated": "2026-11-01T14:29:43.790Z",
   "puzzles": [
+    {
+      "id": 2889,
+      "printDate": "2026-11-01",
+      "status": "published",
+      "sides": [
+        "YGR",
+        "HCA",
+        "INO",
+        "WET"
+      ],
+      "solution": "WyJBTllXSEVSRSIsIkVHT0NFTlRSSUMiXQ=="
+    },
     {
       "id": 2888,
       "printDate": "2026-10-31",
