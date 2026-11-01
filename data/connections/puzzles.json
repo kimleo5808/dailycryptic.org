@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-10-31T11:00:15.735Z",
+  "lastUpdated": "2026-11-01T11:55:45.723Z",
   "puzzles": [
+    {
+      "id": 1239,
+      "printDate": "2026-11-01",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgVEVFVEg=",
+          "hint": "Think about different teeth",
+          "words": [
+            "Q0FOSU5F",
+            "SU5DSVNPUg==",
+            "QklDVVNQSUQ=",
+            "TU9MQVI="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgTE9WRQ==",
+          "hint": "Think about different love",
+          "words": [
+            "U0VMRg==",
+            "UFVQUFk=",
+            "QlJPVEhFUkxZ",
+            "VU5SRVFVSVRFRA=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RU5USFVTSUFTVA==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "SEVBRA==",
+            "TE9WRVI=",
+            "SE9VTkQ=",
+            "RklFTkQ="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1lOT05ZTVMgRk9SICJTT0FLRUQiIFdJVEggRklSU1QgTEVUVEVSIENIQU5HRUQ=",
+          "hint": "These words share a similar meaning",
+          "words": [
+            "VFJJUFBJTkc=",
+            "RE9HR1k=",
+            "TUFUVVJBVEVE",
+            "VFJFTkNIRUQ="
+          ]
+        }
+      ]
+    },
     {
       "id": 1238,
       "printDate": "2026-10-31",
