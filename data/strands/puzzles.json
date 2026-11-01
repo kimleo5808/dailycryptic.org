@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-10-31T11:07:06.183Z",
+  "lastUpdated": "2026-11-01T11:58:32.892Z",
   "puzzles": [
+    {
+      "id": 1168,
+      "printDate": "2026-11-01",
+      "status": "published",
+      "clue": "For the rest of the day",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "WiBaIFogWiBaIFogWiBa",
+      "spangram": "WlpaWlpaWlo=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "Q0FUTkFQ",
+        "RE9aRQ==",
+        "RFJPV1NF",
+        "U0lFU1RB",
+        "U0xFRVA=",
+        "U0xVTUJFUg==",
+        "U05PT1pF"
+      ]
+    },
     {
       "id": 1167,
       "printDate": "2026-10-31",
