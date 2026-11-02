@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-01T14:29:43.790Z",
+  "lastUpdated": "2026-11-02T17:25:42.932Z",
   "puzzles": [
+    {
+      "id": 2890,
+      "printDate": "2026-11-02",
+      "status": "published",
+      "sides": [
+        "RTH",
+        "IKO",
+        "LED",
+        "FYC"
+      ],
+      "solution": "WyJLRVJDSElFRiIsIkZMT1JJRElUWSJd"
+    },
     {
       "id": 2889,
       "printDate": "2026-11-01",
