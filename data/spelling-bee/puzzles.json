@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-11-01T14:24:25.335Z",
+  "lastUpdated": "2026-11-02T17:19:06.225Z",
   "puzzles": [
+    {
+      "id": 21387,
+      "printDate": "2026-11-02",
+      "status": "published",
+      "centerLetter": "d",
+      "outerLetters": [
+        "a",
+        "c",
+        "e",
+        "t",
+        "v",
+        "x"
+      ],
+      "answers": [
+        "ZXhjYXZhdGVk",
+        "YWNjZWRl",
+        "YWNjZWRlZA==",
+        "YWNlZA==",
+        "YWN0ZWQ=",
+        "YWRkZWQ=",
+        "YXhlZA==",
+        "Y2FkZXQ=",
+        "Y2F2ZWQ=",
+        "Y2VkZQ==",
+        "Y2VkZWQ=",
+        "ZGF0YQ==",
+        "ZGF0ZQ==",
+        "ZGF0ZWQ=",
+        "ZGVhZA==",
+        "ZGVjYWRl",
+        "ZGVlZA==",
+        "ZGVlZGVk",
+        "ZGV0ZWN0",
+        "ZGV0ZWN0ZWQ=",
+        "ZWF2ZWQ=",
+        "ZXZhZGU=",
+        "ZXZhZGVk",
+        "ZXhhY3RlZA==",
+        "ZXhjZWVk",
+        "ZXhjZWVkZWQ=",
+        "dGF0dGVk",
+        "dGF4ZWQ=",
+        "dGVlZA==",
+        "dGV4dGVk",
+        "dmFjYXRlZA==",
+        "dmF4ZWQ=",
+        "dmF4eGVk",
+        "dmV0dGVk",
+        "dmV4ZWQ="
+      ],
+      "pangrams": [
+        "ZXhjYXZhdGVk"
+      ]
+    },
     {
       "id": 13293,
       "printDate": "2026-11-01",
