@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-01T11:56:22.673Z",
+  "lastUpdated": "2026-11-02T13:42:42.622Z",
   "puzzles": [
+    {
+      "id": 1962,
+      "printDate": "2026-11-02",
+      "status": "published",
+      "solution": "c2Nvb3Q=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with S and has 2 vowels.",
+      "hint3": "S _ O _ T"
+    },
     {
       "id": 1961,
       "printDate": "2026-11-01",
