@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-01T11:58:32.892Z",
+  "lastUpdated": "2026-11-02T13:45:44.292Z",
   "puzzles": [
+    {
+      "id": 1170,
+      "printDate": "2026-11-02",
+      "status": "published",
+      "clue": "High and mighty",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "TSBPIFUgTiBUIEEgSSBOIFQgTyBQ",
+      "spangram": "TU9VTlRBSU5UT1A=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q0xJRkY=",
+        "R0xBQ0lFUg==",
+        "UEVBSw==",
+        "UklER0U=",
+        "U0FERExF",
+        "U05PVw==",
+        "U1VNTUlU"
+      ]
+    },
     {
       "id": 1168,
       "printDate": "2026-11-01",
