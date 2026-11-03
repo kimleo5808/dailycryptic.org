@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-02T13:45:44.292Z",
+  "lastUpdated": "2026-11-03T12:57:11.325Z",
   "puzzles": [
+    {
+      "id": 1171,
+      "printDate": "2026-11-03",
+      "status": "published",
+      "clue": "I've got a song in my heart",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBFIEwgVCBJIFQgTyBVIFQ=",
+      "spangram": "QkVMVElUT1VU",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QkFMTEFERUVS",
+        "Q0hPUklTVEVS",
+        "Q1JPT05FUg==",
+        "U0lOR0VS",
+        "Vk9DQUxJU1Q="
+      ]
+    },
     {
       "id": 1170,
       "printDate": "2026-11-02",
