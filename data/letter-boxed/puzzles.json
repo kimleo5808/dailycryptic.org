@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-02T17:25:42.932Z",
+  "lastUpdated": "2026-11-03T15:27:53.420Z",
   "puzzles": [
+    {
+      "id": 2891,
+      "printDate": "2026-11-03",
+      "status": "published",
+      "sides": [
+        "OAG",
+        "QZR",
+        "ULE",
+        "ITN"
+      ],
+      "solution": "WyJFUVVBVE9SSUFMIiwiTE9aRU5HRSJd"
+    },
     {
       "id": 2890,
       "printDate": "2026-11-02",
