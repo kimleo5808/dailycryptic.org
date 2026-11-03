@@ -13,6 +13,7 @@ Monetization is Google AdSense only — no login, accounts, paywall, or membersh
 - Components: `components/<game>/`
 - Navigation: `config/nav.ts` · Site config: `config/site.ts`
 - Daily auto-update: `.github/workflows/update-*.yml` → `scripts/fetch-*.mjs`
+- Fonts: self-hosted with `next/font/local` (`app/fonts/site.ts`). Never use `next/font/google`: Google randomly serves `/l/font?kit=…` URLs that Turbopack can't parse, which breaks CI builds
 - Page cache: Workers static assets (`open-next.config.ts`, read-only). Don't switch back to the R2 cache: its one-API-call-per-page uploads hit the account-wide Cloudflare limit (1,200 requests / 5 min) whenever sister sites deploy at the same time. Date pages older than the prerendered window (`dynamicParams = true`) render on demand and aren't stored
 
 ## Requirement & planning docs
