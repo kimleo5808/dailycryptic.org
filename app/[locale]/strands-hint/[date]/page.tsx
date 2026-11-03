@@ -310,8 +310,9 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const puzzles = await getAllStrandsPuzzles();
-  // Limit pre-generation to avoid Cloudflare R2 upload timeouts.
-  // Older pages are generated on-demand and cached.
+  // Only pre-generate the most recent 30 days (originally to keep the R2
+  // cache upload short). Older pages are rendered on demand, not stored;
+  // see open-next.config.ts.
   const recent = puzzles.slice(0, 30);
   const params: { locale: string; date: string }[] = [];
   for (const locale of LOCALES) {

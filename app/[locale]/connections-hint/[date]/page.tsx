@@ -306,7 +306,7 @@ export const dynamicParams = true;
 export async function generateStaticParams() {
   const puzzles = await getAllConnectionsPuzzles();
   // Only pre-generate the most recent 90 days to keep build output small.
-  // Older pages are generated on-demand via SSR and cached by R2.
+  // Older pages are rendered on demand (not stored; see open-next.config.ts).
   const recent = puzzles.slice(0, 90);
   const params: { locale: string; date: string }[] = [];
   for (const locale of LOCALES) {
