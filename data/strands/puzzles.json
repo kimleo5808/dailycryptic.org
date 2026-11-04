@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-03T12:57:11.325Z",
+  "lastUpdated": "2026-11-04T13:12:00.750Z",
   "puzzles": [
+    {
+      "id": 1172,
+      "printDate": "2026-11-04",
+      "status": "published",
+      "clue": "Getting the job done",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "SCBVIE0gQSBOIFIgRSBTIE8gVSBSIEMgRSBT",
+      "spangram": "SFVNQU5SRVNPVVJDRVM=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "TEFCT1I=",
+        "UEVPUExF",
+        "UEVSU09OTkVM",
+        "U1RBRkY=",
+        "V09SS0ZPUkNF"
+      ]
+    },
     {
       "id": 1171,
       "printDate": "2026-11-03",
