@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-03T12:55:09.258Z",
+  "lastUpdated": "2026-11-04T13:09:11.421Z",
   "puzzles": [
+    {
+      "id": 1964,
+      "printDate": "2026-11-04",
+      "status": "published",
+      "solution": "bnV0dHk=",
+      "hint1": "This word ends with a common suffix.",
+      "hint2": "The word starts with N and has 1 vowel.",
+      "hint3": "N _ T _ Y"
+    },
     {
       "id": 1963,
       "printDate": "2026-11-03",
