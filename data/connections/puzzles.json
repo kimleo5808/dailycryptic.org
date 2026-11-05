@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-04T13:07:43.145Z",
+  "lastUpdated": "2026-11-05T13:22:02.463Z",
   "puzzles": [
+    {
+      "id": 1243,
+      "printDate": "2026-11-05",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgSEVFTFM=",
+          "hint": "Think about different heels",
+          "words": [
+            "S0lUVEVO",
+            "U1BJS0U=",
+            "V0VER0U=",
+            "UExBVEZPUk0="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "RkxPV0VSUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Uk9TRQ==",
+            "TkFSQ0lTU1VT",
+            "TE9UVVM=",
+            "QU5FTU9ORQ=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEVBUkRST1AtU0hBUEVEIFRISU5HUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "UkFJTkRST1A=",
+            "UEVBUg==",
+            "VVZVTEE=",
+            "U1BFRURCQUc="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "TElRVU9SUyBXSVRIIExBU1QgTEVUVEVSUyBDSEFOR0VE",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "V0hJU0tFUg==",
+            "R0lH",
+            "UlVO",
+            "QlJBTkRP"
+          ]
+        }
+      ]
+    },
     {
       "id": 1242,
       "printDate": "2026-11-04",
