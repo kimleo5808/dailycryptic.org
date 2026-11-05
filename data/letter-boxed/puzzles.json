@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-04T15:45:12.612Z",
+  "lastUpdated": "2026-11-05T15:47:44.532Z",
   "puzzles": [
+    {
+      "id": 2893,
+      "printDate": "2026-11-05",
+      "status": "published",
+      "sides": [
+        "TEJ",
+        "WCL",
+        "IHA",
+        "SBD"
+      ],
+      "solution": "WyJKQVdTIiwiU1dJVENIQkxBREUiXQ=="
+    },
     {
       "id": 2892,
       "printDate": "2026-11-04",
