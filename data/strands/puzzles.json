@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-04T13:12:00.750Z",
+  "lastUpdated": "2026-11-05T13:26:10.779Z",
   "puzzles": [
+    {
+      "id": 1173,
+      "printDate": "2026-11-05",
+      "status": "published",
+      "clue": "Handle with care",
+      "hint": "Think about ways something can come apart or split",
+      "theme": "RyBJIFYgRSBNIEUgQSBCIFIgRSBBIEs=",
+      "spangram": "R0lWRU1FQUJSRUFL",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QlJFQUQ=",
+        "Q0hBUkFDVEVS",
+        "REFOQ0lORw==",
+        "RkFJVEg=",
+        "R1JPVU5E",
+        "V0lORA=="
+      ]
+    },
     {
       "id": 1172,
       "printDate": "2026-11-04",
