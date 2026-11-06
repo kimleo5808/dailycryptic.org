@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-05T13:26:10.779Z",
+  "lastUpdated": "2026-11-06T13:09:24.590Z",
   "puzzles": [
+    {
+      "id": 1182,
+      "printDate": "2026-11-06",
+      "status": "published",
+      "clue": "Autumn walk in the woods",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RiBPIFIgRSBTIFQgRiBMIE8gTyBS",
+      "spangram": "Rk9SRVNURkxPT1I=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QUNPUk4=",
+        "QlJBTkNI",
+        "SFVTSw==",
+        "TEVBVkVT",
+        "TU9TUw==",
+        "UElORUNPTkU=",
+        "VFdJRw=="
+      ]
+    },
     {
       "id": 1173,
       "printDate": "2026-11-05",
