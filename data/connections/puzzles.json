@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-05T13:22:02.463Z",
+  "lastUpdated": "2026-11-06T13:05:04.732Z",
   "puzzles": [
+    {
+      "id": 1244,
+      "printDate": "2026-11-06",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "Q09NUE9TSVRJT04=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "TUFLRVVQ",
+            "RkFCUklD",
+            "Q09OU1RJVFVUSU9O",
+            "U1RSVUNUVVJF"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "Q09QWQ==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QkFDS1VQ",
+            "RVhUUkE=",
+            "UkVQTEFDRU1FTlQ=",
+            "U1BBUkU="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "S0lORFMgT0YgVFJVQ0tT",
+          "hint": "Think about different trucks",
+          "words": [
+            "UElDS1VQ",
+            "RkxBVEJFRA==",
+            "U0VNSQ==",
+            "VEFOS0VS"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIFBBUlRTIE9GIFRIRSBFWUU=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "SE9UIFJPRA==",
+            "V09PTEVOUw==",
+            "VFJBRkZJQyBDT05F",
+            "T1NJUklT"
+          ]
+        }
+      ]
+    },
     {
       "id": 1243,
       "printDate": "2026-11-05",
