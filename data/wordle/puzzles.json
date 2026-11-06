@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-05T13:23:06.869Z",
+  "lastUpdated": "2026-11-06T13:05:49.544Z",
   "puzzles": [
+    {
+      "id": 1966,
+      "printDate": "2026-11-06",
+      "status": "published",
+      "solution": "ZHJlY2s=",
+      "hint1": "This word has a sharp ending sound.",
+      "hint2": "The word starts with D and has 1 vowel.",
+      "hint3": "D _ E _ K"
+    },
     {
       "id": 1965,
       "printDate": "2026-11-05",
