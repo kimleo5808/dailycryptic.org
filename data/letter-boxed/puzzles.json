@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-06T15:22:26.347Z",
+  "lastUpdated": "2026-11-07T14:19:55.989Z",
   "puzzles": [
+    {
+      "id": 2895,
+      "printDate": "2026-11-07",
+      "status": "published",
+      "sides": [
+        "RBO",
+        "PYL",
+        "UAN",
+        "HXW"
+      ],
+      "solution": "WyJCTE9XVVAiLCJQSEFSWU5YIl0="
+    },
     {
       "id": 2894,
       "printDate": "2026-11-06",
