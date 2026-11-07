@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-06T13:05:04.732Z",
+  "lastUpdated": "2026-11-07T11:50:15.108Z",
   "puzzles": [
+    {
+      "id": 1245,
+      "printDate": "2026-11-07",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "UElSQVRFJ1MgUExVTkRFUg==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "VFJFQVNVUkU=",
+            "Qk9VTlRZ",
+            "U1BPSUxT",
+            "Qk9PVFk="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgU0hJUlRT",
+          "hint": "Think about different shirts",
+          "words": [
+            "UE9MTw==",
+            "UklOR0VS",
+            "SEVOTEVZ",
+            "UkFHTEFO"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RklSU1QgV09SRFMgT0YgVS5TLiBTVEFURSBOQU1FUw==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "TkVX",
+            "UkhPREU=",
+            "Tk9SVEg=",
+            "U09VVEg="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5EUyBPRiBTVE9STSBUWVBFUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "RUFTVEVS",
+            "Q0xPTkU=",
+            "U09PTg==",
+            "Q0FORQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1244,
       "printDate": "2026-11-06",
