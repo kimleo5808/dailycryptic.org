@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-06T13:05:49.544Z",
+  "lastUpdated": "2026-11-07T11:50:39.439Z",
   "puzzles": [
+    {
+      "id": 1967,
+      "printDate": "2026-11-07",
+      "status": "published",
+      "solution": "cHJhdGU=",
+      "hint1": "This word begins with a popping sound.",
+      "hint2": "The word starts with P and has 2 vowels.",
+      "hint3": "P _ A _ E"
+    },
     {
       "id": 1966,
       "printDate": "2026-11-06",
