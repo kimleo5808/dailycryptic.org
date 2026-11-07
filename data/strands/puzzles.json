@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-06T13:09:24.590Z",
+  "lastUpdated": "2026-11-07T11:52:50.536Z",
   "puzzles": [
+    {
+      "id": 1175,
+      "printDate": "2026-11-07",
+      "status": "published",
+      "clue": "In the blink of an eye",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VyBIIEEgVCBTIFQgSCBFIEggVSBSIFIgWQ==",
+      "spangram": "V0hBVFNUSEVIVVJSWQ==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "RkxBU0g=",
+        "SFVSVExF",
+        "UlVTSA==",
+        "U1RSRUFL",
+        "V0hJWg==",
+        "V0hPT1NI",
+        "Wk9PTQ=="
+      ]
+    },
     {
       "id": 1182,
       "printDate": "2026-11-06",
