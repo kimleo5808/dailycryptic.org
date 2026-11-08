@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-07T11:52:50.536Z",
+  "lastUpdated": "2026-11-08T12:06:50.239Z",
   "puzzles": [
+    {
+      "id": 1176,
+      "printDate": "2026-11-08",
+      "status": "published",
+      "clue": "Disciplined combat",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBBIFIgVCBJIEEgTCBBIFIgVCBT",
+      "spangram": "TUFSVElBTEFSVFM=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "SlVETw==",
+        "S0FSQVRF",
+        "S0lDS0JPWElORw==",
+        "TklOSlVUU1U=",
+        "VEFFS1dPTkRP"
+      ]
+    },
     {
       "id": 1175,
       "printDate": "2026-11-07",
