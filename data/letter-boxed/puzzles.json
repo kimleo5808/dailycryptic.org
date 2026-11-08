@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-07T14:19:55.989Z",
+  "lastUpdated": "2026-11-08T14:30:43.684Z",
   "puzzles": [
+    {
+      "id": 2896,
+      "printDate": "2026-11-08",
+      "status": "published",
+      "sides": [
+        "HTA",
+        "OIV",
+        "SEK",
+        "CPN"
+      ],
+      "solution": "WyJDSE9QU1RJQ0siLCJLTkFWRSJd"
+    },
     {
       "id": 2895,
       "printDate": "2026-11-07",
