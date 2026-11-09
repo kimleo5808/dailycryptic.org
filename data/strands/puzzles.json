@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-08T12:06:50.239Z",
+  "lastUpdated": "2026-11-09T14:13:46.675Z",
   "puzzles": [
+    {
+      "id": 1177,
+      "printDate": "2026-11-09",
+      "status": "published",
+      "clue": "Idle chatter",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "UyBIIE8gTyBUIFQgSCBFIEIgUiBFIEUgWiBF",
+      "spangram": "U0hPT1RUSEVCUkVFWkU=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "QkFOVEVS",
+        "Q0hJTldBRw==",
+        "R0FCRkVTVA==",
+        "R09TU0lQ",
+        "U0NITU9PWkU="
+      ]
+    },
     {
       "id": 1176,
       "printDate": "2026-11-08",
