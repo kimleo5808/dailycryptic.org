@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-08T14:30:43.684Z",
+  "lastUpdated": "2026-11-09T17:48:06.029Z",
   "puzzles": [
+    {
+      "id": 2897,
+      "printDate": "2026-11-09",
+      "status": "published",
+      "sides": [
+        "NRC",
+        "LUK",
+        "ASO",
+        "MIH"
+      ],
+      "solution": "WyJNQUxJQ0lPVVMiLCJTSFJJTksiXQ=="
+    },
     {
       "id": 2896,
       "printDate": "2026-11-08",
