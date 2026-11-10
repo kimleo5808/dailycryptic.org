@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-09T14:07:26.278Z",
+  "lastUpdated": "2026-11-10T13:39:03.589Z",
   "puzzles": [
+    {
+      "id": 1248,
+      "printDate": "2026-11-10",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "SFVCQlVC",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "Rk9PRkFSQVc=",
+            "SFVMTEFCQUxPTw==",
+            "QlJPVUhBSEE=",
+            "S0VSRlVGRkxF"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "TElURVJBUlkgREVWSUNFUw==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "T05PTUFUT1BPRUlB",
+            "T1hZTU9ST04=",
+            "SFlQRVJCT0xF",
+            "TUVUT05ZTVk="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "T0xELVRJTUVZIE9DQ1VQQVRJT05T",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QVBPVEhFQ0FSWQ==",
+            "SEFCRVJEQVNIRVI=",
+            "U0NSSVZFTkVS",
+            "V0FJTldSSUdIVA=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "V09SRFMgV0lUSCBGSVZFIE9GIE9ORSBWT1dFTA==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QUJSQUNBREFCUkE=",
+            "UFJPVE9aT09MT0dZ",
+            "QkVFS0VFUEVS",
+            "SU5WSVNJQklMSVRZ"
+          ]
+        }
+      ]
+    },
     {
       "id": 1247,
       "printDate": "2026-11-09",
