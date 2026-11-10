@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-09T14:13:46.675Z",
+  "lastUpdated": "2026-11-10T13:42:05.903Z",
   "puzzles": [
+    {
+      "id": 1190,
+      "printDate": "2026-11-10",
+      "status": "published",
+      "clue": "Influentially online",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBPIE4gVCBFIE4gVCBDIFIgRSBBIFQgTyBS",
+      "spangram": "Q09OVEVOVENSRUFUT1I=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "REVNTw==",
+        "UkVBQ1RJT04=",
+        "UkVWSUVX",
+        "U0tJVA==",
+        "VFVUT1JJQUw=",
+        "VkxPRw=="
+      ]
+    },
     {
       "id": 1177,
       "printDate": "2026-11-09",
