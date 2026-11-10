@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-09T17:48:06.029Z",
+  "lastUpdated": "2026-11-10T15:46:03.499Z",
   "puzzles": [
+    {
+      "id": 2898,
+      "printDate": "2026-11-10",
+      "status": "published",
+      "sides": [
+        "ETO",
+        "HRA",
+        "VUI",
+        "NCQ"
+      ],
+      "solution": "WyJBUVVBVElDIiwiQ0hFVlJPTiJd"
+    },
     {
       "id": 2897,
       "printDate": "2026-11-09",
