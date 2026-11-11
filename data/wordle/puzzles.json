@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-10T13:39:33.820Z",
+  "lastUpdated": "2026-11-11T12:51:54.813Z",
   "puzzles": [
+    {
+      "id": 1971,
+      "printDate": "2026-11-11",
+      "status": "published",
+      "solution": "Ymxlc3M=",
+      "hint1": "This word contains a double letter.",
+      "hint2": "The word starts with B and has 1 vowel.",
+      "hint3": "B _ E _ S"
+    },
     {
       "id": 1970,
       "printDate": "2026-11-10",
