@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-10T13:42:05.903Z",
+  "lastUpdated": "2026-11-11T12:54:03.033Z",
   "puzzles": [
+    {
+      "id": 1179,
+      "printDate": "2026-11-11",
+      "status": "published",
+      "clue": "Work it out",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "TSBVIFMgQyBMIEUgRyBSIE8gVSBQ",
+      "spangram": "TVVTQ0xFR1JPVVA=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "QklDRVBT",
+        "SEFNU1RSSU5HUw==",
+        "TEFUUw==",
+        "T0JMSVFVRVM=",
+        "UEVDUw==",
+        "UVVBRFM="
+      ]
+    },
     {
       "id": 1190,
       "printDate": "2026-11-10",
