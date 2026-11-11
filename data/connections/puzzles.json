@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-10T13:39:03.589Z",
+  "lastUpdated": "2026-11-11T12:51:04.738Z",
   "puzzles": [
+    {
+      "id": 1249,
+      "printDate": "2026-11-11",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgTUVESUNJTkU=",
+          "hint": "Think about different medicine",
+          "words": [
+            "SEVSQkFM",
+            "Rk9MSw==",
+            "VFJBRElUSU9OQUw=",
+            "SE9MSVNUSUM="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "UEFSVFMgT0YgQSBHT0xGIENPVVJTRQ==",
+          "hint": "Think about parts that make up a whole",
+          "words": [
+            "R1JFRU4=",
+            "Uk9VR0g=",
+            "U0FORCBUUkFQ",
+            "VEVFIEJPWA=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIEZJTExFRCBXSVRIIEFJUg==",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "V0hPT1BJRSBDVVNISU9O",
+            "QlVCQkxF",
+            "VElSRQ==",
+            "QUlSIE1BVFRSRVNT"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RU5ESU5HIElOIFBBTElORFJPTUVT",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "U0hSRURERVI=",
+            "UEFUT09U",
+            "QUZURVJOT09O",
+            "UkhFT1NUQVRT"
+          ]
+        }
+      ]
+    },
     {
       "id": 1248,
       "printDate": "2026-11-10",
