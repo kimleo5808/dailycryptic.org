@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T21:16:00.779Z",
+  "lastUpdated": "2026-11-12T16:46:00.364Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -1864,6 +1864,37 @@
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
           "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "queens": {
+        "size": 8,
+        "solution": "W3sicm93IjoxLCJjb2wiOjEsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6MiwiY29sIjozLCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjMsImNvbCI6NiwiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo0LCJjb2wiOjgsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6NSwiY29sIjo1LCJjb2xvciI6ImFtYmVyIn0seyJyb3ciOjYsImNvbCI6NywiY29sb3IiOiJhbWJlciJ9LHsicm93Ijo3LCJjb2wiOjQsImNvbG9yIjoiYW1iZXIifSx7InJvdyI6OCwiY29sIjoyLCJjb2xvciI6ImFtYmVyIn1d",
+        "hints": [
+          "U3RhcnQgd2l0aCB0aGUgc21hbGxlc3QgY29sb3VyIHJlZ2lvbiDigJQgaXQgZm9yY2VzIGEgY3Jvd24gZmFzdGVzdC4=",
+          "UmVtZW1iZXIgY3Jvd25zIG1heSBuZXZlciB0b3VjaCwgbm90IGV2ZW4gZGlhZ29uYWxseS4=",
+          "T25lIHJvdyBzdGlsbCBoYXMgb25seSBhIHNpbmdsZSBzcXVhcmUgbGVmdCBvcGVuLg=="
+        ]
+      },
+      "tango": {
+        "solution": "WyJTTU1TU00iLCJNU1NNTVMiLCJTTVNTTU0iLCJTTU1TU00iLCJNU1NNTVMiLCJNU01NU1MiXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      },
+      "crossclimb": {
+        "rungs": "W3siY2x1ZSI6Ik1vbGRhYmxlIG1hdGVyaWFsIGluIGFuIGFydCBjbGFzcyIsImFuc3dlciI6IkNMQVkifSx7ImNsdWUiOiJOb2lzaWx5IHB1dCB5b3VyIGhhbmRzIHRvZ2V0aGVyIiwiYW5zd2VyIjoiQ0xBUCJ9LHsiY2x1ZSI6IlNvdW5kIGZyb20gYSB0cm90dGluZyBob3JzZSdzIGhvb2YiLCJhbnN3ZXIiOiJDTE9QIn0seyJjbHVlIjoiUGxhY2UgZm9yIGNoaWNrZW5zIG9uIGEgZmFybSIsImFuc3dlciI6IkNPT1AifSx7ImNsdWUiOiJQcmVwYXJlIGEgaG90IG1lYWwiLCJhbnN3ZXIiOiJDT09LIn1d",
+        "order": "WyJDTEFZIiwiQ0xBUCIsIkNMT1AiLCJDT09QIiwiQ09PSyJd",
+        "top": "QU5E",
+        "bottom": "V09SRFM=",
+        "hints": [
+          "U29sdmUgdGhlIGVhc2llc3QgY2x1ZSBmaXJzdCBhbmQgbGV0IHRoZSBsZXR0ZXJzIHNwcmVhZC4=",
+          "TmVpZ2hib3VyaW5nIHJ1bmdzIGRpZmZlciBieSBleGFjdGx5IG9uZSBsZXR0ZXIu",
+          "VGhlIHRvcCBhbmQgYm90dG9tIHdvcmRzIGZvcm0gYSBzaW5nbGUgcGhyYXNlIHRvZ2V0aGVyLg=="
         ]
       }
     }
