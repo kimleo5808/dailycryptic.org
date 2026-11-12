@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-11T15:36:49.421Z",
+  "lastUpdated": "2026-11-12T16:13:20.747Z",
   "puzzles": [
+    {
+      "id": 2900,
+      "printDate": "2026-11-12",
+      "status": "published",
+      "sides": [
+        "ILM",
+        "DER",
+        "BFG",
+        "PNA"
+      ],
+      "solution": "WyJCRUZSSUVORElORyIsIkdMQU1QIl0="
+    },
     {
       "id": 2899,
       "printDate": "2026-11-11",
