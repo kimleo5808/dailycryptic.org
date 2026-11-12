@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-11T12:54:03.033Z",
+  "lastUpdated": "2026-11-12T13:56:08.464Z",
   "puzzles": [
+    {
+      "id": 1180,
+      "printDate": "2026-11-12",
+      "status": "published",
+      "clue": "Facing the music",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QSBVIEQgSSBFIE4gQyBF",
+      "spangram": "QVVESUVOQ0U=",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 8,
+      "themeWords": [
+        "Q09OQ0VSVEdPRVI=",
+        "TElTVEVORVI=",
+        "UEFUUk9O",
+        "U1BFQ1RBVE9S",
+        "VklFV0VS"
+      ]
+    },
     {
       "id": 1179,
       "printDate": "2026-11-11",
