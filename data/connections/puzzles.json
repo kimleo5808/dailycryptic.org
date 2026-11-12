@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-11T12:51:04.738Z",
+  "lastUpdated": "2026-11-12T13:53:27.598Z",
   "puzzles": [
+    {
+      "id": 1250,
+      "printDate": "2026-11-12",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "IkdBRFpPT0tTISI=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "R1JFQVQgU0NPVFQ=",
+            "SklNSU5ZIENSSUNLRVQ=",
+            "R09PRCBIRUFWRU5T",
+            "SE9MWSBTTU9LRVM="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U1RBUlRJTkcgV0lUSCBWQVJJQVRJT05T",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "RkxVWCBDQVBBQ0lUT1I=",
+            "Q0hBTkdFIFBVUlNF",
+            "U0hJRlQgRFJFU1M=",
+            "U1dJTkcgU0VU"
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RU5ESU5HIElOIFdBWVMgVE8gQ09PSyBUSElOR1M=",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "WU9VJ1JFIFRPQVNU",
+            "Q09NRURZIFJPQVNU",
+            "RE9DIEJST1dO",
+            "QVJDVElDIENIQVI="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "U1RBUlRJTkcgV0lUSCBCRVNUIFBJQ1RVUkUgT1NDQVIgV0lOTkVSUw==",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "Uk9DS1kgUk9BRA==",
+            "TU9PTkxJR0hUIFNPTkFUQQ==",
+            "TUFSVFkgTUNGTFk=",
+            "R0xBRElBVE9SIFNBTkRBTFM="
+          ]
+        }
+      ]
+    },
     {
       "id": 1249,
       "printDate": "2026-11-11",
