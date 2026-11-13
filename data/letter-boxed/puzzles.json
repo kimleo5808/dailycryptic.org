@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-12T16:13:20.747Z",
+  "lastUpdated": "2026-11-13T15:40:56.822Z",
   "puzzles": [
+    {
+      "id": 2901,
+      "printDate": "2026-11-13",
+      "status": "published",
+      "sides": [
+        "HAR",
+        "TGE",
+        "IMO",
+        "NJV"
+      ],
+      "solution": "WyJUSElOR0FNQUpJRyIsIkdST1ZFIl0="
+    },
     {
       "id": 2900,
       "printDate": "2026-11-12",
