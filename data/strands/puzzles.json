@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-13T13:21:13.810Z",
+  "lastUpdated": "2026-11-14T12:25:25.177Z",
   "puzzles": [
+    {
+      "id": 1184,
+      "printDate": "2026-11-14",
+      "status": "published",
+      "clue": "Preschool fun",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RiBPIEwgTCBPIFcgVCBIIEUgTCBFIEEgRCBFIFI=",
+      "spangram": "Rk9MTE9XVEhFTEVBREVS",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 15,
+      "themeWords": [
+        "R0FMTE9Q",
+        "SlVNUA==",
+        "TUFSQ0g=",
+        "U0tJUA==",
+        "U1BJTg==",
+        "VElQVE9F",
+        "V0FMSw=="
+      ]
+    },
     {
       "id": 1181,
       "printDate": "2026-11-13",
