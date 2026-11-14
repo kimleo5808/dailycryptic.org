@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-13T15:40:56.822Z",
+  "lastUpdated": "2026-11-14T14:30:07.711Z",
   "puzzles": [
+    {
+      "id": 2902,
+      "printDate": "2026-11-14",
+      "status": "published",
+      "sides": [
+        "PKB",
+        "NLS",
+        "UOY",
+        "AED"
+      ],
+      "solution": "WyJTVURPS1UiLCJVTlBMQVlBQkxFIl0="
+    },
     {
       "id": 2901,
       "printDate": "2026-11-13",
