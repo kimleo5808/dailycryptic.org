@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-14T12:22:31.433Z",
+  "lastUpdated": "2026-11-15T12:52:57.000Z",
   "puzzles": [
+    {
+      "id": 1975,
+      "printDate": "2026-11-15",
+      "status": "published",
+      "solution": "c25hcms=",
+      "hint1": "This word starts with the most common starting letter in Wordle.",
+      "hint2": "The word starts with S and has 1 vowel.",
+      "hint3": "S _ A _ K"
+    },
     {
       "id": 1974,
       "printDate": "2026-11-14",
