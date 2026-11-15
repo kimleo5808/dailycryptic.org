@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-14T12:25:25.177Z",
+  "lastUpdated": "2026-11-15T12:54:47.351Z",
   "puzzles": [
+    {
+      "id": 1185,
+      "printDate": "2026-11-15",
+      "status": "published",
+      "clue": "Foiled again!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBBIFQgTSBBIE4gViBJIEwgTCBBIEkgTg==",
+      "spangram": "QkFUTUFOVklMTEFJTg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 13,
+      "themeWords": [
+        "RklSRUZMWQ==",
+        "Sk9LRVI=",
+        "UEVOR1VJTg==",
+        "UklERExFUg==",
+        "U0NBUkVDUk9X"
+      ]
+    },
     {
       "id": 1184,
       "printDate": "2026-11-14",
