@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-15T12:54:47.351Z",
+  "lastUpdated": "2026-11-16T13:55:15.061Z",
   "puzzles": [
+    {
+      "id": 1186,
+      "printDate": "2026-11-16",
+      "status": "published",
+      "clue": "What's the big idea?",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEEgVCBTIEogVSBTIFQgUyBXIEUgTCBM",
+      "spangram": "VEhBVFNKVVNUU1dFTEw=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 14,
+      "themeWords": [
+        "QkxPQVQ=",
+        "RU5MQVJHRQ==",
+        "RVhQQU5E",
+        "R1JPVw==",
+        "SU5GTEFURQ==",
+        "U1VSR0U="
+      ]
+    },
     {
       "id": 1185,
       "printDate": "2026-11-15",
