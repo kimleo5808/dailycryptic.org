@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-15T12:52:17.523Z",
+  "lastUpdated": "2026-11-16T13:51:48.164Z",
   "puzzles": [
+    {
+      "id": 1254,
+      "printDate": "2026-11-16",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U1VNTUVSIF9fXw==",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "QkxPQ0tCVVNURVI=",
+            "U0FVU0FHRQ==",
+            "Q0FNUA==",
+            "U0NIT09M"
+          ]
+        },
+        {
+          "color": "green",
+          "name": "U1BSSU5HIF9fXw==",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "V0FURVI=",
+            "T05JT04=",
+            "Q0hJQ0tFTg==",
+            "Q0xFQU5JTkc="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "V0lOVEVSIF9fXw==",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "V09OREVSTEFORA==",
+            "TUVMT04=",
+            "R0FSREVO",
+            "R0xPVkVT"
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "RkFMTCBfX18=",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "SU4gTE9WRQ==",
+            "Rk9MSUFHRQ==",
+            "QVNMRUVQ",
+            "R1VZ"
+          ]
+        }
+      ]
+    },
     {
       "id": 1253,
       "printDate": "2026-11-15",
