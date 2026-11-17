@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-16T13:52:34.943Z",
+  "lastUpdated": "2026-11-17T14:44:51.626Z",
   "puzzles": [
+    {
+      "id": 1977,
+      "printDate": "2026-11-17",
+      "status": "published",
+      "solution": "cm9hc3Q=",
+      "hint1": "This word begins with a rolling sound.",
+      "hint2": "The word starts with R and has 2 vowels.",
+      "hint3": "R _ A _ T"
+    },
     {
       "id": 1976,
       "printDate": "2026-11-16",
