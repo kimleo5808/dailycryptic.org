@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-16T17:25:55.147Z",
+  "lastUpdated": "2026-11-17T17:03:23.746Z",
   "puzzles": [
+    {
+      "id": 2905,
+      "printDate": "2026-11-17",
+      "status": "published",
+      "sides": [
+        "OFE",
+        "DBH",
+        "RTN",
+        "GAL"
+      ],
+      "solution": "WyJCRUxPTkciLCJHT0RGQVRIRVIiXQ=="
+    },
     {
       "id": 2904,
       "printDate": "2026-11-16",
