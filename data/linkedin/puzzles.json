@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T23:19:27.256Z",
+  "lastUpdated": "2026-11-17T17:35:15.829Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -1981,6 +1981,17 @@
           "U29sdmUgdGhlIGVhc2llc3QgY2x1ZSBmaXJzdCBhbmQgbGV0IHRoZSBsZXR0ZXJzIHNwcmVhZC4=",
           "TmVpZ2hib3VyaW5nIHJ1bmdzIGRpZmZlciBieSBleGFjdGx5IG9uZSBsZXR0ZXIu",
           "VGhlIHRvcCBhbmQgYm90dG9tIHdvcmRzIGZvcm0gYSBzaW5nbGUgcGhyYXNlIHRvZ2V0aGVyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "tango": {
+        "solution": "WyJTTVNNTVMiLCJTU01NU00iLCJNU01TU00iLCJNTVNTTVMiLCJTTVNNU00iLCJNU01TTVMiXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
         ]
       }
     }
