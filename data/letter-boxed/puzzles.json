@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-17T17:03:23.746Z",
+  "lastUpdated": "2026-11-18T16:42:39.445Z",
   "puzzles": [
+    {
+      "id": 2906,
+      "printDate": "2026-11-18",
+      "status": "published",
+      "sides": [
+        "ACP",
+        "HOR",
+        "DUG",
+        "WTM"
+      ],
+      "solution": "WyJXQVRDSERPRyIsIkdSVU1QIl0="
+    },
     {
       "id": 2905,
       "printDate": "2026-11-17",
