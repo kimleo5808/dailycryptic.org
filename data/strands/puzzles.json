@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-17T14:47:49.256Z",
+  "lastUpdated": "2026-11-18T14:27:58.380Z",
   "puzzles": [
+    {
+      "id": 1188,
+      "printDate": "2026-11-18",
+      "status": "published",
+      "clue": "You're gonna blow it!",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QiBSIEEgUyBTIEIgQSBOIEQ=",
+      "spangram": "QlJBU1NCQU5E",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 9,
+      "themeWords": [
+        "QlVHTEU=",
+        "Q09STkVU",
+        "RVVQSE9OSVVN",
+        "VFJPTUJPTkU=",
+        "VFJVTVBFVA==",
+        "VFVCQQ=="
+      ]
+    },
     {
       "id": 1187,
       "printDate": "2026-11-17",
