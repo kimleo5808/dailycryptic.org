@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T22:11:06.997Z",
+  "lastUpdated": "2026-11-18T17:11:52.129Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -1992,6 +1992,28 @@
           "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
           "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
           "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "tango": {
+        "solution": "WyJNTVNTTVMiLCJNTVNTTVMiLCJTU01NU00iLCJNU01NU1MiLCJTTVNTTU0iLCJTU01NU00iXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      },
+      "crossclimb": {
+        "rungs": "W3siY2x1ZSI6Ik1pZGRsZSB3b3JkIDEiLCJhbnN3ZXIiOiJTSUxLIn0seyJjbHVlIjoiTWlkZGxlIHdvcmQgMiIsImFuc3dlciI6IlNVTEsifSx7ImNsdWUiOiJNaWRkbGUgd29yZCAzIiwiYW5zd2VyIjoiU1VDSyJ9LHsiY2x1ZSI6Ik1pZGRsZSB3b3JkIDQiLCJhbnN3ZXIiOiJTT0NLIn0seyJjbHVlIjoiTWlkZGxlIHdvcmQgNSIsImFuc3dlciI6IlNPQUsifV0=",
+        "order": "WyJTSUxLIiwiU1VMSyIsIlNVQ0siLCJTT0NLIiwiU09BSyJd",
+        "top": "QU5E",
+        "bottom": "Uk9XUw==",
+        "hints": [
+          "U29sdmUgdGhlIGVhc2llc3QgY2x1ZSBmaXJzdCBhbmQgbGV0IHRoZSBsZXR0ZXJzIHNwcmVhZC4=",
+          "TmVpZ2hib3VyaW5nIHJ1bmdzIGRpZmZlciBieSBleGFjdGx5IG9uZSBsZXR0ZXIu",
+          "VGhlIHRvcCBhbmQgYm90dG9tIHdvcmRzIGZvcm0gYSBzaW5nbGUgcGhyYXNlIHRvZ2V0aGVyLg=="
         ]
       }
     }
