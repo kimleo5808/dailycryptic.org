@@ -1,6 +1,476 @@
 {
-  "lastUpdated": "2026-11-18T16:40:54.612Z",
+  "lastUpdated": "2026-11-19T16:44:41.878Z",
   "puzzles": [
+    {
+      "id": 1570,
+      "printDate": "2026-11-19",
+      "status": "published",
+      "editor": "Ian Livengood",
+      "tiers": {
+        "easy": {
+          "id": 1570,
+          "dominoes": [
+            [
+              5,
+              0
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "regions": [
+            {
+              "type": "equals",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "target": 11
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "target": 11
+            },
+            {
+              "type": "equals",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  1,
+                  5
+                ]
+              ]
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ],
+              "target": 1
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  1,
+                  0
+                ]
+              ],
+              "target": 5
+            }
+          ],
+          "solution": "W1tbMCwxXSxbMSwxXV0sW1swLDBdLFsxLDBdXSxbWzEsNF0sWzEsNV1dLFtbMCw0XSxbMCw1XV0sW1sxLDJdLFsxLDNdXV0="
+        },
+        "medium": {
+          "id": 1559,
+          "dominoes": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "regions": [
+            {
+              "type": "equals",
+              "indices": [
+                [
+                  2,
+                  5
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  1,
+                  5
+                ]
+              ],
+              "target": 2
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ],
+              "target": 2
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  1,
+                  3
+                ]
+              ],
+              "target": 0
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ]
+              ],
+              "target": 7
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  0
+                ]
+              ],
+              "target": 7
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  1,
+                  1
+                ]
+              ],
+              "target": 4
+            },
+            {
+              "type": "less",
+              "indices": [
+                [
+                  1,
+                  2
+                ]
+              ],
+              "target": 2
+            },
+            {
+              "type": "empty",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ],
+          "solution": "W1tbMSwyXSxbMSwzXV0sW1syLDBdLFsyLDFdXSxbWzEsMF0sWzEsMV1dLFtbMiw0XSxbMiw1XV0sW1syLDJdLFsyLDNdXSxbWzAsNF0sWzEsNF1dLFtbMCw1XSxbMSw1XV1d"
+        },
+        "hard": {
+          "id": 1517,
+          "dominoes": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "regions": [
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "target": 6
+            },
+            {
+              "type": "unequal",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ]
+              ]
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "target": 4
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  3,
+                  0
+                ]
+              ],
+              "target": 5
+            },
+            {
+              "type": "equals",
+              "indices": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  4,
+                  0
+                ]
+              ],
+              "target": 2
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  5,
+                  2
+                ],
+                [
+                  6,
+                  2
+                ],
+                [
+                  7,
+                  2
+                ]
+              ],
+              "target": 14
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  6,
+                  4
+                ]
+              ],
+              "target": 4
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  7,
+                  4
+                ],
+                [
+                  8,
+                  4
+                ],
+                [
+                  9,
+                  4
+                ]
+              ],
+              "target": 3
+            },
+            {
+              "type": "greater",
+              "indices": [
+                [
+                  8,
+                  0
+                ]
+              ],
+              "target": 0
+            },
+            {
+              "type": "sum",
+              "indices": [
+                [
+                  8,
+                  2
+                ],
+                [
+                  9,
+                  0
+                ],
+                [
+                  9,
+                  1
+                ],
+                [
+                  9,
+                  2
+                ]
+              ],
+              "target": 12
+            }
+          ],
+          "solution": "W1tbMiwxXSxbMiwwXV0sW1s2LDRdLFs3LDRdXSxbWzcsMl0sWzgsMl1dLFtbMyw0XSxbNCw0XV0sW1s4LDBdLFs5LDBdXSxbWzgsNF0sWzksNF1dLFtbOSwxXSxbOSwyXV0sW1s1LDJdLFs2LDJdXSxbWzAsMF0sWzEsMF1dLFtbMywwXSxbNCwwXV0sW1syLDRdLFsxLDRdXSxbWzAsMl0sWzAsMV1dXQ=="
+        }
+      }
+    },
     {
       "id": 1564,
       "printDate": "2026-11-18",
