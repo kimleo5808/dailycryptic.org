@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-19T16:46:59.069Z",
+  "lastUpdated": "2026-11-20T16:21:14.516Z",
   "puzzles": [
+    {
+      "id": 2908,
+      "printDate": "2026-11-20",
+      "status": "published",
+      "sides": [
+        "VLN",
+        "TAU",
+        "RED",
+        "FIM"
+      ],
+      "solution": "WyJGVU5EQU1FTlQiLCJUUkFWQUlMIl0="
+    },
     {
       "id": 2907,
       "printDate": "2026-11-19",
