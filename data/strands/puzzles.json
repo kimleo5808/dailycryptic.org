@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-19T14:38:19.075Z",
+  "lastUpdated": "2026-11-20T14:16:50.273Z",
   "puzzles": [
+    {
+      "id": 1183,
+      "printDate": "2026-11-20",
+      "status": "published",
+      "clue": "There's just one small problem ...",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QSBGIEwgWSBJIE4gVCBIIEUgTyBJIE4gVCBNIEUgTiBU",
+      "spangram": "QUZMWUlOVEhFT0lOVE1FTlQ=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 17,
+      "themeWords": [
+        "SElDQ1VQ",
+        "SElORFJBTkNF",
+        "SElUQ0g=",
+        "U0VUQkFDSw==",
+        "U05BRw=="
+      ]
+    },
     {
       "id": 1189,
       "printDate": "2026-11-19",
