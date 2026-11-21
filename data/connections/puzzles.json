@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-20T14:11:58.753Z",
+  "lastUpdated": "2026-11-21T13:37:01.299Z",
   "puzzles": [
+    {
+      "id": 1259,
+      "printDate": "2026-11-21",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "S0lORFMgT0YgQ09PS0lFUw==",
+          "hint": "Think about different cookies",
+          "words": [
+            "QlVUVEVS",
+            "U1VHQVI=",
+            "QkxBQ0sgQU5EIFdISVRF",
+            "R0lSTCBTQ09VVA=="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "VEhJTkdTIFJBVEVEIElOIEEgQ1VTVE9NRVIgU1VSVkVZ",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "U0FUSVNGQUNUSU9O",
+            "Q09VUlRFU1k=",
+            "V0FJVCBUSU1F",
+            "SEVMUEZVTE5FU1M="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEFST1QgQ0FSRFMsIFdJVEggIlRIRSI=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "Rk9PTA==",
+            "REVWSUw=",
+            "RU1QUkVTUw==",
+            "SElFUk9QSEFOVA=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "SE9MRCBZT1VSIF9fXw==",
+          "hint": "Each word can pair with a common word",
+          "words": [
+            "QlJFQVRI",
+            "SE9SU0VT",
+            "T1dO",
+            "VE9OR1VF"
+          ]
+        }
+      ]
+    },
     {
       "id": 1258,
       "printDate": "2026-11-20",
