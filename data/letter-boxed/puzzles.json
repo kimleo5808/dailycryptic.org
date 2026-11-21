@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-20T16:21:14.516Z",
+  "lastUpdated": "2026-11-21T15:36:04.045Z",
   "puzzles": [
+    {
+      "id": 2909,
+      "printDate": "2026-11-21",
+      "status": "published",
+      "sides": [
+        "PIT",
+        "NOE",
+        "RLC",
+        "YAK"
+      ],
+      "solution": "WyJQQUlOVEVSIiwiUk9DS0lMWSJd"
+    },
     {
       "id": 2908,
       "printDate": "2026-11-20",
