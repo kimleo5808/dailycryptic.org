@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-22T15:40:02.918Z",
+  "lastUpdated": "2026-11-23T19:28:21.737Z",
   "puzzles": [
+    {
+      "id": 2911,
+      "printDate": "2026-11-23",
+      "status": "published",
+      "sides": [
+        "IHZ",
+        "ADS",
+        "VOR",
+        "MTU"
+      ],
+      "solution": "WyJNSVRaVkFIIiwiSEFaQVJET1VTIl0="
+    },
     {
       "id": 2910,
       "printDate": "2026-11-22",
