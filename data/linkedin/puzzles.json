@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T20:06:43.637Z",
+  "lastUpdated": "2026-11-24T01:36:10.554Z",
   "days": [
     {
       "date": "2026-08-12",
@@ -2077,6 +2077,17 @@
     },
     {
       "date": "2026-11-23",
+      "tango": {
+        "solution": "WyJTU01TTU0iLCJNTVNTTVMiLCJNU1NNU00iLCJTTU1TU00iLCJTTVNNTVMiLCJNU01NU1MiXQ==",
+        "hints": [
+          "RmluZCBhIHJvdyBhbHJlYWR5IGhvbGRpbmcgdHdvIG9mIHRoZSBzYW1lIHN5bWJvbCBpbiBhIHJvdy4=",
+          "RWFjaCByb3cgYW5kIGNvbHVtbiBuZWVkcyBhbiBlcXVhbCBjb3VudCBvZiBzdW5zIGFuZCBtb29ucy4=",
+          "VGhlID0gYW5kIMOXIHNpZ25zIHNldHRsZSB0aGUgbGFzdCBzdHViYm9ybiBwYWlyLg=="
+        ]
+      }
+    },
+    {
+      "date": "2026-11-24",
       "tango": {
         "solution": "WyJTU01TTU0iLCJNTVNTTVMiLCJNU1NNU00iLCJTTU1TU00iLCJTTVNNTVMiLCJNU01NU1MiXQ==",
         "hints": [
