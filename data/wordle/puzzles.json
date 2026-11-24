@@ -1,6 +1,15 @@
 {
-  "lastUpdated": "2026-11-23T16:17:51.966Z",
+  "lastUpdated": "2026-11-24T16:05:10.528Z",
   "puzzles": [
+    {
+      "id": 1984,
+      "printDate": "2026-11-24",
+      "status": "published",
+      "solution": "c25lZXI=",
+      "hint1": "This word could compare things or describe a person.",
+      "hint2": "The word starts with S and has 2 vowels.",
+      "hint3": "S _ E _ R"
+    },
     {
       "id": 1983,
       "printDate": "2026-11-23",
