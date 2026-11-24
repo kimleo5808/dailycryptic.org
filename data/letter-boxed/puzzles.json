@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-23T19:28:21.737Z",
+  "lastUpdated": "2026-11-24T19:04:58.213Z",
   "puzzles": [
+    {
+      "id": 2912,
+      "printDate": "2026-11-24",
+      "status": "published",
+      "sides": [
+        "NRG",
+        "MUE",
+        "HOT",
+        "CIY"
+      ],
+      "solution": "WyJDSElNTkVZIiwiWU9HVVJUIl0="
+    },
     {
       "id": 2911,
       "printDate": "2026-11-23",
