@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-23T16:22:11.522Z",
+  "lastUpdated": "2026-11-24T16:12:29.193Z",
   "puzzles": [
+    {
+      "id": 1195,
+      "printDate": "2026-11-24",
+      "status": "published",
+      "clue": "Are we there yet?",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "VCBIIEUgTCBPIE4gRyBIIEEgVSBM",
+      "spangram": "VEhFTE9OR0hBVUw=",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 11,
+      "themeWords": [
+        "Q0FNUEFJR04=",
+        "R1JJTkQ=",
+        "TUFSQVRIT04=",
+        "U0xPRw==",
+        "U1RSVUdHTEU=",
+        "VFJFSw=="
+      ]
+    },
     {
       "id": 1194,
       "printDate": "2026-11-23",
