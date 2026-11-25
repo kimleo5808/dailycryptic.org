@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-24T16:12:29.193Z",
+  "lastUpdated": "2026-11-25T15:56:40.641Z",
   "puzzles": [
+    {
+      "id": 1196,
+      "printDate": "2026-11-25",
+      "status": "published",
+      "clue": "Handmade gift for a newborn",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "RCBSIEUgQSBNIEMgQSBUIEMgSCBFIFI=",
+      "spangram": "RFJFQU1DQVRDSEVS",
+      "spangramDirection": "vertical",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "QkVBRA==",
+        "Q0hBUk0=",
+        "RkVBVEhFUg==",
+        "SE9PUA==",
+        "TE9WRQ==",
+        "UklCQk9O",
+        "U1RSSU5H"
+      ]
+    },
     {
       "id": 1195,
       "printDate": "2026-11-24",
