@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-24T19:04:58.213Z",
+  "lastUpdated": "2026-11-25T18:10:26.354Z",
   "puzzles": [
+    {
+      "id": 2913,
+      "printDate": "2026-11-25",
+      "status": "published",
+      "sides": [
+        "HRA",
+        "TPL",
+        "YFG",
+        "XIE"
+      ],
+      "solution": "WyJGTElHSFQiLCJUQVhQQVlFUiJd"
+    },
     {
       "id": 2912,
       "printDate": "2026-11-24",
