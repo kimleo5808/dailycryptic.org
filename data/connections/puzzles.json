@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-25T15:51:30.175Z",
+  "lastUpdated": "2026-11-26T15:30:59.196Z",
   "puzzles": [
+    {
+      "id": 1264,
+      "printDate": "2026-11-26",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "U0hBREVTIE9GIFBJTks=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QlVCQkxFR1VN",
+            "Q0FSTkFUSU9O",
+            "QkxVU0g=",
+            "Q09SQUw="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "S0lORFMgT0YgQ0FSUw==",
+          "hint": "Think about different cars",
+          "words": [
+            "Q09NUEFDVA==",
+            "TUFOVUFM",
+            "SFlCUklE",
+            "Q09OVkVSVElCTEU="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "VEhJTkdTIEhPTUVSIFNJTVBTT04gTElLRVM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "QkVFUg==",
+            "Qk9XTElORw==",
+            "RE9OVVRT",
+            "VEVMRVZJU0lPTg=="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "VEhJTkdTIFRIQVQgQVJFIFBPUFBFRA==",
+          "hint": "Think about objects or actions that share a trait",
+          "words": [
+            "Qk9UVExFIE9GIENIQU1QQUdORQ==",
+            "UE9QQ09STg==",
+            "V0hFRUxJRQ==",
+            "VEhFIFFVRVNUSU9O"
+          ]
+        }
+      ]
+    },
     {
       "id": 1263,
       "printDate": "2026-11-25",
