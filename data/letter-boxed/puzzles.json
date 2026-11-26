@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-25T18:10:26.354Z",
+  "lastUpdated": "2026-11-26T17:53:10.529Z",
   "puzzles": [
+    {
+      "id": 2914,
+      "printDate": "2026-11-26",
+      "status": "published",
+      "sides": [
+        "SWE",
+        "OAI",
+        "BKN",
+        "PHM"
+      ],
+      "solution": "WyJNQVdLSVNIIiwiSElQQk9ORSJd"
+    },
     {
       "id": 2913,
       "printDate": "2026-11-25",
