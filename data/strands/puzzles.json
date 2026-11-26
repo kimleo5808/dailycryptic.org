@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-11-25T15:56:40.641Z",
+  "lastUpdated": "2026-11-26T15:38:51.961Z",
   "puzzles": [
+    {
+      "id": 1197,
+      "printDate": "2026-11-26",
+      "status": "published",
+      "clue": "A crowded table",
+      "hint": "Think about what all these words have in common with the theme",
+      "theme": "QyBIIE8gUyBFIE4gRiBBIE0gSSBMIFk=",
+      "spangram": "Q0hPU0VORkFNSUxZ",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 12,
+      "themeWords": [
+        "Q09MTEVBR1VF",
+        "RlJJRU5E",
+        "TkVJR0hCT1I=",
+        "TkVXQ09NRVI=",
+        "Tk9NQUQ="
+      ]
+    },
     {
       "id": 1196,
       "printDate": "2026-11-25",
