@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-11-26T15:38:51.961Z",
+  "lastUpdated": "2026-11-27T15:29:00.221Z",
   "puzzles": [
+    {
+      "id": 1198,
+      "printDate": "2026-11-27",
+      "status": "published",
+      "clue": "Take your leave",
+      "hint": "The theme connects quite a few words — think broadly about the category",
+      "theme": "VCBJIE0gRSBPIEYgRg==",
+      "spangram": "VElNRU9GRg==",
+      "spangramDirection": "horizontal",
+      "spangramLetterCount": 7,
+      "themeWords": [
+        "QlJFQUs=",
+        "SElBVFVT",
+        "SE9MSURBWQ==",
+        "UEFVU0U=",
+        "UkVDRVNT",
+        "UkVTVA==",
+        "VkFDQVRJT04="
+      ]
+    },
     {
       "id": 1197,
       "printDate": "2026-11-26",
