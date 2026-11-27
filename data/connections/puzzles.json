@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-11-26T15:30:59.196Z",
+  "lastUpdated": "2026-11-27T15:24:14.817Z",
   "puzzles": [
+    {
+      "id": 1265,
+      "printDate": "2026-11-27",
+      "status": "published",
+      "groups": [
+        {
+          "color": "yellow",
+          "name": "VE9VQ0ggTElHSFRMWQ==",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "S0lTUw==",
+            "QlJVU0g=",
+            "U0tJTQ==",
+            "R1JBWkU="
+          ]
+        },
+        {
+          "color": "green",
+          "name": "RkVNQUxFIEFOSU1BTFM=",
+          "hint": "Look for what these four words have in common",
+          "words": [
+            "UVVFRU4=",
+            "VklYRU4=",
+            "UEVBSEVO",
+            "TEVPUEFSREVTUw=="
+          ]
+        },
+        {
+          "color": "blue",
+          "name": "RU5ESU5HIElOIFBBUlRTIE9GIFRIRSBGT09U",
+          "hint": "Pay attention to the letters in each word",
+          "words": [
+            "TUlTVExFVE9F",
+            "TU9OQVJDSA==",
+            "Q0FNSVNPTEU=",
+            "UElOV0hFRUw="
+          ]
+        },
+        {
+          "color": "purple",
+          "name": "QVNTT0NJQVRFRCBXSVRIIFRIRSBDT0xPUiBQVVJQTEU=",
+          "hint": "These words all belong to the same category",
+          "words": [
+            "QUxJQ0UgV0FMS0VS",
+            "UFJJTkNF",
+            "Uk9ZQUxUWQ==",
+            "RkxPV0VSWSBMQU5HVUFHRQ=="
+          ]
+        }
+      ]
+    },
     {
       "id": 1264,
       "printDate": "2026-11-26",
