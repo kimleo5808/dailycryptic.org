@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-11-26T17:53:10.529Z",
+  "lastUpdated": "2026-11-27T17:39:02.508Z",
   "puzzles": [
+    {
+      "id": 2915,
+      "printDate": "2026-11-27",
+      "status": "published",
+      "sides": [
+        "WHC",
+        "IGO",
+        "NET",
+        "XRY"
+      ],
+      "solution": "WyJFWEVDIiwiQ1JJTkdFV09SVEhZIl0="
+    },
     {
       "id": 2914,
       "printDate": "2026-11-26",
